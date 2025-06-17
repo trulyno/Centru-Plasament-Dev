@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galeria foto cu activitățile și spațiile Centrului de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă din Chișinău.">
+    <meta name="keywords" content="galerie foto, activități copii, spații centru plasament">
+    <meta name="author" content="Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă">
+    
+    <title>Galerie - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Accessibility improvements -->
+    <div class="skip-links">
+        <a href="#main-content" class="skip-link">Salt la conținutul principal</a>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <!-- Top Header Section -->
+        <div class="header-top">
+            <div class="header-top-container">
+                <div class="header-logo">
+                    <img src="images/logo.jpeg" alt="Logo Centru Plasament" class="logo-image">
+                    <div class="logo-text">
+                        <h1>Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă din municipiul Chișinău</h1>
+                    </div>
+                </div>
+                
+                <div class="header-contact">
+                    <div class="contact-info-header">
+                        <div class="contact-item-header">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <span>Telefon</span>
+                                <a href="tel:022737027">022 737 027</a>
+                            </div>
+                        </div>
+                        <div class="contact-item-header">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span>Email</span>
+                                <a href="mailto:centru_plasament@agssi.md">centru_plasament@agssi.md</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="donate-section">
+                        <button class="donate-btn" aria-label="Donează pentru a sprijini copiii" title="Donează">
+                            <i class="fas fa-heart"></i>
+                            <span>Donează</span>
+                        </button>
+                        <button class="audio-btn" id="audioBtn" aria-label="Imnul instituției" title="Imnul instituției: Alexandru Lozanciuc - Să dăruim copiilor pământul">
+                            <i class="fas fa-music"></i>
+                            <span>Imn</span>
+                        </button>
+                        <button class="lyrics-btn" id="lyricsBtn" aria-label="Afișează versurile" title="Versurile imnului">
+                            <i class="fas fa-align-left"></i>
+                            <span>Versuri</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navigation Section -->
+        <div class="nav-container">
+            <div class="logo-mobile">
+                <i class="fas fa-heart"></i>
+                <span>CPRCVF</span>
+            </div>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Acasă</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Servicii <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="sectia-reabilitare.html">Secția Reabilitare</a></li>
+                            <li><a href="sectia-rezidentiala.html">Secția Rezidențială</a></li>
+                            <li><a href="sectia-respiro.html">Secția Respiro</a></li>
+                            <li><a href="sectia-zi-4luni-3ani.html">Secția Zi (4 luni - 3 ani)</a></li>
+                            <li><a href="sectia-maternala.html">Secția Maternală</a></li>
+                            <li><a href="sectia-de-zi.html">Secția de Zi</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Despre Noi <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="administratia.html">Administrația</a></li>
+                            <li><a href="organigrama.html">Organigrama</a></li>
+                            <li><a href="subdiviziune.html">Subdiviziune</a></li>
+                            <li><a href="functii-vacante.html">Funcții Vacante</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Transparența <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-nested">
+                                <a href="#" class="dropdown-toggle-nested">Legislație <i class="fas fa-chevron-right"></i></a>
+                                <ul class="dropdown-menu-nested">
+                                    <li><a href="acte-nationale.html">Acte Naționale</a></li>
+                                    <li><a href="acte-internationale.html">Acte Internaționale</a></li>
+                                    <li><a href="acte-interne.html">Acte Interne</a></li>
+                                    <li><a href="codul-deontologic.html">Codul Deontologic</a></li>
+                                    <li><a href="metodologii.html">Metodologii</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-nested">
+                                <a href="#" class="dropdown-toggle-nested">Achiziții <i class="fas fa-chevron-right"></i></a>
+                                <ul class="dropdown-menu-nested">
+                                    <li><a href="invitatii-participare.html">Invitații de Participare</a></li>
+                                    <li><a href="planuri-achizitii.html">Planuri de Achiziții</a></li>
+                                    <li><a href="rapoarte-achizitii.html">Rapoarte de Achiziții</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="proiecte.html">Proiecte</a></li>
+                            <li><a href="rapoarte.html">Rapoarte</a></li>
+                            <li><a href="registru-cadouri.html">Registru Cadouri</a></li>
+                            <li><a href="petitii-reclamatii.html">Petiții și Reclamații</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Suport Informațional <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ghiduri.html">Ghiduri</a></li>
+                            <li><a href="intrebari-frecvente.html">Întrebări Frecvente</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="index.html#partners">Parteneri</a></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content" id="main-content">
+        <section class="page-header">
+            <div class="container">
+                <h1>Galeria Noastră</h1>
+                <p>Imagini din activitățile zilnice și spațiile dedicate copiilor</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="gallery">
+                    <div class="gallery-categories">
+                        <button class="filter-btn active" data-filter="all">Toate</button>
+                        <button class="filter-btn" data-filter="activities">Activități</button>
+                        <button class="filter-btn" data-filter="spaces">Spații</button>
+                        <button class="filter-btn" data-filter="therapy">Terapie</button>
+                        <button class="filter-btn" data-filter="events">Evenimente</button>
+                    </div>
+
+                    <div class="gallery-grid">
+                        <!-- Activități -->
+                        <div class="gallery-item" data-category="activities">
+                            <img src="images/zi1.png" alt="Activități Zilnice" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Activități Zilnice</h3>
+                                <p>Copiii se joacă și învață în siguranță</p>
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="activities">
+                            <img src="images/zi7.jpg" alt="Activități Educaționale" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Activități Educaționale</h3>
+                                <p>Învățare prin joacă și interacțiune</p>
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="activities">
+                            <img src="images/zi2.jpg" alt="Jocuri Interactive" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Jocuri Interactive</h3>
+                                <p>Dezvoltare prin activități distractive</p>
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item" data-category="activities">
+                            <img src="images/zi4.jpg" alt="Activități de Grup" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Activități de Grup</h3>
+                                <p>Socializare și dezvoltare în echipă</p>
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Spații -->
+                        <div class="gallery-item" data-category="spaces">
+                            <img src="images/zi3.jpg" alt="Sala de Joacă" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Sala de Joacă</h3>
+                                <p>Spațiu colorat și sigur pentru copii</p>
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="spaces">
+                            <img src="images/zi10.jpg" alt="Camera de Odihnă" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Camera de Odihnă</h3>
+                                <p>Spații confortabile pentru relaxare</p>
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="spaces">
+                            <img src="images/zi8.jpg" alt="Camera Copiilor Mici" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Camera Copiilor Mici</h3>
+                                <p>Mediu special amenajat pentru cei mai mici</p>
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="spaces">
+                            <img src="images/zi11.jpg" alt="Spații de Recreere" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Spații de Recreere</h3>
+                                <p>Zone dedicate jocului și relaxării</p>
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Terapie și Reabilitare -->
+                        <div class="gallery-item" data-category="therapy">
+                            <img src="images/masaj.jpg" alt="Terapie prin Masaj" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Terapie prin Masaj</h3>
+                                <p>Reabilitare specializată pentru copii</p>
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="therapy">
+                            <img src="images/kinetoterapie.jpg" alt="Kinetoterapie" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Kinetoterapie</h3>
+                                <p>Exerciții specializate de reabilitare</p>
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="therapy">
+                            <img src="images/hidroterapia.jpg" alt="Hidroterapie" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Hidroterapie</h3>
+                                <p>Terapie în mediu acvatic</p>
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="therapy">
+                            <img src="images/hidrokinetoterapie.jpg" alt="Hidrokinetoterapie" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Hidrokinetoterapie</h3>
+                                <p>Exerciții în apă pentru reabilitare</p>
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="therapy">
+                            <img src="images/proceduri_fizioterapeutice.jpg" alt="Proceduri Fizioterapeutice" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Proceduri Fizioterapeutice</h3>
+                                <p>Tratament specializat pentru recuperare</p>
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="therapy">
+                            <img src="images/terapie_senzoriala.jpg" alt="Terapie Senzorială" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Terapie Senzorială</h3>
+                                <p>Stimulare senzorială pentru dezvoltare</p>
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Evenimente și Activități Speciale -->
+                        <div class="gallery-item" data-category="events">
+                            <img src="images/maternala5.jpg" alt="Evenimente Speciale" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Evenimente Speciale</h3>
+                                <p>Celebrăm împreună momente importante</p>
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="events">
+                            <img src="images/zi5.jpg" alt="Activități de Sărbătoare" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Activități de Sărbătoare</h3>
+                                <p>Sărbători și evenimente comunitare</p>
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="events">
+                            <img src="images/zi6.jpg" alt="Concursuri și Competiții" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Concursuri și Competiții</h3>
+                                <p>Activități competitive și distractive</p>
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Secția Maternală -->
+                        <div class="gallery-item" data-category="spaces">
+                            <img src="images/maternala1.jpg" alt="Secția Maternală - Camere" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Secția Maternală</h3>
+                                <p>Camere confortabile pentru mame și copii</p>
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="spaces">
+                            <img src="images/maternala2.jpg" alt="Spații Comune Maternală" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Spații Comune</h3>
+                                <p>Zone de socializare și relaxare</p>
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="activities">
+                            <img src="images/maternala3.jpg" alt="Consiliere Parentală" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Consiliere Parentală</h3>
+                                <p>Sesiuni de instruire și dezvoltare</p>
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="spaces">
+                            <img src="images/maternala4.jpg" alt="Bucătărie Utilată" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Bucătărie Utilată</h3>
+                                <p>Facilități complete pentru pregătirea meselor</p>
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Secția Respiro -->
+                        <div class="gallery-item" data-category="activities">
+                            <img src="images/respiro1.jpg" alt="Activități Respiro" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Activități Respiro</h3>
+                                <p>Îngrijire temporară specializată</p>
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="therapy">
+                            <img src="images/respiro2.jpg" alt="Terapie Specializată Respiro" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Terapie Specializată</h3>
+                                <p>Programe de reabilitare pentru copii cu dizabilități</p>
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="spaces">
+                            <img src="images/respiro3.jpg" alt="Spații Respiro" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Spații Dedicate</h3>
+                                <p>Mediu sigur și confortabil pentru copii</p>
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="activities">
+                            <img src="images/respiro4.jpg" alt="Activități Interactive Respiro" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Activități Interactive</h3>
+                                <p>Jocuri și activități adaptate nevoilor speciale</p>
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="therapy">
+                            <img src="images/respiro5.jpg" alt="Consiliere Familială" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Consiliere Familială</h3>
+                                <p>Sprijin pentru familii și instruire</p>
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item" data-category="spaces">
+                            <img src="images/respiro6.jpg" alt="Mediu Terapeutic" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Mediu Terapeutic</h3>
+                                <p>Spații special amenajate pentru terapie</p>
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Gallery Modal -->
+    <div class="gallery-modal" id="galleryModal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Închide galeria">
+                <i class="fas fa-times"></i>
+            </button>
+            <button class="modal-nav modal-prev" id="modalPrev" aria-label="Imagine precedentă">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="modal-nav modal-next" id="modalNext" aria-label="Imagine următoare">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="modal-image-container">
+                <img id="modalImage" src="" alt="" loading="lazy">
+            </div>
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="audioElement" preload="metadata">
+        <source src="audio/18_Alexandru_Lozanciuc_-_Sa_daruim_copiilor_pamantul.mp3" type="audio/mpeg">
+        Browser-ul tău nu suportă elementul audio.
+    </audio>
+
+    <!-- Lyrics Modal -->
+    <div class="lyrics-modal" id="lyricsModal">
+        <div class="lyrics-modal-content">
+            <div class="lyrics-header">
+                <h3>Versurile imnului instituției</h3>
+                <button class="lyrics-close-btn" id="lyricsCloseBtn" aria-label="Închide versurile">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="lyrics-body">
+                <h4>Alexandru Lozanciuc - Să dăruim copiilor pământul</h4>
+                <div class="lyrics-text">
+                    <p>Nimic mai sfânt ca soarele<br>
+                    Ce luminează viața noastră pe pământ<br>
+                    Nimic mai sfânt pe acest pământ<br>
+                    Ca mamele cu prunci prin soare alergând</p>
+                    
+                    <p>Cât de uimit ne dăruiesc<br>
+                    Copiii noștri ce alăturea ne cresc<br>
+                    Nimic mai drag pe acest meleag<br>
+                    Decât copilul așteptându-te-n prag</p>
+                    
+                    <p>Hai oameni, hai să dăruim copiilor<br>
+                    Pământul nostru neîmpărțit, neîmpărțit<br>
+                    Hai oameni, hai să dăruim copiilor<br>
+                    Pământul nostru înflorit, nepustiit</p>
+                    
+                    <p>Să fie toate acestea și în viitor<br>
+                    Să aibă fiii noștri în case prunci lor<br>
+                    Să nu lăsăm pământul să ne ardă în foc<br>
+                    Să crească copilașii noștri cu noroc</p>
+
+                    <p>Nimic mai sfânt ca pacea-n noi<br>
+                    În timp de pace sunt și viața omului<br>
+                    Nimic mai scump, mai omenesc<br>
+                    Ca pacea pe care oamenii râvnesc</p>
+                    
+                    <p>Cât de uimiți și semne noi<br>
+                    Când mire și mireasă trec pe lângă noi<br>
+                    Câte minuni, băi oameni buni<br>
+                    În orice seară pot copiii să-ți adun</p>
+                    
+                    <p>Hai oameni, hai să dăruim copiilor<br>
+                    Pământul nostru neîmpărțit, neîmpărțit<br>
+                    Hai oameni, hai să dăruim copiilor<br>
+                    Pământul nostru înflorit, nepustiit</p>
+                    
+                    <p>Să fie toate acestea și în viitor<br>
+                    Să aibă fiii noștri în case prunci lor<br>
+                    Să nu lăsăm pământul să ne ardă în foc<br>
+                    Să crească copilașii noștri cu noroc</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

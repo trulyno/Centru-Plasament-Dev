@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cadrul legislativ care reglementează activitatea Centrului de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă.">
+    <meta name="keywords" content="legislație, cadru legal, norme juridice">
+    <meta name="author" content="Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă">
+    
+    <title>Legislație - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Accessibility improvements -->
+    <div class="skip-links">
+        <a href="#main-content" class="skip-link">Salt la conținutul principal</a>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <!-- Top Header Section -->
+        <div class="header-top">
+            <div class="header-top-container">
+                <div class="header-logo">
+                    <img src="images/logo.jpeg" alt="Logo Centru Plasament" class="logo-image">
+                    <div class="logo-text">
+                        <h1>Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă din municipiul Chișinău</h1>
+                    </div>
+                </div>
+                
+                <div class="header-contact">
+                    <div class="contact-info-header">
+                        <div class="contact-item-header">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <span>Telefon</span>
+                                <a href="tel:022737027">022 737 027</a>
+                            </div>
+                        </div>
+                        <div class="contact-item-header">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span>Email</span>
+                                <a href="mailto:centru_plasament@agssi.md">centru_plasament@agssi.md</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="donate-section">
+                        <button class="donate-btn" aria-label="Donează pentru a sprijini copiii" title="Donează">
+                            <i class="fas fa-heart"></i>
+                            <span>Donează</span>
+                        </button>
+                        <button class="audio-btn" id="audioBtn" aria-label="Imnul instituției" title="Imnul instituției: Alexandru Lozanciuc - Să dăruim copiilor pământul">
+                            <i class="fas fa-music"></i>
+                            <span>Imn</span>
+                        </button>
+                        <button class="lyrics-btn" id="lyricsBtn" aria-label="Afișează versurile" title="Versurile imnului">
+                            <i class="fas fa-align-left"></i>
+                            <span>Versuri</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navigation Section -->
+        <div class="nav-container">
+            <div class="logo-mobile">
+                <i class="fas fa-heart"></i>
+                <span>CPRCVF</span>
+            </div>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Acasă</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Servicii <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="sectia-reabilitare.html">Secția Reabilitare</a></li>
+                            <li><a href="sectia-rezidentiala.html">Secția Rezidențială</a></li>
+                            <li><a href="sectia-respiro.html">Secția Respiro</a></li>
+                            <li><a href="sectia-zi-4luni-3ani.html">Secția Zi (4 luni - 3 ani)</a></li>
+                            <li><a href="sectia-maternala.html">Secția Maternală</a></li>
+                            <li><a href="sectia-de-zi.html">Secția de Zi</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Despre Noi <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="administratia.html">Administrația</a></li>
+                            <li><a href="organigrama.html">Organigrama</a></li>
+                            <li><a href="subdiviziune.html">Subdiviziune</a></li>
+                            <li><a href="functii-vacante.html">Funcții Vacante</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Transparența <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-nested">
+                                <a href="#" class="dropdown-toggle-nested">Legislație <i class="fas fa-chevron-right"></i></a>
+                                <ul class="dropdown-menu-nested">
+                                    <li><a href="acte-nationale.html">Acte Naționale</a></li>
+                                    <li><a href="acte-internationale.html">Acte Internaționale</a></li>
+                                    <li><a href="acte-interne.html">Acte Interne</a></li>
+                                    <li><a href="codul-deontologic.html">Codul Deontologic</a></li>
+                                    <li><a href="metodologii.html">Metodologii</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-nested">
+                                <a href="#" class="dropdown-toggle-nested">Achiziții <i class="fas fa-chevron-right"></i></a>
+                                <ul class="dropdown-menu-nested">
+                                    <li><a href="invitatii-participare.html">Invitații de Participare</a></li>
+                                    <li><a href="planuri-achizitii.html">Planuri de Achiziții</a></li>
+                                    <li><a href="rapoarte-achizitii.html">Rapoarte de Achiziții</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="proiecte.html">Proiecte</a></li>
+                            <li><a href="rapoarte.html">Rapoarte</a></li>
+                            <li><a href="registru-cadouri.html">Registru Cadouri</a></li>
+                            <li><a href="petitii-reclamatii.html">Petiții și Reclamații</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Suport Informațional <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ghiduri.html">Ghiduri</a></li>
+                            <li><a href="intrebari-frecvente.html">Întrebări Frecvente</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="index.html#partners">Parteneri</a></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content" id="main-content">
+        <section class="page-header">
+            <div class="container">
+                <h1>Legislație</h1>
+                <p>Cadrul juridic care reglementează activitatea centrului</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-wrapper">
+                    <h2>Cadru Legislativ</h2>
+                    <p>Activitatea Centrului de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă este reglementată de un cadru legislativ complex, care asigură protecția drepturilor copilului și calitatea serviciilor oferite:</p>
+                    
+                    <div class="legislation-categories">
+                        <div class="category-nav">
+                            <button class="category-btn active" data-category="nationale">
+                                <i class="fas fa-flag"></i> Acte Naționale
+                            </button>
+                            <button class="category-btn" data-category="internationale">
+                                <i class="fas fa-globe"></i> Acte Internaționale
+                            </button>
+                            <button class="category-btn" data-category="interne">
+                                <i class="fas fa-building"></i> Acte Interne
+                            </button>
+                            <button class="category-btn" data-category="metodologii">
+                                <i class="fas fa-book"></i> Metodologii
+                            </button>
+                        </div>
+
+                        <div class="category-content active" id="nationale">
+                            <h3>Legislația Națională</h3>
+                            <div class="legislation-grid">
+                                <div class="legislation-card primary">
+                                    <div class="legislation-icon">
+                                        <i class="fas fa-balance-scale"></i>
+                                    </div>
+                                    <div class="legislation-content">
+                                        <h4>Codul Familiei al Republicii Moldova</h4>
+                                        <p>Actul normativ de bază care reglementează relațiile familiale și protecția copilului</p>
+                                        <div class="legislation-details">
+                                            <span class="detail-item"><i class="fas fa-calendar"></i> Adoptat: 2000</span>
+                                            <span class="detail-item"><i class="fas fa-tag"></i> Categoria: Cod</span>
+                                        </div>
+                                        <a href="acte-nationale.html" class="legislation-link">
+                                            <i class="fas fa-arrow-right"></i> Vezi detalii
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="legislation-card">
+                                    <div class="legislation-icon">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <div class="legislation-content">
+                                        <h4>Legea nr. 140/2013</h4>
+                                        <p>Privind protecția specială a copiilor în situație de risc și separarea copilului de părinți</p>
+                                        <div class="legislation-details">
+                                            <span class="detail-item"><i class="fas fa-calendar"></i> Adoptat: 2013</span>
+                                            <span class="detail-item"><i class="fas fa-tag"></i> Categoria: Lege specială</span>
+                                        </div>
+                                        <a href="acte-nationale.html" class="legislation-link">
+                                            <i class="fas fa-arrow-right"></i> Vezi detalii
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="legislation-card">
+                                    <div class="legislation-icon">
+                                        <i class="fas fa-universal-access"></i>
+                                    </div>
+                                    <div class="legislation-content">
+                                        <h4>Legea nr. 121/2010</h4>
+                                        <p>Cu privire la drepturile persoanei cu dizabilități</p>
+                                        <div class="legislation-details">
+                                            <span class="detail-item"><i class="fas fa-calendar"></i> Adoptat: 2010</span>
+                                            <span class="detail-item"><i class="fas fa-tag"></i> Categoria: Lege specială</span>
+                                        </div>
+                                        <a href="acte-nationale.html" class="legislation-link">
+                                            <i class="fas fa-arrow-right"></i> Vezi detalii
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category-content" id="internationale">
+                            <h3>Acte Internaționale</h3>
+                            <div class="legislation-grid">
+                                <div class="legislation-card primary">
+                                    <div class="legislation-icon">
+                                        <i class="fas fa-globe"></i>
+                                    </div>
+                                    <div class="legislation-content">
+                                        <h4>Convenția ONU cu privire la Drepturile Copilului</h4>
+                                        <p>Tratatul fundamental pentru protecția drepturilor copilului la nivel global</p>
+                                        <div class="legislation-details">
+                                            <span class="detail-item"><i class="fas fa-calendar"></i> Ratificată: 1993</span>
+                                            <span class="detail-item"><i class="fas fa-tag"></i> Categoria: Convenție UN</span>
+                                        </div>
+                                        <a href="acte-internationale.html" class="legislation-link">
+                                            <i class="fas fa-arrow-right"></i> Vezi detalii
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="legislation-card">
+                                    <div class="legislation-icon">
+                                        <i class="fas fa-hands-helping"></i>
+                                    </div>
+                                    <div class="legislation-content">
+                                        <h4>Convenția de la Haga</h4>
+                                        <p>Privind protecția copiilor și cooperarea în materie de adopție internațională</p>
+                                        <div class="legislation-details">
+                                            <span class="detail-item"><i class="fas fa-calendar"></i> Ratificată: 1998</span>
+                                            <span class="detail-item"><i class="fas fa-tag"></i> Categoria: Convenție</span>
+                                        </div>
+                                        <a href="acte-internationale.html" class="legislation-link">
+                                            <i class="fas fa-arrow-right"></i> Vezi detalii
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category-content" id="interne">
+                            <h3>Acte Normative Interne</h3>
+                            <div class="legislation-grid">
+                                <div class="legislation-card">
+                                    <div class="legislation-icon">
+                                        <i class="fas fa-file-contract"></i>
+                                    </div>
+                                    <div class="legislation-content">
+                                        <h4>Regulamentul de Organizare și Funcționare</h4>
+                                        <p>Documentul care stabilește structura și atribuțiile centrului</p>
+                                        <div class="legislation-details">
+                                            <span class="detail-item"><i class="fas fa-calendar"></i> Ultima actualizare: 2024</span>
+                                            <span class="detail-item"><i class="fas fa-tag"></i> Categoria: Regulament intern</span>
+                                        </div>
+                                        <a href="acte-interne.html" class="legislation-link">
+                                            <i class="fas fa-arrow-right"></i> Vezi detalii
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="legislation-card">
+                                    <div class="legislation-icon">
+                                        <i class="fas fa-user-shield"></i>
+                                    </div>
+                                    <div class="legislation-content">
+                                        <h4>Codul Deontologic</h4>
+                                        <p>Principiile și normele etice pentru personalul centrului</p>
+                                        <div class="legislation-details">
+                                            <span class="detail-item"><i class="fas fa-calendar"></i> Adoptat: 2023</span>
+                                            <span class="detail-item"><i class="fas fa-tag"></i> Categoria: Cod de conduită</span>
+                                        </div>
+                                        <a href="codul-deontologic.html" class="legislation-link">
+                                            <i class="fas fa-arrow-right"></i> Vezi detalii
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category-content" id="metodologii">
+                            <h3>Metodologii și Proceduri</h3>
+                            <div class="legislation-grid">
+                                <div class="legislation-card">
+                                    <div class="legislation-icon">
+                                        <i class="fas fa-clipboard-list"></i>
+                                    </div>
+                                    <div class="legislation-content">
+                                        <h4>Metodologia de Evaluare a Copilului</h4>
+                                        <p>Proceduri standardizate pentru evaluarea nevoilor copilului</p>
+                                        <div class="legislation-details">
+                                            <span class="detail-item"><i class="fas fa-calendar"></i> Versiunea: 2024</span>
+                                            <span class="detail-item"><i class="fas fa-tag"></i> Categoria: Metodologie</span>
+                                        </div>
+                                        <a href="metodologii.html" class="legislation-link">
+                                            <i class="fas fa-arrow-right"></i> Vezi detalii
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="legislation-card">
+                                    <div class="legislation-icon">
+                                        <i class="fas fa-heartbeat"></i>
+                                    </div>
+                                    <div class="legislation-content">
+                                        <h4>Protocoale de Reabilitare</h4>
+                                        <p>Ghiduri pentru serviciile de reabilitare medicală și socială</p>
+                                        <div class="legislation-details">
+                                            <span class="detail-item"><i class="fas fa-calendar"></i> Versiunea: 2024</span>
+                                            <span class="detail-item"><i class="fas fa-tag"></i> Categoria: Protocol</span>
+                                        </div>
+                                        <a href="metodologii.html" class="legislation-link">
+                                            <i class="fas fa-arrow-right"></i> Vezi detalii
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="compliance-section">
+                        <h3>Conformitatea și Aplicarea</h3>
+                        <div class="compliance-info">
+                            <div class="compliance-card">
+                                <div class="compliance-icon">
+                                    <i class="fas fa-check-double"></i>
+                                </div>
+                                <div class="compliance-content">
+                                    <h4>Monitorizarea Conformității</h4>
+                                    <p>Verificarea regulată a aplicării normelor legale în activitatea zilnică</p>
+                                </div>
+                            </div>
+                            <div class="compliance-card">
+                                <div class="compliance-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="compliance-content">
+                                    <h4>Formarea Personalului</h4>
+                                    <p>Instruirea continuă a angajaților privind legislația aplicabilă</p>
+                                </div>
+                            </div>
+                            <div class="compliance-card">
+                                <div class="compliance-icon">
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                                <div class="compliance-content">
+                                    <h4>Actualizarea Procedurilor</h4>
+                                    <p>Adaptarea procedurilor interne la modificările legislative</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="updates-section">
+                        <h3>Actualizări Legislative</h3>
+                        <div class="updates-timeline">
+                            <div class="update-item">
+                                <div class="update-date">Mai 2025</div>
+                                <div class="update-content">
+                                    <h4>Modificări în Codul Familiei</h4>
+                                    <p>Îmbunătățiri ale procedurii de plasament și adopție</p>
+                                </div>
+                            </div>
+                            <div class="update-item">
+                                <div class="update-date">Martie 2025</div>
+                                <div class="update-content">
+                                    <h4>Noi standarde de calitate</h4>
+                                    <p>Actualizarea standardelor pentru serviciile sociale</p>
+                                </div>
+                            </div>
+                            <div class="update-item">
+                                <div class="update-date">Ianuarie 2025</div>
+                                <div class="update-content">
+                                    <h4>Regulament intern actualizat</h4>
+                                    <p>Revizuirea procedurilor operaționale interne</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-note">
+                        <div class="info-icon">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Accesul la legislație</h4>
+                            <p>Pentru accesul la documentele complete sau întrebări despre aplicarea legislației, contactați departamentul juridic al centrului la <a href="mailto:centru_plasament@agssi.md">centru_plasament@agssi.md</a> sau <a href="tel:022737027">022 737 027</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Audio Element -->
+    <audio id="audioElement" preload="metadata">
+        <source src="audio/18_Alexandru_Lozanciuc_-_Sa_daruim_copiilor_pamantul.mp3" type="audio/mpeg">
+        Browser-ul tău nu suportă elementul audio.
+    </audio>
+
+    <!-- Lyrics Modal -->
+    <div class="lyrics-modal" id="lyricsModal">
+        <div class="lyrics-modal-content">
+            <div class="lyrics-header">
+                <h3>Versurile imnului instituției</h3>
+                <button class="lyrics-close-btn" id="lyricsCloseBtn" aria-label="Închide versurile">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="lyrics-body">
+                <h4>Alexandru Lozanciuc - Să dăruim copiilor pământul</h4>
+                <div class="lyrics-text">
+                    <p>Nimic mai sfânt ca soarele<br>
+                    Ce luminează viața noastră pe pământ<br>
+                    Nimic mai sfânt pe acest pământ<br>
+                    Ca mamele cu prunci prin soare alergând</p>
+                    
+                    <p>Cât de uimit ne dăruiesc<br>
+                    Copiii noștri ce alăturea ne cresc<br>
+                    Nimic mai drag pe acest meleag<br>
+                    Decât copilul așteptându-te-n prag</p>
+                    
+                    <p>Hai oameni, hai să dăruim copiilor<br>
+                    Pământul nostru neîmpărțit, neîmpărțit<br>
+                    Hai oameni, hai să dăruim copiilor<br>
+                    Pământul nostru înflorit, nepustiit</p>
+                    
+                    <p>Să fie toate acestea și în viitor<br>
+                    Să aibă fiii noștri în case prunci lor<br>
+                    Să nu lăsăm pământul să ne ardă în foc<br>
+                    Să crească copilașii noștri cu noroc</p>
+
+                    <p>Nimic mai sfânt ca pacea-n noi<br>
+                    În timp de pace sunt și viața omului<br>
+                    Nimic mai scump, mai omenesc<br>
+                    Ca pacea pe care oamenii râvnesc</p>
+                    
+                    <p>Cât de uimiți și semne noi<br>
+                    Când mire și mireasă trec pe lângă noi<br>
+                    Câte minuni, băi oameni buni<br>
+                    În orice seară pot copiii să-ți adun</p>
+                    
+                    <p>Hai oameni, hai să dăruim copiilor<br>
+                    Pământul nostru neîmpărțit, neîmpărțit<br>
+                    Hai oameni, hai să dăruim copiilor<br>
+                    Pământul nostru înflorit, nepustiit</p>
+                    
+                    <p>Să fie toate acestea și în viitor<br>
+                    Să aibă fiii noștri în case prunci lor<br>
+                    Să nu lăsăm pământul să ne ardă în foc<br>
+                    Să crească copilașii noștri cu noroc</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
