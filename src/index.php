@@ -114,6 +114,8 @@ require('file_loader.php');
                             <li><a href="sectia-zi-4luni-3ani.html">Secția Zi (4 luni - 3 ani)</a></li>
                             <li><a href="sectia-maternala.html">Secția Maternală</a></li>
                             <li><a href="sectia-de-zi.html">Secția de Zi</a></li>
+                             <li><a href="asistenta-psihopedagocica.html">Secția Asistență Psihopedagogică</a></li>
+                            <li><a href="asistenta-medicala.html">Secția Asistență Medicală</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -431,11 +433,68 @@ require('file_loader.php');
                         </div>
                     </div>
                 </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"Recomand! A fost de mare ajutor copilului, a avut parte de atentie, afectiune si reabilitare nivelul cel mai inalt! Centru Plasament Reabilitare Copii a facut o mare diferenta in progresul copilului! Multumesc tuturor colaboratorilor!"</p>
+                        <div class="testimonial-author">
+                            <strong>Ecaterina Zgureanu</strong>
+                            <span>Părinte</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"Intradevar un personal extraordinar doamne cu suflet mare,VA multumim frumos ca sinteti Asa de bravooo."</p>
+                        <div class="testimonial-author">
+                            <strong>Svetlana Pădure</strong>
+                            <span>Părinte</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"Mulțumim, echipă minunată a centrului, pentru tot efortul dumneavoastră dăruit copiilor."</p>
+                        <div class="testimonial-author">
+                            <strong>Tatiana Răcilă</strong>
+                            <span>Părinte</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"Sunt foarte multumita de acest Centru.Acolo activeaza oameni cu suflet mare si plin de dragoste fata de toti copilasii. Recomand cu incredere. Sanatate si putere tuturor!!!"</p>
+                        <div class="testimonial-author">
+                            <strong>Elena Bulat</strong>
+                            <span>Părinte</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"La fel și eu am să le mulțumesc, băiețelul meu la moment este internat acolo, niște Doamne tare bravo înţelegătoare mulțumim îndeosebi Corina Vozian Violeta Timirgaz suntem a 3 oară internați și desigur doar cuvinte de laudă și mulțumiri...
+Succese Centru Plasament Reabilitare Copii"</p>
+                        <div class="testimonial-author">
+                            <strong>Mariana Cebotari</strong>
+                            <span>Părinte</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+                
             <div class="testimonials-nav">
                 <button class="testimonial-btn active" data-testimonial="0"></button>
                 <button class="testimonial-btn" data-testimonial="1"></button>
                 <button class="testimonial-btn" data-testimonial="2"></button>
+                <button class="testimonial-btn" data-testimonial="3"></button>
+                <button class="testimonial-btn" data-testimonial="4"></button>
+                <button class="testimonial-btn" data-testimonial="5"></button>
+                <button class="testimonial-btn" data-testimonial="6"></button>
+                <button class="testimonial-btn" data-testimonial="7"></button>
             </div>
         </div>
     </section>
