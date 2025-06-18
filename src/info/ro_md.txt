@@ -1,0 +1,3 @@
+SERVICES=sectia-reabilitare,sectia-de-zi,sectia-zi-4luni-3ani,sectia-maternala,sectia-rspiro,sectia-criza-reintegrare-familiala
+SERVICES_NAMES=Secția Reabilitare,Secția de Zi,Secția Zi pentru îngrijirea copiilor cu vârsta 4 luni - 3 ani,Secția Maternală,Secția Respiro,Secția de Criză și Reintegrare Familială
+SERVICES_NAMES_SHORT=Secția Reabilitare,Secția Zi,Secția Zi (4 luni - 3 ani),Secția Maternală,Secția Respiro,Secția Criză și Reintegrare Familială

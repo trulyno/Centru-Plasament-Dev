@@ -1,3 +1,7 @@
+<?php
+require('file_loader.php');
+?>
+
 <!DOCTYPE html>
 <html lang="ro">
 <head>
