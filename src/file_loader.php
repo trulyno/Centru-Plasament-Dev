@@ -1,12 +1,14 @@
 <?php
 
 // Define the keywords we're looking for
-$keywords = ['SERVICES', 'SERVICES_NAMES', 'SERVICES_NAMES_SHORT'];
+$keywords = ['SERVICES', 'SERVICES_NAMES', 'SERVICES_NAMES_SHORT', 'SERVICES_IMAGES', 'SERVICES_DESCRIPTION'];
 
 // Initialize global arrays
 $GLOBALS['SERVICES'] = array();
 $GLOBALS['SERVICES_NAMES'] = array();
 $GLOBALS['SERVICES_NAMES_SHORT'] = array();
+$GLOBALS['SERVICES_IMAGES'] = array();
+$GLOBALS['SERVICES_DESCRIPTION'] = array();
 
 function readConfigFile($filename) {
     // Check if file exists
@@ -40,9 +42,9 @@ function readConfigFile($filename) {
             $keyword = trim($keyword);
             
             // Check if this is one of our target keywords
-            if (in_array($keyword, $GLOBALS['keywords'] ?? ['SERVICES', 'SERVICES_NAMES', 'SERVICES_NAMES_SHORT'])) {
+            if (in_array($keyword, $GLOBALS['keywords'] ?? ['SERVICES', 'SERVICES_NAMES', 'SERVICES_NAMES_SHORT', 'SERVICES_IMAGES', 'SERVICES_DESCRIPTION'])) {
                 // Split the comma-separated values
-                $valueArray = explode(',', $values);
+                $valueArray = explode('|', $values);
                 
                 // Trim whitespace from each value
                 $valueArray = array_map('trim', $valueArray);
