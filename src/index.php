@@ -173,61 +173,42 @@ require('file_loader.php');
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-slideshow">
-            <div class="slide active">
+            <?php for ($i = 0; $i < count($GLOBALS['HERO_TITLES']); $i++): ?>
+            <div class="slide <?php echo $i === 0 ? 'active' : ''; ?>">
                 <div class="slide-content">
                     <div class="slide-text">
-                        <h1>Fiecare Copil Merită un Viitor Luminos</h1>
-                        <p>Oferim servicii cuprinzătoare de plasament și reabilitare pentru copiii mici în nevoie. Creăm medii sigure și îngrijitoare unde vindecarea și creșterea pot să înceapă.</p>
-                        <a href="#contact" class="cta-button">Obține Ajutor Acum</a>
+                        <h1><?php echo htmlspecialchars($GLOBALS['HERO_TITLES'][$i]); ?></h1>
+                        <p><?php echo htmlspecialchars($GLOBALS['HERO_DESCRIPTIONS'][$i]); ?></p>
+                        <a href="<?php echo htmlspecialchars($GLOBALS['HERO_LINKS'][$i] ?? '#contact'); ?>" class="cta-button">
+                            <?php echo htmlspecialchars($GLOBALS['HERO_BUTTONS'][$i] ?? 'Obține Ajutor Acum'); ?>
+                        </a>
                     </div>
                 </div>
                 <div class="slide-image">
-                    <img src="images/zi7.jpg" alt="Copii fericiți jucându-se împreună" loading="lazy">
+                    <img src="images/<?php echo htmlspecialchars($GLOBALS['HERO_IMAGES'][$i]); ?>" 
+                         alt="<?php echo htmlspecialchars($GLOBALS['HERO_TITLES'][$i]); ?>" loading="lazy">
                 </div>
             </div>
-            <div class="slide">
-                <div class="slide-content">
-                    <div class="slide-text">
-                        <h1>Medii Sigure și Iubitoare</h1>
-                        <p>Casele de plasament atent selectate oferă stabilitate și îngrijire în timp ce copiii se vindecă și se pregătesc pentru următorul capitol.</p>
-                        <a href="#services" class="cta-button">Află Mai Mult</a>
-                    </div>
-                </div>
-                <div class="slide-image">
-                    <img src="images/zi10.jpg" alt="Mediu acasă confortabil" loading="lazy">
-                </div>
-            </div>
-            <div class="slide">
-                <div class="slide-content">
-                    <div class="slide-text">
-                        <h1>Echipă Profesională de Îngrijire</h1>
-                        <p>Terapeuți licențiați, asistenți sociali și specialiști în îngrijirea copiilor lucrează împreună pentru a sprijini călătoria unică a fiecărui copil.</p>
-                        <a href="#about" class="cta-button">Cunoaște Echipa Noastră</a>
-                    </div>
-                </div>
-                <div class="slide-image">
-                    <img src="images/zi1.png" alt="Profesioniști din sănătate lucrând cu copii" loading="lazy">
-                </div>
-            </div>
+            <?php endfor; ?>
         </div>
         <div class="slideshow-nav">
-            <button class="slide-btn active" data-slide="0"></button>
-            <button class="slide-btn" data-slide="1"></button>
-            <button class="slide-btn" data-slide="2"></button>
+            <?php for ($i = 0; $i < count($GLOBALS['HERO_TITLES']); $i++): ?>
+            <button class="slide-btn <?php echo $i === 0 ? 'active' : ''; ?>" data-slide="<?php echo $i; ?>"></button>
+            <?php endfor; ?>
         </div>
     </section>
 
     <!-- About Section -->
     <section class="about" id="about">
         <div class="container">
-            <h2>Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă din municipiul Chișinău</h2>
+            <h2><?php echo htmlspecialchars($GLOBALS['ABOUT_TITLE'][0] ?? 'Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă din municipiul Chișinău'); ?></h2>
             <div class="about-content">
                 <div class="about-text fade-in">
-                    &nbsp;<p id="pin">&nbsp;<b>Centrul de Plasament și Reabilitare pentru Copii de Vârstă Fragedă din munipiul Chișinău</b>, subordonat <i>Ministerului Muncii și Protecției Sociale</i>, oferă servicii sociale și medico-psiho-pedagogice dedicate copiilor de la 0 la 7 ani aflați în situații de risc, mamelor cu copii mici și femeilor gravide în ultimul trimestru de sarcină.</p> 
+                    &nbsp;<p id="pin">&nbsp;<?php echo htmlspecialchars($GLOBALS['ABOUT_TEXT_1'][0] ?? ''); ?></p> 
 
-                    &nbsp;<p id="target">&nbsp;<b><i>Misiunea Centrului</i></b> este de a oferi sprijin, protecție și un mediu sigur pentru copii și familiile acestora, facilitând dezvoltarea armonioasă și reintegrarea copiilor în mediul familial. Beneficiarii includ copii în dificultate, copii cu dizabilități neuro-locomotorii, copii din familii vulnerabile, mame și gravide.</p>
+                    &nbsp;<p id="target">&nbsp;<?php echo htmlspecialchars($GLOBALS['ABOUT_TEXT_2'][0] ?? ''); ?><</p>
 
-                    &nbsp;<p id="capacity">&nbsp;Centrul are o capacitate maximă de <i>200 de beneficiari</i> și oferă servicii de plasament temporar și de urgență, servicii pentru cupluri mamă-copil, gravide și servicii <i>„Respiro"</i> pentru copii cu dizabilități, toate acestea menite să protejeze copilul și să sprijine familia.</p>  
+                    &nbsp;<p id="capacity">&nbsp;<?php echo htmlspecialchars($GLOBALS['ABOUT_TEXT_3'][0] ?? ''); ?></p>  
                 </div>
                 <div class="about-image fade-in">
                     <i class="fas fa-child"></i>
@@ -269,22 +250,12 @@ require('file_loader.php');
     <section class="stats">
         <div class="container">
             <div class="stats-grid">
+                <?php for ($i = 0; $i < count($GLOBALS['STATS_VALUES']); $i++): ?>
                 <div class="stat-item fade-in">
-                    <h3 id="stat1">0</h3>
-                    <p>Copii Beneficiari</p>
+                    <h3 id="stat<?php echo $i + 1; ?>"><?php echo htmlspecialchars($GLOBALS['STATS_VALUES'][$i]); ?></h3>
+                    <p><?php echo htmlspecialchars($GLOBALS['STATS_LABELS'][$i] ?? ''); ?></p>
                 </div>
-                <div class="stat-item fade-in">
-                    <h3 id="stat2">0</h3>
-                    <p>Reunificări de Succes</p>
-                </div>
-                <div class="stat-item fade-in">
-                    <h3 id="stat3">0</h3>
-                    <p>Plasamente pentru Adopție</p>
-                </div>
-                <div class="stat-item fade-in">
-                    <h3 id="stat4">0</h3>
-                    <p>Ani de Serviciu</p>
-                </div>
+                <?php endfor; ?>
             </div>
         </div>
     </section>
@@ -297,50 +268,23 @@ require('file_loader.php');
             
             <!-- Gallery Slideshow -->
             <div class="gallery-slideshow">
-                <div class="gallery-slide active">
-                    <img src="images/respiro3.jpg" alt="Copii jucându-se în sala de activități" loading="lazy">
+                <?php for ($i = 0; $i < count($GLOBALS['GALLERY_IMAGES']); $i++): ?>
+                <div class="gallery-slide <?php echo $i === 0 ? 'active' : ''; ?>">
+                    <img src="images/<?php echo htmlspecialchars($GLOBALS['GALLERY_IMAGES'][$i]); ?>" 
+                         alt="<?php echo htmlspecialchars($GLOBALS['GALLERY_TITLES'][$i] ?? ''); ?>" loading="lazy">
                     <div class="gallery-slide-content">
-                        <h3>Sala de Joacă</h3>
-                        <p>Copiii se distrează în spațiul nostru sigur și colorat</p>
+                        <h3><?php echo htmlspecialchars($GLOBALS['GALLERY_TITLES'][$i] ?? ''); ?></h3>
+                        <p><?php echo htmlspecialchars($GLOBALS['GALLERY_DESCRIPTIONS'][$i] ?? ''); ?></p>
                     </div>
                 </div>
-                <div class="gallery-slide">
-                    <img src="images/zi10.jpg" alt="Camera de odihnă confortabilă" loading="lazy">
-                    <div class="gallery-slide-content">
-                        <h3>Camera de Odihnă</h3>
-                        <p>Spații liniștite și confortabile pentru relaxare</p>
-                    </div>
-                </div>
-                <div class="gallery-slide">
-                    <img src="images/zi6.jpg" alt="Activități educaționale cu copiii" loading="lazy">
-                    <div class="gallery-slide-content">
-                        <h3>Activități Educaționale</h3>
-                        <p>Programe educaționale adaptate vârstei fiecărui copil</p>
-                    </div>
-                </div>
-                <div class="gallery-slide">
-                    <img src="images/maternala2.jpg" alt="Grădina exterioară pentru joacă" loading="lazy">
-                    <div class="gallery-slide-content">
-                        <h3>Grădina de Joacă</h3>
-                        <p>Spațiu exterior sigur pentru activități în aer liber</p>
-                    </div>
-                </div>
-                <div class="gallery-slide">
-                    <img src="images/maternala5.jpg" alt="Eveniment special cu copiii" loading="lazy">
-                    <div class="gallery-slide-content">
-                        <h3>Evenimente Speciale</h3>
-                        <p>Celebrăm împreună momente importante</p>
-                    </div>
-                </div>
+                <?php endfor; ?>
             </div>
             
             <!-- Gallery Navigation -->
             <div class="gallery-slideshow-nav">
-                <button class="gallery-slide-btn active" data-slide="0"></button>
-                <button class="gallery-slide-btn" data-slide="1"></button>
-                <button class="gallery-slide-btn" data-slide="2"></button>
-                <button class="gallery-slide-btn" data-slide="3"></button>
-                <button class="gallery-slide-btn" data-slide="4"></button>
+                <?php for ($i = 0; $i < count($GLOBALS['GALLERY_IMAGES']); $i++): ?>
+                <button class="gallery-slide-btn <?php echo $i === 0 ? 'active' : ''; ?>" data-slide="<?php echo $i; ?>"></button>
+                <?php endfor; ?>
             </div>
             
             <!-- View All Gallery Button -->
@@ -401,41 +345,23 @@ require('file_loader.php');
             <h2 class="section-title fade-in">Povești de Speranță</h2>
             <p class="section-subtitle fade-in">Asculți de la familiile ale căror vieți au fost atinse de serviciile noastre</p>
             <div class="testimonials-slideshow">
-                <div class="testimonial-slide active">
+                <?php for ($i = 0; $i < count($GLOBALS['TESTIMONIALS_QUOTES']); $i++): ?>
+                <div class="testimonial-slide <?php echo $i === 0 ? 'active' : ''; ?>">
                     <div class="testimonial-content">
                         <i class="fas fa-quote-left quote-icon"></i>
-                        <p>"Suntem foarte multumiți, locul in care este mult suflet, grija și străduința. Oameni cu suflet mare și cu Dedicație. Va mulțumim mult."</p>
+                        <p>"<?php echo htmlspecialchars($GLOBALS['TESTIMONIALS_QUOTES'][$i] ?? ''); ?>"</p>
                         <div class="testimonial-author">
-                            <strong>Alina J.</strong>
-                            <span>Părinte</span>
+                            <strong><?php echo htmlspecialchars($GLOBALS['TESTIMONIALS_AUTHORS'][$i] ?? ''); ?></strong>
+                            <span><?php echo htmlspecialchars($GLOBALS['TESTIMONIALS_ROLES'][$i] ?? ''); ?></span>
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left quote-icon"></i>
-                        <p>"Aș vrea vrea să aduc mulțumiri pentru întreg colectiv de la secția de zi, pentru grijă, muncă depusă și răbdare, copilul face succese cu fiecare zi, am frecventat cu drag, vă mulțumim!"</p>
-                        <div class="testimonial-author">
-                            <strong>Natalia B.</strong>
-                            <span>Părinte</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left quote-icon"></i>
-                        <p>"Un centru minunat cu personal calificat și foarte atent. Copilul meu merge acolo cu plăcere. Vă mulțumesc pentru ceea ce faceți."</p>
-                        <div class="testimonial-author">
-                            <strong>Liudmila V.</strong>
-                            <span>Părinte</span>
-                        </div>
-                    </div>
-                </div>
+                <?php endfor; ?>
             </div>
             <div class="testimonials-nav">
-                <button class="testimonial-btn active" data-testimonial="0"></button>
-                <button class="testimonial-btn" data-testimonial="1"></button>
-                <button class="testimonial-btn" data-testimonial="2"></button>
+                <?php for ($i = 0; $i < count($GLOBALS['TESTIMONIALS_QUOTES']); $i++): ?>
+                <button class="testimonial-btn <?php echo $i === 0 ? 'active' : ''; ?>" data-testimonial="<?php echo $i; ?>"></button>
+                <?php endfor; ?>
             </div>
         </div>
     </section>

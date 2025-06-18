@@ -159,10 +159,29 @@ const statsSection = document.querySelector('.stats');
 const statsObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            animateCounter(document.getElementById('stat1'), 1234);
-            animateCounter(document.getElementById('stat2'), 1432);
-            animateCounter(document.getElementById('stat3'), 876);
-            animateCounter(document.getElementById('stat4'), 50);
+            // Get the actual values from the HTML elements instead of hardcoded values
+            const stat1 = document.getElementById('stat1');
+            const stat2 = document.getElementById('stat2');
+            const stat3 = document.getElementById('stat3');
+            const stat4 = document.getElementById('stat4');
+            
+            if (stat1) {
+                const target1 = parseInt(stat1.textContent) || 0;
+                animateCounter(stat1, target1);
+            }
+            if (stat2) {
+                const target2 = parseInt(stat2.textContent) || 0;
+                animateCounter(stat2, target2);
+            }
+            if (stat3) {
+                const target3 = parseInt(stat3.textContent) || 0;
+                animateCounter(stat3, target3);
+            }
+            if (stat4) {
+                const target4 = parseInt(stat4.textContent) || 0;
+                animateCounter(stat4, target4);
+            }
+            
             statsObserver.unobserve(entry.target);
         }
     });

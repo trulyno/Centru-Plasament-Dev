@@ -289,12 +289,54 @@ class ContentManager {
                 break;
                 
             case 'SERVICES_IMAGES':
+            case 'HERO_IMAGES':
+            case 'GALLERY_IMAGES':
                 foreach ($values as $index => $image) {
                     if (!empty(trim($image))) {
                         $imagePath = '../images/' . trim($image);
                         if (!file_exists($imagePath)) {
                             $errors[] = "Imaginea '" . trim($image) . "' nu există";
                         }
+                    }
+                }
+                break;
+                
+            case 'HERO_TITLES':
+            case 'HERO_DESCRIPTIONS':
+            case 'HERO_BUTTONS':
+            case 'GALLERY_TITLES':
+            case 'GALLERY_DESCRIPTIONS':
+            case 'TESTIMONIALS_QUOTES':
+            case 'TESTIMONIALS_AUTHORS':
+            case 'TESTIMONIALS_ROLES':
+                foreach ($values as $index => $value) {
+                    if (empty(trim($value))) {
+                        $errors[] = "Valoarea #" . ($index + 1) . " nu poate fi goală";
+                    }
+                }
+                break;
+                
+            case 'STATS_VALUES':
+                foreach ($values as $index => $value) {
+                    if (!is_numeric(trim($value))) {
+                        $errors[] = "Statistica #" . ($index + 1) . " trebuie să fie un număr";
+                    }
+                }
+                break;
+                
+            case 'ABOUT_TEXT_1':
+            case 'ABOUT_TEXT_2':
+            case 'ABOUT_TEXT_3':
+            case 'ABOUT_TITLE':
+                if (is_array($values)) {
+                    foreach ($values as $value) {
+                        if (empty(trim($value))) {
+                            $errors[] = "Textul despre noi nu poate fi gol";
+                        }
+                    }
+                } else {
+                    if (empty(trim($values))) {
+                        $errors[] = "Textul despre noi nu poate fi gol";
                     }
                 }
                 break;

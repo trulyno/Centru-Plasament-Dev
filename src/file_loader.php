@@ -1,7 +1,14 @@
 <?php
 
 // Define the keywords we're looking for
-$keywords = ['SERVICES', 'SERVICES_NAMES', 'SERVICES_NAMES_SHORT', 'SERVICES_IMAGES', 'SERVICES_DESCRIPTION'];
+$keywords = [
+    'SERVICES', 'SERVICES_NAMES', 'SERVICES_NAMES_SHORT', 'SERVICES_IMAGES', 'SERVICES_DESCRIPTION',
+    'HERO_TITLES', 'HERO_DESCRIPTIONS', 'HERO_BUTTONS', 'HERO_LINKS', 'HERO_IMAGES',
+    'ABOUT_TITLE', 'ABOUT_TEXT_1', 'ABOUT_TEXT_2', 'ABOUT_TEXT_3',
+    'STATS_VALUES', 'STATS_LABELS',
+    'GALLERY_TITLES', 'GALLERY_DESCRIPTIONS', 'GALLERY_IMAGES',
+    'TESTIMONIALS_QUOTES', 'TESTIMONIALS_AUTHORS', 'TESTIMONIALS_ROLES'
+];
 
 // Initialize global arrays
 $GLOBALS['SERVICES'] = array();
@@ -10,7 +17,32 @@ $GLOBALS['SERVICES_NAMES_SHORT'] = array();
 $GLOBALS['SERVICES_IMAGES'] = array();
 $GLOBALS['SERVICES_DESCRIPTION'] = array();
 
+// Homepage data
+$GLOBALS['HERO_TITLES'] = array();
+$GLOBALS['HERO_DESCRIPTIONS'] = array();
+$GLOBALS['HERO_BUTTONS'] = array();
+$GLOBALS['HERO_LINKS'] = array();
+$GLOBALS['HERO_IMAGES'] = array();
+
+$GLOBALS['ABOUT_TITLE'] = array();
+$GLOBALS['ABOUT_TEXT_1'] = array();
+$GLOBALS['ABOUT_TEXT_2'] = array();
+$GLOBALS['ABOUT_TEXT_3'] = array();
+
+$GLOBALS['STATS_VALUES'] = array();
+$GLOBALS['STATS_LABELS'] = array();
+
+$GLOBALS['GALLERY_TITLES'] = array();
+$GLOBALS['GALLERY_DESCRIPTIONS'] = array();
+$GLOBALS['GALLERY_IMAGES'] = array();
+
+$GLOBALS['TESTIMONIALS_QUOTES'] = array();
+$GLOBALS['TESTIMONIALS_AUTHORS'] = array();
+$GLOBALS['TESTIMONIALS_ROLES'] = array();
+
 function readConfigFile($filename) {
+    global $keywords;
+
     // Check if file exists
     if (!file_exists($filename)) {
         die("Error: File '$filename' not found.\n");
@@ -42,7 +74,7 @@ function readConfigFile($filename) {
             $keyword = trim($keyword);
             
             // Check if this is one of our target keywords
-            if (in_array($keyword, $GLOBALS['keywords'] ?? ['SERVICES', 'SERVICES_NAMES', 'SERVICES_NAMES_SHORT', 'SERVICES_IMAGES', 'SERVICES_DESCRIPTION'])) {
+            if (in_array($keyword, $keywords)) {
                 // Split the comma-separated values
                 $valueArray = explode('|', $values);
                 
