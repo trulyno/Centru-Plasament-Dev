@@ -115,7 +115,7 @@ require('file_loader.php');
                             <li><a href="sectia-maternala.html">Secția Maternală</a></li>
                             <li><a href="sectia-de-zi.html">Secția de Zi</a></li>
                              <li><a href="asistenta-psihopedagocica.html">Secția Asistență Psihopedagogică</a></li>
-                            <li><a href="asistenta-medicala.html">Secția Asistență Medicală</a></li>
+                            <!-- <li><a href="asistenta-medicala.html">Secția Asistență Medicală</a></li> -->
                         </ul>
                     </li>
                     <li class="dropdown">
