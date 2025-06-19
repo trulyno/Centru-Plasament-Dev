@@ -409,6 +409,14 @@ require('file_loader.php');
                         <h3>Colegiul "Alexei Mateevici"</h3>
                     </div>
                 </a>
+                <a href="https://usm.md/" target="_blank" class="partner-card fade-in">
+                    <div class="partner-image">
+                        <img src="https://usm.md/wp-content/uploads/Logo_USM-221x300.png" alt="USM" loading="lazy">
+                    </div>
+                    <div class="partner-content">
+                        <h3>Universitatea de Stat din Moldova</h3>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
