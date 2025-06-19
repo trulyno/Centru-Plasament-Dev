@@ -3487,6 +3487,7 @@ html {
     width: 100%;
     display: flex;
     flex-direction: column;
+    image-rendering: auto;
 }
 
 .admin-staff-card:hover {
@@ -3507,6 +3508,9 @@ html {
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease;
+    image-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .admin-staff-card:hover .admin-staff-image img {
