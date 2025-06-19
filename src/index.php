@@ -379,7 +379,7 @@ require('file_loader.php');
                 </a>
                 <a href="https://ms.gov.md//" target="_blank" class="partner-card fade-in">
                     <div class="partner-image">
-                        <img src="https://ms.gov.md/wp-content/uploads/2022/06/ms_site_logo_2.png" alt="MSGOV" loading="lazy">
+                        <img src="https://ms.gov.md/wp-content/uploads/2023/03/ministerul-s%C4%83n%C4%83t%C4%83%C8%9Bii-monocrom.png" alt="MSGOV" loading="lazy">
                     </div>
                     <div class="partner-content">
                         <h3>Ministerul Sănătății al Republicii Moldova</h3>
