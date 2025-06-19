@@ -242,7 +242,7 @@ require('file_loader.php');
     <section class="services" id="services">
         <div class="container" id="main-content">
             <h2 class="section-title fade-in">Serviciile Noastre</h2>
-            <p class="section-subtitle fade-in">Îngrijire cuprinzătoare adaptată nevoilor unice ale fiecărui copil</p>
+            <!-- <p class="section-subtitle fade-in">Îngrijire cuprinzătoare adaptată nevoilor unice ale fiecărui copil</p> -->
             <div class="services-grid">
                 <?php
                 // Loop through each service and display it
