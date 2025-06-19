@@ -115,7 +115,7 @@ require('file_loader.php');
                             <li><a href="sectia-maternala.html">Secția Maternală</a></li>
                             <li><a href="sectia-de-zi.html">Secția de Zi</a></li>
                              <li><a href="asistenta-psihopedagocica.html">Secția Asistență Psihopedagogică</a></li>
-                            <li><a href="asistenta-medicala.html">Secția Asistență Medicală</a></li>
+                            <!-- <li><a href="asistenta-medicala.html">Secția Asistență Medicală</a></li> -->
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -430,36 +430,6 @@ require('file_loader.php');
                 <div class="testimonial-slide active">
                     <div class="testimonial-content">
                         <i class="fas fa-quote-left quote-icon"></i>
-                        <p>"Suntem foarte multumiți, locul in care este mult suflet, grija și străduința. Oameni cu suflet mare și cu Dedicație. Va mulțumim mult."</p>
-                        <div class="testimonial-author">
-                            <strong>Alina J.</strong>
-                            <span>Părinte</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left quote-icon"></i>
-                        <p>"Aș vrea vrea să aduc mulțumiri pentru întreg colectiv de la secția de zi, pentru grijă, muncă depusă și răbdare, copilul face succese cu fiecare zi, am frecventat cu drag, vă mulțumim!"</p>
-                        <div class="testimonial-author">
-                            <strong>Natalia B.</strong>
-                            <span>Părinte</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left quote-icon"></i>
-                        <p>"Un centru minunat cu personal calificat și foarte atent. Copilul meu merge acolo cu plăcere. Vă mulțumesc pentru ceea ce faceți."</p>
-                        <div class="testimonial-author">
-                            <strong>Liudmila V.</strong>
-                            <span>Părinte</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left quote-icon"></i>
                         <p>"Recomand! A fost de mare ajutor copilului, a avut parte de atentie, afectiune si reabilitare nivelul cel mai inalt! Centru Plasament Reabilitare Copii a facut o mare diferenta in progresul copilului! Multumesc tuturor colaboratorilor!"</p>
                         <div class="testimonial-author">
                             <strong>Ecaterina Zgureanu</strong>
@@ -516,9 +486,6 @@ Succese Centru Plasament Reabilitare Copii"</p>
                 <button class="testimonial-btn" data-testimonial="2"></button>
                 <button class="testimonial-btn" data-testimonial="3"></button>
                 <button class="testimonial-btn" data-testimonial="4"></button>
-                <button class="testimonial-btn" data-testimonial="5"></button>
-                <button class="testimonial-btn" data-testimonial="6"></button>
-                <button class="testimonial-btn" data-testimonial="7"></button>
             </div>
         </div>
     </section>
