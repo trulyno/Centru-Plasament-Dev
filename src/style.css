@@ -557,8 +557,8 @@ body {
     color: inherit;
     cursor: pointer;
     flex: 0 0 300px;
-    min-width: 300px;
-    max-width: 350px;
+    min-width: 350px;
+    max-width: 400px;
 }
 
 .service-card:before {
