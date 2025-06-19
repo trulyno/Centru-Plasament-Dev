@@ -369,12 +369,12 @@ require('file_loader.php');
                         <h3>Ministerul Muncii și Protecţiei Sociale</h3>
                     </div>
                 </a>
-                <a href="https://www.unicef.org/moldova/" target="_blank" class="partner-card fade-in">
+                <a href="https://agssi.md/" target="_blank" class="partner-card fade-in">
                     <div class="partner-image">
-                        <img src="https://dgpdc.md/wp-content/uploads/2023/07/DGETS-1.png" alt="UNICEF Moldova" loading="lazy">
+                        <img src="images/logo-mps.webp" alt="AGSSI" loading="lazy">
                     </div>
                     <div class="partner-content">
-                        <h3>UNICEF Moldova</h3>
+                        <h3>Agenția pentru Gestionarea Serviciilor cu Specializare Înaltă</h3>
                     </div>
                 </a>
                 <a href="https://mec.gov.md/" target="_blank" class="partner-card fade-in">
@@ -385,12 +385,20 @@ require('file_loader.php');
                         <h3>Ministerul Educației și Cercetării</h3>
                     </div>
                 </a>
-                <a href="https://agssi.md/" target="_blank" class="partner-card fade-in">
+                <a href="https://www.unicef.org/moldova/" target="_blank" class="partner-card fade-in">
                     <div class="partner-image">
-                        <img src="images/logo-mps.webp" alt="AGSSI" loading="lazy">
+                        <img src="https://dgpdc.md/wp-content/uploads/2023/07/DGETS-1.png" alt="UNICEF Moldova" loading="lazy">
                     </div>
                     <div class="partner-content">
-                        <h3>Agenția pentru Gestionarea Serviciilor cu Specializare Înaltă</h3>
+                        <h3>UNICEF Moldova</h3>
+                    </div>
+                </a>
+                <a href="https://cpam.md/" target="_blank" class="partner-card fade-in">
+                    <div class="partner-image">
+                        <img src="https://cpam.md/wp-content/uploads/2018/06/777-2-1-2-1-1-2.png" alt="CPAM" loading="lazy">
+                    </div>
+                    <div class="partner-content">
+                        <h3>Colegiul "Alexei Mateevici"</h3>
                     </div>
                 </a>
             </div>
