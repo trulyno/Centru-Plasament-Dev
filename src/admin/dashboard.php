@@ -153,9 +153,9 @@ $stats = $contentManager->getStats();
                                     <i class="fas fa-hands-helping"></i>
                                     <span>Gestionează Servicii</span>
                                 </a>
-                                <a href="manage.php?page=galerie" class="action-btn tertiary">
-                                    <i class="fas fa-images"></i>
-                                    <span>Actualizează Galeria</span>
+                                <a href="messages.php" class="action-btn tertiary">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Mesaje Contact</span>
                                 </a>
                                 <a href="backups.php" class="action-btn warning">
                                     <i class="fas fa-database"></i>

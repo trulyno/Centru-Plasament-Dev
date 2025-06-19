@@ -191,20 +191,44 @@ if (statsSection) {
     statsObserver.observe(statsSection);
 }
 
+// Utility functions for form validation
+function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
+function isValidPhone(phone) {
+    const phoneRegex = /^[\+]?[1-9][\d]{0,15}$/;
+    const cleanPhone = phone.replace(/[\s\-\(\)]/g, '');
+    return phoneRegex.test(cleanPhone);
+}
+
 // Contact form handling
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
-    contactForm.addEventListener('submit', event => {
+    contactForm.addEventListener('submit', async function(event) {
         event.preventDefault();
         
         // Simple form validation
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
         const subject = document.getElementById('subject').value;
-        const message = document.getElementById('message').value;
+        const message = document.getElementById('message').value.trim();
         
         if (!name || !email || !subject || !message) {
-            alert('Vă rugăm să completați toate câmpurile obligatorii.');
+            showFormMessage('Vă rugăm să completați toate câmpurile obligatorii.', 'error');
+            return;
+        }
+        
+        // Email validation
+        if (!isValidEmail(email)) {
+            showFormMessage('Vă rugăm să introduceți o adresă de email validă.', 'error');
+            return;
+        }
+        
+        // Message length validation
+        if (message.length < 10) {
+            showFormMessage('Mesajul trebuie să conțină cel puțin 10 caractere.', 'error');
             return;
         }
         
@@ -214,16 +238,59 @@ if (contactForm) {
         submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Se trimite...';
         submitBtn.disabled = true;
         
-        // Simulate form submission with delay
-        setTimeout(() => {
-            alert('Mulțumim pentru mesajul dumneavoastră. Vă vom contacta în cel mult 24 de ore.');
-            this.reset();
+        try {
+            // Submit form using fetch
+            const formData = new FormData(this);
+            const response = await fetch('contact_handler.php', {
+                method: 'POST',
+                body: formData
+            });
             
-            // Reset button state
+            const result = await response.json();
+            
+            if (result.success) {
+                showFormMessage(result.message, 'success');
+                this.reset();
+            } else {
+                showFormMessage(result.message, 'error');
+            }
+        } catch (error) {
+            console.error('Form submission error:', error);
+            showFormMessage('A apărut o eroare la trimiterea mesajului. Vă rugăm să încercați din nou.', 'error');
+        } finally {
+            // Restore button state
             submitBtn.innerHTML = originalText;
             submitBtn.disabled = false;
-        }, 2000);
+        }
     });
+}
+
+// Function to show form messages
+function showFormMessage(message, type) {
+    // Remove any existing message
+    const existingMessage = document.querySelector('.form-message');
+    if (existingMessage) {
+        existingMessage.remove();
+    }
+    
+    // Create new message element
+    const messageEl = document.createElement('div');
+    messageEl.className = `form-message form-message-${type}`;
+    messageEl.innerHTML = `
+        <i class="fas fa-${type === 'success' ? 'check-circle' : 'exclamation-triangle'}"></i>
+        ${message}
+    `;
+    
+    // Insert before form
+    const contactForm = document.getElementById('contactForm');
+    contactForm.parentNode.insertBefore(messageEl, contactForm);
+    
+    // Auto-remove after 5 seconds
+    setTimeout(() => {
+        if (messageEl.parentNode) {
+            messageEl.remove();
+        }
+    }, 5000);
 }
 
 // Add loading animation

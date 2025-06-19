@@ -415,7 +415,7 @@ require('file_loader.php');
                 </div>
                 <div class="contact-form fade-in">
                     <h3 style="margin-bottom: 1.5rem; color: #2c3e50;">Trimite-ne un Mesaj</h3>
-                    <form id="contactForm">
+                    <form id="contactForm" action="contact_handler.php" method="POST">
                         <div class="form-group">
                             <label for="name">Nume Complet *</label>
                             <input type="text" id="name" name="name" required>
@@ -554,6 +554,6 @@ require('file_loader.php');
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=<?php echo filemtime('script.js'); ?>"></script>
 </body>
 </html>

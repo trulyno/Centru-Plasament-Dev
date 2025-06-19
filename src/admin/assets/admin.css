@@ -1329,3 +1329,168 @@ body {
         --admin-text-light: #94a3b8;
     }
 }
+
+/* Messages Management */
+.messages-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.message-item {
+    border: 1px solid var(--admin-border);
+    border-radius: 8px;
+    background: var(--admin-bg);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.message-item:hover {
+    box-shadow: var(--admin-shadow);
+}
+
+.message-item.unread {
+    border-left: 4px solid var(--admin-primary);
+    background: var(--admin-card);
+}
+
+.message-header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    border-bottom: 1px solid var(--admin-border);
+    background: var(--admin-card);
+}
+
+.message-select {
+    flex-shrink: 0;
+}
+
+.message-status {
+    flex-shrink: 0;
+}
+
+.status-badge {
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.status-badge.new {
+    background: var(--admin-primary);
+    color: white;
+}
+
+.status-badge.read {
+    background: var(--admin-success);
+    color: white;
+}
+
+.message-meta {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.message-email {
+    color: var(--admin-text-light);
+    font-size: 0.875rem;
+}
+
+.message-phone {
+    color: var(--admin-text-light);
+    font-size: 0.875rem;
+}
+
+.message-date {
+    flex-shrink: 0;
+    color: var(--admin-text-light);
+    font-size: 0.875rem;
+}
+
+.message-actions {
+    display: flex;
+    gap: 0.5rem;
+    flex-shrink: 0;
+}
+
+.message-subject {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--admin-border);
+    background: var(--admin-bg);
+    font-size: 0.9rem;
+}
+
+.message-content {
+    padding: 1rem;
+}
+
+.message-text {
+    color: var(--admin-text);
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+.message-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border-top: 1px solid var(--admin-border);
+    background: var(--admin-bg);
+}
+
+.message-ip {
+    color: var(--admin-text-light);
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.notification-badge {
+    background: var(--admin-error);
+    color: white;
+    border-radius: 10px;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+
+/* Responsive Messages */
+@media (max-width: 768px) {
+    .message-header {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    
+    .message-meta {
+        order: 3;
+        flex-basis: 100%;
+    }
+    
+    .message-actions {
+        flex-wrap: wrap;
+    }
+    
+    .message-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .contact-actions {
+        align-self: stretch;
+        justify-content: center;
+    }
+}

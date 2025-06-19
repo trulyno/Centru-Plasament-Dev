@@ -316,6 +316,10 @@ if (is_dir($imageDir)) {
                             <span><?php echo $pageItem['name']; ?></span>
                         </a>
                     <?php endforeach; ?>
+                    <a href="messages.php" class="menu-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Mesaje Contact</span>
+                    </a>
                 </div>
                 
                 <div class="menu-section">
