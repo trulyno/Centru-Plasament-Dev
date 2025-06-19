@@ -104,7 +104,7 @@ require('file_loader.php');
             </div>
             <nav>
                 <ul class="nav-menu" id="navMenu">
-                    <li><a href="index.html">Acasă</a></li>
+                    <li><a href="index.php">Acasă</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">Servicii <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
