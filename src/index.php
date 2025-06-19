@@ -232,7 +232,7 @@ require('file_loader.php');
                     &nbsp;<p id="capacity">&nbsp;Centrul are o capacitate maximă de <i>200 de beneficiari</i> și oferă servicii de plasament temporar și de urgență, servicii pentru cupluri mamă-copil, gravide și servicii <i>„Respiro"</i> pentru copii cu dizabilități, toate acestea menite să protejeze copilul și să sprijine familia.</p>  
                 </div>
                 <div class="about-image fade-in">
-                    <i class="fas fa-child"></i>
+                    <img src="images/intrare.jpg" alt="Intrarea în Centrul de Plasament și Reabilitare" loading="lazy">
                 </div>
             </div>
         </div>
