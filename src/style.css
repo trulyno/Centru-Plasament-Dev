@@ -3430,6 +3430,110 @@ html {
     margin: 0;
 }
 
+/* Administration Team Grid Styles */
+.admin-team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin: 3rem 0;
+}
+
+.admin-staff-card {
+    background: var(--bg-primary);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px var(--shadow-medium);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-light);
+    max-width: 100%;
+}
+
+.admin-staff-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px var(--shadow-dark);
+    border-color: var(--primary-color);
+}
+
+.admin-staff-image {
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+}
+
+.admin-staff-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.admin-staff-card:hover .admin-staff-image img {
+    transform: scale(1.05);
+}
+
+.admin-staff-info {
+    padding: 1.8rem;
+    text-align: center;
+    background: var(--bg-primary);
+    border-top: 5px solid var(--primary-color);
+}
+
+.admin-staff-info h3 {
+    color: var(--text-dark);
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.admin-staff-position {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Responsive styles for admin team grid */
+@media (max-width: 992px) {
+    .admin-team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .admin-team-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .admin-staff-image {
+        height: 380px;
+    }
+    
+    .admin-staff-card {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .admin-staff-image {
+        height: 300px;
+    }
+    
+    .admin-staff-info {
+        padding: 1.5rem;
+    }
+    
+    .admin-staff-info h3 {
+        font-size: 1.2rem;
+    }
+    
+    .admin-staff-position {
+        font-size: 1rem;
+    }
+}
+
 /* Responsive Design for Documents */
 @media (max-width: 768px) {
     .documents-grid {
