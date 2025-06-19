@@ -377,6 +377,14 @@ require('file_loader.php');
                         <h3>Agenția pentru Gestionarea Serviciilor cu Specializare Înaltă</h3>
                     </div>
                 </a>
+                <a href="https://ms.gov.md//" target="_blank" class="partner-card fade-in">
+                    <div class="partner-image">
+                        <img src="https://ms.gov.md/wp-content/uploads/2022/06/ms_site_logo_2.png" alt="MSGOV" loading="lazy">
+                    </div>
+                    <div class="partner-content">
+                        <h3>Ministerul Sănătății al Republicii Moldova</h3>
+                    </div>
+                </a>
                 <a href="https://mec.gov.md/" target="_blank" class="partner-card fade-in">
                     <div class="partner-image">
                         <img src="https://dgpdc.md/wp-content/uploads/2023/07/11.png" alt="Ministerul Educatiei și Cercetarii" loading="lazy">
