@@ -1447,7 +1447,7 @@ body {
 .hero-slideshow {
     position: relative;
     height: 100%;
-    min-height: 50vh;
+    min-height: 65vh;   
     width: 100%;
 }
 
