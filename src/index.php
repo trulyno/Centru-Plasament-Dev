@@ -41,7 +41,8 @@ require('file_loader.php');
                 <div class="header-logo">
                     <img src="images/logo.jpeg" alt="Logo Centru Plasament" class="logo-image">
                     <div class="logo-text">
-                        <h1>Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă din municipiul Chișinău</h1>
+                        <h1 class="logo-text-full">Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă din municipiul Chișinău</h1>
+                        <h1 class="logo-text-abbreviated">CPRCVF</h1>
                     </div>
                 </div>
                 
@@ -99,8 +100,20 @@ require('file_loader.php');
         <!-- Navigation Section -->
         <div class="nav-container">
             <div class="logo-mobile">
+                <img src="images/logo.jpeg" alt="Logo CPRCVF" class="logo-mobile-image">
                 <i class="fas fa-heart"></i>
                 <span>CPRCVF</span>
+            </div>
+            <div class="mobile-action-buttons">
+                <button class="donate-btn" aria-label="Donează pentru a sprijini copiii" title="Donează">
+                    <i class="fas fa-heart"></i>
+                </button>
+                <button class="audio-btn" id="audioBtn" aria-label="Imnul instituției" title="Imnul instituției">
+                    <i class="fas fa-music"></i>
+                </button>
+                <button class="lyrics-btn" id="lyricsBtn" aria-label="Afișează versurile" title="Versurile imnului">
+                    <i class="fas fa-align-left"></i>
+                </button>
             </div>
             <nav>
                 <ul class="nav-menu" id="navMenu">

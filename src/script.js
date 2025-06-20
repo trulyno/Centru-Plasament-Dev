@@ -1,9 +1,61 @@
 // Mobile menu functionality
 const mobileMenuBtn = document.getElementById('mobileMenuBtn');
 const navMenu = document.getElementById('navMenu');
+let mobileOverlay = null;
 
+// Create mobile overlay if it doesn't exist
+function createMobileOverlay() {
+    if (!mobileOverlay) {
+        mobileOverlay = document.createElement('div');
+        mobileOverlay.className = 'mobile-overlay';
+        document.body.appendChild(mobileOverlay);
+        
+        // Close menu when overlay is clicked
+        mobileOverlay.addEventListener('click', closeMobileMenu);
+    }
+}
+
+// Open mobile menu
+function openMobileMenu() {
+    createMobileOverlay();
+    navMenu.classList.add('active');
+    mobileOverlay.classList.add('active');
+    document.body.style.overflow = 'hidden'; // Prevent body scroll
+    mobileMenuBtn.innerHTML = '<i class="fas fa-times"></i>';
+}
+
+// Close mobile menu
+function closeMobileMenu() {
+    navMenu.classList.remove('active');
+    if (mobileOverlay) {
+        mobileOverlay.classList.remove('active');
+    }
+    document.body.style.overflow = ''; // Restore body scroll
+    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+    
+    // Close all dropdowns when menu closes
+    document.querySelectorAll('.dropdown').forEach(dropdown => {
+        dropdown.classList.remove('active');
+    });
+    document.querySelectorAll('.dropdown-nested').forEach(nested => {
+        nested.classList.remove('active');
+    });
+}
+
+// Toggle mobile menu
 mobileMenuBtn.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
+    if (navMenu.classList.contains('active')) {
+        closeMobileMenu();
+    } else {
+        openMobileMenu();
+    }
+});
+
+// Close mobile menu on window resize if screen becomes large
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 930 && navMenu.classList.contains('active')) {
+        closeMobileMenu();
+    }
 });
 
 // Header collapse functionality for mobile
@@ -12,7 +64,7 @@ const headerTop = document.getElementById('headerTop');
 
 if (headerExpandBtn && headerTop) {
     // Initially collapse header on mobile
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 930) {
         headerTop.classList.add('collapsed');
     }
     
@@ -34,7 +86,7 @@ if (headerExpandBtn && headerTop) {
     
     // Handle window resize
     window.addEventListener('resize', () => {
-        if (window.innerWidth > 768) {
+        if (window.innerWidth > 930) {
             headerTop.classList.remove('collapsed', 'expanded');
             headerExpandBtn.classList.remove('expanded');
             headerExpandBtn.setAttribute('aria-expanded', 'false');
@@ -56,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             
             // For mobile only
-            if (window.innerWidth <= 768) {
+            if (window.innerWidth <= 930) {
                 const dropdown = this.closest('.dropdown');
                 const isActive = dropdown.classList.contains('active');
                 
@@ -265,6 +317,51 @@ if (slides.length > 0) {
     const heroSection = document.querySelector('.hero');
     heroSection.addEventListener('mouseenter', stopSlideshow);
     heroSection.addEventListener('mouseleave', startSlideshow);
+    
+    // Add touch/swipe support for mobile
+    addHeroTouchSupport();
+}
+
+// Add touch/swipe support for hero slideshow
+function addHeroTouchSupport() {
+    const heroSlideshow = document.querySelector('.hero-slideshow');
+    if (!heroSlideshow) return;
+    
+    let startX = 0;
+    let endX = 0;
+    let startTime = 0;
+    let endTime = 0;
+    
+    heroSlideshow.addEventListener('touchstart', (e) => {
+        startX = e.touches[0].clientX;
+        startTime = Date.now();
+    }, { passive: true });
+    
+    heroSlideshow.addEventListener('touchmove', (e) => {
+        endX = e.touches[0].clientX;
+    }, { passive: true });
+    
+    heroSlideshow.addEventListener('touchend', () => {
+        endTime = Date.now();
+        const threshold = 50; // Minimum swipe distance
+        const timeThreshold = 300; // Maximum swipe time (ms)
+        const distance = startX - endX;
+        const timeElapsed = endTime - startTime;
+        
+        // Only process quick swipes
+        if (Math.abs(distance) > threshold && timeElapsed < timeThreshold) {
+            if (distance > 0) {
+                // Swiped left - next slide
+                nextSlide();
+            } else {
+                // Swiped right - previous slide
+                const prevSlide = currentSlide === 0 ? slides.length - 1 : currentSlide - 1;
+                showSlide(prevSlide);
+            }
+            stopSlideshow();
+            startSlideshow(); // Restart timer
+        }
+    }, { passive: true });
 }
 
 // Programs slideshow functionality
@@ -962,14 +1059,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Header Audio Player Functionality
 document.addEventListener('DOMContentLoaded', function() {
-    const audioBtn = document.getElementById('audioBtn');
+    const audioButtons = document.querySelectorAll('#audioBtn');
     const audioElement = document.getElementById('audioElement');
-    const lyricsBtn = document.getElementById('lyricsBtn');
+    const lyricsButtons = document.querySelectorAll('#lyricsBtn');
     const lyricsModal = document.getElementById('lyricsModal');
-    const lyricsCloseBtn = document.getElementById('lyricsCloseBtn');
+    const lyricsCloseButtons = document.querySelectorAll('#lyricsCloseBtn');
 
     // Return early if elements are not found
-    if (!audioBtn || !audioElement || !lyricsBtn || !lyricsModal || !lyricsCloseBtn) {
+    if (audioButtons.length === 0 || !audioElement || lyricsButtons.length === 0 || !lyricsModal || lyricsCloseButtons.length === 0) {
         console.log('Audio player elements not found');
         return;
     }
@@ -980,40 +1077,56 @@ document.addEventListener('DOMContentLoaded', function() {
     // Set initial volume
     audioElement.volume = 0.7;
 
-    // Play/Pause functionality for header audio button
-    audioBtn.addEventListener('click', function() {
-        if (isPlaying) {
-            audioElement.pause();
-            audioBtn.innerHTML = '<i class="fas fa-music"></i><span>Imn</span>';
-        } else {
-            audioElement.play();
-            audioBtn.innerHTML = '<i class="fas fa-pause"></i><span>Imn</span>';
-        }
+    // Function to update all audio buttons
+    function updateAudioButtons(playing) {
+        audioButtons.forEach(btn => {
+            if (playing) {
+                btn.innerHTML = '<i class="fas fa-pause"></i><span>Imn</span>';
+            } else {
+                btn.innerHTML = '<i class="fas fa-music"></i><span>Imn</span>';
+            }
+        });
+    }
+
+    // Add event listeners to all audio buttons
+    audioButtons.forEach(audioBtn => {
+        audioBtn.addEventListener('click', function() {
+            if (isPlaying) {
+                audioElement.pause();
+            } else {
+                audioElement.play();
+            }
+        });
     });
 
     // Update button state based on audio events
     audioElement.addEventListener('play', function() {
         isPlaying = true;
-        audioBtn.innerHTML = '<i class="fas fa-pause"></i><span>Imn</span>';
+        updateAudioButtons(true);
     });
 
     audioElement.addEventListener('pause', function() {
         isPlaying = false;
-        audioBtn.innerHTML = '<i class="fas fa-music"></i><span>Imn</span>';
+        updateAudioButtons(false);
     });
 
     audioElement.addEventListener('ended', function() {
         isPlaying = false;
-        audioBtn.innerHTML = '<i class="fas fa-music"></i><span>Imn</span>';
+        updateAudioButtons(false);
     });
 
-    // Lyrics modal functionality
-    lyricsBtn.addEventListener('click', function() {
-        lyricsModal.classList.add('active');
-        document.body.style.overflow = 'hidden';
+    // Add event listeners to all lyrics buttons
+    lyricsButtons.forEach(lyricsBtn => {
+        lyricsBtn.addEventListener('click', function() {
+            lyricsModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
     });
 
-    lyricsCloseBtn.addEventListener('click', closeLyricsModal);
+    // Add event listeners to all lyrics close buttons
+    lyricsCloseButtons.forEach(lyricsCloseBtn => {
+        lyricsCloseBtn.addEventListener('click', closeLyricsModal);
+    });
 
     lyricsModal.addEventListener('click', function(e) {
         if (e.target === lyricsModal) {
