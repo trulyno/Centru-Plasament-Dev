@@ -443,7 +443,7 @@ require('file_loader.php');
                 <div class="testimonial-slide active">
                     <div class="testimonial-content">
                         <i class="fas fa-quote-left quote-icon"></i>
-                        <p>"Recomand! A fost de mare ajutor copilului, a avut parte de atentie, afectiune si reabilitare nivelul cel mai inalt! Centru Plasament Reabilitare Copii a facut o mare diferenta in progresul copilului! Multumesc tuturor colaboratorilor!"</p>
+                        <p>"Recomand! A fost de mare ajutor copilului, a avut parte de atenție, afecțiune și reabilitare nivelul cel mai înalt! Centru Plasament Reabilitare Copii a făcut o mare diferența în progresul copilului! Mulțumesc tuturor colaboratorilor!"</p>
                         <div class="testimonial-author">
                             <strong>Ecaterina Zgureanu</strong>
                             <span>Părinte</span>
@@ -453,7 +453,7 @@ require('file_loader.php');
                 <div class="testimonial-slide">
                     <div class="testimonial-content">
                         <i class="fas fa-quote-left quote-icon"></i>
-                        <p>"Intradevar un personal extraordinar doamne cu suflet mare,VA multumim frumos ca sinteti Asa de bravooo."</p>
+                        <p>"Întradevăr un personal extraordinar doamne cu suflet mare! Vă mulțumim frumos că sunteți așa de bravo!"</p>
                         <div class="testimonial-author">
                             <strong>Svetlana Pădure</strong>
                             <span>Părinte</span>
@@ -473,7 +473,7 @@ require('file_loader.php');
                 <div class="testimonial-slide">
                     <div class="testimonial-content">
                         <i class="fas fa-quote-left quote-icon"></i>
-                        <p>"Sunt foarte multumita de acest Centru.Acolo activeaza oameni cu suflet mare si plin de dragoste fata de toti copilasii. Recomand cu incredere. Sanatate si putere tuturor!!!"</p>
+                        <p>"Sunt foarte mulțumită de acest Centru. Acolo activează oameni cu suflet mare și plin de dragoste față de toți copilașii. Recomand cu încredere. Sănătate și putere tuturor!!!"</p>
                         <div class="testimonial-author">
                             <strong>Elena Bulat</strong>
                             <span>Părinte</span>
@@ -483,8 +483,7 @@ require('file_loader.php');
                 <div class="testimonial-slide">
                     <div class="testimonial-content">
                         <i class="fas fa-quote-left quote-icon"></i>
-                        <p>"La fel și eu am să le mulțumesc, băiețelul meu la moment este internat acolo, niște Doamne tare bravo înţelegătoare mulțumim îndeosebi Corina Vozian Violeta Timirgaz suntem a 3 oară internați și desigur doar cuvinte de laudă și mulțumiri...
-Succese Centru Plasament Reabilitare Copii"</p>
+                        <p>"La fel, și eu vreau să le mulțumesc. Băiețelul meu este, în acest moment, internat acolo. Sunt niște doamne extraordinare și foarte înțelegătoare. Mulțumim în mod special doamnei Corina Vozian și doamnei Violeta Timirgaz. Suntem internați pentru a treia oară și, desigur, avem doar cuvinte de laudă și recunoștință. Succes, Centrului de Plasament și Reabilitare pentru Copii!"</p>
                         <div class="testimonial-author">
                             <strong>Mariana Cebotari</strong>
                             <span>Părinte</span>
