@@ -3527,7 +3527,7 @@ html {
 
 .document-icon i {
     font-size: 2rem;
-    color: var(--primary-color);
+    color: var(--text-white);
 }
 
 .document-content h3 {
@@ -4261,5 +4261,307 @@ html {
     
     .content-wrapper {
         padding: 1.5rem 1rem;
+    }
+}
+
+
+/* Documents Section Styling */
+.documents-section {
+    margin: 3rem 0;
+    padding: 2rem 0;
+    background: var(--bg-secondary);
+    border-radius: 15px;
+}
+
+.documents-section h2 {
+    color: var(--text-dark);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.documents-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 2px;
+}
+
+.documents-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+    padding: 0 2rem;
+}
+
+.document-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+    padding: 1.8rem;
+    background: var(--bg-primary);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px var(--shadow-light);
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.document-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, var(--primary-transparent), var(--secondary-transparent));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.document-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px var(--shadow-medium);
+    border-left-color: var(--primary-color);
+}
+
+.document-item:hover::before {
+    opacity: 1;
+}
+
+.document-icon {
+    flex-shrink: 0;
+    width: 55px;
+    height: 55px;
+    background: var(--primary-color);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.4rem;
+    box-shadow: 0 4px 12px var(--shadow-primary);
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.document-item:hover .document-icon {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 6px 18px var(--shadow-primary);
+}
+
+.document-content {
+    flex: 1;
+    position: relative;
+    z-index: 2;
+}
+
+.document-content h5 {
+    color: var(--text-dark);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    line-height: 1.3;
+    transition: color 0.3s ease;
+}
+
+.document-item:hover .document-content h5 {
+    color: var(--primary-color);
+}
+
+.document-content p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.document-item:hover .document-content p {
+    color: var(--text-primary);
+}
+
+/* Different colors for different document types */
+.document-item:nth-child(7n+1) .document-icon {
+    background: var(--primary-color);
+}
+
+.document-item:nth-child(7n+2) .document-icon {
+    background: var(--primary-color);
+}
+
+.document-item:nth-child(7n+3) .document-icon {
+    background: var(--primary-color);
+}
+
+.document-item:nth-child(7n+4) .document-icon {
+    background: var(--primary-color);
+}
+
+.document-item:nth-child(7n+5) .document-icon {
+    background: var(--primary-color);
+}
+
+.document-item:nth-child(7n+6) .document-icon {
+    background: var(--primary-color);
+}
+
+.document-item:nth-child(7n+7) .document-icon {
+    background: var(--primary-color);
+}
+
+/* Animation for icons */
+.document-icon i {
+    transition: transform 0.3s ease;
+}
+
+.document-item:hover .document-icon i {
+    transform: scale(1.1);
+}
+
+/* Responsive design for documents section */
+@media (max-width: 930px) {
+    .documents-list {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.2rem;
+        padding: 0 1rem;
+    }
+    
+    .document-item {
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+    
+    .document-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    .document-content h5 {
+        font-size: 1.1rem;
+    }
+    
+    .document-content p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .documents-section {
+        margin: 2rem 0;
+    }
+    
+    .documents-list {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0;
+    }
+    
+    .document-item {
+        padding: 1.2rem;
+        margin: 0 0.5rem;
+    }
+    
+    .documents-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Intro text for documents section */
+.documents-intro {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* Documents Note Section */
+.documents-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin: 2.5rem 2rem 0;
+    padding: 1.5rem;
+    background: var(--bg-primary);
+    border-radius: 12px;
+    border-left: 4px solid var(--info-color);
+    box-shadow: 0 3px 10px var(--shadow-light);
+}
+
+.note-icon {
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+    background: var(--info-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.note-content h4 {
+    color: var(--text-dark);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.note-content p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 930px) {
+    .documents-note {
+        margin: 2rem 1rem 0;
+        padding: 1.2rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .note-icon {
+        align-self: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .documents-intro {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .documents-note {
+        margin: 1.5rem 0.5rem 0;
+        padding: 1rem;
+    }
+    
+    .note-content h4 {
+        font-size: 1rem;
+    }
+    
+    .note-content p {
+        font-size: 0.9rem;
     }
 }
