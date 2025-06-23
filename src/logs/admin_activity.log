@@ -1,2 +1,19 @@
 {"timestamp":1750311803,"user":"admin","description":"User logged out","icon":"fa-sign-out-alt","ip":"192.168.65.1"}
 {"timestamp":1750312389,"user":"admin","description":"User logged out","icon":"fa-sign-out-alt","ip":"192.168.65.1"}
+{"timestamp":1750661761,"user":"admin","description":"Backup created: config_2025-06-23_06-56-01.txt","icon":"fa-database","ip":"192.168.65.1"}
+{"timestamp":1750661761,"user":"admin","description":"Configuration updated","icon":"fa-save","ip":"192.168.65.1"}
+{"timestamp":1750661761,"user":"admin","description":"Backup created: config_2025-06-23_06-56-01.txt","icon":"fa-database","ip":"192.168.65.1"}
+{"timestamp":1750661761,"user":"admin","description":"Configuration updated","icon":"fa-save","ip":"192.168.65.1"}
+{"timestamp":1750661761,"user":"admin","description":"Backup created: config_2025-06-23_06-56-01.txt","icon":"fa-database","ip":"192.168.65.1"}
+{"timestamp":1750661761,"user":"admin","description":"Configuration updated","icon":"fa-save","ip":"192.168.65.1"}
+{"timestamp":1750661761,"user":"admin","description":"Backup created: config_2025-06-23_06-56-01.txt","icon":"fa-database","ip":"192.168.65.1"}
+{"timestamp":1750661761,"user":"admin","description":"Configuration updated","icon":"fa-save","ip":"192.168.65.1"}
+{"timestamp":1750661780,"user":"admin","description":"Configuration restored from: config_2025-06-23_06-56-01.txt","icon":"fa-undo","ip":"192.168.65.1"}
+{"timestamp":1750661815,"user":"admin","description":"Backup created: config_2025-06-23_06-56-55.txt","icon":"fa-database","ip":"192.168.65.1"}
+{"timestamp":1750661815,"user":"admin","description":"Configuration updated","icon":"fa-save","ip":"192.168.65.1"}
+{"timestamp":1750661815,"user":"admin","description":"Backup created: config_2025-06-23_06-56-55.txt","icon":"fa-database","ip":"192.168.65.1"}
+{"timestamp":1750661815,"user":"admin","description":"Configuration updated","icon":"fa-save","ip":"192.168.65.1"}
+{"timestamp":1750661815,"user":"admin","description":"Backup created: config_2025-06-23_06-56-55.txt","icon":"fa-database","ip":"192.168.65.1"}
+{"timestamp":1750661815,"user":"admin","description":"Configuration updated","icon":"fa-save","ip":"192.168.65.1"}
+{"timestamp":1750661815,"user":"admin","description":"Backup created: config_2025-06-23_06-56-55.txt","icon":"fa-database","ip":"192.168.65.1"}
+{"timestamp":1750661815,"user":"admin","description":"Configuration updated","icon":"fa-save","ip":"192.168.65.1"}

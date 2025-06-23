@@ -65,7 +65,7 @@ $ADMIN_PAGES = [
     ],
     'galerie' => [
         'name' => 'Galerie',
-        'file' => 'galerie.html',
+        'file' => 'galerie.php',
         'icon' => 'fa-images',
         'sections' => ['photos', 'videos', 'events']
     ]

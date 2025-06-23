@@ -228,6 +228,98 @@ if ($_POST) {
                 }
             }
             break;
+            
+        case 'update_full_gallery':
+            $fullGalleryTitles = $_POST['full_gallery_titles'] ?? [];
+            $fullGalleryDescriptions = $_POST['full_gallery_descriptions'] ?? [];
+            $fullGalleryImages = $_POST['full_gallery_images'] ?? [];
+            $fullGalleryCategories = $_POST['full_gallery_categories'] ?? [];
+            
+            $errors = [];
+            $errors = array_merge($errors, $contentManager->validateData('FULL_GALLERY_TITLES', $fullGalleryTitles));
+            $errors = array_merge($errors, $contentManager->validateData('FULL_GALLERY_DESCRIPTIONS', $fullGalleryDescriptions));
+            $errors = array_merge($errors, $contentManager->validateData('FULL_GALLERY_IMAGES', $fullGalleryImages));
+            $errors = array_merge($errors, $contentManager->validateData('FULL_GALLERY_CATEGORIES', $fullGalleryCategories));
+            
+            if (empty($errors)) {
+                $success = $contentManager->updateData('FULL_GALLERY_TITLES', $fullGalleryTitles) &&
+                          $contentManager->updateData('FULL_GALLERY_DESCRIPTIONS', $fullGalleryDescriptions) &&
+                          $contentManager->updateData('FULL_GALLERY_IMAGES', $fullGalleryImages) &&
+                          $contentManager->updateData('FULL_GALLERY_CATEGORIES', $fullGalleryCategories);
+                
+                if ($success) {
+                    $success = 'Galeria completă a fost actualizată cu succes!';
+                } else {
+                    $error = 'Eroare la salvarea galeriei complete.';
+                }
+            } else {
+                $error = implode('<br>', $errors);
+            }
+            break;
+            
+        case 'add_full_gallery_item':
+            $newTitle = $_POST['new_title'] ?? '';
+            $newDescription = $_POST['new_description'] ?? '';
+            $newImage = $_POST['new_image'] ?? '';
+            $newCategory = $_POST['new_category'] ?? '';
+            
+            if (!empty($newTitle) && !empty($newImage)) {
+                $success = $contentManager->addItem('FULL_GALLERY_TITLES', $newTitle) &&
+                          $contentManager->addItem('FULL_GALLERY_DESCRIPTIONS', $newDescription) &&
+                          $contentManager->addItem('FULL_GALLERY_IMAGES', $newImage) &&
+                          $contentManager->addItem('FULL_GALLERY_CATEGORIES', $newCategory);
+                
+                if ($success) {
+                    $success = 'Imaginea a fost adăugată cu succes în galerie!';
+                } else {
+                    $error = 'Eroare la adăugarea imaginii în galerie.';
+                }
+            } else {
+                $error = 'Titlul și imaginea sunt obligatorii.';
+            }
+            break;
+            
+        case 'delete_full_gallery_item':
+            $index = intval($_POST['index'] ?? -1);
+            if ($index >= 0) {
+                $success = $contentManager->removeItem('FULL_GALLERY_TITLES', $index) &&
+                          $contentManager->removeItem('FULL_GALLERY_DESCRIPTIONS', $index) &&
+                          $contentManager->removeItem('FULL_GALLERY_IMAGES', $index) &&
+                          $contentManager->removeItem('FULL_GALLERY_CATEGORIES', $index);
+                
+                if ($success) {
+                    $success = 'Imaginea a fost ștearsă cu succes din galerie!';
+                } else {
+                    $error = 'Eroare la ștergerea imaginii din galerie.';
+                }
+            }
+            break;
+            
+        case 'upload_gallery_image':
+            if (isset($_FILES['gallery_image'])) {
+                $uploadResult = $contentManager->uploadImage($_FILES['gallery_image']);
+                if ($uploadResult['success']) {
+                    $success = 'Imaginea a fost încărcată cu succes: ' . $uploadResult['filename'];
+                } else {
+                    $error = $uploadResult['error'];
+                }
+            } else {
+                $error = 'Nu a fost selectat niciun fișier pentru încărcare.';
+            }
+            break;
+            
+        case 'delete_gallery_image':
+            $imageToDelete = $_POST['image_filename'] ?? '';
+            if (!empty($imageToDelete)) {
+                if ($contentManager->deleteImage($imageToDelete)) {
+                    $success = 'Imaginea a fost ștearsă cu succes.';
+                } else {
+                    $error = 'Eroare la ștergerea imaginii.';
+                }
+            } else {
+                $error = 'Numele fișierului lipsește.';
+            }
+            break;
     }
 }
 
@@ -261,6 +353,12 @@ if ($page === 'services') {
     $testimonialQuotes = $contentManager->getData('TESTIMONIALS_QUOTES');
     $testimonialAuthors = $contentManager->getData('TESTIMONIALS_AUTHORS');
     $testimonialRoles = $contentManager->getData('TESTIMONIALS_ROLES');
+} elseif ($page === 'galerie') {
+    // Full gallery data
+    $fullGalleryTitles = $contentManager->getData('FULL_GALLERY_TITLES');
+    $fullGalleryDescriptions = $contentManager->getData('FULL_GALLERY_DESCRIPTIONS');
+    $fullGalleryImages = $contentManager->getData('FULL_GALLERY_IMAGES');
+    $fullGalleryCategories = $contentManager->getData('FULL_GALLERY_CATEGORIES');
 }
 
 // Get available images
@@ -776,6 +874,201 @@ if (is_dir($imageDir)) {
                         </form>
                     </div>
                     
+                <?php elseif ($page === 'galerie'): ?>
+                    <!-- Gallery Management -->
+                    <div class="content-card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-images"></i> Gestionare Galerie Completă</h3>
+                            <div class="header-actions">
+                                <button class="btn btn-primary" onclick="toggleAddGalleryItem()">
+                                    <i class="fas fa-plus"></i>
+                                    Adaugă Imagine
+                                </button>
+                                <button class="btn btn-success" onclick="toggleUploadGalleryImage()">
+                                    <i class="fas fa-upload"></i>
+                                    Încarcă Imagine
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Upload New Image Form -->
+                        <div id="uploadGalleryImageForm" class="add-form" style="display: none;">
+                            <form method="POST" enctype="multipart/form-data">
+                                <input type="hidden" name="action" value="upload_gallery_image">
+                                <div class="form-group">
+                                    <label>Selectează Imaginea</label>
+                                    <input type="file" name="gallery_image" accept="image/*" required>
+                                    <small>Formate acceptate: JPG, JPEG, PNG, GIF, WEBP (max 5MB)</small>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn btn-success">
+                                        <i class="fas fa-upload"></i>
+                                        Încarcă
+                                    </button>
+                                    <button type="button" class="btn btn-secondary" onclick="toggleUploadGalleryImage()">
+                                        <i class="fas fa-times"></i>
+                                        Anulează
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <!-- Add New Gallery Item Form -->
+                        <div id="addGalleryItemForm" class="add-form" style="display: none;">
+                            <form method="POST">
+                                <input type="hidden" name="action" value="add_full_gallery_item">
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label>Titlu Imagine</label>
+                                        <input type="text" name="new_title" placeholder="ex: Activități de Grup" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Imagine</label>
+                                        <select name="new_image" required>
+                                            <option value="">Selectează imagine...</option>
+                                            <?php foreach ($availableImages as $image): ?>
+                                                <option value="<?php echo htmlspecialchars($image); ?>">
+                                                    <?php echo htmlspecialchars($image); ?>
+                                                </option>
+                                            <?php endforeach; ?>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Categorie</label>
+                                        <select name="new_category" required>
+                                            <option value="">Selectează categoria...</option>
+                                            <option value="activities">Activități</option>
+                                            <option value="spaces">Spații</option>
+                                            <option value="therapy">Terapie</option>
+                                            <option value="events">Evenimente</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Descriere</label>
+                                    <textarea name="new_description" rows="3" placeholder="Descrierea imaginii..."></textarea>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="fas fa-save"></i>
+                                        Adaugă în Galerie
+                                    </button>
+                                    <button type="button" class="btn btn-secondary" onclick="toggleAddGalleryItem()">
+                                        <i class="fas fa-times"></i>
+                                        Anulează
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <!-- Gallery Items List -->
+                        <form method="POST" class="gallery-form">
+                            <input type="hidden" name="action" value="update_full_gallery">
+                            
+                            <div class="gallery-items-list">
+                                <?php if (empty($fullGalleryTitles)): ?>
+                                    <div class="empty-state">
+                                        <i class="fas fa-images"></i>
+                                        <h4>Galeria este goală</h4>
+                                        <p>Începe prin adăugarea primei imagini în galerie folosind butoanele de mai sus.</p>
+                                    </div>
+                                <?php else: ?>
+                                    <?php for ($i = 0; $i < count($fullGalleryTitles); $i++): ?>
+                                        <div class="gallery-item-card">
+                                            <div class="gallery-item-header">
+                                                <h4>Imagine #<?php echo $i + 1; ?></h4>
+                                                <button type="button" class="btn btn-danger btn-sm" onclick="deleteGalleryItem(<?php echo $i; ?>)">
+                                                    <i class="fas fa-trash"></i>
+                                                    Șterge
+                                                </button>
+                                            </div>
+                                            
+                                            <div class="gallery-item-content">
+                                                <div class="image-preview-section">
+                                                    <?php if (!empty($fullGalleryImages[$i])): ?>
+                                                        <div class="image-preview">
+                                                            <img src="../images/<?php echo htmlspecialchars($fullGalleryImages[$i]); ?>" 
+                                                                 alt="Preview" style="max-width: 150px; max-height: 150px; object-fit: cover; border-radius: 8px;">
+                                                        </div>
+                                                    <?php endif; ?>
+                                                </div>
+                                                
+                                                <div class="form-section">
+                                                    <div class="form-grid">
+                                                        <div class="form-group">
+                                                            <label>Titlu</label>
+                                                            <input type="text" name="full_gallery_titles[]" 
+                                                                   value="<?php echo htmlspecialchars($fullGalleryTitles[$i] ?? ''); ?>" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Imagine</label>
+                                                            <select name="full_gallery_images[]" required>
+                                                                <option value="">Selectează imagine...</option>
+                                                                <?php foreach ($availableImages as $image): ?>
+                                                                    <option value="<?php echo htmlspecialchars($image); ?>" 
+                                                                            <?php echo ($fullGalleryImages[$i] ?? '') === $image ? 'selected' : ''; ?>>
+                                                                        <?php echo htmlspecialchars($image); ?>
+                                                                    </option>
+                                                                <?php endforeach; ?>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Categorie</label>
+                                                            <select name="full_gallery_categories[]" required>
+                                                                <option value="">Selectează categoria...</option>
+                                                                <option value="activities" <?php echo ($fullGalleryCategories[$i] ?? '') === 'activities' ? 'selected' : ''; ?>>Activități</option>
+                                                                <option value="spaces" <?php echo ($fullGalleryCategories[$i] ?? '') === 'spaces' ? 'selected' : ''; ?>>Spații</option>
+                                                                <option value="therapy" <?php echo ($fullGalleryCategories[$i] ?? '') === 'therapy' ? 'selected' : ''; ?>>Terapie</option>
+                                                                <option value="events" <?php echo ($fullGalleryCategories[$i] ?? '') === 'events' ? 'selected' : ''; ?>>Evenimente</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Descriere</label>
+                                                        <textarea name="full_gallery_descriptions[]" rows="3"><?php echo htmlspecialchars($fullGalleryDescriptions[$i] ?? ''); ?></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <?php endfor; ?>
+                                <?php endif; ?>
+                            </div>
+                            
+                            <?php if (!empty($fullGalleryTitles)): ?>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="fas fa-save"></i>
+                                        Salvează Modificările
+                                    </button>
+                                    <button type="button" class="btn btn-secondary" onclick="createBackup()">
+                                        <i class="fas fa-database"></i>
+                                        Creează Backup
+                                    </button>
+                                </div>
+                            <?php endif; ?>
+                        </form>
+                        
+                        <!-- Available Images Management -->
+                        <div class="available-images-section">
+                            <h4><i class="fas fa-folder-open"></i> Imagini Disponibile (<?php echo count($availableImages); ?>)</h4>
+                            <div class="images-grid">
+                                <?php foreach ($availableImages as $image): ?>
+                                    <div class="image-item">
+                                        <img src="../images/<?php echo htmlspecialchars($image); ?>" 
+                                             alt="<?php echo htmlspecialchars($image); ?>" 
+                                             style="width: 100px; height: 100px; object-fit: cover; border-radius: 8px;">
+                                        <div class="image-info">
+                                            <span class="image-name"><?php echo htmlspecialchars($image); ?></span>
+                                            <button type="button" class="btn btn-danger btn-xs" onclick="deleteImage('<?php echo htmlspecialchars($image); ?>')">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                <?php endforeach; ?>
+                            </div>
+                        </div>
+                    </div>
+                    
                 <?php else: ?>
                     <!-- Other Pages Management -->
                     <div class="content-card">
@@ -1021,6 +1314,47 @@ if (is_dir($imageDir)) {
             updateDeleteButtons();
             updateHeroDeleteButtons();
         });
+        
+        // Gallery management functions
+        function toggleUploadGalleryImage() {
+            const form = document.getElementById('uploadGalleryImageForm');
+            if (form) {
+                form.style.display = form.style.display === 'none' ? 'block' : 'none';
+            }
+        }
+        
+        function toggleAddGalleryItem() {
+            const form = document.getElementById('addGalleryItemForm');
+            if (form) {
+                form.style.display = form.style.display === 'none' ? 'block' : 'none';
+            }
+        }
+        
+        function deleteGalleryItem(index) {
+            if (confirm('Ești sigur că vrei să ștergi această imagine din galerie? Această acțiune nu poate fi anulată.')) {
+                const form = document.createElement('form');
+                form.method = 'POST';
+                form.innerHTML = `
+                    <input type="hidden" name="action" value="delete_full_gallery_item">
+                    <input type="hidden" name="index" value="${index}">
+                `;
+                document.body.appendChild(form);
+                form.submit();
+            }
+        }
+        
+        function deleteImage(filename) {
+            if (confirm('Ești sigur că vrei să ștergi această imagine? Această acțiune nu poate fi anulată și imaginea va fi eliminată din toate galeriile.')) {
+                const form = document.createElement('form');
+                form.method = 'POST';
+                form.innerHTML = `
+                    <input type="hidden" name="action" value="delete_gallery_image">
+                    <input type="hidden" name="image_filename" value="${filename}">
+                `;
+                document.body.appendChild(form);
+                form.submit();
+            }
+        }
     </script>
 </body>
 </html>

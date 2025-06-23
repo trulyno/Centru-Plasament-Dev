@@ -159,7 +159,7 @@ require('file_loader.php');
                             <li><a href="intrebari-frecvente.html">Întrebări Frecvente</a></li>
                         </ul>
                     </li>
-                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="galerie.php">Galerie</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="#partners">Parteneri</a></li>
                 </ul>
@@ -289,7 +289,7 @@ require('file_loader.php');
             
             <!-- View All Gallery Button -->
             <div class="gallery-cta fade-in">
-                <a href="galerie.html" class="gallery-view-all-btn">
+                <a href="galerie.php" class="gallery-view-all-btn">
                     <i class="fas fa-images"></i>
                     Vezi Galeria Completă
                 </a>

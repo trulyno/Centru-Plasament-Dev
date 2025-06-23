@@ -1,13 +1,17 @@
+<?php
+// Load configuration
+require_once 'file_loader.php';
+?>
 <!DOCTYPE html>
 <html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Organigrama Centrului de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă din Chișinău.">
-    <meta name="keywords" content="organigramă, structură organizațională, ierarhie">
+    <meta name="description" content="Galeria foto cu activitățile și spațiile Centrului de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă din Chișinău.">
+    <meta name="keywords" content="galerie foto, activități copii, spații centru plasament">
     <meta name="author" content="Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă">
     
-    <title>Organigrama - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă</title>
+    <title>Galerie - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
@@ -163,20 +167,74 @@
     <main class="main-content" id="main-content">
         <section class="page-header">
             <div class="container">
-                <h1>Organigrama</h1>
-                <p>Structura organizațională a centrului</p>
+                <h1>Galeria Noastră</h1>
+                <p>Imagini din activitățile zilnice și spațiile dedicate copiilor</p>
             </div>
         </section>
 
         <section class="content-section">
             <div class="container">
-                <div class="content-wrapper">
-                    <h2>Achiziții</h2>
-                    <p>Conținutul acestei pagini va fi completat în curând.</p>
+                <div class="gallery">
+                    <div class="gallery-categories">
+                        <button class="filter-btn active" data-filter="all">Toate</button>
+                        <button class="filter-btn" data-filter="activities">Activități</button>
+                        <button class="filter-btn" data-filter="spaces">Spații</button>
+                        <button class="filter-btn" data-filter="therapy">Terapie</button>
+                        <button class="filter-btn" data-filter="events">Evenimente</button>
+                    </div>
+
+                    <div class="gallery-grid">
+                        <?php 
+                        $fullGalleryTitles = $GLOBALS['FULL_GALLERY_TITLES'] ?? [];
+                        $fullGalleryDescriptions = $GLOBALS['FULL_GALLERY_DESCRIPTIONS'] ?? [];
+                        $fullGalleryImages = $GLOBALS['FULL_GALLERY_IMAGES'] ?? [];
+                        $fullGalleryCategories = $GLOBALS['FULL_GALLERY_CATEGORIES'] ?? [];
+                        
+                        for ($i = 0; $i < count($fullGalleryTitles); $i++): 
+                            $title = htmlspecialchars($fullGalleryTitles[$i]);
+                            $description = htmlspecialchars($fullGalleryDescriptions[$i] ?? '');
+                            $image = htmlspecialchars($fullGalleryImages[$i]);
+                            $category = htmlspecialchars($fullGalleryCategories[$i] ?? 'activities');
+                        ?>
+                        <div class="gallery-item" data-category="<?php echo $category; ?>">
+                            <img src="images/<?php echo $image; ?>" alt="<?php echo $title; ?>" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3><?php echo $title; ?></h3>
+                                <p><?php echo $description; ?></p>
+                                <div class="overlay-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <?php endfor; ?>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- Gallery Modal -->
+    <div class="gallery-modal" id="galleryModal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Închide galeria">
+                <i class="fas fa-times"></i>
+            </button>
+            <button class="modal-nav modal-prev" id="modalPrev" aria-label="Imagine precedentă">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="modal-nav modal-next" id="modalNext" aria-label="Imagine următoare">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="modal-image-container">
+                <img id="modalImage" src="" alt="" loading="lazy">
+            </div>
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+    </div>
 
     <!-- Audio Element -->
     <audio id="audioElement" preload="metadata">

@@ -291,6 +291,7 @@ class ContentManager {
             case 'SERVICES_IMAGES':
             case 'HERO_IMAGES':
             case 'GALLERY_IMAGES':
+            case 'FULL_GALLERY_IMAGES':
                 foreach ($values as $index => $image) {
                     if (!empty(trim($image))) {
                         $imagePath = '../images/' . trim($image);
@@ -306,6 +307,9 @@ class ContentManager {
             case 'HERO_BUTTONS':
             case 'GALLERY_TITLES':
             case 'GALLERY_DESCRIPTIONS':
+            case 'FULL_GALLERY_TITLES':
+            case 'FULL_GALLERY_DESCRIPTIONS':
+            case 'FULL_GALLERY_CATEGORIES':
             case 'TESTIMONIALS_QUOTES':
             case 'TESTIMONIALS_AUTHORS':
             case 'TESTIMONIALS_ROLES':
@@ -343,6 +347,99 @@ class ContentManager {
         }
         
         return $errors;
+    }
+    
+    public function uploadImage($file) {
+        $uploadDir = '../images/';
+        $allowedTypes = ['image/jpeg', 'image/jpg', 'image/png', 'image/gif', 'image/webp'];
+        $maxSize = 5 * 1024 * 1024; // 5MB
+        
+        // Check if upload directory exists
+        if (!is_dir($uploadDir)) {
+            mkdir($uploadDir, 0755, true);
+        }
+        
+        // Validate file
+        if (!isset($file['tmp_name']) || !is_uploaded_file($file['tmp_name'])) {
+            return ['success' => false, 'error' => 'Nu a fost încărcat niciun fișier valid.'];
+        }
+        
+        if ($file['size'] > $maxSize) {
+            return ['success' => false, 'error' => 'Fișierul este prea mare. Mărimea maximă permisă este 5MB.'];
+        }
+        
+        $finfo = finfo_open(FILEINFO_MIME_TYPE);
+        $mimeType = finfo_file($finfo, $file['tmp_name']);
+        finfo_close($finfo);
+        
+        if (!in_array($mimeType, $allowedTypes)) {
+            return ['success' => false, 'error' => 'Tipul de fișier nu este permis. Pentru imagini folosiți: JPG, PNG, GIF, WEBP.'];
+        }
+        
+        // Generate unique filename
+        $extension = pathinfo($file['name'], PATHINFO_EXTENSION);
+        $filename = uniqid('img_') . '.' . strtolower($extension);
+        $uploadPath = $uploadDir . $filename;
+        
+        // Move uploaded file
+        if (move_uploaded_file($file['tmp_name'], $uploadPath)) {
+            $this->logActivity("Imaginea '$filename' a fost încărcată", 'fa-upload');
+            return ['success' => true, 'filename' => $filename];
+        } else {
+            return ['success' => false, 'error' => 'Eroare la încărcarea fișierului.'];
+        }
+    }
+    
+    public function deleteImage($filename) {
+        $imagePath = '../images/' . $filename;
+        
+        if (!file_exists($imagePath)) {
+            return false;
+        }
+        
+        // Check if image is used in any configuration
+        $isUsed = false;
+        $imageKeys = ['SERVICES_IMAGES', 'HERO_IMAGES', 'GALLERY_IMAGES', 'FULL_GALLERY_IMAGES'];
+        
+        foreach ($imageKeys as $key) {
+            $images = $this->getData($key);
+            if (in_array($filename, $images)) {
+                $isUsed = true;
+                break;
+            }
+        }
+        
+        if ($isUsed) {
+            // Don't delete if image is still in use
+            return false;
+        }
+        
+        if (unlink($imagePath)) {
+            $this->logActivity("Imaginea '$filename' a fost ștearsă", 'fa-trash');
+            return true;
+        }
+        
+        return false;
+    }
+    
+    public function getAvailableImages() {
+        $availableImages = [];
+        $imageDir = '../images/';
+        
+        if (is_dir($imageDir)) {
+            $extensions = ['jpg', 'jpeg', 'png', 'gif', 'webp'];
+            foreach ($extensions as $ext) {
+                $imageFiles = glob($imageDir . '*.' . $ext);
+                if ($imageFiles) {
+                    foreach ($imageFiles as $imageFile) {
+                        $availableImages[] = basename($imageFile);
+                    }
+                }
+            }
+        }
+        
+        sort($availableImages);
+        return $availableImages;
     }
 }
 ?>
