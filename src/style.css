@@ -2964,6 +2964,12 @@ html {
     line-height: 1.8;
 }
 
+.service-extra-info p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
 .service-hero-image {
     border-radius: 15px;
     overflow: hidden;
