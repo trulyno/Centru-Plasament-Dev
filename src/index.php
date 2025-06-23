@@ -127,8 +127,8 @@ require('file_loader.php');
                             <li><a href="sectia-zi-4luni-3ani.html">Secția Zi (4 luni - 3 ani)</a></li>
                             <li><a href="sectia-maternala.html">Secția Maternală</a></li>
                             <li><a href="sectia-de-zi.html">Secția de Zi</a></li>
-                             <li><a href="asistenta-psihopedagocica.html">Secția Asistență Psihopedagogică</a></li>
-                            <!-- <li><a href="asistenta-medicala.html">Secția Asistență Medicală</a></li> -->
+                             <li><a href="sectia-asistenta-psihopedagogica.html">Secția Asistență Psihopedagogică</a></li>
+                            <!-- <li><a href="sectia-asistenta-medicala.html">Secția Asistență Medicală</a></li> -->
                         </ul>
                     </li>
                     <li class="dropdown">

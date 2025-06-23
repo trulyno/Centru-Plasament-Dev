@@ -1,4 +1,4 @@
-SERVICES=sectia-reabilitare|sectia-de-zi|sectia-zi-4luni-3ani|sectia-maternala|sectia-respiro|sectia-criza-reintegrare-familiala|asistenta-psihopedagocica
+SERVICES=sectia-reabilitare|sectia-de-zi|sectia-zi-4luni-3ani|sectia-maternala|sectia-respiro|sectia-criza-reintegrare-familiala|sectia-asistenta-psihopedagogica
 SERVICES_NAMES=Secția Reabilitare|Secția de Zi|Secția Zi pentru îngrijirea copiilor cu vârsta 4 luni - 3 ani|Secția Maternală|Secția Respiro|Secția de Criză și Reintegrare Familială|Secția Asistență Psihopedagogică
 SERVICES_NAMES_SHORT=Secția Reabilitare|Secția Zi|Secția Zi (4 luni - 3 ani)|Secția Maternală|Secția Respiro|Secția Criză și Reintegrare Familială|Secția Asistență Psihopedagogică
 SERVICES_IMAGES=masaj.jpg|zi1.png|zi7.jpg|maternala2.jpg|respiro3.jpg|criza.jpg|sap1.jpg
