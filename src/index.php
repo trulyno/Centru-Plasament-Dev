@@ -16,6 +16,8 @@ require('file_loader.php');
     <meta property="og:type" content="website">
     
     <title>Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă</title>
+    <link rel="icon" href="images/logo.ico" type="image/x-icon" />
+    <link rel="icon" href="images/logo.ico" type="image/x-icon" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
