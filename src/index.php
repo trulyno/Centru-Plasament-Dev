@@ -518,6 +518,63 @@
                         </div>
                     </div>
                 </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"Un centru minunat.
+Mulțumim tot colectivului care lucrează cu
+reabilitarea copilașilor.
+Am mai fost și în alte centre, dar aici, fetița noastră, a primit cel mai mare complex de
+proceduri. Revenim cu drag, chiar dacă plângem pentru tot centrul"</p>
+                        <div class="testimonial-author">
+                            <strong>Olesea Moga</strong>
+                            <span>Părinte</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"Mulțumim pentru oportunitatea de a frecventa acest centru, care, cu pårere de rău, este unicul de acest gen. Mulțumim pentru grija copiilor, empatie şi echilibru. Sunteți cei mai buni."</p>
+                        <div class="testimonial-author">
+                            <strong>Tatiana Răcilă</strong>
+                            <span>Părinte</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"Un mare mulțumesc acelei persoane care mi-a recomandat acest centru și un mare mulțumesc persoanelor de la acest centru, care sunt extraordinar de prietenoase și care i-si fac meseria la un nivel înalt !!!
+D-na Corina Vozian,D-na Natalia, D-na Aliona, D- na Svetlana şi restul echipei care nu cunosc personal dar ma închin respectuos
+!!!
+Copilașul merge cu placere la acest centru unde este primit cu dragoste zi de zi.."</p>
+                        <div class="testimonial-author">
+                            <strong>MarcaBrand</strong>
+                            <span>Părinte</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"Va multumesc mult pentru succesul Gabrielei. Acum o admir cum lucreaza singura, dar stiu ca in spate sta munca dvs, deja de ani de zile. Va sunt foarte recunoscatoare. Mult succes in continuare!"</p>
+                        <div class="testimonial-author">
+                            <strong>Valentina Rata</strong>
+                            <span>Părinte</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"Un centru extraordinar, deoarece lucrează oameni extraordinari, oameni cu suflet, care se dedică copiilor speciali. Mulțumim pentru tot efortul, sunteti cei mai bravo..."</p>
+                        <div class="testimonial-author">
+                            <strong>Oxana Gurdiga</strong>
+                            <span>Părinte</span>
+                        </div>
+                    </div>
+                </div>
             </div>
                 
             <div class="testimonials-nav">
@@ -526,6 +583,11 @@
                 <button class="testimonial-btn" data-testimonial="2"></button>
                 <button class="testimonial-btn" data-testimonial="3"></button>
                 <button class="testimonial-btn" data-testimonial="4"></button>
+                <button class="testimonial-btn" data-testimonial="5"></button>
+                <button class="testimonial-btn" data-testimonial="6"></button>
+                <button class="testimonial-btn" data-testimonial="7"></button>
+                <button class="testimonial-btn" data-testimonial="8"></button>
+                <button class="testimonial-btn" data-testimonial="9"></button>
             </div>
         </div>
     </section>
