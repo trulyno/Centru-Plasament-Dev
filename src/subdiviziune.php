@@ -7,11 +7,11 @@ require_once __DIR__ . '/includes/lang.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="<?php echo t('guides_meta_description'); ?>">
-    <meta name="keywords" content="<?php echo t('guides_meta_keywords'); ?>">
+    <meta name="description" content="<?php echo t('subdivision_meta_description'); ?>">
+    <meta name="keywords" content="<?php echo t('subdivision_meta_keywords'); ?>">
     <meta name="author" content="<?php echo t('meta_author'); ?>">
     
-    <title><?php echo t('guides_page_title'); ?></title>
+    <title><?php echo t('subdivision_page_title'); ?></title>
     <link rel="icon" href="images/logo.ico" type="image/x-icon" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
@@ -92,7 +92,7 @@ require_once __DIR__ . '/includes/lang.php';
                     </div>
                     
                     <!-- Language Selector -->
-                    <?php echo getLanguageSelector('ghiduri.php'); ?>
+                    <?php echo getLanguageSelector('subdiviziune.php'); ?>
                 </div>
             </div>
         </div>
@@ -188,15 +188,15 @@ require_once __DIR__ . '/includes/lang.php';
     <main class="main-content" id="main-content">
         <section class="page-header">
             <div class="container">
-                <h1>Ghiduri</h1>
-                <p>Instrucțiuni și ghiduri utile pentru beneficiari și familii</p>
+                <h1>Subdiviziune</h1>
+                <p>Informații despre subordonarea administrativă</p>
             </div>
         </section>
 
         <section class="content-section">
             <div class="container">
                 <div class="content-wrapper">
-                    <h2>Ghiduri</h2>
+                    <h2>Subdiviziune</h2>
                     <p>Conținutul acestei pagini va fi completat în curând.</p>
                 </div>
             </div>
