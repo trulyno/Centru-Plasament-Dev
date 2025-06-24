@@ -1,7 +1,3 @@
-<?php
-require('file_loader.php');
-?>
-
 <!DOCTYPE html>
 <html lang="ro">
 <head>
@@ -259,25 +255,55 @@ require('file_loader.php');
             <h2 class="section-title fade-in">Serviciile Noastre</h2>
             <!-- <p class="section-subtitle fade-in">Îngrijire cuprinzătoare adaptată nevoilor unice ale fiecărui copil</p> -->
             <div class="services-grid">
-                <?php
-                // Loop through each service and display it
-                   for ($i = 0; $i < count($GLOBALS['SERVICES']); $i++) {
-                        $serviceName = $GLOBALS['SERVICES'][$i];
-                        $serviceImage = "images/" . $GLOBALS['SERVICES_IMAGES'][$i];
-                        $serviceLink = strtolower(str_replace(' ', '-', $serviceName)) . ".html";
-                        $serviceDescription = $GLOBALS['SERVICES_DESCRIPTION'][$i];
-                        $serviceNameFull = $GLOBALS['SERVICES_NAMES'][$i];
-                        $serviceNameShort = $GLOBALS['SERVICES_NAMES_SHORT'][$i];
-
-                        echo "<a href='$serviceLink' class='service-card fade-in'>
-                                <div class='service-image'>
-                                    <img src='$serviceImage' alt='$serviceNameFull' loading='lazy'>
-                                </div>
-                                <h3>$serviceNameFull</h3>
-                                <p>$serviceDescription</p>
-                              </a>";
-                    }
-                ?>
+                <a href="sectia-criza-reintegrare-familiala.html" class="service-card fade-in">
+                    <div class="service-image">
+                        <img src="images/criza.jpg" alt="Secția de Criză și Reintegrare Familială" loading="lazy">
+                    </div>
+                    <h3>Secția de Criză și Reintegrare Familială</h3>
+                    <p>Secția de Criză și Reintegrare Familială găzduiește temporar copii cu vârsta cuprinsă între 0 – 7 ani, aflați în situații de risc, abandonați sau orfani. Plasamentul se realizează pentru o perioadă de până la 45 de zile, în baza Dispoziției de plasament de urgență emisă de Autoritatea Tutelară Locală, însoțită de Demers. Pe perioada plasamentului, copiii beneficiază de toate serviciile oferite de centru. Pentru soluționarea cazurilor, secția colaborează activ cu: autoritățile administrației publice locale și teritoriale; organele de drept; organizații non-guvernamentale; instituțiile comunității.</p>
+                </a>
+                <a href="sectia-maternala.html" class="service-card fade-in">
+                    <div class="service-image">
+                        <img src="images/maternala2.jpg" alt="Secția Maternală" loading="lazy">
+                    </div>
+                    <h3>Secția Maternală</h3>
+                    <p>Secția Maternală este un serviciu social gratuit ce previne separarea copilului de părinți, oferind sprijin și adăpost mamelor și copiilor aflați în dificultate. Aceasta dezvoltă abilitățile parentale, susține relațiile familiale și ajută la reintegrarea socială. Beneficiarii sunt mame singure, mame minore, gravide fără locuință sau victime ale violenței, putând găzdui până la 16 cupluri mamă-copil pentru 6 luni, cu posibilitate de prelungire. Serviciul funcționează permanent, oferind siguranță și confidențialitate.</p>
+                </a>
+                <a href="sectia-zi-4luni-3ani.html" class="service-card fade-in">
+                    <div class="service-image">
+                        <img src="images/zi7.jpg" alt="Secția Zi pentru îngrijirea copiilor cu vârsta 4 luni - 3 ani" loading="lazy">
+                    </div>
+                    <h3>Secția Zi pentru îngrijirea copiilor cu vârsta 4 luni - 3 ani</h3>
+                    <p>Secția Zi pentru îngrijirea copiilor de 4 luni – 3 ani este un serviciu destinat copiilor din familii vulnerabile, pentru a preveni separarea de părinți. Copiii sunt îngrijiți pe parcursul zilei de educatori, oferindu-le părinților posibilitatea de a-și găsi un loc de muncă. Secția funcționează ca o grădiniță modernă, asigurând toate nevoile copiilor mici. Accesul se face pe baza unei cereri motivate depuse la Direcția pentru protecția copilului.</p>
+                </a>
+                <a href="sectia-de-zi.html" class="service-card fade-in">
+                    <div class="service-image">
+                        <img src="images/zi1.png" alt="Secția de Zi" loading="lazy">
+                    </div>
+                    <h3>Secția de Zi</h3>
+                    <p>Secția de Zi este destinată copiilor din Chișinău, cu dizabilități neuro-motorii și tulburări de neuro-dezvoltare (1–10 ani), repartizați în 3 grupe asemănătoare celor de la grădiniță. Scopul major este recuperarea cât mai timpurie a acestora, acordarea asistenței specializate complexe și suportul psihologic familiei în dificultate și păstrarea relației familiei-copil. Cursul de reabilitare a copiilor prevede mai multe etape cu o durată minimă de o lună, cu repetări pe parcursul anului și în dependență de diagnoza copilului.</p>
+                </a>
+                <a href="sectia-respiro.html" class="service-card fade-in">
+                    <div class="service-image">
+                        <img src="images/respiro3.jpg" alt="Secția Respiro" loading="lazy">
+                    </div>
+                    <h3>Secția Respiro</h3>
+                    <p>Secția Respiro oferă protecție rezidențială temporară (până la 30 de zile/an) pentru copiii cu dizabilități, pentru a da familiilor ocazia de refacere și a preveni instituționalizarea sau abuzul acestora. Serviciul include consiliere și instruire pentru familiile din Chișinău și din toată Moldova, se adresează copiilor cu dizabilități neuro-motorii (1-12 ani) și funcționează non-stop pe durata găzduirii.</p>
+                </a>
+                <a href="sectia-asistenta-psihopedagogica.html" class="service-card fade-in">
+                    <div class="service-image">
+                        <img src="images/sap1.jpg" alt="Secția Asistență Psihopedagogică" loading="lazy">
+                    </div>
+                    <h3>Secția Asistență Psihopedagogică</h3>
+                    <p>Secția de Asistență Psihopedagogică oferă evaluare, consiliere și intervenții specializate pentru copiii cu nevoi emoționale, cognitive și comportamentale. Echipa noastră – formată din psihologi, logopezi și cadre psihopedagogice – sprijină dezvoltarea armonioasă a copiilor aflați în plasament. Prin terapie, activități educaționale și intervenție timpurie, ajutăm fiecare copil să își valorifice potențialul într-un mediu sigur și afectuos.</p>
+                </a>
+                <a href="sectia-reabilitare.html" class="service-card fade-in">
+                    <div class="service-image">
+                        <img src="images/masaj.jpg" alt="Secția Reabilitare" loading="lazy">
+                    </div>
+                    <h3>Secția Reabilitare</h3>
+                    <p>Secția Reabilitare oferă tratament și programe de reabilitare copiilor din instituție, în special celor cu dizabilități motorii, comportamentale, intelectuale sau de vorbire. Copiii primesc un program individualizat, beneficiind de terapie, masaj, kinetoterapie și proceduri fizioterapeutice realizate de personal calificat, în spații special amenajate.</p>
+                </a>
             </div>
         </div>
     </section>
