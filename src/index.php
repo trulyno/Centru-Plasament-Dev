@@ -119,23 +119,23 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">Servicii <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="sectia-criza-reintegrare-familiala.html">Secția de Criză și Reintegrare Familială</a></li>
-                            <li><a href="sectia-maternala.html">Secția Maternală</a></li>
-                            <li><a href="sectia-zi-4luni-3ani.html">Secția Zi (4 luni - 3 ani)</a></li>
-                            <li><a href="sectia-de-zi.html">Secția de Zi</a></li>
-                            <li><a href="sectia-respiro.html">Secția Respiro</a></li>
-                            <li><a href="sectia-asistenta-psihopedagogica.html">Secția Asistență Psihopedagogică</a></li>
-                            <li><a href="sectia-reabilitare.html">Secția Reabilitare</a></li>
-                            <!-- <li><a href="sectia-asistenta-medicala.html">Secția Asistență Medicală</a></li> -->
+                            <li><a href="sectia-criza-reintegrare-familiala.php">Secția de Criză și Reintegrare Familială</a></li>
+                            <li><a href="sectia-maternala.php">Secția Maternală</a></li>
+                            <li><a href="sectia-zi-4luni-3ani.php">Secția Zi (4 luni - 3 ani)</a></li>
+                            <li><a href="sectia-de-zi.php">Secția de Zi</a></li>
+                            <li><a href="sectia-respiro.php">Secția Respiro</a></li>
+                            <li><a href="sectia-asistenta-psihopedagogica.php">Secția Asistență Psihopedagogică</a></li>
+                            <li><a href="sectia-reabilitare.php">Secția Reabilitare</a></li>
+                            <!-- <li><a href="sectia-asistenta-medicala.php">Secția Asistență Medicală</a></li> -->
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">Despre Noi <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="administratia.html">Administrația</a></li>
-                            <li><a href="organigrama.html">Organigrama</a></li>
-                            <li><a href="subdiviziune.html">Subdiviziune</a></li>
-                            <li><a href="functii-vacante.html">Funcții Vacante</a></li>
+                            <li><a href="administratia.php">Administrația</a></li>
+                            <li><a href="organigrama.php">Organigrama</a></li>
+                            <li><a href="subdiviziune.php">Subdiviziune</a></li>
+                            <li><a href="functii-vacante.php">Funcții Vacante</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -144,35 +144,35 @@
                             <li class="dropdown-nested">
                                 <a href="#" class="dropdown-toggle-nested">Legislație <i class="fas fa-chevron-right"></i></a>
                                 <ul class="dropdown-menu-nested">
-                                    <li><a href="acte-nationale.html">Acte Naționale</a></li>
-                                    <li><a href="acte-internationale.html">Acte Internaționale</a></li>
-                                    <li><a href="acte-interne.html">Acte Interne</a></li>
-                                    <li><a href="codul-deontologic.html">Codul Deontologic</a></li>
-                                    <li><a href="metodologii.html">Metodologii</a></li>
+                                    <li><a href="acte-nationale.php">Acte Naționale</a></li>
+                                    <li><a href="acte-internationale.php">Acte Internaționale</a></li>
+                                    <li><a href="acte-interne.php">Acte Interne</a></li>
+                                    <li><a href="codul-deontologic.php">Codul Deontologic</a></li>
+                                    <li><a href="metodologii.php">Metodologii</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-nested">
                                 <a href="#" class="dropdown-toggle-nested">Achiziții <i class="fas fa-chevron-right"></i></a>
                                 <ul class="dropdown-menu-nested">
-                                    <li><a href="invitatii-participare.html">Invitații de Participare</a></li>
-                                    <li><a href="planuri-achizitii.html">Planuri de Achiziții</a></li>
-                                    <li><a href="rapoarte-achizitii.html">Rapoarte de Achiziții</a></li>
+                                    <li><a href="invitatii-participare.php">Invitații de Participare</a></li>
+                                    <li><a href="planuri-achizitii.php">Planuri de Achiziții</a></li>
+                                    <li><a href="rapoarte-achizitii.php">Rapoarte de Achiziții</a></li>
                                 </ul>
                             </li>
-                            <li><a href="proiecte.html">Proiecte</a></li>
-                            <li><a href="rapoarte.html">Rapoarte</a></li>
-                            <li><a href="registru-cadouri.html">Registru Cadouri</a></li>
-                            <li><a href="petitii-reclamatii.html">Petiții și Reclamații</a></li>
+                            <li><a href="proiecte.php">Proiecte</a></li>
+                            <li><a href="rapoarte.php">Rapoarte</a></li>
+                            <li><a href="registru-cadouri.php">Registru Cadouri</a></li>
+                            <li><a href="petitii-reclamatii.php">Petiții și Reclamații</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">Suport Informațional <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="ghiduri.html">Ghiduri</a></li>
-                            <li><a href="intrebari-frecvente.html">Întrebări Frecvente</a></li>
+                            <li><a href="ghiduri.php">Ghiduri</a></li>
+                            <li><a href="intrebari-frecvente.php">Întrebări Frecvente</a></li>
                         </ul>
                     </li>
-                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="galerie.php">Galerie</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="#partners">Parteneri</a></li>
                 </ul>
@@ -255,49 +255,49 @@
             <h2 class="section-title fade-in">Serviciile Noastre</h2>
             <!-- <p class="section-subtitle fade-in">Îngrijire cuprinzătoare adaptată nevoilor unice ale fiecărui copil</p> -->
             <div class="services-grid">
-                <a href="sectia-criza-reintegrare-familiala.html" class="service-card fade-in">
+                <a href="sectia-criza-reintegrare-familiala.php" class="service-card fade-in">
                     <div class="service-image">
                         <img src="images/criza.jpg" alt="Secția de Criză și Reintegrare Familială" loading="lazy">
                     </div>
                     <h3>Secția de Criză și Reintegrare Familială</h3>
                     <p>Secția de Criză și Reintegrare Familială găzduiește temporar copii cu vârsta cuprinsă între 0 – 7 ani, aflați în situații de risc, abandonați sau orfani. Plasamentul se realizează pentru o perioadă de până la 45 de zile, în baza Dispoziției de plasament de urgență emisă de Autoritatea Tutelară Locală, însoțită de Demers. Pe perioada plasamentului, copiii beneficiază de toate serviciile oferite de centru. Pentru soluționarea cazurilor, secția colaborează activ cu: autoritățile administrației publice locale și teritoriale; organele de drept; organizații non-guvernamentale; instituțiile comunității.</p>
                 </a>
-                <a href="sectia-maternala.html" class="service-card fade-in">
+                <a href="sectia-maternala.php" class="service-card fade-in">
                     <div class="service-image">
                         <img src="images/maternala2.jpg" alt="Secția Maternală" loading="lazy">
                     </div>
                     <h3>Secția Maternală</h3>
                     <p>Secția Maternală este un serviciu social gratuit ce previne separarea copilului de părinți, oferind sprijin și adăpost mamelor și copiilor aflați în dificultate. Aceasta dezvoltă abilitățile parentale, susține relațiile familiale și ajută la reintegrarea socială. Beneficiarii sunt mame singure, mame minore, gravide fără locuință sau victime ale violenței, putând găzdui până la 16 cupluri mamă-copil pentru 6 luni, cu posibilitate de prelungire. Serviciul funcționează permanent, oferind siguranță și confidențialitate.</p>
                 </a>
-                <a href="sectia-zi-4luni-3ani.html" class="service-card fade-in">
+                <a href="sectia-zi-4luni-3ani.php" class="service-card fade-in">
                     <div class="service-image">
                         <img src="images/zi7.jpg" alt="Secția Zi pentru îngrijirea copiilor cu vârsta 4 luni - 3 ani" loading="lazy">
                     </div>
                     <h3>Secția Zi pentru îngrijirea copiilor cu vârsta 4 luni - 3 ani</h3>
                     <p>Secția Zi pentru îngrijirea copiilor de 4 luni – 3 ani este un serviciu destinat copiilor din familii vulnerabile, pentru a preveni separarea de părinți. Copiii sunt îngrijiți pe parcursul zilei de educatori, oferindu-le părinților posibilitatea de a-și găsi un loc de muncă. Secția funcționează ca o grădiniță modernă, asigurând toate nevoile copiilor mici. Accesul se face pe baza unei cereri motivate depuse la Direcția pentru protecția copilului.</p>
                 </a>
-                <a href="sectia-de-zi.html" class="service-card fade-in">
+                <a href="sectia-de-zi.php" class="service-card fade-in">
                     <div class="service-image">
                         <img src="images/zi1.png" alt="Secția de Zi" loading="lazy">
                     </div>
                     <h3>Secția de Zi</h3>
                     <p>Secția de Zi este destinată copiilor din Chișinău, cu dizabilități neuro-motorii și tulburări de neuro-dezvoltare (1–10 ani), repartizați în 3 grupe asemănătoare celor de la grădiniță. Scopul major este recuperarea cât mai timpurie a acestora, acordarea asistenței specializate complexe și suportul psihologic familiei în dificultate și păstrarea relației familiei-copil. Cursul de reabilitare a copiilor prevede mai multe etape cu o durată minimă de o lună, cu repetări pe parcursul anului și în dependență de diagnoza copilului.</p>
                 </a>
-                <a href="sectia-respiro.html" class="service-card fade-in">
+                <a href="sectia-respiro.php" class="service-card fade-in">
                     <div class="service-image">
                         <img src="images/respiro3.jpg" alt="Secția Respiro" loading="lazy">
                     </div>
                     <h3>Secția Respiro</h3>
                     <p>Secția Respiro oferă protecție rezidențială temporară (până la 30 de zile/an) pentru copiii cu dizabilități, pentru a da familiilor ocazia de refacere și a preveni instituționalizarea sau abuzul acestora. Serviciul include consiliere și instruire pentru familiile din Chișinău și din toată Moldova, se adresează copiilor cu dizabilități neuro-motorii (1-12 ani) și funcționează non-stop pe durata găzduirii.</p>
                 </a>
-                <a href="sectia-asistenta-psihopedagogica.html" class="service-card fade-in">
+                <a href="sectia-asistenta-psihopedagogica.php" class="service-card fade-in">
                     <div class="service-image">
                         <img src="images/sap1.jpg" alt="Secția Asistență Psihopedagogică" loading="lazy">
                     </div>
                     <h3>Secția Asistență Psihopedagogică</h3>
                     <p>Secția de Asistență Psihopedagogică oferă evaluare, consiliere și intervenții specializate pentru copiii cu nevoi emoționale, cognitive și comportamentale. Echipa noastră – formată din psihologi, logopezi și cadre psihopedagogice – sprijină dezvoltarea armonioasă a copiilor aflați în plasament. Prin terapie, activități educaționale și intervenție timpurie, ajutăm fiecare copil să își valorifice potențialul într-un mediu sigur și afectuos.</p>
                 </a>
-                <a href="sectia-reabilitare.html" class="service-card fade-in">
+                <a href="sectia-reabilitare.php" class="service-card fade-in">
                     <div class="service-image">
                         <img src="images/masaj.jpg" alt="Secția Reabilitare" loading="lazy">
                     </div>
@@ -388,7 +388,7 @@
             
             <!-- View All Gallery Button -->
             <div class="gallery-cta fade-in">
-                <a href="galerie.html" class="gallery-view-all-btn">
+                <a href="galerie.php" class="gallery-view-all-btn">
                     <i class="fas fa-images"></i>
                     Vezi Galeria Completă
                 </a>

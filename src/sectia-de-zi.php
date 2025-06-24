@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Secția Asistență Psihopedagogică oferă servicii pentru copiii cu dizabilități neuro-motorii și tulburări de neuro-dezvoltare, prevenind instituționalizarea prin reabilitare timpurie.">
-    <meta name="keywords" content="secția asistență psihopedagogică, dizabilități neuro-motorii, tulburări neuro-dezvoltare, reabilitare timpurie">
+    <meta name="description" content="Secția de Zi oferă servicii pentru copiii cu dizabilități neuro-motorii și tulburări de neuro-dezvoltare, prevenind instituționalizarea prin reabilitare timpurie.">
+    <meta name="keywords" content="secția de zi, dizabilități neuro-motorii, tulburări neuro-dezvoltare, reabilitare timpurie">
     <meta name="author" content="Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă">
     
-    <title>Secția Asistență Psihopedagogică - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă</title>
+    <title>Secția de Zi - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă</title>
     <link rel="icon" href="images/logo.ico" type="image/x-icon" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
@@ -110,23 +110,23 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">Servicii <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="sectia-criza-reintegrare-familiala.html">Secția de Criză și Reintegrare Familială</a></li>
-                            <li><a href="sectia-maternala.html">Secția Maternală</a></li>
-                            <li><a href="sectia-zi-4luni-3ani.html">Secția Zi (4 luni - 3 ani)</a></li>
-                            <li><a href="sectia-de-zi.html">Secția de Zi</a></li>
-                            <li><a href="sectia-respiro.html">Secția Respiro</a></li>
-                            <li><a href="sectia-asistenta-psihopedagogica.html">Secția Asistență Psihopedagogică</a></li>
-                            <li><a href="sectia-reabilitare.html">Secția Reabilitare</a></li>
-                            <!-- <li><a href="sectia-asistenta-medicala.html">Secția Asistență Medicală</a></li> -->
+                            <li><a href="sectia-criza-reintegrare-familiala.php">Secția de Criză și Reintegrare Familială</a></li>
+                            <li><a href="sectia-maternala.php">Secția Maternală</a></li>
+                            <li><a href="sectia-zi-4luni-3ani.php">Secția Zi (4 luni - 3 ani)</a></li>
+                            <li><a href="sectia-de-zi.php">Secția de Zi</a></li>
+                            <li><a href="sectia-respiro.php">Secția Respiro</a></li>
+                            <li><a href="sectia-asistenta-psihopedagogica.php">Secția Asistență Psihopedagogică</a></li>
+                            <li><a href="sectia-reabilitare.php">Secția Reabilitare</a></li>
+                            <!-- <li><a href="sectia-asistenta-medicala.php">Secția Asistență Medicală</a></li> -->
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">Despre Noi <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="administratia.html">Administrația</a></li>
-                            <li><a href="organigrama.html">Organigrama</a></li>
-                            <li><a href="subdiviziune.html">Subdiviziune</a></li>
-                            <li><a href="functii-vacante.html">Funcții Vacante</a></li>
+                            <li><a href="administratia.php">Administrația</a></li>
+                            <li><a href="organigrama.php">Organigrama</a></li>
+                            <li><a href="subdiviziune.php">Subdiviziune</a></li>
+                            <li><a href="functii-vacante.php">Funcții Vacante</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -135,35 +135,35 @@
                             <li class="dropdown-nested">
                                 <a href="#" class="dropdown-toggle-nested">Legislație <i class="fas fa-chevron-right"></i></a>
                                 <ul class="dropdown-menu-nested">
-                                    <li><a href="acte-nationale.html">Acte Naționale</a></li>
-                                    <li><a href="acte-internationale.html">Acte Internaționale</a></li>
-                                    <li><a href="acte-interne.html">Acte Interne</a></li>
-                                    <li><a href="codul-deontologic.html">Codul Deontologic</a></li>
-                                    <li><a href="metodologii.html">Metodologii</a></li>
+                                    <li><a href="acte-nationale.php">Acte Naționale</a></li>
+                                    <li><a href="acte-internationale.php">Acte Internaționale</a></li>
+                                    <li><a href="acte-interne.php">Acte Interne</a></li>
+                                    <li><a href="codul-deontologic.php">Codul Deontologic</a></li>
+                                    <li><a href="metodologii.php">Metodologii</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-nested">
                                 <a href="#" class="dropdown-toggle-nested">Achiziții <i class="fas fa-chevron-right"></i></a>
                                 <ul class="dropdown-menu-nested">
-                                    <li><a href="invitatii-participare.html">Invitații de Participare</a></li>
-                                    <li><a href="planuri-achizitii.html">Planuri de Achiziții</a></li>
-                                    <li><a href="rapoarte-achizitii.html">Rapoarte de Achiziții</a></li>
+                                    <li><a href="invitatii-participare.php">Invitații de Participare</a></li>
+                                    <li><a href="planuri-achizitii.php">Planuri de Achiziții</a></li>
+                                    <li><a href="rapoarte-achizitii.php">Rapoarte de Achiziții</a></li>
                                 </ul>
                             </li>
-                            <li><a href="proiecte.html">Proiecte</a></li>
-                            <li><a href="rapoarte.html">Rapoarte</a></li>
-                            <li><a href="registru-cadouri.html">Registru Cadouri</a></li>
-                            <li><a href="petitii-reclamatii.html">Petiții și Reclamații</a></li>
+                            <li><a href="proiecte.php">Proiecte</a></li>
+                            <li><a href="rapoarte.php">Rapoarte</a></li>
+                            <li><a href="registru-cadouri.php">Registru Cadouri</a></li>
+                            <li><a href="petitii-reclamatii.php">Petiții și Reclamații</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">Suport Informațional <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="ghiduri.html">Ghiduri</a></li>
-                            <li><a href="intrebari-frecvente.html">Întrebări Frecvente</a></li>
+                            <li><a href="ghiduri.php">Ghiduri</a></li>
+                            <li><a href="intrebari-frecvente.php">Întrebări Frecvente</a></li>
                         </ul>
                     </li>
-                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="galerie.php">Galerie</a></li>
                     <li><a href="index.php#contact">Contact</a></li>
                     <li><a href="index.php#partners">Parteneri</a></li>
                 </ul>
@@ -178,8 +178,8 @@
     <main class="main-content" id="main-content">
         <section class="page-header">
             <div class="container">
-                <h1>Secția Asistență Psihopedagogică</h1>
-                <p>Servicii specializate de evaluare, consiliere și intervenție terapeutică pentru dezvoltarea optimă a copiilor cu nevoi speciale cognitive, emoționale și comportamentale</p>
+                <h1>Secția de Zi</h1>
+                <p>Servicii specializate pentru copii cu dizabilități neuro-motorii</p>
             </div>
         </section>
 
@@ -188,13 +188,11 @@
                 <div class="content-wrapper">
                     <div class="service-hero">
                         <div class="service-hero-content">
-                            <h2>Despre Secția Asistență Psihopedagogică</h2>
-                            <p>Secția de Asistență Psihopedagogică oferă evaluare, consiliere și intervenții specializate pentru copiii cu nevoi emoționale, cognitive și comportamentale. Echipa noastră – formată din psihologi, logopezi și cadre psihopedagogice – sprijină dezvoltarea armonioasă a copiilor aflați în plasament.
-
-Prin terapie, activități educaționale și intervenție timpurie, ajutăm fiecare copil să își valorifice potențialul într-un mediu sigur și afectuos. </p>
+                            <h2>Despre Secția de Zi</h2>
+                            <p>Secția de Zi este destinată copiilor din Chișinău, cu dizabilități neuro-motorii și tulburări de neuro-dezvoltare (1–10 ani), repartizați în 3 grupe asemănătoare celor de la grădiniță. Scopul major este recuperarea cât mai timpurie a acestora, acordarea asistenței specializate complexe și suportul psihologic familiei în dificultate și păstrarea relației familiei-copil. Cursul de reabilitare a copiilor prevede mai multe etape cu o durată minimă de o lună, cu repetări pe parcursul anului și în dependență de diagnoza copilului.</p>
                         </div>
                         <div class="service-hero-image">
-                            <img src="images/sap1.jpg" alt="Activități psihopedagogice - Secția Asistență Psihopedagogică" loading="lazy">
+                            <img src="images/zi1.png" alt="Secția de Zi" loading="lazy">
                         </div>
                     </div>
 
@@ -203,20 +201,56 @@ Prin terapie, activități educaționale și intervenție timpurie, ajutăm fiec
                         <div class="services-list">
                             <div class="service-item">
                                 <div class="service-icon">
-                                    <i class="fas fa-child"></i>
+                                    <i class="fas fa-stethoscope"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4>Evaluare psihologică și psihopedagogică </h4>
-                                    <p>Prin consiliere psihologică, terapie prin joc, activități de stimulare senzorială și dezvoltare emoțională.</p>
+                                    <h4>Servicii Medicale</h4>
+                                    <p>Diagnostic medical, tratament medicamentos și monitorizare specializată.</p>
                                 </div>
                             </div>
                             <div class="service-item">
                                 <div class="service-icon">
-                                    <i class="fas fa-user-md"></i>
+                                    <i class="fas fa-spa"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4>Terapie logopedică</h4>
-                                    <p>Intervenții specifice pentru dezvoltarea limbajului și corectarea tulburărilor de vorbire.</p>
+                                    <h4>Proceduri de Recuperare</h4>
+                                    <p>Fizioterapie, termoterapie, hidroterapie și kinetoterapie specializată.</p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fas fa-swimmer"></i>
+                                </div>
+                                <div class="service-content">
+                                    <h4>Hidrokinetoterapie</h4>
+                                    <p>Terapie prin exerciții în mediu acvatic pentru recuperarea funcțiilor motorii.</p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fas fa-hands-helping"></i>
+                                </div>
+                                <div class="service-content">
+                                    <h4>Terapie Ocupațională</h4>
+                                    <p>Dezvoltarea competențelor practice și autonomiei personale ale copilului.</p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <div class="service-content">
+                                    <h4>Corecție Logopedică</h4>
+                                    <p>Terapia vorbirii și comunicării pentru dezvoltarea limbajului.</p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <div class="service-content">
+                                    <h4>Terapie Comportamentală</h4>
+                                    <p>Corecție comportamentală și dezvoltarea competențelor sociale.</p>
                                 </div>
                             </div>
                             <div class="service-item">
@@ -224,8 +258,8 @@ Prin terapie, activități educaționale și intervenție timpurie, ajutăm fiec
                                     <i class="fas fa-heart"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4>Consiliere și Suport Psihologic</h4>
-                                    <p>Consiliere și suport psihologic pentru familiile copiilor cu dizabilități.</p>
+                                    <h4>Consiliere Psihologică</h4>
+                                    <p>Suport psihologic pentru copii și consiliere psiho-socială pentru părinți.</p>
                                 </div>
                             </div>
                             <div class="service-item">
@@ -233,11 +267,108 @@ Prin terapie, activități educaționale și intervenție timpurie, ajutăm fiec
                                     <i class="fas fa-graduation-cap"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4>Asistență Educațională Personalizată</h4>
-                                    <p>Programe de intervenție educațională adaptate nivelului de dezvoltare al fiecărui copil, cu sprijinul pedagogilor specializați. </p>
+                                    <h4>Activități Psiho-Pedagogice</h4>
+                                    <p>Activități zilnice curative adaptate nevoilor individuale ale copilului.</p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fas fa-apple-alt"></i>
+                                </div>
+                                <div class="service-content">
+                                    <h4>Corecție Nutrițională</h4>
+                                    <p>Evaluarea și îmbunătățirea stării nutriționale a copilului.</p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                                <div class="service-content">
+                                    <h4>Terapie Senzorială</h4>
+                                    <p>Stimularea și dezvoltarea percepțiilor senzoriale ale copilului.</p>
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="documents-section">
+                        <h2>Documente Necesare</h2>
+                        <p class="documents-intro">Pentru înscrierea în Secția de Zi, sunt necesare următoarele documente:</p>
+                        <div class="documents-list">
+                            <div class="document-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="document-icon">
+                                    <i class="fas fa-file-medical" aria-hidden="true"></i>
+                                </div>
+                                <div class="document-content">
+                                    <h5>Extrasul - Trimiterea</h5>
+                                    <p>Formularul nr. 027/1 eliberat de medicul de familie</p>
+                                </div>
+                            </div>
+                            <div class="document-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="document-icon">
+                                    <i class="fas fa-book" aria-hidden="true"></i>
+                                </div>
+                                <div class="document-content">
+                                    <h5>Carnetul de Dezvoltare</h5>
+                                    <p>Formularul nr. 112/2 (a copilului care urmează a fi plasat în secție)</p>
+                                </div>
+                            </div>
+                            <div class="document-item" data-aos="fade-up" data-aos-delay="300">
+                                <div class="document-icon">
+                                    <i class="fas fa-id-card" aria-hidden="true"></i>
+                                </div>
+                                <div class="document-content">
+                                    <h5>Act de Identitate</h5>
+                                    <p>Copia actului personal de identitate a părintelui/reprezentantului legal</p>
+                                </div>
+                            </div>
+                            <div class="document-item" data-aos="fade-up" data-aos-delay="400">
+                                <div class="document-icon">
+                                    <i class="fas fa-certificate" aria-hidden="true"></i>
+                                </div>
+                                <div class="document-content">
+                                    <h5>Certificat de Invaliditate</h5>
+                                    <p>Copia certificatului de invaliditate a beneficiarului secției</p>
+                                </div>
+                            </div>
+                            <div class="document-item" data-aos="fade-up" data-aos-delay="500">
+                                <div class="document-icon">
+                                    <i class="fas fa-signature" aria-hidden="true"></i>
+                                </div>
+                                <div class="document-content">
+                                    <h5>Acordul Scris</h5>
+                                    <p>Acordul scris al reprezentantului legal al copilului pentru primirea serviciilor</p>
+                                </div>
+                            </div>
+                            <div class="document-item" data-aos="fade-up" data-aos-delay="600">
+                                <div class="document-icon">
+                                    <i class="fas fa-shield-virus" aria-hidden="true"></i>
+                                </div>
+                                <div class="document-content">
+                                    <h5>Certificat Medical</h5>
+                                    <p>Certificatul despre contactul cu maladii infecțioase (valabil 30 de zile)</p>
+                                </div>
+                            </div>
+                            <div class="document-item" data-aos="fade-up" data-aos-delay="700">
+                                <div class="document-icon">
+                                    <i class="fas fa-edit" aria-hidden="true"></i>
+                                </div>
+                                <div class="document-content">
+                                    <h5>Cererea Părinților</h5>
+                                    <p>Cererea părinților pentru înscrierea copilului în secție</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="documents-note">
+                            <div class="note-icon">
+                                <i class="fas fa-info-circle" aria-hidden="true"></i>
+                            </div>
+                            <div class="note-content">
+                                <h4>Informații importante</h4>
+                                <p>Toate documentele trebuie să fie în copie și originale pentru verificare. Pentru mai multe detalii despre procedura de înregistrare, vă rugăm să ne contactați.</p>
+                            </div>
+                        </div> -->
                     </div>
 
                     <div class="service-info">
@@ -247,22 +378,22 @@ Prin terapie, activități educaționale și intervenție timpurie, ajutăm fiec
                                 <div class="info-icon">
                                     <i class="fas fa-child"></i>
                                 </div>
-                                <h4>Modul de Predare</h4>
-                                <p>Lucrăm cu empatie, respect și profesionalism, adaptând intervențiile la nevoi individuale și ritmul propriu de dezvoltare.</p>
+                                <h4>Vârsta Beneficiarilor</h4>
+                                <p>Copii cu vârsta între 1-10 ani cu dizabilități neuro-motorii și tulburări de neuro-dezvoltare</p>
                             </div>
                             <div class="info-card">
                                 <div class="info-icon">
                                     <i class="fas fa-users"></i>
                                 </div>
                                 <h4>Organizare</h4>
-                                <p>Psihologi specializați în intervenție timpurie și consilierea copilului, Logopezi care sprijină dezvoltarea limbajului și comunicării, Cadre didactice cu specializare psihopedagogică. </p>
+                                <p>3 grupe organizate pe vârste, similar cu grădinița</p>
                             </div>
                             <div class="info-card">
                                 <div class="info-icon">
                                     <i class="fas fa-calendar-alt"></i>
                                 </div>
                                 <h4>Program</h4>
-                                <p>Zilnic, de luni până vineri</p>
+                                <p>Zilnic, de luni până vineri, în afară de zilele de odihnă și sărbători</p>
                             </div>
                             <div class="info-card">
                                 <div class="info-icon">
@@ -275,42 +406,42 @@ Prin terapie, activități educaționale și intervenție timpurie, ajutăm fiec
                     </div>
 
                     <div class="service-gallery">
-                        <h2>Galeria Secției Asistență Psihopedagogică</h2>
+                        <h2>Galeria Secției de Zi</h2>
                         <div class="gallery-grid">
                             <div class="gallery-item">
-                                <img src="images/sap2.jpg" alt="Activități de relaxare și odihnă terapeutică" loading="lazy">
+                                <img src="images/zi1.png" alt="Activități de Grup" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Activități de Relaxare și Odihnă Terapeutică</h4>
+                                    <h4>Activități de Grup</h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/sap3.jpg" alt="Festival de toamnă - activități de socializare" loading="lazy">
+                                <img src="images/zi2.jpg" alt="Terapie Individualizată" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Festival de Toamnă - Activități de Socializare</h4>
+                                    <h4>Terapie Individualizată</h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/sap4.jpg" alt="Programe educaționale - descoperirea mediului natural" loading="lazy">
+                                <img src="images/zi3.jpg" alt="Profesioniști Medicali" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Programe Educaționale - Descoperirea Mediului Natural</h4>
+                                    <h4>Profesioniști Medicali</h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/sap5.jpg" alt="Activități practice - dezvoltarea abilităților de viață" loading="lazy">
+                                <img src="images/zi4.jpg" alt="Personal grijuliu" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Activități Practice - Dezvoltarea Abilităților de Viață</h4>
+                                    <h4>Personal grijuliu</h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/sap6.jpg" alt="Terapie ocupațională - activități culinare" loading="lazy">
+                                <img src="images/zi5.jpg" alt="Hidrokinetoterapie" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Terapie Ocupațională - Activități Culinare</h4>
+                                    <h4>Hidrokinetoterapie</h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/sap7.jpg" alt="Artterapie - expresie creativă și dezvoltare motrică" loading="lazy">
+                                <img src="images/zi6.jpg" alt="Mediu Specializat" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Artterapie - Expresie Creativă și Dezvoltare Motrică</h4>
+                                    <h4>Mediu Specializat pentru Reabilitare</h4>
                                 </div>
                             </div>
                         </div>
@@ -318,7 +449,7 @@ Prin terapie, activități educaționale și intervenție timpurie, ajutăm fiec
 
                     <div class="contact-cta">
                         <h3>Contactează-ne pentru mai multe informații</h3>
-                        <p>Pentru detalii despre serviciile Secției Asistență Psihopedagogică sau pentru a solicita acest serviciu, te rugăm să ne contactezi.</p>
+                        <p>Pentru detalii despre serviciile Secției de Zi sau pentru a solicita acest serviciu, te rugăm să ne contactezi.</p>
                         <a href="index.php#contact" class="cta-button">Contactează-ne</a>
                     </div>
                 </div>

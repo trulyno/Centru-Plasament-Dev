@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Informații despre administrația Centrului de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă din Chișinău.">
-    <meta name="keywords" content="administrație, management, conducere, echipa de management">
+    <meta name="description" content="Secția Zi pentru îngrijirea copiilor de 4 luni – 3 ani este un serviciu destinat copiilor din familii vulnerabile, pentru a preveni separarea de părinți.">
+    <meta name="keywords" content="secția zi, copii 4 luni 3 ani, familii vulnerabile, prevenire separare">
     <meta name="author" content="Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă">
     
-    <title>Administrația - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă</title>
+    <title>Secția Zi pentru îngrijirea copiilor cu vârsta 4 luni - 3 ani - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă</title>
     <link rel="icon" href="images/logo.ico" type="image/x-icon" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
@@ -110,23 +110,23 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">Servicii <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="sectia-criza-reintegrare-familiala.html">Secția de Criză și Reintegrare Familială</a></li>
-                            <li><a href="sectia-maternala.html">Secția Maternală</a></li>
-                            <li><a href="sectia-zi-4luni-3ani.html">Secția Zi (4 luni - 3 ani)</a></li>
-                            <li><a href="sectia-de-zi.html">Secția de Zi</a></li>
-                            <li><a href="sectia-respiro.html">Secția Respiro</a></li>
-                            <li><a href="sectia-asistenta-psihopedagogica.html">Secția Asistență Psihopedagogică</a></li>
-                            <li><a href="sectia-reabilitare.html">Secția Reabilitare</a></li>
-                            <!-- <li><a href="sectia-asistenta-medicala.html">Secția Asistență Medicală</a></li> -->
+                            <li><a href="sectia-criza-reintegrare-familiala.php">Secția de Criză și Reintegrare Familială</a></li>
+                            <li><a href="sectia-maternala.php">Secția Maternală</a></li>
+                            <li><a href="sectia-zi-4luni-3ani.php">Secția Zi (4 luni - 3 ani)</a></li>
+                            <li><a href="sectia-de-zi.php">Secția de Zi</a></li>
+                            <li><a href="sectia-respiro.php">Secția Respiro</a></li>
+                            <li><a href="sectia-asistenta-psihopedagogica.php">Secția Asistență Psihopedagogică</a></li>
+                            <li><a href="sectia-reabilitare.php">Secția Reabilitare</a></li>
+                            <!-- <li><a href="sectia-asistenta-medicala.php">Secția Asistență Medicală</a></li> -->
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">Despre Noi <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="administratia.html">Administrația</a></li>
-                            <li><a href="organigrama.html">Organigrama</a></li>
-                            <li><a href="subdiviziune.html">Subdiviziune</a></li>
-                            <li><a href="functii-vacante.html">Funcții Vacante</a></li>
+                            <li><a href="administratia.php">Administrația</a></li>
+                            <li><a href="organigrama.php">Organigrama</a></li>
+                            <li><a href="subdiviziune.php">Subdiviziune</a></li>
+                            <li><a href="functii-vacante.php">Funcții Vacante</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -135,35 +135,35 @@
                             <li class="dropdown-nested">
                                 <a href="#" class="dropdown-toggle-nested">Legislație <i class="fas fa-chevron-right"></i></a>
                                 <ul class="dropdown-menu-nested">
-                                    <li><a href="acte-nationale.html">Acte Naționale</a></li>
-                                    <li><a href="acte-internationale.html">Acte Internaționale</a></li>
-                                    <li><a href="acte-interne.html">Acte Interne</a></li>
-                                    <li><a href="codul-deontologic.html">Codul Deontologic</a></li>
-                                    <li><a href="metodologii.html">Metodologii</a></li>
+                                    <li><a href="acte-nationale.php">Acte Naționale</a></li>
+                                    <li><a href="acte-internationale.php">Acte Internaționale</a></li>
+                                    <li><a href="acte-interne.php">Acte Interne</a></li>
+                                    <li><a href="codul-deontologic.php">Codul Deontologic</a></li>
+                                    <li><a href="metodologii.php">Metodologii</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-nested">
                                 <a href="#" class="dropdown-toggle-nested">Achiziții <i class="fas fa-chevron-right"></i></a>
                                 <ul class="dropdown-menu-nested">
-                                    <li><a href="invitatii-participare.html">Invitații de Participare</a></li>
-                                    <li><a href="planuri-achizitii.html">Planuri de Achiziții</a></li>
-                                    <li><a href="rapoarte-achizitii.html">Rapoarte de Achiziții</a></li>
+                                    <li><a href="invitatii-participare.php">Invitații de Participare</a></li>
+                                    <li><a href="planuri-achizitii.php">Planuri de Achiziții</a></li>
+                                    <li><a href="rapoarte-achizitii.php">Rapoarte de Achiziții</a></li>
                                 </ul>
                             </li>
-                            <li><a href="proiecte.html">Proiecte</a></li>
-                            <li><a href="rapoarte.html">Rapoarte</a></li>
-                            <li><a href="registru-cadouri.html">Registru Cadouri</a></li>
-                            <li><a href="petitii-reclamatii.html">Petiții și Reclamații</a></li>
+                            <li><a href="proiecte.php">Proiecte</a></li>
+                            <li><a href="rapoarte.php">Rapoarte</a></li>
+                            <li><a href="registru-cadouri.php">Registru Cadouri</a></li>
+                            <li><a href="petitii-reclamatii.php">Petiții și Reclamații</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">Suport Informațional <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="ghiduri.html">Ghiduri</a></li>
-                            <li><a href="intrebari-frecvente.html">Întrebări Frecvente</a></li>
+                            <li><a href="ghiduri.php">Ghiduri</a></li>
+                            <li><a href="intrebari-frecvente.php">Întrebări Frecvente</a></li>
                         </ul>
                     </li>
-                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="galerie.php">Galerie</a></li>
                     <li><a href="index.php#contact">Contact</a></li>
                     <li><a href="index.php#partners">Parteneri</a></li>
                 </ul>
@@ -178,164 +178,159 @@
     <main class="main-content" id="main-content">
         <section class="page-header">
             <div class="container">
-                <h1>Administrația</h1>
-                <p>Conducerea și personalul administrativ al centrului</p>
+                <h1>Secția Zi pentru îngrijirea copiilor cu vârsta 4 luni - 3 ani</h1>
+                <p>Îngrijire zilnică pentru copii din familii vulnerabile</p>
             </div>
         </section>
+
+
 
         <section class="content-section">
             <div class="container">
                 <div class="content-wrapper">
-                    <h2>Echipa Administrativă</h2>
-                    <p>Mai jos găsiți informații despre echipa administrativă a centrului nostru, care asigură buna funcționare a instituției și calitatea serviciilor oferite.</p>
-                    
-                    <div class="admin-team-container">
-                        <div class="admin-team-grid">
-                            <!-- Director -->
-                            <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/director.png" alt="director" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>Sergiu Oceretnîi</h3>
-                                    <p class="admin-staff-position">Director</p>
-                                </div>
-                            </div>
-                            <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/Bacalu Ana inspector resurse umane.png" alt="iru" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>Bacalu Ana</h3>
-                                    <p class="admin-staff-position">Inspector Resurse Umane</p>
-                                </div>
-                            </div>
-                            <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/Țvetov Angela contabil șef.png" alt="contabilsef" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>Țvetov Angela</h3>
-                                    <p class="admin-staff-position">Contabil șef</p>
-                                </div>
-                            </div>
-                            <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/Mahmadbecov Rodica contabil.png" alt="contabil" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>Mahmadbecov Rodica</h3>
-                                    <p class="admin-staff-position">Contabil</p>
-                                </div>
-                            </div>
-                            <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/Cojușco Tatiana contabil.png" alt="contabil" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>Cojușco Tatiana</h3>
-                                    <p class="admin-staff-position">Contabil</p>
-                                </div>
-                            </div>
-                            <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/Bîrta Vladimir Jurist.png" alt="Jurist" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>Bîrta Vladimir</h3>
-                                    <p class="admin-staff-position">Jurist</p>
-                                </div>
-                            </div>
-                            <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/Țurcanu Vasile Inginer principal.png" alt="Inginerprincipal" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>Țurcanu Vasile</h3>
-                                    <p class="admin-staff-position">Inginer Principal</p>
-                                </div>
-                            </div>
-                            <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/Cojocaru Tatiana Asistent Social.png" alt="asistensocial" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>Cojocaru Tatiana</h3>
-                                    <p class="admin-staff-position">Asistent Social</p>
-                                </div>
-                            </div>
-                            <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/Toțkaia Angela Psiholog.png" alt="psiholog" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>Toțkaia Angela</h3>
-                                    <p class="admin-staff-position">Psiholog</p>
-                                </div>
-                            </div>
-                            <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/Ciorici Cătălina Șefă secție Maternală.png" alt="sefsecmati" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>Ciorici Cătălina</h3>
-                                    <p class="admin-staff-position">Șefă Secție Maternală</p>
-                                </div>
-                            </div>
-                             <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/Blaj Sorina Sef sectie Psihopedagogie.png" alt="sefpsihopedagogie" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>Blaj Sorina</h3>
-                                    <p class="admin-staff-position">Șef Secție Psihopedagogie</p>
-                                </div>
-                            </div>
-                            <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/Burunciuc Aurelia -Medic nutriționist.png" alt="medicnutritionist" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>Burunciuc Aurelia</h3>
-                                    <p class="admin-staff-position">Medic Nutriționist</p>
-                                </div>
-                            </div>
-                            <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/Corina Vozian sef sectie zi.png" alt="sefsectiezi" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>Vozian Corina</h3>
-                                    <p class="admin-staff-position">Șef Secție Zi</p>
-                                </div>
-                            </div>
-                            <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/Ecaterina David Sef sectie Respiro.png" alt="sefsectierespiro" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>David Ecaterina</h3>
-                                    <p class="admin-staff-position">Șef Secție Respiro</p>
-                                </div>
-                            </div>
-                            <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/Timirgaz Violeta -Sef sectie reabilitare.png" alt="sefsectiezreabilitare" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>Timigraz Violeta</h3>
-                                    <p class="admin-staff-position">Șef Secție Reabilitare</p>
-                                </div>
-                            </div>
-
-
-
-                        
+                    <div class="service-hero">
+                        <div class="service-hero-content">
+                            <h2>Despre Secția Zi pentru copii 4 luni - 3 ani</h2>
+                            <p>Secția Zi pentru îngrijirea copiilor de 4 luni – 3 ani este un serviciu destinat copiilor din familii vulnerabile, pentru a preveni separarea de părinți. Copiii sunt îngrijiți pe parcursul zilei de educatori calificați, oferindu-le părinților posibilitatea de a-și găsi un loc de muncă.</p>
                         </div>
+                        <div class="service-hero-image">
+                            <img src="images/zi7.jpg" alt="Secția Zi 4 luni - 3 ani" loading="lazy">
+                        </div>
+                    </div>
+
+                    <div class="service-details">
+                        <h2>Servicii Oferite</h2>
+                        <div class="services-list">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fas fa-baby"></i>
+                                </div>
+                                <div class="service-content">
+                                    <h4>Îngrijire Specializată</h4>
+                                    <p>Îngrijire profesională pe parcursul zilei de către educatori calificați.</p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="service-content">
+                                    <h4>Educație Timpurie</h4>
+                                    <p>Programe educaționale adaptate pentru dezvoltarea copiilor mici.</p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <div class="service-content">
+                                    <h4>Alimentație Sănătoasă</h4>
+                                    <p>Mese echilibrate și nutritive adaptate vârstei copiilor.</p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="service-content">
+                                    <h4>Sprijin pentru Părinți</h4>
+                                    <p>Consiliere și sprijin pentru părinți în situații vulnerabile.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-info">
+                        <h2>Informații Importante</h2>
+                        <div class="info-grid">
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <i class="fas fa-baby"></i>
+                                </div>
+                                <h4>Vârsta Beneficiarilor</h4>
+                                <p>Copii cu vârsta între 4 luni și 3 ani</p>
+                            </div>
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h4>Prevenire Separare</h4>
+                                <p>Previne separarea copiilor de părinți</p>
+                            </div>
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <h4>Program</h4>
+                                <p>Îngrijire pe parcursul zilei</p>
+                            </div>
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <h4>Familii Vulnerabile</h4>
+                                <p>Sprijin pentru familii în dificultate</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-gallery">
+                        <h2>Galeria Secției Zi pentru copii 4 luni - 3 ani</h2>
+                        <div class="gallery-grid">
+                            <div class="gallery-item">
+                                <img src="images/zi8.jpg" alt="Camera Copiilor Mici" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4>Camera Copiilor Mici</h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/zi9.jpg" alt="Activități de Dezvoltare" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4>Activități de Dezvoltare</h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/zi10.jpg" alt="Spațiu de Joacă" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4>Spațiu de Joacă Sigur</h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/zi11.jpg" alt="Îngrijire Individualizată" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4>Îngrijire Individualizată</h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/zi1.png" alt="Activități Educaționale" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4>Activități Educaționale</h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/zi2.jpg" alt="Mediu Îngrijitor" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4>Mediu Îngrijitor și Sigur</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-cta">
+                        <h3>Contactează-ne pentru mai multe informații</h3>
+                        <p>Pentru detalii despre serviciile Secției Respiro sau pentru a solicita acest serviciu, te rugăm să ne contactezi.</p>
+                        <a href="index.php#contact" class="cta-button">Contactează-ne</a>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Remove old service-details section -->
+        <!--
+        <section class="service-details">
+            ...existing code...
+        </section>
+        -->
     </main>
 
     <!-- Audio Element -->

@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rapoarte privind achizițiile publice realizate de Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă.">
-    <meta name="keywords" content="rapoarte achiziții, rezultate licitații, transparență">
+    <meta name="description" content="Funcții vacante și oportunități de angajare la Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă.">
+    <meta name="keywords" content="funcții vacante, angajare, cariere, locuri de muncă">
     <meta name="author" content="Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă">
     
-    <title>Rapoarte de Achiziții - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă</title>
+    <title>Funcții Vacante - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă</title>
     <link rel="icon" href="images/logo.ico" type="image/x-icon" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
@@ -110,23 +110,23 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">Servicii <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="sectia-criza-reintegrare-familiala.html">Secția de Criză și Reintegrare Familială</a></li>
-                            <li><a href="sectia-maternala.html">Secția Maternală</a></li>
-                            <li><a href="sectia-zi-4luni-3ani.html">Secția Zi (4 luni - 3 ani)</a></li>
-                            <li><a href="sectia-de-zi.html">Secția de Zi</a></li>
-                            <li><a href="sectia-respiro.html">Secția Respiro</a></li>
-                            <li><a href="sectia-asistenta-psihopedagogica.html">Secția Asistență Psihopedagogică</a></li>
-                            <li><a href="sectia-reabilitare.html">Secția Reabilitare</a></li>
-                            <!-- <li><a href="sectia-asistenta-medicala.html">Secția Asistență Medicală</a></li> -->
+                            <li><a href="sectia-criza-reintegrare-familiala.php">Secția de Criză și Reintegrare Familială</a></li>
+                            <li><a href="sectia-maternala.php">Secția Maternală</a></li>
+                            <li><a href="sectia-zi-4luni-3ani.php">Secția Zi (4 luni - 3 ani)</a></li>
+                            <li><a href="sectia-de-zi.php">Secția de Zi</a></li>
+                            <li><a href="sectia-respiro.php">Secția Respiro</a></li>
+                            <li><a href="sectia-asistenta-psihopedagogica.php">Secția Asistență Psihopedagogică</a></li>
+                            <li><a href="sectia-reabilitare.php">Secția Reabilitare</a></li>
+                            <!-- <li><a href="sectia-asistenta-medicala.php">Secția Asistență Medicală</a></li> -->
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">Despre Noi <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="administratia.html">Administrația</a></li>
-                            <li><a href="organigrama.html">Organigrama</a></li>
-                            <li><a href="subdiviziune.html">Subdiviziune</a></li>
-                            <li><a href="functii-vacante.html">Funcții Vacante</a></li>
+                            <li><a href="administratia.php">Administrația</a></li>
+                            <li><a href="organigrama.php">Organigrama</a></li>
+                            <li><a href="subdiviziune.php">Subdiviziune</a></li>
+                            <li><a href="functii-vacante.php">Funcții Vacante</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -135,35 +135,35 @@
                             <li class="dropdown-nested">
                                 <a href="#" class="dropdown-toggle-nested">Legislație <i class="fas fa-chevron-right"></i></a>
                                 <ul class="dropdown-menu-nested">
-                                    <li><a href="acte-nationale.html">Acte Naționale</a></li>
-                                    <li><a href="acte-internationale.html">Acte Internaționale</a></li>
-                                    <li><a href="acte-interne.html">Acte Interne</a></li>
-                                    <li><a href="codul-deontologic.html">Codul Deontologic</a></li>
-                                    <li><a href="metodologii.html">Metodologii</a></li>
+                                    <li><a href="acte-nationale.php">Acte Naționale</a></li>
+                                    <li><a href="acte-internationale.php">Acte Internaționale</a></li>
+                                    <li><a href="acte-interne.php">Acte Interne</a></li>
+                                    <li><a href="codul-deontologic.php">Codul Deontologic</a></li>
+                                    <li><a href="metodologii.php">Metodologii</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-nested">
                                 <a href="#" class="dropdown-toggle-nested">Achiziții <i class="fas fa-chevron-right"></i></a>
                                 <ul class="dropdown-menu-nested">
-                                    <li><a href="invitatii-participare.html">Invitații de Participare</a></li>
-                                    <li><a href="planuri-achizitii.html">Planuri de Achiziții</a></li>
-                                    <li><a href="rapoarte-achizitii.html">Rapoarte de Achiziții</a></li>
+                                    <li><a href="invitatii-participare.php">Invitații de Participare</a></li>
+                                    <li><a href="planuri-achizitii.php">Planuri de Achiziții</a></li>
+                                    <li><a href="rapoarte-achizitii.php">Rapoarte de Achiziții</a></li>
                                 </ul>
                             </li>
-                            <li><a href="proiecte.html">Proiecte</a></li>
-                            <li><a href="rapoarte.html">Rapoarte</a></li>
-                            <li><a href="registru-cadouri.html">Registru Cadouri</a></li>
-                            <li><a href="petitii-reclamatii.html">Petiții și Reclamații</a></li>
+                            <li><a href="proiecte.php">Proiecte</a></li>
+                            <li><a href="rapoarte.php">Rapoarte</a></li>
+                            <li><a href="registru-cadouri.php">Registru Cadouri</a></li>
+                            <li><a href="petitii-reclamatii.php">Petiții și Reclamații</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">Suport Informațional <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="ghiduri.html">Ghiduri</a></li>
-                            <li><a href="intrebari-frecvente.html">Întrebări Frecvente</a></li>
+                            <li><a href="ghiduri.php">Ghiduri</a></li>
+                            <li><a href="intrebari-frecvente.php">Întrebări Frecvente</a></li>
                         </ul>
                     </li>
-                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="galerie.php">Galerie</a></li>
                     <li><a href="index.php#contact">Contact</a></li>
                     <li><a href="index.php#partners">Parteneri</a></li>
                 </ul>
@@ -178,16 +178,79 @@
     <main class="main-content" id="main-content">
         <section class="page-header">
             <div class="container">
-                <h1>Rapoarte de Achiziții</h1>
-                <p>Rapoarte periodice privind achizițiile publice realizate</p>
+                <h1>Funcții Vacante</h1>
+                <p>Oportunități de carieră în domeniul protecției copilului</p>
             </div>
         </section>
 
         <section class="content-section">
             <div class="container">
                 <div class="content-wrapper">
-                    <h2>Rapoarte de Achiziții</h2>
-                    <p>Conținutul acestei pagini va fi completat în curând.</p>
+                    <div class="intro-text">
+                        <h2>Alătură-te echipei noastre!</h2>
+                        <p>Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă din municipiul Chișinău caută profesioniști dedicați pentru a se alătura echipei noastre. Oferim un mediu de lucru stimulant și oportunitatea de a face o diferență reală în viața copiilor.</p>
+                    </div>
+
+                    <!-- Current Job Openings -->
+                    <div class="job-section">
+                        <h3><i class="fas fa-briefcase"></i> Posturi Disponibile</h3>
+                        
+                        <div class="job-card">
+                            <div class="job-header">
+                                <h4>Exemplu Pozitie</h4>
+                                <span class="job-type">Normă întreagă</span>
+                            </div>
+                            <div class="job-details">
+                                <p><strong>Sectie:</strong> Exemplu Sectie</p>
+                                <p><strong>Responsabilități:</strong></p>
+                                <ul>
+                                    <li>Responsabilitate 1</li>
+                                    <li>Responsabilitate 2</li>
+                                    <li>Responsabilitate 3</li>
+                                    <li>Responsabilitate 4</li>
+                                </ul>
+                                <p><strong>Cerințe:</strong></p>
+                                <ul>
+                                    <li>Cerinta 1</li>
+                                    <li>Cerinta 2</li>
+                                    <li>Cerinta 3</li>
+                                    <li>Cerinta 4</li>
+                                </ul>
+                                <div class="job-actions">
+                                    <span class="job-date">Publicat: 23 iunie 2025</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Application Process -->
+                    <div class="application-section">
+                        <h3><i class="fas fa-file-alt"></i> Cum să aplici</h3>
+                        <div class="application-steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Pregătește documentele</h4>
+                                    <p>CV-ul, scrisoarea de intenție și copiile documentelor de studii</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Trimite aplicația</h4>
+                                    <p>La adresa de email: <strong>centru_plasament@agssi.md</strong></p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Interviul</h4>
+                                    <p>Te vom contacta pentru programarea unui interviu</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
