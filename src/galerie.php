@@ -189,8 +189,8 @@ require_once __DIR__ . '/includes/lang.php';
     <main class="main-content" id="main-content">
         <section class="page-header">
             <div class="container">
-                <h1>Galeria Noastră</h1>
-                <p>Imagini din activitățile zilnice și spațiile dedicate copiilor</p>
+                <h1><?php echo t('gallery_section_title'); ?></h1>
+                <p><?php echo t('gallery_section_subtitle'); ?></p>
             </div>
         </section>
 
@@ -198,11 +198,11 @@ require_once __DIR__ . '/includes/lang.php';
             <div class="container">
                 <div class="gallery">
                     <div class="gallery-categories">
-                        <button class="filter-btn active" data-filter="all">Toate</button>
-                        <button class="filter-btn" data-filter="activities">Activități</button>
-                        <button class="filter-btn" data-filter="spaces">Spații</button>
-                        <button class="filter-btn" data-filter="therapy">Terapie</button>
-                        <button class="filter-btn" data-filter="events">Evenimente</button>
+                        <button class="filter-btn active" data-filter="all"><?php echo t('gallery_filter_all'); ?></button>
+                        <button class="filter-btn" data-filter="activities"><?php echo t('gallery_filter_activities'); ?></button>
+                        <button class="filter-btn" data-filter="spaces"><?php echo t('gallery_filter_spaces'); ?></button>
+                        <button class="filter-btn" data-filter="therapy"><?php echo t('gallery_filter_therapy'); ?></button>
+                        <button class="filter-btn" data-filter="events"><?php echo t('gallery_filter_events'); ?></button>
                     </div>
 
                     <div class="gallery-grid">

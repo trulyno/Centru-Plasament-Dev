@@ -377,11 +377,14 @@
   "guides_header_title": "Ghiduri",
   "guides_header_subtitle": "Resurse și materiale informative",
   
-  "gallery_meta_description": "Galeria foto a Centrului de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă prezintă activitățile și spațiile dedicate copiilor.",
-  "gallery_meta_keywords": "galerie foto, activități, spații, copii, evenimente",
   "gallery_page_title": "Galerie - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă",
-  "gallery_header_title": "Galeria Noastră",
-  "gallery_header_subtitle": "Imagini din activitățile și spațiile centrului",
+  "gallery_meta_description": "Galeria foto a Centrului de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă din Chișinău. Imagini din activitățile zilnice și spațiile dedicate copiilor.",
+  "gallery_meta_keywords": "galerie CPRCVF, imagini centru copii, activități copii, spații dedicate copiilor, galerie foto",
+  "gallery_filter_all": "Toate",
+  "gallery_filter_activities": "Activități",
+  "gallery_filter_spaces": "Spații", 
+  "gallery_filter_therapy": "Terapie",
+  "gallery_filter_events": "Evenimente",
   
   "contact_meta_description": "Informații de contact pentru Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă din Chișinău.",
   "contact_meta_keywords": "contact, telefon, adresă, program, urgențe",

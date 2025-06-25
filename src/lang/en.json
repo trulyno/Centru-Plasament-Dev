@@ -380,8 +380,11 @@
   "gallery_meta_description": "Photo gallery of the Placement and Rehabilitation Center for Young Children showcasing activities and spaces dedicated to children.",
   "gallery_meta_keywords": "photo gallery, activities, spaces, children, events",
   "gallery_page_title": "Gallery - Placement and Rehabilitation Center for Young Children",
-  "gallery_header_title": "Our Gallery",
-  "gallery_header_subtitle": "Images from the center's activities and spaces",
+  "gallery_filter_all": "All",
+  "gallery_filter_activities": "Activities",
+  "gallery_filter_spaces": "Spaces", 
+  "gallery_filter_therapy": "Therapy",
+  "gallery_filter_events": "Events",
   
   "contact_meta_description": "Contact information for the Placement and Rehabilitation Center for Young Children in Chișinău.",
   "contact_meta_keywords": "contact, phone, address, schedule, emergencies",
