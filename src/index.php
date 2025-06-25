@@ -318,7 +318,7 @@
                 </div>
                 <div class="stat-item fade-in">
                     <h3 id="stat2">0</h3>
-                    <p>Reunificări de Succes</p>
+                    <p>Externați de Succes</p>
                 </div>
                 <div class="stat-item fade-in">
                     <h3 id="stat3">0</h3>
