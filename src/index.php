@@ -134,7 +134,7 @@
                         <ul class="dropdown-menu">
                             <li><a href="administratia.php">Administrația</a></li>
                             <li><a href="organigrama.php">Organigrama</a></li>
-                            <li><a href="subdiviziune.php">Subdiviziune</a></li>
+                            
                             <li><a href="functii-vacante.php">Funcții Vacante</a></li>
                         </ul>
                     </li>
@@ -456,6 +456,22 @@
                     </div>
                     <div class="partner-content">
                         <h3>Universitatea de Stat din Moldova</h3>
+                    </div>
+                </a>
+                <a href="files/CCF.pdf" target="_blank" class="partner-card fade-in">
+                    <div class="partner-image">
+                        <img src="images/CCF Moldova.png" alt="CCF Moldova" loading="lazy">
+                    </div>
+                    <div class="partner-content">
+                        <h3>CCF Moldova</h3>
+                    </div>
+                </a>
+                <a href="files/Memorandum MMPS - OGI .pdf" target="_blank" class="partner-card fade-in">
+                    <div class="partner-image">
+                        <img src="images/ogi.png" alt="OGI Moldova" loading="lazy">
+                    </div>
+                    <div class="partner-content">
+                        <h3>OGI Moldova</h3>
                     </div>
                 </a>
             </div>
