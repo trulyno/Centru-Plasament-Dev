@@ -214,7 +214,7 @@ const statsObserver = new IntersectionObserver((entries) => {
             animateCounter(document.getElementById('stat1'), 1234);
             animateCounter(document.getElementById('stat2'), 1432);
             animateCounter(document.getElementById('stat3'), 876);
-            animateCounter(document.getElementById('stat4'), 50);
+            animateCounter(document.getElementById('stat4'), 79);
             statsObserver.unobserve(entry.target);
         }
     });

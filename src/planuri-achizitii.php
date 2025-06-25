@@ -187,7 +187,17 @@
             <div class="container">
                 <div class="content-wrapper">
                     <h2>Planuri de Achiziții</h2>
-                    <p>Conținutul acestei pagini va fi completat în curând.</p>
+                    <!-- <div class="document-card">
+                        <div class="document-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div class="document-content">
+                            <h3></h3>
+                            <a href="" class="document-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Vezi document
+                            </a>
+                        </div>
+                    </div> -->
                 </div>
             </div>
         </section>

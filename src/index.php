@@ -322,7 +322,7 @@
                 </div>
                 <div class="stat-item fade-in">
                     <h3 id="stat3">0</h3>
-                    <p>Plasamente pentru Adopție</p>
+                    <p>Copii Încredințați spre Adopție</p>
                 </div>
                 <div class="stat-item fade-in">
                     <h3 id="stat4">0</h3>
