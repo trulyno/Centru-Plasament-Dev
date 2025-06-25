@@ -192,7 +192,7 @@
                             <p>Secția de Zi este destinată copiilor din Chișinău, cu dizabilități neuro-motorii și tulburări de neuro-dezvoltare (1–10 ani), repartizați în 3 grupe asemănătoare celor de la grădiniță. Scopul major este recuperarea cât mai timpurie a acestora, acordarea asistenței specializate complexe și suportul psihologic familiei în dificultate și păstrarea relației familiei-copil. Cursul de reabilitare a copiilor prevede mai multe etape cu o durată minimă de o lună, cu repetări pe parcursul anului și în dependență de diagnoza copilului.</p>
                         </div>
                         <div class="service-hero-image">
-                            <img src="images/zi1.png" alt="Secția de Zi" loading="lazy">
+                            <img src="images/zi10.jpg" alt="Secția de Zi" loading="lazy">
                         </div>
                     </div>
 
@@ -415,19 +415,19 @@
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/zi2.jpg" alt="Terapie Individualizată" loading="lazy">
+                                <img src="images/zi11.jpg" alt="Terapie Individualizată" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4>Terapie Individualizată</h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/zi3.jpg" alt="Profesioniști Medicali" loading="lazy">
+                                <img src="images/zoo3.jpeg" alt="Profesioniști Medicali" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4>Profesioniști Medicali</h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/zi4.jpg" alt="Personal grijuliu" loading="lazy">
+                                <img src="images/zoo4.jpeg" alt="Personal grijuliu" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4>Personal grijuliu</h4>
                                 </div>

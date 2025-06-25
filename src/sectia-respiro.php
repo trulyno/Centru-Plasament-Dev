@@ -276,7 +276,7 @@
                         <h2>Galeria Secției Respiro</h2>
                         <div class="gallery-grid">
                             <div class="gallery-item">
-                                <img src="images/respiro1.jpg" alt="Activități Zilnice" loading="lazy">
+                                <img src="images/zi10.jpg" alt="Activități Zilnice" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4>Activități Zilnice</h4>
                                 </div>

@@ -192,7 +192,7 @@
                             <p>Secția Maternală este un serviciu social gratuit ce previne separarea copilului de părinți, oferind sprijin și adăpost mamelor și copiilor aflați în dificultate. Aceasta dezvoltă abilitățile parentale, susține relațiile familiale și ajută la reintegrarea socială.</p>
                         </div>
                         <div class="service-hero-image">
-                            <img src="images/maternala.jpg" alt="Secția Maternală" loading="lazy">
+                            <img src="images/maternala3.jpg" alt="Secția Maternală" loading="lazy">
                         </div>
                     </div>
 
@@ -276,13 +276,13 @@
                         <h2>Galeria Secției Maternale</h2>
                         <div class="gallery-grid">
                             <div class="gallery-item">
-                                <img src="images/maternala1.jpg" alt="Camera pentru Mame și Copii" loading="lazy">
+                                <img src="images/sap4.jpg" alt="Camera pentru Mame și Copii" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4>Camere Confortabile</h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/maternala2.jpg" alt="Spațiu de Joacă" loading="lazy">
+                                <img src="images/sap13.jpg" alt="Spațiu de Joacă" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4>Spațiu de Joacă pentru Copii</h4>
                                 </div>

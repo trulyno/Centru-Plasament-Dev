@@ -194,7 +194,7 @@
                             <p>Secția Zi pentru îngrijirea copiilor de 4 luni – 3 ani este un serviciu destinat copiilor din familii vulnerabile, pentru a preveni separarea de părinți. Copiii sunt îngrijiți pe parcursul zilei de educatori calificați, oferindu-le părinților posibilitatea de a-și găsi un loc de muncă.</p>
                         </div>
                         <div class="service-hero-image">
-                            <img src="images/zi7.jpg" alt="Secția Zi 4 luni - 3 ani" loading="lazy">
+                            <img src="images/zi10.jpg" alt="Secția Zi 4 luni - 3 ani" loading="lazy">
                         </div>
                     </div>
 

@@ -192,7 +192,7 @@
                             <p>Secția de Criză și Reintegrare Familială găzduiește temporar copii cu vârsta cuprinsă între 0 – 7 ani, aflați în situații de risc, abandonați sau orfani. Plasamentul se realizează pentru o perioadă de până la 45 de zile, în baza Dispoziției de plasament de urgență emisă de Autoritatea Tutelară Locală, însoțită de Demers. Pe perioada plasamentului, copiii beneficiază de toate serviciile oferite de centru. Pentru soluționarea cazurilor, secția colaborează activ cu: autoritățile administrației publice locale și teritoriale; organele de drept; organizații non-guvernamentale; instituțiile comunității.</p>
                         </div>
                         <div class="service-hero-image">
-                            <img src="images/criza.jpg" alt="Secția de Criză și Reintegrare Familială" loading="lazy">
+                            <img src="images/respiro6.jpg" alt="Secția de Criză și Reintegrare Familială" loading="lazy">
                         </div>
                     </div>
 
@@ -326,19 +326,19 @@
                         <h2>Galeria Secției de Criză și Reintegrare Familială</h2>
                         <div class="gallery-grid">
                             <div class="gallery-item">
-                                <img src="images/41.jpg" alt="Asocieri în grup" loading="lazy">
+                                <img src="images/zoo1.jpeg" alt="Asocieri în grup" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4>Asocieri în grup</h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/2552.jpg" alt="Spațiul de Joacă" loading="lazy">
+                                <img src="images/zoo6.jpeg" alt="Spațiul de Joacă" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4>Spațiul de Joacă</h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/555555.jpg" alt="Spațiul de Joacă" loading="lazy">
+                                <img src="images/zoo7.jpeg" alt="Spațiul de Joacă" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4>Spațiul de Joacă</h4>
                                 </div>
@@ -350,7 +350,7 @@
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/14.jpg" alt="Vizită la Grădina Zoologică" loading="lazy">
+                                <img src="images/.jpg" alt="Vizită la Grădina Zoologică" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4>Vizită la Grădina Zoologică</h4>
                                 </div>

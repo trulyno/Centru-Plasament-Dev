@@ -194,7 +194,7 @@
 Prin terapie, activități educaționale și intervenție timpurie, ajutăm fiecare copil să își valorifice potențialul într-un mediu sigur și afectuos. </p>
                         </div>
                         <div class="service-hero-image">
-                            <img src="images/sap1.jpg" alt="Activități psihopedagogice - Secția Asistență Psihopedagogică" loading="lazy">
+                            <img src="images/zoo9.jpeg" alt="Activități psihopedagogice - Secția Asistență Psihopedagogică" loading="lazy">
                         </div>
                     </div>
 
@@ -278,19 +278,19 @@ Prin terapie, activități educaționale și intervenție timpurie, ajutăm fiec
                         <h2>Galeria Secției Asistență Psihopedagogică</h2>
                         <div class="gallery-grid">
                             <div class="gallery-item">
-                                <img src="images/sap2.jpg" alt="Activități de relaxare și odihnă terapeutică" loading="lazy">
+                                <img src="images/zoo1.jpeg" alt="Activități de relaxare și odihnă terapeutică" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4>Activități de Relaxare și Odihnă Terapeutică</h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/sap3.jpg" alt="Festival de toamnă - activități de socializare" loading="lazy">
+                                <img src="images/zoo2.jpeg" alt="Festival de toamnă - activități de socializare" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4>Festival de Toamnă - Activități de Socializare</h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/sap4.jpg" alt="Programe educaționale - descoperirea mediului natural" loading="lazy">
+                                <img src="images/zoo3.jpeg" alt="Programe educaționale - descoperirea mediului natural" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4>Programe Educaționale - Descoperirea Mediului Natural</h4>
                                 </div>
