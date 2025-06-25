@@ -325,7 +325,7 @@ require_once __DIR__ . '/includes/lang.php';
                 </div>
                 <div class="stat-item fade-in">
                     <h3 id="stat2">0</h3>
-                    <p>Externați de Succes</p>
+                    <p>Externați cu Succes</p>
                 </div>
                 <div class="stat-item fade-in">
                     <h3 id="stat3">0</h3>
