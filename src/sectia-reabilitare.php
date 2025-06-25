@@ -202,7 +202,7 @@ require_once __DIR__ . '/includes/lang.php';
                             <p><?php echo t('services_rehabilitation'); ?> oferă tratament și programe de reabilitare copiilor din instituție, în special celor cu dizabilități motorii, comportamentale, intelectuale sau de vorbire. Copiii primesc un program individualizat, beneficiind de terapie, masaj, kinetoterapie și proceduri fizioterapeutice realizate de personal calificat, în spații special amenajate.</p>
                         </div>
                         <div class="service-hero-image">
-                            <img src="images/masaj.jpg" alt="<?php echo t('services_rehabilitation'); ?>" loading="lazy">
+                            <img src="images/respiro3.jpg" alt="Secția Reabilitare" loading="lazy">
                         </div>
                     </div>
 
@@ -286,19 +286,19 @@ require_once __DIR__ . '/includes/lang.php';
                         <h2>Spațiile Noastre</h2>
                         <div class="gallery-grid">
                             <div class="gallery-item">
-                                <img src="images/kinetoterapie.jpg" alt="Sala de Kinetoterapie" loading="lazy">
+                                <img src="images/z21.jpg" alt="Sala de Kinetoterapie" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4>Sala de Kinetoterapie</h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/masaj.jpg" alt="Camera de Masaj" loading="lazy">
+                                <img src="images/21.jpg" alt="Camera de Masaj" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4>Camera de Masaj</h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/proceduri_fizioterapeutice.jpg" alt="Proceduri Fizioterapeutice" loading="lazy">
+                                <img src="images/35.jpg" alt="Proceduri Fizioterapeutice" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4>Proceduri Fizioterapeutice</h4>
                                 </div>

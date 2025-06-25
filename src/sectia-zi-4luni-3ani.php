@@ -204,7 +204,7 @@ require_once __DIR__ . '/includes/lang.php';
                             <p><?php echo t('day_4m_3y_about_desc'); ?></p>
                         </div>
                         <div class="service-hero-image">
-                            <img src="images/zi7.jpg" alt="<?php echo t('services_day_4m_3y'); ?>" loading="lazy">
+                            <img src="images/zi10.jpg" alt="Secția Zi 4 luni - 3 ani" loading="lazy">
                         </div>
                     </div>
 

@@ -214,8 +214,8 @@ require_once __DIR__ . '/includes/lang.php';
                                     <i class="fas fa-home"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4>Lorem Ipsum</h4>
-                                    <p>Lorem Ipsum</p>
+                                    <h4>Consultații specializate oferite de:</h4>
+                                    <p>Pediatri,Neuropediatri,Reabilitolog,Oftalmolog,Ftiziatru</p>
                                 </div>
                             </div>
                             <div class="service-item">
@@ -223,8 +223,8 @@ require_once __DIR__ . '/includes/lang.php';
                                     <i class="fas fa-heart"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4>Lorem Ipsum</h4>
-                                    <p>Lorem Ipsum</p>
+                                    <h4>Evaluări clinice și paraclinice:</h4>
+                                    <p>Investigații de laborator,Examinări instrumentale,Stabilirea diagnosticului,Elaborarea programului individualizat de tratament și reabilitare</p>
                                 </div>
                             </div>
                             <div class="service-item">
@@ -232,8 +232,8 @@ require_once __DIR__ . '/includes/lang.php';
                                     <i class="fas fa-user-md"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4>Lorem Ipsum</h4>
-                                    <p>Lorem Ipsum</p>
+                                    <h4>Tratament și prevenție:</h4>
+                                    <p>Corecție nutrițională personalizată,Tratament medicamentos,Imunizare profilactică,Prevenirea bolilor de fond și a celor respiratorii</p>
                                 </div>
                             </div>
                             <div class="service-item">
@@ -241,8 +241,8 @@ require_once __DIR__ . '/includes/lang.php';
                                     <i class="fas fa-graduation-cap"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4>Lorem Ipsum</h4>
-                                    <p>Lorem Ipsum</p>
+                                    <h4>Reabilitare medicală integrată:</h4>
+                                    <p>Kinetoterapiem,Logopedie,Psihologie și psihopedagogie</p>
                                 </div>
                             </div>
                         </div>
@@ -255,29 +255,29 @@ require_once __DIR__ . '/includes/lang.php';
                                 <div class="info-icon">
                                     <i class="fas fa-users"></i>
                                 </div>
-                                <h4>Beneficiari</h4>
-                                <p>Lorem Ipsum</p>
+                                <h4>Monitorizare</h4>
+                                <p>LCopiii cu nevoi speciale sunt monitorizați în evidență dispanserizată, în funcție de patologia de bază.</p>
                             </div>
                             <div class="info-card">
                                 <div class="info-icon">
                                     <i class="fas fa-calendar-alt"></i>
                                 </div>
-                                <h4>Durata Serviciului</h4>
-                                <p>Lorem Ipsum</p>
+                                <h4>Legislatie</h4>
+                                <p>Toate serviciile medicale se desfășoară în conformitate cu Protocoalele Clinice Naționale și legislația în vigoare.</p>
                             </div>
                             <div class="info-card">
                                 <div class="info-icon">
                                     <i class="fas fa-bed"></i>
                                 </div>
-                                <h4>Capacitate</h4>
-                                <p>Lorem Ipsum</p>
+                                <h4>Reabilitarea</h4>
+                                <p>Reabilitarea se realizează în colaborare interdisciplinară, pentru a asigura o abordare completă și eficientă a fiecărui caz.</p>
                             </div>
                             <div class="info-card">
                                 <div class="info-icon">
                                     <i class="fas fa-clock"></i>
                                 </div>
                                 <h4>Program</h4>
-                                <p>Lorem Ipsum</p>
+                                <p>Luni-Vineri, urgente 24/7.</p>
                             </div>
                         </div>
                     </div>

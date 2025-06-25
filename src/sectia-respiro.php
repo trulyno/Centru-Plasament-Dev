@@ -286,7 +286,7 @@ require_once __DIR__ . '/includes/lang.php';
                         <h2><?php echo t('respiro_gallery_title'); ?></h2>
                         <div class="gallery-grid">
                             <div class="gallery-item">
-                                <img src="images/respiro1.jpg" alt="<?php echo t('respiro_gallery_1_alt'); ?>" loading="lazy">
+                                <img src="images/zi10.jpg" alt="Activități Zilnice" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t('respiro_gallery_1_title'); ?></h4>
                                 </div>

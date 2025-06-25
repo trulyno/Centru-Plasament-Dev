@@ -203,6 +203,7 @@ require_once __DIR__ . '/includes/lang.php';
                         </div>
                         <div class="service-hero-image">
                             <img src="images/maternala.jpg" alt="<?php echo t('services_maternal'); ?>" loading="lazy">
+                            <img src="images/maternala3.jpg" alt="Secția Maternală" loading="lazy">
                         </div>
                     </div>
 
@@ -287,12 +288,14 @@ require_once __DIR__ . '/includes/lang.php';
                         <div class="gallery-grid">
                             <div class="gallery-item">
                                 <img src="images/maternala1.jpg" alt="<?php echo t('maternal_gallery_1_alt'); ?>" loading="lazy">
+                                <img src="images/sap4.jpg" alt="Camera pentru Mame și Copii" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t('maternal_gallery_1_title'); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
                                 <img src="images/maternala2.jpg" alt="<?php echo t('maternal_gallery_2_alt'); ?>" loading="lazy">
+                                <img src="images/sap13.jpg" alt="Spațiu de Joacă" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t('maternal_gallery_2_title'); ?></h4>
                                 </div>
