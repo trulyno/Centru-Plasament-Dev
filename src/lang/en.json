@@ -880,5 +880,32 @@
   "petition_submit_btn": "Submit Petition",
   "petition_reset_btn": "Reset Form",
   
-  "petition_footer_info": "Petitions and complaints will be examined according to the deadlines provided by current legislation."
+  "petition_footer_info": "Petitions and complaints will be examined according to the deadlines provided by current legislation.",
+
+  "medical_subtitle": "Pediatricians, neuropediatricians, rehabilitation specialists, ophthalmologists, phthisiologists, who provide consultative assistance, clinical and paraclinical examination",
+  "medical_about_desc": "The Medical Section offers specialized care and comprehensive support for beneficiary children, through a dedicated team of experienced doctors and medical assistants. The activity is focused on diagnosing, treating and rehabilitating children with various conditions, in accordance with Ministry of Health standards and the individual needs of each child.",
+  "medical_alt_text": "Medical Assistance Section",
+  "medical_consultations_title": "Specialized consultations offered by:",
+  "medical_consultations_desc": "Pediatricians, Neuropediatricians, Rehabilitation specialists, Ophthalmologists, Physiatrists",
+  "medical_evaluations_title": "Clinical and paraclinical evaluations:",
+  "medical_evaluations_desc": "Laboratory investigations, Instrumental examinations, Diagnosis establishment, Development of individualized treatment and rehabilitation program",
+  "medical_treatment_title": "Treatment and prevention:",
+  "medical_treatment_desc": "Personalized nutritional correction, Drug treatment, Prophylactic immunization, Prevention of underlying diseases and respiratory conditions",
+  "medical_rehabilitation_title": "Integrated medical rehabilitation:",
+  "medical_rehabilitation_desc": "Kinesiotherapy, Speech therapy, Psychology and psychopedagogy",
+  "medical_monitoring_title": "Monitoring",
+  "medical_monitoring_desc": "Children with special needs are monitored in dispensary records, according to the underlying pathology",
+  "medical_legislation_title": "Legislation",
+  "medical_legislation_desc": "All medical services are carried out in accordance with National Clinical Protocols and current legislation",
+  "medical_rehabilitation_interdisciplinary_title": "Rehabilitation",
+  "medical_rehabilitation_interdisciplinary_desc": "Rehabilitation is carried out in interdisciplinary collaboration, to ensure a comprehensive and efficient approach to each case",
+  "medical_schedule_title": "Schedule",
+  "medical_schedule_desc": "Monday-Friday",
+  "medical_gallery_title": "Medical Assistance Section Gallery",
+  "medical_gallery_comfortable_rooms": "Comfortable Rooms",
+  "medical_gallery_playroom": "Children's Play Area",
+  "medical_gallery_counseling": "Counseling and Training",
+  "medical_gallery_kitchen": "Equipped Kitchen",
+  "medical_gallery_training": "Training Room",
+  "medical_gallery_safe_environment": "Safe and Confidential Environment"
 }

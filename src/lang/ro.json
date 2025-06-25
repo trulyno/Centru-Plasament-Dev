@@ -882,6 +882,30 @@
   
   "petition_footer_info": "Petițiile și reclamațiile vor fi examinate conform termenelor prevăzute de legislația în vigoare.",
   
-  "anthem_song_title": "Alexandru Lozanciuc - Să dăruim copiilor pământul",
-  "anthem_lyrics": "Nimic mai sfânt ca soarele<br>Ce luminează viața noastră pe pământ<br>Nimic mai sfânt pe acest pământ<br>Ca mamele cu prunci prin soare alergând<br><br>Cât de uimit ne dăruiesc<br>Copiii noștri ce alăturea ne cresc<br>Nimic mai drag pe acest meleag<br>Decât copilul așteptându-te-n prag<br><br>Hai oameni, hai să dăruim copiilor<br>Pământul nostru neîmpărțit, neîmpărțit<br>Hai oameni, hai să dăruim copiilor<br>Pământul nostru înflorit, nepustiit<br><br>Să fie toate acestea și în viitor<br>Să aibă fiii noștri în case prunci lor<br>Să nu lăsăm pământul să ne ardă în foc<br>Să crească copilașii noștri cu noroc<br><br>Nimic mai sfânt ca pacea-n noi<br>În timp de pace sunt și viața omului<br>Nimic mai scump, mai omenesc<br>Ca pacea pe care oamenii râvnesc<br><br>Cât de uimiți și semne noi<br>Când mire și mireasă trec pe lângă noi<br>Câte minuni, băi oameni buni<br>În orice seară pot copiii să-ți adun<br><br>Hai oameni, hai să dăruim copiilor<br>Pământul nostru neîmpărțit, neîmpărțit<br>Hai oameni, hai să dăruim copiilor<br>Pământul nostru înflorit, nepustiit<br><br>Să fie toate acestea și în viitor<br>Să aibă fiii noștri în case prunci lor<br>Să nu lăsăm pământul să ne ardă în foc<br>Să crească copilașii noștri cu noroc"
+  "medical_subtitle": "Pediatri, neuropediatri, reabilitolog, oftalmolog, ftiziatru, care oferă asistenţă consultativă, examinare clinică şi paraclinică",
+  "medical_about_desc": "Secția medicală oferă îngrijire specializată și suport complex pentru copiii beneficiari, printr-o echipă dedicată formată din medici și asistente medicale cu experiență. Activitatea este centrată pe diagnosticarea, tratarea și reabilitarea copiilor cu diferite afecțiuni, în conformitate cu standardele Ministerului Sănătății și nevoile individuale ale fiecărui copil.",
+  "medical_alt_text": "Secția Asistență Medicală",
+  "medical_consultations_title": "Consultații specializate oferite de:",
+  "medical_consultations_desc": "Pediatri, Neuropediatri, Reabilitologi, Oftalmologi, Fiziatrii",
+  "medical_evaluations_title": "Evaluări clinice și paraclinice:",
+  "medical_evaluations_desc": "Investigații de laborator, Examinări instrumentale, Stabilirea diagnosticului, Elaborarea programului individualizat de tratament și reabilitare",
+  "medical_treatment_title": "Tratament și prevenție:",
+  "medical_treatment_desc": "Corecție nutrițională personalizată, Tratament medicamentos, Imunizare profilactică, Prevenirea bolilor de fond și a celor respiratorii",
+  "medical_rehabilitation_title": "Reabilitare medicală integrată:",
+  "medical_rehabilitation_desc": "Kinetoterapiem, Logopedie, Psihologie și psihopedagogie",
+  "medical_monitoring_title": "Monitorizare",
+  "medical_monitoring_desc": "Copiii cu nevoi speciale sunt monitorizați în evidență dispanserizată, în funcție de patologia de bază",
+  "medical_legislation_title": "Legislație",
+  "medical_legislation_desc": "Toate serviciile medicale se desfășoară în conformitate cu Protocoalele Clinice Naționale și legislația în vigoare",
+  "medical_rehabilitation_interdisciplinary_title": "Reabilitarea",
+  "medical_rehabilitation_interdisciplinary_desc": "Reabilitarea se realizează în colaborare interdisciplinară, pentru a asigura o abordare completă și eficientă a fiecărui caz",
+  "medical_schedule_title": "Program",
+  "medical_schedule_desc": "Luni-Vineri",
+  "medical_gallery_title": "Galeria Secției Asistență Medicală",
+  "medical_gallery_comfortable_rooms": "Camere Confortabile",
+  "medical_gallery_playroom": "Spațiu de Joacă pentru Copii",
+  "medical_gallery_counseling": "Consiliere și Instruire",
+  "medical_gallery_kitchen": "Bucătărie Utilată",
+  "medical_gallery_training": "Sala de Instruire",
+  "medical_gallery_safe_environment": "Mediu Sigur și Confidențial"
 }

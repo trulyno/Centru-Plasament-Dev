@@ -190,7 +190,7 @@ require_once __DIR__ . '/includes/lang.php';
         <section class="page-header">
             <div class="container">
                 <h1><?php echo t('services_medical'); ?></h1>
-                <p>Lorem Ipsum</p>
+                <p><?php echo t('medical_subtitle'); ?></p>
             </div>
         </section>
 
@@ -199,11 +199,11 @@ require_once __DIR__ . '/includes/lang.php';
                 <div class="content-wrapper">
                     <div class="service-hero">
                         <div class="service-hero-content">
-                            <h2>Despre <?php echo t('services_medical'); ?></h2>
-                            <p>Lorem Ipsum</p>
+                            <h2><?php echo t('medical_about_title'); ?></h2>
+                            <p><?php echo t('medical_about_desc'); ?></p>
                         </div>
                         <div class="service-hero-image">
-                            <img src="images/maternala.jpg" alt="Secția Maternală" loading="lazy">
+                            <img src="images/maternala.jpg" alt="<?php echo t('medical_alt_text'); ?>" loading="lazy">
                         </div>
                     </div>
 
@@ -215,8 +215,8 @@ require_once __DIR__ . '/includes/lang.php';
                                     <i class="fas fa-home"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4>Consultații specializate oferite de:</h4>
-                                    <p>Pediatri,Neuropediatri,Reabilitolog,Oftalmolog,Ftiziatru</p>
+                                    <h4><?php echo t('medical_consultations_title'); ?></h4>
+                                    <p><?php echo t('medical_consultations_desc'); ?></p>
                                 </div>
                             </div>
                             <div class="service-item">
@@ -224,8 +224,8 @@ require_once __DIR__ . '/includes/lang.php';
                                     <i class="fas fa-heart"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4>Evaluări clinice și paraclinice:</h4>
-                                    <p>Investigații de laborator,Examinări instrumentale,Stabilirea diagnosticului,Elaborarea programului individualizat de tratament și reabilitare</p>
+                                    <h4><?php echo t('medical_evaluations_title'); ?></h4>
+                                    <p><?php echo t('medical_evaluations_desc'); ?></p>
                                 </div>
                             </div>
                             <div class="service-item">
@@ -233,8 +233,8 @@ require_once __DIR__ . '/includes/lang.php';
                                     <i class="fas fa-user-md"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4>Tratament și prevenție:</h4>
-                                    <p>Corecție nutrițională personalizată,Tratament medicamentos,Imunizare profilactică,Prevenirea bolilor de fond și a celor respiratorii</p>
+                                    <h4><?php echo t('medical_treatment_title'); ?></h4>
+                                    <p><?php echo t('medical_treatment_desc'); ?></p>
                                 </div>
                             </div>
                             <div class="service-item">
@@ -242,8 +242,8 @@ require_once __DIR__ . '/includes/lang.php';
                                     <i class="fas fa-graduation-cap"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4>Reabilitare medicală integrată:</h4>
-                                    <p>Kinetoterapiem,Logopedie,Psihologie și psihopedagogie</p>
+                                    <h4><?php echo t('medical_rehabilitation_title'); ?></h4>
+                                    <p><?php echo t('medical_rehabilitation_desc'); ?></p>
                                 </div>
                             </div>
                         </div>
@@ -256,70 +256,70 @@ require_once __DIR__ . '/includes/lang.php';
                                 <div class="info-icon">
                                     <i class="fas fa-users"></i>
                                 </div>
-                                <h4>Monitorizare</h4>
-                                <p>LCopiii cu nevoi speciale sunt monitorizați în evidență dispanserizată, în funcție de patologia de bază.</p>
+                                <h4><?php echo t('medical_monitoring_title'); ?></h4>
+                                <p><?php echo t('medical_monitoring_desc'); ?></p>
                             </div>
                             <div class="info-card">
                                 <div class="info-icon">
                                     <i class="fas fa-calendar-alt"></i>
                                 </div>
-                                <h4>Legislatie</h4>
-                                <p>Toate serviciile medicale se desfășoară în conformitate cu Protocoalele Clinice Naționale și legislația în vigoare.</p>
+                                <h4><?php echo t('medical_legislation_title'); ?></h4>
+                                <p><?php echo t('medical_legislation_desc'); ?></p>
                             </div>
                             <div class="info-card">
                                 <div class="info-icon">
                                     <i class="fas fa-bed"></i>
                                 </div>
-                                <h4>Reabilitarea</h4>
-                                <p>Reabilitarea se realizează în colaborare interdisciplinară, pentru a asigura o abordare completă și eficientă a fiecărui caz.</p>
+                                <h4><?php echo t('medical_rehabilitation_interdisciplinary_title'); ?></h4>
+                                <p><?php echo t('medical_rehabilitation_interdisciplinary_desc'); ?></p>
                             </div>
                             <div class="info-card">
                                 <div class="info-icon">
                                     <i class="fas fa-clock"></i>
                                 </div>
-                                <h4>Program</h4>
-                                <p>Luni-Vineri, urgente 24/7.</p>
+                                <h4><?php echo t('medical_schedule_title'); ?></h4>
+                                <p><?php echo t('medical_schedule_desc'); ?></p>
                             </div>
                         </div>
                     </div>
 
                     <div class="service-gallery">
-                        <h2>Galeria Secției Asistență Medicală</h2>
+                        <h2><?php echo t('medical_gallery_title'); ?></h2>
                         <div class="gallery-grid">
                             <div class="gallery-item">
                                 <img src="images/maternala1.jpg" alt="Camera pentru Mame și Copii" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Camere Confortabile</h4>
+                                    <h4><?php echo t('medical_gallery_comfortable_rooms'); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
                                 <img src="images/maternala2.jpg" alt="Spațiu de Joacă" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Spațiu de Joacă pentru Copii</h4>
+                                    <h4><?php echo t('medical_gallery_playroom'); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
                                 <img src="images/maternala3.jpg" alt="Consiliere Parentală" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Consiliere și Instruire</h4>
+                                    <h4><?php echo t('medical_gallery_counseling'); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
                                 <img src="images/maternala4.jpg" alt="Bucătărie Utilată" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Bucătărie Utilată</h4>
+                                    <h4><?php echo t('medical_gallery_kitchen'); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
                                 <img src="images/maternala5.jpg" alt="Sala de Instruire" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Sala de Instruire</h4>
+                                    <h4><?php echo t('medical_gallery_training'); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
                                 <img src="images/maternala6.jpg" alt="Mediu Sigur și Confidențial" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Mediu Sigur și Confidențial</h4>
+                                    <h4><?php echo t('medical_gallery_safe_environment'); ?></h4>
                                 </div>
                             </div>
                         </div>
@@ -338,14 +338,14 @@ require_once __DIR__ . '/includes/lang.php';
     <!-- Audio Element -->
     <audio id="audioElement" preload="metadata">
         <source src="audio/18_Alexandru_Lozanciuc_-_Sa_daruim_copiilor_pamantul.mp3" type="audio/mpeg">
-        Browser-ul tău nu suportă elementul audio.
+        <?php echo t('audio_not_supported'); ?>
     </audio>
 
     <!-- Lyrics Modal -->
     <div class="lyrics-modal" id="lyricsModal">
         <div class="lyrics-modal-content">
             <div class="lyrics-header">
-                <h3>Versurile imnului instituției</h3>
+                <h3><?php echo t('lyrics_modal_title'); ?></h3>
                 <button class="lyrics-close-btn" id="lyricsCloseBtn" aria-label="Închide versurile">
                     <i class="fas fa-times"></i>
                 </button>
