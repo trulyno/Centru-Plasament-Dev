@@ -1,13 +1,17 @@
+<?php
+// Include language configuration
+require_once __DIR__ . '/includes/lang.php';
+?>
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="<?php echo getCurrentLanguage(); ?>">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Secția de Criză și Reintegrare Familială găzduiește temporar copii până la 7 ani aflați în situații de risc, pe baza dispoziției de plasament de la autorități.">
-    <meta name="keywords" content="plasament copii, găzduire temporară, situații de risc, copii vulnerabili">
-    <meta name="author" content="Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă">
+    <meta name="description" content="<?php echo t('crisis_meta_description'); ?>">
+    <meta name="keywords" content="<?php echo t('crisis_meta_keywords'); ?>">
+    <meta name="author" content="<?php echo t('site_title'); ?>">
     
-    <title>Secția de Criză și Reintegrare Familială - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă</title>
+    <title><?php echo t('crisis_page_title'); ?></title>
     <link rel="icon" href="images/logo.ico" type="image/x-icon" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
@@ -20,18 +24,22 @@
 
     <!-- Accessibility improvements -->
     <div class="skip-links">
-        <a href="#main-content" class="skip-link">Salt la conținutul principal</a>
+        <a href="#main-content" class="skip-link"><?php echo t('skip_to_content'); ?></a>
     </div>
 
     <!-- Header -->
     <header class="header">
         <!-- Top Header Section -->
-        <div class="header-top">
-            <div class="header-top-container">
+        <div class="header-top" id="headerTop">
+            <button class="header-expand-btn" id="headerExpandBtn" aria-label="<?php echo t('expand_header'); ?>" aria-expanded="false">
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="header-top-container" id="headerTopContainer">
                 <div class="header-logo">
-                    <img src="images/logo.jpeg" alt="Logo Centru Plasament" class="logo-image">
+                    <img src="images/logo.jpeg" alt="<?php echo t('logo_alt'); ?>" class="logo-image">
                     <div class="logo-text">
-                        <h1>Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă din municipiul Chișinău</h1>
+                        <h1 class="logo-text-full"><?php echo t('site_title_full'); ?></h1>
+                        <h1 class="logo-text-abbreviated"><?php echo t('site_title_short'); ?></h1>
                     </div>
                 </div>
                 
@@ -40,48 +48,51 @@
                         <div class="contact-item-header">
                             <i class="fas fa-phone"></i>
                             <div>
-                                <span>Telefon</span>
+                                <span><?php echo t('contact_phone'); ?></span>
                                 <a href="tel:022737027">022 737 027</a>
                             </div>
                         </div>
                         <div class="contact-item-header">
                             <i class="fas fa-envelope"></i>
                             <div>
-                                <span>Email</span>
+                                <span><?php echo t('contact_email'); ?></span>
                                 <a href="mailto:centru_plasament@agssi.md">centru_plasament@agssi.md</a>
                             </div>
                         </div>
                     </div>
                     
                     <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Facebook">
+                        <a href="#" class="social-link" aria-label="<?php echo t('social_facebook'); ?>">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#" class="social-link" aria-label="Instagram">
+                        <a href="#" class="social-link" aria-label="<?php echo t('social_instagram'); ?>">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#" class="social-link" aria-label="LinkedIn">
+                        <a href="#" class="social-link" aria-label="<?php echo t('social_linkedin'); ?>">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="#" class="social-link" aria-label="YouTube">
+                        <a href="#" class="social-link" aria-label="<?php echo t('social_youtube'); ?>">
                             <i class="fab fa-youtube"></i>
                         </a>
                     </div>
                     
                     <div class="donate-section">
-                        <button class="donate-btn" aria-label="Donează pentru a sprijini copiii" title="Donează">
+                        <button class="donate-btn" aria-label="<?php echo t('donate_aria'); ?>" title="<?php echo t('btn_donate'); ?>">
                             <i class="fas fa-heart"></i>
-                            <span>Donează</span>
+                            <span><?php echo t('btn_donate'); ?></span>
                         </button>
-                        <button class="audio-btn" id="audioBtn" aria-label="Imnul instituției" title="Imnul instituției: Alexandru Lozanciuc - Să dăruim copiilor pământul">
+                        <button class="audio-btn" id="audioBtn" aria-label="<?php echo t('anthem_aria'); ?>" title="<?php echo t('anthem_title'); ?>">
                             <i class="fas fa-music"></i>
-                            <span>Imn</span>
+                            <span><?php echo t('btn_anthem'); ?></span>
                         </button>
-                        <button class="lyrics-btn" id="lyricsBtn" aria-label="Afișează versurile" title="Versurile imnului">
+                        <button class="lyrics-btn" id="lyricsBtn" aria-label="<?php echo t('lyrics_aria'); ?>" title="<?php echo t('lyrics_title'); ?>">
                             <i class="fas fa-align-left"></i>
-                            <span>Versuri</span>
+                            <span><?php echo t('btn_lyrics'); ?></span>
                         </button>
                     </div>
+                    
+                    <!-- Language Selector -->
+                    <?php echo getLanguageSelector('sectia-criza-reintegrare-familiala.php'); ?>
                 </div>
             </div>
         </div>
@@ -94,78 +105,78 @@
                 <span>CPRCVF</span>
             </div>
             <div class="mobile-action-buttons">
-                <button class="donate-btn" aria-label="Donează pentru a sprijini copiii" title="Donează">
+                <button class="donate-btn" aria-label="<?php echo t('donate_aria'); ?>" title="<?php echo t('btn_donate'); ?>">
                     <i class="fas fa-heart"></i>
                 </button>
-                <button class="audio-btn" id="audioBtn" aria-label="Imnul instituției" title="Imnul instituției">
+                <button class="audio-btn" id="audioBtn" aria-label="<?php echo t('anthem_aria'); ?>" title="<?php echo t('anthem_title'); ?>">
                     <i class="fas fa-music"></i>
                 </button>
-                <button class="lyrics-btn" id="lyricsBtn" aria-label="Afișează versurile" title="Versurile imnului">
+                <button class="lyrics-btn" id="lyricsBtn" aria-label="<?php echo t('lyrics_aria'); ?>" title="<?php echo t('lyrics_title'); ?>">
                     <i class="fas fa-align-left"></i>
                 </button>
             </div>
             <nav>
                 <ul class="nav-menu" id="navMenu">
-                    <li><a href="index.php">Acasă</a></li>
+                    <li><a href="index.php"><?php echo t('nav_home'); ?></a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Servicii <i class="fas fa-chevron-down"></i></a>
+                        <a href="#" class="dropdown-toggle"><?php echo t('nav_services'); ?> <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="sectia-criza-reintegrare-familiala.php">Secția de Criză și Reintegrare Familială</a></li>
-                            <li><a href="sectia-maternala.php">Secția Maternală</a></li>
-                            <li><a href="sectia-zi-4luni-3ani.php">Secția Zi (4 luni - 3 ani)</a></li>
-                            <li><a href="sectia-de-zi.php">Secția de Zi</a></li>
-                            <li><a href="sectia-respiro.php">Secția Respiro</a></li>
-                            <li><a href="sectia-asistenta-psihopedagogica.php">Secția Asistență Psihopedagogică</a></li>
-                            <li><a href="sectia-reabilitare.php">Secția Reabilitare</a></li>
-                               <li><a href="sectia-asistenta-medicala.php">Secția Asistență Medicală</a></li> 
+                            <li><a href="sectia-criza-reintegrare-familiala.php"><?php echo t('services_crisis'); ?></a></li>
+                            <li><a href="sectia-maternala.php"><?php echo t('services_maternal'); ?></a></li>
+                            <li><a href="sectia-zi-4luni-3ani.php"><?php echo t('services_day_4m_3y'); ?></a></li>
+                            <li><a href="sectia-de-zi.php"><?php echo t('services_day'); ?></a></li>
+                            <li><a href="sectia-respiro.php"><?php echo t('services_respiro'); ?></a></li>
+                            <li><a href="sectia-asistenta-psihopedagogica.php"><?php echo t('services_psycho_pedagogical'); ?></a></li>
+                            <li><a href="sectia-reabilitare.php"><?php echo t('services_rehabilitation'); ?></a></li>
+                            <li><a href="sectia-asistenta-medicala.php"><?php echo t('services_medical'); ?></a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Despre Noi <i class="fas fa-chevron-down"></i></a>
+                        <a href="#" class="dropdown-toggle"><?php echo t('nav_about'); ?> <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="administratia.php">Administrația</a></li>
-                            <li><a href="organigrama.php">Organigrama</a></li>
+                            <li><a href="administratia.php"><?php echo t('about_administration'); ?></a></li>
+                            <li><a href="organigrama.php"><?php echo t('about_organigram'); ?></a></li>
                             
-                            <li><a href="functii-vacante.php">Funcții Vacante</a></li>
+                            <li><a href="functii-vacante.php"><?php echo t('about_vacant_positions'); ?></a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Transparența <i class="fas fa-chevron-down"></i></a>
+                        <a href="#" class="dropdown-toggle"><?php echo t('nav_transparency'); ?> <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li class="dropdown-nested">
-                                <a href="#" class="dropdown-toggle-nested">Legislație <i class="fas fa-chevron-right"></i></a>
+                                <a href="#" class="dropdown-toggle-nested"><?php echo t('transparency_legislation'); ?> <i class="fas fa-chevron-right"></i></a>
                                 <ul class="dropdown-menu-nested">
-                                    <li><a href="acte-nationale.php">Acte Naționale</a></li>
-                                    <li><a href="acte-internationale.php">Acte Internaționale</a></li>
-                                    <li><a href="acte-interne.php">Acte Interne</a></li>
-                                    <li><a href="codul-deontologic.php">Codul Deontologic</a></li>
-                                    <li><a href="metodologii.php">Metodologii</a></li>
+                                    <li><a href="acte-nationale.php"><?php echo t('legislation_national'); ?></a></li>
+                                    <li><a href="acte-internationale.php"><?php echo t('legislation_international'); ?></a></li>
+                                    <li><a href="acte-interne.php"><?php echo t('legislation_internal'); ?></a></li>
+                                    <li><a href="codul-deontologic.php"><?php echo t('legislation_ethics_code'); ?></a></li>
+                                    <li><a href="metodologii.php"><?php echo t('legislation_methodologies'); ?></a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-nested">
-                                <a href="#" class="dropdown-toggle-nested">Achiziții <i class="fas fa-chevron-right"></i></a>
+                                <a href="#" class="dropdown-toggle-nested"><?php echo t('transparency_procurement'); ?> <i class="fas fa-chevron-right"></i></a>
                                 <ul class="dropdown-menu-nested">
-                                    <li><a href="invitatii-participare.php">Invitații de Participare</a></li>
-                                    <li><a href="planuri-achizitii.php">Planuri de Achiziții</a></li>
-                                    <li><a href="rapoarte-achizitii.php">Rapoarte de Achiziții</a></li>
+                                    <li><a href="invitatii-participare.php"><?php echo t('procurement_invitations'); ?></a></li>
+                                    <li><a href="planuri-achizitii.php"><?php echo t('procurement_plans'); ?></a></li>
+                                    <li><a href="rapoarte-achizitii.php"><?php echo t('procurement_reports'); ?></a></li>
                                 </ul>
                             </li>
-                            <li><a href="proiecte.php">Proiecte</a></li>
-                            <li><a href="rapoarte.php">Rapoarte</a></li>
-                            <li><a href="registru-cadouri.php">Registru Cadouri</a></li>
-                            <li><a href="petitii-reclamatii.php">Petiții și Reclamații</a></li>
+                            <li><a href="proiecte.php"><?php echo t('transparency_projects'); ?></a></li>
+                            <li><a href="rapoarte.php"><?php echo t('transparency_reports'); ?></a></li>
+                            <li><a href="registru-cadouri.php"><?php echo t('transparency_gifts_register'); ?></a></li>
+                            <li><a href="petitii-reclamatii.php"><?php echo t('transparency_petitions'); ?></a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Suport Informațional <i class="fas fa-chevron-down"></i></a>
+                        <a href="#" class="dropdown-toggle"><?php echo t('nav_info_support'); ?> <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="ghiduri.php">Ghiduri</a></li>
-                            <li><a href="intrebari-frecvente.php">Întrebări Frecvente</a></li>
+                            <li><a href="ghiduri.php"><?php echo t('info_guides'); ?></a></li>
+                            <li><a href="intrebari-frecvente.php"><?php echo t('info_faq'); ?></a></li>
                         </ul>
                     </li>
-                    <li><a href="galerie.php">Galerie</a></li>
-                    <li><a href="index.php#contact">Contact</a></li>
-                    <li><a href="index.php#partners">Parteneri</a></li>
+                    <li><a href="galerie.php"><?php echo t('nav_gallery'); ?></a></li>
+                    <li><a href="index.php#contact"><?php echo t('nav_contact'); ?></a></li>
+                    <li><a href="index.php#partners"><?php echo t('nav_partners'); ?></a></li>
                 </ul>
                 <button class="mobile-menu-btn" id="mobileMenuBtn">
                     <i class="fas fa-bars"></i>
@@ -178,8 +189,8 @@
     <main class="main-content" id="main-content">
         <section class="page-header">
             <div class="container">
-                <h1>Secția de Criză și Reintegrare Familială</h1>
-                <p>Găzduire temporară pentru copii până la 7 ani aflați în situații de risc</p>
+                <h1><?php echo t('services_crisis'); ?></h1>
+                <p><?php echo t('crisis_family_header_subtitle'); ?></p>
             </div>
         </section>
 
@@ -188,31 +199,31 @@
                 <div class="content-wrapper">
                     <div class="service-hero">
                         <div class="service-hero-content">
-                            <h2>Despre Secția de Criză și Reintegrare Familială</h2>
-                            <p>Secția de Criză și Reintegrare Familială găzduiește temporar copii cu vârsta cuprinsă între 0 – 7 ani, aflați în situații de risc, abandonați sau orfani. Plasamentul se realizează pentru o perioadă de până la 45 de zile, în baza Dispoziției de plasament de urgență emisă de Autoritatea Tutelară Locală, însoțită de Demers. Pe perioada plasamentului, copiii beneficiază de toate serviciile oferite de centru. Pentru soluționarea cazurilor, secția colaborează activ cu: autoritățile administrației publice locale și teritoriale; organele de drept; organizații non-guvernamentale; instituțiile comunității.</p>
+                            <h2><?php echo t('crisis_family_about_title'); ?></h2>
+                            <p><?php echo t('crisis_family_about_desc'); ?></p>
                         </div>
                         <div class="service-hero-image">
-                            <img src="images/respiro6.jpg" alt="Secția de Criză și Reintegrare Familială" loading="lazy">
+                            <img src="images/criza.jpg" alt="<?php echo t('services_crisis'); ?>" loading="lazy">
                         </div>
                     </div>
 
                     <div class="service-extra-info">
                         <div class="content">
-                            <h2>Vizitarea copiilor</h2>
-                            <p>Persoanele care doresc să își viziteze copiii găzduiți în secție trebuie să prezinte: un certificat medical care atestă starea de sănătate; un permis de vizită eliberat de autoritatea de la locul de trai sau de către ATAS/STAS din raionul în a cărui evidență se află copilul. Vizitele se realizează cu respectarea regulamentului intern al centrului, în interesul superior al copilului.</p>
+                            <h2><?php echo t('crisis_family_visiting_title'); ?></h2>
+                            <p><?php echo t('crisis_family_visiting_desc'); ?></p>
                         </div>
                     </div>
 
                     <div class="service-details">
-                        <h2>Servicii Oferite</h2>
+                        <h2><?php echo t('services_title'); ?></h2>
                         <div class="services-list">
                             <div class="service-item">
                                 <div class="service-icon">
                                     <i class="fas fa-home"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4>Găzduire Temporară</h4>
-                                    <p>Plasament temporar pentru copii aflați în situații de risc, cu durată până la 45 de zile.</p>
+                                    <h4><?php echo t('crisis_family_service_accommodation_title'); ?></h4>
+                                    <p><?php echo t('crisis_family_service_accommodation_desc'); ?></p>
                                 </div>
                             </div>
                             <div class="service-item">
@@ -220,8 +231,8 @@
                                     <i class="fas fa-ambulance"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4>Examinări medicale și imunizări</h4>
-                                    <p>Copiii beneficiază de investigații medicale, vaccinuri și alte măsuri preventive pentru sănătate.</p>
+                                    <h4><?php echo t('crisis_family_service_medical_title'); ?></h4>
+                                    <p><?php echo t('crisis_family_service_medical_desc'); ?></p>
                                 </div>
                             </div>
                             <div class="service-item">
@@ -229,8 +240,8 @@
                                     <i class="fas fa-stethoscope"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4>Tratamente și reabilitare medicală</h4>
-                                    <p>Acces la tratamente necesare și programe de recuperare, dacă este cazul.</p>
+                                    <h4><?php echo t('crisis_family_service_treatment_title'); ?></h4>
+                                    <p><?php echo t('crisis_family_service_treatment_desc'); ?></p>
                                 </div>
                             </div>
                             <div class="service-item">
@@ -238,8 +249,8 @@
                                     <i class="fas fa-graduation-cap"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4>Sprijin psiho-emoțional</h4>
-                                    <p>Consiliere și suport psihologic pentru gestionarea traumelor din perioada de criză.</p>
+                                    <h4><?php echo t('crisis_family_service_psychological_title'); ?></h4>
+                                    <p><?php echo t('crisis_family_service_psychological_desc'); ?></p>
                                 </div>
                             </div>
                             <div class="service-item">
@@ -247,24 +258,24 @@
                                     <i class="fas fa-graduation-cap"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4>Asistență educațională și socială</h4>
-                                    <p>Activități educaționale adaptate vârstei și facilitarea reintegrării sociale și familiale.</p>
+                                    <h4><?php echo t('crisis_family_service_educational_title'); ?></h4>
+                                    <p><?php echo t('crisis_family_service_educational_desc'); ?></p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="documents-section">
-                        <h2>Documente Necesare</h2>
-                        <p class="documents-intro">Pentru internarea în Secția de Criză, sunt necesare următoarele documente:</p>
+                        <h2><?php echo t('documents_title'); ?></h2>
+                        <p class="documents-intro"><?php echo t('crisis_family_documents_intro'); ?></p>
                         <div class="documents-list">
                             <div class="document-item" data-aos="fade-up" data-aos-delay="100">
                                 <div class="document-icon">
                                     <i class="fas fa-file-medical" aria-hidden="true"></i>
                                 </div>
                                 <div class="document-content">
-                                    <h5>Demersul autorităţilor tutelare locale/teritoriale</h5>
-                                    <p>Document care solicită plasamentul copilului în centru, emis de autorități</p>
+                                    <h5><?php echo t('crisis_family_document_request_title'); ?></h5>
+                                    <p><?php echo t('crisis_family_document_request_desc'); ?></p>
                                 </div>
                             </div>
                             <div class="document-item" data-aos="fade-up" data-aos-delay="100">
@@ -272,8 +283,8 @@
                                     <i class="fas fa-file-medical" aria-hidden="true"></i>
                                 </div>
                                 <div class="document-content">
-                                    <h5>Dispoziția autorităților tutelare locale/teritoriale</h5>
-                                    <p>Act oficial care aprobă plasamentul de urgență</p>
+                                    <h5><?php echo t('crisis_family_document_disposition_title'); ?></h5>
+                                    <p><?php echo t('crisis_family_document_disposition_desc'); ?></p>
                                 </div>
                             </div>
                             <div class="document-item" data-aos="fade-up" data-aos-delay="100">
@@ -281,93 +292,93 @@
                                     <i class="fas fa-file-medical" aria-hidden="true"></i>
                                 </div>
                                 <div class="document-content">
-                                    <h5>Avizul comisiei copilului aflat în dificultate</h5>
-                                    <p>Atestă că situația copilului necesită asistență și protecție specială</p>
+                                    <h5><?php echo t('crisis_family_document_committee_title'); ?></h5>
+                                    <p><?php echo t('crisis_family_document_committee_desc'); ?></p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="service-info">
-                        <h2>Informații Importante</h2>
+                        <h2><?php echo t('important_info_title'); ?></h2>
                         <div class="info-grid">
                             <div class="info-card">
                                 <div class="info-icon">
                                     <i class="fas fa-users"></i>
                                 </div>
-                                <h4>Vârsta Beneficiarilor</h4>
-                                <p>Copii cu vârsta de la 0 la 7 ani</p>
+                                <h4><?php echo t('crisis_family_info_age_title'); ?></h4>
+                                <p><?php echo t('crisis_family_info_age_desc'); ?></p>
                             </div>
                             <div class="info-card">
                                 <div class="info-icon">
                                     <i class="fas fa-clock"></i>
                                 </div>
-                                <h4>Durata Plasamentului</h4>
-                                <p>Până la 45 zile</p>
+                                <h4><?php echo t('crisis_family_info_placement_title'); ?></h4>
+                                <p><?php echo t('crisis_family_info_placement_desc'); ?></p>
                             </div>
                             <div class="info-card">
                                 <div class="info-icon">
                                     <i class="fas fa-gavel"></i>
                                 </div>
-                                <h4>Condiții de Admitere</h4>
-                                <p>Pe baza dispoziției de plasament de la autorități competente</p>
+                                <h4><?php echo t('crisis_family_info_admission_title'); ?></h4>
+                                <p><?php echo t('crisis_family_info_admission_desc'); ?></p>
                             </div>
                             <div class="info-card">
                                 <div class="info-icon">
                                     <i class="fas fa-id-card"></i>
                                 </div>
-                                <h4>Vizitarea copiilor</h4>
-                                <p>Vizitatorii trebuie să prezinte certificat medical și permis de vizită eliberat de autorități, iar întâlnirile se desfășoară conform regulamentului intern al centrului</p>
+                                <h4><?php echo t('crisis_family_info_visiting_title'); ?></h4>
+                                <p><?php echo t('crisis_family_info_visiting_desc'); ?></p>
                             </div>
                         </div>
                     </div>
 
                     <div class="service-gallery">
-                        <h2>Galeria Secției de Criză și Reintegrare Familială</h2>
+                        <h2><?php echo t('crisis_family_gallery_title'); ?></h2>
                         <div class="gallery-grid">
                             <div class="gallery-item">
-                                <img src="images/zoo1.jpeg" alt="Asocieri în grup" loading="lazy">
+                                <img src="images/41.jpg" alt="<?php echo t('crisis_family_gallery_1_alt'); ?>" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Asocieri în grup</h4>
+                                    <h4><?php echo t('crisis_family_gallery_1_title'); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/zoo6.jpeg" alt="Spațiul de Joacă" loading="lazy">
+                                <img src="images/2552.jpg" alt="<?php echo t('crisis_family_gallery_2_alt'); ?>" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Spațiul de Joacă</h4>
+                                    <h4><?php echo t('crisis_family_gallery_2_title'); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/zoo7.jpeg" alt="Spațiul de Joacă" loading="lazy">
+                                <img src="images/555555.jpg" alt="<?php echo t('crisis_family_gallery_3_alt'); ?>" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Spațiul de Joacă</h4>
+                                    <h4><?php echo t('crisis_family_gallery_3_title'); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/criza.jpg" alt="Sala de Mese" loading="lazy">
+                                <img src="images/criza.jpg" alt="<?php echo t('crisis_family_gallery_4_alt'); ?>" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Sala de Mese</h4>
+                                    <h4><?php echo t('crisis_family_gallery_4_title'); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/.jpg" alt="Vizită la Grădina Zoologică" loading="lazy">
+                                <img src="images/14.jpg" alt="<?php echo t('crisis_family_gallery_5_alt'); ?>" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Vizită la Grădina Zoologică</h4>
+                                    <h4><?php echo t('crisis_family_gallery_5_title'); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/2.jpg" alt="Activități Recreaționale" loading="lazy">
+                                <img src="images/2.jpg" alt="<?php echo t('crisis_family_gallery_6_alt'); ?>" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Activități Recreaționale</h4>
+                                    <h4><?php echo t('crisis_family_gallery_6_title'); ?></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="contact-cta">
-                        <h3>Contactează-ne pentru mai multe informații</h3>
-                        <p>Pentru situații de urgență sau pentru informații despre procedurile de plasament, te rugăm să ne contactezi imediat.</p>
-                        <a href="index.php#contact" class="cta-button">Contactează-ne</a>
+                        <h3><?php echo t('contact_title'); ?></h3>
+                        <p><?php echo t('service_contact_desc') ?></p>
+                        <a href="index.php#contact" class="cta-button"><?php echo t('contact_button'); ?></a>
                     </div>
                 </div>
             </div>
@@ -384,7 +395,7 @@
     <div class="lyrics-modal" id="lyricsModal">
         <div class="lyrics-modal-content">
             <div class="lyrics-header">
-                <h3>Versurile imnului instituției</h3>
+                <h3><?php echo t('lyrics_modal_title'); ?></h3>
                 <button class="lyrics-close-btn" id="lyricsCloseBtn" aria-label="Închide versurile">
                     <i class="fas fa-times"></i>
                 </button>
@@ -439,7 +450,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă. Toate drepturile rezervate.</p>
+            <p><?php echo t('footer_copyright'); ?></p>
         </div>
     </footer>
 

@@ -1161,6 +1161,52 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Language Selector Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const languageToggle = document.getElementById('languageToggle');
+    const languageDropdown = document.getElementById('languageDropdown');
+    const languageSelector = document.querySelector('.language-selector');
+    
+    if (languageToggle && languageDropdown && languageSelector) {
+        // Toggle language dropdown
+        languageToggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            languageSelector.classList.toggle('active');
+        });
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!languageSelector.contains(e.target)) {
+                languageSelector.classList.remove('active');
+            }
+        });
+        
+        // Close dropdown when pressing escape
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                languageSelector.classList.remove('active');
+            }
+        });
+        
+        // Handle language option selection
+        const languageOptions = languageDropdown.querySelectorAll('.language-option');
+        languageOptions.forEach(option => {
+            option.addEventListener('click', function(e) {
+                e.preventDefault();
+                const href = this.getAttribute('href');
+                if (href) {
+                    // Add a subtle loading effect
+                    this.style.opacity = '0.7';
+                    setTimeout(() => {
+                        window.location.href = href;
+                    }, 150);
+                }
+            });
+        });
+    }
+});
+
 // Add slide-in animation keyframes via JavaScript (since we can't modify the CSS file structure)
 // const style = document.createElement('style');
 // style.textContent = `
