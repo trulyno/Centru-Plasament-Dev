@@ -189,8 +189,8 @@ require_once __DIR__ . '/includes/lang.php';
     <main class="main-content" id="main-content">
         <section class="page-header">
             <div class="container">
-                <h1>Petiții și Reclamații</h1>
-                <p>Sistemul de petiții și reclamații pentru îmbunătățirea serviciilor</p>
+                <h1><?php echo t('petitions_header_title'); ?></h1>
+                <p><?php echo t('petitions_header_subtitle'); ?></p>
             </div>
         </section>
 
@@ -198,36 +198,36 @@ require_once __DIR__ . '/includes/lang.php';
             <div class="container">
                 <div class="content-wrapper">
                     <div class="petition-info">
-                        <h2>Sistem de Petiții și Reclamații</h2>
-                        <p>Prin intermediul acestui formular puteți depune petiții și reclamații conform legislației în vigoare. Toate petițiile vor fi examinate în conformitate cu prevederile legale.</p>
+                        <h2><?php echo t('petitions_system_title'); ?></h2>
+                        <p><?php echo t('petitions_system_description'); ?></p>
                         
                         <div class="requirements-box">
-                            <h3><i class="fas fa-info-circle"></i> Cerințe pentru depunerea petițiilor</h3>
+                            <h3><i class="fas fa-info-circle"></i> <?php echo t('petitions_requirements_title'); ?></h3>
                             <ul>
-                                <li><strong>Format:</strong> Petiția trebuie să fie în format PDF</li>
-                                <li><strong>Semnătură digitală:</strong> Obligatorie cu MSIGN</li>
-                                <li><strong>Dimensiune maximă:</strong> 15 MB</li>
-                                <li><strong>Fișiere suplimentare:</strong> Maximum 3 fișiere în format PDF, DOC sau ZIP</li>
+                                <li><strong><?php echo t('petitions_req_format'); ?></strong></li>
+                                <li><strong><?php echo t('petitions_req_signature'); ?></strong></li>
+                                <li><strong><?php echo t('petitions_req_size'); ?></strong></li>
+                                <li><strong><?php echo t('petitions_req_files'); ?></strong></li>
                             </ul>
                         </div>
                     </div>
 
                     <form class="petition-form" id="petitionForm">
-                        <h3>Formular de Depunere Petiție/Reclamație</h3>
+                        <h3><?php echo t('petition_form_title'); ?></h3>
                         
                         <!-- Entity Type Selection -->
                         <div class="form-group">
-                            <label class="form-label required">Tipul solicitantului:</label>
+                            <label class="form-label required"><?php echo t('petition_entity_type'); ?></label>
                             <div class="radio-group">
                                 <label class="radio-option">
                                     <input type="radio" name="entity_type" value="individual" required>
                                     <span class="radio-custom"></span>
-                                    <span class="radio-text">Persoană fizică</span>
+                                    <span class="radio-text"><?php echo t('petition_individual'); ?></span>
                                 </label>
                                 <label class="radio-option">
                                     <input type="radio" name="entity_type" value="legal" required>
                                     <span class="radio-custom"></span>
-                                    <span class="radio-text">Persoană juridică</span>
+                                    <span class="radio-text"><?php echo t('petition_legal'); ?></span>
                                 </label>
                             </div>
                         </div>
@@ -235,90 +235,90 @@ require_once __DIR__ . '/includes/lang.php';
                         <!-- Legal Entity Fields -->
                         <div class="form-row" id="legalEntityFields" style="display: none;">
                             <div class="form-group">
-                                <label for="idno" class="form-label">IDNO (opțional):</label>
-                                <input type="text" id="idno" name="idno" class="form-input" placeholder="Ex: 1234567890123">
-                                <small class="form-hint">Codul de identificare fiscală pentru persoane juridice</small>
+                                <label for="idno" class="form-label"><?php echo t('petition_idno_label'); ?></label>
+                                <input type="text" id="idno" name="idno" class="form-input" placeholder="<?php echo t('petition_idno_placeholder'); ?>">
+                                <small class="form-hint"><?php echo t('petition_idno_hint'); ?></small>
                             </div>
                             
                             <div class="form-group">
-                                <label for="company_name" class="form-label">Denumirea companiei/instituției (opțional):</label>
-                                <input type="text" id="company_name" name="company_name" class="form-input" placeholder="Denumirea completă a organizației">
+                                <label for="company_name" class="form-label"><?php echo t('petition_company_label'); ?></label>
+                                <input type="text" id="company_name" name="company_name" class="form-input" placeholder="<?php echo t('petition_company_placeholder'); ?>">
                             </div>
                         </div>
 
                         <!-- Individual Fields -->
                         <div class="form-row" id="individualFields" style="display: none;">
                             <div class="form-group">
-                                <label for="idnp" class="form-label">IDNP (opțional):</label>
-                                <input type="text" id="idnp" name="idnp" class="form-input" placeholder="Ex: 2001234567890">
-                                <small class="form-hint">Codul numeric personal</small>
+                                <label for="idnp" class="form-label"><?php echo t('petition_idnp_label'); ?></label>
+                                <input type="text" id="idnp" name="idnp" class="form-input" placeholder="<?php echo t('petition_idnp_placeholder'); ?>">
+                                <small class="form-hint"><?php echo t('petition_idnp_hint'); ?></small>
                             </div>
                         </div>
 
                         <!-- Personal Information -->
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="last_name" class="form-label required">Numele:</label>
-                                <input type="text" id="last_name" name="last_name" class="form-input" required placeholder="Numele de familie">
+                                <label for="last_name" class="form-label required"><?php echo t('petition_last_name_label'); ?></label>
+                                <input type="text" id="last_name" name="last_name" class="form-input" required placeholder="<?php echo t('petition_last_name_placeholder'); ?>">
                             </div>
                             
                             <div class="form-group">
-                                <label for="first_name" class="form-label required">Prenumele:</label>
-                                <input type="text" id="first_name" name="first_name" class="form-input" required placeholder="Prenumele">
+                                <label for="first_name" class="form-label required"><?php echo t('petition_first_name_label'); ?></label>
+                                <input type="text" id="first_name" name="first_name" class="form-input" required placeholder="<?php echo t('petition_first_name_placeholder'); ?>">
                             </div>
                         </div>
 
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="phone" class="form-label required">Telefon:</label>
-                                <input type="tel" id="phone" name="phone" class="form-input" required placeholder="+373 XX XXX XXX">
+                                <label for="phone" class="form-label required"><?php echo t('petition_phone_label'); ?></label>
+                                <input type="tel" id="phone" name="phone" class="form-input" required placeholder="<?php echo t('petition_phone_placeholder'); ?>">
                             </div>
                             
                             <div class="form-group">
-                                <label for="email" class="form-label required">Email:</label>
-                                <input type="email" id="email" name="email" class="form-input" required placeholder="exemplu@email.com">
+                                <label for="email" class="form-label required"><?php echo t('petition_email_label'); ?></label>
+                                <input type="email" id="email" name="email" class="form-input" required placeholder="<?php echo t('petition_email_placeholder'); ?>">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="address" class="form-label required">Adresa de domiciliu/reședință:</label>
-                            <textarea id="address" name="address" class="form-textarea" required placeholder="Adresa completă (oraș, stradă, nr. casei, apartament)"></textarea>
+                            <label for="address" class="form-label required"><?php echo t('petition_address_label'); ?></label>
+                            <textarea id="address" name="address" class="form-textarea" required placeholder="<?php echo t('petition_address_placeholder'); ?>"></textarea>
                         </div>
 
                         <!-- Petition Details -->
                         <div class="form-group">
-                            <label for="subject" class="form-label required">Subiectul petițiilor/reclamației:</label>
-                            <input type="text" id="subject" name="subject" class="form-input" required placeholder="Descrierea scurtă a subiectului">
+                            <label for="subject" class="form-label required"><?php echo t('petition_subject_label'); ?></label>
+                            <input type="text" id="subject" name="subject" class="form-input" required placeholder="<?php echo t('petition_subject_placeholder'); ?>">
                         </div>
 
                         <div class="form-group">
-                            <label for="message" class="form-label required">Mesajul:</label>
-                            <textarea id="message" name="message" class="form-textarea large" required placeholder="Descrierea detaliată a petițiilor sau reclamației..."></textarea>
+                            <label for="message" class="form-label required"><?php echo t('petition_message_label'); ?></label>
+                            <textarea id="message" name="message" class="form-textarea large" required placeholder="<?php echo t('petition_message_placeholder'); ?>"></textarea>
                         </div>
 
                         <!-- File Uploads -->
                         <div class="form-group">
-                            <label for="petition_file" class="form-label required">Fișierul petițiilor (PDF cu semnătură digitală MSIGN):</label>
+                            <label for="petition_file" class="form-label required"><?php echo t('petition_file_label'); ?></label>
                             <div class="file-upload-wrapper">
                                 <input type="file" id="petition_file" name="petition_file" class="form-file" accept=".pdf" required>
                                 <div class="file-upload-info">
                                     <i class="fas fa-file-pdf"></i>
-                                    <span>Alegeți fișierul PDF (max. 15 MB)</span>
+                                    <span><?php echo t('petition_file_choose'); ?></span>
                                 </div>
                             </div>
-                            <small class="form-hint">Fișierul trebuie să fie semnat digital cu MSIGN</small>
+                            <small class="form-hint"><?php echo t('petition_file_hint'); ?></small>
                         </div>
 
                         <div class="form-group">
-                            <label for="additional_files" class="form-label">Fișiere suplimentare (opțional):</label>
+                            <label for="additional_files" class="form-label"><?php echo t('petition_additional_files_label'); ?></label>
                             <div class="file-upload-wrapper">
                                 <input type="file" id="additional_files" name="additional_files[]" class="form-file" accept=".pdf,.doc,.docx,.zip" multiple>
                                 <div class="file-upload-info">
                                     <i class="fas fa-paperclip"></i>
-                                    <span>Maximum 3 fișiere (PDF, DOC, ZIP)</span>
+                                    <span><?php echo t('petition_additional_files_choose'); ?></span>
                                 </div>
                             </div>
-                            <small class="form-hint">Documente de susținere: PDF, DOC sau ZIP (max. 10 MB per fișier)</small>
+                            <small class="form-hint"><?php echo t('petition_additional_files_hint'); ?></small>
                         </div>
 
                         <!-- Consent Checkboxes -->
@@ -328,8 +328,7 @@ require_once __DIR__ . '/includes/lang.php';
                                     <input type="checkbox" name="data_consent" required>
                                     <span class="checkbox-custom"></span>
                                     <span class="checkbox-text">
-                                        Sunt de acord cu prelucrarea datelor cu caracter personal în conformitate cu 
-                                        <strong>articolele 6, 8, 9 din Legea nr. 133 din 08.07.2011</strong> privind protecția datelor cu caracter personal.
+                                        <?php echo t('petition_data_consent'); ?>
                                     </span>
                                 </label>
                             </div>
@@ -339,7 +338,7 @@ require_once __DIR__ . '/includes/lang.php';
                                     <input type="checkbox" name="data_accuracy" required>
                                     <span class="checkbox-custom"></span>
                                     <span class="checkbox-text">
-                                        Confirm că toate datele furnizate sunt corecte și complete, și îmi asum responsabilitatea pentru veridicitatea informațiilor.
+                                        <?php echo t('petition_data_accuracy'); ?>
                                     </span>
                                 </label>
                             </div>
@@ -349,16 +348,16 @@ require_once __DIR__ . '/includes/lang.php';
                         <div class="form-actions">
                             <button type="submit" class="submit-btn">
                                 <i class="fas fa-paper-plane"></i>
-                                Trimite Petiția
+                                <?php echo t('petition_submit_btn'); ?>
                             </button>
                             <button type="reset" class="reset-btn">
                                 <i class="fas fa-undo"></i>
-                                Resetează Formularul
+                                <?php echo t('petition_reset_btn'); ?>
                             </button>
                         </div>
 
                         <div class="form-footer">
-                            <p><i class="fas fa-info-circle"></i> Petițiile și reclamațiile vor fi examinate conform termenelor prevăzute de legislația în vigoare.</p>
+                            <p><i class="fas fa-info-circle"></i> <?php echo t('petition_footer_info'); ?></p>
                         </div>
                     </form>
                 </div>
@@ -369,15 +368,15 @@ require_once __DIR__ . '/includes/lang.php';
     <!-- Audio Element -->
     <audio id="audioElement" preload="metadata">
         <source src="audio/18_Alexandru_Lozanciuc_-_Sa_daruim_copiilor_pamantul.mp3" type="audio/mpeg">
-        Browser-ul tău nu suportă elementul audio.
+        <?php echo t('audio_not_supported'); ?>
     </audio>
 
     <!-- Lyrics Modal -->
     <div class="lyrics-modal" id="lyricsModal">
         <div class="lyrics-modal-content">
             <div class="lyrics-header">
-                <h3>Versurile imnului instituției</h3>
-                <button class="lyrics-close-btn" id="lyricsCloseBtn" aria-label="Închide versurile">
+                <h3><?php echo t('lyrics_modal_title'); ?></h3>
+                <button class="lyrics-close-btn" id="lyricsCloseBtn" aria-label="<?php echo t('lyrics_close'); ?>">
                     <i class="fas fa-times"></i>
                 </button>
             </div>

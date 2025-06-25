@@ -353,12 +353,6 @@
   "procurement_plans_header_title": "Planuri Achiziții",
   "procurement_plans_header_subtitle": "Planificarea achizițiilor publice",
   
-  "petitions_meta_description": "Petiții și reclamații pentru Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă.",
-  "petitions_meta_keywords": "petiții, reclamații, feedback, sugestii",
-  "petitions_page_title": "Petiții și Reclamații - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă",
-  "petitions_header_title": "Petiții și Reclamații",
-  "petitions_header_subtitle": "Căile de comunicare cu centrul",
-  
   "methodologies_meta_description": "Metodologiile și procedurile utilizate la Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă.",
   "methodologies_meta_keywords": "metodologii, proceduri, protocoale, standarde",
   "methodologies_page_title": "Metodologii - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă",
@@ -812,5 +806,73 @@
   "projects_title": "Proiecte",
   "procurement_reports_title": "Rapoarte de Achiziții",
   "reports_title": "Rapoarte",
-  "gifts_register_title": "Registrul Cadourilor"
+  "gifts_register_title": "Registrul Cadourilor",
+  
+  "petitions_page_title": "Petiții și Reclamații - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă",
+  "petitions_meta_description": "Sistemul de petiții și reclamații pentru îmbunătățirea serviciilor oferite de Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă.",
+  "petitions_meta_keywords": "petiții, reclamații, sistem online, legislație, transparență, servicii publice",
+  "petitions_header_title": "Petiții și Reclamații",
+  "petitions_header_subtitle": "Sistemul de petiții și reclamații pentru îmbunătățirea serviciilor",
+  
+  "petitions_system_title": "Sistem de Petiții și Reclamații",
+  "petitions_system_description": "Prin intermediul acestui formular puteți depune petiții și reclamații conform legislației în vigoare. Toate petițiile vor fi examinate în conformitate cu prevederile legale.",
+  
+  "petitions_requirements_title": "Cerințe pentru depunerea petițiilor",
+  "petitions_req_format": "Format: Petiția trebuie să fie în format PDF",
+  "petitions_req_signature": "Semnătură digitală: Obligatorie cu MSIGN",
+  "petitions_req_size": "Dimensiune maximă: 15 MB",
+  "petitions_req_files": "Fișiere suplimentare: Maximum 3 fișiere în format PDF, DOC sau ZIP",
+  
+  "petition_form_title": "Formular de Depunere Petiție/Reclamație",
+  "petition_entity_type": "Tipul solicitantului:",
+  "petition_individual": "Persoană fizică",
+  "petition_legal": "Persoană juridică",
+  
+  "petition_idno_label": "IDNO (opțional):",
+  "petition_idno_placeholder": "Ex: 1234567890123",
+  "petition_idno_hint": "Codul de identificare fiscală pentru persoane juridice",
+  
+  "petition_company_label": "Denumirea companiei/instituției (opțional):",
+  "petition_company_placeholder": "Denumirea completă a organizației",
+  
+  "petition_idnp_label": "IDNP (opțional):",
+  "petition_idnp_placeholder": "Ex: 2001234567890",
+  "petition_idnp_hint": "Codul numeric personal",
+  
+  "petition_last_name_label": "Numele:",
+  "petition_last_name_placeholder": "Numele de familie",
+  
+  "petition_first_name_label": "Prenumele:",
+  "petition_first_name_placeholder": "Prenumele",
+  
+  "petition_phone_label": "Telefon:",
+  "petition_phone_placeholder": "+373 XX XXX XXX",
+  
+  "petition_email_label": "Email:",
+  "petition_email_placeholder": "exemplu@email.com",
+  
+  "petition_address_label": "Adresa de domiciliu/reședință:",
+  "petition_address_placeholder": "Adresa completă (oraș, stradă, nr. casei, apartament)",
+  
+  "petition_subject_label": "Subiectul petițiilor/reclamației:",
+  "petition_subject_placeholder": "Descrierea scurtă a subiectului",
+  
+  "petition_message_label": "Mesajul:",
+  "petition_message_placeholder": "Descrierea detaliată a petițiilor sau reclamației...",
+  
+  "petition_file_label": "Fișierul petițiilor (PDF cu semnătură digitală MSIGN):",
+  "petition_file_choose": "Alegeți fișierul PDF (max. 15 MB)",
+  "petition_file_hint": "Fișierul trebuie să fie semnat digital cu MSIGN",
+  
+  "petition_additional_files_label": "Fișiere suplimentare (opțional):",
+  "petition_additional_files_choose": "Maximum 3 fișiere (PDF, DOC, ZIP)",
+  "petition_additional_files_hint": "Documente de susținere: PDF, DOC sau ZIP (max. 10 MB per fișier)",
+  
+  "petition_data_consent": "Sunt de acord cu prelucrarea datelor cu caracter personal în conformitate cu <strong>articolele 6, 8, 9 din Legea nr. 133 din 08.07.2011</strong> privind protecția datelor cu caracter personal.",
+  "petition_data_accuracy": "Confirm că toate datele furnizate sunt corecte și complete, și îmi asum responsabilitatea pentru veridicitatea informațiilor.",
+  
+  "petition_submit_btn": "Trimite Petiția",
+  "petition_reset_btn": "Resetează Formularul",
+  
+  "petition_footer_info": "Petițiile și reclamațiile vor fi examinate conform termenelor prevăzute de legislația în vigoare."
 }

@@ -353,12 +353,6 @@
   "procurement_plans_header_title": "Procurement Plans",
   "procurement_plans_header_subtitle": "Public procurement planning",
   
-  "petitions_meta_description": "Petitions and complaints for the Placement and Rehabilitation Center for Young Children.",
-  "petitions_meta_keywords": "petitions, complaints, feedback, suggestions",
-  "petitions_page_title": "Petitions and Complaints - Placement and Rehabilitation Center for Young Children",
-  "petitions_header_title": "Petitions and Complaints",
-  "petitions_header_subtitle": "Communication channels with the center",
-  
   "methodologies_meta_description": "Methodologies and procedures used at the Placement and Rehabilitation Center for Young Children.",
   "methodologies_meta_keywords": "methodologies, procedures, protocols, standards",
   "methodologies_page_title": "Methodologies - Placement and Rehabilitation Center for Young Children",
@@ -809,8 +803,76 @@
 
   "invitations_title": "Participation Invitations",
   "procurement_plans_title": "Procurement Plans",
-  "projects_title": "Proiecte",
+  "projects_title": "Projects",
   "procurement_reports_title": "Procurement Reports",
   "reports_title": "Reports",
-  "gifts_register_title": "Gifts Register"
+  "gifts_register_title": "Gifts Register",
+  
+  "petitions_page_title": "Petitions and Complaints - Placement and Rehabilitation Center for Young Children",
+  "petitions_meta_description": "Petitions and complaints system for improving services offered by the Placement and Rehabilitation Center for Young Children.",
+  "petitions_meta_keywords": "petitions, complaints, online system, legislation, transparency, public services",
+  "petitions_header_title": "Petitions and Complaints",
+  "petitions_header_subtitle": "Petitions and complaints system for service improvement",
+  
+  "petitions_system_title": "Petitions and Complaints System",
+  "petitions_system_description": "Through this form you can submit petitions and complaints in accordance with current legislation. All petitions will be examined in compliance with legal provisions.",
+  
+  "petitions_requirements_title": "Requirements for submitting petitions",
+  "petitions_req_format": "Format: The petition must be in PDF format",
+  "petitions_req_signature": "Digital signature: Mandatory with MSIGN",
+  "petitions_req_size": "Maximum size: 15 MB",
+  "petitions_req_files": "Additional files: Maximum 3 files in PDF, DOC or ZIP format",
+  
+  "petition_form_title": "Petition/Complaint Submission Form",
+  "petition_entity_type": "Type of applicant:",
+  "petition_individual": "Individual",
+  "petition_legal": "Legal entity",
+  
+  "petition_idno_label": "IDNO (optional):",
+  "petition_idno_placeholder": "Ex: 1234567890123",
+  "petition_idno_hint": "Tax identification code for legal entities",
+  
+  "petition_company_label": "Company/institution name (optional):",
+  "petition_company_placeholder": "Full name of the organization",
+  
+  "petition_idnp_label": "IDNP (optional):",
+  "petition_idnp_placeholder": "Ex: 2001234567890",
+  "petition_idnp_hint": "Personal identification number",
+  
+  "petition_last_name_label": "Last name:",
+  "petition_last_name_placeholder": "Family name",
+  
+  "petition_first_name_label": "First name:",
+  "petition_first_name_placeholder": "Given name",
+  
+  "petition_phone_label": "Phone:",
+  "petition_phone_placeholder": "+373 XX XXX XXX",
+  
+  "petition_email_label": "Email:",
+  "petition_email_placeholder": "example@email.com",
+  
+  "petition_address_label": "Domicile/residence address:",
+  "petition_address_placeholder": "Complete address (city, street, house number, apartment)",
+  
+  "petition_subject_label": "Subject of petition/complaint:",
+  "petition_subject_placeholder": "Brief description of the subject",
+  
+  "petition_message_label": "Message:",
+  "petition_message_placeholder": "Detailed description of the petition or complaint...",
+  
+  "petition_file_label": "Petition file (PDF with MSIGN digital signature):",
+  "petition_file_choose": "Choose PDF file (max. 15 MB)",
+  "petition_file_hint": "The file must be digitally signed with MSIGN",
+  
+  "petition_additional_files_label": "Additional files (optional):",
+  "petition_additional_files_choose": "Maximum 3 files (PDF, DOC, ZIP)",
+  "petition_additional_files_hint": "Supporting documents: PDF, DOC or ZIP (max. 10 MB per file)",
+  
+  "petition_data_consent": "I agree to the processing of personal data in accordance with <strong>articles 6, 8, 9 of Law no. 133 of 08.07.2011</strong> on the protection of personal data.",
+  "petition_data_accuracy": "I confirm that all provided data is correct and complete, and I assume responsibility for the accuracy of the information.",
+  
+  "petition_submit_btn": "Submit Petition",
+  "petition_reset_btn": "Reset Form",
+  
+  "petition_footer_info": "Petitions and complaints will be examined according to the deadlines provided by current legislation."
 }
