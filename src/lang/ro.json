@@ -106,9 +106,9 @@
   "hero_slide_3_cta": "Cunoaște Echipa Noastră",
   
   "about_section_title": "Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă din municipiul Chișinău",
-  "about_text_1": "Centrul de Plasament și Reabilitare pentru Copii de Vârstă Fragedă din munipiul Chișinău, subordonat Ministerului Muncii și Protecției Sociale, oferă servicii sociale și medico-psiho-pedagogice dedicate copiilor de la 0 la 7 ani aflați în situații de risc, mamelor cu copii mici și femeilor gravide în ultimul trimestru de sarcină.",
-  "about_text_2": "Misiunea Centrului este de a oferi sprijin, protecție și un mediu sigur pentru copii și familiile acestora, facilitând dezvoltarea armonioasă și reintegrarea copiilor în mediul familial. Beneficiarii includ copii în dificultate, copii cu dizabilități neuro-locomotorii, copii din familii vulnerabile, mame și gravide.",
-  "about_text_3": "Centrul are o capacitate maximă de 200 de beneficiari și oferă servicii de plasament temporar și de urgență, servicii pentru cupluri mamă-copil, gravide și servicii „Respiro\" pentru copii cu dizabilități, toate acestea menite să protejeze copilul și să sprijine familia.",
+  "about_text_1": "<b>Centrul de Plasament și Reabilitare pentru Copii de Vârstă Fragedă din municipiul Chișinău</b>, subordonat <i>Ministerului Muncii și Protecției Sociale</i>, oferă servicii sociale și medico-psiho-pedagogice dedicate copiilor de la 0 la 7 ani aflați în situații de risc, mamelor cu copii mici și femeilor gravide în ultimul trimestru de sarcină.",
+  "about_text_2": "<b><i>Misiunea Centrului</i></b> este de a oferi sprijin, protecție și un mediu sigur pentru copii și familiile acestora, facilitând dezvoltarea armonioasă și reintegrarea copiilor în mediul familial. Beneficiarii includ copii în dificultate, copii cu dizabilități neuro-locomotorii, copii din familii vulnerabile, mame și gravide.",
+  "about_text_3": "Centrul are o capacitate maximă de <i>200 de beneficiari</i> și oferă servicii de plasament temporar și de urgență, servicii pentru cupluri mamă-copil, gravide și servicii „<i>Respiro</i>\" pentru copii cu dizabilități, toate acestea menite să protejeze copilul și să sprijine familia.",
   
   "services_section_title": "Serviciile Noastre",
   "services_section_subtitle": "Îngrijire cuprinzătoare adaptată nevoilor unice ale fiecărui copil",
@@ -195,6 +195,26 @@
   "testimonial_5_text": "La fel, și eu vreau să le mulțumesc. Băiețelul meu este, în acest moment, internat acolo. Sunt niște doamne extraordinare și foarte înțelegătoare. Mulțumim în mod special doamnei Corina Vozian și doamnei Violeta Timirgaz. Suntem internați pentru a treia oară și, desigur, avem doar cuvinte de laudă și recunoștință. Succes, Centrului de Plasament și Reabilitare pentru Copii!",
   "testimonial_5_author": "Mariana Cebotari",
   "testimonial_5_role": "Părinte",
+
+  "testimonial_6_text": "Un centru minunat. Mulțumim tot colectivului care lucrează cu reabilitarea copilașilor. Am mai fost și în alte centre, dar aici, fetița noastră, a primit cel mai mare complex de proceduri. Revenim cu drag, chiar dacă plângem pentru tot centrul.",
+  "testimonial_6_author": "Olesea Moga",
+  "testimonial_6_role": "Părinte",
+
+  "testimonial_7_text": "Mulțumim pentru oportunitatea de a frecventa acest centru, care, cu pårere de rău, este unicul de acest gen. Mulțumim pentru grija copiilor, empatie şi echilibru. Sunteți cei mai buni.",
+  "testimonial_7_author": "Tatiana Răcilă",
+  "testimonial_7_role": "Părinte",
+
+  "testimonial_8_text": "Un mare mulțumesc acelei persoane care mi-a recomandat acest centru și un mare mulțumesc persoanelor de la acest centru, care sunt extraordinar de prietenoase și care i-si fac meseria la un nivel înalt !!! D-na Corina Vozian,D-na Natalia, D-na Aliona, D- na Svetlana şi restul echipei care nu cunosc personal dar ma închin respectuos!!! Copilașul merge cu placere la acest centru unde este primit cu dragoste zi de zi.",
+  "testimonial_8_author": "MarcaBrand",
+  "testimonial_8_role": "Părinte",
+
+  "testimonial_9_text": "Vă multumesc mult pentru succesul Gabrielei. Acum o admir cum lucreaza singura, dar stiu ca in spate sta munca dvs, deja de ani de zile. Va sunt foarte recunoscatoare. Mult succes in continuare!",
+  "testimonial_9_author": "Valentina Rata",
+  "testimonial_9_role": "Părinte",
+
+  "testimonial_10_text": "Un centru extraordinar, deoarece lucrează oameni extraordinari, oameni cu suflet, care se dedică copiilor speciali. Mulțumim pentru tot efortul, sunteti cei mai bravo.",
+  "testimonial_10_author": "Oxana Gurdiga",
+  "testimonial_10_role": "Părinte",
   
   "maternal_meta_description": "Secția Maternală oferă sprijin și adăpost mamelor și copiilor aflați în dificultate, dezvoltând abilitățile parentale și susținând relațiile familiale.",
   "maternal_meta_keywords": "maternală, mame singure, mame minore, gravide, violență domestică, sprijin familial",
@@ -202,6 +222,8 @@
   
   "footer_copyright": "© 2025 Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă. Toate drepturile rezervate.",
   
+  "service_contact_desc": "Pentru mai multe detalii despre serviciile noastre sau pentru a solicita aceste servicii, te rugăm să ne contactezi.",
+
   "crisis_meta_description": "Secția de Criză și Reintegrare Familială găzduiește temporar copii până la 7 ani aflați în situații de risc, pe baza dispoziției de plasament de la autorități.",
   "crisis_meta_keywords": "plasament copii, găzduire temporară, situații de risc, copii vulnerabili",
   "crisis_page_title": "Secția de Criză și Reintegrare Familială - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă",
@@ -247,7 +269,6 @@
   "crisis_gallery_5_alt": "Vizită la Grădina Zoologică",
   "crisis_gallery_6_alt": "Activități Recreaționale",
   "crisis_contact_title": "Contactează-ne pentru mai multe informații",
-  "crisis_contact_description": "Pentru situații de urgență sau pentru informații despre procedurile de plasament, te rugăm să ne contactezi imediat.",
   "crisis_contact_button": "Contactează-ne",
   
   "day_meta_description": "Secția de Zi oferă servicii pentru copiii cu dizabilități neuro-motorii și tulburări de neuro-dezvoltare, prevenind instituționalizarea prin reabilitare timpurie.",
@@ -440,7 +461,6 @@
   "respiro_admission_title": "Condiții de Admitere",
   "respiro_gallery_title": "Galeria Secției Respiro",
   "respiro_contact_title": "Contactează-ne pentru mai multe informații",
-  "respiro_contact_desc": "Pentru detalii despre serviciile Secției Respiro sau pentru a solicita acest serviciu, te rugăm să ne contactezi.",
   "respiro_contact_button": "Contactează-ne",
   
   "contact_title": "Contactează-ne pentru mai multe informații",
@@ -627,7 +647,6 @@
   "crisis_family_gallery_5_title": "Vizită la Grădina Zoologică",
   "crisis_family_gallery_6_alt": "Activități Recreaționale",
   "crisis_family_gallery_6_title": "Activități Recreaționale",
-  "crisis_family_contact_desc": "Pentru situații de urgență sau pentru informații despre procedurile de plasament, te rugăm să ne contactezi imediat.",
   
   "day_4m_3y_header_title": "Secția Zi pentru îngrijirea copiilor cu vârsta 4 luni - 3 ani",
   "day_4m_3y_header_desc": "Îngrijire zilnică pentru copii din familii vulnerabile",

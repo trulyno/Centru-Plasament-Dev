@@ -128,6 +128,7 @@ require_once __DIR__ . '/includes/lang.php';
                             <li><a href="sectia-respiro.php"><?php echo t('services_respiro'); ?></a></li>
                             <li><a href="sectia-asistenta-psihopedagogica.php"><?php echo t('services_psycho_pedagogical'); ?></a></li>
                             <li><a href="sectia-reabilitare.php"><?php echo t('services_rehabilitation'); ?></a></li>
+                            <li><a href="sectia-asistenta-medicala.php"><?php echo t('services_medical'); ?></a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -189,7 +190,7 @@ require_once __DIR__ . '/includes/lang.php';
         <section class="page-header">
             <div class="container">
                 <h1><?php echo t('services_psycho_pedagogical'); ?></h1>
-                <p>Servicii specializate de evaluare, consiliere și intervenție terapeutică pentru dezvoltarea optimă a copiilor cu nevoi speciale cognitive, emoționale și comportamentale</p>
+                <p><?php echo t('psycho_pedagogical_header_subtitle'); ?></p>
             </div>
         </section>
 
@@ -198,8 +199,8 @@ require_once __DIR__ . '/includes/lang.php';
                 <div class="content-wrapper">
                     <div class="service-hero">
                         <div class="service-hero-content">
-                            <h2>Despre <?php echo t('services_psycho_pedagogical'); ?></h2>
-                            <p>Secția de Asistență Psihopedagogică oferă evaluare, consiliere și intervenții specializate pentru copiii cu nevoi emoționale, cognitive și comportamentale. Echipa noastră – formată din psihologi, logopezi și cadre psihopedagogice – sprijină dezvoltarea armonioasă a copiilor aflați în plasament. Prin terapie, activități educaționale și intervenție timpurie, ajutăm fiecare copil să își valorifice potențialul într-un mediu sigur și afectuos. </p>
+                            <h2><?php echo t('psycho_about_title'); ?></h2>
+                            <p><?php echo t('psycho_about_desc'); ?></p>
                         </div>
                         <div class="service-hero-image">
                             <img src="images/sap1.jpg" alt="Activități psihopedagogice - <?php echo t('services_psycho_pedagogical'); ?>" loading="lazy">
@@ -214,8 +215,8 @@ require_once __DIR__ . '/includes/lang.php';
                                     <i class="fas fa-child"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4>Evaluare psihologică și psihopedagogică </h4>
-                                    <p>Prin consiliere psihologică, terapie prin joc, activități de stimulare senzorială și dezvoltare emoțională.</p>
+                                    <h4><?php echo t('psycho_evaluation_title'); ?></h4>
+                                    <p><?php echo t('psycho_evaluation_desc'); ?></p>
                                 </div>
                             </div>
                             <div class="service-item">
@@ -223,8 +224,8 @@ require_once __DIR__ . '/includes/lang.php';
                                     <i class="fas fa-user-md"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4>Terapie logopedică</h4>
-                                    <p>Intervenții specifice pentru dezvoltarea limbajului și corectarea tulburărilor de vorbire.</p>
+                                    <h4><?php echo t('psycho_speech_title'); ?></h4>
+                                    <p><?php echo t('psycho_speech_desc'); ?></p>
                                 </div>
                             </div>
                             <div class="service-item">
@@ -232,8 +233,8 @@ require_once __DIR__ . '/includes/lang.php';
                                     <i class="fas fa-heart"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4>Consiliere și Suport Psihologic</h4>
-                                    <p>Consiliere și suport psihologic pentru familiile copiilor cu dizabilități.</p>
+                                    <h4><?php echo t('psycho_counseling_title'); ?></h4>
+                                    <p><?php echo t('psycho_counseling_desc'); ?></p>
                                 </div>
                             </div>
                             <div class="service-item">
@@ -241,8 +242,8 @@ require_once __DIR__ . '/includes/lang.php';
                                     <i class="fas fa-graduation-cap"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4>Asistență Educațională Personalizată</h4>
-                                    <p>Programe de intervenție educațională adaptate nivelului de dezvoltare al fiecărui copil, cu sprijinul pedagogilor specializați. </p>
+                                    <h4><?php echo t('psycho_education_title'); ?></h4>
+                                    <p><?php echo t('psycho_education_desc'); ?></p>
                                 </div>
                             </div>
                         </div>
@@ -255,70 +256,70 @@ require_once __DIR__ . '/includes/lang.php';
                                 <div class="info-icon">
                                     <i class="fas fa-child"></i>
                                 </div>
-                                <h4>Modul de Predare</h4>
-                                <p>Lucrăm cu empatie, respect și profesionalism, adaptând intervențiile la nevoi individuale și ritmul propriu de dezvoltare.</p>
+                                <h4><?php echo t('psycho_teaching_mode_title'); ?></h4>
+                                <p><?php echo t('psycho_teaching_mode_desc'); ?></p>
                             </div>
                             <div class="info-card">
                                 <div class="info-icon">
                                     <i class="fas fa-users"></i>
                                 </div>
-                                <h4>Organizare</h4>
-                                <p>Psihologi specializați în intervenție timpurie și consilierea copilului, Logopezi care sprijină dezvoltarea limbajului și comunicării, Cadre didactice cu specializare psihopedagogică. </p>
+                                <h4><?php echo t('psycho_organization_title'); ?></h4>
+                                <p><?php echo t('psycho_organization_desc'); ?></p>
                             </div>
                             <div class="info-card">
                                 <div class="info-icon">
                                     <i class="fas fa-calendar-alt"></i>
                                 </div>
-                                <h4>Program</h4>
-                                <p>Zilnic, de luni până vineri</p>
+                                <h4><?php echo t('psycho_schedule_title'); ?></h4>
+                                <p><?php echo t('psycho_schedule_desc'); ?></p>
                             </div>
                             <div class="info-card">
                                 <div class="info-icon">
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>
-                                <h4>Acoperire</h4>
-                                <p>Copii din municipiul Chișinău</p>
+                                <h4><?php echo t('psycho_coverage_title'); ?></h4>
+                                <p><?php echo t('psycho_coverage_desc'); ?></p>
                             </div>
                         </div>
                     </div>
 
                     <div class="service-gallery">
-                        <h2>Galeria Secției Asistență Psihopedagogică</h2>
+                        <h2><?php echo t('psycho_gallery_title'); ?></h2>
                         <div class="gallery-grid">
                             <div class="gallery-item">
-                                <img src="images/sap2.jpg" alt="Activități de relaxare și odihnă terapeutică" loading="lazy">
+                                <img src="images/sap2.jpg" alt="<?php echo t('psycho_gallery_relaxation_title'); ?>" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Activități de Relaxare și Odihnă Terapeutică</h4>
+                                    <h4><?php echo t('psycho_gallery_relaxation_title'); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/sap3.jpg" alt="Festival de toamnă - activități de socializare" loading="lazy">
+                                <img src="images/sap3.jpg" alt="<?php echo t('psycho_gallery_festival_title'); ?>" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Festival de Toamnă - Activități de Socializare</h4>
+                                    <h4><?php echo t('psycho_gallery_festival_title'); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/sap4.jpg" alt="Programe educaționale - descoperirea mediului natural" loading="lazy">
+                                <img src="images/sap4.jpg" alt="<?php echo t('psycho_gallery_educational_title'); ?>" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Programe Educaționale - Descoperirea Mediului Natural</h4>
+                                    <h4><?php echo t('psycho_gallery_educational_title'); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/sap5.jpg" alt="Activități practice - dezvoltarea abilităților de viață" loading="lazy">
+                                <img src="images/sap5.jpg" alt="<?php echo t('psycho_gallery_practical_title'); ?>" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Activități Practice - Dezvoltarea Abilităților de Viață</h4>
+                                    <h4><?php echo t('psycho_gallery_practical_title'); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/404.jpg" alt="Terapie ocupațională - activități culinare" loading="lazy">
+                                <img src="images/404.jpg" alt="<?php echo t('psycho_gallery_occupational_title'); ?>" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Terapie Ocupațională - Activități Culinare</h4>
+                                    <h4><?php echo t('psycho_gallery_occupational_title'); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/sap7.jpg" alt="Artterapie - expresie creativă și dezvoltare motrică" loading="lazy">
+                                <img src="images/sap7.jpg" alt="<?php echo t('psycho_gallery_art_title'); ?>" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Artterapie - Expresie Creativă și Dezvoltare Motrică</h4>
+                                    <h4><?php echo t('psycho_gallery_art_title'); ?></h4>
                                 </div>
                             </div>
                         </div>
@@ -326,7 +327,7 @@ require_once __DIR__ . '/includes/lang.php';
 
                     <div class="contact-cta">
                         <h3><?php echo t('contact_title'); ?></h3>
-                        <p>Pentru detalii despre serviciile Secției Asistență Psihopedagogică sau pentru a solicita acest serviciu, te rugăm să ne contactezi.</p>
+                        <p><?php echo t('service_contact_desc'); ?></p>
                         <a href="index.php#contact" class="cta-button"><?php echo t('contact_button'); ?></a>
                     </div>
                 </div>
@@ -337,15 +338,15 @@ require_once __DIR__ . '/includes/lang.php';
     <!-- Audio Element -->
     <audio id="audioElement" preload="metadata">
         <source src="audio/18_Alexandru_Lozanciuc_-_Sa_daruim_copiilor_pamantul.mp3" type="audio/mpeg">
-        Browser-ul tău nu suportă elementul audio.
+        <?php echo t('audio_not_supported'); ?>
     </audio>
 
     <!-- Lyrics Modal -->
     <div class="lyrics-modal" id="lyricsModal">
         <div class="lyrics-modal-content">
             <div class="lyrics-header">
-                <h3>Versurile imnului instituției</h3>
-                <button class="lyrics-close-btn" id="lyricsCloseBtn" aria-label="Închide versurile">
+                <h3><?php echo t('lyrics_modal_title'); ?></h3>
+                <button class="lyrics-close-btn" id="lyricsCloseBtn" aria-label="<?php echo t('lyrics_close'); ?>">
                     <i class="fas fa-times"></i>
                 </button>
             </div>

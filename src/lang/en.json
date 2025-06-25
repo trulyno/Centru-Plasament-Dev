@@ -106,9 +106,9 @@
   "hero_slide_3_cta": "Meet Our Team",
   
   "about_section_title": "Placement and Rehabilitation Center for Young Children in Chișinău Municipality",
-  "about_text_1": "The Placement and Rehabilitation Center for Young Children in Chișinău Municipality, subordinated to the Ministry of Labor and Social Protection, offers social and medical-psycho-pedagogical services dedicated to children aged 0 to 7 years at risk, mothers with young children and pregnant women in the last trimester of pregnancy.",
-  "about_text_2": "The Center's mission is to provide support, protection and a safe environment for children and their families, facilitating harmonious development and reintegration of children into the family environment. Beneficiaries include children in difficulty, children with neuro-locomotor disabilities, children from vulnerable families, mothers and pregnant women.",
-  "about_text_3": "The Center has a maximum capacity of 200 beneficiaries and offers temporary and emergency placement services, services for mother-child couples, pregnant women and 'Respiro' services for children with disabilities, all aimed at protecting the child and supporting the family.",
+  "about_text_1": "<b>The Placement and Rehabilitation Center for Young Children in Chișinău Municipality</b>, subordinated to the <i>Ministry of Labor and Social Protection</i>, offers social and medical-psycho-pedagogical services dedicated to children aged 0 to 7 years at risk, mothers with young children and pregnant women in the last trimester of pregnancy.",
+  "about_text_2": "<b><i>The Center's mission</i></b> is to provide support, protection and a safe environment for children and their families, facilitating harmonious development and reintegration of children into the family environment. Beneficiaries include children in difficulty, children with neuro-locomotor disabilities, children from vulnerable families, mothers and pregnant women.",
+  "about_text_3": "The Center has a maximum capacity of <i>200 beneficiaries</i> and offers temporary and emergency placement services, services for mother-child couples, pregnant women and '<i>Respiro</i>' services for children with disabilities, all aimed at protecting the child and supporting the family.",
   
   "services_section_title": "Our Services",
   "services_section_subtitle": "Comprehensive care tailored to each child's unique needs",
@@ -195,6 +195,26 @@
   "testimonial_5_text": "Likewise, I want to thank them. My little boy is currently hospitalized there. They are extraordinary and very understanding ladies. We especially thank Mrs. Corina Vozian and Mrs. Violeta Timirgaz. We are hospitalized for the third time and, of course, we have only words of praise and gratitude. Success to the Placement and Rehabilitation Center for Children!",
   "testimonial_5_author": "Mariana Cebotari",
   "testimonial_5_role": "Parent",
+
+  "testimonial_6_text": "A wonderful center. We thank the entire team that works with the rehabilitation of children. We have been to other centers as well, but here, our little girl received the most comprehensive complex of procedures. We return with pleasure, even though we cry for the whole center.",
+  "testimonial_6_author": "Olesea Moga",
+  "testimonial_6_role": "Parent",
+
+  "testimonial_7_text": "Thank you for the opportunity to attend this center, which, unfortunately, is unique of its kind. Thank you for caring for children, empathy and balance. You are the best.",
+  "testimonial_7_author": "Tatiana Răcilă",
+  "testimonial_7_role": "Parent",
+
+  "testimonial_8_text": "A big thank you to the person who recommended this center to me and a big thank you to the people at this center, who are extraordinarily friendly and who do their job at a high level!!! Mrs. Corina Vozian, Mrs. Natalia, Mrs. Aliona, Mrs. Svetlana and the rest of the team that I don't know personally but I bow respectfully!!! The little one goes with pleasure to this center where he is received with love day by day.",
+  "testimonial_8_author": "MarcaBrand",
+  "testimonial_8_role": "Parent",
+
+  "testimonial_9_text": "Thank you very much for Gabriela's success. Now I admire how she works independently, but I know that behind it stands your work, for years already. I am very grateful to you. Much success going forward!",
+  "testimonial_9_author": "Valentina Rata",
+  "testimonial_9_role": "Parent",
+
+  "testimonial_10_text": "An extraordinary center, because extraordinary people work there, people with soul, who dedicate themselves to special children. Thank you for all the effort, you are the best.",
+  "testimonial_10_author": "Oxana Gurdiga",
+  "testimonial_10_role": "Parent",
   
   "maternal_meta_description": "The Maternal Section offers support and shelter to mothers and children in difficulty, developing parenting skills and supporting family relationships.",
   "maternal_meta_keywords": "maternal, single mothers, minor mothers, pregnant women, domestic violence, family support",
@@ -202,6 +222,8 @@
   
   "footer_copyright": "© 2025 Placement and Rehabilitation Center for Young Children. All rights reserved.",
   
+  "service_contact_desc": "For more details about our services or to request these services, please contact us.",
+
   "crisis_meta_description": "The Crisis and Family Reintegration Section temporarily accommodates children up to 7 years old who are at risk, based on placement orders from authorities.",
   "crisis_meta_keywords": "child placement, temporary accommodation, at-risk situations, vulnerable children",
   "crisis_page_title": "Crisis and Family Reintegration Section - Placement and Rehabilitation Center for Young Children",
@@ -247,7 +269,6 @@
   "crisis_gallery_5_alt": "Zoo Visit",
   "crisis_gallery_6_alt": "Recreational Activities",
   "crisis_contact_title": "Contact us for more information",
-  "crisis_contact_description": "For emergency situations or information about placement procedures, please contact us immediately.",
   "crisis_contact_button": "Contact Us",
   
   "day_meta_description": "The Day Section offers services for children with neuro-motor disabilities and neuro-developmental disorders, preventing institutionalization through early rehabilitation.",
@@ -440,7 +461,6 @@
   "respiro_admission_title": "Admission Conditions",
   "respiro_gallery_title": "Respiro Section Gallery",
   "respiro_contact_title": "Contact us for more information",
-  "respiro_contact_desc": "For details about Respiro Section services or to request this service, please contact us.",
   "respiro_contact_button": "Contact Us",
   
   "contact_title": "Contact us for more information",
@@ -627,7 +647,6 @@
   "crisis_family_gallery_5_title": "Visit to the Zoo",
   "crisis_family_gallery_6_alt": "Recreational Activities",
   "crisis_family_gallery_6_title": "Recreational Activities",
-  "crisis_family_contact_desc": "For emergency situations or information about placement procedures, please contact us immediately.",
   
   "day_4m_3y_header_title": "Day Section for child care aged 4 months - 3 years",
   "day_4m_3y_header_desc": "Daily care for children from vulnerable families",

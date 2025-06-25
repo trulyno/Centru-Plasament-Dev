@@ -326,7 +326,7 @@ require_once __DIR__ . '/includes/lang.php';
 
                     <div class="contact-cta">
                         <h3><?php echo t('contact_title'); ?></h3>
-                        <p><?php echo t('respiro_contact_desc'); ?></p>
+                        <p><?php echo t('service_contact_desc') ?></p>
                         <a href="index.php#contact" class="cta-button"><?php echo t('contact_button'); ?></a>
                     </div>
                 </div>

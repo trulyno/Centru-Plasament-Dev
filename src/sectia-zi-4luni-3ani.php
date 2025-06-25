@@ -328,7 +328,7 @@ require_once __DIR__ . '/includes/lang.php';
 
                     <div class="contact-cta">
                         <h3><?php echo t('contact_title'); ?></h3>
-                        <p>Pentru detalii despre serviciile Secției Respiro sau pentru a solicita acest serviciu, te rugăm să ne contactezi.</p>
+                        <p><?php echo t('service_contact_desc') ?></p>
                         <a href="index.php#contact" class="cta-button"><?php echo t('contact_button'); ?></a>
                     </div>
                 </div>
