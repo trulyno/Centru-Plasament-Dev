@@ -394,7 +394,7 @@ require_once __DIR__ . '/includes/lang.php';
     <div class="lyrics-modal" id="lyricsModal">
         <div class="lyrics-modal-content">
             <div class="lyrics-header">
-                <h3>Versurile imnului instituției</h3>
+                <h3><?php echo t('lyrics_modal_title'); ?></h3>
                 <button class="lyrics-close-btn" id="lyricsCloseBtn" aria-label="Închide versurile">
                     <i class="fas fa-times"></i>
                 </button>

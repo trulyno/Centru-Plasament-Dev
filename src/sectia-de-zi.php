@@ -259,8 +259,8 @@ require_once __DIR__ . '/includes/lang.php';
                                     <i class="fas fa-brain"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4>Terapie Comportamentală</h4>
-                                    <p>Corecție comportamentală și dezvoltarea competențelor sociale.</p>
+                                    <h4><?php echo t('day_service_behavioral_title'); ?></h4>
+                                    <p><?php echo t('day_service_behavioral_desc'); ?></p>
                                 </div>
                             </div>
                             <div class="service-item">
@@ -268,8 +268,8 @@ require_once __DIR__ . '/includes/lang.php';
                                     <i class="fas fa-heart"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4>Consiliere Psihologică</h4>
-                                    <p>Suport psihologic pentru copii și consiliere psiho-socială pentru părinți.</p>
+                                    <h4><?php echo t('day_service_psychological_title'); ?></h4>
+                                    <p><?php echo t('day_service_psychological_desc'); ?></p>
                                 </div>
                             </div>
                             <div class="service-item">
@@ -277,8 +277,8 @@ require_once __DIR__ . '/includes/lang.php';
                                     <i class="fas fa-graduation-cap"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4>Activități Psiho-Pedagogice</h4>
-                                    <p>Activități zilnice curative adaptate nevoilor individuale ale copilului.</p>
+                                    <h4><?php echo t('day_service_psychopedagogical_title'); ?></h4>
+                                    <p><?php echo t('day_service_psychopedagogical_desc'); ?></p>
                                 </div>
                             </div>
                             <div class="service-item">
@@ -286,8 +286,8 @@ require_once __DIR__ . '/includes/lang.php';
                                     <i class="fas fa-apple-alt"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4>Corecție Nutrițională</h4>
-                                    <p>Evaluarea și îmbunătățirea stării nutriționale a copilului.</p>
+                                    <h4><?php echo t('day_service_nutritional_title'); ?></h4>
+                                    <p><?php echo t('day_service_nutritional_desc'); ?></p>
                                 </div>
                             </div>
                             <div class="service-item">
@@ -295,8 +295,8 @@ require_once __DIR__ . '/includes/lang.php';
                                     <i class="fas fa-eye"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4>Terapie Senzorială</h4>
-                                    <p>Stimularea și dezvoltarea percepțiilor senzoriale ale copilului.</p>
+                                    <h4><?php echo t('day_service_sensory_title'); ?></h4>
+                                    <p><?php echo t('day_service_sensory_desc'); ?></p>
                                 </div>
                             </div>
                         </div>
@@ -304,15 +304,15 @@ require_once __DIR__ . '/includes/lang.php';
 
                     <div class="documents-section">
                         <h2><?php echo t('documents_title'); ?></h2>
-                        <p class="documents-intro">Pentru înscrierea în <?php echo t('day_header_title'); ?>, sunt necesare următoarele documente:</p>
+                        <p class="documents-intro"><?php echo t('day_documents_intro'); ?> <?php echo t('day_header_title'); ?>, <?php echo t('day_documents_required'); ?>:</p>
                         <div class="documents-list">
                             <div class="document-item" data-aos="fade-up" data-aos-delay="100">
                                 <div class="document-icon">
                                     <i class="fas fa-file-medical" aria-hidden="true"></i>
                                 </div>
                                 <div class="document-content">
-                                    <h5>Extrasul - Trimiterea</h5>
-                                    <p>Formularul nr. 027/1 eliberat de medicul de familie</p>
+                                    <h5><?php echo t('day_document_referral_title'); ?></h5>
+                                    <p><?php echo t('day_document_referral_desc'); ?></p>
                                 </div>
                             </div>
                             <div class="document-item" data-aos="fade-up" data-aos-delay="200">
@@ -320,8 +320,8 @@ require_once __DIR__ . '/includes/lang.php';
                                     <i class="fas fa-book" aria-hidden="true"></i>
                                 </div>
                                 <div class="document-content">
-                                    <h5>Carnetul de Dezvoltare</h5>
-                                    <p>Formularul nr. 112/2 (a copilului care urmează a fi plasat în secție)</p>
+                                    <h5><?php echo t('day_document_development_title'); ?></h5>
+                                    <p><?php echo t('day_document_development_desc'); ?></p>
                                 </div>
                             </div>
                             <div class="document-item" data-aos="fade-up" data-aos-delay="300">
@@ -329,8 +329,8 @@ require_once __DIR__ . '/includes/lang.php';
                                     <i class="fas fa-id-card" aria-hidden="true"></i>
                                 </div>
                                 <div class="document-content">
-                                    <h5>Act de Identitate</h5>
-                                    <p>Copia actului personal de identitate a părintelui/reprezentantului legal</p>
+                                    <h5><?php echo t('day_document_identity_title'); ?></h5>
+                                    <p><?php echo t('day_document_identity_desc'); ?></p>
                                 </div>
                             </div>
                             <div class="document-item" data-aos="fade-up" data-aos-delay="400">
@@ -338,8 +338,8 @@ require_once __DIR__ . '/includes/lang.php';
                                     <i class="fas fa-certificate" aria-hidden="true"></i>
                                 </div>
                                 <div class="document-content">
-                                    <h5>Certificat de Invaliditate</h5>
-                                    <p>Copia certificatului de invaliditate a beneficiarului secției</p>
+                                    <h5><?php echo t('day_document_disability_title'); ?></h5>
+                                    <p><?php echo t('day_document_disability_desc'); ?></p>
                                 </div>
                             </div>
                             <div class="document-item" data-aos="fade-up" data-aos-delay="500">
@@ -347,8 +347,8 @@ require_once __DIR__ . '/includes/lang.php';
                                     <i class="fas fa-signature" aria-hidden="true"></i>
                                 </div>
                                 <div class="document-content">
-                                    <h5>Acordul Scris</h5>
-                                    <p>Acordul scris al reprezentantului legal al copilului pentru primirea serviciilor</p>
+                                    <h5><?php echo t('day_document_consent_title'); ?></h5>
+                                    <p><?php echo t('day_document_consent_desc'); ?></p>
                                 </div>
                             </div>
                             <div class="document-item" data-aos="fade-up" data-aos-delay="600">
@@ -356,8 +356,8 @@ require_once __DIR__ . '/includes/lang.php';
                                     <i class="fas fa-shield-virus" aria-hidden="true"></i>
                                 </div>
                                 <div class="document-content">
-                                    <h5>Certificat Medical</h5>
-                                    <p>Certificatul despre contactul cu maladii infecțioase (valabil 30 de zile)</p>
+                                    <h5><?php echo t('day_document_medical_title'); ?></h5>
+                                    <p><?php echo t('day_document_medical_desc'); ?></p>
                                 </div>
                             </div>
                             <div class="document-item" data-aos="fade-up" data-aos-delay="700">
@@ -365,8 +365,8 @@ require_once __DIR__ . '/includes/lang.php';
                                     <i class="fas fa-edit" aria-hidden="true"></i>
                                 </div>
                                 <div class="document-content">
-                                    <h5>Cererea Părinților</h5>
-                                    <p>Cererea părinților pentru înscrierea copilului în secție</p>
+                                    <h5><?php echo t('day_document_application_title'); ?></h5>
+                                    <p><?php echo t('day_document_application_desc'); ?></p>
                                 </div>
                             </div>
                         </div>
@@ -388,29 +388,29 @@ require_once __DIR__ . '/includes/lang.php';
                                 <div class="info-icon">
                                     <i class="fas fa-child"></i>
                                 </div>
-                                <h4>Vârsta Beneficiarilor</h4>
-                                <p>Copii cu vârsta între 1-10 ani cu dizabilități neuro-motorii și tulburări de neuro-dezvoltare</p>
+                                <h4><?php echo t('day_info_age_title'); ?></h4>
+                                <p><?php echo t('day_info_age_desc'); ?></p>
                             </div>
                             <div class="info-card">
                                 <div class="info-icon">
                                     <i class="fas fa-users"></i>
                                 </div>
-                                <h4>Organizare</h4>
-                                <p>3 grupe organizate pe vârste, similar cu grădinița</p>
+                                <h4><?php echo t('day_info_organization_title'); ?></h4>
+                                <p><?php echo t('day_info_organization_desc'); ?></p>
                             </div>
                             <div class="info-card">
                                 <div class="info-icon">
                                     <i class="fas fa-calendar-alt"></i>
                                 </div>
-                                <h4>Program</h4>
-                                <p>Zilnic, de luni până vineri, în afară de zilele de odihnă și sărbători</p>
+                                <h4><?php echo t('day_info_schedule_title'); ?></h4>
+                                <p><?php echo t('day_info_schedule_desc'); ?></p>
                             </div>
                             <div class="info-card">
                                 <div class="info-icon">
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>
-                                <h4>Acoperire</h4>
-                                <p>Copii din municipiul Chișinău</p>
+                                <h4><?php echo t('day_info_coverage_title'); ?></h4>
+                                <p><?php echo t('day_info_coverage_desc'); ?></p>
                             </div>
                         </div>
                     </div>
@@ -419,39 +419,39 @@ require_once __DIR__ . '/includes/lang.php';
                         <h2><?php echo t('day_gallery_title'); ?></h2>
                         <div class="gallery-grid">
                             <div class="gallery-item">
-                                <img src="images/zi1.png" alt="Activități de Grup" loading="lazy">
+                                <img src="images/zi1.png" alt="<?php echo t('day_gallery_group_activities'); ?>" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Activități de Grup</h4>
+                                    <h4><?php echo t('day_gallery_group_activities'); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/zi2.jpg" alt="Terapie Individualizată" loading="lazy">
+                                <img src="images/zi2.jpg" alt="<?php echo t('day_gallery_individual_therapy'); ?>" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Terapie Individualizată</h4>
+                                    <h4><?php echo t('day_gallery_individual_therapy'); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/zi3.jpg" alt="Profesioniști Medicali" loading="lazy">
+                                <img src="images/zi3.jpg" alt="<?php echo t('day_gallery_medical_professionals'); ?>" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Profesioniști Medicali</h4>
+                                    <h4><?php echo t('day_gallery_medical_professionals'); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/zi4.jpg" alt="Personal grijuliu" loading="lazy">
+                                <img src="images/zi4.jpg" alt="<?php echo t('day_gallery_caring_staff'); ?>" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Personal grijuliu</h4>
+                                    <h4><?php echo t('day_gallery_caring_staff'); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/zi5.jpg" alt="Hidrokinetoterapie" loading="lazy">
+                                <img src="images/zi5.jpg" alt="<?php echo t('day_gallery_hydrotherapy'); ?>" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Hidrokinetoterapie</h4>
+                                    <h4><?php echo t('day_gallery_hydrotherapy'); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/zi6.jpg" alt="Mediu Specializat" loading="lazy">
+                                <img src="images/zi6.jpg" alt="<?php echo t('day_gallery_specialized_environment'); ?>" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Mediu Specializat pentru Reabilitare</h4>
+                                    <h4><?php echo t('day_gallery_specialized_environment'); ?></h4>
                                 </div>
                             </div>
                         </div>
@@ -470,15 +470,15 @@ require_once __DIR__ . '/includes/lang.php';
     <!-- Audio Element -->
     <audio id="audioElement" preload="metadata">
         <source src="audio/18_Alexandru_Lozanciuc_-_Sa_daruim_copiilor_pamantul.mp3" type="audio/mpeg">
-        Browser-ul tău nu suportă elementul audio.
+        <?php echo t('audio_not_supported'); ?>
     </audio>
 
     <!-- Lyrics Modal -->
     <div class="lyrics-modal" id="lyricsModal">
         <div class="lyrics-modal-content">
             <div class="lyrics-header">
-                <h3>Versurile imnului instituției</h3>
-                <button class="lyrics-close-btn" id="lyricsCloseBtn" aria-label="Închide versurile">
+                <h3><?php echo t('lyrics_modal_title'); ?></h3>
+                <button class="lyrics-close-btn" id="lyricsCloseBtn" aria-label="<?php echo t('lyrics_close'); ?>">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
