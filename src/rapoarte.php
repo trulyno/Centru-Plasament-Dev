@@ -278,7 +278,7 @@ require_once __DIR__ . '/includes/lang.php';
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă. Toate drepturile rezervate.</p>
+            <p><?php echo t('footer_copyright'); ?></p>
         </div>
     </footer>
 
