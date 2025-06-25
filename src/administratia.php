@@ -327,6 +327,24 @@
                                     <p class="admin-staff-position">Șef Secție Reabilitare</p>
                                 </div>
                             </div>
+                            <div class="admin-staff-card">
+                                <div class="admin-staff-image">
+                                    <img src="images/Ionita Natalia Secretar.png" alt="secretar" loading="lazy" decoding="async">
+                                </div>
+                                <div class="admin-staff-info">
+                                    <h3>Ionița Natalia</h3>
+                                    <p class="admin-staff-position">Secretar</p>
+                                </div>
+                            </div>
+                            <div class="admin-staff-card">
+                                <div class="admin-staff-image">
+                                    <img src="images/Capros Marina Sef sectie de Criza.png" alt="sectiecriza" loading="lazy" decoding="async">
+                                </div>
+                                <div class="admin-staff-info">
+                                    <h3>Capros Marina</h3>
+                                    <p class="admin-staff-position">Șef Secție Criză</p>
+                                </div>
+                            </div>
 
 
 
