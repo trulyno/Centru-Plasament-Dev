@@ -296,7 +296,75 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="document-content">
+                                <h3>Hotărârea Guvernului nr. 591 din 24 iulie 2017: Aprobă Regulamentul-cadru privind organizarea și funcționarea Serviciilor sociale de tip centru de plasament și standardele minime de calitate.</h3>
+                                <a href="https://www.legis.md/cautare/getResults?doc_id=101381&lang=ro" class="document-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Vezi document
+                                </a>
+                            </div>
+                        </div>
+                        <div class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="document-content">
+                                <h3>Ordinul nr. 114 din 24 mai 2024: Aprobă Ghidul privind Politica internă de protecție a copilului.</h3>
+                                <a href="https://social.gov.md/wp-content/uploads/2024/05/Ordin-nr.-114_24.05.2024_Politica-interna-de-protectie.pdf" class="document-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Vezi document
+                                </a>
+                            </div>                        
+                        </div>
+                        <div class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="document-content">
+                                <h3>Codul Muncii al Republicii Moldova: Aplicabil tuturor angajatorilor, inclusiv instituțiilor sociale de stat. </h3>
+                                <a href="https://www.legis.md/cautare/getResults?doc_id=113032&lang=ro" class="document-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Vezi document
+                                </a>
+                            </div>
+                        </div>
+                        <div class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="document-content">
+                                <h3>Ordinul N964 din 02.09.19, cu privire la standardul de supraveghere si dezvoltarii copilului in conditii de ambulator si a Carnetului de dezvoltare a copilului </h3>
+                                <a href="https://old.msmps.gov.md/sites/default/files/legislatie/ordin_nr._964_din_020919.pdf" class="document-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Vezi document
+                                </a>
+                            </div>
+                        </div>
+                        <div class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="document-content">
+                                <h3>Legea N23 din 16.03.2007, cu privire la profilaxia infectiei HIV/SIDA.</h3>
+                                <a href="https://www.legis.md/cautare/getResults?doc_id=110180&lang=ro" class="document-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Vezi document
+                                </a>
+                            </div>
+                        </div>
+                        <div class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="document-content">
+                                <h3>Legea N411 din 28.03.1995, cu privirea la ocrotirea sanatatii.</h3>
+                                <a href="https://www.legis.md/cautare/getResults?doc_id=119465&lang=ro" class="document-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Vezi document
+                                </a>
+                            </div>
+                        </div>
                     </div>
+                        </div>
+                        
 
                 </div>
             </div>
