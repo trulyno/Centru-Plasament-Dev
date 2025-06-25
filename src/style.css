@@ -4795,3 +4795,53 @@ html {
         font-size: 0.9rem;
     }
 }
+
+/* ==============================================
+   PETITION FORM STYLES
+   ============================================== */
+
+.petition-info {
+    margin-bottom: 2rem;
+}
+
+.requirements-box {
+    background: linear-gradient(135deg, var(--primary-transparent), var(--primary-light-transparent));
+    border: 1px solid var(--primary-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.requirements-box h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.requirements-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.requirements-box li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(74, 144, 226, 0.2);
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.requirements-box li:last-child {
+    border-bottom: none;
+}
+
+.requirements-box li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}

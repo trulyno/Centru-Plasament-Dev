@@ -1284,3 +1284,271 @@ function closeOrganigramaModal() {
         }
     }
 }
+
+// Petition Form Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    // Entity type handling
+    const entityTypeRadios = document.querySelectorAll('input[name="entity_type"]');
+    const legalEntityFields = document.getElementById('legalEntityFields');
+    const individualFields = document.getElementById('individualFields');
+    
+    if (entityTypeRadios.length > 0) {
+        entityTypeRadios.forEach(radio => {
+            radio.addEventListener('change', function() {
+                if (this.value === 'legal') {
+                    legalEntityFields.style.display = 'block';
+                    individualFields.style.display = 'none';
+                } else if (this.value === 'individual') {
+                    legalEntityFields.style.display = 'none';
+                    individualFields.style.display = 'block';
+                }
+            });
+        });
+    }
+    
+    // File upload handling
+    const petitionFileInput = document.getElementById('petition_file');
+    const additionalFilesInput = document.getElementById('additional_files');
+    
+    if (petitionFileInput) {
+        petitionFileInput.addEventListener('change', function() {
+            validatePetitionFile(this);
+        });
+    }
+    
+    if (additionalFilesInput) {
+        additionalFilesInput.addEventListener('change', function() {
+            validateAdditionalFiles(this);
+        });
+    }
+    
+    // Form validation
+    const petitionForm = document.getElementById('petitionForm');
+    if (petitionForm) {
+        petitionForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            if (validateForm()) {
+                // Show success message (in a real application, this would submit to server)
+                showSubmissionMessage();
+            }
+        });
+    }
+});
+
+function validatePetitionFile(input) {
+    const file = input.files[0];
+    const maxSize = 15 * 1024 * 1024; // 15MB in bytes
+    
+    if (file) {
+        // Check file type
+        if (file.type !== 'application/pdf') {
+            showErrorMessage('Fișierul petițiilor trebuie să fie în format PDF.');
+            input.value = '';
+            return false;
+        }
+        
+        // Check file size
+        if (file.size > maxSize) {
+            showErrorMessage('Fișierul petițiilor nu poate depăși 15 MB.');
+            input.value = '';
+            return false;
+        }
+        
+        updateFileUploadDisplay(input, file.name);
+        return true;
+    }
+    
+    return false;
+}
+
+function validateAdditionalFiles(input) {
+    const files = Array.from(input.files);
+    const maxFiles = 3;
+    const maxSize = 10 * 1024 * 1024; // 10MB per file
+    const allowedTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/zip'];
+    
+    if (files.length > maxFiles) {
+        showErrorMessage(`Puteți încărca maximum ${maxFiles} fișiere suplimentare.`);
+        input.value = '';
+        return false;
+    }
+    
+    for (let file of files) {
+        // Check file type
+        if (!allowedTypes.includes(file.type)) {
+            showErrorMessage('Fișierele suplimentare trebuie să fie în format PDF, DOC sau ZIP.');
+            input.value = '';
+            return false;
+        }
+        
+        // Check file size
+        if (file.size > maxSize) {
+            showErrorMessage('Fiecare fișier suplimentar nu poate depăși 10 MB.');
+            input.value = '';
+            return false;
+        }
+    }
+    
+    if (files.length > 0) {
+        const fileNames = files.map(f => f.name).join(', ');
+        updateFileUploadDisplay(input, fileNames);
+    }
+    
+    return true;
+}
+
+function updateFileUploadDisplay(input, fileName) {
+    const wrapper = input.closest('.file-upload-wrapper');
+    const info = wrapper.querySelector('.file-upload-info span');
+    
+    if (info) {
+        info.textContent = fileName;
+        wrapper.style.borderColor = '#4a90e2';
+        wrapper.style.backgroundColor = 'rgba(74, 144, 226, 0.1)';
+    }
+}
+
+function validateForm() {
+    let isValid = true;
+    const requiredFields = document.querySelectorAll('input[required], textarea[required]');
+    
+    // Check required fields
+    requiredFields.forEach(field => {
+        if (!field.value.trim()) {
+            showFieldError(field, 'Acest câmp este obligatoriu.');
+            isValid = false;
+        } else {
+            clearFieldError(field);
+        }
+    });
+    
+    // Check email format
+    const emailField = document.getElementById('email');
+    if (emailField && emailField.value) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(emailField.value)) {
+            showFieldError(emailField, 'Introduceți o adresă de email validă.');
+            isValid = false;
+        }
+    }
+    
+    // Check phone format
+    const phoneField = document.getElementById('phone');
+    if (phoneField && phoneField.value) {
+        const phoneRegex = /^(\+373|373)?[0-9]{8}$/;
+        if (!phoneRegex.test(phoneField.value.replace(/\s/g, ''))) {
+            showFieldError(phoneField, 'Introduceți un număr de telefon valid.');
+            isValid = false;
+        }
+    }
+    
+    // Check consent checkboxes
+    const consentBoxes = document.querySelectorAll('input[type="checkbox"][required]');
+    consentBoxes.forEach(checkbox => {
+        if (!checkbox.checked) {
+            showFieldError(checkbox, 'Acordul este obligatoriu.');
+            isValid = false;
+        }
+    });
+    
+    return isValid;
+}
+
+function showFieldError(field, message) {
+    clearFieldError(field);
+    
+    const errorDiv = document.createElement('div');
+    errorDiv.className = 'field-error';
+    errorDiv.textContent = message;
+    errorDiv.style.color = '#ff6b6b';
+    errorDiv.style.fontSize = '0.85rem';
+    errorDiv.style.marginTop = '0.25rem';
+    
+    field.style.borderColor = '#ff6b6b';
+    
+    if (field.type === 'checkbox') {
+        field.closest('.checkbox-option').appendChild(errorDiv);
+    } else {
+        field.parentNode.appendChild(errorDiv);
+    }
+}
+
+function clearFieldError(field) {
+    const existingError = field.parentNode.querySelector('.field-error') || 
+                         field.closest('.checkbox-option')?.querySelector('.field-error');
+    if (existingError) {
+        existingError.remove();
+    }
+    field.style.borderColor = '';
+}
+
+function showErrorMessage(message) {
+    // Create and show error notification
+    const notification = createNotification(message, 'error');
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+        notification.remove();
+    }, 5000);
+}
+
+function showSubmissionMessage() {
+    const message = 'Petiția a fost trimisă cu succes! Veți primi o confirmare pe email în curând.';
+    const notification = createNotification(message, 'success');
+    document.body.appendChild(notification);
+    
+    // Reset form
+    document.getElementById('petitionForm').reset();
+    
+    // Hide conditional fields
+    document.getElementById('legalEntityFields').style.display = 'none';
+    document.getElementById('individualFields').style.display = 'none';
+    
+    setTimeout(() => {
+        notification.remove();
+    }, 7000);
+}
+
+function createNotification(message, type) {
+    const notification = document.createElement('div');
+    notification.style.cssText = `
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 1rem 1.5rem;
+        border-radius: 8px;
+        color: white;
+        font-weight: 500;
+        z-index: 10000;
+        max-width: 400px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        animation: slideIn 0.3s ease-out;
+    `;
+    
+    if (type === 'error') {
+        notification.style.background = 'linear-gradient(135deg, #ff6b6b, #ff5252)';
+    } else {
+        notification.style.background = 'linear-gradient(135deg, #4a90e2, #357abd)';
+    }
+    
+    notification.textContent = message;
+    
+    // Add slide-in animation
+    const style = document.createElement('style');
+    style.textContent = `
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    `;
+    document.head.appendChild(style);
+    
+    return notification;
+}

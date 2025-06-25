@@ -11,6 +11,7 @@
     <link rel="icon" href="images/logo.ico" type="image/x-icon" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <link href="petition-form.css" rel="stylesheet">
 </head>
 <body>
     <!-- Loading overlay -->
@@ -186,8 +187,170 @@
         <section class="content-section">
             <div class="container">
                 <div class="content-wrapper">
-                    <h2>Petiții și Reclamații</h2>
-                    <p>Conținutul acestei pagini va fi completat în curând.</p>
+                    <div class="petition-info">
+                        <h2>Sistem de Petiții și Reclamații</h2>
+                        <p>Prin intermediul acestui formular puteți depune petiții și reclamații conform legislației în vigoare. Toate petițiile vor fi examinate în conformitate cu prevederile legale.</p>
+                        
+                        <div class="requirements-box">
+                            <h3><i class="fas fa-info-circle"></i> Cerințe pentru depunerea petițiilor</h3>
+                            <ul>
+                                <li><strong>Format:</strong> Petiția trebuie să fie în format PDF</li>
+                                <li><strong>Semnătură digitală:</strong> Obligatorie cu MSIGN</li>
+                                <li><strong>Dimensiune maximă:</strong> 15 MB</li>
+                                <li><strong>Fișiere suplimentare:</strong> Maximum 3 fișiere în format PDF, DOC sau ZIP</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <form class="petition-form" id="petitionForm">
+                        <h3>Formular de Depunere Petiție/Reclamație</h3>
+                        
+                        <!-- Entity Type Selection -->
+                        <div class="form-group">
+                            <label class="form-label required">Tipul solicitantului:</label>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="entity_type" value="individual" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">Persoană fizică</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="entity_type" value="legal" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">Persoană juridică</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Legal Entity Fields -->
+                        <div class="form-row" id="legalEntityFields" style="display: none;">
+                            <div class="form-group">
+                                <label for="idno" class="form-label">IDNO (opțional):</label>
+                                <input type="text" id="idno" name="idno" class="form-input" placeholder="Ex: 1234567890123">
+                                <small class="form-hint">Codul de identificare fiscală pentru persoane juridice</small>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company_name" class="form-label">Denumirea companiei/instituției (opțional):</label>
+                                <input type="text" id="company_name" name="company_name" class="form-input" placeholder="Denumirea completă a organizației">
+                            </div>
+                        </div>
+
+                        <!-- Individual Fields -->
+                        <div class="form-row" id="individualFields" style="display: none;">
+                            <div class="form-group">
+                                <label for="idnp" class="form-label">IDNP (opțional):</label>
+                                <input type="text" id="idnp" name="idnp" class="form-input" placeholder="Ex: 2001234567890">
+                                <small class="form-hint">Codul numeric personal</small>
+                            </div>
+                        </div>
+
+                        <!-- Personal Information -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="last_name" class="form-label required">Numele:</label>
+                                <input type="text" id="last_name" name="last_name" class="form-input" required placeholder="Numele de familie">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="first_name" class="form-label required">Prenumele:</label>
+                                <input type="text" id="first_name" name="first_name" class="form-input" required placeholder="Prenumele">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone" class="form-label required">Telefon:</label>
+                                <input type="tel" id="phone" name="phone" class="form-input" required placeholder="+373 XX XXX XXX">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label required">Email:</label>
+                                <input type="email" id="email" name="email" class="form-input" required placeholder="exemplu@email.com">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address" class="form-label required">Adresa de domiciliu/reședință:</label>
+                            <textarea id="address" name="address" class="form-textarea" required placeholder="Adresa completă (oraș, stradă, nr. casei, apartament)"></textarea>
+                        </div>
+
+                        <!-- Petition Details -->
+                        <div class="form-group">
+                            <label for="subject" class="form-label required">Subiectul petițiilor/reclamației:</label>
+                            <input type="text" id="subject" name="subject" class="form-input" required placeholder="Descrierea scurtă a subiectului">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label required">Mesajul:</label>
+                            <textarea id="message" name="message" class="form-textarea large" required placeholder="Descrierea detaliată a petițiilor sau reclamației..."></textarea>
+                        </div>
+
+                        <!-- File Uploads -->
+                        <div class="form-group">
+                            <label for="petition_file" class="form-label required">Fișierul petițiilor (PDF cu semnătură digitală MSIGN):</label>
+                            <div class="file-upload-wrapper">
+                                <input type="file" id="petition_file" name="petition_file" class="form-file" accept=".pdf" required>
+                                <div class="file-upload-info">
+                                    <i class="fas fa-file-pdf"></i>
+                                    <span>Alegeți fișierul PDF (max. 15 MB)</span>
+                                </div>
+                            </div>
+                            <small class="form-hint">Fișierul trebuie să fie semnat digital cu MSIGN</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="additional_files" class="form-label">Fișiere suplimentare (opțional):</label>
+                            <div class="file-upload-wrapper">
+                                <input type="file" id="additional_files" name="additional_files[]" class="form-file" accept=".pdf,.doc,.docx,.zip" multiple>
+                                <div class="file-upload-info">
+                                    <i class="fas fa-paperclip"></i>
+                                    <span>Maximum 3 fișiere (PDF, DOC, ZIP)</span>
+                                </div>
+                            </div>
+                            <small class="form-hint">Documente de susținere: PDF, DOC sau ZIP (max. 10 MB per fișier)</small>
+                        </div>
+
+                        <!-- Consent Checkboxes -->
+                        <div class="consent-section">
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="data_consent" required>
+                                    <span class="checkbox-custom"></span>
+                                    <span class="checkbox-text">
+                                        Sunt de acord cu prelucrarea datelor cu caracter personal în conformitate cu 
+                                        <strong>articolele 6, 8, 9 din Legea nr. 133 din 08.07.2011</strong> privind protecția datelor cu caracter personal.
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="data_accuracy" required>
+                                    <span class="checkbox-custom"></span>
+                                    <span class="checkbox-text">
+                                        Confirm că toate datele furnizate sunt corecte și complete, și îmi asum responsabilitatea pentru veridicitatea informațiilor.
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="form-actions">
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i>
+                                Trimite Petiția
+                            </button>
+                            <button type="reset" class="reset-btn">
+                                <i class="fas fa-undo"></i>
+                                Resetează Formularul
+                            </button>
+                        </div>
+
+                        <div class="form-footer">
+                            <p><i class="fas fa-info-circle"></i> Petițiile și reclamațiile vor fi examinate conform termenelor prevăzute de legislația în vigoare.</p>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
