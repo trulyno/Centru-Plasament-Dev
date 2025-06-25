@@ -133,10 +133,10 @@ require_once __DIR__ . '/includes/lang.php';
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle"><?php echo t('nav_about'); ?> <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="administratia.php"><?php echo t('about_administration'); ?></a></li>
-                            <li><a href="organigrama.php"><?php echo t('about_organigram'); ?></a></li>
-                            <li><a href="subdiviziune.php"><?php echo t('about_subdivision'); ?></a></li>
-                            <li><a href="functii-vacante.php"><?php echo t('about_vacant_positions'); ?></a></li>
+                            <li><a href="administratia.php">Administrația</a></li>
+                            <li><a href="organigrama.php">Organigrama</a></li>
+                            
+                            <li><a href="functii-vacante.php">Funcții Vacante</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -205,79 +205,11 @@ require_once __DIR__ . '/includes/lang.php';
                     </div>
 
                     <div class="gallery-grid">
-                        <!-- Activități -->
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/zi1.png" alt="Activități Zilnice" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Activități Zilnice</h3>
-                                <p>Copiii se joacă și învață în siguranță</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/zi7.jpg" alt="Activități Educaționale" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Activități Educaționale</h3>
-                                <p>Învățare prin joacă și interacțiune</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/zi2.jpg" alt="Jocuri Interactive" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Jocuri Interactive</h3>
-                                <p>Dezvoltare prin activități distractive</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/zi4.jpg" alt="Activități de Grup" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Activități de Grup</h3>
-                                <p>Socializare și dezvoltare în echipă</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Spații -->
-                        <div class="gallery-item" data-category="spaces">
-                            <img src="images/zi3.jpg" alt="Sala de Joacă" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Sala de Joacă</h3>
-                                <p>Spațiu colorat și sigur pentru copii</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        
                         <div class="gallery-item" data-category="spaces">
                             <img src="images/zi10.jpg" alt="Camera de Odihnă" loading="lazy">
                             <div class="gallery-overlay">
                                 <h3>Camera de Odihnă</h3>
                                 <p>Spații confortabile pentru relaxare</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="gallery-item" data-category="spaces">
-                            <img src="images/zi8.jpg" alt="Camera Copiilor Mici" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Camera Copiilor Mici</h3>
-                                <p>Mediu special amenajat pentru cei mai mici</p>
                                 <div class="overlay-icon">
                                     <i class="fas fa-search-plus"></i>
                                 </div>
@@ -295,130 +227,6 @@ require_once __DIR__ . '/includes/lang.php';
                             </div>
                         </div>
 
-                        <!-- Terapie și Reabilitare -->
-                        <div class="gallery-item" data-category="therapy">
-                            <img src="images/masaj.jpg" alt="Terapie prin Masaj" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Terapie prin Masaj</h3>
-                                <p>Reabilitare specializată pentru copii</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="gallery-item" data-category="therapy">
-                            <img src="images/kinetoterapie.jpg" alt="Kinetoterapie" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Kinetoterapie</h3>
-                                <p>Exerciții specializate de reabilitare</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="gallery-item" data-category="therapy">
-                            <img src="images/hidroterapia.jpg" alt="Hidroterapie" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Hidroterapie</h3>
-                                <p>Terapie în mediu acvatic</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="gallery-item" data-category="therapy">
-                            <img src="images/hidrokinetoterapie.jpg" alt="Hidrokinetoterapie" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Hidrokinetoterapie</h3>
-                                <p>Exerciții în apă pentru reabilitare</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="gallery-item" data-category="therapy">
-                            <img src="images/proceduri_fizioterapeutice.jpg" alt="Proceduri Fizioterapeutice" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Proceduri Fizioterapeutice</h3>
-                                <p>Tratament specializat pentru recuperare</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="gallery-item" data-category="therapy">
-                            <img src="images/terapie_senzoriala.jpg" alt="Terapie Senzorială" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Terapie Senzorială</h3>
-                                <p>Stimulare senzorială pentru dezvoltare</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Evenimente și Activități Speciale -->
-                        <div class="gallery-item" data-category="events">
-                            <img src="images/maternala5.jpg" alt="Evenimente Speciale" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Evenimente Speciale</h3>
-                                <p>Celebrăm împreună momente importante</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="gallery-item" data-category="events">
-                            <img src="images/zi5.jpg" alt="Activități de Sărbătoare" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Activități de Sărbătoare</h3>
-                                <p>Sărbători și evenimente comunitare</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="gallery-item" data-category="events">
-                            <img src="images/zi6.jpg" alt="Concursuri și Competiții" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Concursuri și Competiții</h3>
-                                <p>Activități competitive și distractive</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Secția Maternală -->
-                        <div class="gallery-item" data-category="spaces">
-                            <img src="images/maternala1.jpg" alt="Secția Maternală - Camere" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Secția Maternală</h3>
-                                <p>Camere confortabile pentru mame și copii</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="gallery-item" data-category="spaces">
-                            <img src="images/maternala2.jpg" alt="Spații Comune Maternală" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Spații Comune</h3>
-                                <p>Zone de socializare și relaxare</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        
                         <div class="gallery-item" data-category="activities">
                             <img src="images/maternala3.jpg" alt="Consiliere Parentală" loading="lazy">
                             <div class="gallery-overlay">
@@ -429,41 +237,7 @@ require_once __DIR__ . '/includes/lang.php';
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="gallery-item" data-category="spaces">
-                            <img src="images/maternala4.jpg" alt="Bucătărie Utilată" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Bucătărie Utilată</h3>
-                                <p>Facilități complete pentru pregătirea meselor</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
 
-                        <!-- Secția Respiro -->
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/Respiro1.jpg" alt="Activități Respiro" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Activități respiro</h3>
-                                <p>Îngrijire temporară specializată</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="gallery-item" data-category="therapy">
-                            <img src="images/respiro2.jpg" alt="Terapie Specializată Respiro" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Terapie Specializată</h3>
-                                <p>Programe de reabilitare pentru copii cu dizabilități</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        
                         <div class="gallery-item" data-category="spaces">
                             <img src="images/respiro3.jpg" alt="Spații Respiro" loading="lazy">
                             <div class="gallery-overlay">
@@ -474,29 +248,7 @@ require_once __DIR__ . '/includes/lang.php';
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/respiro4.jpg" alt="Activități Interactive Respiro" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Activități Interactive</h3>
-                                <p>Jocuri și activități adaptate nevoilor speciale</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="gallery-item" data-category="therapy">
-                            <img src="images/respiro5.jpg" alt="Consiliere Familială" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Consiliere Familială</h3>
-                                <p>Sprijin pentru familii și instruire</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        
+
                         <div class="gallery-item" data-category="spaces">
                             <img src="images/respiro6.jpg" alt="Mediu Terapeutic" loading="lazy">
                             <div class="gallery-overlay">
@@ -509,37 +261,6 @@ require_once __DIR__ . '/includes/lang.php';
                         </div>
 
                         <div class="gallery-item" data-category="activities">
-                            <img src="images/sap1.jpg" alt="Activități la aer liber" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Activități la aer liber</h3>
-                                <p>Jocuri in Natura</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/sap2.jpg" alt="Odihna in timpul liber" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Odihna in timpul liber</h3>
-                                <p>Activitati de relaxare</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="events">
-                            <img src="images/sap3.jpg" alt="Festival de toamna" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Festival de toamna</h3>
-                                <p>Frunzele ingalbenesc</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
                             <img src="images/sap4.jpg" alt="Descoperirea Faunei" loading="lazy">
                             <div class="gallery-overlay">
                                 <h3>Descoperirea Faunei</h3>
@@ -549,86 +270,7 @@ require_once __DIR__ . '/includes/lang.php';
                                 </div>
                             </div>
                         </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/sap5.jpg" alt="Culesul Roadei" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Culesul Roadei</h3>
-                                <p>Cules de mere</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/sap6.jpg" alt="Gatirea Bucatelor" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Gatirea Bucatelor</h3>
-                                <p>Activitati de gatire</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/sap7.jpg" alt="Desen cu creta" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Desen cu creta</h3>
-                                <p>Capodopere pe pamant</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/sap8.jpg" alt="Degustarea Roadei" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Degustarea Roadei</h3>
-                                <p>Indulcire cu pepene rosu</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="events">
-                            <img src="images/sap9.jpg" alt="Praznuirea zilei de nastere" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Praznuirea zilei de nastere</h3>
-                                <p>Un tort delicios</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/sap10.jpg" alt="Desen in Contur" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Desen in Contur</h3>
-                                <p>Creioane si caiete</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/sap11.jpg" alt="Desen de Pasti" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Desen de Pasti</h3>
-                                <p>Carioci si Iepurasi</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/sap12.jpg" alt="Decorarea Tortului" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Decorarea Tortului</h3>
-                                <p>Activitate Dulce</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
+
                         <div class="gallery-item" data-category="events">
                             <img src="images/sap13.jpg" alt="Eveniment Amuzants" loading="lazy">
                             <div class="gallery-overlay">
@@ -639,206 +281,7 @@ require_once __DIR__ . '/includes/lang.php';
                                 </div>
                             </div>
                         </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/z1.jpg" alt="Activitati de dezvoltare a logicii" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Activitati de dezvoltare a logicii</h3>
-                                <p>Activitati interesante</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/z2.jpg" alt="Confectionare din Hartie" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Confectionare din Hartie</h3>
-                                <p>Cadouri pentru cei dragi</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/z3.jpg" alt="Confectionare din Hartie" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Confectionare din Hartie</h3>
-                                <p>Cadouri pentru cei dragis</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/z4.jpg" alt="Lectii de Logopedie" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Lectii de Logopedie</h3>
-                                <p>Invatam sa vorbim corect</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/z5.jpg" alt="Jocuri de masa" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Jocuri de masa</h3>
-                                <p>Aranjam bilele</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/z6.jpg" alt="Activitate de Halloween" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Activitate de Halloween</h3>
-                                <p>Decoram dovleacul</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="therapy">
-                            <img src="images/z7.jpg" alt="Terapie Intensiva" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Terapie Intensiva</h3>
-                                <p>Respiram Corect</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/z8.jpg" alt="Jocuri de Logica" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Jocuri de Logica</h3>
-                                <p>Aranjam bilele dupa culori</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/z9.jpg" alt="Activitate de desen" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Activitate de desen</h3>
-                                <p>Desenam cu mainile</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="therapy">
-                            <img src="images/z10.jpg" alt="Masaj Terapeutic" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Masaj Terapeutic</h3>
-                                <p>Relaxam muschii dupa o zi grea</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/z11.jpg" alt="Activitate de desen" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Activitate de desenn</h3>
-                                <p>Desenam cu mainile</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/z12.jpg" alt="Gatirea pentru eveniment" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Gatirea pentru eveniment</h3>
-                                <p>Ne gatim de sarbatoarea de Pasti</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="therapy">
-                            <img src="images/z13.jpg" alt="Terapie cu apa" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Terapie cu apa</h3>
-                                <p>Ne invatam a innota</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/z14.jpg" alt="Jocuri interesante" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Jocuri interesante</h3>
-                                <p>Construim Turnuri</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="therapy">
-                            <img src="images/z15.jpg" alt="Terapie cu apa" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Terapie cu apa</h3>
-                                <p>Copiii sunt foarte multumiti</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="events">
-                            <img src="images/z16.jpg" alt="Sarbatoarea de Halloween" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Sarbatoarea de Halloween</h3>
-                                <p>Sarbatoare plina de veselie si dulciuri</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="therapy">
-                            <img src="images/z17.jpg" alt="Terapie cu apa" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Terapie cu apa</h3>
-                                <p>Innot in grup</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="events">
-                            <img src="images/z18.jpg" alt="Sarbatoare de ziua copilului" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Sarbatoare de ziua copilului</h3>
-                                <p>Copiii isi sarbatoresc ziua lor</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="therapy">
-                            <img src="images/z19.jpg" alt="Terapie pentru elasticitatea muschilor" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Terapie pentru elasticitatea muschilor</h3>
-                                <p>Exercitii pentru a mentine sanatatea corpului</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/z20.jpg" alt="Exercitii pentru dezoltarea gandirii" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Exercitii pentru dezoltarea gandirii</h3>
-                                <p>Alege animalul potrivit dupa desen</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
+
                         <div class="gallery-item" data-category="activities">
                             <img src="images/z21.jpg" alt="Confectionarea lucrarilor plastice" loading="lazy">
                             <div class="gallery-overlay">
@@ -849,36 +292,7 @@ require_once __DIR__ . '/includes/lang.php';
                                 </div>
                             </div>
                         </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/00.jpg" alt="Jocuri cu Balonase" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Jocuri cu Balonase</h3>
-                                <p>Balonase de sapun prin toata camera</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/2.jpg" alt="Tobogane cu Mingiute" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Tobogane cu Mingiute</h3>
-                                <p>Piscina cu mingiute</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/8rQNO6Rf.jpg" alt="La o Inghetata" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>La o Inghetata</h3>
-                                <p>Racorire pe vreme calda</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
+
                         <div class="gallery-item" data-category="activities">
                             <img src="images/14.jpg" alt="Admirarea Gradinii Zoo" loading="lazy">
                             <div class="gallery-overlay">
@@ -909,116 +323,7 @@ require_once __DIR__ . '/includes/lang.php';
                                 </div>
                             </div>
                         </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/41.jpg" alt="Jocuri de Dezoltare" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Jocuri de Dezoltare</h3>
-                                <p>Copiii invata sa gandeasca logic</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/44.jpg" alt="Dansul de vals" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Dansul de vals</h3>
-                                <p>Copiii invata un dans lin si frumos</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/55.jpg" alt="Desen cu creioane" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Desen cu creioane</h3>
-                                <p>Desene frumoase si pline de iubire</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/58.jpg" alt="Serbarea Zilei de Nastere" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Serbarea Zilei de Nastere</h3>
-                                <p>Felicitari tuturor copiilor</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="events">
-                            <img src="images/72.jpg" alt="Festival de Toamna" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Festival de Toamna</h3>
-                                <p>Anotimpul Roadei si fericirii</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/74.jpg" alt="Surpriza pentru copii" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Surpriza pentru copii</h3>
-                                <p>Printesa a facut o surpriza fetelor</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/77.jpg" alt="Joc interesant pentru copii" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Joc interesant pentru copii</h3>
-                                <p>Mentinem cercul cat mai mare</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/85.jpg" alt="Fotografie cu eroii" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Fotografie cu eroii</h3>
-                                <p>O amintire pe restul vietii</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/252.jpg" alt="Jocuri de viteza" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Jocuri de viteza</h3>
-                                <p>Treci cat mai repede obstacolele</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/404.jpg" alt="Culesul de Jucarii" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Culesul de Jucarii</h3>
-                                <p>Cine aduna mai multe castiga</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/411.jpg" alt="Trecerea Obstacolelor" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Trecerea Obstacolelor</h3>
-                                <p>O provocare interesanta</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
+
                         <div class="gallery-item" data-category="activities">
                             <img src="images/555.jpg" alt="Teatru cu marionete" loading="lazy">
                             <div class="gallery-overlay">
@@ -1039,76 +344,7 @@ require_once __DIR__ . '/includes/lang.php';
                                 </div>
                             </div>
                         </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/1000.jpg" alt="Frunzulite galbene" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Frunzulite Galbene</h3>
-                                <p>Marcarea sosirii Toamnei</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/2552.jpg" alt="Jocuri de Sortare" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Jocuri de Sortare</h3>
-                                <p>Copiii invata culorile</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/5555.jpg" alt="Dansuri in Perechi" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Dansuri in Perechi</h3>
-                                <p>Foarte frumos si lin</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/7777.jpg" alt="Scenete de Toamna" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Scenete de Toamna</h3>
-                                <p>Frumos si interesant</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/25252.jpg" alt="Marsul Frunzulitelor" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Marsul Frunzulitelor</h3>
-                                <p>Marsul Toamnei</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/555555.jpg" alt="Camera de Joaca" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Camera de Joaca</h3>
-                                <p>Locul preferat al copiilor</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                       <div class="gallery-item" data-category="activities">
-                            <img src="images/criza.jpg" alt="Indulcire cu Suc" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Indulcire cu Suc</h3>
-                                <p>Pauza de indulcire</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
+
                     
                     </div>
                 </div>

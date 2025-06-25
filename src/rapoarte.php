@@ -133,10 +133,10 @@ require_once __DIR__ . '/includes/lang.php';
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle"><?php echo t('nav_about'); ?> <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="administratia.php"><?php echo t('about_administration'); ?></a></li>
-                            <li><a href="organigrama.php"><?php echo t('about_organigram'); ?></a></li>
-                            <li><a href="subdiviziune.php"><?php echo t('about_subdivision'); ?></a></li>
-                            <li><a href="functii-vacante.php"><?php echo t('about_vacant_positions'); ?></a></li>
+                            <li><a href="administratia.php">Administrația</a></li>
+                            <li><a href="organigrama.php">Organigrama</a></li>
+                            
+                            <li><a href="functii-vacante.php">Funcții Vacante</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -197,7 +197,17 @@ require_once __DIR__ . '/includes/lang.php';
             <div class="container">
                 <div class="content-wrapper">
                     <h2>Rapoarte</h2>
-                    <p>Conținutul acestei pagini va fi completat în curând.</p>
+                    <!-- <div class="document-card">
+                        <div class="document-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div class="document-content">
+                            <h3></h3>
+                            <a href="" class="document-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Vezi document
+                            </a>
+                        </div>
+                    </div> -->
                 </div>
             </div>
         </section>

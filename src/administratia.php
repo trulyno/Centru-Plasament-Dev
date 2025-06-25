@@ -133,10 +133,10 @@ require_once __DIR__ . '/includes/lang.php';
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle"><?php echo t('nav_about'); ?> <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="administratia.php"><?php echo t('about_administration'); ?></a></li>
-                            <li><a href="organigrama.php"><?php echo t('about_organigram'); ?></a></li>
-                            <li><a href="subdiviziune.php"><?php echo t('about_subdivision'); ?></a></li>
-                            <li><a href="functii-vacante.php"><?php echo t('about_vacant_positions'); ?></a></li>
+                            <li><a href="administratia.php">Administrația</a></li>
+                            <li><a href="organigrama.php">Organigrama</a></li>
+                            
+                            <li><a href="functii-vacante.php">Funcții Vacante</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -335,6 +335,24 @@ require_once __DIR__ . '/includes/lang.php';
                                 <div class="admin-staff-info">
                                     <h3>Timigraz Violeta</h3>
                                     <p class="admin-staff-position">Șef Secție Reabilitare</p>
+                                </div>
+                            </div>
+                            <div class="admin-staff-card">
+                                <div class="admin-staff-image">
+                                    <img src="images/Ionita Natalia Secretar.png" alt="secretar" loading="lazy" decoding="async">
+                                </div>
+                                <div class="admin-staff-info">
+                                    <h3>Ionița Natalia</h3>
+                                    <p class="admin-staff-position">Secretar</p>
+                                </div>
+                            </div>
+                            <div class="admin-staff-card">
+                                <div class="admin-staff-image">
+                                    <img src="images/Capros Marina Sef sectie de Criza.png" alt="sectiecriza" loading="lazy" decoding="async">
+                                </div>
+                                <div class="admin-staff-info">
+                                    <h3>Capros Marina</h3>
+                                    <p class="admin-staff-position">Șef Secție Criză</p>
                                 </div>
                             </div>
 

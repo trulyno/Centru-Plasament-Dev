@@ -138,10 +138,10 @@ require_once __DIR__ . '/includes/lang.php';
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle"><?php echo t('nav_about'); ?> <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="administratia.php"><?php echo t('about_administration'); ?></a></li>
-                            <li><a href="organigrama.php"><?php echo t('about_organigram'); ?></a></li>
-                            <li><a href="subdiviziune.php"><?php echo t('about_subdivision'); ?></a></li>
-                            <li><a href="functii-vacante.php"><?php echo t('about_vacant_positions'); ?></a></li>
+                            <li><a href="administratia.php">Administrația</a></li>
+                            <li><a href="organigrama.php">Organigrama</a></li>
+                            
+                            <li><a href="functii-vacante.php">Funcții Vacante</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -324,11 +324,11 @@ require_once __DIR__ . '/includes/lang.php';
                 </div>
                 <div class="stat-item fade-in">
                     <h3 id="stat2">0</h3>
-                    <p><?php echo t('stats_reunifications'); ?></p>
+                    <p>Externați de Succes</p>
                 </div>
                 <div class="stat-item fade-in">
                     <h3 id="stat3">0</h3>
-                    <p><?php echo t('stats_adoptions'); ?></p>
+                    <p>Copii Încredințați spre Adopție</p>
                 </div>
                 <div class="stat-item fade-in">
                     <h3 id="stat4">0</h3>
@@ -462,6 +462,22 @@ require_once __DIR__ . '/includes/lang.php';
                     </div>
                     <div class="partner-content">
                         <h3>Universitatea de Stat din Moldova</h3>
+                    </div>
+                </a>
+                <a href="files/CCF.pdf" target="_blank" class="partner-card fade-in">
+                    <div class="partner-image">
+                        <img src="images/CCF Moldova.png" alt="CCF Moldova" loading="lazy">
+                    </div>
+                    <div class="partner-content">
+                        <h3>CCF Moldova</h3>
+                    </div>
+                </a>
+                <a href="files/Memorandum MMPS - OGI .pdf" target="_blank" class="partner-card fade-in">
+                    <div class="partner-image">
+                        <img src="images/ogi.png" alt="OGI Moldova" loading="lazy">
+                    </div>
+                    <div class="partner-content">
+                        <h3>OGI Moldova</h3>
                     </div>
                 </a>
             </div>

@@ -133,10 +133,10 @@ require_once __DIR__ . '/includes/lang.php';
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle"><?php echo t('nav_about'); ?> <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="administratia.php"><?php echo t('about_administration'); ?></a></li>
-                            <li><a href="organigrama.php"><?php echo t('about_organigram'); ?></a></li>
-                            <li><a href="subdiviziune.php"><?php echo t('about_subdivision'); ?></a></li>
-                            <li><a href="functii-vacante.php"><?php echo t('about_vacant_positions'); ?></a></li>
+                            <li><a href="administratia.php">Administrația</a></li>
+                            <li><a href="organigrama.php">Organigrama</a></li>
+                            
+                            <li><a href="functii-vacante.php">Funcții Vacante</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -205,7 +205,7 @@ require_once __DIR__ . '/includes/lang.php';
                     <div class="job-section">
                         <h3><i class="fas fa-briefcase"></i> Posturi Disponibile</h3>
                         
-                        <div class="job-card">
+                        <!-- <div class="job-card">
                             <div class="job-header">
                                 <h4>Exemplu Pozitie</h4>
                                 <span class="job-type">Normă întreagă</span>
@@ -230,7 +230,7 @@ require_once __DIR__ . '/includes/lang.php';
                                     <span class="job-date">Publicat: 23 iunie 2025</span>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                     </div>
 

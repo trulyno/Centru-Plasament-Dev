@@ -133,10 +133,9 @@ require_once __DIR__ . '/includes/lang.php';
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle"><?php echo t('nav_about'); ?> <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="administratia.php"><?php echo t('about_administration'); ?></a></li>
-                            <li><a href="organigrama.php"><?php echo t('about_organigram'); ?></a></li>
-                            <li><a href="subdiviziune.php"><?php echo t('about_subdivision'); ?></a></li>
-                            <li><a href="functii-vacante.php"><?php echo t('about_vacant_positions'); ?></a></li>
+                            <li><a href="administratia.php">Administrația</a></li>
+                            <li><a href="organigrama.php">Organigrama</a></li>                           
+                            <li><a href="functii-vacante.php">Funcții Vacante</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -206,7 +205,6 @@ require_once __DIR__ . '/includes/lang.php';
                             </div>
                             <div class="document-content">
                                 <h3>Codul Familiei al Republicii Moldova</h3>
-                                <p>Cadrul legal de bază pentru protecția copilului și drepturile familiei</p>
                                 <a href="https://www.legis.md/cautare/getResults?doc_id=112685&lang=ro" class="document-link" target="_blank">
                                     <i class="fas fa-external-link-alt"></i> Vezi document
                                 </a>
@@ -219,13 +217,164 @@ require_once __DIR__ . '/includes/lang.php';
                             </div>
                             <div class="document-content">
                                 <h3>Legea nr. 140/2013 privind protecția specială a copiilor în situație de risc</h3>
-                                <p>Reglementează măsurile de protecție și serviciile pentru copiii în situație de risc</p>
                                 <a href="https://www.legis.md/cautare/getResults?doc_id=110518&lang=ro" class="document-link" target="_blank">
                                     <i class="fas fa-external-link-alt"></i> Vezi document
                                 </a>
                             </div>
                         </div>
+
+                        <div class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="document-content">
+                                <h3> Legea nr. 547 din 25.12.2003 "Asistența Socială"</h3>
+                                <a href="https://www.legis.md/cautare/getResults?doc_id=132934&lang=ro" class="document-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Vezi document
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="document-content">
+                                <h3>Legea nr. 140 din 14.06.2011 "Privind protecția specială a copiilor aflați în situație de risc și a copiilor separați de părinți"</h3>
+                                <a href="https://www.legis.md/cautare/getResults?doc_id=146836&lang=ro#" class="document-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Vezi document
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="document-content">
+                                <h3>Legea nr. 123 din 18.06.2010 "Cu privire la serviciile sociale"</h3>
+                                <a href="https://www.legis.md/cautare/getResults?doc_id=141516&lang=ro#" class="document-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Vezi document
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="document-content">
+                                <h3>Legea nr. 99 din 28.05.2010 "Privind regimul juridic al adopției"</h3>
+                                <a href="https://www.legis.md/cautare/getResults?doc_id=138813&lang=ro#" class="document-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Vezi document
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="document-content">
+                                <h3>Legea nr. 338 din 15.12.1994 "Privind drepturile copilului"</h3>
+                                <a href="https://www.legis.md/cautare/getResults?doc_id=140852&lang=ro#" class="document-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Vezi document
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="document-content">
+                                <h3>Legea nr. 60 din 30.03.2012 "Privind incluziunea socială a persoanelor cu dizabilități"</h3>
+                                <a href="https://www.legis.md/cautare/getResults?doc_id=146155&lang=ro#" class="document-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Vezi document
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="document-content">
+                                <h3>Hotărârea de Guvern nr. 450 din 28.04.2006 "Pentru aprobarea Standartelor minime de calitate privind îngrijirea, educarea și socializarea copilului din Centrul de plasament temporar"</h3>
+                                <a href="https://www.legis.md/cautare/getResults?doc_id=103705&lang=ro#" class="document-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Vezi document
+                                </a>
+                            </div>
+                        </div>
+                        <div class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="document-content">
+                                <h3>Hotărârea Guvernului nr. 591 din 24 iulie 2017: Aprobă Regulamentul-cadru privind organizarea și funcționarea Serviciilor sociale de tip centru de plasament și standardele minime de calitate.</h3>
+                                <a href="https://www.legis.md/cautare/getResults?doc_id=101381&lang=ro" class="document-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Vezi document
+                                </a>
+                            </div>
+                        </div>
+                        <div class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="document-content">
+                                <h3>Ordinul nr. 114 din 24 mai 2024: Aprobă Ghidul privind Politica internă de protecție a copilului.</h3>
+                                <a href="https://social.gov.md/wp-content/uploads/2024/05/Ordin-nr.-114_24.05.2024_Politica-interna-de-protectie.pdf" class="document-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Vezi document
+                                </a>
+                            </div>                        
+                        </div>
+                        <div class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="document-content">
+                                <h3>Codul Muncii al Republicii Moldova: Aplicabil tuturor angajatorilor, inclusiv instituțiilor sociale de stat. </h3>
+                                <a href="https://www.legis.md/cautare/getResults?doc_id=113032&lang=ro" class="document-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Vezi document
+                                </a>
+                            </div>
+                        </div>
+                        <div class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="document-content">
+                                <h3>Ordinul N964 din 02.09.19, cu privire la standardul de supraveghere si dezvoltarii copilului in conditii de ambulator si a Carnetului de dezvoltare a copilului </h3>
+                                <a href="https://old.msmps.gov.md/sites/default/files/legislatie/ordin_nr._964_din_020919.pdf" class="document-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Vezi document
+                                </a>
+                            </div>
+                        </div>
+                        <div class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="document-content">
+                                <h3>Legea N23 din 16.03.2007, cu privire la profilaxia infectiei HIV/SIDA.</h3>
+                                <a href="https://www.legis.md/cautare/getResults?doc_id=110180&lang=ro" class="document-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Vezi document
+                                </a>
+                            </div>
+                        </div>
+                        <div class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="document-content">
+                                <h3>Legea N411 din 28.03.1995, cu privirea la ocrotirea sanatatii.</h3>
+                                <a href="https://www.legis.md/cautare/getResults?doc_id=119465&lang=ro" class="document-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Vezi document
+                                </a>
+                            </div>
+                        </div>
                     </div>
+                        </div>
+                        
 
                 </div>
             </div>

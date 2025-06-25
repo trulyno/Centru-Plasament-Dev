@@ -133,10 +133,10 @@ require_once __DIR__ . '/includes/lang.php';
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle"><?php echo t('nav_about'); ?> <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="administratia.php"><?php echo t('about_administration'); ?></a></li>
-                            <li><a href="organigrama.php"><?php echo t('about_organigram'); ?></a></li>
-                            <li><a href="subdiviziune.php"><?php echo t('about_subdivision'); ?></a></li>
-                            <li><a href="functii-vacante.php"><?php echo t('about_vacant_positions'); ?></a></li>
+                            <li><a href="administratia.php">Administrația</a></li>
+                            <li><a href="organigrama.php">Organigrama</a></li>
+                            
+                            <li><a href="functii-vacante.php">Funcții Vacante</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -210,14 +210,14 @@ require_once __DIR__ . '/includes/lang.php';
                                 <div class="document-details">
                                     <div class="detail-item">
                                         <i class="fas fa-calendar"></i>
-                                        <span>Ultima actualizare: Iulie 2020</span>
+                                        <span>Ultima actualizare: Martie 2024</span>
                                     </div>
                                     <div class="detail-item">
                                         <i class="fas fa-user-check"></i>
                                         <span>Aprobat prin Ordinul AGSSI</span>
                                     </div>
                                 </div>
-                                <a href="https://agssi.md/wp-content/uploads/2020/08/Ordin-nr.656-din-14.07.2020.pdf" class="document-link" target="_blank">
+                                <a href="files/Ordin-Regulament-6 martie 2024.pdf" class="document-link" target="_blank">
                                     <i class="fas fa-external-link-alt"></i> Vezi document
                                 </a>
                             </div>
