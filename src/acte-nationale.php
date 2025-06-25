@@ -196,7 +196,6 @@
                             </div>
                             <div class="document-content">
                                 <h3>Codul Familiei al Republicii Moldova</h3>
-                                <p>Cadrul legal de bază pentru protecția copilului și drepturile familiei</p>
                                 <a href="https://www.legis.md/cautare/getResults?doc_id=112685&lang=ro" class="document-link" target="_blank">
                                     <i class="fas fa-external-link-alt"></i> Vezi document
                                 </a>
@@ -209,8 +208,91 @@
                             </div>
                             <div class="document-content">
                                 <h3>Legea nr. 140/2013 privind protecția specială a copiilor în situație de risc</h3>
-                                <p>Reglementează măsurile de protecție și serviciile pentru copiii în situație de risc</p>
                                 <a href="https://www.legis.md/cautare/getResults?doc_id=110518&lang=ro" class="document-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Vezi document
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="document-content">
+                                <h3> Legea nr. 547 din 25.12.2003 "Asistența Socială"</h3>
+                                <a href="https://www.legis.md/cautare/getResults?doc_id=132934&lang=ro" class="document-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Vezi document
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="document-content">
+                                <h3>Legea nr. 140 din 14.06.2011 "Privind protecția specială a copiilor aflați în situație de risc și a copiilor separați de părinți"</h3>
+                                <a href="https://www.legis.md/cautare/getResults?doc_id=146836&lang=ro#" class="document-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Vezi document
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="document-content">
+                                <h3>Legea nr. 123 din 18.06.2010 "Cu privire la serviciile sociale"</h3>
+                                <a href="https://www.legis.md/cautare/getResults?doc_id=141516&lang=ro#" class="document-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Vezi document
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="document-content">
+                                <h3>Legea nr. 99 din 28.05.2010 "Privind regimul juridic al adopției"</h3>
+                                <a href="https://www.legis.md/cautare/getResults?doc_id=138813&lang=ro#" class="document-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Vezi document
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="document-content">
+                                <h3>Legea nr. 338 din 15.12.1994 "Privind drepturile copilului"</h3>
+                                <a href="https://www.legis.md/cautare/getResults?doc_id=140852&lang=ro#" class="document-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Vezi document
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="document-content">
+                                <h3>Legea nr. 60 din 30.03.2012 "Privind incluziunea socială a persoanelor cu dizabilități"</h3>
+                                <a href="https://www.legis.md/cautare/getResults?doc_id=146155&lang=ro#" class="document-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Vezi document
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="document-content">
+                                <h3>Hotărârea de Guvern nr. 450 din 28.04.2006 "Pentru aprobarea Standartelor minime de calitate privind îngrijirea, educarea și socializarea copilului din Centrul de plasament temporar"</h3>
+                                <a href="https://www.legis.md/cautare/getResults?doc_id=103705&lang=ro#" class="document-link" target="_blank">
                                     <i class="fas fa-external-link-alt"></i> Vezi document
                                 </a>
                             </div>
