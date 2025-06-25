@@ -23,7 +23,6 @@
   
   "about_administration": "Administrația",
   "about_organigram": "Organigrama",
-  "about_subdivision": "Subdiviziune",
   "about_vacant_positions": "Funcții Vacante",
   
   "transparency_legislation": "Legislație",
@@ -82,7 +81,25 @@
   "page_subdivision_subtitle": "Informații despre subordonarea administrativă",
   
   "page_organigram_title": "Organigrama",
+  "page_organigram_subtitle": "Structura organizațională a centrului",
   "page_gifts_register_title": "Registru Cadouri",
+  
+  "administration_page_title": "Administrația - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă",
+  "administration_meta_description": "Echipa administrativă a Centrului de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă din Chișinău. Cunosce conducerea și personalul care asigură buna funcționare a instituției.",
+  "administration_meta_keywords": "administrația centrului, echipa administrativă, conducere CPRCVF, personal administrativ, management centru copii",
+  "administration_subtitle": "Conducerea și personalul administrativ al centrului",
+  "administration_team_title": "Echipa Administrativă",
+  "administration_team_description": "Mai jos găsiți informații despre echipa administrativă a centrului nostru, care asigură buna funcționare a instituției și calitatea serviciilor oferite.",
+  "administration_institution_title": "Organigrama Instituției",
+  
+  "organigram_page_title": "Organigrama - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă",
+  "organigram_meta_description": "Organigrama și structura organizațională a Centrului de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă din Chișinău.",
+  "organigram_meta_keywords": "organigrama CPRCVF, structura organizațională, ierarhie centru copii, structura administrativă",
+  
+  "vacant_positions_page_title": "Funcții Vacante - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă",
+  "vacant_positions_meta_description": "Oportunități de carieră și funcții vacante la Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă din Chișinău. Alătură-te echipei noastre!",
+  "vacant_positions_meta_keywords": "locuri de muncă CPRCVF, cariere protecția copilului, funcții vacante, angajare centru copii, job-uri Chișinău",
+  "vacant_positions_subtitle": "Oportunități de carieră în domeniul protecției copilului",
   
   "content_coming_soon": "Conținutul acestei pagini va fi completat în curând.",
   
@@ -297,9 +314,6 @@
   "medical_meta_keywords": "asistență medicală, îngrijire medicală, monitorizare sănătate",
   "medical_page_title": "Secția Asistență Medicală - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă",
   
-  "administration_meta_description": "Informații despre administrația Centrului de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă din Chișinău.",
-  "administration_meta_keywords": "administrație, management, conducere, echipa de management",
-  "administration_page_title": "Administrația - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă",
   "administration_header_title": "Administrația",
   "administration_header_subtitle": "Echipa de conducere a centrului",
   
@@ -309,9 +323,6 @@
   "legislation_header_title": "Legislație",
   "legislation_header_subtitle": "Cadrul legal care reglementează activitățile centrului",
   
-  "organigram_meta_description": "Organigrama Centrului de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă prezintă structura organizațională și ierarhia instituțională.",
-  "organigram_meta_keywords": "organigrama, structură organizațională, ierarhie",
-  "organigram_page_title": "Organigrama - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă",
   "organigram_header_title": "Organigrama",
   "organigram_header_subtitle": "Structura organizațională a centrului",
   
@@ -321,9 +332,6 @@
   "subdivision_header_title": "Subdiviziune",
   "subdivision_header_subtitle": "Informații despre subordonarea administrativă",
   
-  "vacant_positions_meta_description": "Funcții vacante disponibile la Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă.",
-  "vacant_positions_meta_keywords": "funcții vacante, angajare, cariere, locuri de muncă",
-  "vacant_positions_page_title": "Funcții Vacante - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă",
   "vacant_positions_header_title": "Funcții Vacante",
   "vacant_positions_header_subtitle": "Oportunități de carieră la centrul nostru",
   
@@ -742,5 +750,19 @@
   "psycho_gallery_educational_title": "Programe Educaționale - Descoperirea Mediului Natural",
   "psycho_gallery_practical_title": "Activități Practice - Dezvoltarea Abilităților de Viață",
   "psycho_gallery_occupational_title": "Terapie Ocupațională - Activități Culinare",
-  "psycho_gallery_art_title": "Artterapie - Expresie Creativă și Dezvoltare Motrică"
+  "psycho_gallery_art_title": "Artterapie - Expresie Creativă și Dezvoltare Motrică",
+  
+  "vacant_positions_join_team": "Alătură-te echipei noastre!",
+  "vacant_positions_intro": "Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă din municipiul Chișinău caută profesioniști dedicați pentru a se alătura echipei noastre. Oferim un mediu de lucru stimulant și oportunitatea de a face o diferență reală în viața copiilor.",
+  "vacant_positions_available": "Posturi Disponibile",
+  "vacant_positions_no_openings": "În prezent nu avem posturi vacante disponibile.",
+  "vacant_positions_check_back": "Vă rugăm să verificați din nou în viitor pentru oportunități noi.",
+  "vacant_positions_contact_info": "Pentru întrebări despre oportunități de carieră, vă rugăm să ne contactați:",
+  "vacant_positions_how_to_apply": "Cum să aplici",
+  "vacant_positions_step1_title": "Pregătește documentele",
+  "vacant_positions_step1_desc": "CV-ul, scrisoarea de intenție și copiile documentelor de studii",
+  "vacant_positions_step2_title": "Trimite aplicația",
+  "vacant_positions_step2_desc": "La adresa de email:",
+  "vacant_positions_step3_title": "Interviul",
+  "vacant_positions_step3_desc": "Te vom contacta pentru programarea unui interviu"
 }

@@ -133,10 +133,10 @@ require_once __DIR__ . '/includes/lang.php';
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle"><?php echo t('nav_about'); ?> <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="administratia.php">Administrația</a></li>
-                            <li><a href="organigrama.php">Organigrama</a></li>
+                            <li><a href="administratia.php"><?php echo t('about_administration'); ?></a></li>
+                            <li><a href="organigrama.php"><?php echo t('about_organigram'); ?></a></li>
                             
-                            <li><a href="functii-vacante.php">Funcții Vacante</a></li>
+                            <li><a href="functii-vacante.php"><?php echo t('about_vacant_positions'); ?></a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -188,16 +188,16 @@ require_once __DIR__ . '/includes/lang.php';
     <main class="main-content" id="main-content">
         <section class="page-header">
             <div class="container">
-                <h1>Administrația</h1>
-                <p>Conducerea și personalul administrativ al centrului</p>
+                <h1><?php echo t('about_administration'); ?></h1>
+                <p><?php echo t('administration_subtitle'); ?></p>
             </div>
         </section>
 
         <section class="content-section">
             <div class="container">
                 <div class="content-wrapper">
-                    <h2>Echipa Administrativă</h2>
-                    <p>Mai jos găsiți informații despre echipa administrativă a centrului nostru, care asigură buna funcționare a instituției și calitatea serviciilor oferite.</p>
+                    <h2><?php echo t('administration_team_title'); ?></h2>
+                    <p><?php echo t('administration_team_description'); ?></p>
                     
                     <div class="admin-team-container">
                         <div class="admin-team-grid">
@@ -369,15 +369,15 @@ require_once __DIR__ . '/includes/lang.php';
     <!-- Audio Element -->
     <audio id="audioElement" preload="metadata">
         <source src="audio/18_Alexandru_Lozanciuc_-_Sa_daruim_copiilor_pamantul.mp3" type="audio/mpeg">
-        Browser-ul tău nu suportă elementul audio.
+        <?php echo t('audio_not_supported'); ?>
     </audio>
 
     <!-- Lyrics Modal -->
     <div class="lyrics-modal" id="lyricsModal">
         <div class="lyrics-modal-content">
             <div class="lyrics-header">
-                <h3>Versurile imnului instituției</h3>
-                <button class="lyrics-close-btn" id="lyricsCloseBtn" aria-label="Închide versurile">
+                <h3><?php echo t('lyrics_modal_title'); ?></h3>
+                <button class="lyrics-close-btn" id="lyricsCloseBtn" aria-label="<?php echo t('lyrics_close'); ?>">
                     <i class="fas fa-times"></i>
                 </button>
             </div>

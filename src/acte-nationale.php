@@ -133,9 +133,9 @@ require_once __DIR__ . '/includes/lang.php';
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle"><?php echo t('nav_about'); ?> <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="administratia.php">Administrația</a></li>
-                            <li><a href="organigrama.php">Organigrama</a></li>                           
-                            <li><a href="functii-vacante.php">Funcții Vacante</a></li>
+                            <li><a href="administratia.php"><?php echo t('about_administration'); ?></a></li>
+                            <li><a href="organigrama.php"><?php echo t('about_organigram'); ?></a></li>                           
+                            <li><a href="functii-vacante.php"><?php echo t('about_vacant_positions'); ?></a></li>
                         </ul>
                     </li>
                     <li class="dropdown">

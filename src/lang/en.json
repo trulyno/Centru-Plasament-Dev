@@ -23,7 +23,6 @@
   
   "about_administration": "Administration",
   "about_organigram": "Organizational Chart",
-  "about_subdivision": "Subdivision",
   "about_vacant_positions": "Vacant Positions",
   
   "transparency_legislation": "Legislation",
@@ -82,7 +81,25 @@
   "page_subdivision_subtitle": "Information about administrative subordination",
   
   "page_organigram_title": "Organizational Chart",
+  "page_organigram_subtitle": "Organizational structure of the center", 
   "page_gifts_register_title": "Gifts Register",
+  
+  "administration_page_title": "Administration - Placement and Rehabilitation Center for Young Children",
+  "administration_meta_description": "Administrative team of the Placement and Rehabilitation Center for Young Children in Chișinău. Meet the leadership and staff who ensure the proper functioning of the institution.",
+  "administration_meta_keywords": "center administration, administrative team, PRCYC leadership, administrative staff, children center management",
+  "administration_subtitle": "Leadership and administrative staff of the center",
+  "administration_team_title": "Administrative Team",
+  "administration_team_description": "Below you will find information about our center's administrative team, which ensures the proper functioning of the institution and the quality of services provided.",
+  "administration_institution_title": "Institution Organizational Chart",
+  
+  "organigram_page_title": "Organizational Chart - Placement and Rehabilitation Center for Young Children",
+  "organigram_meta_description": "Organizational chart and structure of the Placement and Rehabilitation Center for Young Children in Chișinău.",
+  "organigram_meta_keywords": "PRCYC organizational chart, organizational structure, children center hierarchy, administrative structure",
+  
+  "vacant_positions_page_title": "Vacant Positions - Placement and Rehabilitation Center for Young Children",
+  "vacant_positions_meta_description": "Career opportunities and vacant positions at the Placement and Rehabilitation Center for Young Children in Chișinău. Join our team!",
+  "vacant_positions_meta_keywords": "PRCYC jobs, child protection careers, vacant positions, children center employment, jobs Chișinău",
+  "vacant_positions_subtitle": "Career opportunities in child protection",
   
   "content_coming_soon": "The content of this page will be completed soon.",
   
@@ -297,9 +314,6 @@
   "medical_meta_keywords": "medical assistance, medical care, health monitoring",
   "medical_page_title": "Medical Assistance Section - Placement and Rehabilitation Center for Young Children",
   
-  "administration_meta_description": "Information about the administration of the Placement and Rehabilitation Center for Young Children in Chișinău.",
-  "administration_meta_keywords": "administration, management, leadership, management team",
-  "administration_page_title": "Administration - Placement and Rehabilitation Center for Young Children",
   "administration_header_title": "Administration",
   "administration_header_subtitle": "The center's leadership team",
   
@@ -309,9 +323,6 @@
   "legislation_header_title": "Legislation",
   "legislation_header_subtitle": "Legal framework governing the center's activities",
   
-  "organigram_meta_description": "The organizational chart of the Placement and Rehabilitation Center for Young Children presents the organizational structure and institutional hierarchy.",
-  "organigram_meta_keywords": "organizational chart, organizational structure, hierarchy",
-  "organigram_page_title": "Organizational Chart - Placement and Rehabilitation Center for Young Children",
   "organigram_header_title": "Organizational Chart",
   "organigram_header_subtitle": "The center's organizational structure",
   
@@ -321,9 +332,6 @@
   "subdivision_header_title": "Subdivision",
   "subdivision_header_subtitle": "Information about administrative subordination",
   
-  "vacant_positions_meta_description": "Vacant positions available at the Placement and Rehabilitation Center for Young Children.",
-  "vacant_positions_meta_keywords": "vacant positions, employment, careers, job opportunities",
-  "vacant_positions_page_title": "Vacant Positions - Placement and Rehabilitation Center for Young Children",
   "vacant_positions_header_title": "Vacant Positions",
   "vacant_positions_header_subtitle": "Career opportunities at our center",
   
@@ -742,5 +750,19 @@
   "psycho_gallery_educational_title": "Educational Programs - Discovering the Natural Environment",
   "psycho_gallery_practical_title": "Practical Activities - Life Skills Development",
   "psycho_gallery_occupational_title": "Occupational Therapy - Culinary Activities",
-  "psycho_gallery_art_title": "Art Therapy - Creative Expression and Motor Development"
+  "psycho_gallery_art_title": "Art Therapy - Creative Expression and Motor Development",
+  
+  "vacant_positions_join_team": "Join Our Team!",
+  "vacant_positions_intro": "The Placement and Rehabilitation Center for Young Children in Chișinău Municipality is looking for dedicated professionals to join our team. We offer a stimulating work environment and the opportunity to make a real difference in children's lives.",
+  "vacant_positions_available": "Available Positions",
+  "vacant_positions_no_openings": "We currently have no vacant positions available.",
+  "vacant_positions_check_back": "Please check back in the future for new opportunities.",
+  "vacant_positions_contact_info": "For questions about career opportunities, please contact us:",
+  "vacant_positions_how_to_apply": "How to Apply",
+  "vacant_positions_step1_title": "Prepare Documents",
+  "vacant_positions_step1_desc": "CV, cover letter and copies of education documents",
+  "vacant_positions_step2_title": "Send Application",
+  "vacant_positions_step2_desc": "To the email address:",
+  "vacant_positions_step3_title": "Interview",
+  "vacant_positions_step3_desc": "We will contact you to schedule an interview"
 }

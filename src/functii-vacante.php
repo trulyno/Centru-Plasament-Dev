@@ -133,10 +133,10 @@ require_once __DIR__ . '/includes/lang.php';
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle"><?php echo t('nav_about'); ?> <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="administratia.php">Administrația</a></li>
-                            <li><a href="organigrama.php">Organigrama</a></li>
+                            <li><a href="administratia.php"><?php echo t('about_administration'); ?></a></li>
+                            <li><a href="organigrama.php"><?php echo t('about_organigram'); ?></a></li>
                             
-                            <li><a href="functii-vacante.php">Funcții Vacante</a></li>
+                            <li><a href="functii-vacante.php"><?php echo t('about_vacant_positions'); ?></a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -188,8 +188,8 @@ require_once __DIR__ . '/includes/lang.php';
     <main class="main-content" id="main-content">
         <section class="page-header">
             <div class="container">
-                <h1>Funcții Vacante</h1>
-                <p>Oportunități de carieră în domeniul protecției copilului</p>
+                <h1><?php echo t('about_vacant_positions'); ?></h1>
+                <p><?php echo t('vacant_positions_subtitle'); ?></p>
             </div>
         </section>
 
@@ -197,13 +197,13 @@ require_once __DIR__ . '/includes/lang.php';
             <div class="container">
                 <div class="content-wrapper">
                     <div class="intro-text">
-                        <h2>Alătură-te echipei noastre!</h2>
-                        <p>Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă din municipiul Chișinău caută profesioniști dedicați pentru a se alătura echipei noastre. Oferim un mediu de lucru stimulant și oportunitatea de a face o diferență reală în viața copiilor.</p>
+                        <h2><?php echo t('vacant_positions_join_team'); ?></h2>
+                        <p><?php echo t('vacant_positions_intro'); ?></p>
                     </div>
 
                     <!-- Current Job Openings -->
                     <div class="job-section">
-                        <h3><i class="fas fa-briefcase"></i> Posturi Disponibile</h3>
+                        <h3><i class="fas fa-briefcase"></i> <?php echo t('vacant_positions_available'); ?></h3>
                         
                         <!-- <div class="job-card">
                             <div class="job-header">
@@ -236,27 +236,27 @@ require_once __DIR__ . '/includes/lang.php';
 
                     <!-- Application Process -->
                     <div class="application-section">
-                        <h3><i class="fas fa-file-alt"></i> Cum să aplici</h3>
+                        <h3><i class="fas fa-file-alt"></i> <?php echo t('vacant_positions_how_to_apply'); ?></h3>
                         <div class="application-steps">
                             <div class="step">
                                 <div class="step-number">1</div>
                                 <div class="step-content">
-                                    <h4>Pregătește documentele</h4>
-                                    <p>CV-ul, scrisoarea de intenție și copiile documentelor de studii</p>
+                                    <h4><?php echo t('vacant_positions_step1_title'); ?></h4>
+                                    <p><?php echo t('vacant_positions_step1_desc'); ?></p>
                                 </div>
                             </div>
                             <div class="step">
                                 <div class="step-number">2</div>
                                 <div class="step-content">
-                                    <h4>Trimite aplicația</h4>
-                                    <p>La adresa de email: <strong>centru_plasament@agssi.md</strong></p>
+                                    <h4><?php echo t('vacant_positions_step2_title'); ?></h4>
+                                    <p><?php echo t('vacant_positions_step2_desc'); ?> <strong>centru_plasament@agssi.md</strong></p>
                                 </div>
                             </div>
                             <div class="step">
                                 <div class="step-number">3</div>
                                 <div class="step-content">
-                                    <h4>Interviul</h4>
-                                    <p>Te vom contacta pentru programarea unui interviu</p>
+                                    <h4><?php echo t('vacant_positions_step3_title'); ?></h4>
+                                    <p><?php echo t('vacant_positions_step3_desc'); ?></p>
                                 </div>
                             </div>
                         </div>
@@ -269,15 +269,15 @@ require_once __DIR__ . '/includes/lang.php';
     <!-- Audio Element -->
     <audio id="audioElement" preload="metadata">
         <source src="audio/18_Alexandru_Lozanciuc_-_Sa_daruim_copiilor_pamantul.mp3" type="audio/mpeg">
-        Browser-ul tău nu suportă elementul audio.
+        <?php echo t('audio_not_supported'); ?>
     </audio>
 
     <!-- Lyrics Modal -->
     <div class="lyrics-modal" id="lyricsModal">
         <div class="lyrics-modal-content">
             <div class="lyrics-header">
-                <h3>Versurile imnului instituției</h3>
-                <button class="lyrics-close-btn" id="lyricsCloseBtn" aria-label="Închide versurile">
+                <h3><?php echo t('lyrics_modal_title'); ?></h3>
+                <button class="lyrics-close-btn" id="lyricsCloseBtn" aria-label="<?php echo t('lyrics_close'); ?>">
                     <i class="fas fa-times"></i>
                 </button>
             </div>

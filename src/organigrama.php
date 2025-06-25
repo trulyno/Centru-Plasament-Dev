@@ -133,10 +133,10 @@ require_once __DIR__ . '/includes/lang.php';
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle"><?php echo t('nav_about'); ?> <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="administratia.php">Administrația</a></li>
-                            <li><a href="organigrama.php">Organigrama</a></li>
+                            <li><a href="administratia.php"><?php echo t('about_administration'); ?></a></li>
+                            <li><a href="organigrama.php"><?php echo t('about_organigram'); ?></a></li>
                             
-                            <li><a href="functii-vacante.php">Funcții Vacante</a></li>
+                            <li><a href="functii-vacante.php"><?php echo t('about_vacant_positions'); ?></a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -188,17 +188,17 @@ require_once __DIR__ . '/includes/lang.php';
     <main class="main-content" id="main-content">
         <section class="page-header">
             <div class="container">
-                <h1>Organigrama</h1>
-                <p>Structura organizațională a centrului</p>
+                <h1><?php echo t('about_organigram'); ?></h1>
+                <p><?php echo t('page_organigram_subtitle'); ?></p>
             </div>
         </section>
 
         <section class="content-section">
             <div class="container">
                 <div class="content-wrapper">
-                    <h2>Organigrama Instituției</h2>
+                    <h2><?php echo t('administration_institution_title'); ?></h2>
                     <div class="organigrama-container">
-                        <img src="images/organigrama.png" alt="Organigrama Centrului de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă" class="organigrama-image">
+                        <img src="images/organigrama.png" alt="<?php echo t('about_organigram'); ?> - <?php echo t('site_title'); ?>" class="organigrama-image">
                     </div>
                 </div>
             </div>
@@ -215,8 +215,8 @@ require_once __DIR__ . '/includes/lang.php';
     <div class="lyrics-modal" id="lyricsModal">
         <div class="lyrics-modal-content">
             <div class="lyrics-header">
-                <h3>Versurile imnului instituției</h3>
-                <button class="lyrics-close-btn" id="lyricsCloseBtn" aria-label="Închide versurile">
+                <h3><?php echo t('lyrics_modal_title'); ?></h3>
+                <button class="lyrics-close-btn" id="lyricsCloseBtn" aria-label="<?php echo t('lyrics_close'); ?>">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
