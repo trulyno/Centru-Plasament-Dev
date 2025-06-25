@@ -195,7 +195,7 @@
                     <div class="job-section">
                         <h3><i class="fas fa-briefcase"></i> Posturi Disponibile</h3>
                         
-                        <div class="job-card">
+                        <!-- <div class="job-card">
                             <div class="job-header">
                                 <h4>Exemplu Pozitie</h4>
                                 <span class="job-type">Normă întreagă</span>
@@ -220,7 +220,7 @@
                                     <span class="job-date">Publicat: 23 iunie 2025</span>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                     </div>
 
