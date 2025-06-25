@@ -341,12 +341,6 @@
   "projects_header_title": "Proiecte",
   "projects_header_subtitle": "Inițiativele noastre pentru îmbunătățirea serviciilor",
   
-  "reports_meta_description": "Rapoartele de activitate și financiare ale Centrului de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă.",
-  "reports_meta_keywords": "rapoarte, activitate, financiare, transparență",
-  "reports_page_title": "Rapoarte - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă",
-  "reports_header_title": "Rapoarte",
-  "reports_header_subtitle": "Rapoarte de activitate și transparență",
-  
   "procurement_reports_meta_description": "Rapoartele de achiziții ale Centrului de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă.",
   "procurement_reports_meta_keywords": "rapoarte achiziții, transparență, contracte",
   "procurement_reports_page_title": "Rapoarte Achiziții - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă",
@@ -358,18 +352,6 @@
   "procurement_plans_page_title": "Planuri Achiziții - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă",
   "procurement_plans_header_title": "Planuri Achiziții",
   "procurement_plans_header_subtitle": "Planificarea achizițiilor publice",
-  
-  "invitations_meta_description": "Invitațiile de participare la procedurile de achiziție ale Centrului de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă.",
-  "invitations_meta_keywords": "invitații participare, achiziții publice, licitații",
-  "invitations_page_title": "Invitații Participare - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă",
-  "invitations_header_title": "Invitații Participare",
-  "invitations_header_subtitle": "Proceduri de achiziție în desfășurare",
-  
-  "gifts_register_meta_description": "Registrul cadourilor primite de Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă.",
-  "gifts_register_meta_keywords": "registru cadouri, transparență, donații",
-  "gifts_register_page_title": "Registru Cadouri - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă",
-  "gifts_register_header_title": "Registru Cadouri",
-  "gifts_register_header_subtitle": "Transparența cadourilor și donațiilor primite",
   
   "petitions_meta_description": "Petiții și reclamații pentru Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă.",
   "petitions_meta_keywords": "petiții, reclamații, feedback, sugestii",
@@ -799,5 +781,36 @@
   
   "methodologies_title": "Metodologii",
   "methodologies_subtitle": "Metodologii și proceduri de lucru ale centrului",
-  "methodologies_content_title": "Metodologii"
+  "methodologies_content_title": "Metodologii",
+  
+  "achizitii_page_title": "Achiziții - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă",
+  "achizitii_meta_description": "Informații despre procesul de achiziții publice ale Centrului de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă.",
+  "achizitii_meta_keywords": "achiziții publice, licitații, transparență achiziții",
+  "achizitii_header_title": "Achiziții",
+  "achizitii_header_subtitle": "Informații despre achizițiile publice ale centrului",
+  
+  "invitations_page_title": "Invitații de Participare - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă",
+  "invitations_meta_description": "Proceduri de achiziții publice în derulare ale Centrului de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă.",
+  "invitations_meta_keywords": "invitații participare, achiziții publice, licitații",
+  "invitations_header_title": "Invitații de Participare",
+  "invitations_header_subtitle": "Proceduri de achiziții publice în derulare",
+  
+  "reports_page_title": "Rapoarte - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă",
+  "reports_meta_description": "Rapoarte anuale și de activitate ale Centrului de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă.",
+  "reports_meta_keywords": "rapoarte anuale, rapoarte activitate, transparență",
+  "reports_header_title": "Rapoarte",
+  "reports_header_subtitle": "Rapoarte anuale și de activitate ale centrului",
+  
+  "gifts_register_page_title": "Registru Cadouri - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă",
+  "gifts_register_meta_description": "Registrul cadourilor primite de personalul Centrului de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă.",
+  "gifts_register_meta_keywords": "registru cadouri, transparență, legislație",
+  "gifts_register_header_title": "Registru Cadouri",
+  "gifts_register_header_subtitle": "Registrul cadourilor primite de personal conform legislației",
+
+  "invitations_title": "Invitații de Participare",
+  "procurement_plans_title": "Planuri de Achiziții",
+  "projects_title": "Proiecte",
+  "procurement_reports_title": "Rapoarte de Achiziții",
+  "reports_title": "Rapoarte",
+  "gifts_register_title": "Registrul Cadourilor"
 }

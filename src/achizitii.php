@@ -3,15 +3,15 @@
 require_once __DIR__ . '/includes/lang.php';
 ?>
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="<?php echo getCurrentLanguage(); ?>">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Informații despre procesul de achiziții publice ale Centrului de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă.">
-    <meta name="keywords" content="achiziții publice, licitații, transparență achiziții">
-    <meta name="author" content="Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă">
+    <meta name="description" content="<?php echo t('achizitii_meta_description'); ?>">
+    <meta name="keywords" content="<?php echo t('achizitii_meta_keywords'); ?>">
+    <meta name="author" content="<?php echo t('meta_author'); ?>">
     
-    <title>Achiziții - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă</title>
+    <title><?php echo t('achizitii_page_title'); ?></title>
     <link rel="icon" href="images/logo.ico" type="image/x-icon" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
@@ -24,7 +24,7 @@ require_once __DIR__ . '/includes/lang.php';
 
     <!-- Accessibility improvements -->
     <div class="skip-links">
-        <a href="#main-content" class="skip-link">Salt la conținutul principal</a>
+        <a href="#main-content" class="skip-link"><?php echo t('skip_to_content'); ?></a>
     </div>
 
     <!-- Header -->
@@ -135,7 +135,6 @@ require_once __DIR__ . '/includes/lang.php';
                         <ul class="dropdown-menu">
                             <li><a href="administratia.php"><?php echo t('about_administration'); ?></a></li>
                             <li><a href="organigrama.php"><?php echo t('about_organigram'); ?></a></li>
-                            
                             <li><a href="functii-vacante.php"><?php echo t('about_vacant_positions'); ?></a></li>
                         </ul>
                     </li>
@@ -188,15 +187,15 @@ require_once __DIR__ . '/includes/lang.php';
     <main class="main-content" id="main-content">
         <section class="page-header">
             <div class="container">
-                <h1>Achiziții</h1>
-                <p>Informații despre achizițiile publice ale centrului</p>
+                <h1><?php echo t('achizitii_header_title'); ?></h1>
+                <p><?php echo t('achizitii_header_subtitle'); ?></p>
             </div>
         </section>
 
         <section class="content-section">
             <div class="container">
                 <div class="content-wrapper">
-                    <h2>Achiziții</h2>
+                    <h2><?php echo t('achizitii_header_title'); ?></h2>
                     <!-- <div class="document-card">
                         <div class="document-icon">
                             <i class="fas fa-file-pdf"></i>
@@ -216,15 +215,15 @@ require_once __DIR__ . '/includes/lang.php';
     <!-- Audio Element -->
     <audio id="audioElement" preload="metadata">
         <source src="audio/18_Alexandru_Lozanciuc_-_Sa_daruim_copiilor_pamantul.mp3" type="audio/mpeg">
-        Browser-ul tău nu suportă elementul audio.
+        <?php echo t('audio_not_supported'); ?>
     </audio>
 
     <!-- Lyrics Modal -->
     <div class="lyrics-modal" id="lyricsModal">
         <div class="lyrics-modal-content">
             <div class="lyrics-header">
-                <h3>Versurile imnului instituției</h3>
-                <button class="lyrics-close-btn" id="lyricsCloseBtn" aria-label="Închide versurile">
+                <h3><?php echo t('lyrics_modal_title'); ?></h3>
+                <button class="lyrics-close-btn" id="lyricsCloseBtn" aria-label="<?php echo t('lyrics_close'); ?>">
                     <i class="fas fa-times"></i>
                 </button>
             </div>

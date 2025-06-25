@@ -188,15 +188,15 @@ require_once __DIR__ . '/includes/lang.php';
     <main class="main-content" id="main-content">
         <section class="page-header">
             <div class="container">
-                <h1>Planuri de Achiziții</h1>
-                <p>Planificarea anuală a achizițiilor publice</p>
+                <h1><?php echo t('procurement_plans_header_title'); ?></h1>
+                <p><?php echo t('procurement_plans_header_subtitle'); ?></p>
             </div>
         </section>
 
         <section class="content-section">
             <div class="container">
                 <div class="content-wrapper">
-                    <h2>Planuri de Achiziții</h2>
+                    <h2><?php echo t('procurement_plans_title'); ?></h2>
                     <!-- <div class="document-card">
                         <div class="document-icon">
                             <i class="fas fa-file-pdf"></i>
@@ -216,14 +216,14 @@ require_once __DIR__ . '/includes/lang.php';
     <!-- Audio Element -->
     <audio id="audioElement" preload="metadata">
         <source src="audio/18_Alexandru_Lozanciuc_-_Sa_daruim_copiilor_pamantul.mp3" type="audio/mpeg">
-        Browser-ul tău nu suportă elementul audio.
+        <?php echo t('audio_not_supported'); ?>
     </audio>
 
     <!-- Lyrics Modal -->
     <div class="lyrics-modal" id="lyricsModal">
         <div class="lyrics-modal-content">
             <div class="lyrics-header">
-                <h3>Versurile imnului instituției</h3>
+                <h3><?php echo t('lyrics_modal_title'); ?></h3>
                 <button class="lyrics-close-btn" id="lyricsCloseBtn" aria-label="Închide versurile">
                     <i class="fas fa-times"></i>
                 </button>

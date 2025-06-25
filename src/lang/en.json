@@ -341,12 +341,6 @@
   "projects_header_title": "Projects",
   "projects_header_subtitle": "Our initiatives to improve services",
   
-  "reports_meta_description": "Activity and financial reports of the Placement and Rehabilitation Center for Young Children.",
-  "reports_meta_keywords": "reports, activity, financial, transparency",
-  "reports_page_title": "Reports - Placement and Rehabilitation Center for Young Children",
-  "reports_header_title": "Reports",
-  "reports_header_subtitle": "Activity and transparency reports",
-  
   "procurement_reports_meta_description": "Procurement reports of the Placement and Rehabilitation Center for Young Children.",
   "procurement_reports_meta_keywords": "procurement reports, transparency, contracts",
   "procurement_reports_page_title": "Procurement Reports - Placement and Rehabilitation Center for Young Children",
@@ -358,18 +352,6 @@
   "procurement_plans_page_title": "Procurement Plans - Placement and Rehabilitation Center for Young Children",
   "procurement_plans_header_title": "Procurement Plans",
   "procurement_plans_header_subtitle": "Public procurement planning",
-  
-  "invitations_meta_description": "Invitations to participate in procurement procedures of the Placement and Rehabilitation Center for Young Children.",
-  "invitations_meta_keywords": "participation invitations, public procurement, tenders",
-  "invitations_page_title": "Participation Invitations - Placement and Rehabilitation Center for Young Children",
-  "invitations_header_title": "Participation Invitations",
-  "invitations_header_subtitle": "Ongoing procurement procedures",
-  
-  "gifts_register_meta_description": "Register of gifts received by the Placement and Rehabilitation Center for Young Children.",
-  "gifts_register_meta_keywords": "gifts register, transparency, donations",
-  "gifts_register_page_title": "Gifts Register - Placement and Rehabilitation Center for Young Children",
-  "gifts_register_header_title": "Gifts Register",
-  "gifts_register_header_subtitle": "Transparency of received gifts and donations",
   
   "petitions_meta_description": "Petitions and complaints for the Placement and Rehabilitation Center for Young Children.",
   "petitions_meta_keywords": "petitions, complaints, feedback, suggestions",
@@ -799,5 +781,36 @@
   
   "methodologies_title": "Methodologies",
   "methodologies_subtitle": "Work methodologies and procedures of the center",
-  "methodologies_content_title": "Methodologies"
+  "methodologies_content_title": "Methodologies",
+  
+  "achizitii_page_title": "Procurement - Placement and Rehabilitation Center for Young Children",
+  "achizitii_meta_description": "Information about the public procurement process of the Placement and Rehabilitation Center for Young Children.",
+  "achizitii_meta_keywords": "public procurement, tenders, procurement transparency",
+  "achizitii_header_title": "Procurement",
+  "achizitii_header_subtitle": "Information about the center's public procurement",
+  
+  "invitations_page_title": "Participation Invitations - Placement and Rehabilitation Center for Young Children",
+  "invitations_meta_description": "Ongoing public procurement procedures of the Placement and Rehabilitation Center for Young Children.",
+  "invitations_meta_keywords": "participation invitations, public procurement, tenders",
+  "invitations_header_title": "Participation Invitations",
+  "invitations_header_subtitle": "Ongoing public procurement procedures",
+  
+  "reports_page_title": "Reports - Placement and Rehabilitation Center for Young Children",
+  "reports_meta_description": "Annual and activity reports of the Placement and Rehabilitation Center for Young Children.",
+  "reports_meta_keywords": "annual reports, activity reports, transparency",
+  "reports_header_title": "Reports",
+  "reports_header_subtitle": "Annual and activity reports of the center",
+  
+  "gifts_register_page_title": "Gifts Register - Placement and Rehabilitation Center for Young Children",
+  "gifts_register_meta_description": "Register of gifts received by the staff of the Placement and Rehabilitation Center for Young Children.",
+  "gifts_register_meta_keywords": "gifts register, transparency, legislation",
+  "gifts_register_header_title": "Gifts Register",
+  "gifts_register_header_subtitle": "Register of gifts received by staff according to legislation",
+
+  "invitations_title": "Participation Invitations",
+  "procurement_plans_title": "Procurement Plans",
+  "projects_title": "Proiecte",
+  "procurement_reports_title": "Procurement Reports",
+  "reports_title": "Reports",
+  "gifts_register_title": "Gifts Register"
 }
