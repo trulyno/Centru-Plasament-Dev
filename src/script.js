@@ -1222,3 +1222,111 @@ document.addEventListener('DOMContentLoaded', function() {
 //     }
 // `;
 // document.head.appendChild(style);
+
+// Organigrama functionality - Make image clickable for better viewing
+document.addEventListener('DOMContentLoaded', function() {
+    const organigramaImage = document.querySelector('.organigrama-image');
+    
+    if (organigramaImage) {
+        // Add click handler to open image in modal
+        organigramaImage.addEventListener('click', function() {
+            openOrganigramaModal(this);
+        });
+        
+        // Add keyboard support
+        organigramaImage.setAttribute('tabindex', '0');
+        organigramaImage.setAttribute('role', 'button');
+        organigramaImage.setAttribute('aria-label', 'Deschide organigrama într-o fereastră mai mare');
+        
+        organigramaImage.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                openOrganigramaModal(this);
+            }
+        });
+    }
+});
+
+// Function to open organigrama modal
+function openOrganigramaModal(imageElement) {
+    // Create modal if it doesn't exist
+    let modal = document.getElementById('organigramaModal');
+    if (!modal) {
+        modal = createOrganigramaModal();
+    }
+    
+    // Get image source and alt text
+    const imageSrc = imageElement.src;
+    const imageAlt = imageElement.alt;
+    
+    // Set modal image
+    const modalImage = modal.querySelector('#organigramaModalImage');
+    modalImage.src = imageSrc;
+    modalImage.alt = imageAlt;
+    
+    // Show modal
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    
+    // Focus on close button for accessibility
+    setTimeout(() => {
+        modal.querySelector('#organigramaModalClose').focus();
+    }, 100);
+}
+
+// Function to create organigrama modal
+function createOrganigramaModal() {
+    const modal = document.createElement('div');
+    modal.id = 'organigramaModal';
+    modal.className = 'organigrama-modal';
+    modal.innerHTML = `
+        <div class="modal-backdrop"></div>
+        <div class="organigrama-modal-content">
+            <button class="modal-close" id="organigramaModalClose" aria-label="Închide organigrama">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="organigrama-modal-header">
+                <h3>Organigrama Instituției</h3>
+            </div>
+            <div class="organigrama-modal-image-container">
+                <img id="organigramaModalImage" src="" alt="" loading="lazy">
+            </div>
+            <div class="organigrama-modal-footer">
+                <p>Structura organizațională completă a Centrului de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă din municipiul Chișinău.</p>
+            </div>
+        </div>
+    `;
+    
+    document.body.appendChild(modal);
+    
+    // Add event listeners
+    const closeBtn = modal.querySelector('#organigramaModalClose');
+    const backdrop = modal.querySelector('.modal-backdrop');
+    
+    closeBtn.addEventListener('click', closeOrganigramaModal);
+    backdrop.addEventListener('click', closeOrganigramaModal);
+    
+    // Keyboard support
+    document.addEventListener('keydown', function(e) {
+        if (modal.classList.contains('active') && e.key === 'Escape') {
+            closeOrganigramaModal();
+        }
+    });
+    
+    return modal;
+}
+
+// Function to close organigrama modal
+function closeOrganigramaModal() {
+    const modal = document.getElementById('organigramaModal');
+    if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+        
+        // Return focus to the original image
+        const organigramaImage = document.querySelector('.organigrama-image');
+        if (organigramaImage) {
+            organigramaImage.focus();
+        }
+    }
+}

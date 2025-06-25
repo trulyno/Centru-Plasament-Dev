@@ -196,8 +196,10 @@ require_once __DIR__ . '/includes/lang.php';
         <section class="content-section">
             <div class="container">
                 <div class="content-wrapper">
-                    <h2>Organigrama</h2>
-                    <p>Conținutul acestei pagini va fi completat în curând.</p>
+                    <h2>Organigrama Instituției</h2>
+                    <div class="organigrama-container">
+                        <img src="images/organigrama.png" alt="Organigrama Centrului de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă" class="organigrama-image">
+                    </div>
                 </div>
             </div>
         </section>
