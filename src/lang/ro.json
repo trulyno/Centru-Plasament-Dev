@@ -103,6 +103,18 @@
   
   "content_coming_soon": "Conținutul acestei pagini va fi completat în curând.",
   
+  "guides_page_title": "Ghiduri - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă",
+  "guides_meta_description": "Ghiduri și instrucțiuni utile pentru beneficiarii și familiile în grijă oferite de Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă din Chișinău.",
+  "guides_meta_keywords": "ghiduri CPRCVF, instrucțiuni beneficiari, ghiduri familii, protecția copilului, suport informațional",
+  "guides_title": "Ghiduri",
+  "guides_subtitle": "Instrucțiuni și ghiduri utile pentru beneficiari și familii",
+  
+  "faq_page_title": "Întrebări Frecvente - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă",
+  "faq_meta_description": "Răspunsuri la cele mai frecvente întrebări despre serviciile oferite de Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă din Chișinău.",
+  "faq_meta_keywords": "întrebări frecvente CPRCVF, FAQ centru copii, informații servicii, răspunsuri întrebări",
+  "faq_title": "Întrebări Frecvente",
+  "faq_subtitle": "Răspunsuri la cele mai frecvente întrebări despre serviciile noastre",
+  
   "language_switch": "Schimbă limba",
   "current_language": "Română",
   
@@ -359,15 +371,9 @@
   "methodologies_header_title": "Metodologii",
   "methodologies_header_subtitle": "Proceduri și metodologii de lucru",
   
-  "faq_meta_description": "Întrebări frecvente despre serviciile oferite de Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă.",
-  "faq_meta_keywords": "întrebări frecvente, FAQ, informații, răspunsuri",
-  "faq_page_title": "Întrebări Frecvente - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă",
   "faq_header_title": "Întrebări Frecvente",
   "faq_header_subtitle": "Răspunsuri la întrebările cele mai comune",
   
-  "guides_meta_description": "Ghiduri și materiale informative pentru familiile și profesioniștii care colaborează cu centrul.",
-  "guides_meta_keywords": "ghiduri, materiale informative, resurse, documentație",
-  "guides_page_title": "Ghiduri - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă",
   "guides_header_title": "Ghiduri",
   "guides_header_subtitle": "Resurse și materiale informative",
   
@@ -874,5 +880,8 @@
   "petition_submit_btn": "Trimite Petiția",
   "petition_reset_btn": "Resetează Formularul",
   
-  "petition_footer_info": "Petițiile și reclamațiile vor fi examinate conform termenelor prevăzute de legislația în vigoare."
+  "petition_footer_info": "Petițiile și reclamațiile vor fi examinate conform termenelor prevăzute de legislația în vigoare.",
+  
+  "anthem_song_title": "Alexandru Lozanciuc - Să dăruim copiilor pământul",
+  "anthem_lyrics": "Nimic mai sfânt ca soarele<br>Ce luminează viața noastră pe pământ<br>Nimic mai sfânt pe acest pământ<br>Ca mamele cu prunci prin soare alergând<br><br>Cât de uimit ne dăruiesc<br>Copiii noștri ce alăturea ne cresc<br>Nimic mai drag pe acest meleag<br>Decât copilul așteptându-te-n prag<br><br>Hai oameni, hai să dăruim copiilor<br>Pământul nostru neîmpărțit, neîmpărțit<br>Hai oameni, hai să dăruim copiilor<br>Pământul nostru înflorit, nepustiit<br><br>Să fie toate acestea și în viitor<br>Să aibă fiii noștri în case prunci lor<br>Să nu lăsăm pământul să ne ardă în foc<br>Să crească copilașii noștri cu noroc<br><br>Nimic mai sfânt ca pacea-n noi<br>În timp de pace sunt și viața omului<br>Nimic mai scump, mai omenesc<br>Ca pacea pe care oamenii râvnesc<br><br>Cât de uimiți și semne noi<br>Când mire și mireasă trec pe lângă noi<br>Câte minuni, băi oameni buni<br>În orice seară pot copiii să-ți adun<br><br>Hai oameni, hai să dăruim copiilor<br>Pământul nostru neîmpărțit, neîmpărțit<br>Hai oameni, hai să dăruim copiilor<br>Pământul nostru înflorit, nepustiit<br><br>Să fie toate acestea și în viitor<br>Să aibă fiii noștri în case prunci lor<br>Să nu lăsăm pământul să ne ardă în foc<br>Să crească copilașii noștri cu noroc"
 }
