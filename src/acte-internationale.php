@@ -128,6 +128,7 @@ require_once __DIR__ . '/includes/lang.php';
                             <li><a href="sectia-respiro.php"><?php echo t('services_respiro'); ?></a></li>
                             <li><a href="sectia-asistenta-psihopedagogica.php"><?php echo t('services_psycho_pedagogical'); ?></a></li>
                             <li><a href="sectia-reabilitare.php"><?php echo t('services_rehabilitation'); ?></a></li>
+                            <li><a href="sectia-asistenta-medicala.php"><?php echo t('services_medical'); ?></a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
