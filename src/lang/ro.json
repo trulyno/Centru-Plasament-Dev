@@ -764,5 +764,40 @@
   "vacant_positions_step2_title": "Trimite aplicația",
   "vacant_positions_step2_desc": "La adresa de email:",
   "vacant_positions_step3_title": "Interviul",
-  "vacant_positions_step3_desc": "Te vom contacta pentru programarea unui interviu"
+  "vacant_positions_step3_desc": "Te vom contacta pentru programarea unui interviu",
+
+  "international_acts_page_title": "Acte Internaționale - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă",
+  "international_acts_meta_description": "Acte normative internaționale în domeniul protecției copilului aplicate în activitatea centrului.",
+  "international_acts_meta_keywords": "acte internaționale, convenții internaționale, drepturi copil",
+  "international_acts_title": "Acte Internaționale",
+  "international_acts_subtitle": "Convenții și acorduri internaționale în domeniul protecției copilului",
+  "international_acts_content_title": "Acte Normative Internaționale",
+  "international_acts_content_description": "Republica Moldova a ratificat și aplică următoarele acte internaționale în domeniul protecției copilului:",
+  
+  "national_acts_page_title": "Acte Naționale - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă",
+  "national_acts_meta_description": "Acte normative naționale care reglementează activitatea Centrului de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă.",
+  "national_acts_meta_keywords": "acte naționale, legislație națională, norme legale",
+  "national_acts_title": "Acte Naționale",
+  "national_acts_subtitle": "Legislația națională care reglementează activitatea centrului",
+  "national_acts_content_title": "Acte Normative Naționale",
+  "national_acts_content_description": "Activitatea Centrului de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă este reglementată de următoarele acte normative naționale:",
+  
+  "internal_acts_page_title": "Acte Interne - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă",
+  "internal_acts_meta_description": "Regulamente și acte interne ale Centrului de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă.",
+  "internal_acts_meta_keywords": "acte interne, regulamente, proceduri interne",
+  "internal_acts_title": "Acte Interne",
+  "internal_acts_subtitle": "Reglementări și proceduri interne ale centrului",
+  "internal_acts_content_title": "Acte Normative Interne",
+  "internal_acts_content_description": "Activitatea Centrului de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă este reglementată de acte normative interne care asigură funcționarea eficientă și calitatea serviciilor:",
+  
+  "ethics_code_page_title": "Codul Deontologic - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă",
+  "ethics_code_meta_description": "Codul deontologic pentru personalul Centrului de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă.",
+  "ethics_code_meta_keywords": "cod deontologic, etică profesională, norme comportament",
+  "ethics_code_title": "Codul Deontologic",
+  "ethics_code_subtitle": "Principiile și normele etice care ghidează activitatea centrului",
+  "ethics_code_content_title": "Codul Deontologic",
+  
+  "methodologies_title": "Metodologii",
+  "methodologies_subtitle": "Metodologii și proceduri de lucru ale centrului",
+  "methodologies_content_title": "Metodologii"
 }

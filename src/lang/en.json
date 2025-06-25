@@ -764,5 +764,40 @@
   "vacant_positions_step2_title": "Send Application",
   "vacant_positions_step2_desc": "To the email address:",
   "vacant_positions_step3_title": "Interview",
-  "vacant_positions_step3_desc": "We will contact you to schedule an interview"
+  "vacant_positions_step3_desc": "We will contact you to schedule an interview",
+
+  "international_acts_page_title": "International Acts - Placement and Rehabilitation Center for Young Children",
+  "international_acts_meta_description": "International normative acts in the field of child protection applied in the center's activities.",
+  "international_acts_meta_keywords": "international acts, international conventions, children's rights",
+  "international_acts_title": "International Acts",
+  "international_acts_subtitle": "International conventions and agreements in the field of child protection",
+  "international_acts_content_title": "International Normative Acts",
+  "international_acts_content_description": "The Republic of Moldova has ratified and applies the following international acts in the field of child protection:",
+  
+  "national_acts_page_title": "National Acts - Placement and Rehabilitation Center for Young Children",
+  "national_acts_meta_description": "National normative acts that regulate the activity of the Placement and Rehabilitation Center for Young Children.",
+  "national_acts_meta_keywords": "national acts, national legislation, legal norms",
+  "national_acts_title": "National Acts",
+  "national_acts_subtitle": "National legislation that regulates the center's activities",
+  "national_acts_content_title": "National Normative Acts",
+  "national_acts_content_description": "The activity of the Placement and Rehabilitation Center for Young Children is regulated by the following national normative acts:",
+  
+  "internal_acts_page_title": "Internal Acts - Placement and Rehabilitation Center for Young Children",
+  "internal_acts_meta_description": "Regulations and internal acts of the Placement and Rehabilitation Center for Young Children.",
+  "internal_acts_meta_keywords": "internal acts, regulations, internal procedures",
+  "internal_acts_title": "Internal Acts",
+  "internal_acts_subtitle": "Internal regulations and procedures of the center",
+  "internal_acts_content_title": "Internal Normative Acts",
+  "internal_acts_content_description": "The activity of the Placement and Rehabilitation Center for Young Children is regulated by internal normative acts that ensure efficient functioning and quality of services:",
+  
+  "ethics_code_page_title": "Ethics Code - Placement and Rehabilitation Center for Young Children",
+  "ethics_code_meta_description": "Ethics code for the staff of the Placement and Rehabilitation Center for Young Children.",
+  "ethics_code_meta_keywords": "ethics code, professional ethics, behavioral norms",
+  "ethics_code_title": "Ethics Code",
+  "ethics_code_subtitle": "Ethical principles and norms that guide the center's activities",
+  "ethics_code_content_title": "Ethics Code",
+  
+  "methodologies_title": "Methodologies",
+  "methodologies_subtitle": "Work methodologies and procedures of the center",
+  "methodologies_content_title": "Methodologies"
 }

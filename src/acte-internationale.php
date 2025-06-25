@@ -3,15 +3,15 @@
 require_once __DIR__ . '/includes/lang.php';
 ?>
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="<?php echo getCurrentLanguage(); ?>">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Acte normative internaționale în domeniul protecției copilului aplicate în activitatea centrului.">
-    <meta name="keywords" content="acte internaționale, convenții internaționale, drepturi copil">
-    <meta name="author" content="Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă">
+    <meta name="description" content="<?php echo t('international_acts_meta_description'); ?>">
+    <meta name="keywords" content="<?php echo t('international_acts_meta_keywords'); ?>">
+    <meta name="author" content="<?php echo t('meta_author'); ?>">
     
-    <title>Acte Internaționale - Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă</title>
+    <title><?php echo t('international_acts_page_title'); ?></title>
     <link rel="icon" href="images/logo.ico" type="image/x-icon" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
@@ -24,7 +24,7 @@ require_once __DIR__ . '/includes/lang.php';
 
     <!-- Accessibility improvements -->
     <div class="skip-links">
-        <a href="#main-content" class="skip-link">Salt la conținutul principal</a>
+        <a href="#main-content" class="skip-link"><?php echo t('skip_to_content'); ?></a>
     </div>
 
     <!-- Header -->
@@ -188,16 +188,16 @@ require_once __DIR__ . '/includes/lang.php';
     <main class="main-content" id="main-content">
         <section class="page-header">
             <div class="container">
-                <h1>Acte Internaționale</h1>
-                <p>Convenții și acorduri internaționale în domeniul protecției copilului</p>
+                <h1><?php echo t('international_acts_title'); ?></h1>
+                <p><?php echo t('international_acts_subtitle'); ?></p>
             </div>
         </section>
 
         <section class="content-section">
             <div class="container">
                 <div class="content-wrapper">
-                    <h2>Acte Normative Internaționale</h2>
-                    <p>Republica Moldova a ratificat și aplică următoarele acte internaționale în domeniul protecției copilului:</p>
+                    <h2><?php echo t('international_acts_content_title'); ?></h2>
+                    <p><?php echo t('international_acts_content_description'); ?></p>
                     
                     <div class="documents-grid">
                         <div class="document-card">
@@ -234,15 +234,15 @@ require_once __DIR__ . '/includes/lang.php';
     <!-- Audio Element -->
     <audio id="audioElement" preload="metadata">
         <source src="audio/18_Alexandru_Lozanciuc_-_Sa_daruim_copiilor_pamantul.mp3" type="audio/mpeg">
-        Browser-ul tău nu suportă elementul audio.
+        <?php echo t('audio_not_supported'); ?>
     </audio>
 
     <!-- Lyrics Modal -->
     <div class="lyrics-modal" id="lyricsModal">
         <div class="lyrics-modal-content">
             <div class="lyrics-header">
-                <h3>Versurile imnului instituției</h3>
-                <button class="lyrics-close-btn" id="lyricsCloseBtn" aria-label="Închide versurile">
+                <h3><?php echo t('lyrics_modal_title'); ?></h3>
+                <button class="lyrics-close-btn" id="lyricsCloseBtn" aria-label="<?php echo t('lyrics_modal_close'); ?>">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
@@ -296,7 +296,7 @@ require_once __DIR__ . '/includes/lang.php';
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă. Toate drepturile rezervate.</p>
+            <p><?php echo t('footer_copyright'); ?></p>
         </div>
     </footer>
 
