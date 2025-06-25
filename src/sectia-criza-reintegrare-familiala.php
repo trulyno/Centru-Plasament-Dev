@@ -125,7 +125,7 @@
                         <ul class="dropdown-menu">
                             <li><a href="administratia.php">Administrația</a></li>
                             <li><a href="organigrama.php">Organigrama</a></li>
-                            <li><a href="subdiviziune.php">Subdiviziune</a></li>
+                            
                             <li><a href="functii-vacante.php">Funcții Vacante</a></li>
                         </ul>
                     </li>
