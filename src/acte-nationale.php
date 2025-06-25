@@ -117,7 +117,7 @@
                             <li><a href="sectia-respiro.php">Secția Respiro</a></li>
                             <li><a href="sectia-asistenta-psihopedagogica.php">Secția Asistență Psihopedagogică</a></li>
                             <li><a href="sectia-reabilitare.php">Secția Reabilitare</a></li>
-                            <!-- <li><a href="sectia-asistenta-medicala.php">Secția Asistență Medicală</a></li> -->
+                              <li><a href="sectia-asistenta-medicala.php">Secția Asistență Medicală</a></li> 
                         </ul>
                     </li>
                     <li class="dropdown">
