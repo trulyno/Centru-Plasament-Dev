@@ -484,6 +484,113 @@ body {
     opacity: 0.9;
 }
 
+/* Save button states */
+#save-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: #6c757d;
+}
+
+#save-btn:not(:disabled):hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-1px);
+}
+
+/* Secondary button styles */
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.15s ease-in-out;
+    text-decoration: none;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    transform: translateY(-1px);
+}
+
+.btn-secondary:active {
+    transform: translateY(0);
+}
+
+.btn-secondary:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: #6c757d;
+}
+
+.btn-secondary:disabled:hover {
+    background-color: #6c757d;
+    transform: none;
+}
+
+/* Button group styling */
+.form-group div[style*="display: flex"] {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.form-group div[style*="display: flex"] button {
+    flex: 1;
+    min-width: 120px; /* Minimum width to prevent excessive shrinking */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.8rem;
+    padding: 0.5rem 0.75rem;
+}
+
+/* Compact button styles for content management */
+.content-controls .btn,
+.content-controls .btn-secondary {
+    font-size: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    min-width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.content-controls .btn i,
+.content-controls .btn-secondary i {
+    font-size: 0.7rem;
+    margin-right: 0.25rem;
+}
+
+/* Responsive button text */
+.btn-text {
+    display: inline;
+}
+
+@media (max-width: 600px) {
+    .content-controls .btn .btn-text,
+    .content-controls .btn-secondary .btn-text {
+        display: none;
+    }
+    
+    .content-controls .btn,
+    .content-controls .btn-secondary {
+        min-width: 40px;
+        padding: 0.5rem;
+        justify-content: center;
+    }
+    
+    .content-controls .btn i,
+    .content-controls .btn-secondary i {
+        margin-right: 0;
+        font-size: 0.8rem;
+    }
+}
+
 /* Forms */
 .admin-form {
     background: white;
@@ -700,4 +807,183 @@ body {
     background: #d1ecf1;
     color: #0c5460;
     border: 1px solid #bee5eb;
+}
+
+/* Content Management Styles */
+.content-controls {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 0.5rem;
+}
+
+.content-table-wrapper {
+    position: relative;
+}
+
+.content-textarea {
+    width: 100%;
+    min-height: 80px;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem; 
+    resize: vertical;
+    font-family: inherit;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.content-textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(74, 144, 226, 0.25);
+}
+
+.content-textarea:hover {
+    border-color: #adb5bd;
+}
+
+.content-preview {
+    position: sticky;
+    top: 1rem;
+}
+
+#preview-container {
+    border: 2px solid var(--border-color);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    min-height: 200px;
+    background: white;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    max-height: 400px;
+    overflow-y: auto;
+    transition: border-color 0.15s ease-in-out;
+}
+
+#preview-container:hover {
+    border-color: var(--primary-color);
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+    font-size: 0.9rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(74, 144, 226, 0.25);
+}
+
+/* Table enhancements for content management */
+.data-table td {
+    vertical-align: top;
+}
+
+.data-table th:first-child,
+.data-table td:first-child {
+    width: 30%;
+    min-width: 200px;
+}
+
+.data-table th:last-child,
+.data-table td:last-child {
+    width: 70%;
+}
+
+/* Responsive adjustments for content management */
+@media (max-width: 768px) {
+    .content-controls {
+        grid-template-columns: 1fr;
+    }
+    
+    .admin-form > div[style*="grid-template-columns: 2fr 1fr"] {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
+    
+    .content-preview {
+        position: static;
+        order: -1;
+    }
+    
+    #preview-container {
+        min-height: 150px;
+        max-height: 200px;
+    }
+    
+    .data-table th:first-child,
+    .data-table td:first-child {
+        width: 35%;
+        min-width: 150px;
+    }
+    
+    .data-table th:last-child,
+    .data-table td:last-child {
+        width: 65%;
+    }
+    
+    /* Stack buttons vertically on mobile */
+    .form-group div[style*="display: flex"] {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .form-group div[style*="display: flex"] button {
+        flex: none;
+        width: 100%;
+        font-size: 0.85rem;
+        padding: 0.6rem;
+        min-width: auto;
+        white-space: normal; /* Allow text wrapping on mobile */
+        overflow: visible;
+        text-overflow: initial;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-controls {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    
+    .content-controls .form-group {
+        margin-bottom: 1rem;
+    }
+    
+    .content-controls .btn,
+    .content-controls .btn-secondary {
+        font-size: 0.75rem;
+        padding: 0.5rem 0.6rem;
+        min-width: auto;
+        white-space: normal;
+        overflow: visible;
+        text-overflow: initial;
+        text-align: center;
+        line-height: 1.3;
+    }
+    
+    .content-controls .btn i,
+    .content-controls .btn-secondary i {
+        font-size: 0.7rem;
+        margin-right: 0.25rem;
+    }
 }

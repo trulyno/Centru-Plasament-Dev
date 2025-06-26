@@ -12,6 +12,7 @@ $dataDir = __DIR__ . '/../data/';
 $contactFile = $dataDir . 'contacts.json';
 $petitionsFile = $dataDir . 'petitions.json';
 $statsFile = $dataDir . 'stats.json';
+$langDir = __DIR__ . '/../lang/';
 
 // Create data directory if it doesn't exist
 if (!is_dir($dataDir)) {
@@ -40,6 +41,19 @@ $contacts = json_decode(file_get_contents($contactFile), true) ?: [];
 $petitions = json_decode(file_get_contents($petitionsFile), true) ?: [];
 $stats = json_decode(file_get_contents($statsFile), true) ?: [];
 
+// Load language files
+$langFiles = [];
+if (is_dir($langDir)) {
+    $langFiles = array_filter(scandir($langDir), function($file) {
+        return pathinfo($file, PATHINFO_EXTENSION) === 'json';
+    });
+}
+$languages = [];
+foreach ($langFiles as $file) {
+    $lang = pathinfo($file, PATHINFO_FILENAME);
+    $languages[$lang] = json_decode(file_get_contents($langDir . $file), true) ?: [];
+}
+
 // Handle form submissions
 $message = '';
 $messageType = '';
@@ -61,6 +75,29 @@ if ($_POST['action'] ?? false) {
             } else {
                 $message = 'Eroare la actualizarea statisticilor!';
                 $messageType = 'error';
+            }
+            break;
+            
+        case 'update_language':
+            $language = $_POST['language'] ?? '';
+            $langData = $_POST['lang_data'] ?? '';
+            
+            if ($language && $langData) {
+                $decodedData = json_decode($langData, true);
+                if ($decodedData !== null) {
+                    $langFile = $langDir . $language . '.json';
+                    if (file_put_contents($langFile, json_encode($decodedData, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE))) {
+                        $languages[$language] = $decodedData;
+                        $message = 'Fișierul de limbă a fost actualizat cu succes!';
+                        $messageType = 'success';
+                    } else {
+                        $message = 'Eroare la actualizarea fișierului de limbă!';
+                        $messageType = 'error';
+                    }
+                } else {
+                    $message = 'Date invalide pentru actualizarea limbii!';
+                    $messageType = 'error';
+                }
             }
             break;
             
@@ -199,7 +236,7 @@ $newPetitions = count(array_filter($petitions, fn($p) => $p['status'] === 'new')
 
         <!-- Navigation Tabs -->
         <div class="dashboard-tabs">
-            <button class="tab-btn active" data-tab="contacts">
+            <button class="tab-btn" data-tab="contacts">
                 <i class="fas fa-envelope"></i>
                 Mesaje Contact (<?php echo $totalContacts; ?>)
             </button>
@@ -211,10 +248,14 @@ $newPetitions = count(array_filter($petitions, fn($p) => $p['status'] === 'new')
                 <i class="fas fa-chart-bar"></i>
                 Editare Statistici
             </button>
+            <button class="tab-btn" data-tab="content">
+                <i class="fas fa-language"></i>
+                Conținut Text
+            </button>
         </div>
 
         <!-- Contact Messages Tab -->
-        <div id="contacts-tab" class="tab-content active">
+        <div id="contacts-tab" class="tab-content">
             <div class="data-table-container">
                 <div class="data-table-header">
                     <h2 class="data-table-title">
@@ -437,6 +478,98 @@ $newPetitions = count(array_filter($petitions, fn($p) => $p['status'] === 'new')
                 </div>
             </div>
         </div>
+
+        <!-- Content Management Tab -->
+        <div id="content-tab" class="tab-content">
+            <div class="admin-form">
+                <h2 style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <i class="fas fa-language"></i>
+                    Gestionare Conținut Text
+                </h2>
+                
+                <div class="content-controls" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-bottom: 2rem; padding: 1.5rem; background: #f8f9fa; border-radius: 0.5rem;">
+                    <div class="form-group">
+                        <label for="language-select">Limbă:</label>
+                        <select id="language-select" onchange="loadLanguageContent()">
+                            <?php foreach (array_keys($languages) as $lang): ?>
+                                <option value="<?php echo $lang; ?>"><?php echo strtoupper($lang); ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="key-filter">Filtrare Chei:</label>
+                        <input type="text" id="key-filter" placeholder="Caută după cheie..." oninput="filterContent()">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="text-filter">Filtrare Text:</label>
+                        <input type="text" id="text-filter" placeholder="Caută în text..." oninput="filterContent()">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>&nbsp;</label>
+                        <div style="display: flex; gap: 0.5rem;">
+                            <button type="button" class="btn btn-secondary" onclick="resetFilters()" id="reset-filters-btn" title="Resetează toate filtrele">
+                                <i class="fas fa-times"></i>
+                                <span class="btn-text">Resetează</span>
+                            </button>
+                            <button type="button" class="btn btn-primary" onclick="saveLanguageContent()" id="save-btn" disabled title="Salvează modificările">
+                                <i class="fas fa-save"></i>
+                                <span class="btn-text">Salvează</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem;">
+                    <div class="content-table-wrapper">
+                        <div class="data-table-wrapper" style="max-height: 600px; overflow-y: auto;">
+                            <table class="data-table" id="content-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 30%;">Cheie</th>
+                                        <th style="width: 70%;">Text</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="content-tbody">
+                                    <!-- Content will be loaded dynamically -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="content-preview">
+                        <h4 style="margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-eye"></i>
+                            Previzualizare
+                        </h4>
+                        <div id="preview-container" style="border: 2px solid var(--border-color); border-radius: 0.5rem; padding: 1rem; min-height: 200px; background: white;">
+                            <p style="color: #6c757d; text-align: center; margin-top: 2rem;">
+                                Selectați un câmp de text pentru previzualizare
+                            </p>
+                        </div>
+                        <div style="margin-top: 1rem; font-size: 0.9rem; color: #6c757d;">
+                            <strong>Suport pentru formatare:</strong><br>
+                            &lt;b&gt;text bold&lt;/b&gt;<br>
+                            &lt;i&gt;text italic&lt;/i&gt;<br>
+                            &lt;u&gt;text subliniat&lt;/u&gt;<br>
+                            &lt;br&gt; pentru linie nouă
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 2rem; padding: 1rem; background: #fff3cd; border-radius: 0.5rem; border-left: 4px solid #ffc107;">
+                    <h4 style="margin-bottom: 0.5rem; color: #856404;">
+                        <i class="fas fa-exclamation-triangle"></i> Atenție
+                    </h4>
+                    <p style="margin: 0; color: #856404;">
+                        Modificările vor afecta textele afișate pe site. Verificați cu atenție înainte de salvare.
+                        Butonul de salvare se va activa doar când există modificări.
+                    </p>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Contact Modal -->
@@ -472,6 +605,13 @@ $newPetitions = count(array_filter($petitions, fn($p) => $p['status'] === 'new')
     </div>
 
     <script>
+        // Language data
+        const languagesData = <?php echo json_encode($languages); ?>;
+        let currentLanguage = Object.keys(languagesData)[0] || 'ro';
+        let originalData = {};
+        let currentData = {};
+        let hasChanges = false;
+
         // Tab functionality
         function showTab(tabName, buttonElement) {
             // Hide all tabs
@@ -493,11 +633,50 @@ $newPetitions = count(array_filter($petitions, fn($p) => $p['status'] === 'new')
             // Add active class to clicked button
             if (buttonElement) {
                 buttonElement.classList.add('active');
+            } else {
+                // If no button element provided, find and activate the corresponding button
+                const tabButton = document.querySelector(`[data-tab="${tabName}"]`);
+                if (tabButton) {
+                    tabButton.classList.add('active');
+                }
+            }
+            
+            // Save current tab to localStorage
+            localStorage.setItem('admin_current_tab', tabName);
+            
+            // Update URL hash
+            if (window.location.hash.replace('#', '') !== tabName) {
+                window.location.hash = tabName;
+            }
+        }
+        
+        // Load saved tab or default tab
+        function loadSavedTab() {
+            // Check for URL hash first
+            const urlHash = window.location.hash.replace('#', '');
+            const savedTab = localStorage.getItem('admin_current_tab');
+            const defaultTab = 'contacts';
+            
+            // Priority: URL hash > saved tab > default
+            let tabToShow = defaultTab;
+            if (urlHash && document.getElementById(urlHash + '-tab')) {
+                tabToShow = urlHash;
+            } else if (savedTab && document.getElementById(savedTab + '-tab')) {
+                tabToShow = savedTab;
+            }
+            
+            // Show the tab
+            showTab(tabToShow);
+            
+            // Update URL hash if different
+            if (window.location.hash.replace('#', '') !== tabToShow) {
+                window.location.hash = tabToShow;
             }
         }
 
         // Add event listeners to tab buttons on page load
         document.addEventListener('DOMContentLoaded', function() {
+            // Initialize tab functionality
             const tabButtons = document.querySelectorAll('.tab-btn');
             tabButtons.forEach(button => {
                 button.addEventListener('click', function(e) {
@@ -505,6 +684,22 @@ $newPetitions = count(array_filter($petitions, fn($p) => $p['status'] === 'new')
                     const tabName = this.getAttribute('data-tab');
                     showTab(tabName, this);
                 });
+            });
+            
+            // Load saved tab or show default
+            loadSavedTab();
+            
+            // Initialize content management if language data is available
+            if (languagesData && Object.keys(languagesData).length > 0) {
+                loadLanguageContent();
+            }
+            
+            // Listen for hash changes (browser back/forward)
+            window.addEventListener('hashchange', function() {
+                const hash = window.location.hash.replace('#', '');
+                if (hash && document.getElementById(hash + '-tab')) {
+                    showTab(hash);
+                }
             });
         });
 
@@ -662,6 +857,144 @@ $newPetitions = count(array_filter($petitions, fn($p) => $p['status'] === 'new')
                 document.getElementById('petitionModalContent').innerHTML = content;
                 document.getElementById('petitionModal').style.display = 'flex';
             }
+        }
+        
+        // Content Management Functions
+        function loadLanguageContent() {
+            const selectedLang = document.getElementById('language-select').value;
+            currentLanguage = selectedLang;
+            
+            if (!languagesData[selectedLang]) {
+                return;
+            }
+            
+            originalData = JSON.parse(JSON.stringify(languagesData[selectedLang]));
+            currentData = JSON.parse(JSON.stringify(languagesData[selectedLang]));
+            
+            renderContentTable();
+            updateSaveButton();
+            updateResetButton();
+        }
+        
+        function renderContentTable() {
+            const tbody = document.getElementById('content-tbody');
+            const keyFilter = document.getElementById('key-filter').value.toLowerCase();
+            const textFilter = document.getElementById('text-filter').value.toLowerCase();
+            
+            tbody.innerHTML = '';
+            
+            Object.entries(currentData).forEach(([key, value]) => {
+                const keyMatches = !keyFilter || key.toLowerCase().includes(keyFilter);
+                const textMatches = !textFilter || value.toLowerCase().includes(textFilter);
+                
+                if (keyMatches && textMatches) {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td style="vertical-align: top; padding-top: 1rem;">
+                            <strong>${escapeHtml(key)}</strong>
+                        </td>
+                        <td>
+                            <textarea 
+                                class="content-textarea" 
+                                data-key="${escapeHtml(key)}"
+                                onchange="updateContent('${escapeHtml(key)}', this.value)"
+                                onfocus="updatePreview(this.value)"
+                                oninput="updatePreview(this.value)"
+                                style="width: 100%; min-height: 80px; padding: 0.5rem; border: 1px solid var(--border-color); border-radius: 0.25rem; resize: vertical; font-family: inherit;"
+                            >${escapeHtml(value)}</textarea>
+                        </td>
+                    `;
+                    tbody.appendChild(row);
+                }
+            });
+        }
+        
+        function filterContent() {
+            renderContentTable();
+            updateResetButton();
+        }
+        
+        function resetFilters() {
+            document.getElementById('key-filter').value = '';
+            document.getElementById('text-filter').value = '';
+            renderContentTable();
+            updateResetButton();
+        }
+        
+        function updateResetButton() {
+            const keyFilter = document.getElementById('key-filter').value;
+            const textFilter = document.getElementById('text-filter').value;
+            const resetBtn = document.getElementById('reset-filters-btn');
+            
+            const hasFilters = keyFilter.trim() !== '' || textFilter.trim() !== '';
+            resetBtn.disabled = !hasFilters;
+            resetBtn.style.opacity = hasFilters ? '1' : '0.6';
+        }
+        
+        function updateContent(key, value) {
+            currentData[key] = value;
+            checkForChanges();
+        }
+        
+        function checkForChanges() {
+            hasChanges = JSON.stringify(originalData) !== JSON.stringify(currentData);
+            updateSaveButton();
+        }
+        
+        function updateSaveButton() {
+            const saveBtn = document.getElementById('save-btn');
+            saveBtn.disabled = !hasChanges;
+            saveBtn.style.opacity = hasChanges ? '1' : '0.6';
+        }
+        
+        function updatePreview(text) {
+            const previewContainer = document.getElementById('preview-container');
+            if (text.trim()) {
+                // Convert basic HTML tags for preview
+                const formattedText = text
+                    .replace(/&/g, '&amp;')
+                    .replace(/</g, '&lt;')
+                    .replace(/>/g, '&gt;')
+                    .replace(/&lt;b&gt;(.*?)&lt;\/b&gt;/gi, '<b>$1</b>')
+                    .replace(/&lt;i&gt;(.*?)&lt;\/i&gt;/gi, '<i>$1</i>')
+                    .replace(/&lt;u&gt;(.*?)&lt;\/u&gt;/gi, '<u>$1</u>')
+                    .replace(/&lt;br&gt;/gi, '<br>');
+                
+                previewContainer.innerHTML = `<div style="line-height: 1.5;">${formattedText}</div>`;
+            } else {
+                previewContainer.innerHTML = '<p style="color: #6c757d; text-align: center; margin-top: 2rem;">Selectați un câmp de text pentru previzualizare</p>';
+            }
+        }
+        
+        function saveLanguageContent() {
+            if (!hasChanges) {
+                return;
+            }
+            
+            const formData = new FormData();
+            formData.append('action', 'update_language');
+            formData.append('language', currentLanguage);
+            formData.append('lang_data', JSON.stringify(currentData));
+            
+            fetch('dashboard.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                // Reload the page to show the success message
+                window.location.reload();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Eroare la salvarea datelor!');
+            });
+        }
+        
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
         }
     </script>
 </body>
