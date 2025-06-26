@@ -930,6 +930,56 @@ body {
     cursor: pointer;
 }
 
+/* Video playing state */
+.gallery-item video:not([muted]) {
+    box-shadow: 0 0 20px rgba(74, 144, 226, 0.5);
+}
+
+/* Video loading state */
+.gallery-item video:not([poster]) {
+    background: #f0f0f0;
+    background-image: 
+        linear-gradient(45deg, transparent 35%, rgba(255,255,255,.5) 35%, rgba(255,255,255,.5) 65%, transparent 65%),
+        linear-gradient(-45deg, transparent 35%, rgba(0,0,0,.1) 35%, rgba(0,0,0,.1) 65%, transparent 65%);
+    background-size: 20px 20px;
+}
+
+/* Video play icon overlay */
+.gallery-item[data-type="video"] {
+    position: relative;
+}
+
+.gallery-item[data-type="video"]::after {
+    content: '\f04b'; /* FontAwesome play icon */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: white;
+    background: var(--overlay-dark);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    line-height: 60px;
+}
+
+.gallery-item[data-type="video"]:hover::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+    background: var(--primary-color);
+}
+
 .gallery-item:hover img,
 .gallery-item:hover video {
     transform: scale(1.1);
@@ -1106,6 +1156,24 @@ body {
     height: 60vh;
     object-fit: contain;
     background: #000;
+}
+
+/* Video controls styling */
+.modal-image-container video::-webkit-media-controls-panel {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-image-container video::-webkit-media-controls-play-button,
+.modal-image-container video::-webkit-media-controls-volume-slider,
+.modal-image-container video::-webkit-media-controls-timeline {
+    filter: brightness(1.2);
+}
+
+/* Video responsive adjustments */
+@media (max-width: 768px) {
+    .modal-image-container video {
+        height: 40vh;
+    }
 }
 
 .modal-info {

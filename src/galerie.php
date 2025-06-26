@@ -203,6 +203,7 @@ require_once __DIR__ . '/includes/lang.php';
                         <button class="filter-btn" data-filter="spaces"><?php echo t('gallery_filter_spaces'); ?></button>
                         <button class="filter-btn" data-filter="therapy"><?php echo t('gallery_filter_therapy'); ?></button>
                         <button class="filter-btn" data-filter="events"><?php echo t('gallery_filter_events'); ?></button>
+                        <button class="filter-btn" data-filter="videos">Videos</button>
                     </div>
 
                     <div class="gallery-grid">
@@ -355,7 +356,7 @@ require_once __DIR__ . '/includes/lang.php';
                                 </div>
                             </div>
                         </div>
- <div class="gallery-item" data-category="activities">
+                            <div class="gallery-item" data-category="activities">
                             <img src="images/zoo2.jpeg" alt="Animale noi si interesante" loading="lazy">
                             <div class="gallery-overlay">
                                 <h3>Animale noi si interesante</h3>
@@ -365,7 +366,7 @@ require_once __DIR__ . '/includes/lang.php';
                                 </div>
                             </div>
                         </div>
- <div class="gallery-item" data-category="activities">
+                            <div class="gallery-item" data-category="activities">
                             <img src="images/zoo3.jpeg" alt="Habitatele animalelor" loading="lazy">
                             <div class="gallery-overlay">
                                 <h3>Habitatele animalelor</h3>
@@ -375,7 +376,7 @@ require_once __DIR__ . '/includes/lang.php';
                                 </div>
                             </div>
                         </div>
- <div class="gallery-item" data-category="activities">
+                            <div class="gallery-item" data-category="activities">
                             <img src="images/zoo4.jpeg" alt="Animale la inaltime" loading="lazy">
                             <div class="gallery-overlay">
                                 <h3>Animale la inaltime</h3>
@@ -385,7 +386,7 @@ require_once __DIR__ . '/includes/lang.php';
                                 </div>
                             </div>
                         </div>
- <div class="gallery-item" data-category="activities">
+                            <div class="gallery-item" data-category="activities">
                             <img src="images/zoo5.jpeg" alt="Animal de desert" loading="lazy">
                             <div class="gallery-overlay">
                                 <h3>Animal de desert</h3>
@@ -395,7 +396,7 @@ require_once __DIR__ . '/includes/lang.php';
                                 </div>
                             </div>
                         </div>
- <div class="gallery-item" data-category="activities">
+                            <div class="gallery-item" data-category="activities">
                             <img src="images/zoo6.jpeg" alt="Broasca Testoasa mangaiata de copii" loading="lazy">
                             <div class="gallery-overlay">
                                 <h3>Broasca Testoasa mangaiata de copii</h3>
@@ -405,7 +406,7 @@ require_once __DIR__ . '/includes/lang.php';
                                 </div>
                             </div>
                         </div>
- <div class="gallery-item" data-category="activities">
+                            <div class="gallery-item" data-category="activities">
                             <img src="images/zoo7.jpeg" alt="La Izvor" loading="lazy">
                             <div class="gallery-overlay">
                                 <h3>La Izvor</h3>
@@ -415,7 +416,7 @@ require_once __DIR__ . '/includes/lang.php';
                                 </div>
                             </div>
                         </div>
- <div class="gallery-item" data-category="activities">
+                            <div class="gallery-item" data-category="activities">
                             <img src="images/zoo8.jpeg" alt="Descoperirea Bufnitei" loading="lazy">
                             <div class="gallery-overlay">
                                 <h3>Descoperirea Bufnitei</h3>
@@ -425,7 +426,7 @@ require_once __DIR__ . '/includes/lang.php';
                                 </div>
                             </div>
                         </div>
- <div class="gallery-item" data-category="activities">
+                            <div class="gallery-item" data-category="activities">
                             <img src="images/zoo9.jpeg" alt="Animale prin copaci" loading="lazy">
                             <div class="gallery-overlay">
                                 <h3>Animale prin copaci</h3>
@@ -436,7 +437,16 @@ require_once __DIR__ . '/includes/lang.php';
                             </div>
                         </div>
 
-
+                        <!-- Video Items -->
+                        <div class="gallery-item" data-category="events" data-type="video">
+                            <video src="videos/video5363927670348345826.mp4" loading="lazy" muted>
+                                Browser-ul tău nu suportă elementul video.
+                            </video>
+                            <div class="gallery-overlay">
+                                <h3>Eveniment Special</h3>
+                                <p>Sărbătorirea unor momente importante</p>
+                            </div>
+                        </div>
                     
                     </div>
                 </div>
@@ -459,6 +469,10 @@ require_once __DIR__ . '/includes/lang.php';
             </button>
             <div class="modal-image-container">
                 <img id="modalImage" src="" alt="" loading="lazy">
+                <video id="modalVideo" controls style="display: none;">
+                    <source src="" type="video/mp4">
+                    Browser-ul tău nu suportă elementul video.
+                </video>
             </div>
             <div class="modal-info">
                 <h3 id="modalTitle"></h3>
