@@ -746,6 +746,7 @@ class Gallery {
         console.log('Found gallery items:', this.galleryItems.length);
         this.modal = document.getElementById('galleryModal');
         this.modalImage = document.getElementById('modalImage');
+        this.modalVideo = document.getElementById('modalVideo');
         this.modalTitle = document.getElementById('modalTitle');
         this.modalDescription = document.getElementById('modalDescription');
         this.modalClose = document.getElementById('modalClose');
@@ -771,6 +772,21 @@ class Gallery {
         // Gallery items
         this.galleryItems.forEach((item, index) => {
             item.addEventListener('click', () => this.openModal(index));
+            
+            // Add video preview on hover
+            const video = item.querySelector('video');
+            if (video) {
+                item.addEventListener('mouseenter', () => {
+                    video.play().catch(() => {
+                        // Handle play promise rejection silently
+                    });
+                });
+                
+                item.addEventListener('mouseleave', () => {
+                    video.pause();
+                    video.currentTime = 0; // Reset to beginning
+                });
+            }
         });
         
         // Modal controls
@@ -802,8 +818,18 @@ class Gallery {
         this.filteredItems = [];
         this.galleryItems.forEach((item, index) => {
             const category = item.dataset.category;
-            const shouldShow = filter === 'all' || category === filter;
-            console.log(`Item ${index}: category=${category}, shouldShow=${shouldShow}`);
+            const type = item.dataset.type;
+            let shouldShow = false;
+            
+            if (filter === 'all') {
+                shouldShow = true;
+            } else if (filter === 'videos') {
+                shouldShow = type === 'video';
+            } else {
+                shouldShow = category === filter;
+            }
+            
+            console.log(`Item ${index}: category=${category}, type=${type}, shouldShow=${shouldShow}`);
             
             if (shouldShow) {
                 item.style.display = 'block';
@@ -844,6 +870,11 @@ class Gallery {
     closeModal() {
         this.modal.classList.remove('active');
         document.body.style.overflow = '';
+        
+        // Pause video if it's playing
+        if (this.modalVideo && !this.modalVideo.paused) {
+            this.modalVideo.pause();
+        }
     }
     
     prevImage() {
@@ -859,19 +890,46 @@ class Gallery {
     updateModalContent() {
         const currentItem = this.filteredItems[this.currentImageIndex];
         const img = currentItem.querySelector('img');
+        const video = currentItem.querySelector('video');
         const title = currentItem.querySelector('h3').textContent;
         const description = currentItem.querySelector('p').textContent;
         
-        this.modalImage.src = img.src;
-        this.modalImage.alt = img.alt;
+        // Update title and description
         this.modalTitle.textContent = title;
         this.modalDescription.textContent = description;
         
-        // Add loading state
-        this.modalImage.style.opacity = '0';
-        this.modalImage.onload = () => {
-            this.modalImage.style.opacity = '1';
-        };
+        if (video) {
+            // Show video, hide image
+            this.modalVideo.style.display = 'block';
+            this.modalImage.style.display = 'none';
+            
+            // Set video source
+            const source = this.modalVideo.querySelector('source');
+            source.src = video.src;
+            this.modalVideo.load(); // Reload video with new source
+            
+            // Add loading state for video
+            this.modalVideo.style.opacity = '0';
+            this.modalVideo.addEventListener('loadedmetadata', () => {
+                this.modalVideo.style.opacity = '1';
+            }, { once: true });
+        } else if (img) {
+            // Show image, hide video
+            this.modalImage.style.display = 'block';
+            this.modalVideo.style.display = 'none';
+            
+            // Pause video if it was playing
+            this.modalVideo.pause();
+            
+            this.modalImage.src = img.src;
+            this.modalImage.alt = img.alt;
+            
+            // Add loading state for image
+            this.modalImage.style.opacity = '0';
+            this.modalImage.onload = () => {
+                this.modalImage.style.opacity = '1';
+            };
+        }
     }
     
     handleKeyboard(e) {
@@ -886,6 +944,30 @@ class Gallery {
                 break;
             case 'ArrowRight':
                 this.nextImage();
+                break;
+            case ' ':
+            case 'k':
+                // Spacebar or 'k' to play/pause video
+                if (this.modalVideo.style.display !== 'none') {
+                    e.preventDefault();
+                    if (this.modalVideo.paused) {
+                        this.modalVideo.play();
+                    } else {
+                        this.modalVideo.pause();
+                    }
+                }
+                break;
+            case 'f':
+                // 'f' to toggle fullscreen for video
+                if (this.modalVideo.style.display !== 'none') {
+                    if (document.fullscreenElement) {
+                        document.exitFullscreen();
+                    } else {
+                        this.modalVideo.requestFullscreen().catch(() => {
+                            // Handle fullscreen request failure silently
+                        });
+                    }
+                }
                 break;
         }
     }
