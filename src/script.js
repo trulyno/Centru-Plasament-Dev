@@ -211,9 +211,9 @@ const statsSection = document.querySelector('.stats');
 const statsObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            animateCounter(document.getElementById('stat1'), 2544);
-            animateCounter(document.getElementById('stat2'), 2444);
-            animateCounter(document.getElementById('stat3'), 406);
+            animateCounter(document.getElementById('stat1'), 8850);
+            animateCounter(document.getElementById('stat2'), 8822);
+            animateCounter(document.getElementById('stat3'), 1956);
             animateCounter(document.getElementById('stat4'), 79);
             statsObserver.unobserve(entry.target);
         }
