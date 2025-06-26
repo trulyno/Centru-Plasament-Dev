@@ -1,6 +1,34 @@
 <?php
 // Include language configuration
 require_once __DIR__ . '/includes/lang.php';
+
+function image($src, $category, $alt = '', $title = '', $desc = '') {
+    echo '
+        <div class="gallery-item" data-category="' . htmlspecialchars($category) . '">
+            <img src="images/' . htmlspecialchars($src) . '" alt="' . htmlspecialchars($alt) . '" loading="lazy">
+            <div class="gallery-overlay">
+                <h3>' . htmlspecialchars($title) . '</h3>
+                <p>' . htmlspecialchars($desc) . '</p>
+                <div class="overlay-icon">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+        </div>';
+}
+
+function video($src, $category, $alt = '', $title = '', $desc = '') {
+    echo '
+        <div class="gallery-item" data-category="' . htmlspecialchars($category) . '" data-type="video">
+            <video src="videos/' . htmlspecialchars($src) . '" loading="lazy" muted>
+                Browser-ul tău nu suportă elementul video.
+            </video>
+            <div class="gallery-overlay">
+                <h3>' . htmlspecialchars($title) . '</h3>
+                <p>' . htmlspecialchars($desc) . '</p>
+            </div>
+        </div>';
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo getCurrentLanguage(); ?>">
@@ -203,64 +231,18 @@ require_once __DIR__ . '/includes/lang.php';
                         <button class="filter-btn" data-filter="spaces"><?php echo t('gallery_filter_spaces'); ?></button>
                         <button class="filter-btn" data-filter="therapy"><?php echo t('gallery_filter_therapy'); ?></button>
                         <button class="filter-btn" data-filter="events"><?php echo t('gallery_filter_events'); ?></button>
-                        <button class="filter-btn" data-filter="videos">Videos</button>
+                        <button class="filter-btn" data-filter="videos"><?php echo t('gallery_filter_videos'); ?></button>
                     </div>
-
                     <div class="gallery-grid">
-                        <div class="gallery-item" data-category="spaces">
-                            <img src="images/zi10.jpg" alt="Camera de Odihnă" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Camera de Odihnă</h3>
-                                <p>Spații confortabile pentru relaxare</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="gallery-item" data-category="spaces">
-                            <img src="images/zi11.jpg" alt="Spații de Recreere" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Spații de Recreere</h3>
-                                <p>Zone dedicate jocului și relaxării</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
+                        <?php
+                        image('zi10.jpg', 'spaces', 'Camera de Odihnă', 'Camera de Odihnă', 'Spații confortabile pentru relaxare');
+                        image('zi11.jpg', 'spaces', 'Spații de Recreere', 'Spații de Recreere', 'Zone dedicate jocului și relaxării');
+                        image('maternala3.jpg', 'activities', 'Consiliere Parentală', 'Consiliere Parentală', 'Sesiuni de instruire și dezvoltare');
+                        image('respiro3.jpg', 'spaces', 'Spații Respiro', 'Spații Respiro', 'Mediu sigur și confortabil pentru copii');
+                        image('respiro6.jpg', 'spaces', 'Mediu Terapeutic', 'Mediu Terapeutic', 'Spații special amenajate pentru terapie'); 
 
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/maternala3.jpg" alt="Consiliere Parentală" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Consiliere Parentală</h3>
-                                <p>Sesiuni de instruire și dezvoltare</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="gallery-item" data-category="spaces">
-                            <img src="images/respiro3.jpg" alt="Spații Respiro" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Spații Dedicate</h3>
-                                <p>Mediu sigur și confortabil pentru copii</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="gallery-item" data-category="spaces">
-                            <img src="images/respiro6.jpg" alt="Mediu Terapeutic" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Mediu Terapeutic</h3>
-                                <p>Spații special amenajate pentru terapie</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
+                        video('video5363927670348345826.mp4', 'events', 'Eveniment Special', 'Eveniment Special', 'Sărbătorirea unor momente importante');
+                        ?>
 
                         <div class="gallery-item" data-category="activities">
                             <img src="images/sap4.jpg" alt="Descoperirea Faunei" loading="lazy">
@@ -435,19 +417,7 @@ require_once __DIR__ . '/includes/lang.php';
                                     <i class="fas fa-search-plus"></i>
                                 </div>
                             </div>
-                        </div>
-
-                        <!-- Video Items -->
-                        <div class="gallery-item" data-category="events" data-type="video">
-                            <video src="videos/video5363927670348345826.mp4" loading="lazy" muted>
-                                Browser-ul tău nu suportă elementul video.
-                            </video>
-                            <div class="gallery-overlay">
-                                <h3>Eveniment Special</h3>
-                                <p>Sărbătorirea unor momente importante</p>
-                            </div>
-                        </div>
-                    
+                        </div>               
                     </div>
                 </div>
             </div>
