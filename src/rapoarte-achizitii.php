@@ -1,6 +1,20 @@
 <?php
 // Include language configuration
 require_once __DIR__ . '/includes/lang.php';
+
+function document($src, $title = '') {
+    echo '<div class="document-card">
+                <div class="document-icon">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+                <div class="document-content">
+                    <h3>' . $title . '</h3>
+                    <a href="' . $src . '" class="document-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Vezi document
+                    </a>
+                </div>
+            </div>';
+}
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo getCurrentLanguage(); ?>">
@@ -198,17 +212,9 @@ require_once __DIR__ . '/includes/lang.php';
             <div class="container">
                 <div class="content-wrapper">
                     <h2><?php echo t('procurement_reports_title'); ?></h2>
-                    <!-- <div class="document-card">
-                        <div class="document-icon">
-                            <i class="fas fa-file-pdf"></i>
-                        </div>
-                        <div class="document-content">
-                            <h3></h3>
-                            <a href="" class="document-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Vezi document
-                            </a>
-                        </div>
-                    </div> -->
+                    <?php
+
+                    ?>
                 </div>
             </div>
         </section>

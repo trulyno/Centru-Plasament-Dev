@@ -1,6 +1,20 @@
 <?php
 // Include language configuration
 require_once __DIR__ . '/includes/lang.php';
+
+function document($src, $title = '') {
+    echo '<div class="document-card">
+            <div class="document-icon">
+                <i class="fas fa-globe"></i>
+            </div>
+            <div class="document-content">
+                <h3>' . $title . '</h3>
+                <a href="' . $src .'" class="document-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> Vezi document
+                </a>
+            </div>
+        </div>';
+}
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo getCurrentLanguage(); ?>">
@@ -201,31 +215,11 @@ require_once __DIR__ . '/includes/lang.php';
                     <p><?php echo t('international_acts_content_description'); ?></p>
                     
                     <div class="documents-grid">
-                        <div class="document-card">
-                            <div class="document-icon">
-                                <i class="fas fa-globe"></i>
-                            </div>
-                            <div class="document-content">
-                                <h3>Convenția ONU cu privire la Drepturile Copilului</h3>
-                                <p>Actul fundamental internațional pentru protecția drepturilor copilului</p>
-                                <a href="https://www.unicef.org/moldova/media/1401/file/Conventia-cu-privire-la-drepturile-copilului.pdf" class="document-link" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i> Vezi document
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="document-card">
-                            <div class="document-icon">
-                                <i class="fas fa-globe"></i>
-                            </div>
-                            <div class="document-content">
-                                <h3>Convenția privind drepturile persoanelor cu dizabilități</h3>
-                                <p>Acordul internațional pentru protecția drepturilor persoanelor cu dizabilități</p>
-                                <a href="https://www.legis.md/cautare/getResults?doc_id=117839&lang=ro" class="document-link" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i> Vezi document
-                                </a>
-                            </div>
-                        </div>
+                        <?php
+                        document('https://www.unicef.org/moldova/media/1401/file/Conventia-cu-privire-la-drepturile-copilului.pdf', 'Convenția ONU cu privire la Drepturile Copilului');
+                        document('https://www.legis.md/cautare/getResults?doc_id=117839&lang=ro', 'Convenția privind drepturile persoanelor cu dizabilități');
+                        
+                        ?>
                     </div>
                 </div>
             </div>
