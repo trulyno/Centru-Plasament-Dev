@@ -1,0 +1,15 @@
+# Deny access to all files in this directory
+Deny from all
+
+# Protect JSON data files
+<Files "*.json">
+    Order deny,allow
+    Deny from all
+</Files>
+
+# Allow access only to PHP files from localhost
+<Files "*.php">
+    Order allow,deny
+    Allow from 127.0.0.1
+    Allow from localhost
+</Files>
