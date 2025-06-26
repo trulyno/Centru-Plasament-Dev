@@ -226,7 +226,7 @@ require_once __DIR__ . '/includes/lang.php';
                     </div>
                 </div>
                 <div class="slide-image">
-                    <img src="images/zi1.png" alt="<?php echo t('hero_slide_3_title'); ?>" loading="lazy">
+                    <img src="images/zoo1.jpeg" alt="<?php echo t('hero_slide_3_title'); ?>" loading="lazy">
                 </div>
             </div>
         </div>
