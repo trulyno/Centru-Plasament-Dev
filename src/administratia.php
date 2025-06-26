@@ -356,6 +356,24 @@ require_once __DIR__ . '/includes/lang.php';
                                     <p class="admin-staff-position">Șef Secție Criză</p>
                                 </div>
                             </div>
+                            <div class="admin-staff-card">
+                                <div class="admin-staff-image">
+                                    <img src="images/Lungu Ina Asis. principal.png" alt="asis.principal" loading="lazy" decoding="async">
+                                </div>
+                                <div class="admin-staff-info">
+                                    <h3>Lungu Ina</h3>
+                                    <p class="admin-staff-position">Asisten Principal</p>
+                                </div>
+                            </div>
+                            <div class="admin-staff-card">
+                                <div class="admin-staff-image">
+                                    <img src="images/Manoli Galina Contabil.png" alt="contabil" loading="lazy" decoding="async">
+                                </div>
+                                <div class="admin-staff-info">
+                                    <h3>Manoli Galina</h3>
+                                    <p class="admin-staff-position">Contabil</p>
+                                </div>
+                            </div>
 
 
 
