@@ -240,184 +240,26 @@ function video($src, $category, $alt = '', $title = '', $desc = '') {
                         image('maternala3.jpg', 'activities', 'Consiliere Parentală', 'Consiliere Parentală', 'Sesiuni de instruire și dezvoltare');
                         image('respiro3.jpg', 'spaces', 'Spații Respiro', 'Spații Respiro', 'Mediu sigur și confortabil pentru copii');
                         image('respiro6.jpg', 'spaces', 'Mediu Terapeutic', 'Mediu Terapeutic', 'Spații special amenajate pentru terapie'); 
+                        image('sap4.jpg', 'activities', 'Descoperirea Faunei', 'Descoperirea Faunei', 'La gradina zoologica');
+                        image('sap13.jpg', 'events', 'Eveniment Amuzant', 'Eveniment Amuzant', 'Muzica,Dansuri si Baloane');
+                        image('z21.jpg', 'activities', 'Confectionarea lucrarilor plastice', 'Confectionarea lucrarilor plastice', 'O amintire pe toata viata');
+                        image('14.jpg', 'activities', 'Admirarea Gradinii Zoo', 'Admirarea Gradinii Zoo', 'Plante exotice');
+                        image('21.jpg', 'activities', 'Jocuri Gonflabile', 'Jocuri Gonflabile', 'Sarituri si fericire');
+                        image('35.jpg', 'events', 'Festival Mascat', 'Festival Mascat', 'Copii mascati in eroii lor');
+                        image('555.jpg', 'activities', 'Teatru cu marionete', 'Teatru cu marionete', 'Un spectacol calptivant');
+                        image('585.jpg', 'activities', 'Bucuria copiilor', 'Bucuria copiilor', 'Castigarea unui concurs');
+                        image('zoo1.jpeg', 'activities', 'Excursie  la Zoo', 'Excursie  la Zoo', 'Copiii descopera animale noi');
+                        image('zoo2.jpeg', 'activities', 'Animale noi si interesante', 'Animale noi si interesante', 'Copiii sunt multumiti');
+                        image('zoo3.jpeg', 'activities', 'Habitatele animalelor', 'Habitatele animalelor', 'Copiii descopera unde locuiesc animalele');
+                        image('zoo4.jpeg', 'activities', 'Animale la inaltime', 'Animale la inaltime', 'Maimute si multi papagali');
+                        image('zoo5.jpeg', 'activities', 'Animal de desert', 'Animal de desert', 'Copiii descopera camila');
+                        image('zoo6.jpeg', 'activities', 'Broasca Testoasa mangaiata de copii', 'Broasca Testoasa mangaiata de copii', 'Multa afectiune si iubire');
+                        image('zoo7.jpeg', 'activities', 'La Izvor', 'La Izvor', 'O mica pauza de la aceasta aventura');
+                        image('zoo8.jpeg', 'activities', 'Descoperirea Bufnitei', 'Descoperirea Bufnitei', 'Singura data cand va fi treaza ziua');
+                        image('zoo9.jpeg', 'activities', 'Animale prin copaci', 'Animale prin copaci', 'Cum ele se tin atat de mult acolo?');
 
                         video('video5363927670348345826.mp4', 'events', 'Eveniment Special', 'Eveniment Special', 'Sărbătorirea unor momente importante');
-                        ?>
-
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/sap4.jpg" alt="Descoperirea Faunei" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Descoperirea Faunei</h3>
-                                <p>La gradina zoologica</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="gallery-item" data-category="events">
-                            <img src="images/sap13.jpg" alt="Eveniment Amuzants" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Eveniment Amuzant</h3>
-                                <p>Muzica,Dansuri si Baloane</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/z21.jpg" alt="Confectionarea lucrarilor plastice" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Confectionarea lucrarilor plastice</h3>
-                                <p>O amintire pe toata viata</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/14.jpg" alt="Admirarea Gradinii Zoo" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Admirarea Gradinii Zoo</h3>
-                                <p>Plante exotice</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/21.jpg" alt="Jocuri Gonflabile" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Jocuri Gonflabile</h3>
-                                <p>Sarituri si fericire</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="events">
-                            <img src="images/35.jpg" alt="Festival Mascat" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Festival Mascat</h3>
-                                <p>Copii mascati in eroii lor</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/555.jpg" alt="Teatru cu marionete" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Teatru cu marionete</h3>
-                                <p>Un spectacol calptivant</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-category="activities">
-                            <img src="images/585.jpg" alt="Bucuria copiilor" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Bucuria copiilor</h3>
-                                <p>Castigarea unui concurs</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                         <div class="gallery-item" data-category="activities">
-                            <img src="images/zoo1.jpeg" alt="Excursie la Zoo" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Excursie  la Zoo</h3>
-                                <p>Copiii descopera animale noi</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                            <div class="gallery-item" data-category="activities">
-                            <img src="images/zoo2.jpeg" alt="Animale noi si interesante" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Animale noi si interesante</h3>
-                                <p>Copiii sunt multumiti</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                            <div class="gallery-item" data-category="activities">
-                            <img src="images/zoo3.jpeg" alt="Habitatele animalelor" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Habitatele animalelor</h3>
-                                <p>Copiii descopera unde locuiesc animalele</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                            <div class="gallery-item" data-category="activities">
-                            <img src="images/zoo4.jpeg" alt="Animale la inaltime" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Animale la inaltime</h3>
-                                <p>Maimute si multi papagali</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                            <div class="gallery-item" data-category="activities">
-                            <img src="images/zoo5.jpeg" alt="Animal de desert" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Animal de desert</h3>
-                                <p>Copiii descopera camila</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                            <div class="gallery-item" data-category="activities">
-                            <img src="images/zoo6.jpeg" alt="Broasca Testoasa mangaiata de copii" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Broasca Testoasa mangaiata de copii</h3>
-                                <p>Multa afectiune si iubire</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                            <div class="gallery-item" data-category="activities">
-                            <img src="images/zoo7.jpeg" alt="La Izvor" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>La Izvor</h3>
-                                <p>O mica pauza de la aceasta aventura</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                            <div class="gallery-item" data-category="activities">
-                            <img src="images/zoo8.jpeg" alt="Descoperirea Bufnitei" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Descoperirea Bufnitei</h3>
-                                <p>Singura data cand va fi treaza ziua</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                            <div class="gallery-item" data-category="activities">
-                            <img src="images/zoo9.jpeg" alt="Animale prin copaci" loading="lazy">
-                            <div class="gallery-overlay">
-                                <h3>Animale prin copaci</h3>
-                                <p>Cum ele se tin atat de mult acolo?</p>
-                                <div class="overlay-icon">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>               
+                        ?>         
                     </div>
                 </div>
             </div>
