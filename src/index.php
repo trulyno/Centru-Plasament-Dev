@@ -41,7 +41,7 @@ require_once __DIR__ . '/includes/lang.php';
             </button>
             <div class="header-top-container" id="headerTopContainer">
                 <div class="header-logo">
-                    <img src="images/logo.jpeg" alt="<?php echo t('logo_alt'); ?>" class="logo-image">
+                    <img src="images/logo.png  " alt="<?php echo t('logo_alt'); ?>" class="logo-image">
                     <div class="logo-text">
                         <h1 class="logo-text-full"><?php echo t('site_title_full'); ?></h1>
                         <h1 class="logo-text-abbreviated"><?php echo t('site_title_short'); ?></h1>
@@ -105,7 +105,7 @@ require_once __DIR__ . '/includes/lang.php';
         <!-- Navigation Section -->
         <div class="nav-container">
             <div class="logo-mobile">
-                <img src="images/logo.jpeg" alt="Logo CPRCVF" class="logo-mobile-image">
+                <img src="images/logo.png  " alt="Logo CPRCVF" class="logo-mobile-image">
                 <i class="fas fa-heart"></i>
                 <span>CPRCVF</span>
             </div>
@@ -202,7 +202,7 @@ require_once __DIR__ . '/includes/lang.php';
                     </div>
                 </div>
                 <div class="slide-image">
-                    <img src="images/zi7.jpg" alt="<?php echo t('hero_slide_1_title'); ?>" loading="lazy">
+                    <img src="images/logo (1) (1).png" alt="<?php echo t('hero_slide_1_title'); ?>" loading="lazy">
                 </div>
             </div>
             <div class="slide">
