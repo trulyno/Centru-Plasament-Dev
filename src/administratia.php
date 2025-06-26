@@ -1,6 +1,18 @@
 <?php
 // Include language configuration
 require_once __DIR__ . '/includes/lang.php';
+
+function staff($name, $position, $image) {
+    echo '<div class="admin-staff-card">
+                <div class="admin-staff-image">
+                    <img src="images/' . $image . '" alt="' . $position . '" loading="lazy" decoding="async">
+                </div>
+                    <div class="admin-staff-info">
+                        <h3>' . $name . '</h3>
+                        <p class="admin-staff-position">' . $position . '</p>
+                    </div>
+                </div>';
+}
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo getCurrentLanguage(); ?>">
@@ -202,182 +214,28 @@ require_once __DIR__ . '/includes/lang.php';
                     
                     <div class="admin-team-container">
                         <div class="admin-team-grid">
-                            <!-- Director -->
-                            <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/director.png" alt="director" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>Sergiu Oceretnîi</h3>
-                                    <p class="admin-staff-position">Director</p>
-                                </div>
-                            </div>
-                            <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/Bacalu Ana inspector resurse umane.png" alt="iru" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>Bacalu Ana</h3>
-                                    <p class="admin-staff-position">Inspector Resurse Umane</p>
-                                </div>
-                            </div>
-                            <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/Țvetov Angela contabil șef.png" alt="contabilsef" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>Țvetov Angela</h3>
-                                    <p class="admin-staff-position">Contabil șef</p>
-                                </div>
-                            </div>
-                            <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/Mahmadbecov Rodica contabil.png" alt="contabil" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>Mahmadbecov Rodica</h3>
-                                    <p class="admin-staff-position">Contabil</p>
-                                </div>
-                            </div>
-                            <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/Cojușco Tatiana contabil.png" alt="contabil" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>Cojușco Tatiana</h3>
-                                    <p class="admin-staff-position">Contabil</p>
-                                </div>
-                            </div>
-                            <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/Bîrta Vladimir Jurist.png" alt="Jurist" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>Bîrta Vladimir</h3>
-                                    <p class="admin-staff-position">Jurist</p>
-                                </div>
-                            </div>
-                            <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/Țurcanu Vasile Inginer principal.png" alt="Inginerprincipal" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>Țurcanu Vasile</h3>
-                                    <p class="admin-staff-position">Inginer Principal</p>
-                                </div>
-                            </div>
-                            <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/Cojocaru Tatiana Asistent Social.png" alt="asistensocial" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>Cojocaru Tatiana</h3>
-                                    <p class="admin-staff-position">Asistent Social</p>
-                                </div>
-                            </div>
-                            <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/Toțkaia Angela Psiholog.png" alt="psiholog" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>Toțkaia Angela</h3>
-                                    <p class="admin-staff-position">Psiholog</p>
-                                </div>
-                            </div>
-                            <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/Ciorici Cătălina Șefă secție Maternală.png" alt="sefsecmati" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>Ciorici Cătălina</h3>
-                                    <p class="admin-staff-position">Șefă Secție Maternală</p>
-                                </div>
-                            </div>
-                             <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/Blaj Sorina Sef sectie Psihopedagogie.png" alt="sefpsihopedagogie" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>Blaj Sorina</h3>
-                                    <p class="admin-staff-position">Șef Secție Psihopedagogie</p>
-                                </div>
-                            </div>
-                            <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/Burunciuc Aurelia -Medic nutriționist.png" alt="medicnutritionist" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>Burunciuc Aurelia</h3>
-                                    <p class="admin-staff-position">Medic Nutriționist</p>
-                                </div>
-                            </div>
-                            <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/Corina Vozian sef sectie zi.png" alt="sefsectiezi" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>Vozian Corina</h3>
-                                    <p class="admin-staff-position">Șef Secție Zi</p>
-                                </div>
-                            </div>
-                            <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/Ecaterina David Sef sectie Respiro.png" alt="sefsectierespiro" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>David Ecaterina</h3>
-                                    <p class="admin-staff-position">Șef Secție Respiro</p>
-                                </div>
-                            </div>
-                            <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/Timirgaz Violeta -Sef sectie reabilitare.png" alt="sefsectiezreabilitare" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>Timigraz Violeta</h3>
-                                    <p class="admin-staff-position">Șef Secție Reabilitare</p>
-                                </div>
-                            </div>
-                            <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/Ionita Natalia Secretar.png" alt="secretar" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>Ionița Natalia</h3>
-                                    <p class="admin-staff-position">Secretar</p>
-                                </div>
-                            </div>
-                            <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/Capros Marina Sef sectie de Criza.png" alt="sectiecriza" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>Capros Marina</h3>
-                                    <p class="admin-staff-position">Șef Secție Criză</p>
-                                </div>
-                            </div>
-                            <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/Lungu Ina Asis. principal.png" alt="asis.principal" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>Lungu Ina</h3>
-                                    <p class="admin-staff-position">Asisten Principal</p>
-                                </div>
-                            </div>
-                            <div class="admin-staff-card">
-                                <div class="admin-staff-image">
-                                    <img src="images/Manoli Galina Contabil.png" alt="contabil" loading="lazy" decoding="async">
-                                </div>
-                                <div class="admin-staff-info">
-                                    <h3>Manoli Galina</h3>
-                                    <p class="admin-staff-position">Contabil</p>
-                                </div>
-                            </div>
+                            <?php
+                                staff('Sergiu Oceretnîi', 'Director', 'director.png');
+                                staff('Bacalu Ana', 'Inspector Resurse Umane', 'Bacalu Ana inspector resurse umane.png');
+                                staff('Țvetov Angela', 'Contabil șef', 'Țvetov Angela contabil șef.png');
+                                staff('Mahmadbecov Rodica', 'Contabil', 'Mahmadbecov Rodica contabil.png');
+                                staff('Cojușco Tatiana', 'Contabil', 'Cojușco Tatiana contabil.png');
+                                staff('Bîrta Vladimir', 'Jurist', 'Bîrta Vladimir Jurist.png');
+                                staff('Țurcanu Vasile', 'Inginer Principal', 'Țurcanu Vasile Inginer principal.png');
+                                staff('Cojocaru Tatiana', 'Asistent Social', 'Cojocaru Tatiana Asistent Social.png');
+                                staff('Toțkaia Angela', 'Psiholog', 'Toțkaia Angela Psiholog.png');
+                                staff('Ciorici Cătălina', 'Șef Secție Maternală', 'Ciorici Cătălina Șefă secție Maternală.png');
+                                staff('Blaj Sorina', 'Șef Secție Psihopedagogie', 'Blaj Sorina Sef sectie Psihopedagogie.png');
+                                staff('Burunciuc Aurelia', 'Medic Nutriționist', 'Burunciuc Aurelia -Medic nutriționist.png');
+                                staff('Vozian Corina', 'Șef Secție Zi', 'Corina Vozian sef sectie zi.png');
+                                staff('David Ecaterina', 'Șef Secție Respiro', 'Ecaterina David Sef sectie Respiro.png');
+                                staff('Timigraz Violeta', 'Șef Secție Reabilitare', 'Timirgaz Violeta -Sef sectie reabilitare.png');
+                                staff('Ionița Natalia', 'Secretar', 'Ionita Natalia Secretar.png');
+                                staff('Capros Marina', 'Șef Secție Criză', 'Capros Marina Sef sectie de Criza.png');
+                                staff('Lungu Ina', 'Asisten Principal', 'Lungu Ina Asis. principal.png');
+                                staff('Manoli Galina', 'Contabil', 'Manoli Galina Contabil.png');
 
-
-
-                        
+                            ?>
                         </div>
                     </div>
                 </div>
