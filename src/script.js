@@ -206,19 +206,56 @@ function animateCounter(element, target, duration = 2000) {
     }, 16);
 }
 
-// Start counters when stats section is visible
+// Load and start counters when stats section is visible
 const statsSection = document.querySelector('.stats');
 const statsObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            animateCounter(document.getElementById('stat1'), 11078);
-            animateCounter(document.getElementById('stat2'), 11050);
-            animateCounter(document.getElementById('stat3'), 1956);
-            animateCounter(document.getElementById('stat4'), 79);
+            loadAndAnimateStats();
             statsObserver.unobserve(entry.target);
         }
     });
 });
+
+// Function to load statistics from API and animate counters
+async function loadAndAnimateStats() {
+    try {
+        const response = await fetch('handlers/get-stats.php');
+        const result = await response.json();
+        
+        if (result.success && result.data) {
+            const stats = result.data;
+            
+            // Animate counters with loaded values
+            if (document.getElementById('stat1')) {
+                animateCounter(document.getElementById('stat1'), stats.stat1.value);
+            }
+            if (document.getElementById('stat2')) {
+                animateCounter(document.getElementById('stat2'), stats.stat2.value);
+            }
+            if (document.getElementById('stat3')) {
+                animateCounter(document.getElementById('stat3'), stats.stat3.value);
+            }
+            if (document.getElementById('stat4')) {
+                animateCounter(document.getElementById('stat4'), stats.stat4.value);
+            }
+        } else {
+            // Fallback to default values if API fails
+            console.warn('Failed to load stats from API, using defaults');
+            animateCounter(document.getElementById('stat1'), 11078);
+            animateCounter(document.getElementById('stat2'), 11050);
+            animateCounter(document.getElementById('stat3'), 1956);
+            animateCounter(document.getElementById('stat4'), 79);
+        }
+    } catch (error) {
+        console.error('Error loading stats:', error);
+        // Fallback to default values
+        animateCounter(document.getElementById('stat1'), 11078);
+        animateCounter(document.getElementById('stat2'), 11050);
+        animateCounter(document.getElementById('stat3'), 1956);
+        animateCounter(document.getElementById('stat4'), 79);
+    }
+}
 
 if (statsSection) {
     statsObserver.observe(statsSection);
@@ -227,7 +264,7 @@ if (statsSection) {
 // Contact form handling
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
-    contactForm.addEventListener('submit', event => {
+    contactForm.addEventListener('submit', async event => {
         event.preventDefault();
         
         // Simple form validation
@@ -242,20 +279,37 @@ if (contactForm) {
         }
         
         // Show loading state
-        const submitBtn = document.querySelector('.submit-btn');
+        const submitBtn = contactForm.querySelector('.submit-btn');
         const originalText = submitBtn.innerHTML;
         submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Se trimite...';
         submitBtn.disabled = true;
         
-        // Simulate form submission with delay
-        setTimeout(() => {
-            alert('Mulțumim pentru mesajul dumneavoastră. Vă vom contacta în cel mult 24 de ore.');
-            this.reset();
+        try {
+            // Prepare form data
+            const formData = new FormData(contactForm);
             
+            // Submit form
+            const response = await fetch('handlers/contact-form.php', {
+                method: 'POST',
+                body: formData
+            });
+            
+            const result = await response.json();
+            
+            if (result.success) {
+                alert(result.message);
+                contactForm.reset();
+            } else {
+                alert('Eroare: ' + result.message);
+            }
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            alert('A apărut o eroare la trimiterea mesajului. Vă rugăm să încercați din nou.');
+        } finally {
             // Reset button state
             submitBtn.innerHTML = originalText;
             submitBtn.disabled = false;
-        }, 2000);
+        }
     });
 }
 
@@ -1453,12 +1507,41 @@ document.addEventListener('DOMContentLoaded', function() {
     // Form validation
     const petitionForm = document.getElementById('petitionForm');
     if (petitionForm) {
-        petitionForm.addEventListener('submit', function(e) {
+        petitionForm.addEventListener('submit', async function(e) {
             e.preventDefault();
             
             if (validateForm()) {
-                // Show success message (in a real application, this would submit to server)
-                showSubmissionMessage();
+                // Show loading state
+                const submitBtn = this.querySelector('.submit-btn');
+                const originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Se trimite...';
+                submitBtn.disabled = true;
+                
+                try {
+                    // Prepare form data
+                    const formData = new FormData(this);
+                    
+                    // Submit form
+                    const response = await fetch('handlers/petition-form.php', {
+                        method: 'POST',
+                        body: formData
+                    });
+                    
+                    const result = await response.json();
+                    
+                    if (result.success) {
+                        showSubmissionMessage(result.message);
+                    } else {
+                        showErrorMessage('Eroare: ' + result.message);
+                    }
+                } catch (error) {
+                    console.error('Error submitting petition:', error);
+                    showErrorMessage('A apărut o eroare la trimiterea petiției. Vă rugăm să încercați din nou.');
+                } finally {
+                    // Reset button state
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                }
             }
         });
     }
@@ -1621,17 +1704,22 @@ function showErrorMessage(message) {
     }, 5000);
 }
 
-function showSubmissionMessage() {
-    const message = 'Petiția a fost trimisă cu succes! Veți primi o confirmare pe email în curând.';
+function showSubmissionMessage(customMessage = null) {
+    const message = customMessage || 'Petiția a fost trimisă cu succes! Veți primi o confirmare pe email în curând.';
     const notification = createNotification(message, 'success');
     document.body.appendChild(notification);
     
     // Reset form
-    document.getElementById('petitionForm').reset();
+    const form = document.getElementById('petitionForm');
+    if (form) {
+        form.reset();
+    }
     
     // Hide conditional fields
-    document.getElementById('legalEntityFields').style.display = 'none';
-    document.getElementById('individualFields').style.display = 'none';
+    const legalEntityFields = document.getElementById('legalEntityFields');
+    const individualFields = document.getElementById('individualFields');
+    if (legalEntityFields) legalEntityFields.style.display = 'none';
+    if (individualFields) individualFields.style.display = 'none';
     
     setTimeout(() => {
         notification.remove();
