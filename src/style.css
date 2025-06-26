@@ -745,6 +745,7 @@ body {
     overflow: hidden;
     border-radius: 10px;
     margin-bottom: 1.5rem;
+    position: relative; /* Added for logo overlay positioning */
 }
 
 .service-image img {
@@ -752,6 +753,31 @@ body {
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
+}
+
+/* Logo overlay for service images */
+.service-image::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background-image: url('images/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .service-image::after {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .service-card:hover .service-image img {
