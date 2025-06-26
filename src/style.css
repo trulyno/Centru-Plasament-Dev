@@ -3259,6 +3259,7 @@ html {
     border-radius: 10px;
     overflow: hidden;
     height: 200px;
+    max-width: 360px;
     box-shadow: 0 5px 15px var(--shadow-light);
     transition: transform 0.3s ease;
 }
