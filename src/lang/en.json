@@ -373,6 +373,12 @@
   
   "faq_header_title": "Frequently Asked Questions",
   "faq_header_subtitle": "Answers to the most common questions",
+  "faq_search_placeholder": "Search FAQs...",
+  "faq_all_categories": "All",
+  "faq_category_general": "General",
+  "faq_category_services": "Services",
+  "faq_category_admission": "Admission",
+  "faq_category_support": "Support",
   
   "guides_header_title": "Guides",
   "guides_header_subtitle": "Resources and informational materials",

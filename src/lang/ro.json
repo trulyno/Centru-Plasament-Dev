@@ -373,6 +373,12 @@
   
   "faq_header_title": "Întrebări Frecvente",
   "faq_header_subtitle": "Răspunsuri la întrebările cele mai comune",
+  "faq_search_placeholder": "Caută întrebări...",
+  "faq_all_categories": "Toate",
+  "faq_category_general": "General",
+  "faq_category_services": "Servicii",
+  "faq_category_admission": "Admitere",
+  "faq_category_support": "Suport",
   
   "guides_header_title": "Ghiduri",
   "guides_header_subtitle": "Resurse și materiale informative",
