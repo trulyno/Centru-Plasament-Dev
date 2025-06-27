@@ -1299,48 +1299,63 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Language Selector Functionality
 document.addEventListener('DOMContentLoaded', function() {
-    const languageToggle = document.getElementById('languageToggle');
-    const languageDropdown = document.getElementById('languageDropdown');
-    const languageSelector = document.querySelector('.language-selector');
+    const languageSelectors = document.querySelectorAll('.language-selector');
     
-    if (languageToggle && languageDropdown && languageSelector) {
-        // Toggle language dropdown
-        languageToggle.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            languageSelector.classList.toggle('active');
-        });
+    languageSelectors.forEach(languageSelector => {
+        const languageToggle = languageSelector.querySelector('.language-toggle');
+        const languageDropdown = languageSelector.querySelector('.language-dropdown');
         
-        // Close dropdown when clicking outside
-        document.addEventListener('click', function(e) {
+        if (languageToggle && languageDropdown) {
+            // Toggle language dropdown
+            languageToggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                // Close other open selectors
+                languageSelectors.forEach(otherSelector => {
+                    if (otherSelector !== languageSelector) {
+                        otherSelector.classList.remove('active');
+                    }
+                });
+                
+                languageSelector.classList.toggle('active');
+            });
+            
+            // Handle language option selection
+            const languageOptions = languageDropdown.querySelectorAll('.language-option');
+            languageOptions.forEach(option => {
+                option.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const href = this.getAttribute('href');
+                    if (href) {
+                        // Add a subtle loading effect
+                        this.style.opacity = '0.7';
+                        setTimeout(() => {
+                            window.location.href = href;
+                        }, 150);
+                    }
+                });
+            });
+        }
+    });
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(e) {
+        languageSelectors.forEach(languageSelector => {
             if (!languageSelector.contains(e.target)) {
                 languageSelector.classList.remove('active');
             }
         });
-        
-        // Close dropdown when pressing escape
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
+    });
+    
+    // Close dropdown when pressing escape
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            languageSelectors.forEach(languageSelector => {
                 languageSelector.classList.remove('active');
-            }
-        });
-        
-        // Handle language option selection
-        const languageOptions = languageDropdown.querySelectorAll('.language-option');
-        languageOptions.forEach(option => {
-            option.addEventListener('click', function(e) {
-                e.preventDefault();
-                const href = this.getAttribute('href');
-                if (href) {
-                    // Add a subtle loading effect
-                    this.style.opacity = '0.7';
-                    setTimeout(() => {
-                        window.location.href = href;
-                    }, 150);
-                }
             });
-        });
-    }
+        }
+    });
 });
 
 // Add slide-in animation keyframes via JavaScript (since we can't modify the CSS file structure)

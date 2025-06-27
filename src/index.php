@@ -119,6 +119,9 @@ require_once __DIR__ . '/includes/lang.php';
                 <button class="lyrics-btn" id="lyricsBtn" aria-label="<?php echo t('lyrics_aria'); ?>" title="<?php echo t('lyrics_title'); ?>">
                     <i class="fas fa-align-left"></i>
                 </button>
+                
+                <!-- Mobile Language Selector -->
+                <?php echo getLanguageSelector('index.php'); ?>
             </div>
             <nav>
                 <ul class="nav-menu" id="navMenu">

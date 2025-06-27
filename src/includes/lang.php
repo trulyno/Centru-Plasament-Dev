@@ -87,11 +87,11 @@ function getLanguageSelector($current_page = '') {
     $current_lang = getCurrentLanguage();
     
     $html = '<div class="language-selector">';
-    $html .= '<button class="language-toggle" id="languageToggle" aria-label="' . t('language_switch') . '">';
+    $html .= '<button class="language-toggle" aria-label="' . t('language_switch') . '">';
     $html .= '<span class="current-lang">' . $available_languages[$current_lang]['code'] . '</span>';
     $html .= '<i class="fas fa-chevron-down"></i>';
     $html .= '</button>';
-    $html .= '<div class="language-dropdown" id="languageDropdown">';
+    $html .= '<div class="language-dropdown">';
     
     foreach ($available_languages as $code => $info) {
         $is_current = ($code === $current_lang);
