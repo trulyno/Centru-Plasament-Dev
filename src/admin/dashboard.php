@@ -1,10 +1,31 @@
 <?php
 session_start();
 
+// Security headers
+header('X-Frame-Options: DENY');
+header('X-Content-Type-Options: nosniff');
+header('X-XSS-Protection: 1; mode=block');
+header('Referrer-Policy: strict-origin-when-cross-origin');
+
 // Check if user is logged in
 if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== true) {
     header('Location: login.php');
     exit;
+}
+
+// Verify user data integrity
+$dataDir = __DIR__ . '/../data/';
+$usersFile = $dataDir . 'users.json';
+if (file_exists($usersFile)) {
+    $users = json_decode(file_get_contents($usersFile), true) ?: [];
+    $currentUser = $_SESSION['admin_username'] ?? '';
+    
+    // Check if user still exists and is active
+    if (!isset($users[$currentUser]) || $users[$currentUser]['status'] !== 'active') {
+        session_destroy();
+        header('Location: login.php');
+        exit;
+    }
 }
 
 // Data directory paths
