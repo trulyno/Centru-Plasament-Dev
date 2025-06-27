@@ -1,25 +1,124 @@
 <?php
 session_start();
 
+// Security headers
+header('X-Frame-Options: DENY');
+header('X-Content-Type-Options: nosniff');
+header('X-XSS-Protection: 1; mode=block');
+header('Referrer-Policy: strict-origin-when-cross-origin');
+
 // Check if already logged in
 if (isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true) {
     header('Location: dashboard.php');
     exit;
 }
 
+// User data file
+$dataDir = __DIR__ . '/../data/';
+$usersFile = $dataDir . 'users.json';
+$loginAttemptsFile = $dataDir . 'login_attempts.json';
+
+// Create data directory and files if they don't exist
+if (!is_dir($dataDir)) {
+    mkdir($dataDir, 0755, true);
+}
+
+if (!file_exists($usersFile)) {
+    // Create default admin user with hashed password for "admin123"
+    $defaultUsers = [
+        'admin' => [
+            'username' => 'admin',
+            'password_hash' => password_hash('admin123', PASSWORD_DEFAULT),
+            'created_at' => date('c'),
+            'last_login' => null,
+            'status' => 'active'
+        ]
+    ];
+    file_put_contents($usersFile, json_encode($defaultUsers, JSON_PRETTY_PRINT));
+}
+
+if (!file_exists($loginAttemptsFile)) {
+    file_put_contents($loginAttemptsFile, json_encode([], JSON_PRETTY_PRINT));
+}
+
+// Load users and login attempts
+$users = json_decode(file_get_contents($usersFile), true) ?: [];
+$loginAttempts = json_decode(file_get_contents($loginAttemptsFile), true) ?: [];
+
+// Function to check rate limiting
+function isRateLimited($ip, $attempts, $maxAttempts = 5, $timeWindow = 900) { // 15 minutes
+    $currentTime = time();
+    $recentAttempts = array_filter($attempts, function($attempt) use ($ip, $currentTime, $timeWindow) {
+        return $attempt['ip'] === $ip && ($currentTime - $attempt['timestamp']) < $timeWindow;
+    });
+    return count($recentAttempts) >= $maxAttempts;
+}
+
+// Function to log login attempt
+function logLoginAttempt($ip, $username, $success, &$attempts, $file) {
+    $attempts[] = [
+        'ip' => $ip,
+        'username' => $username,
+        'timestamp' => time(),
+        'success' => $success,
+        'user_agent' => $_SERVER['HTTP_USER_AGENT'] ?? 'Unknown'
+    ];
+    
+    // Keep only last 100 attempts to prevent file from growing too large
+    if (count($attempts) > 100) {
+        $attempts = array_slice($attempts, -100);
+    }
+    
+    file_put_contents($file, json_encode($attempts, JSON_PRETTY_PRINT));
+}
+
+// Generate CSRF token
+if (!isset($_SESSION['csrf_token'])) {
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+}
+
 // Handle login
 if ($_POST['username'] ?? false) {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-    
-    // Simple admin credentials (in production, use hashed passwords)
-    if ($username === 'admin' && $password === 'admin123') {
-        $_SESSION['admin_logged_in'] = true;
-        $_SESSION['admin_username'] = $username;
-        header('Location: dashboard.php');
-        exit;
+    // Verify CSRF token
+    if (!isset($_POST['csrf_token']) || !hash_equals($_SESSION['csrf_token'], $_POST['csrf_token'])) {
+        $error = 'Token de securitate invalid. Încercați din nou.';
     } else {
-        $error = 'Credențiale incorecte!';
+        $username = trim($_POST['username']);
+        $password = $_POST['password'];
+        $userIP = $_SERVER['REMOTE_ADDR'] ?? 'unknown';
+    
+        // Check rate limiting
+        if (isRateLimited($userIP, $loginAttempts)) {
+            $error = 'Prea multe încercări de autentificare. Încercați din nou în 15 minute.';
+        } else {
+            // Verify credentials
+            if (isset($users[$username]) && $users[$username]['status'] === 'active') {
+                if (password_verify($password, $users[$username]['password_hash'])) {
+                    // Successful login
+                    logLoginAttempt($userIP, $username, true, $loginAttempts, $loginAttemptsFile);
+                    
+                    // Update last login time
+                    $users[$username]['last_login'] = date('c');
+                    file_put_contents($usersFile, json_encode($users, JSON_PRETTY_PRINT));
+                    
+                    // Set session variables
+                    $_SESSION['admin_logged_in'] = true;
+                    $_SESSION['admin_username'] = $username;
+                    $_SESSION['admin_user_data'] = $users[$username];
+                    
+                    header('Location: dashboard.php');
+                    exit;
+                } else {
+                    // Invalid password
+                    logLoginAttempt($userIP, $username, false, $loginAttempts, $loginAttemptsFile);
+                    $error = 'Credențiale incorecte!';
+                }
+            } else {
+                // Invalid username or inactive user
+                logLoginAttempt($userIP, $username, false, $loginAttempts, $loginAttemptsFile);
+                $error = 'Credențiale incorecte!';
+            }
+        }
     }
 }
 ?>
@@ -49,6 +148,7 @@ if ($_POST['username'] ?? false) {
             <?php endif; ?>
             
             <form method="POST" class="login-form">
+                <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
                 <div class="form-group">
                     <label for="username">
                         <i class="fas fa-user"></i>

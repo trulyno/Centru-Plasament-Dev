@@ -1,0 +1,9 @@
+{
+    "admin": {
+        "username": "admin",
+        "password_hash": "$2y$10$\/GNzo9\/tCKJ41Xj6gUhaK.TQk.jI0qjClirS94TsQMmS2fl68cPGS",
+        "created_at": "2025-06-26T12:00:00+02:00",
+        "last_login": "2025-06-27T03:39:52+00:00",
+        "status": "active"
+    }
+}
