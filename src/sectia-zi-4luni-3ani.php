@@ -205,7 +205,7 @@ require_once __DIR__ . '/includes/lang.php';
                             <p><?php echo t('day_4m_3y_about_desc'); ?></p>
                         </div>
                         <div class="service-hero-image">
-                            <img src="images/zi10.jpg" alt="Secția Zi 4 luni - 3 ani" loading="lazy">
+                            <img src="images/cresa3.jpg" alt="Secția Zi 4 luni - 3 ani" loading="lazy">
                         </div>
                     </div>
 
@@ -289,39 +289,39 @@ require_once __DIR__ . '/includes/lang.php';
                         <h2><?php echo t('day_4m_3y_gallery_title'); ?></h2>
                         <div class="gallery-grid">
                             <div class="gallery-item">
-                                <img src="images/zi8.jpg" alt="<?php echo t('day_4m_3y_gallery_1_alt'); ?>" loading="lazy">
+                                <img src="images/cresa1.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('day_4m_3y_gallery_1_title'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/zi9.jpg" alt="<?php echo t('day_4m_3y_gallery_2_alt'); ?>" loading="lazy">
+                                <img src="images/cresa2.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('day_4m_3y_gallery_2_title'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/zi10.jpg" alt="Spațiu de Joacă" loading="lazy">
+                                <img src="images/cresa3.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Spațiu de Joacă Sigur</h4>
+                                    <h4></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/zi11.jpg" alt="Îngrijire Individualizată" loading="lazy">
+                                <img src="images/cresa4.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Îngrijire Individualizată</h4>
+                                    <h4></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/zi1.png" alt="Activități Educaționale" loading="lazy">
+                                <img src="images/cresa5.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Activități Educaționale</h4>
+                                    <h4></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/zi2.jpg" alt="Mediu Îngrijitor" loading="lazy">
+                                <img src="images/cresa6.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Mediu Îngrijitor și Sigur</h4>
+                                    <h4></h4>
                                 </div>
                             </div>
                         </div>

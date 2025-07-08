@@ -216,7 +216,7 @@ function staff($name, $position, $image) {
                         <div class="admin-team-grid">
                             <?php
                                 staff('Sergiu Oceretnîi', 'Director', 'director.png');
-                                staff('Bacalu Ana', 'Inspector Resurse Umane', 'Bacalu Ana inspector resurse umane.png');
+                                staff('Bacalu Ana', 'Șef Resurse Umane', 'Bacalu Ana inspector resurse umane.png');
                                 staff('Țvetov Angela', 'Contabil șef', 'Țvetov Angela contabil șef.png');
                                 staff('Mahmadbecov Rodica', 'Contabil', 'Mahmadbecov Rodica contabil.png');
                                 staff('Cojușco Tatiana', 'Contabil', 'Cojușco Tatiana contabil.png');
@@ -234,6 +234,8 @@ function staff($name, $position, $image) {
                                 staff('Capros Marina', 'Șef Secție Criză', 'Capros Marina Sef sectie de Criza.png');
                                 staff('Lungu Ina', 'Asisten Principal', 'Lungu Ina Asis. principal.png');
                                 staff('Manoli Galina', 'Contabil', 'Manoli Galina Contabil.png');
+                                staff('Agapi Livia', 'Medic Reabilitolog', 'Agapi Livia Medic Reabilitolog.png');
+                                staff('Golovcenco Carolina', 'Medic Neuropediatru', 'Golovcenco Carolina- Medic Neouropediatru.png');
 
                             ?>
                         </div>

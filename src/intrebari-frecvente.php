@@ -2,16 +2,24 @@
 // Include language configuration
 require_once __DIR__ . '/includes/lang.php';
 
+// Load FAQs from database
+$faqsFile = __DIR__ . '/data/faqs.json';
+$faqs = [];
+if (file_exists($faqsFile)) {
+    $faqs = json_decode(file_get_contents($faqsFile), true) ?: [];
+}
+
 // FAQ Helper Function
-function faqItem($question, $answer, $category = 'general') {
-    echo '<div class="faq-item" data-category="' . $category . '">
-            <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-' . md5($question) . '">
-                <h3>' . $question . '</h3>
+function faqItem($question, $answer, $category = 'general', $id = null) {
+    $faqId = $id ?: md5($question);
+    echo '<div class="faq-item" data-category="' . $category . '" data-id="' . $faqId . '">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-' . $faqId . '">
+                <h3>' . htmlspecialchars($question) . '</h3>
                 <i class="fas fa-chevron-down"></i>
             </div>
-            <div class="faq-answer" id="faq-answer-' . md5($question) . '" role="region" aria-hidden="true">
+            <div class="faq-answer" id="faq-answer-' . $faqId . '" role="region" aria-hidden="true">
                 <div class="faq-answer-content">
-                    ' . $answer . '
+                    ' . nl2br(htmlspecialchars($answer)) . '
                 </div>
             </div>
           </div>';
@@ -20,7 +28,7 @@ function faqItem($question, $answer, $category = 'general') {
 function faqCategory($title, $icon = 'fas fa-question-circle') {
     echo '<div class="faq-category-header">
             <i class="' . $icon . '"></i>
-            <h2>' . $title . '</h2>
+            <h2>' . htmlspecialchars($title) . '</h2>
           </div>';
 }
 ?>
@@ -238,43 +246,46 @@ function faqCategory($title, $icon = 'fas fa-question-circle') {
 
                     <!-- FAQ Content -->
                     <div class="faq-container">
-                        
-                        <!-- General Questions -->
-                        <?php faqCategory(t('faq_category_general'), 'fas fa-info-circle'); ?>
-                        
-                        <!-- <?php faqItem(
-                            t('faq_what_is_cprcvf_q'),
-                            t('faq_what_is_cprcvf_a'),
-                            'general'
-                        ); ?> -->
+                        <?php
+                        $currentLang = getCurrentLanguage();
+                        $categories = [
+                            'general' => ['title' => t('faq_category_general'), 'icon' => 'fas fa-info-circle'],
+                            'services' => ['title' => t('faq_category_services'), 'icon' => 'fas fa-hands-helping'],
+                            'admission' => ['title' => t('faq_category_admission'), 'icon' => 'fas fa-user-plus'],
+                            'support' => ['title' => t('faq_category_support'), 'icon' => 'fas fa-life-ring']
+                        ];
 
-                        <!-- Services Questions -->
-                        <?php faqCategory(t('faq_category_services'), 'fas fa-hands-helping'); ?>
-
-                        <!-- <?php faqItem(
-                            t('faq_what_services_q'),
-                            t('faq_what_services_a'),
-                            'services'
-                        ); ?> -->
-
-                        <!-- Admission Questions -->
-                        <?php faqCategory(t('faq_category_admission'), 'fas fa-user-plus'); ?>
-
-                        <!-- <?php faqItem(
-                            t('faq_how_to_apply_q'),
-                            t('faq_how_to_apply_a'),
-                            'admission'
-                        ); ?> -->
-
-                        <!-- Support Questions -->
-                        <?php faqCategory(t('faq_category_support'), 'fas fa-life-ring'); ?>
-
-                        <!-- <?php faqItem(
-                            t('faq_emergency_contact_q'),
-                            t('faq_emergency_contact_a'),
-                            'support'
-                        ); ?> -->
-
+                        // Display FAQs by category
+                        foreach ($categories as $categoryKey => $categoryData) {
+                            // Show category header
+                            faqCategory($categoryData['title'], $categoryData['icon']);
+                            
+                            $hasItems = false;
+                            // Show FAQs for this category
+                            foreach ($faqs as $faq) {
+                                if ($faq['category'] === $categoryKey && $faq['status'] === 'active') {
+                                    $question = $faq['question'][$currentLang] ?? $faq['question']['ro'] ?? '';
+                                    $answer = $faq['answer'][$currentLang] ?? $faq['answer']['ro'] ?? '';
+                                    
+                                    if (!empty($question) && !empty($answer)) {
+                                        faqItem($question, $answer, $categoryKey, $faq['id']);
+                                        $hasItems = true;
+                                    }
+                                }
+                            }
+                            
+                            // Show fallback content if no FAQs exist
+                            if (!$hasItems) {
+                                echo '<div class="faq-item no-items" data-category="' . $categoryKey . '">
+                                        <div class="faq-question-placeholder">
+                                            <p style="color: #666; font-style: italic; padding: 1rem;">
+                                                ' . t('content_coming_soon') . '
+                                            </p>
+                                        </div>
+                                      </div>';
+                            }
+                        }
+                        ?>
                     </div>
                 </div>
             </div>

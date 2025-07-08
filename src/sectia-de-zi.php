@@ -203,7 +203,7 @@ require_once __DIR__ . '/includes/lang.php';
                             <p><?php echo t('service_day_desc'); ?></p>
                         </div>
                         <div class="service-hero-image">
-                            <img src="images/zi1.png" alt="<?php echo t('day_header_title'); ?>" loading="lazy">
+                            <img src="images/zi.jpg" alt="<?php echo t('day_header_title'); ?>" loading="lazy">
                         </div>
                     </div>
 
@@ -420,39 +420,39 @@ require_once __DIR__ . '/includes/lang.php';
                         <h2><?php echo t('day_gallery_title'); ?></h2>
                         <div class="gallery-grid">
                             <div class="gallery-item">
-                                <img src="images/zi1.png" alt="<?php echo t('day_gallery_group_activities'); ?>" loading="lazy">
+                                <img src="images/1.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('day_gallery_group_activities'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/zi2.jpg" alt="<?php echo t('day_gallery_individual_therapy'); ?>" loading="lazy">
+                                <img src="images/2.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('day_gallery_individual_therapy'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/zi3.jpg" alt="<?php echo t('day_gallery_medical_professionals'); ?>" loading="lazy">
+                                <img src="images/3.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('day_gallery_medical_professionals'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/zi4.jpg" alt="<?php echo t('day_gallery_caring_staff'); ?>" loading="lazy">
+                                <img src="images/4.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('day_gallery_caring_staff'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/zi5.jpg" alt="<?php echo t('day_gallery_hydrotherapy'); ?>" loading="lazy">
+                                <img src="images/5.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('day_gallery_hydrotherapy'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/zi6.jpg" alt="<?php echo t('day_gallery_specialized_environment'); ?>" loading="lazy">
+                                <img src="images/6.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('day_gallery_specialized_environment'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                         </div>

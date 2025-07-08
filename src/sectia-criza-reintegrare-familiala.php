@@ -203,7 +203,7 @@ require_once __DIR__ . '/includes/lang.php';
                             <p><?php echo t('crisis_family_about_desc'); ?></p>
                         </div>
                         <div class="service-hero-image">
-                            <img src="images/criza.jpg" alt="<?php echo t('services_crisis'); ?>" loading="lazy">
+                            <img src="images/criza2.jpg" alt="<?php echo t('services_crisis'); ?>" loading="lazy">
                         </div>
                     </div>
 
@@ -337,39 +337,39 @@ require_once __DIR__ . '/includes/lang.php';
                         <h2><?php echo t('crisis_family_gallery_title'); ?></h2>
                         <div class="gallery-grid">
                             <div class="gallery-item">
-                                <img src="images/41.jpg" alt="<?php echo t('crisis_family_gallery_1_alt'); ?>" loading="lazy">
+                                <img src="images/criza1.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('crisis_family_gallery_1_title'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/2552.jpg" alt="<?php echo t('crisis_family_gallery_2_alt'); ?>" loading="lazy">
+                                <img src="images/criza2.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('crisis_family_gallery_2_title'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/555555.jpg" alt="<?php echo t('crisis_family_gallery_3_alt'); ?>" loading="lazy">
+                                <img src="images/criza8.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('crisis_family_gallery_3_title'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/criza.jpg" alt="<?php echo t('crisis_family_gallery_4_alt'); ?>" loading="lazy">
+                                <img src="images/criza4.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('crisis_family_gallery_4_title'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/14.jpg" alt="<?php echo t('crisis_family_gallery_5_alt'); ?>" loading="lazy">
+                                <img src="images/criza5.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('crisis_family_gallery_5_title'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/2.jpg" alt="<?php echo t('crisis_family_gallery_6_alt'); ?>" loading="lazy">
+                                <img src="images/criza7.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('crisis_family_gallery_6_title'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                         </div>

@@ -747,6 +747,11 @@
   "vacant_positions_join_team": "Join Our Team!",
   "vacant_positions_intro": "The Placement and Rehabilitation Center for Young Children in Chișinău Municipality is looking for dedicated professionals to join our team. We offer a stimulating work environment and the opportunity to make a real difference in children's lives.",
   "vacant_positions_available": "Available Positions",
+  "vacant_positions_none_available": "We currently have no vacant positions available. Please check back in the future for new opportunities.",
+  "vacant_positions_section": "Department",
+  "vacant_positions_responsibilities": "Responsibilities",
+  "vacant_positions_requirements": "Requirements",
+  "vacant_positions_published": "Published",
   "vacant_positions_no_openings": "We currently have no vacant positions available.",
   "vacant_positions_check_back": "Please check back in the future for new opportunities.",
   "vacant_positions_contact_info": "For questions about career opportunities, please contact us:",
@@ -917,5 +922,15 @@
   "medical_gallery_counseling": "Counseling and Training",
   "medical_gallery_kitchen": "Equipped Kitchen",
   "medical_gallery_training": "Training Room",
-  "medical_gallery_safe_environment": "Safe and Confidential Environment"
+  "medical_gallery_safe_environment": "Safe and Confidential Environment",
+  
+  "faq_search_aria": "Search frequently asked questions",
+  "faq_what_is_cprcvf_q": "What is the Placement and Rehabilitation Center for Young Children?",
+  "faq_what_is_cprcvf_a": "The Placement and Rehabilitation Center for Young Children in Chișinău Municipality is a public social assistance institution that offers specialized services for young children (0-7 years) at risk or with special needs. The center operates under the Agency for Social Services and Inclusion and has as its mission the protection, care and rehabilitation of vulnerable children.",
+  "faq_what_services_q": "What services does the center offer?",
+  "faq_what_services_a": "The center offers multiple specialized services: Crisis and Family Reintegration Section for children in emergency situations, Maternal Section for mothers and children in difficulty, Day Section for children with neuro-motor disabilities, Respiro Section for families with children with special needs, Psycho-Pedagogical Assistance Section, Rehabilitation Section and Medical Assistance Section.",
+  "faq_how_to_apply_q": "How can I request the center's services?",
+  "faq_how_to_apply_a": "To request the center's services, you must contact the Child Protection Directorate in Chișinău Municipality or the local guardianship and custody authorities. They will assess the situation and issue, if necessary, a placement order. You can also contact the center directly at 022 737 027 for consultations.",
+  "faq_emergency_contact_q": "What number can I call in case of emergency?",
+  "faq_emergency_contact_a": "In case of emergency, you can call 022 737 027, which operates 24/7. The center has a non-stop operating regime for crisis situations. You can also contact the Emergency Service for Child Protection or the competent local authorities."
 }

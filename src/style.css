@@ -5112,3 +5112,27 @@ html {
     color: var(--primary-color);
     font-weight: bold;
 }
+
+/* No vacancies message */
+.no-vacancies {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    border: 2px dashed var(--border-light);
+    margin: 2rem 0;
+}
+
+.no-vacancies i {
+    font-size: 3rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.no-vacancies p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    margin: 0;
+    font-style: italic;
+}

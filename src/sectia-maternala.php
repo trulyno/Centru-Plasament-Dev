@@ -203,8 +203,7 @@ require_once __DIR__ . '/includes/lang.php';
                             <p><?php echo t('maternal_about_desc'); ?></p>
                         </div>
                         <div class="service-hero-image">
-                            <img src="images/maternala.jpg" alt="<?php echo t('services_maternal'); ?>" loading="lazy">
-                            <img src="images/maternala3.jpg" alt="Secția Maternală" loading="lazy">
+                            <img src="images/maternala5.jpg" alt="<?php echo t('services_maternal'); ?>" loading="lazy">
                         </div>
                     </div>
 
@@ -288,41 +287,33 @@ require_once __DIR__ . '/includes/lang.php';
                         <h2><?php echo t('maternal_gallery_title'); ?></h2>
                         <div class="gallery-grid">
                             <div class="gallery-item">
-                                <img src="images/maternala1.jpg" alt="<?php echo t('maternal_gallery_1_alt'); ?>" loading="lazy">
-                                <img src="images/sap4.jpg" alt="Camera pentru Mame și Copii" loading="lazy">
+                                <img src="images/maternala1.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('maternal_gallery_1_title'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/maternala2.jpg" alt="<?php echo t('maternal_gallery_2_alt'); ?>" loading="lazy">
-                                <img src="images/sap13.jpg" alt="Spațiu de Joacă" loading="lazy">
+                                <img src="images/maternala2.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('maternal_gallery_2_title'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/maternala3.jpg" alt="<?php echo t('maternal_gallery_3_alt'); ?>" loading="lazy">
+                                <img src="images/maternala3.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('maternal_gallery_3_title'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/maternala4.jpg" alt="<?php echo t('maternal_gallery_4_alt'); ?>" loading="lazy">
+                                <img src="images/maternala4.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('maternal_gallery_4_title'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/maternala5.jpg" alt="<?php echo t('maternal_gallery_5_alt'); ?>" loading="lazy">
+                                <img src="images/maternala5.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('maternal_gallery_5_title'); ?></h4>
-                                </div>
-                            </div>
-                            <div class="gallery-item">
-                                <img src="images/maternala6.jpg" alt="<?php echo t('maternal_gallery_6_alt'); ?>" loading="lazy">
-                                <div class="gallery-overlay">
-                                    <h4><?php echo t('maternal_gallery_6_title'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                         </div>

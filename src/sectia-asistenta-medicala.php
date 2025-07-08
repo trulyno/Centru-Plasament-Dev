@@ -9,7 +9,7 @@ require_once __DIR__ . '/includes/lang.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<?php echo t('services_medical'); ?> oferă sprijin și adăpost mamelor și copiilor aflați în dificultate, dezvoltând abilitățile parentale și susținând relațiile familiale.">
     <meta name="keywords" content="asistență medicală, mame singure, mame minore, gravide, violență domestică, sprijin familial">
-    <meta name="author" content="Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă">
+    <meta name="author" content="Centrul de Plasament și Reabilitare pentru Copii de Vârstă Fragedă">
     
     <title><?php echo t('medical_page_title'); ?></title>
     <link rel="icon" href="images/logo.ico" type="image/x-icon" />
@@ -287,39 +287,39 @@ require_once __DIR__ . '/includes/lang.php';
                         <h2><?php echo t('medical_gallery_title'); ?></h2>
                         <div class="gallery-grid">
                             <div class="gallery-item">
-                                <img src="images/maternala1.jpg" alt="Camera pentru Mame și Copii" loading="lazy">
+                                <img src="" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('medical_gallery_comfortable_rooms'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/maternala2.jpg" alt="Spațiu de Joacă" loading="lazy">
+                                <img src="" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('medical_gallery_playroom'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/maternala3.jpg" alt="Consiliere Parentală" loading="lazy">
+                                <img src="" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('medical_gallery_counseling'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/maternala4.jpg" alt="Bucătărie Utilată" loading="lazy">
+                                <img src="" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('medical_gallery_kitchen'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/maternala5.jpg" alt="Sala de Instruire" loading="lazy">
+                                <img src="" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('medical_gallery_training'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/maternala6.jpg" alt="Mediu Sigur și Confidențial" loading="lazy">
+                                <img src="" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('medical_gallery_safe_environment'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                         </div>

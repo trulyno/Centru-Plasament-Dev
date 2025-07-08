@@ -206,32 +206,49 @@ require_once __DIR__ . '/includes/lang.php';
                     <div class="job-section">
                         <h3><i class="fas fa-briefcase"></i> <?php echo t('vacant_positions_available'); ?></h3>
                         
-                        <!-- <div class="job-card">
-                            <div class="job-header">
-                                <h4>Exemplu Pozitie</h4>
-                                <span class="job-type">Normă întreagă</span>
+                        <?php
+                        // Load vacancies from data file
+                        $vacanciesFile = __DIR__ . '/data/vacancies.json';
+                        $vacancies = [];
+                        if (file_exists($vacanciesFile)) {
+                            $vacancies = json_decode(file_get_contents($vacanciesFile), true) ?: [];
+                            // Filter only active vacancies
+                            $vacancies = array_filter($vacancies, fn($v) => $v['status'] === 'active');
+                        }
+                        
+                        if (empty($vacancies)): ?>
+                            <div class="no-vacancies">
+                                <i class="fas fa-info-circle"></i>
+                                <p><?php echo t('vacant_positions_none_available'); ?></p>
                             </div>
-                            <div class="job-details">
-                                <p><strong>Sectie:</strong> Exemplu Sectie</p>
-                                <p><strong>Responsabilități:</strong></p>
-                                <ul>
-                                    <li>Responsabilitate 1</li>
-                                    <li>Responsabilitate 2</li>
-                                    <li>Responsabilitate 3</li>
-                                    <li>Responsabilitate 4</li>
-                                </ul>
-                                <p><strong>Cerințe:</strong></p>
-                                <ul>
-                                    <li>Cerinta 1</li>
-                                    <li>Cerinta 2</li>
-                                    <li>Cerinta 3</li>
-                                    <li>Cerinta 4</li>
-                                </ul>
-                                <div class="job-actions">
-                                    <span class="job-date">Publicat: 23 iunie 2025</span>
+                        <?php else: ?>
+                            <?php foreach ($vacancies as $vacancy): ?>
+                                <div class="job-card">
+                                    <div class="job-header">
+                                        <h4><?php echo htmlspecialchars($vacancy['title']); ?></h4>
+                                        <span class="job-type"><?php echo htmlspecialchars($vacancy['type']); ?></span>
+                                    </div>
+                                    <div class="job-details">
+                                        <p><strong><?php echo t('vacant_positions_section'); ?>:</strong> <?php echo htmlspecialchars($vacancy['section']); ?></p>
+                                        <p><strong><?php echo t('vacant_positions_responsibilities'); ?>:</strong></p>
+                                        <ul>
+                                            <?php foreach ($vacancy['responsibilities'] as $responsibility): ?>
+                                                <li><?php echo htmlspecialchars($responsibility); ?></li>
+                                            <?php endforeach; ?>
+                                        </ul>
+                                        <p><strong><?php echo t('vacant_positions_requirements'); ?>:</strong></p>
+                                        <ul>
+                                            <?php foreach ($vacancy['requirements'] as $requirement): ?>
+                                                <li><?php echo htmlspecialchars($requirement); ?></li>
+                                            <?php endforeach; ?>
+                                        </ul>
+                                        <div class="job-actions">
+                                            <span class="job-date"><?php echo t('vacant_positions_published'); ?>: <?php echo date('d F Y', strtotime($vacancy['created_at'])); ?></span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div> -->
+                            <?php endforeach; ?>
+                        <?php endif; ?>
 
                     </div>
 

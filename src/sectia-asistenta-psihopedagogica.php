@@ -203,7 +203,7 @@ require_once __DIR__ . '/includes/lang.php';
                             <p><?php echo t('psycho_about_desc'); ?></p>
                         </div>
                         <div class="service-hero-image">
-                            <img src="images/sap1.jpg" alt="Activități psihopedagogice - <?php echo t('services_psycho_pedagogical'); ?>" loading="lazy">
+                            <img src="images/sap4.jpg" alt="<?php echo t('services_psycho_pedagogical'); ?>" loading="lazy">
                         </div>
                     </div>
 
@@ -287,39 +287,39 @@ require_once __DIR__ . '/includes/lang.php';
                         <h2><?php echo t('psycho_gallery_title'); ?></h2>
                         <div class="gallery-grid">
                             <div class="gallery-item">
-                                <img src="images/sap2.jpg" alt="<?php echo t('psycho_gallery_relaxation_title'); ?>" loading="lazy">
+                                <img src="images/sap2.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('psycho_gallery_relaxation_title'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/sap3.jpg" alt="<?php echo t('psycho_gallery_festival_title'); ?>" loading="lazy">
+                                <img src="images/sap3.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('psycho_gallery_festival_title'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/sap4.jpg" alt="<?php echo t('psycho_gallery_educational_title'); ?>" loading="lazy">
+                                <img src="images/sap4.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('psycho_gallery_educational_title'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/sap5.jpg" alt="<?php echo t('psycho_gallery_practical_title'); ?>" loading="lazy">
+                                <img src="images/sap5.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('psycho_gallery_practical_title'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/404.jpg" alt="<?php echo t('psycho_gallery_occupational_title'); ?>" loading="lazy">
+                                <img src="images/404.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('psycho_gallery_occupational_title'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/sap7.jpg" alt="<?php echo t('psycho_gallery_art_title'); ?>" loading="lazy">
+                                <img src="images/sap7.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('psycho_gallery_art_title'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                         </div>

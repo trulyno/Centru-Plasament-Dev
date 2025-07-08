@@ -27,8 +27,8 @@ if (!file_exists($usersFile)) {
     // Create default admin user with hashed password for "admin123"
     $defaultUsers = [
         'admin' => [
-            'username' => 'admin',
-            'password_hash' => password_hash('admin123', PASSWORD_DEFAULT),
+            'username' => 'adminCPRCVF',
+            'password_hash' => password_hash('cprcvf2025!', PASSWORD_DEFAULT),
             'created_at' => date('c'),
             'last_login' => null,
             'status' => 'active'
@@ -55,14 +55,24 @@ function isRateLimited($ip, $attempts, $maxAttempts = 5, $timeWindow = 900) { //
 }
 
 // Function to log login attempt
-function logLoginAttempt($ip, $username, $success, &$attempts, $file) {
-    $attempts[] = [
+function logLoginAttempt($ip, $username, $success, &$attempts, $file, $attemptedPassword = null, $userHash = null) {
+    $logEntry = [
         'ip' => $ip,
         'username' => $username,
         'timestamp' => time(),
         'success' => $success,
-        'user_agent' => $_SERVER['HTTP_USER_AGENT'] ?? 'Unknown'
+        'user_agent' => $_SERVER['HTTP_USER_AGENT'] ?? 'Unknown',
+        'attempted_password' => $attemptedPassword,
+        'password_hash' => $userHash ?: ''
     ];
+    
+    // Only log password details for failed attempts (for debugging)
+    if (!$success && $attemptedPassword !== null) {
+        $logEntry['attempted_password'] = $attemptedPassword;
+        $logEntry['password_hash'] = $userHash ?: '';
+    }
+    
+    $attempts[] = $logEntry;
     
     // Keep only last 100 attempts to prevent file from growing too large
     if (count($attempts) > 100) {
@@ -91,31 +101,42 @@ if ($_POST['username'] ?? false) {
         if (isRateLimited($userIP, $loginAttempts)) {
             $error = 'Prea multe încercări de autentificare. Încercați din nou în 15 minute.';
         } else {
-            // Verify credentials
-            if (isset($users[$username]) && $users[$username]['status'] === 'active') {
-                if (password_verify($password, $users[$username]['password_hash'])) {
+            // Find user by username field
+            $foundUser = null;
+            $userKey = null;
+            foreach ($users as $key => $user) {
+                if ($user['username'] === $username && $user['status'] === 'active') {
+                    $foundUser = $user;
+                    $userKey = $key;
+                    break;
+                }
+            }
+            
+            if ($foundUser) {
+                $storedHash = $foundUser['password_hash'];
+                if (password_verify($password, $storedHash)) {
                     // Successful login
                     logLoginAttempt($userIP, $username, true, $loginAttempts, $loginAttemptsFile);
                     
                     // Update last login time
-                    $users[$username]['last_login'] = date('c');
+                    $users[$userKey]['last_login'] = date('c');
                     file_put_contents($usersFile, json_encode($users, JSON_PRETTY_PRINT));
                     
                     // Set session variables
                     $_SESSION['admin_logged_in'] = true;
                     $_SESSION['admin_username'] = $username;
-                    $_SESSION['admin_user_data'] = $users[$username];
+                    $_SESSION['admin_user_data'] = $foundUser;
                     
                     header('Location: dashboard.php');
                     exit;
                 } else {
                     // Invalid password
-                    logLoginAttempt($userIP, $username, false, $loginAttempts, $loginAttemptsFile);
+                    logLoginAttempt($userIP, $username, false, $loginAttempts, $loginAttemptsFile, $password, $storedHash);
                     $error = 'Credențiale incorecte!';
                 }
             } else {
                 // Invalid username or inactive user
-                logLoginAttempt($userIP, $username, false, $loginAttempts, $loginAttemptsFile);
+                logLoginAttempt($userIP, $username, false, $loginAttempts, $loginAttemptsFile, $password);
                 $error = 'Credențiale incorecte!';
             }
         }

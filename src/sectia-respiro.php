@@ -287,39 +287,39 @@ require_once __DIR__ . '/includes/lang.php';
                         <h2><?php echo t('respiro_gallery_title'); ?></h2>
                         <div class="gallery-grid">
                             <div class="gallery-item">
-                                <img src="images/zi10.jpg" alt="Activități Zilnice" loading="lazy">
+                                <img src="images/zi10.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('respiro_gallery_1_title'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/respiro2.jpg" alt="<?php echo t('respiro_gallery_2_alt'); ?>" loading="lazy">
+                                <img src="images/respiro2.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('respiro_gallery_2_title'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/respiro3.jpg" alt="<?php echo t('respiro_gallery_3_alt'); ?>" loading="lazy">
+                                <img src="images/respiro3.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('respiro_gallery_3_title'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/respiro4.jpg" alt="<?php echo t('respiro_gallery_4_alt'); ?>" loading="lazy">
+                                <img src="images/respiro4.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('respiro_gallery_4_title'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/respiro5.jpg" alt="<?php echo t('respiro_gallery_5_alt'); ?>" loading="lazy">
+                                <img src="images/respiro5.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('respiro_gallery_5_title'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/respiro6.jpg" alt="<?php echo t('respiro_gallery_6_alt'); ?>" loading="lazy">
+                                <img src="images/respiro6.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4><?php echo t('respiro_gallery_6_title'); ?></h4>
+                                    <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                         </div>

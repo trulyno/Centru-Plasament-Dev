@@ -267,28 +267,28 @@ require_once __DIR__ . '/includes/lang.php';
             <div class="services-grid">
                 <a href="sectia-criza-reintegrare-familiala.php" class="service-card fade-in">
                     <div class="service-image">
-                        <img src="images/criza.jpg" alt="<?php echo t('services_crisis'); ?>" loading="lazy">
+                        <img src="images/criza2.jpg" alt="<?php echo t('services_crisis'); ?>" loading="lazy">
                     </div>
                     <h3><?php echo t('services_crisis'); ?></h3>
                     <p><?php echo t('service_crisis_desc'); ?></p>
                 </a>
                 <a href="sectia-maternala.php" class="service-card fade-in">
                     <div class="service-image">
-                        <img src="images/maternala2.jpg" alt="<?php echo t('services_maternal'); ?>" loading="lazy">
+                        <img src="images/maternala5.jpg" alt="<?php echo t('services_maternal'); ?>" loading="lazy">
                     </div>
                     <h3><?php echo t('services_maternal'); ?></h3>
                     <p><?php echo t('service_maternal_desc'); ?></p>
                 </a>
                 <a href="sectia-zi-4luni-3ani.php" class="service-card fade-in">
                     <div class="service-image">
-                        <img src="images/zi7.jpg" alt="<?php echo t('services_day_4m_3y'); ?>" loading="lazy">
+                        <img src="images/cresa3.jpg" alt="<?php echo t('services_day_4m_3y'); ?>" loading="lazy">
                     </div>
                     <h3><?php echo t('services_day_4m_3y'); ?></h3>
                     <p><?php echo t('service_day_4m_3y_desc'); ?></p>
                 </a>
                 <a href="sectia-de-zi.php" class="service-card fade-in">
                     <div class="service-image">
-                        <img src="images/zi1.png" alt="<?php echo t('services_day'); ?>" loading="lazy">
+                        <img src="images/zi.jpg" alt="<?php echo t('services_day'); ?>" loading="lazy">
                     </div>
                     <h3><?php echo t('services_day'); ?></h3>
                     <p><?php echo t('service_day_desc'); ?></p>
@@ -302,17 +302,24 @@ require_once __DIR__ . '/includes/lang.php';
                 </a>
                 <a href="sectia-asistenta-psihopedagogica.php" class="service-card fade-in">
                     <div class="service-image">
-                        <img src="images/sap1.jpg" alt="<?php echo t('services_psycho_pedagogical'); ?>" loading="lazy">
+                        <img src="images/sap4.jpg" alt="<?php echo t('services_psycho_pedagogical'); ?>" loading="lazy">
                     </div>
                     <h3><?php echo t('services_psycho_pedagogical'); ?></h3>
                     <p><?php echo t('service_psycho_desc'); ?></p>
                 </a>
                 <a href="sectia-reabilitare.php" class="service-card fade-in">
                     <div class="service-image">
-                        <img src="images/masaj.jpg" alt="<?php echo t('services_rehabilitation'); ?>" loading="lazy">
+                        <img src="" alt="<?php echo t('services_rehabilitation'); ?>" loading="lazy">
                     </div>
                     <h3><?php echo t('services_rehabilitation'); ?></h3>
                     <p><?php echo t('service_rehabilitation_desc'); ?></p>
+                </a>
+                <a href="sectia-asistenta-medicala.php" class="service-card fade-in">
+                    <div class="service-image">
+                        <img src="" alt="<?php echo t('services_medical'); ?>" loading="lazy">
+                    </div>
+                    <h3><?php echo t('medical_about_title'); ?></h3>
+                    <p><?php echo t('medical_about_desc'); ?></p>
                 </a>
             </div>
         </div>
@@ -328,11 +335,11 @@ require_once __DIR__ . '/includes/lang.php';
                 </div>
                 <div class="stat-item fade-in">
                     <h3 id="stat2">0</h3>
-                    <p>Externați cu Succes</p>
+                    <p><?php echo t('stats_reunifications'); ?></p>
                 </div>
                 <div class="stat-item fade-in">
                     <h3 id="stat3">0</h3>
-                    <p>Copii Încredințați spre Adopție</p>
+                    <p><?php echo t('stats_adoptions'); ?></p>
                 </div>
                 <div class="stat-item fade-in">
                     <h3 id="stat4">0</h3>
@@ -351,7 +358,7 @@ require_once __DIR__ . '/includes/lang.php';
             <!-- Gallery Slideshow -->
             <div class="gallery-slideshow">
                 <div class="gallery-slide active">
-                    <img src="images/respiro3.jpg" alt="<?php echo t('gallery_playroom_desc'); ?>" loading="lazy">
+                    <img src="images/cresa3.jpg" alt="<?php echo t('gallery_playroom_desc'); ?>" loading="lazy">
                     <div class="gallery-slide-content">
                         <h3><?php echo t('gallery_playroom_title'); ?></h3>
                         <p><?php echo t('gallery_playroom_desc'); ?></p>
@@ -365,21 +372,21 @@ require_once __DIR__ . '/includes/lang.php';
                     </div>
                 </div>
                 <div class="gallery-slide">
-                    <img src="images/zi6.jpg" alt="<?php echo t('gallery_educational_desc'); ?>" loading="lazy">
+                    <img src="images/6.jpg" alt="<?php echo t('gallery_educational_desc'); ?>" loading="lazy">
                     <div class="gallery-slide-content">
                         <h3><?php echo t('gallery_educational_title'); ?></h3>
                         <p><?php echo t('gallery_educational_desc'); ?></p>
                     </div>
                 </div>
                 <div class="gallery-slide">
-                    <img src="images/maternala2.jpg" alt="<?php echo t('gallery_garden_desc'); ?>" loading="lazy">
+                    <img src="images/585.jpg" alt="<?php echo t('gallery_events_desc'); ?>" loading="lazy">
                     <div class="gallery-slide-content">
-                        <h3><?php echo t('gallery_garden_title'); ?></h3>
-                        <p><?php echo t('gallery_garden_desc'); ?></p>
+                        <h3><?php echo t('gallery_events_title'); ?></h3>
+                        <p><?php echo t('gallery_events_desc'); ?></p>
                     </div>
                 </div>
                 <div class="gallery-slide">
-                    <img src="images/maternala5.jpg" alt="<?php echo t('gallery_events_desc'); ?>" loading="lazy">
+                    <video src="videos/video5363927670348345826.mp4" alt="Eveniment" loading="lazy" muted autoplay>
                     <div class="gallery-slide-content">
                         <h3><?php echo t('gallery_events_title'); ?></h3>
                         <p><?php echo t('gallery_events_desc'); ?></p>

@@ -9,7 +9,7 @@ require_once __DIR__ . '/includes/lang.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<?php echo t('services_rehabilitation'); ?> oferă tratament și programe de reabilitare copiilor din instituție, în special celor cu dizabilități motorii, comportamentale, intelectuale sau de vorbire.">
     <meta name="keywords" content="reabilitare copii, terapie, masaj, kinetoterapie, fizioterapie">
-    <meta name="author" content="Centrul de Plasament și Reabilitare pentru Copiii de Vârstă Fragedă">
+    <meta name="author" content="Centrul de Plasament și Reabilitare pentru Copii de Vârstă Fragedă">
     
     <title><?php echo t('rehabilitation_page_title'); ?></title>
     <link rel="icon" href="images/logo.ico" type="image/x-icon" />
@@ -203,7 +203,7 @@ require_once __DIR__ . '/includes/lang.php';
                             <p><?php echo t('services_rehabilitation'); ?> oferă tratament și programe de reabilitare copiilor din instituție, în special celor cu dizabilități motorii, comportamentale, intelectuale sau de vorbire. Copiii primesc un program individualizat, beneficiind de terapie, masaj, kinetoterapie și proceduri fizioterapeutice realizate de personal calificat, în spații special amenajate.</p>
                         </div>
                         <div class="service-hero-image">
-                            <img src="images/respiro3.jpg" alt="Secția Reabilitare" loading="lazy">
+                            <img src="" alt="Secția Reabilitare" loading="lazy">
                         </div>
                     </div>
 
@@ -287,39 +287,39 @@ require_once __DIR__ . '/includes/lang.php';
                         <h2>Spațiile Noastre</h2>
                         <div class="gallery-grid">
                             <div class="gallery-item">
-                                <img src="images/z21.jpg" alt="Sala de Kinetoterapie" loading="lazy">
+                                <img src="" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Sala de Kinetoterapie</h4>
+                                    <h4></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/21.jpg" alt="Camera de Masaj" loading="lazy">
+                                <img src="" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Camera de Masaj</h4>
+                                    <h4></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/35.jpg" alt="Proceduri Fizioterapeutice" loading="lazy">
+                                <img src="" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Proceduri Fizioterapeutice</h4>
+                                    <h4></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/terapie_senzoriala.jpg" alt="Terapie Senzorială" loading="lazy">
+                                <img src="images/terapie_senzoriala.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Terapie Senzorială</h4>
+                                    <h4></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/hidroterapia.jpg" alt="Hidroterapie" loading="lazy">
+                                <img src="images/hidroterapia.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Hidroterapie</h4>
+                                    <h4></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/hidrokinetoterapie.jpg" alt="Hidrokinetoterapie" loading="lazy">
+                                <img src="images/hidrokinetoterapie.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
-                                    <h4>Hidrokinetoterapie</h4>
+                                    <h4></h4>
                                 </div>
                             </div>
                         </div>
