@@ -418,79 +418,64 @@ require_once __DIR__ . '/includes/lang.php';
         <div class="container">
             <h2 class="section-title fade-in"><?php echo t('partners_section_title'); ?></h2>
             <p class="section-subtitle fade-in"><?php echo t('partners_section_subtitle'); ?></p>
-            <div class="partners-grid">
-                <a href="https://social.gov.md/" target="_blank" class="partner-card fade-in">
-                    <div class="partner-image">
+            <div class="partners-slider">
+                <div class="partners-track">
+                    <a href="https://social.gov.md/" target="_blank" class="partner-slide">
                         <img src="images/logo-mps.webp" alt="MMPS" loading="lazy">
-                    </div>
-                    <div class="partner-content">
-                        <h3>Ministerul Muncii și Protecţiei Sociale</h3>
-                    </div>
-                </a>
-                <a href="https://agssi.md/" target="_blank" class="partner-card fade-in">
-                    <div class="partner-image">
+                    </a>
+                    <a href="https://agssi.md/" target="_blank" class="partner-slide">
                         <img src="images/logo-mps.webp" alt="AGSSI" loading="lazy">
-                    </div>
-                    <div class="partner-content">
-                        <h3>Agenția pentru Gestionarea Serviciilor cu Specializare Înaltă</h3>
-                    </div>
-                </a>
-                <a href="https://ms.gov.md//" target="_blank" class="partner-card fade-in">
-                    <div class="partner-image">
+                    </a>
+                    <a href="https://ms.gov.md//" target="_blank" class="partner-slide">
                         <img src="https://ms.gov.md/wp-content/uploads/2023/03/ministerul-s%C4%83n%C4%83t%C4%83%C8%9Bii-monocrom.png" alt="MSGOV" loading="lazy">
-                    </div>
-                    <div class="partner-content">
-                        <h3>Ministerul Sănătății al Republicii Moldova</h3>
-                    </div>
-                </a>
-                <a href="https://mec.gov.md/" target="_blank" class="partner-card fade-in">
-                    <div class="partner-image">
+                    </a>
+                    <a href="https://mec.gov.md/" target="_blank" class="partner-slide">
                         <img src="https://dgpdc.md/wp-content/uploads/2023/07/11.png" alt="Ministerul Educatiei și Cercetarii" loading="lazy">
-                    </div>
-                    <div class="partner-content">
-                        <h3>Ministerul Educației și Cercetării</h3>
-                    </div>
-                </a>
-                <a href="https://www.unicef.org/moldova/" target="_blank" class="partner-card fade-in">
-                    <div class="partner-image">
+                    </a>
+                    <a href="https://www.unicef.org/moldova/" target="_blank" class="partner-slide">
                         <img src="https://dgpdc.md/wp-content/uploads/2023/07/DGETS-1.png" alt="UNICEF Moldova" loading="lazy">
-                    </div>
-                    <div class="partner-content">
-                        <h3>UNICEF Moldova</h3>
-                    </div>
-                </a>
-                <a href="https://cpam.md/" target="_blank" class="partner-card fade-in">
-                    <div class="partner-image">
+                    </a>
+                    <a href="https://cpam.md/" target="_blank" class="partner-slide">
                         <img src="https://cpam.md/wp-content/uploads/2018/06/777-2-1-2-1-1-2.png" alt="CPAM" loading="lazy">
-                    </div>
-                    <div class="partner-content">
-                        <h3>Colegiul "Alexei Mateevici"</h3>
-                    </div>
-                </a>
-                <a href="https://usm.md/" target="_blank" class="partner-card fade-in">
-                    <div class="partner-image">
+                    </a>
+                    <a href="https://usm.md/" target="_blank" class="partner-slide">
                         <img src="https://usm.md/wp-content/uploads/Logo_USM-221x300.png" alt="USM" loading="lazy">
-                    </div>
-                    <div class="partner-content">
-                        <h3>Universitatea de Stat din Moldova</h3>
-                    </div>
-                </a>
-                <a href="files/CCF.pdf" target="_blank" class="partner-card fade-in">
-                    <div class="partner-image">
+                    </a>
+                    <a href="files/CCF.pdf" target="_blank" class="partner-slide">
                         <img src="images/CCF Moldova.png" alt="CCF Moldova" loading="lazy">
-                    </div>
-                    <div class="partner-content">
-                        <h3>CCF Moldova</h3>
-                    </div>
-                </a>
-                <a href="files/Memorandum MMPS - OGI .pdf" target="_blank" class="partner-card fade-in">
-                    <div class="partner-image">
+                    </a>
+                    <a href="files/Memorandum MMPS - OGI .pdf" target="_blank" class="partner-slide">
                         <img src="images/ogi.png" alt="OGI Moldova" loading="lazy">
-                    </div>
-                    <div class="partner-content">
-                        <h3>OGI Moldova</h3>
-                    </div>
-                </a>
+                    </a>
+                    <!-- Duplicate slides for seamless loop -->
+                    <a href="https://social.gov.md/" target="_blank" class="partner-slide">
+                        <img src="images/logo-mps.webp" alt="MMPS" loading="lazy">
+                    </a>
+                    <a href="https://agssi.md/" target="_blank" class="partner-slide">
+                        <img src="images/logo-mps.webp" alt="AGSSI" loading="lazy">
+                    </a>
+                    <a href="https://ms.gov.md//" target="_blank" class="partner-slide">
+                        <img src="https://ms.gov.md/wp-content/uploads/2023/03/ministerul-s%C4%83n%C4%83t%C4%83%C8%9Bii-monocrom.png" alt="MSGOV" loading="lazy">
+                    </a>
+                    <a href="https://mec.gov.md/" target="_blank" class="partner-slide">
+                        <img src="https://dgpdc.md/wp-content/uploads/2023/07/11.png" alt="Ministerul Educatiei și Cercetarii" loading="lazy">
+                    </a>
+                    <a href="https://www.unicef.org/moldova/" target="_blank" class="partner-slide">
+                        <img src="https://dgpdc.md/wp-content/uploads/2023/07/DGETS-1.png" alt="UNICEF Moldova" loading="lazy">
+                    </a>
+                    <a href="https://cpam.md/" target="_blank" class="partner-slide">
+                        <img src="https://cpam.md/wp-content/uploads/2018/06/777-2-1-2-1-1-2.png" alt="CPAM" loading="lazy">
+                    </a>
+                    <a href="https://usm.md/" target="_blank" class="partner-slide">
+                        <img src="https://usm.md/wp-content/uploads/Logo_USM-221x300.png" alt="USM" loading="lazy">
+                    </a>
+                    <a href="files/CCF.pdf" target="_blank" class="partner-slide">
+                        <img src="images/CCF Moldova.png" alt="CCF Moldova" loading="lazy">
+                    </a>
+                    <a href="files/Memorandum MMPS - OGI .pdf" target="_blank" class="partner-slide">
+                        <img src="images/ogi.png" alt="OGI Moldova" loading="lazy">
+                    </a>
+                </div>
             </div>
         </div>
     </section>
