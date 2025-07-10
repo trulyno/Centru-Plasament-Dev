@@ -647,7 +647,7 @@ body {
 
 /* Container */
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 2rem;
     width: 100%;
@@ -661,14 +661,14 @@ body {
 }
 
 .section-title {
-    text-align: center;
+    text-align: justify;
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: var(--text-dark);
 }
 
 .section-subtitle {
-    text-align: center;
+    text-align: justify;
     font-size: 1.1rem;
     color: var(--text-secondary);
     margin-bottom: 3rem;
@@ -685,7 +685,7 @@ body {
     background: var(--bg-primary);
     padding: 2rem;
     border-radius: 15px;
-    text-align: center;
+    text-align: justify;
     box-shadow: 0 5px 15px var(--shadow-light);
     transition: transform 0.3s, box-shadow 0.3s;
     position: relative;
@@ -862,7 +862,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
-    text-align: center;
+    text-align: justify;
 }
 
 .stat-item h3 {
@@ -996,7 +996,7 @@ body {
     opacity: 0.9;
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
-    text-align: center;
+    text-align: justify;
     line-height: 60px;
 }
 
@@ -1576,7 +1576,7 @@ body {
     background: var(--bg-dark);
     color: var(--text-white);
     padding: 2rem 0;
-    text-align: center;
+    text-align: justify;
 }
 
 /* Subpage Styles */
@@ -1588,7 +1588,7 @@ body {
     background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
     color: white;
     padding: 4rem 0 2rem;
-    text-align: center;
+    text-align: justify;
 }
 
 .page-header h1 {
@@ -1719,6 +1719,7 @@ body {
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     position: relative;
+    margin-right: 2rem;
 }
 
 .slide-image img {
@@ -1814,7 +1815,7 @@ body {
 
 .program-info {
     flex: 1;
-    text-align: left;
+    text-align: justify;
 }
 
 .program-icon {
@@ -1892,7 +1893,7 @@ body {
 @media (max-width: 930px) {
     .program-content {
         flex-direction: column;
-        text-align: center;
+        text-align: justify;
         gap: 2rem;
     }
     
@@ -1905,7 +1906,7 @@ body {
     }
     
     .program-info {
-        text-align: center;
+        text-align: justify;
     }
     
     .program-icon {
@@ -1969,7 +1970,7 @@ body {
 }
 
 .testimonial-content {
-    text-align: center;
+    text-align: justify;
     max-width: 800px;
     margin: 0 auto;
     padding: 0 2rem;
@@ -2634,7 +2635,7 @@ body:not(.index-page) .loading-overlay {
 
     .slide-content {
         flex-direction: column;
-        text-align: center;
+        text-align: justify;
         gap: 1.5rem;
         padding: 0 1rem;
         max-width: 100%;
@@ -2656,7 +2657,7 @@ body:not(.index-page) .loading-overlay {
         overflow-wrap: break-word;
         max-width: 100%;
         hyphens: auto;
-        text-align: center;
+        text-align: justify;
     }
 
     .slide-content p {
@@ -2666,7 +2667,7 @@ body:not(.index-page) .loading-overlay {
         overflow-wrap: break-word;
         max-width: 100%;
         hyphens: auto;
-        text-align: center;
+        text-align: justify;
     }
     
     .slide-image {
@@ -2676,6 +2677,7 @@ body:not(.index-page) .loading-overlay {
         width: 100%;
         order: 1; /* Place image above content on mobile */
         margin-bottom: 1rem;
+        margin-right: 0; /* Remove right margin on mobile */
     }
 
     .slide-image img {
@@ -2691,7 +2693,7 @@ body:not(.index-page) .loading-overlay {
         display: inline-block;
         white-space: normal;
         max-width: 90%;
-        text-align: center;
+        text-align: justify;
         word-wrap: break-word;
         overflow-wrap: break-word;
         hyphens: auto;
@@ -2785,7 +2787,7 @@ body:not(.index-page) .loading-overlay {
     }
     
     .container h2 {
-        text-align: center;
+        text-align: justify;
     }
 }
 
@@ -2957,7 +2959,7 @@ html {
     
     .slide-content {
         flex-direction: row;
-        text-align: left;
+        text-align: justify;
         gap: 4rem;
         order: initial;
     }
@@ -2972,6 +2974,7 @@ html {
         height: 350px;
         order: initial;
         margin-bottom: 0;
+        margin-right: 2rem;
     }
 }
 
@@ -3065,7 +3068,7 @@ html {
 }
 
 .gallery-cta {
-    text-align: center;
+    text-align: justify;
     margin-top: 3rem;
 }
 
@@ -3331,7 +3334,7 @@ html {
 }
 
 .info-card {
-    text-align: center;
+    text-align: justify;
     padding: 2rem 1.5rem;
     background: var(--bg-secondary);
     border-radius: 10px;
@@ -3523,7 +3526,7 @@ html {
     background: var(--bg-primary);
     border-radius: 15px;
     box-shadow: 0 5px 15px var(--shadow-light);
-    text-align: center;
+    text-align: justify;
     transition: all 0.3s ease;
 }
 
@@ -3559,7 +3562,7 @@ html {
 .group-card ul {
     list-style: none;
     padding: 0;
-    text-align: left;
+    text-align: justify;
 }
 
 .group-card li {
@@ -3586,7 +3589,7 @@ html {
 }
 
 .beneficiary-card {
-    text-align: center;
+    text-align: justify;
     padding: 2rem 1.5rem;
     background: var(--bg-primary);
     border-radius: 15px;
@@ -3698,7 +3701,7 @@ html {
     color: var(--primary-color);
     font-size: 16px;
     font-weight: 600;
-    text-align: center;
+    text-align: justify;
     padding-bottom: 15px;
     border-bottom: 2px solid var(--primary-transparent);
 }
@@ -3914,7 +3917,7 @@ html {
 
 .admin-staff-info {
     padding: 1.8rem;
-    text-align: center;
+    text-align: justify;
     background: var(--bg-primary);
     border-top: 5px solid var(--primary-color);
 }
@@ -4002,7 +4005,7 @@ html {
 
 /* Job Vacancies Page Styles */
 .intro-text {
-    text-align: center;
+    text-align: justify;
     margin-bottom: 3rem;
 }
 
@@ -4147,7 +4150,7 @@ html {
     color: var(--text-dark);
     font-size: 1.8rem;
     margin-bottom: 2rem;
-    text-align: center;
+    text-align: justify;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -4167,7 +4170,7 @@ html {
 }
 
 .benefit-item {
-    text-align: center;
+    text-align: justify;
     padding: 2rem 1.5rem;
     background: var(--bg-primary);
     border-radius: 10px;
@@ -4270,7 +4273,7 @@ html {
     background: var(--bg-primary);
     border-radius: 15px;
     box-shadow: 0 5px 15px var(--shadow-light);
-    text-align: center;
+    text-align: justify;
 }
 
 .contact-hr h3 {
@@ -4332,7 +4335,7 @@ html {
     }
     
     .apply-btn {
-        text-align: center;
+        text-align: justify;
     }
     
     .benefits-grid {
@@ -4350,7 +4353,7 @@ html {
     
     .hr-contact p {
         justify-content: flex-start;
-        text-align: left;
+        text-align: justify;
     }
 }
 
@@ -4397,7 +4400,7 @@ html {
     .service-hero {
         grid-template-columns: 1fr;
         gap: 2rem;
-        text-align: center;
+        text-align: justify;
     }
     
     .service-hero-content h2 {
@@ -4469,7 +4472,7 @@ html {
     .service-item {
         padding: 1rem;
         flex-direction: column;
-        text-align: center;
+        text-align: justify;
         gap: 1rem;
     }
     
@@ -4515,7 +4518,7 @@ html {
     color: var(--text-dark);
     font-size: 2rem;
     margin-bottom: 2rem;
-    text-align: center;
+    text-align: justify;
     position: relative;
     padding-bottom: 1rem;
 }
@@ -4720,7 +4723,7 @@ html {
 
 /* Intro text for documents section */
 .documents-intro {
-    text-align: center;
+    text-align: justify;
     color: var(--text-secondary);
     font-size: 1.1rem;
     margin-bottom: 2.5rem;
@@ -4775,7 +4778,7 @@ html {
         margin: 2rem 1rem 0;
         padding: 1.2rem;
         flex-direction: column;
-        text-align: center;
+        text-align: justify;
         gap: 1rem;
     }
     
@@ -4807,7 +4810,7 @@ html {
 
 /* Organigrama specific styles */
 .organigrama-container {
-    text-align: center;
+    text-align: justify;
     margin: 3rem 0;
     padding: 2rem;
     background: var(--bg-primary);
@@ -4923,7 +4926,7 @@ html {
     padding: 1.5rem 2rem 1rem;
     background: var(--gradient-primary);
     color: var(--text-white);
-    text-align: center;
+    text-align: justify;
 }
 
 .organigrama-modal-header h3 {
@@ -4956,7 +4959,7 @@ html {
 .organigrama-modal-footer {
     padding: 1rem 2rem;
     background: var(--bg-secondary);
-    text-align: center;
+    text-align: justify;
     border-top: 1px solid var(--border-light);
 }
 
@@ -5080,7 +5083,7 @@ html {
 
 /* No vacancies message */
 .no-vacancies {
-    text-align: center;
+    text-align: justify;
     padding: 3rem 2rem;
     background: var(--bg-secondary);
     border-radius: 12px;
