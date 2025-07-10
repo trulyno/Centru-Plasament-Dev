@@ -1089,6 +1089,26 @@ class GallerySlideshow {
             });
         });
         
+        // Navigation button clicks
+        const prevBtn = document.getElementById('galleryPrevBtn');
+        const nextBtn = document.getElementById('galleryNextBtn');
+        
+        if (prevBtn) {
+            prevBtn.addEventListener('click', () => {
+                this.prevGallerySlide();
+                this.stopGallerySlideshow();
+                this.startGallerySlideshow(); // Restart timer
+            });
+        }
+        
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                this.nextGallerySlide();
+                this.stopGallerySlideshow();
+                this.startGallerySlideshow(); // Restart timer
+            });
+        }
+        
         // Pause on hover
         const gallerySlideshow = document.querySelector('.gallery-slideshow');
         if (gallerySlideshow) {
@@ -1783,3 +1803,37 @@ function createNotification(message, type) {
     
     return notification;
 }
+
+// About Section Tab Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const aboutTabBtns = document.querySelectorAll('.about-tab-btn');
+    const aboutTabContents = document.querySelectorAll('.about-tab-content');
+    
+    function switchAboutTab(targetTab) {
+        // Remove active class from all buttons and content
+        aboutTabBtns.forEach(btn => btn.classList.remove('active'));
+        aboutTabContents.forEach(content => content.classList.remove('active'));
+        
+        // Add active class to clicked button and corresponding content
+        const targetBtn = document.querySelector(`[data-tab="${targetTab}"]`);
+        const targetContent = document.getElementById(targetTab);
+        
+        if (targetBtn && targetContent) {
+            targetBtn.classList.add('active');
+            targetContent.classList.add('active');
+        }
+    }
+    
+    // Add click event listeners to tab buttons
+    aboutTabBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const targetTab = this.getAttribute('data-tab');
+            switchAboutTab(targetTab);
+        });
+    });
+    
+    // Initialize with first tab active
+    if (aboutTabBtns.length > 0) {
+        switchAboutTab('about-us');
+    }
+});
