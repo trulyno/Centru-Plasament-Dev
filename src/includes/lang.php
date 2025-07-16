@@ -13,6 +13,10 @@ $available_languages = [
     'en' => [
         'name' => 'English',
         'code' => 'en'
+    ],
+    'ru' => [
+        'name' => 'Русский',
+        'code' => 'ru'
     ]
 ];
 

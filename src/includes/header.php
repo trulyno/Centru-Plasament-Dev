@@ -7,11 +7,16 @@
             </button>
             <div class="header-top-container" id="headerTopContainer">
                 <div class="header-logo">
-                    <img src="images/logo.png  " alt="<?php echo t('logo_alt'); ?>" class="logo-image">
-                    <div class="logo-text">
-                        <h1 class="logo-text-full"><?php echo t('site_title_full'); ?></h1>
-                        <h1 class="logo-text-abbreviated"><?php echo t('site_title_short'); ?></h1>
-                    </div>
+                    <a href="index.php" style="display: flex; align-items: center; gap: 1rem; color: inherit; text-decoration: none;">
+                        <img src="images/01_symbol_guvernul.png" alt="<?php echo t('logo_alt'); ?>" class="logo-image">
+                        <div class="logo-text">
+                            <div class="logo-text-full">
+                                <div class="ministry-line"><?php echo t('ministry_title'); ?></div>
+                                <h1 class="main-title"><?php echo t('site_title_full'); ?></h1>
+                            </div>
+                            <h1 class="logo-text-abbreviated"><?php echo t('site_title_short'); ?></h1>
+                        </div>
+                    </a>
                 </div>
                 
                 <div class="header-contact">
@@ -33,10 +38,10 @@
                     </div>
                     
                     <div class="social-links">
-                        <a href="#" class="social-link" aria-label="<?php echo t('social_facebook'); ?>">
+                        <!-- <a href="#" class="social-link" aria-label="<?php echo t('social_facebook'); ?>">
                             <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="<?php echo t('social_instagram'); ?>">
+                        </a> -->
+                        <!-- <a href="#" class="social-link" aria-label="<?php echo t('social_instagram'); ?>">
                             <i class="fab fa-instagram"></i>
                         </a>
                         <a href="#" class="social-link" aria-label="<?php echo t('social_linkedin'); ?>">
@@ -44,13 +49,17 @@
                         </a>
                         <a href="#" class="social-link" aria-label="<?php echo t('social_youtube'); ?>">
                             <i class="fab fa-youtube"></i>
-                        </a>
+                        </a> -->
                     </div>
                     
                     <div class="donate-section">
                         <button class="donate-btn" aria-label="<?php echo t('donate_aria'); ?>" title="<?php echo t('btn_donate'); ?>">
                             <i class="fas fa-heart"></i>
                             <span><?php echo t('btn_donate'); ?></span>
+                        </button>
+                        <button class="audio-btn" id="socialBtn" aria-label="<?php echo t('social_facebook'); ?>" >
+                            <i class="fab fa-facebook-f"></i>
+                            <span><?php echo t('social_facebook'); ?></span>
                         </button>
                         <button class="audio-btn" id="audioBtn" aria-label="<?php echo t('anthem_aria'); ?>" title="<?php echo t('anthem_title'); ?>">
                             <i class="fas fa-music"></i>
@@ -71,21 +80,13 @@
         <!-- Navigation Section -->
         <div class="nav-container">
             <div class="logo-mobile">
-                <img src="images/logo.png  " alt="Logo CPRCVF" class="logo-mobile-image">
-                <i class="fas fa-heart"></i>
-                <span>CPRCVF</span>
+                <a href="index.php" style="display: flex; align-items: center; color: inherit; text-decoration: none;">
+                    <img src="images/01_symbol_guvernul.png  " alt="Logo CPRCVF" class="logo-mobile-image">
+                    <i class="fas fa-heart"></i>
+                    <span>MMPS · AGSSI · CPRCVF</span>
+                </a>
             </div>
             <div class="mobile-action-buttons">
-                <button class="donate-btn" aria-label="<?php echo t('donate_aria'); ?>" title="<?php echo t('btn_donate'); ?>">
-                    <i class="fas fa-heart"></i>
-                </button>
-                <button class="audio-btn" id="audioBtn" aria-label="<?php echo t('anthem_aria'); ?>" title="<?php echo t('anthem_title'); ?>">
-                    <i class="fas fa-music"></i>
-                </button>
-                <button class="lyrics-btn" id="lyricsBtn" aria-label="<?php echo t('lyrics_aria'); ?>" title="<?php echo t('lyrics_title'); ?>">
-                    <i class="fas fa-align-left"></i>
-                </button>
-                
                 <!-- Mobile Language Selector -->
                 <?php echo getLanguageSelector(basename($_SERVER['PHP_SELF'])); ?>
             </div>
@@ -150,6 +151,20 @@
                     <li><a href="galerie.php"><?php echo t('nav_gallery'); ?></a></li>
                     <li><a href="petitii-reclamatii.php"><?php echo t('transparency_petitions'); ?></a></li>
                     <li><a href="index.php#contact"><?php echo t('nav_contact'); ?></a></li>
+                    <li class="mobile-action-row">
+                        <button class="donate-btn" aria-label="<?php echo t('donate_aria'); ?>" title="<?php echo t('btn_donate'); ?>">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="audio-btn" id="socialBtn" aria-label="<?php echo t('social_facebook'); ?>">
+                            <i class="fab fa-facebook-f"></i>
+                        </button>
+                        <button class="audio-btn" id="audioBtn" aria-label="<?php echo t('anthem_aria'); ?>" title="<?php echo t('anthem_title'); ?>">
+                            <i class="fas fa-music"></i>
+                        </button>
+                        <button class="lyrics-btn" id="lyricsBtn" aria-label="<?php echo t('lyrics_aria'); ?>" title="<?php echo t('lyrics_title'); ?>">
+                            <i class="fas fa-align-left"></i>
+                        </button>
+                    </li>
                 </ul>
                 <button class="mobile-menu-btn" id="mobileMenuBtn">
                     <i class="fas fa-bars"></i>

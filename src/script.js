@@ -20,7 +20,7 @@ function openMobileMenu() {
     createMobileOverlay();
     navMenu.classList.add('active');
     mobileOverlay.classList.add('active');
-    document.body.style.overflow = 'hidden'; // Prevent body scroll
+    // document.body.style.overflow = 'hidden'; // Prevent body scroll
     mobileMenuBtn.innerHTML = '<i class="fas fa-times"></i>';
 }
 
@@ -30,7 +30,7 @@ function closeMobileMenu() {
     if (mobileOverlay) {
         mobileOverlay.classList.remove('active');
     }
-    document.body.style.overflow = ''; // Restore body scroll
+    // document.body.style.overflow = ''; // Restore body scroll
     mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
     
     // Close all dropdowns when menu closes

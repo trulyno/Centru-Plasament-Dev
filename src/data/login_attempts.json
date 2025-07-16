@@ -1,3 +1,47 @@
 [
-
+    {
+        "ip": "192.168.65.1",
+        "username": "admin",
+        "timestamp": 1752164491,
+        "success": false,
+        "user_agent": "Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36",
+        "attempted_password": "password",
+        "password_hash": "$2y$10$fD\/dWQC3MSiRP4qr2Jh7oOedD\/r0fPGSBCjjHIBeO21o2Vr53x1eC"
+    },
+    {
+        "ip": "192.168.65.1",
+        "username": "admin",
+        "timestamp": 1752164497,
+        "success": false,
+        "user_agent": "Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36",
+        "attempted_password": "admin123",
+        "password_hash": "$2y$10$fD\/dWQC3MSiRP4qr2Jh7oOedD\/r0fPGSBCjjHIBeO21o2Vr53x1eC"
+    },
+    {
+        "ip": "192.168.65.1",
+        "username": "admin",
+        "timestamp": 1752164504,
+        "success": true,
+        "user_agent": "Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36",
+        "attempted_password": null,
+        "password_hash": ""
+    },
+    {
+        "ip": "192.168.65.1",
+        "username": "admin",
+        "timestamp": 1752392872,
+        "success": false,
+        "user_agent": "Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36",
+        "attempted_password": "password",
+        "password_hash": "$2y$10$fD\/dWQC3MSiRP4qr2Jh7oOedD\/r0fPGSBCjjHIBeO21o2Vr53x1eC"
+    },
+    {
+        "ip": "192.168.65.1",
+        "username": "admin",
+        "timestamp": 1752392880,
+        "success": true,
+        "user_agent": "Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36",
+        "attempted_password": null,
+        "password_hash": ""
+    }
 ]

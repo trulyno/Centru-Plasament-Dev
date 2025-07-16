@@ -9,10 +9,75 @@ if (file_exists($faqsFile)) {
     $faqs = json_decode(file_get_contents($faqsFile), true) ?: [];
 }
 
-// FAQ Helper Function
-function faqItem($question, $answer, $category = 'general', $id = null) {
+// Example of adding FAQs programmatically (for development/testing)
+// Uncomment the lines below to add sample FAQs
+
+$sampleFaqs = [
+    [
+        'id' => 'sample1',
+        'question' => ['ro' => 'Ce servicii oferiti?', 'en' => 'What services do you offer?'],
+        'answer' => ['ro' => 'Oferim diverse servicii sociale incluzând sprijin pentru familii, copii și îngrijirea vârstnicilor.', 'en' => 'We offer various social services including support for families, children, and elderly care.'],
+        'category' => 'services',
+        'status' => 'active'
+    ],
+    [
+        'id' => 'sample2',
+        'question' => ['ro' => 'Cum vă pot contacta?', 'en' => 'How can I contact you?'],
+        'answer' => ['ro' => 'Ne puteți contacta prin telefon, email sau vizitând biroul nostru în timpul programului de lucru.', 'en' => 'You can reach us via phone, email, or visit our office during business hours.'],
+        'category' => 'general',
+        'status' => 'active'
+    ],
+    [
+        'id' => 'sample3',
+        'question' => ['ro' => 'Care sunt cerințele de admitere?', 'en' => 'What are the admission requirements?'],
+        'answer' => ['ro' => 'Cerințele variază în funcție de serviciu. Vă rugăm să ne contactați pentru informații specifice.', 'en' => 'Requirements vary by service. Please contact us for specific information.'],
+        'category' => 'admission',
+        'status' => 'active'
+    ],
+    [
+        'id' => 'sample4',
+        'question' => ['ro' => 'Oferiti suport de urgență?', 'en' => 'Do you provide emergency support?'],
+        'answer' => ['ro' => 'Da, oferim suport de urgență 24/7 pentru situații urgente.', 'en' => 'Yes, we provide 24/7 emergency support for urgent situations.'],
+        'category' => 'support',
+        'status' => 'active'
+    ]
+];
+
+// Add sample FAQs to the existing array
+$faqs = array_merge($faqs, $sampleFaqs);
+
+// Optionally save to file
+// saveFaqsToFile($faqs, $faqsFile);
+
+
+// FAQ Helper Functions
+function addFaq($question, $answer, $category = 'general', $id = null) {
     $faqId = $id ?: md5($question);
-    echo '<div class="faq-item" data-category="' . $category . '" data-id="' . $faqId . '">
+    
+    // Handle both string and array inputs for multilingual support
+    $questionData = is_array($question) ? $question : ['ro' => $question, 'en' => $question];
+    $answerData = is_array($answer) ? $answer : ['ro' => $answer, 'en' => $answer];
+    
+    return [
+        'id' => $faqId,
+        'question' => $questionData,
+        'answer' => $answerData,
+        'category' => $category,
+        'status' => 'active'
+    ];
+}
+
+function saveFaqsToFile($faqs, $filePath) {
+    $dir = dirname($filePath);
+    if (!is_dir($dir)) {
+        mkdir($dir, 0755, true);
+    }
+    return file_put_contents($filePath, json_encode($faqs, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+}
+
+function renderFaqItem($question, $answer, $category = 'general', $id = null) {
+    $faqId = $id ?: md5($question);
+    return '<div class="faq-item" data-id="' . $faqId . '">
             <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-' . $faqId . '">
                 <h3>' . htmlspecialchars($question) . '</h3>
                 <i class="fas fa-chevron-down"></i>
@@ -25,11 +90,34 @@ function faqItem($question, $answer, $category = 'general', $id = null) {
           </div>';
 }
 
-function faqCategory($title, $icon = 'fas fa-question-circle') {
-    echo '<div class="faq-category-header">
-            <i class="' . $icon . '"></i>
-            <h2>' . htmlspecialchars($title) . '</h2>
-          </div>';
+function renderFaqSection($faqs) {
+    $currentLang = getCurrentLanguage();
+    $output = '';
+    
+    // Add all active FAQs without categorization
+    foreach ($faqs as $faq) {
+        if ($faq['status'] === 'active') {
+            $question = $faq['question'][$currentLang] ?? $faq['question']['ro'] ?? '';
+            $answer = $faq['answer'][$currentLang] ?? $faq['answer']['ro'] ?? '';
+            
+            if (!empty($question) && !empty($answer)) {
+                $output .= renderFaqItem($question, $answer, 'general', $faq['id']);
+            }
+        }
+    }
+    
+    // Show fallback content if no FAQs exist
+    if (empty($output)) {
+        $output = '<div class="faq-item no-items">
+                    <div class="faq-question-placeholder">
+                        <p style="color: #666; font-style: italic; padding: 1rem;">
+                            ' . t('content_coming_soon') . '
+                        </p>
+                    </div>
+                  </div>';
+    }
+    
+    return $output;
 }
 ?>
 <!DOCTYPE html>
@@ -79,56 +167,11 @@ function faqCategory($title, $icon = 'fas fa-question-circle') {
                         </div>
                     </div>
 
-                    <!-- FAQ Categories Filter -->
-                    <div class="faq-filters">
-                        <button class="filter-btn active" data-category="all"><?php echo t('faq_all_categories'); ?></button>
-                        <button class="filter-btn" data-category="general"><?php echo t('faq_category_general'); ?></button>
-                        <button class="filter-btn" data-category="services"><?php echo t('faq_category_services'); ?></button>
-                        <button class="filter-btn" data-category="admission"><?php echo t('faq_category_admission'); ?></button>
-                        <button class="filter-btn" data-category="support"><?php echo t('faq_category_support'); ?></button>
-                    </div>
-
                     <!-- FAQ Content -->
                     <div class="faq-container">
                         <?php
-                        $currentLang = getCurrentLanguage();
-                        $categories = [
-                            'general' => ['title' => t('faq_category_general'), 'icon' => 'fas fa-info-circle'],
-                            'services' => ['title' => t('faq_category_services'), 'icon' => 'fas fa-hands-helping'],
-                            'admission' => ['title' => t('faq_category_admission'), 'icon' => 'fas fa-user-plus'],
-                            'support' => ['title' => t('faq_category_support'), 'icon' => 'fas fa-life-ring']
-                        ];
-
-                        // Display FAQs by category
-                        foreach ($categories as $categoryKey => $categoryData) {
-                            // Show category header
-                            faqCategory($categoryData['title'], $categoryData['icon']);
-                            
-                            $hasItems = false;
-                            // Show FAQs for this category
-                            foreach ($faqs as $faq) {
-                                if ($faq['category'] === $categoryKey && $faq['status'] === 'active') {
-                                    $question = $faq['question'][$currentLang] ?? $faq['question']['ro'] ?? '';
-                                    $answer = $faq['answer'][$currentLang] ?? $faq['answer']['ro'] ?? '';
-                                    
-                                    if (!empty($question) && !empty($answer)) {
-                                        faqItem($question, $answer, $categoryKey, $faq['id']);
-                                        $hasItems = true;
-                                    }
-                                }
-                            }
-                            
-                            // Show fallback content if no FAQs exist
-                            if (!$hasItems) {
-                                echo '<div class="faq-item no-items" data-category="' . $categoryKey . '">
-                                        <div class="faq-question-placeholder">
-                                            <p style="color: #666; font-style: italic; padding: 1rem;">
-                                                ' . t('content_coming_soon') . '
-                                            </p>
-                                        </div>
-                                      </div>';
-                            }
-                        }
+                        // Render all FAQs without categorization
+                        echo renderFaqSection($faqs);
                         ?>
                     </div>
                 </div>
@@ -162,35 +205,6 @@ function faqCategory($title, $icon = 'fas fa-question-circle') {
                     });
                 });
             }
-            
-            // Category filter functionality
-            const filterButtons = document.querySelectorAll('.filter-btn');
-            
-            filterButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    const category = this.getAttribute('data-category');
-                    
-                    // Update active filter button
-                    filterButtons.forEach(btn => btn.classList.remove('active'));
-                    this.classList.add('active');
-                    
-                    // Filter FAQ items
-                    faqItems.forEach(item => {
-                        const itemCategory = item.getAttribute('data-category');
-                        
-                        if (category === 'all' || itemCategory === category) {
-                            item.style.display = 'block';
-                        } else {
-                            item.style.display = 'none';
-                        }
-                    });
-                    
-                    // Clear search when filtering
-                    if (searchInput) {
-                        searchInput.value = '';
-                    }
-                });
-            });
             
             // FAQ accordion functionality
             const faqQuestions = document.querySelectorAll('.faq-question');
@@ -269,55 +283,9 @@ function faqCategory($title, $icon = 'fas fa-question-circle') {
             border-color: #007bff;
         }
         
-        .faq-filters {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-bottom: 2rem;
-        }
-        
-        .filter-btn {
-            padding: 0.5rem 1rem;
-            border: 2px solid #e1e5e9;
-            background: white;
-            color: #333;
-            border-radius: 20px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-size: 0.9rem;
-        }
-        
-        .filter-btn:hover,
-        .filter-btn.active {
-            background: #007bff;
-            color: white;
-            border-color: #007bff;
-        }
-        
         .faq-container {
             max-width: 800px;
             margin: 0 auto;
-        }
-        
-        .faq-category-header {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            margin: 2rem 0 1rem 0;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid #007bff;
-        }
-        
-        .faq-category-header i {
-            color: #007bff;
-            font-size: 1.2rem;
-        }
-        
-        .faq-category-header h2 {
-            margin: 0;
-            color: #333;
-            font-size: 1.5rem;
         }
         
         .faq-item {
@@ -429,12 +397,6 @@ function faqCategory($title, $icon = 'fas fa-question-circle') {
         }
         
         @media (max-width: 768px) {
-            .faq-filters {
-                justify-content: flex-start;
-                overflow-x: auto;
-                padding-bottom: 0.5rem;
-            }
-            
             .contact-buttons {
                 flex-direction: column;
             }
