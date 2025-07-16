@@ -1,4 +1,4 @@
-name: Deploy PHP Website
+name: Deploy PHP Website to Render
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ main, master ]
 
 jobs:
-  deploy:
+  test:
     runs-on: ubuntu-latest
     
     steps:
@@ -17,44 +17,128 @@ jobs:
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v3
 
-    - name: Start services with Docker Compose
+    - name: Test locally
       run: |
         docker compose up -d
-        
-    - name: Wait for services to be ready
+        sleep 15
+        curl -f http://localhost:80 || exit 1
+        docker compose down -v
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+
+    - name: Optimize Dockerfile for Render
       run: |
-        echo "Waiting for services to start..."
+        cat > Dockerfile << 'EOF'
+        FROM php:8.2-fpm-alpine
+        
+        # Install nginx and other dependencies
+        RUN apk add --no-cache nginx curl
+        
+        # Copy source files
+        COPY src/ /var/www/html/
+        COPY nginx.conf /etc/nginx/http.d/default.conf
+        
+        # Set permissions
+        RUN chown -R www-data:www-data /var/www/html
+        RUN chmod -R 755 /var/www/html
+        
+        # Create directories for nginx
+        RUN mkdir -p /run/nginx
+        
+        # Create startup script
+        RUN echo '#!/bin/sh' > /start.sh && \
+            echo 'php-fpm -D' >> /start.sh && \
+            echo 'nginx -g "daemon off;"' >> /start.sh && \
+            chmod +x /start.sh
+        
+        EXPOSE 80
+        CMD ["/start.sh"]
+        EOF
+
+    - name: Deploy to Render
+      run: |
+        echo "Triggering deployment to Render..."
+        
+        # Create deployment using Render API
+        curl -X POST \
+          -H "Authorization: Bearer ${{ secrets.RENDER_API_KEY }}" \
+          -H "Content-Type: application/json" \
+          -d '{
+            "serviceId": "${{ secrets.RENDER_SERVICE_ID }}",
+            "clearCache": "clear"
+          }' \
+          https://api.render.com/v1/services/${{ secrets.RENDER_SERVICE_ID }}/deploys
+          
+        echo "Deployment initiated successfully!"
+      env:
+        RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
+        RENDER_SERVICE_ID: ${{ secrets.RENDER_SERVICE_ID }}
+
+    - name: Wait for deployment to complete
+      run: |
+        echo "Waiting for deployment to complete..."
+        sleep 30
+        
+        # Check deployment status
+        for i in {1..10}; do
+          STATUS=$(curl -s -H "Authorization: Bearer ${{ secrets.RENDER_API_KEY }}" \
+            https://api.render.com/v1/services/${{ secrets.RENDER_SERVICE_ID }} | \
+            grep -o '"status":"[^"]*"' | head -1 | cut -d'"' -f4)
+          
+          echo "Deployment status: $STATUS"
+          
+          if [ "$STATUS" = "live" ]; then
+            echo "✅ Deployment completed successfully!"
+            break
+          elif [ "$STATUS" = "build_failed" ] || [ "$STATUS" = "update_failed" ]; then
+            echo "❌ Deployment failed with status: $STATUS"
+            exit 1
+          fi
+          
+          echo "Still deploying... waiting 30 seconds"
+          sleep 30
+        done
+      env:
+        RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
+        RENDER_SERVICE_ID: ${{ secrets.RENDER_SERVICE_ID }}
+
+    - name: Test deployed website
+      run: |
+        echo "Testing deployed website..."
         sleep 10
         
-    - name: Check if services are running
-      run: |
-        docker compose ps
-        
-    - name: Test website accessibility
-      run: |
-        # Wait a bit more for nginx to be fully ready
-        sleep 5
         # Test if the website is accessible
-        curl -f http://localhost:80 || exit 1
-        echo "Website is accessible!"
+        curl -f https://${{ secrets.RENDER_SERVICE_NAME }}.onrender.com || (
+          echo "Website not accessible, checking status..."
+          curl -s -H "Authorization: Bearer ${{ secrets.RENDER_API_KEY }}" \
+            https://api.render.com/v1/services/${{ secrets.RENDER_SERVICE_ID }}
+          exit 1
+        )
         
-    - name: Run basic health checks
+        echo "✅ Website is live and accessible!"
+      env:
+        RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
+        RENDER_SERVICE_ID: ${{ secrets.RENDER_SERVICE_ID }}
+        RENDER_SERVICE_NAME: ${{ secrets.RENDER_SERVICE_NAME }}
+
+    - name: Create deployment summary
       run: |
-        # Check if PHP-FPM is running
-        docker compose exec -T php php --version
-        
-        # Check if nginx is serving files
-        curl -I http://localhost:80
-        
-    - name: Show container logs (for debugging)
-      if: failure()
-      run: |
-        echo "=== Nginx logs ==="
-        docker compose logs nginx
-        echo "=== PHP logs ==="
-        docker compose logs php
-        
-    - name: Cleanup
-      if: always()
-      run: |
-        docker compose down -v
+        echo "🚀 Deployment Summary:"
+        echo "Platform: Render"
+        echo "Status: ✅ Success"
+        echo "URL: https://${{ secrets.RENDER_SERVICE_NAME }}.onrender.com"
+        echo "Service ID: ${{ secrets.RENDER_SERVICE_ID }}"
+        echo "Deployed at: $(date)"
+      env:
+        RENDER_SERVICE_NAME: ${{ secrets.RENDER_SERVICE_NAME }}
+        RENDER_SERVICE_ID: ${{ secrets.RENDER_SERVICE_ID }}
