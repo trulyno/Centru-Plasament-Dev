@@ -28,7 +28,7 @@ jobs:
         
     - name: Check if services are running
       run: |
-        docker-compose ps
+        docker compose ps
         
     - name: Test website accessibility
       run: |
@@ -41,7 +41,7 @@ jobs:
     - name: Run basic health checks
       run: |
         # Check if PHP-FPM is running
-        docker-compose exec -T php php --version
+        docker compose exec -T php php --version
         
         # Check if nginx is serving files
         curl -I http://localhost:80
@@ -50,11 +50,11 @@ jobs:
       if: failure()
       run: |
         echo "=== Nginx logs ==="
-        docker-compose logs nginx
+        docker compose logs nginx
         echo "=== PHP logs ==="
-        docker-compose logs php
+        docker compose logs php
         
     - name: Cleanup
       if: always()
       run: |
-        docker-compose down -v
+        docker compose down -v
