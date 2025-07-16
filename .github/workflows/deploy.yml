@@ -1,0 +1,60 @@
+name: Deploy PHP Website
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+
+    - name: Start services with Docker Compose
+      run: |
+        docker-compose up -d
+        
+    - name: Wait for services to be ready
+      run: |
+        echo "Waiting for services to start..."
+        sleep 10
+        
+    - name: Check if services are running
+      run: |
+        docker-compose ps
+        
+    - name: Test website accessibility
+      run: |
+        # Wait a bit more for nginx to be fully ready
+        sleep 5
+        # Test if the website is accessible
+        curl -f http://localhost:80 || exit 1
+        echo "Website is accessible!"
+        
+    - name: Run basic health checks
+      run: |
+        # Check if PHP-FPM is running
+        docker-compose exec -T php php --version
+        
+        # Check if nginx is serving files
+        curl -I http://localhost:80
+        
+    - name: Show container logs (for debugging)
+      if: failure()
+      run: |
+        echo "=== Nginx logs ==="
+        docker-compose logs nginx
+        echo "=== PHP logs ==="
+        docker-compose logs php
+        
+    - name: Cleanup
+      if: always()
+      run: |
+        docker-compose down -v
