@@ -271,6 +271,18 @@ body {
     background: var(--light-color);
 }
 
+.analytics-link {
+    background: linear-gradient(135deg, #27ae60, #2ecc71) !important;
+    color: white !important;
+    text-decoration: none;
+    margin-left: auto;
+}
+
+.analytics-link:hover {
+    background: linear-gradient(135deg, #2ecc71, #27ae60) !important;
+    transform: translateY(-2px);
+}
+
 .tab-content {
     display: none;
     animation: fadeIn 0.3s ease-in;

@@ -1,6 +1,9 @@
 <?php
 header('Content-Type: application/json');
 
+// Include GDPR manager
+require_once __DIR__ . '/../includes/gdpr.php';
+
 // Check if request is POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
@@ -74,6 +77,14 @@ $contacts[$contactId] = $contactData;
 
 // Save to file
 if (file_put_contents($contactFile, json_encode($contacts, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE))) {
+    
+    // Log data processing for GDPR compliance
+    GDPRManager::logDataProcessing('contact_form', [
+        'ip' => $_SERVER['REMOTE_ADDR'] ?? 'unknown',
+        'email' => $contactData['email'],
+        'personal_data' => 'name, email'
+    ], 'Processing contact form inquiry', 'Legitimate interest');
+    
     echo json_encode([
         'success' => true,
         'message' => 'Mesajul dumneavoastră a fost trimis cu succes! Vă vom contacta în cel mai scurt timp.'

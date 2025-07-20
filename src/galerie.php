@@ -1,6 +1,8 @@
 <?php
 // Include language configuration
 require_once __DIR__ . '/includes/lang.php';
+require_once __DIR__ . '/includes/gdpr.php';
+require_once __DIR__ . '/includes/analytics.php';
 
 function image($src, $category, $title = '', $desc = '') {
     echo '
@@ -43,6 +45,7 @@ function video($src, $category, $title = '', $desc = '') {
     <link rel="icon" href="images/logo.ico" type="image/x-icon" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <link href="gdpr-styles.css" rel="stylesheet">
 </head>
 <body>
     <!-- Loading overlay -->
@@ -184,6 +187,11 @@ function video($src, $category, $title = '', $desc = '') {
 
     <?php include 'includes/footer.php'; ?>
 
+    <!-- GDPR Compliance Components -->
+    <?php echo GDPRManager::renderConsentBanner(); ?>
+    <?php echo GDPRManager::renderConsentModal(); ?>
+
     <script src="script.js"></script>
+    <script src="gdpr-script.js"></script>
 </body>
 </html>

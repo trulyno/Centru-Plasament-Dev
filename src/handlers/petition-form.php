@@ -1,6 +1,9 @@
 <?php
 header('Content-Type: application/json');
 
+// Include GDPR manager
+require_once __DIR__ . '/../includes/gdpr.php';
+
 // Check if request is POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
@@ -205,6 +208,15 @@ $petitions[$petitionId] = $petitionData;
 
 // Save to file
 if (file_put_contents($petitionsFile, json_encode($petitions, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE))) {
+    
+    // Log data processing for GDPR compliance
+    GDPRManager::logDataProcessing('petition', [
+        'ip' => $_SERVER['REMOTE_ADDR'] ?? 'unknown',
+        'email' => $petitionData['email'],
+        'personal_data' => 'name, email, phone, address',
+        'files' => count($uploadedFiles)
+    ], 'Processing citizen petition/complaint', 'Legal obligation and legitimate interest');
+    
     echo json_encode([
         'success' => true,
         'message' => 'Petiția dumneavoastră a fost trimisă cu succes! Veți primi o confirmare pe email în curând.'

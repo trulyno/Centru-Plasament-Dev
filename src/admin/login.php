@@ -24,10 +24,10 @@ if (!is_dir($dataDir)) {
 }
 
 if (!file_exists($usersFile)) {
-    // Create default admin user with hashed password for "admin123"
+    // Create default admin user with hashed password for "cprcvf2025!"
     $defaultUsers = [
         'admin' => [
-            'username' => 'adminCPRCVF',
+            'username' => 'admin',
             'password_hash' => password_hash('cprcvf2025!', PASSWORD_DEFAULT),
             'created_at' => date('c'),
             'last_login' => null,
@@ -61,15 +61,16 @@ function logLoginAttempt($ip, $username, $success, &$attempts, $file, $attempted
         'username' => $username,
         'timestamp' => time(),
         'success' => $success,
-        'user_agent' => $_SERVER['HTTP_USER_AGENT'] ?? 'Unknown',
-        'attempted_password' => $attemptedPassword,
-        'password_hash' => $userHash ?: ''
+        'user_agent' => $_SERVER['HTTP_USER_AGENT'] ?? 'Unknown'
     ];
     
     // Only log password details for failed attempts (for debugging)
     if (!$success && $attemptedPassword !== null) {
         $logEntry['attempted_password'] = $attemptedPassword;
         $logEntry['password_hash'] = $userHash ?: '';
+    } else {
+        $logEntry['attempted_password'] = null;
+        $logEntry['password_hash'] = '';
     }
     
     $attempts[] = $logEntry;
@@ -114,6 +115,7 @@ if ($_POST['username'] ?? false) {
             
             if ($foundUser) {
                 $storedHash = $foundUser['password_hash'];
+                
                 if (password_verify($password, $storedHash)) {
                     // Successful login
                     logLoginAttempt($userIP, $username, true, $loginAttempts, $loginAttemptsFile);
