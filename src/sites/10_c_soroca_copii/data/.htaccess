@@ -1,0 +1,4 @@
+# Protect JSON data files explicitly
+<Files "*.json">
+    Require all denied
+</Files>

@@ -1,0 +1,149 @@
+{
+    "daily": {
+        "2025-08-13": {
+            "page_views": 26,
+            "unique_visitors": [
+                "efaeb3f1a6eec98d62777e12b88c13fc0a215981bd3d31697fbc8020311b28f0"
+            ],
+            "pages": {
+                "index": 16,
+                "analytics-track": 9,
+                "dashboard": 1
+            },
+            "referrers": {
+                "localhost": 21
+            },
+            "browsers": {
+                "Chrome": 26
+            },
+            "hourly": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                6,
+                5,
+                0,
+                11,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        "2025-08-15": {
+            "page_views": 28,
+            "unique_visitors": [
+                "aa220fd30a89e1c46bd683e52892f0fd2476fe49e9267190e74e930c37059f66"
+            ],
+            "pages": {
+                "index": 12,
+                "sectia_profil_somatic": 3,
+                "sectia_profil_psihoneurologic": 2,
+                "acte-nationale": 2,
+                "acte-interne": 1,
+                "proiecte": 1,
+                "rapoarte": 1,
+                "administratia": 1,
+                "organigrama": 1,
+                "functii-vacante": 1,
+                "galerie": 2,
+                "petitii-reclamatii": 1
+            },
+            "referrers": {
+                "localhost": 28
+            },
+            "browsers": {
+                "Chrome": 28
+            },
+            "hourly": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                20,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                8,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        "2025-08-20": {
+            "page_views": 4,
+            "unique_visitors": [
+                "d52b8c9c259aa0dbcc91429f48b2b006d06663b81fd10944d6e72c46f9cd9ec6"
+            ],
+            "pages": {
+                "index": 4
+            },
+            "referrers": {
+                "localhost": 4
+            },
+            "browsers": {
+                "Chrome": 4
+            },
+            "hourly": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        }
+    },
+    "events": {
+        "2025-08-13": {
+            "engagement\/time_on_page\/\/index.php": 3,
+            "scroll_depth\/scroll\/50%": 1,
+            "scroll_depth\/scroll\/100%": 1,
+            "scroll_depth\/scroll\/75%": 1,
+            "scroll_depth\/scroll\/25%": 1
+        }
+    }
+}

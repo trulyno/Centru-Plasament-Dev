@@ -1,0 +1,62 @@
+<?php
+// Include language configuration
+require_once __DIR__ . '/includes/lang.php';
+require_once __DIR__ . '/includes/gdpr.php';
+require_once __DIR__ . '/includes/analytics.php';
+?>
+<!DOCTYPE html>
+<html lang="<?php echo getCurrentLanguage(); ?>">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="<?php echo t('organigram_meta_description'); ?>">
+    <meta name="keywords" content="<?php echo t('organigram_meta_keywords'); ?>">
+    <meta name="author" content="<?php echo t('meta_author'); ?>">
+    
+    <title><?php echo t('organigram_page_title'); ?></title>
+    <link rel="icon" href="images/logo.ico" type="image/x-icon" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="gdpr-styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Accessibility improvements -->
+    <div class="skip-links">
+        <a href="#main-content" class="skip-link"><?php echo t('skip_to_content'); ?></a>
+    </div>
+
+    <?php include 'includes/header.php'; ?>
+
+    <!-- Main Content -->
+    <main class="main-content" id="main-content">
+        <section class="page-header">
+            <div class="container">
+                <h1><?php echo t('about_organigram'); ?></h1>
+                <p><?php echo t('page_organigram_subtitle'); ?></p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-wrapper">
+                    <h2><?php echo t('administration_institution_title'); ?></h2>
+                    <!-- <div class="organigrama-container">
+                        <img src="images/organigrama.png" alt="<?php echo t('about_organigram'); ?> - <?php echo t('site_title'); ?>" class="organigrama-image">
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <?php include 'includes/footer.php'; ?>
+
+
+    <script src="script.js"></script>
+    <script src="gdpr-script.js"></script>
+</body>
+</html>

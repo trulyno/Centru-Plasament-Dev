@@ -1,0 +1,98 @@
+{
+    "daily": {
+        "2025-08-13": {
+            "page_views": 23,
+            "unique_visitors": [
+                "efaeb3f1a6eec98d62777e12b88c13fc0a215981bd3d31697fbc8020311b28f0"
+            ],
+            "pages": {
+                "index": 13,
+                "analytics-track": 9,
+                "dashboard": 1
+            },
+            "referrers": {
+                "localhost": 18
+            },
+            "browsers": {
+                "Chrome": 23
+            },
+            "hourly": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                6,
+                5,
+                0,
+                12,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        "2025-08-15": {
+            "page_views": 10,
+            "unique_visitors": [
+                "aa220fd30a89e1c46bd683e52892f0fd2476fe49e9267190e74e930c37059f66"
+            ],
+            "pages": {
+                "index": 9,
+                "acte-nationale": 1
+            },
+            "referrers": {
+                "localhost": 10
+            },
+            "browsers": {
+                "Chrome": 10
+            },
+            "hourly": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                10,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        }
+    },
+    "events": {
+        "2025-08-13": {
+            "engagement\/time_on_page\/\/index.php": 3,
+            "scroll_depth\/scroll\/50%": 1,
+            "scroll_depth\/scroll\/100%": 1,
+            "scroll_depth\/scroll\/75%": 1,
+            "scroll_depth\/scroll\/25%": 1
+        }
+    }
+}

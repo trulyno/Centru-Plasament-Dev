@@ -1,0 +1,65 @@
+# Security configurations for admin directory
+# Deny access to sensitive files
+<Files "*.json">
+    Require all denied
+</Files>
+
+<Files "*.md">
+    Require all denied
+</Files>
+
+<Files "generate_password.php">
+    Require all denied
+</Files>
+
+<Files "manage_users.php">
+    Require all denied
+</Files>
+
+<Files "install.php">
+    Require all denied
+</Files>
+
+<Files "test_auth.php">
+    Require all denied
+</Files>
+
+# Security headers
+<IfModule mod_headers.c>
+    Header always set X-Frame-Options DENY
+    Header always set X-Content-Type-Options nosniff
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data:;"
+</IfModule>
+
+# Prevent access to backup files and logs
+<FilesMatch "\.(bak|backup|log|old|orig|save|tmp)$">
+    Require all denied
+</FilesMatch>
+
+# Hide PHP errors in production
+php_flag display_errors Off
+php_flag log_errors On
+
+# Prevent PHP execution in uploads directory
+<Directory "../data/uploads">
+    <FilesMatch "\.php$">
+        Require all denied
+    </FilesMatch>
+</Directory>
+
+# Rate limiting (if mod_rewrite is available)
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Block common attack patterns
+    RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
+    RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+    RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2}) [OR]
+    RewriteCond %{QUERY_STRING} (\<|%3C).*iframe.*(\>|%3E) [NC,OR]
+    RewriteCond %{QUERY_STRING} base64_encode.*\(.*\) [NC,OR]
+    RewriteCond %{QUERY_STRING} (\<|%3C).*object.*(\>|%3E) [NC,OR]
+    RewriteCond %{QUERY_STRING} (\<|%3C).*embed.*(\>|%3E) [NC]
+    RewriteRule ^(.*)$ - [F,L]
+</IfModule>
