@@ -82,76 +82,30 @@ function video($src, $category, $title = '', $desc = '') {
                     </div>
                     <div class="gallery-grid">
                         <?php
-                        // image('zi10.jpg', 'spaces', 'Camera de Odihnă', 'Spații confortabile pentru relaxare');
-                        // image('zi11.jpg', 'spaces', 'Spații de Recreere', 'Zone dedicate jocului și relaxării');
-                        // image('maternala3.jpg', 'activities', '', '');
-                        // image('respiro3.jpg', 'spaces', 'Spații Respiro', 'Mediu sigur și confortabil pentru copii');
-                        // image('respiro6.jpg', 'spaces', 'Mediu Terapeutic', 'Spații special amenajate pentru terapie'); 
-                        // image('sap4.jpg', 'activities', 'Descoperirea Faunei', 'La gradina zoologica');
-                        // image('sap13.jpg', 'events', 'Eveniment Amuzant', 'Muzica,Dansuri si Baloane');
-                        // image('z21.jpg', 'activities', 'Confectionarea lucrarilor plastice', 'O amintire pe toata viata');
-                        // image('14.jpg', 'activities', 'Admirarea Gradinii Zoo', 'Plante exotice');
-                        // image('21.jpg', 'activities', 'Jocuri Gonflabile', 'Sarituri si fericire');
-                        // image('35.jpg', 'events', 'Festival Mascat', 'Copii mascati in eroii lor');
-                        // image('555.jpg', 'activities', 'Teatru cu marionete', 'Un spectacol calptivant');
-                        // image('585.jpg', 'activities', 'Bucuria copiilor', 'Castigarea unui concurs');
-                        // image('zoo1.jpeg', 'activities', 'Excursie  la Zoo', 'Copiii descopera animale noi');
-                        // image('zoo2.jpeg', 'activities', 'Animale noi si interesante', 'Copiii sunt multumiti');
-                        // image('zoo3.jpeg', 'activities', 'Habitatele animalelor', 'Copiii descopera unde locuiesc animalele');
-                        // image('zoo4.jpeg', 'activities', 'Animale la inaltime', 'Maimute si multi papagali');
-                        // image('zoo5.jpeg', 'activities', 'Animal de desert', 'Copiii descopera camila');
-                        // image('zoo6.jpeg', 'activities', 'Broasca Testoasa mangaiata de copii', 'Multa afectiune si iubire');
-                        // image('zoo7.jpeg', 'activities', 'La Izvor', 'O mica pauza de la aceasta aventura');
-                        // image('zoo8.jpeg', 'activities', 'Descoperirea Bufnitei', 'Singura data cand va fi treaza ziua');
-                        // image('zoo9.jpeg', 'activities', 'Animale prin copaci', 'Cum ele se tin atat de mult acolo?');
-                        // image('1.jpg', 'activities', '', '');
-                        // image('2.jpg', 'activities', '', '');
-                        // image('3.jpg', 'activities', '', '');
-                        // image('4.jpg', 'activities', '', '');
-                        // image('5.jpg', 'activities', '', '');
-                        // image('6.jpg', 'activities', '', '');
-                        // image('7.jpg', 'activities', '', '');
-                        // image('8.jpg', 'activities', '', '');
-                        // image('9.jpg', 'activities', '', '');
-                        // image('10.jpg', 'activities', '', '');
-                        // image('11.jpg', 'activities', '', '');
-                        // image('12.jpg', 'activities', '', '');
-                        // image('13.jpg', 'activities', '', '');
-                        // image('15.jpg', 'activities', '', '');
-                        // image('16.jpg', 'activities', '', '');
-                        // image('17.jpg', 'activities', '', '');
-                        // image('18.jpg', 'activities', '', '');
-                        // image('19.jpg', 'activities', '', '');
-                        // image('20.jpg', 'activities', '', '');
-                        // image('22.jpg', 'activities', '', '');
-                        // image('23.jpg', 'activities', '', '');
-                        // image('cresa1.jpg', 'activities', '', '');
-                        // image('cresa2.jpg', 'activities', '', '');
-                        // image('cresa3.jpg', 'activities', '', '');
-                        // image('cresa4.jpg', 'activities', '', '');
-                        // image('cresa5.jpg', 'activities', '', '');
-                        // image('cresa6.jpg', 'activities', '', '');
-                        // image('criza6.jpg', 'activities', '', '');
-                        // image('criza1.jpg', 'activities', '', '');
-                        // image('criza2.jpg', 'activities', '', '');
-                        // image('criza3.jpg', 'activities', '', '');
-                        // image('criza4.jpg', 'activities', '', '');
-                        // image('criza5.jpg', 'activities', '', '');
-                        // image('criza7.jpg', 'activities', '', '');
-                        // image('criza8.jpg', 'activities', '', '');
-                        // image('criza9.jpg', 'activities', '', '');
-                        // image('criza10.jpg', 'activities', '', '');
-                        // image('criza11.jpg', 'activities', '', '');
-                        // image('criza12.jpg', 'activities', '', '');
-                        // image('criza13.jpg', 'activities', '', '');
-                        // image('maternala1.jpg', 'activities', '', '');
-                        // image('maternala2.jpg', 'activities', '', '');
-                        // image('maternala4.jpg', 'activities', '', '');
-                        // image('maternala5.jpg', 'activities', '', '');
-                        // image('zi.jpg', 'activities', '', '');
-
-                        // video('video5363927670348345826.mp4', 'events', 'Eveniment Special', 'Sărbătorirea unor momente importante');
-                        ?>         
+                        image('35414340_1971446026213393_7159231327290523648_n.jpg', 'events', '', '');
+                        image('62430711_2518594071498583_1702592071983955968_n.jpg', 'events', '', '');
+                        image('90157406-5d79-457e-b15c-2ca8280d59a8.jpeg', 'events', '', '');
+                        image('465467964_9175578372466753_3153707713661157327_n.jpg', 'events', '', '');
+                        image('465902125_9203929329631657_4720045432653106753_n.jpg', 'events', '', '');
+                        image('476229653_1150989880153553_4153833112061254632_n.jpg', 'events', '', '');
+                        image('483679680_1175620857690455_4630292612765403412_n.jpg', 'activities', '', '');
+                        image('484347177_1178807370705137_2513999702540758669_n.jpg', 'therapy', '', '');
+                        image('498153368_1230382275547646_3236568873941507497_n.jpg', 'activities', '', '');
+                        image('499479238_1230373372215203_7708007265984725921_n.jpg', 'therapy', '', '');
+                        image('499735032_1234985461753994_1856062075427537214_n.jpg', 'therapy', '', '');
+                        image('510967252_1258802939372246_5576479473063294149_n.jpg', 'events', '', '');
+                        image('IMG_0732.JPG', 'activities', '', '');
+                        image('IMG_0745.JPG', 'events', '', '');
+                        image('IMG_2350[1].JPG', 'activities', '', '');
+                        image('IMG_2359[1].JPG', 'events', '', '');
+                        image('IMG_2609[1].JPG', 'events', '', '');
+                        image('IMG_2647[1].JPG', 'events', '', '');
+                        image('IMG_2696[1].JPG', 'activities', '', '');
+                        image('IMG_2795[1].JPG', 'events', '', '');
+                        image('IMG_20250627_140234.jpg', 'activities', '', '');
+                        image('logo1.jpg', 'therapy', '', '');
+                        
+                        ?>
                     </div>
                 </div>
             </div>

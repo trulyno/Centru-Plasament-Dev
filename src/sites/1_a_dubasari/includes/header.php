@@ -32,7 +32,7 @@
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <span><?php echo t('contact_email'); ?></span>
-                                <a href="mailto:cp.cocieri1@agssi.md">cp.cocieri1@agssi.md</a>
+                                <a href="mailto:cp.cocieri1@AGSSSI.md">cp.cocieri1@AGSSSI.md</a>
                             </div>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                 <a href="index.php" style="display: flex; align-items: center; color: inherit; text-decoration: none;">
                     <img src="images/01_symbol_guvernul.png" alt="Logo Minister" class="logo-mobile-image">
                     <i class="fas fa-heart"></i>
-                    <span>MMPS · AGSSI · CPPVPD</span>
+                    <span>MMPS · AGSSSI · CPPVPD</span>
                 </a>
             </div>
             <div class="mobile-action-buttons">

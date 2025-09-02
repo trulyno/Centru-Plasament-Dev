@@ -2,7 +2,7 @@
   "site_title": "Centrul de Plasament pentru Persoane Vârstnice și Persoane cu Dizabilități",
   "site_title_full": "Centrul de Plasament pentru Persoane Vârstnice și Persoane cu Dizabilități din comuna Cocieri",
   "site_title_short": "CPPVPD",
-  "ministry_title": "Ministerul Muncii și Protecției Sociale · AGSSI",
+  "ministry_title": "Ministerul Muncii și Protecției Sociale · AGSSSI",
   
   "nav_home": "Acasă",
   "nav_services": "Servicii",
@@ -42,7 +42,7 @@
   
   "btn_donate": "Donează",
   
-  "donate_aria": "Donează pentru a sprijini copiii",
+  "donate_aria": "Donează pentru a sprijini beneficiarii",
   
   "social_facebook": "Facebook",
   
@@ -93,35 +93,35 @@
   
   "organigram_page_title": "Organigrama - Centrul de Plasament pentru Persoane Vârstnice și Persoane cu Dizabilități",
   "organigram_meta_description": "Organigrama și structura organizațională a Centrul de Plasament pentru Persoane Vârstnice și Persoane cu Dizabilități din Cocieri.",
-  "organigram_meta_keywords": "organigrama CPPVPD, structura organizațională, ierarhie centru copii, structura administrativă",
+  "organigram_meta_keywords": "organigrama CPPVPD, structura organizațională, ierarhie centru beneficiari, structura administrativă",
   
   "vacant_positions_page_title": "Funcții Vacante - Centrul de Plasament pentru Persoane Vârstnice și Persoane cu Dizabilități",
   "vacant_positions_meta_description": "Oportunități de carieră și funcții vacante la Centrul de Plasament pentru Persoane Vârstnice și Persoane cu Dizabilități din Cocieri. Alătură-te echipei noastre!",
-  "vacant_positions_meta_keywords": "locuri de muncă CPPVPD, cariere protecția copilului, funcții vacante, angajare centru copii, job-uri Cocieri",
-  "vacant_positions_subtitle": "Oportunități de carieră în domeniul protecției copilului",
+  "vacant_positions_meta_keywords": "locuri de muncă CPPVPD, cariere protecția beneficiarului, funcții vacante, angajare centru beneficiari, job-uri Cocieri",
+  "vacant_positions_subtitle": "Oportunități de carieră în domeniul protecției beneficiarului",
   
   "content_coming_soon": "Conținutul acestei pagini va fi completat în curând.",
   
   "guides_page_title": "Ghiduri - Centrul de Plasament pentru Persoane Vârstnice și Persoane cu Dizabilități",
   "guides_meta_description": "Ghiduri și instrucțiuni utile pentru beneficiarii și familiile în grijă oferite de Centrul de Plasament pentru Persoane Vârstnice și Persoane cu Dizabilități din Cocieri.",
-  "guides_meta_keywords": "ghiduri CPPVPD, instrucțiuni beneficiari, ghiduri familii, protecția copilului, suport informațional",
+  "guides_meta_keywords": "ghiduri CPPVPD, instrucțiuni beneficiari, ghiduri familii, protecția beneficiarului, suport informațional",
   "guides_title": "Ghiduri",
   "guides_subtitle": "Instrucțiuni și ghiduri utile pentru beneficiari și familii",
   
   "faq_page_title": "Întrebări Frecvente - Centrul de Plasament pentru Persoane Vârstnice și Persoane cu Dizabilități",
   "faq_meta_description": "Răspunsuri la cele mai frecvente întrebări despre serviciile oferite de Centrul de Plasament pentru Persoane Vârstnice și Persoane cu Dizabilități din Cocieri.",
-  "faq_meta_keywords": "întrebări frecvente CPPVPD, FAQ centru copii, informații servicii, răspunsuri întrebări",
+  "faq_meta_keywords": "întrebări frecvente CPPVPD, FAQ centru beneficiari, informații servicii, răspunsuri întrebări",
   "faq_title": "Întrebări Frecvente",
   "faq_subtitle": "Răspunsuri la cele mai frecvente întrebări despre serviciile noastre",
   
   "language_switch": "Schimbă limba",
   "current_language": "Română",
   
-  "meta_description":  "Centrul de Plasament pentru Persoane Vârstnice și Persoane cu Dizabilități oferă îngrijire cuprinzătoare pentru copiii mici în nevoie. Plasament sigur, terapie, suport educațional și servicii de reunificare familială.",
-  "meta_keywords": "plasament copii, reabilitare, plasament familial, adopție, terapie pentru copii, servicii familiale",
+  "meta_description":  "Centrul de Plasament pentru Persoane Vârstnice și Persoane cu Dizabilități oferă îngrijire cuprinzătoare pentru beneficiarii mici în nevoie. Plasament sigur, terapie, suport educațional și servicii de reunificare familială.",
+  "meta_keywords": "plasament beneficiari, reabilitare, plasament familial, adopție, terapie pentru beneficiari, servicii familiale",
   "meta_author":  "Centrul de Plasament pentru Persoane Vârstnice și Persoane cu Dizabilități",
   "meta_og_title":  "Centrul de Plasament pentru Persoane Vârstnice și Persoane cu Dizabilități",
-  "meta_og_description": "Oferim medii sigure și îngrijitoare unde copiii mici pot să se vindece și să crească.",
+  "meta_og_description": "Oferim medii sigure și îngrijitoare unde beneficiarii mici pot să se vindece și să crească.",
   
   "hero_slide_1_title": "Despre noi",
   "hero_slide_1_text": "Peste 200 de angajați cu experiență în domeniu social",
@@ -142,7 +142,7 @@
   "about_text_3": "Beneficiari ai Centrului sunt persoanele care au atins vârsta de 18 ani, persoane cu dizabilități sau persoane cu limită de vârstă, sunt cetățeni ai Republicii Moldova sau străini (specificați la art. 2, alin. (1) din Legea nr. 274 /2011 privind integrarea străinilor în Republica Moldova).",
   
   "services_section_title": "Serviciile Noastre",
-  "services_section_subtitle": "Îngrijire cuprinzătoare adaptată nevoilor unice ale fiecărui copil",
+  "services_section_subtitle": "Îngrijire cuprinzătoare adaptată nevoilor unice ale fiecărui beneficiar",
   
   "stats_beneficiaries": "Beneficiari în instituție",
   "stats_somatic": "Beneficiari Profil Somatic",
@@ -150,13 +150,13 @@
   "stats_years": "Ani de Serviciu",
   
   "gallery_section_title": "Galeria Noastră",
-  "gallery_section_subtitle": "O privire asupra activităților și spațiilor noastre dedicate copiilor",
+  "gallery_section_subtitle": "O privire asupra activităților și spațiilor noastre dedicate beneficiarilor",
   "gallery_playroom_title": "Sala de Joacă",
-  "gallery_playroom_desc": "Copiii se distrează în spațiul nostru sigur și colorat",
+  "gallery_playroom_desc": "beneficiarii se distrează în spațiul nostru sigur și colorat",
   "gallery_rest_title": "Camera de Odihnă",
   "gallery_rest_desc": "Spații liniștite și confortabile pentru relaxare",
   "gallery_educational_title": "Activități Educaționale",
-  "gallery_educational_desc": "Programe educaționale adaptate vârstei fiecărui copil",
+  "gallery_educational_desc": "Programe educaționale adaptate vârstei fiecărui beneficiar",
   "gallery_garden_title": "Grădina de Joacă",
   "gallery_garden_desc": "Spațiu exterior sigur pentru activități în aer liber",
   "gallery_events_title": "Evenimente Speciale",
@@ -258,8 +258,8 @@
   "guides_header_subtitle": "Resurse și materiale informative",
   
   "gallery_page_title": "Galerie - Centrul de Plasament pentru Persoane Vârstnice și Persoane cu Dizabilități",
-  "gallery_meta_description": "Galeria foto a Centrul de Plasament pentru Persoane Vârstnice și Persoane cu Dizabilități din Cocieri. Imagini din activitățile zilnice și spațiile dedicate copiilor.",
-  "gallery_meta_keywords": "galerie CPPVPD, imagini centru copii, activități copii, spații dedicate copiilor, galerie foto",
+  "gallery_meta_description": "Galeria foto a Centrul de Plasament pentru Persoane Vârstnice și Persoane cu Dizabilități din Cocieri. Imagini din activitățile zilnice și spațiile dedicate beneficiarilor.",
+  "gallery_meta_keywords": "galerie CPPVPD, imagini centru beneficiari, activități beneficiari, spații dedicate beneficiarilor, galerie foto",
   "gallery_filter_all": "Toate",
   "gallery_filter_activities": "Activități",
   "gallery_filter_spaces": "Spații", 
@@ -273,14 +273,14 @@
   "contact_header_title": "Contactează-ne",
   "contact_header_subtitle": "Suntem aici să ajutăm 24/7",
   
-  "partners_meta_description": "Partenerii Centrul de Plasament pentru Persoane Vârstnice și Persoane cu Dizabilități în oferirea serviciilor pentru copii.",
+  "partners_meta_description": "Partenerii Centrul de Plasament pentru Persoane Vârstnice și Persoane cu Dizabilități în oferirea serviciilor pentru beneficiari.",
   "partners_meta_keywords": "parteneri, colaboratori, organizații, sprijin",
   "partners_page_title": "Parteneri - Centrul de Plasament pentru Persoane Vârstnice și Persoane cu Dizabilități",
   "partners_header_title": "Partenerii Noștri",
-  "partners_header_subtitle": "Colaborări pentru binele copiilor",
+  "partners_header_subtitle": "Colaborări pentru binele beneficiarilor",
   
   "vacant_positions_join_team": "Alătură-te echipei noastre!",
-  "vacant_positions_intro":  "Centrul de Plasament pentru Persoane Vârstnice și Persoane cu Dizabilități din municipiul Cocieri caută profesioniști dedicați pentru a se alătura echipei noastre. Oferim un mediu de lucru stimulant și oportunitatea de a face o diferență reală în viața copiilor.",
+  "vacant_positions_intro":  "Centrul de Plasament pentru Persoane Vârstnice și Persoane cu Dizabilități din municipiul Cocieri caută profesioniști dedicați pentru a se alătura echipei noastre. Oferim un mediu de lucru stimulant și oportunitatea de a face o diferență reală în viața beneficiarilor.",
   "vacant_positions_available": "Posturi Disponibile",
   "vacant_positions_none_available": "În prezent nu avem posturi vacante disponibile. Vă rugăm să verificați din nou în viitor pentru oportunități noi.",
   "vacant_positions_section": "Secția",
@@ -292,19 +292,19 @@
   "vacant_positions_contact_info": "Pentru întrebări despre oportunități de carieră, vă rugăm să ne contactați:",
   "vacant_positions_how_to_apply": "Cum să aplici",
   "vacant_positions_step1_title": "Pregătește documentele",
-  "vacant_positions_step1_desc": "CV-ul, scrisoarea de intenție și copiile documentelor de studii",
+  "vacant_positions_step1_desc": "CV-ul, scrisoarea de intenție și beneficiarile documentelor de studii",
   "vacant_positions_step2_title": "Trimite aplicația",
   "vacant_positions_step2_desc": "La adresa de email:",
   "vacant_positions_step3_title": "Interviul",
   "vacant_positions_step3_desc": "Te vom contacta pentru programarea unui interviu",
 
   "international_acts_page_title": "Acte Internaționale - Centrul de Plasament pentru Persoane Vârstnice și Persoane cu Dizabilități",
-  "international_acts_meta_description": "Acte normative internaționale în domeniul protecției copilului aplicate în activitatea centrului.",
-  "international_acts_meta_keywords": "acte internaționale, convenții internaționale, drepturi copil",
+  "international_acts_meta_description": "Acte normative internaționale în domeniul protecției beneficiarului aplicate în activitatea centrului.",
+  "international_acts_meta_keywords": "acte internaționale, convenții internaționale, drepturi beneficiar",
   "international_acts_title": "Acte Internaționale",
-  "international_acts_subtitle": "Convenții și acorduri internaționale în domeniul protecției copilului",
+  "international_acts_subtitle": "Convenții și acorduri internaționale în domeniul protecției beneficiarului",
   "international_acts_content_title": "Acte Normative Internaționale",
-  "international_acts_content_description": "Republica Moldova a ratificat și aplică următoarele acte internaționale în domeniul protecției copilului:",
+  "international_acts_content_description": "Republica Moldova a ratificat și aplică următoarele acte internaționale în domeniul protecției beneficiarului:",
   
   "national_acts_page_title": "Acte Naționale - Centrul de Plasament pentru Persoane Vârstnice și Persoane cu Dizabilități",
   "national_acts_meta_description": "Acte normative naționale care reglementează activitatea Centrul de Plasament pentru Persoane Vârstnice și Persoane cu Dizabilități.",
@@ -434,13 +434,13 @@
   
   "faq_search_aria": "Caută în întrebările frecvente",
   "faq_what_is_CPPVPD_q": "Ce este Centrul de Plasament pentru Persoane Vârstnice și Persoane cu Dizabilități?",
-  "faq_what_is_CPPVPD_a":  "Centrul de Plasament pentru Persoane Vârstnice și Persoane cu Dizabilități din municipiul Cocieri este o instituție publică de asistenă socială care oferă servicii specializate pentru Copii de vârstă fragedă (0-7 ani) aflați în situații de risc sau cu nevoi speciale. Centrul funcționează în subordinea Agenției pentru Servicii Sociale și Incluziune și are ca misiune protecția, îngrijirea și reabilitarea copiilor vulnerabili.",
+  "faq_what_is_CPPVPD_a":  "Centrul de Plasament pentru Persoane Vârstnice și Persoane cu Dizabilități din municipiul Cocieri este o instituție publică de asistenă socială care oferă servicii specializate pentru beneficiari de vârstă fragedă (0-7 ani) aflați în situații de risc sau cu nevoi speciale. Centrul funcționează în subordinea Agenției pentru Servicii Sociale și Incluziune și are ca misiune protecția, îngrijirea și reabilitarea beneficiarilor vulnerabili.",
   "faq_what_services_q": "Ce servicii oferă centrul?",
-  "faq_what_services_a": "Centrul oferă multiple servicii specializate: Secția de Criză și Reintegrare Familială pentru copiii în situații de urgență, Secția Maternală pentru mame și copii în dificultate, Secția de Zi pentru copii cu dizabilități neuro-motorii, Secția Respiro pentru familiile cu copii cu nevoi speciale, Secția de Asistență Psihopedagogică, Secția de Reabilitare și Secția de Asistență Medicală.",
+  "faq_what_services_a": "Centrul oferă multiple servicii specializate: Secția de Criză și Reintegrare Familială pentru beneficiarii în situații de urgență, Secția Maternală pentru mame și beneficiari în dificultate, Secția de Zi pentru beneficiari cu dizabilități neuro-motorii, Secția Respiro pentru familiile cu beneficiari cu nevoi speciale, Secția de Asistență Psihopedagogică, Secția de Reabilitare și Secția de Asistență Medicală.",
   "faq_how_to_apply_q": "Cum pot solicita serviciile centrului?",
-  "faq_how_to_apply_a": "Pentru a solicita serviciile centrului, trebuie să vă adresați la Direcția Protecția Copilului din municipiul Cocieri sau la autoritățile locale de tutelă și curatele. Aceștia vor evalua situația și vor emite, dacă este cazul, o dispoziție de plasament. De asemenea, puteți contacta direct centrul la numărul de telefon 022 737 027 pentru consultații.",
+  "faq_how_to_apply_a": "Pentru a solicita serviciile centrului, trebuie să vă adresați la Direcția Protecția beneficiarului din municipiul Cocieri sau la autoritățile locale de tutelă și curatele. Aceștia vor evalua situația și vor emite, dacă este cazul, o dispoziție de plasament. De asemenea, puteți contacta direct centrul la numărul de telefon 022 737 027 pentru consultații.",
   "faq_emergency_contact_q": "La ce număr pot apela în caz de urgență?",
-  "faq_emergency_contact_a": "În caz de urgență, puteți apela la numărul de telefon 022 737 027, care funcționează 24/7. Centrul are un regim de funcționare non-stop pentru situațiile de criză. De asemenea, puteți contacta Serviciul de Urgență pentru Protecția Copilului sau autoritățile locale competente.",
+  "faq_emergency_contact_a": "În caz de urgență, puteți apela la numărul de telefon 022 737 027, care funcționează 24/7. Centrul are un regim de funcționare non-stop pentru situațiile de criză. De asemenea, puteți contacta Serviciul de Urgență pentru Protecția beneficiarului sau autoritățile locale competente.",
 
   "somatic_meta_description": "",
   "somatic_meta_keywords": "",

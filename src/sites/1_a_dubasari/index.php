@@ -130,14 +130,14 @@ require_once __DIR__ . '/includes/analytics.php';
             <div class="services-grid">
                 <a href="sectia_profil_somatic.php" class="service-card fade-in">
                     <div class="service-image">
-                        <img src="" alt="<?php echo t('services_somatic'); ?>" loading="lazy">
+                        <img src="images/20250409_094126.jpg" alt="<?php echo t('services_somatic'); ?>" loading="lazy">
                     </div>
                     <h3><?php echo t('services_somatic'); ?></h3>
                     <p><?php echo t('somatic_header_subtitle'); ?></p>
                 </a>
                 <a href="sectia_profil_psihoneurologic.php" class="service-card fade-in">
                     <div class="service-image">
-                        <img src="" alt="<?php echo t('services_phsyco_neurological'); ?>" loading="lazy">
+                        <img src="images/photo_5373042441810210718_y.jpg" alt="<?php echo t('services_phsyco_neurological'); ?>" loading="lazy">
                     </div>
                     <h3><?php echo t('services_phsyco_neurological'); ?></h3>
                     <p><?php echo t('phsyco_neurological_header_subtitle'); ?></p>
@@ -183,41 +183,27 @@ require_once __DIR__ . '/includes/analytics.php';
                     <i class="fas fa-chevron-left"></i>
                 </button>
                 
-                <!-- <div class="gallery-slide active">
-                    <img src="images/cresa3.jpg" alt="<?php echo t('gallery_playroom_desc'); ?>" loading="lazy">
+                <div class="gallery-slide active">
+                    <img src="images/20250409_103615.jpg" alt="<?php echo t('gallery_plyroom_desc'); ?>" loading="lazy">
                     <div class="gallery-slide-content">
-                        <h3><?php echo t('gallery_playroom_title'); ?></h3>
-                        <p><?php echo t('gallery_playroom_desc'); ?></p>
+                        <h3><?php echo t(''); ?></h3>
+                        <p><?php echo t(''); ?></p>
                     </div>
                 </div>
                 <div class="gallery-slide">
-                    <img src="images/zi10.jpg" alt="<?php echo t('gallery_rest_desc'); ?>" loading="lazy">
+                    <img src="images/259640924_1287898065006950_1799962175050298974_n.jpg" alt="<?php echo t(''); ?>" loading="lazy">
                     <div class="gallery-slide-content">
-                        <h3><?php echo t('gallery_rest_title'); ?></h3>
-                        <p><?php echo t('gallery_rest_desc'); ?></p>
+                        <h3><?php echo t(''); ?></h3>
+                        <p><?php echo t(''); ?></p>
                     </div>
                 </div>
                 <div class="gallery-slide">
-                    <img src="images/6.jpg" alt="<?php echo t('gallery_educational_desc'); ?>" loading="lazy">
+                    <img src="images/IMG_20190721_181625.jpg" alt="<?php echo t(''); ?>" loading="lazy">
                     <div class="gallery-slide-content">
-                        <h3><?php echo t('gallery_educational_title'); ?></h3>
-                        <p><?php echo t('gallery_educational_desc'); ?></p>
+                        <h3><?php echo t(''); ?></h3>
+                        <p><?php echo t(''); ?></p>
                     </div>
                 </div>
-                <div class="gallery-slide">
-                    <img src="images/585.jpg" alt="<?php echo t('gallery_events_desc'); ?>" loading="lazy">
-                    <div class="gallery-slide-content">
-                        <h3><?php echo t('gallery_events_title'); ?></h3>
-                        <p><?php echo t('gallery_events_desc'); ?></p>
-                    </div>
-                </div>
-                <div class="gallery-slide">
-                    <video src="videos/video5363927670348345826.mp4" alt="Eveniment" loading="lazy" muted autoplay>
-                    <div class="gallery-slide-content">
-                        <h3><?php echo t('gallery_events_title'); ?></h3>
-                        <p><?php echo t('gallery_events_desc'); ?></p>
-                    </div>
-                </div> -->
                 
                 <!-- Next Button -->
                 <button class="gallery-nav-btn gallery-next-btn" id="galleryNextBtn">
@@ -230,8 +216,6 @@ require_once __DIR__ . '/includes/analytics.php';
                 <button class="gallery-slide-btn active" data-slide="0"></button>
                 <button class="gallery-slide-btn" data-slide="1"></button>
                 <button class="gallery-slide-btn" data-slide="2"></button>
-                <button class="gallery-slide-btn" data-slide="3"></button>
-                <button class="gallery-slide-btn" data-slide="4"></button>
             </div>
             
             <!-- View All Gallery Button -->
@@ -254,8 +238,8 @@ require_once __DIR__ . '/includes/analytics.php';
                     <a href="https://social.gov.md/" target="_blank" class="partner-slide">
                         <img src="images/logo-mps.webp" alt="MMPS" loading="lazy">
                     </a>
-                    <a href="https://agssi.md/" target="_blank" class="partner-slide">
-                        <img src="images/logo-mps.webp" alt="AGSSI" loading="lazy">
+                    <a href="https://AGSSSI.md/" target="_blank" class="partner-slide">
+                        <img src="images/logo-mps.webp" alt="AGSSSI" loading="lazy">
                     </a>
                     <a href="https://ms.gov.md//" target="_blank" class="partner-slide">
                         <img src="https://ms.gov.md/wp-content/uploads/2023/03/ministerul-s%C4%83n%C4%83t%C4%83%C8%9Bii-monocrom.png" alt="MSGOV" loading="lazy">
@@ -282,8 +266,8 @@ require_once __DIR__ . '/includes/analytics.php';
                     <!-- <a href="https://social.gov.md/" target="_blank" class="partner-slide">
                         <img src="images/logo-mps.webp" alt="MMPS" loading="lazy">
                     </a>
-                    <a href="https://agssi.md/" target="_blank" class="partner-slide">
-                        <img src="images/logo-mps.webp" alt="AGSSI" loading="lazy">
+                    <a href="https://AGSSSI.md/" target="_blank" class="partner-slide">
+                        <img src="images/logo-mps.webp" alt="AGSSSI" loading="lazy">
                     </a>
                     <a href="https://ms.gov.md//" target="_blank" class="partner-slide">
                         <img src="https://ms.gov.md/wp-content/uploads/2023/03/ministerul-s%C4%83n%C4%83t%C4%83%C8%9Bii-monocrom.png" alt="MSGOV" loading="lazy">
@@ -461,7 +445,7 @@ require_once __DIR__ . '/includes/analytics.php';
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <strong>Email:</strong><br>
-                                cp.cocieri1@agssi.md
+                                cp.cocieri1@AGSSSI.md
                             </div>
                         </div>
                         <div class="contact-item">

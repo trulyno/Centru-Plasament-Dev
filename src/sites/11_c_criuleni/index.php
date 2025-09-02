@@ -48,7 +48,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     </div>
                 </div>
                 <div class="slide-image">
-                    <img src="images/logo (1) (1).png" alt="<?php echo t('hero_slide_1_title'); ?>" loading="lazy">
+                    <img src="images/465467964_9175578372466753_3153707713661157327_n.jpg" alt="<?php echo t('hero_slide_1_title'); ?>" loading="lazy">
                 </div>
             </div>
             <div class="slide">
@@ -60,7 +60,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     </div>
                 </div>
                 <div class="slide-image">
-                    <img src="images/zi10.jpg" alt="<?php echo t('hero_slide_2_title'); ?>" loading="lazy">
+                    <img src="images/484347177_1178807370705137_2513999702540758669_n.jpg" alt="<?php echo t('hero_slide_2_title'); ?>" loading="lazy">
                 </div>
             </div>
             <div class="slide">
@@ -72,7 +72,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     </div>
                 </div>
                 <div class="slide-image">
-                    <img src="images/zoo1.jpeg" alt="<?php echo t('hero_slide_3_title'); ?>" loading="lazy">
+                    <img src="images/499479238_1230373372215203_7708007265984725921_n.jpg" alt="<?php echo t('hero_slide_3_title'); ?>" loading="lazy">
                 </div>
             </div>
         </div>
@@ -116,7 +116,7 @@ require_once __DIR__ . '/includes/analytics.php';
                 </div>
                 
                 <div class="about-image fade-in">
-                    <img src="images/intrare.jpg" alt="Intrarea în Centrul de Plasament și Reabilitare" loading="lazy">
+                    <img src="images/logo1.jpg" alt="Intrarea în Centrul de Plasament și Reabilitare" loading="lazy">
                 </div>
             </div>
         </div>
@@ -296,8 +296,8 @@ require_once __DIR__ . '/includes/analytics.php';
                     <a href="https://social.gov.md/" target="_blank" class="partner-slide">
                         <img src="images/logo-mps.webp" alt="MMPS" loading="lazy">
                     </a>
-                    <a href="https://agssi.md/" target="_blank" class="partner-slide">
-                        <img src="images/logo-mps.webp" alt="AGSSI" loading="lazy">
+                    <a href="https://AGSSSI.md/" target="_blank" class="partner-slide">
+                        <img src="images/logo-mps.webp" alt="AGSSSI" loading="lazy">
                     </a>
                     <a href="https://ms.gov.md//" target="_blank" class="partner-slide">
                         <img src="https://ms.gov.md/wp-content/uploads/2023/03/ministerul-s%C4%83n%C4%83t%C4%83%C8%9Bii-monocrom.png" alt="MSGOV" loading="lazy">
@@ -324,8 +324,8 @@ require_once __DIR__ . '/includes/analytics.php';
                     <!-- <a href="https://social.gov.md/" target="_blank" class="partner-slide">
                         <img src="images/logo-mps.webp" alt="MMPS" loading="lazy">
                     </a>
-                    <a href="https://agssi.md/" target="_blank" class="partner-slide">
-                        <img src="images/logo-mps.webp" alt="AGSSI" loading="lazy">
+                    <a href="https://AGSSSI.md/" target="_blank" class="partner-slide">
+                        <img src="images/logo-mps.webp" alt="AGSSSI" loading="lazy">
                     </a>
                     <a href="https://ms.gov.md//" target="_blank" class="partner-slide">
                         <img src="https://ms.gov.md/wp-content/uploads/2023/03/ministerul-s%C4%83n%C4%83t%C4%83%C8%9Bii-monocrom.png" alt="MSGOV" loading="lazy">

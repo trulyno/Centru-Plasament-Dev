@@ -32,7 +32,7 @@
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <span><?php echo t('contact_email'); ?></span>
-                                <a href="mailto:cp.soroca@agssi.md">cp.soroca@agssi.md</a>
+                                <a href="mailto:cp.soroca@AGSSSI.md">cp.soroca@AGSSSI.md</a>
                             </div>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                 <a href="index.php" style="display: flex; align-items: center; color: inherit; text-decoration: none;">
                     <img src="images/01_symbol_guvernul.png  " alt="Logo CPTCSP" class="logo-mobile-image">
                     <i class="fas fa-heart"></i>
-                    <span>MMPS · AGSSI · CPTCSP</span>
+                    <span>MMPS · AGSSSI · CPTCSP</span>
                 </a>
             </div>
             <div class="mobile-action-buttons">
@@ -85,19 +85,15 @@
             <nav>
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="index.php"><?php echo t('nav_home'); ?></a></li>
-                    <!-- <li class="dropdown">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle"><?php echo t('nav_services'); ?> <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="sectia-criza-reintegrare-familiala.php"><?php echo t('services_crisis'); ?></a></li>
-                            <li><a href="sectia-maternala.php"><?php echo t('services_maternal'); ?></a></li>
-                            <li><a href="sectia-zi-4luni-3ani.php"><?php echo t('services_day_4m_3y'); ?></a></li>
-                            <li><a href="sectia-de-zi.php"><?php echo t('services_day'); ?></a></li>
-                            <li><a href="sectia-respiro.php"><?php echo t('services_respiro'); ?></a></li>
-                            <li><a href="sectia-asistenta-psihopedagogica.php"><?php echo t('services_psycho_pedagogical'); ?></a></li>
-                            <li><a href="sectia-reabilitare.php"><?php echo t('services_rehabilitation'); ?></a></li>
-                            <li><a href="sectia-asistenta-medicala.php"><?php echo t('services_medical'); ?></a></li>
+                            <li><a href="activitati_educationale.php"><?php echo t('activities_educational'); ?></a></li>
+                            <li><a href="activitati_recreative.php"><?php echo t('activities_recreational'); ?></a></li>
+                            <li><a href="evenimente_speciale.php"><?php echo t('special_events'); ?></a></li>
+                            <li><a href="dezvoltare_personala.php"><?php echo t('personal_development'); ?></a></li>
                         </ul>
-                    </li> -->
+                    </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle"><?php echo t('nav_transparency'); ?> <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">

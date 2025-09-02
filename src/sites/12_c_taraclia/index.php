@@ -48,7 +48,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     </div>
                 </div>
                 <div class="slide-image">
-                    <img src="images/.png" alt="<?php echo t('hero_slide_1_title'); ?>" loading="lazy">
+                    <img src="images/2.jpg" alt="<?php echo t('hero_slide_1_title'); ?>" loading="lazy">
                 </div>
             </div>
             <div class="slide">
@@ -60,7 +60,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     </div>
                 </div>
                 <div class="slide-image">
-                    <img src="images/.jpg" alt="<?php echo t('hero_slide_2_title'); ?>" loading="lazy">
+                    <img src="images/3.jpg" alt="<?php echo t('hero_slide_2_title'); ?>" loading="lazy">
                 </div>
             </div>
             <div class="slide">
@@ -72,7 +72,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     </div>
                 </div>
                 <div class="slide-image">
-                    <img src="images/.jpeg" alt="<?php echo t('hero_slide_3_title'); ?>" loading="lazy">
+                    <img src="images/4.jpg" alt="<?php echo t('hero_slide_3_title'); ?>" loading="lazy">
                 </div>
             </div>
         </div>
@@ -116,7 +116,7 @@ require_once __DIR__ . '/includes/analytics.php';
                 </div>
                 
                 <div class="about-image fade-in">
-                    <img src="images/.jpg" alt="" loading="lazy">
+                    <img src="images/1.jpg" alt="" loading="lazy">
                 </div>
             </div>
         </div>
@@ -140,7 +140,7 @@ require_once __DIR__ . '/includes/analytics.php';
                         <img src="images/maternala5.jpg" alt="<?php echo t('services_psycho_pedagogical'); ?>" loading="lazy">
                     </div>
                     <h3><?php echo t('services_psycho_pedagogical'); ?></h3>
-                    <p><?php echo t('psychopedagogical_header_subtitle'); ?></p>
+                    <p><?php echo t('psycho_pedagogical_header_subtitle'); ?></p>
                 </a>
                 <a href="serviciul_reabilitare.php" class="service-card fade-in">
                     <div class="service-image">
@@ -180,7 +180,7 @@ require_once __DIR__ . '/includes/analytics.php';
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <strong>Email:</strong><br>
-                                cr.taraclia@agssi.md
+                                cr.taraclia@AGSSSI.md
                             </div>
                         </div>
                         <div class="contact-item">

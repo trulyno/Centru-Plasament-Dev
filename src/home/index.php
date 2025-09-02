@@ -296,8 +296,8 @@ require_once __DIR__ . '/includes/analytics.php';
                     <a href="https://social.gov.md/" target="_blank" class="partner-slide">
                         <img src="images/logo-mps.webp" alt="MMPS" loading="lazy">
                     </a>
-                    <a href="https://agssi.md/" target="_blank" class="partner-slide">
-                        <img src="images/logo-mps.webp" alt="AGSSI" loading="lazy">
+                    <a href="https://AGSSSI.md/" target="_blank" class="partner-slide">
+                        <img src="images/logo-mps.webp" alt="AGSSSI" loading="lazy">
                     </a>
                     <a href="https://ms.gov.md//" target="_blank" class="partner-slide">
                         <img src="https://ms.gov.md/wp-content/uploads/2023/03/ministerul-s%C4%83n%C4%83t%C4%83%C8%9Bii-monocrom.png" alt="MSGOV" loading="lazy">
@@ -324,8 +324,8 @@ require_once __DIR__ . '/includes/analytics.php';
                     <a href="https://social.gov.md/" target="_blank" class="partner-slide">
                         <img src="images/logo-mps.webp" alt="MMPS" loading="lazy">
                     </a>
-                    <a href="https://agssi.md/" target="_blank" class="partner-slide">
-                        <img src="images/logo-mps.webp" alt="AGSSI" loading="lazy">
+                    <a href="https://AGSSSI.md/" target="_blank" class="partner-slide">
+                        <img src="images/logo-mps.webp" alt="AGSSSI" loading="lazy">
                     </a>
                     <a href="https://ms.gov.md//" target="_blank" class="partner-slide">
                         <img src="https://ms.gov.md/wp-content/uploads/2023/03/ministerul-s%C4%83n%C4%83t%C4%83%C8%9Bii-monocrom.png" alt="MSGOV" loading="lazy">
@@ -503,7 +503,7 @@ require_once __DIR__ . '/includes/analytics.php';
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <strong>Email:</strong><br>
-                                centru_plasament@agssi.md
+                                centru_plasament@AGSSSI.md
                             </div>
                         </div>
                         <div class="contact-item">

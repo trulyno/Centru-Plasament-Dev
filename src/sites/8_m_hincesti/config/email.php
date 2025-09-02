@@ -22,8 +22,8 @@ return [
     'addresses' => [
         'from_email' => 'noreply@centrulplasament.md', // Sender email address
         'from_name' => 'Centrul de Plasament și Reabilitare pentru Copii de Vârstă Fragedă din municipiul Chișinău', // Sender name
-        'admin_email' => 'centru_plasament@agssi.md', // Admin email (receives notifications)
-        'reply_to' => 'centru_plasament@agssi.md', // Reply-to address
+        'admin_email' => 'centru_plasament@AGSSSI.md', // Admin email (receives notifications)
+        'reply_to' => 'centru_plasament@AGSSSI.md', // Reply-to address
     ],
     
     // Email Settings

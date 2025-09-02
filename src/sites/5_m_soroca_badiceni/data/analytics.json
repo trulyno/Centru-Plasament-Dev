@@ -1,0 +1,62 @@
+{
+    "daily": {
+        "2025-08-14": {
+            "page_views": 28,
+            "unique_visitors": [
+                "a7646eadc763798c4c8cc484f31913acee4afd2dbe7949cb18cc2ba07ae21716"
+            ],
+            "pages": {
+                "galerie": 3,
+                "index": 8,
+                "sectia-criza-reintegrare-familiala": 3,
+                "acte-nationale": 1,
+                "acte-internationale": 1,
+                "acte-interne": 1,
+                "invitatii-participare": 1,
+                "proiecte": 1,
+                "rapoarte": 1,
+                "registru-cadouri": 1,
+                "ghiduri": 1,
+                "intrebari-frecvente": 1,
+                "administratia": 1,
+                "organigrama": 1,
+                "functii-vacante": 1,
+                "petitii-reclamatii": 1,
+                "dashboard": 1
+            },
+            "referrers": {
+                "localhost": 28
+            },
+            "browsers": {
+                "Chrome": 28
+            },
+            "hourly": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                27,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        }
+    },
+    "events": []
+}

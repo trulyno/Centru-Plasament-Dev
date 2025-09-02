@@ -75,7 +75,7 @@
                 <a href="index.php" style="display: flex; align-items: center; color: inherit; text-decoration: none;">
                     <img src="images/01_symbol_guvernul.png  " alt="Logo CPRCVF" class="logo-mobile-image">
                     <i class="fas fa-heart"></i>
-                    <span>MMPS · AGSSI · „Speranța”</span>
+                    <span>MMPS · AGSSSI · „Speranța”</span>
                 </a>
             </div>
             <div class="mobile-action-buttons">

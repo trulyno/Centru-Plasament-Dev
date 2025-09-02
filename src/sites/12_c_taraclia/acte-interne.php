@@ -76,7 +76,7 @@ function document($src, $title = '') {
                                     </div>
                                     <div class="detail-item">
                                         <i class="fas fa-user-check"></i>
-                                        <span>Aprobat prin Ordinul AGSSI</span>
+                                        <span>Aprobat prin Ordinul AGSSSI</span>
                                     </div>
                                 </div>
                                 <a href="files/Ordin-Regulament-6 martie 2024.pdf" class="document-link" target="_blank">

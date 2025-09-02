@@ -32,7 +32,7 @@
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <span><?php echo t('contact_email'); ?></span>
-                                <a href="mailto:cr.taraclia@agssi.md">cr.taraclia@agssi.md</a>
+                                <a href="mailto:cr.taraclia@AGSSSI.md">cr.taraclia@AGSSSI.md</a>
                             </div>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                 <a href="index.php" style="display: flex; align-items: center; color: inherit; text-decoration: none;">
                     <img src="images/01_symbol_guvernul.png  " alt="Logo „Пламъче”" class="logo-mobile-image">
                     <i class="fas fa-heart"></i>
-                    <span>MMPS · AGSSI · „Пламъче”</span>
+                    <span>MMPS · AGSSSI · „Пламъче”</span>
                 </a>
             </div>
             <div class="mobile-action-buttons">

@@ -114,7 +114,7 @@ require_once __DIR__ . '/includes/analytics.php';
                                 <div class="step-number">2</div>
                                 <div class="step-content">
                                     <h4><?php echo t('vacant_positions_step2_title'); ?></h4>
-                                    <p><?php echo t('vacant_positions_step2_desc'); ?> <strong>centru_plasament@agssi.md</strong></p>
+                                    <p><?php echo t('vacant_positions_step2_desc'); ?> <strong>centru_plasament@AGSSSI.md</strong></p>
                                 </div>
                             </div>
                             <div class="step">

@@ -32,7 +32,7 @@
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <span><?php echo t('contact_email'); ?></span>
-                                <a href="mailto:centru_plasament@agssi.md">centru_plasament@agssi.md</a>
+                                <a href="mailto:centru_plasament@AGSSSI.md">centru_plasament@AGSSSI.md</a>
                             </div>
                         </div>
                     </div>
@@ -83,7 +83,7 @@
                 <a href="index.php" style="display: flex; align-items: center; color: inherit; text-decoration: none;">
                     <img src="images/01_symbol_guvernul.png  " alt="Logo CPRCVF" class="logo-mobile-image">
                     <i class="fas fa-heart"></i>
-                    <span>MMPS · AGSSI · CPRCVF</span>
+                    <span>MMPS · AGSSSI · CPRCVF</span>
                 </a>
             </div>
             <div class="mobile-action-buttons">
