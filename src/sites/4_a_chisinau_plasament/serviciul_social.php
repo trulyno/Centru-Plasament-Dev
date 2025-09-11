@@ -47,23 +47,66 @@ require_once __DIR__ . '/includes/analytics.php';
                     <div class="service-hero">
                         <div class="service-hero-content">
                             <h2><?php echo t('social_about_title'); ?></h2>
-                            <p><?php echo t('service_social_desc'); ?></p>
+                            <p><?php echo t('service_social_desc'); ?></p>  
+                            <div class="service-mission-inline">
+                                <p><?php echo t('social_mission_desc'); ?></p>
+                            </div>
+                            <div class="service-mission-inline">
+                                <p><?php echo t('social_conclusion'); ?></p>
+                            </div>
                         </div>
                         <div class="service-hero-image">
-                            <img src="images/criza2.jpg" alt="<?php echo t('services_social'); ?>" loading="lazy">
-                        </div>
+                            <img src="images/5.jpg" alt="<?php echo t('services_social'); ?>" loading="lazy">
+                        </div>  
                     </div>
-<!-- 
-                    <div class="service-extra-info">
-                        <div class="content">
-                            <h2><?php echo t('crisis_family_visiting_title'); ?></h2>
-                            <p><?php echo t('crisis_family_visiting_desc'); ?></p>
+
+                    <!-- Integrated Services Section -->
+                    <!-- <div class="service-categories-integrated">
+                        <div class="services-intro">
+                            <p><?php echo t('social_services_intro'); ?></p>
+                        </div>
+                        
+                        <!-- Conclusion integrated at bottom -->
+                        <!--<div class="service-conclusion-integrated">
+                            
                         </div>
                     </div> -->
 
                     <div class="service-details">
                         <h2><?php echo t('services_title'); ?></h2>
                         <div class="services-list">
+                            <!-- Main Service Categories -->
+                            <div class="service-item featured">
+                                <div class="service-icon">
+                                    <i class="fas fa-hands-helping"></i>
+                                </div>
+                                <div class="service-content">
+                                    <h4><?php echo t('social_personal_care_title'); ?></h4>
+                                    <p><?php echo t('social_personal_care_desc'); ?></p>
+                                </div>
+                            </div>
+                            
+                            <div class="service-item featured">
+                                <div class="service-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <div class="service-content">
+                                    <h4><?php echo t('social_psychosocial_title'); ?></h4>
+                                    <p><?php echo t('social_psychosocial_desc'); ?></p>
+                                </div>
+                            </div>
+                            
+                            <div class="service-item featured">
+                                <div class="service-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="service-content">
+                                    <h4><?php echo t('social_socialization_title'); ?></h4>
+                                    <p><?php echo t('social_socialization_desc'); ?></p>
+                                </div>
+                            </div>
+                            
+                            <!-- Additional Service Details -->
                             <div class="service-item">
                                 <div class="service-icon">
                                     <i class="fas fa-home"></i>
@@ -96,35 +139,160 @@ require_once __DIR__ . '/includes/analytics.php';
 
                     <div class="documents-section">
                         <h2><?php echo t('documents_title'); ?></h2>
-                        <p class="documents-intro"><?php echo t('crisis_family_documents_intro'); ?></p>
-                        <div class="documents-list">
-                            <!-- <div class="document-item" data-aos="fade-up" data-aos-delay="100">
-                                <div class="document-icon">
-                                    <i class="fas fa-file-medical" aria-hidden="true"></i>
+                        
+                        <!-- Paid Service Documents -->
+                        <div class="document-category">
+                            <h3 class="document-category-title">
+                                <i class="fas fa-credit-card" aria-hidden="true"></i>
+                                <?php echo t('documents_paid_service_title'); ?>
+                            </h3>
+                            <div class="documents-list">
+                                <div class="document-item">
+                                    <div class="document-number">1</div>
+                                    <div class="document-content">
+                                        <p><?php echo t('doc_paid_1'); ?></p>
+                                    </div>
                                 </div>
-                                <div class="document-content">
-                                    <h5><?php echo t('crisis_family_document_request_title'); ?></h5>
-                                    <p><?php echo t('crisis_family_document_request_desc'); ?></p>
+                                <div class="document-item">
+                                    <div class="document-number">2</div>
+                                    <div class="document-content">
+                                        <p><?php echo t('doc_paid_2'); ?></p>
+                                    </div>
+                                </div>
+                                <div class="document-item">
+                                    <div class="document-number">3</div>
+                                    <div class="document-content">
+                                        <p><?php echo t('doc_paid_3'); ?></p>
+                                    </div>
+                                </div>
+                                <div class="document-item">
+                                    <div class="document-number">4</div>
+                                    <div class="document-content">
+                                        <p><?php echo t('doc_paid_4'); ?></p>
+                                    </div>
+                                </div>
+                                <div class="document-item">
+                                    <div class="document-number">5</div>
+                                    <div class="document-content">
+                                        <p><?php echo t('doc_paid_5'); ?></p>
+                                    </div>
+                                </div>
+                                <div class="document-item">
+                                    <div class="document-number">6</div>
+                                    <div class="document-content">
+                                        <p><?php echo t('doc_paid_6'); ?></p>
+                                    </div>
+                                </div>
+                                <div class="document-item">
+                                    <div class="document-number">7</div>
+                                    <div class="document-content">
+                                        <p><?php echo t('doc_paid_7'); ?></p>
+                                    </div>
+                                </div>
+                                <div class="document-item">
+                                    <div class="document-number">8</div>
+                                    <div class="document-content">
+                                        <p><?php echo t('doc_paid_8'); ?></p>
+                                    </div>
+                                </div>
+                                <div class="document-item">
+                                    <div class="document-number">9</div>
+                                    <div class="document-content">
+                                        <p><?php echo t('doc_paid_9'); ?></p>
+                                    </div>
+                                </div>
+                                <div class="document-item">
+                                    <div class="document-number">10</div>
+                                    <div class="document-content">
+                                        <p><?php echo t('doc_paid_10'); ?></p>
+                                    </div>
+                                </div>
+                                <div class="document-item">
+                                    <div class="document-number">11</div>
+                                    <div class="document-content">
+                                        <p><?php echo t('doc_paid_11'); ?></p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="document-item" data-aos="fade-up" data-aos-delay="100">
-                                <div class="document-icon">
-                                    <i class="fas fa-file-medical" aria-hidden="true"></i>
+                        </div>
+
+                        <!-- State Maintenance Documents -->
+                        <div class="document-category">
+                            <h3 class="document-category-title">
+                                <i class="fas fa-landmark" aria-hidden="true"></i>
+                                <?php echo t('documents_state_maintenance_title'); ?>
+                            </h3>
+                            <p class="document-category-subtitle"><?php echo t('documents_state_maintenance_subtitle'); ?></p>
+                            <div class="documents-list">
+                                <div class="document-item">
+                                    <div class="document-number">1</div>
+                                    <div class="document-content">
+                                        <p><?php echo t('doc_state_1'); ?></p>
+                                    </div>
                                 </div>
-                                <div class="document-content">
-                                    <h5><?php echo t('crisis_family_document_disposition_title'); ?></h5>
-                                    <p><?php echo t('crisis_family_document_disposition_desc'); ?></p>
+                                <div class="document-item">
+                                    <div class="document-number">2</div>
+                                    <div class="document-content">
+                                        <p><?php echo t('doc_state_2'); ?></p>
+                                    </div>
+                                </div>
+                                <div class="document-item">
+                                    <div class="document-number">3</div>
+                                    <div class="document-content">
+                                        <p><?php echo t('doc_state_3'); ?></p>
+                                    </div>
+                                </div>
+                                <div class="document-item">
+                                    <div class="document-number">4</div>
+                                    <div class="document-content">
+                                        <p><?php echo t('doc_state_4'); ?></p>
+                                    </div>
+                                </div>
+                                <div class="document-item">
+                                    <div class="document-number">5</div>
+                                    <div class="document-content">
+                                        <p><?php echo t('doc_state_5'); ?></p>
+                                    </div>
+                                </div>
+                                <div class="document-item">
+                                    <div class="document-number">6</div>
+                                    <div class="document-content">
+                                        <p><?php echo t('doc_state_6'); ?></p>
+                                    </div>
+                                </div>
+                                <div class="document-item">
+                                    <div class="document-number">7</div>
+                                    <div class="document-content">
+                                        <p><strong><?php echo t('doc_state_7_title'); ?></strong></p>
+                                        <ul class="document-sublist">
+                                            <li><?php echo t('doc_state_7_a'); ?></li>
+                                            <li><?php echo t('doc_state_7_b'); ?></li>
+                                            <li><?php echo t('doc_state_7_c'); ?></li>
+                                            <li><?php echo t('doc_state_7_d'); ?></li>
+                                            <li><?php echo t('doc_state_7_e'); ?></li>
+                                            <li><?php echo t('doc_state_7_f'); ?></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="document-item">
+                                    <div class="document-number">8</div>
+                                    <div class="document-content">
+                                        <p><?php echo t('doc_state_8'); ?></p>
+                                    </div>
+                                </div>
+                                <div class="document-item">
+                                    <div class="document-number">9</div>
+                                    <div class="document-content">
+                                        <p><?php echo t('doc_state_9'); ?></p>
+                                    </div>
+                                </div>
+                                <div class="document-item">
+                                    <div class="document-number">10</div>
+                                    <div class="document-content">
+                                        <p><?php echo t('doc_state_10'); ?></p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="document-item" data-aos="fade-up" data-aos-delay="100">
-                                <div class="document-icon">
-                                    <i class="fas fa-file-medical" aria-hidden="true"></i>
-                                </div>
-                                <div class="document-content">
-                                    <h5><?php echo t('crisis_family_document_committee_title'); ?></h5>
-                                    <p><?php echo t('crisis_family_document_committee_desc'); ?></p>
-                                </div>
-                            </div> -->
                         </div>
                     </div>
 
@@ -162,47 +330,47 @@ require_once __DIR__ . '/includes/analytics.php';
                         </div>
                     </div> -->
 
-                    <div class="service-gallery">
+                    <!-- <div class="service-gallery">
                         <h2><?php echo t('services_gallery_title'); ?></h2>
                         <div class="gallery-grid">
                             <div class="gallery-item">
-                                <img src="images/criza1.jpg" alt="" loading="lazy">
+                                <img src="images/.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/criza2.jpg" alt="" loading="lazy">
+                                <img src="images/.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/criza8.jpg" alt="" loading="lazy">
+                                <img src="images/.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/criza4.jpg" alt="" loading="lazy">
+                                <img src="images/.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/criza5.jpg" alt="" loading="lazy">
+                                <img src="images/.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/criza7.jpg" alt="" loading="lazy">
+                                <img src="images/.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>

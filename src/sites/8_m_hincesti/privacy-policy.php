@@ -124,7 +124,7 @@ require_once __DIR__ . '/includes/analytics.php';
                         <h2>10. Contact și reclamații</h2>
                         <p>Pentru exercitarea drepturilor sau pentru întrebări legate de protecția datelor, ne puteți contacta:</p>
                         <ul>
-                            <li><strong>Email:</strong> centru_plasament@AGSSSI.md</li>
+                            <li><strong>Email:</strong> centru_plasament@agssi.md</li>
                             <li><strong>Adresa:</strong> Alexandru Cozmescu Street 51, Chișinău, Telecentru, MD-2028</li>
                             <li><strong>Telefon:</strong> 022 737 027</li>
                         </ul>
@@ -134,7 +134,7 @@ require_once __DIR__ . '/includes/analytics.php';
                         <h2>11. Modificări ale politicii</h2>
                         <p>Această politică poate fi actualizată periodic. Modificările importante vor fi comunicate prin intermediul site-ului nostru.</p>
                         
-                        <p><strong>Ultima actualizare:</strong> 14 August 2025</p>
+                        <p><strong>Ultima actualizare:</strong> 11 Septembrie 2025</p>
 
                         <div class="privacy-actions">
                             <button type="button" class="gdpr-btn gdpr-btn-primary" onclick="openGDPRModal()">

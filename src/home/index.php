@@ -503,7 +503,7 @@ require_once __DIR__ . '/includes/analytics.php';
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <strong>Email:</strong><br>
-                                centru_plasament@AGSSSI.md
+                                centru_plasament@agssi.md
                             </div>
                         </div>
                         <div class="contact-item">

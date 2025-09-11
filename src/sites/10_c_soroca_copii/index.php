@@ -479,7 +479,7 @@ require_once __DIR__ . '/includes/analytics.php';
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <strong>Email:</strong><br>
-                                cp.soroca@AGSSSI.md
+                                cp.soroca@agssi.md
                             </div>
                         </div>
                         <div class="contact-item">

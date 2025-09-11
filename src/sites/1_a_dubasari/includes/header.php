@@ -32,7 +32,7 @@
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <span><?php echo t('contact_email'); ?></span>
-                                <a href="mailto:cp.cocieri1@AGSSSI.md">cp.cocieri1@AGSSSI.md</a>
+                                <a href="mailto:cp.cocieri1@agssi.md">cp.cocieri1@agssi.md</a>
                             </div>
                         </div>
                     </div>

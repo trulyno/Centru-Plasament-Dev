@@ -44,7 +44,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     <div class="slide-text">
                         <h1><?php echo t('hero_slide_1_title'); ?></h1>
                         <p><?php echo t('hero_slide_1_text'); ?></p>
-                        <a href="#contact" class="cta-button"><?php echo t('hero_slide_1_cta'); ?></a>
+                        <a href="#about" class="cta-button"><?php echo t('hero_slide_1_cta'); ?></a>
                     </div>
                 </div>
                 <div class="slide-image">
@@ -56,7 +56,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     <div class="slide-text">
                         <h1><?php echo t('hero_slide_2_title'); ?></h1>
                         <p><?php echo t('hero_slide_2_text'); ?></p>
-                        <a href="#services" class="cta-button"><?php echo t('hero_slide_2_cta'); ?></a>
+                        <a href="./serviciul_social.php" class="cta-button"><?php echo t('hero_slide_2_cta'); ?></a>
                     </div>
                 </div>
                 <div class="slide-image">
@@ -68,7 +68,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     <div class="slide-text">
                         <h1><?php echo t('hero_slide_3_title'); ?></h1>
                         <p><?php echo t('hero_slide_3_text'); ?></p>
-                        <a href="#about" class="cta-button"><?php echo t('hero_slide_3_cta'); ?></a>
+                        <a href="#contact" class="cta-button"><?php echo t('hero_slide_3_cta'); ?></a>
                     </div>
                 </div>
                 <div class="slide-image">
@@ -230,38 +230,45 @@ require_once __DIR__ . '/includes/analytics.php';
                 </button>
                 
                 <div class="gallery-slide active">
-                    <img src="images/cresa3.jpg" alt="<?php echo t('gallery_playroom_desc'); ?>" loading="lazy">
+                    <img src="images/1.jpg" alt="<?php echo t(''); ?>" loading="lazy">
                     <div class="gallery-slide-content">
-                        <h3><?php echo t('gallery_playroom_title'); ?></h3>
-                        <p><?php echo t('gallery_playroom_desc'); ?></p>
+                        <h3><?php echo t(''); ?></h3>
+                        <p><?php echo t(''); ?></p>
                     </div>
                 </div>
                 <div class="gallery-slide">
-                    <img src="images/zi10.jpg" alt="<?php echo t('gallery_rest_desc'); ?>" loading="lazy">
+                    <img src="images/2.jpg" alt="<?php echo t(''); ?>" loading="lazy">
                     <div class="gallery-slide-content">
-                        <h3><?php echo t('gallery_rest_title'); ?></h3>
-                        <p><?php echo t('gallery_rest_desc'); ?></p>
+                        <h3><?php echo t(''); ?></h3>
+                        <p><?php echo t(''); ?></p>
                     </div>
                 </div>
                 <div class="gallery-slide">
-                    <img src="images/6.jpg" alt="<?php echo t('gallery_educational_desc'); ?>" loading="lazy">
+                    <img src="images/3.jpg" alt="<?php echo t(''); ?>" loading="lazy">
                     <div class="gallery-slide-content">
-                        <h3><?php echo t('gallery_educational_title'); ?></h3>
-                        <p><?php echo t('gallery_educational_desc'); ?></p>
+                        <h3><?php echo t(''); ?></h3>
+                        <p><?php echo t(''); ?></p>
                     </div>
                 </div>
                 <div class="gallery-slide">
-                    <img src="images/585.jpg" alt="<?php echo t('gallery_events_desc'); ?>" loading="lazy">
+                    <img src="images/4.jpg" alt="<?php echo t(''); ?>" loading="lazy">
                     <div class="gallery-slide-content">
-                        <h3><?php echo t('gallery_events_title'); ?></h3>
-                        <p><?php echo t('gallery_events_desc'); ?></p>
+                        <h3><?php echo t(''); ?></h3>
+                        <p><?php echo t(''); ?></p>
                     </div>
                 </div>
                 <div class="gallery-slide">
-                    <video src="videos/video5363927670348345826.mp4" alt="Eveniment" loading="lazy" muted autoplay>
+                    <img src="images/5.jpg" alt="<?php echo t(''); ?>" loading="lazy">
                     <div class="gallery-slide-content">
-                        <h3><?php echo t('gallery_events_title'); ?></h3>
-                        <p><?php echo t('gallery_events_desc'); ?></p>
+                        <h3><?php echo t(''); ?></h3>
+                        <p><?php echo t(''); ?></p>
+                    </div>
+                </div>
+                <div class="gallery-slide">
+                    <img src="images/6.jpg" alt="<?php echo t(''); ?>" loading="lazy">
+                    <div class="gallery-slide-content">
+                        <h3><?php echo t(''); ?></h3>
+                        <p><?php echo t(''); ?></p>
                     </div>
                 </div>
                 
@@ -278,6 +285,7 @@ require_once __DIR__ . '/includes/analytics.php';
                 <button class="gallery-slide-btn" data-slide="2"></button>
                 <button class="gallery-slide-btn" data-slide="3"></button>
                 <button class="gallery-slide-btn" data-slide="4"></button>
+                <button class="gallery-slide-btn" data-slide="5"></button>
             </div>
             
             <!-- View All Gallery Button -->
@@ -300,8 +308,8 @@ require_once __DIR__ . '/includes/analytics.php';
                     <a href="https://social.gov.md/" target="_blank" class="partner-slide">
                         <img src="images/logo-mps.webp" alt="MMPS" loading="lazy">
                     </a>
-                    <a href="https://AGSSSI.md/" target="_blank" class="partner-slide">
-                        <img src="images/logo-mps.webp" alt="AGSSSI" loading="lazy">
+                    <a href="https://agssi.md/" target="_blank" class="partner-slide">
+                        <img src="images/logo-mps.webp" alt="AGSSI" loading="lazy">
                     </a>
                     <a href="https://ms.gov.md//" target="_blank" class="partner-slide">
                         <img src="https://ms.gov.md/wp-content/uploads/2023/03/ministerul-s%C4%83n%C4%83t%C4%83%C8%9Bii-monocrom.png" alt="MSGOV" loading="lazy">
@@ -309,7 +317,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     <a href="https://mec.gov.md/" target="_blank" class="partner-slide">
                         <img src="https://dgpdc.md/wp-content/uploads/2023/07/11.png" alt="Ministerul Educatiei și Cercetarii" loading="lazy">
                     </a>
-                    <a href="https://www.unicef.org/moldova/" target="_blank" class="partner-slide">
+                    <!-- <a href="https://www.unicef.org/moldova/" target="_blank" class="partner-slide">
                         <img src="https://dgpdc.md/wp-content/uploads/2023/07/DGETS-1.png" alt="UNICEF Moldova" loading="lazy">
                     </a>
                     <a href="https://cpam.md/" target="_blank" class="partner-slide">
@@ -337,7 +345,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     <a href="https://mec.gov.md/" target="_blank" class="partner-slide">
                         <img src="https://dgpdc.md/wp-content/uploads/2023/07/11.png" alt="Ministerul Educatiei și Cercetarii" loading="lazy">
                     </a>
-                    <a href="https://www.unicef.org/moldova/" target="_blank" class="partner-slide">
+                    <!-- <a href="https://www.unicef.org/moldova/" target="_blank" class="partner-slide">
                         <img src="https://dgpdc.md/wp-content/uploads/2023/07/DGETS-1.png" alt="UNICEF Moldova" loading="lazy">
                     </a>
                     <a href="https://cpam.md/" target="_blank" class="partner-slide">
@@ -351,7 +359,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     </a>
                     <a href="files/Memorandum MMPS - OGI .pdf" target="_blank" class="partner-slide">
                         <img src="images/ogi.png" alt="OGI Moldova" loading="lazy">
-                    </a>
+                    </a> -->
                 </div>
             </div>
         </div>
@@ -385,7 +393,7 @@ require_once __DIR__ . '/includes/analytics.php';
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <strong>Email:</strong><br>
-                                cp.chisinau@AGSSSI.md
+                                cp.chisinau@agssi.md
                             </div>
                         </div>
                         <div class="contact-item">

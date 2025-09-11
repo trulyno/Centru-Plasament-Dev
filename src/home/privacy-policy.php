@@ -124,7 +124,7 @@ require_once __DIR__ . '/includes/analytics.php';
                         <h2>10. Contact și reclamații</h2>
                         <p>Pentru exercitarea drepturilor sau pentru întrebări legate de protecția datelor, ne puteți contacta:</p>
                         <ul>
-                            <li><strong>Email:</strong> centru_plasament@AGSSSI.md</li>
+                            <li><strong>Email:</strong> centru_plasament@agssi.md</li>
                             <li><strong>Adresa:</strong> Alexandru Cozmescu Street 51, Chișinău, Telecentru, MD-2028</li>
                             <li><strong>Telefon:</strong> 022 737 027</li>
                         </ul>

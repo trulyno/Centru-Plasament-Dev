@@ -31,8 +31,8 @@ class EmailManager {
                     'addresses' => [
                         'from_email' => 'noreply@cprcvf.md',
                         'from_name' => 'Centrul de Plasament și Reabilitare',
-                        'admin_email' => 'centru_plasament@AGSSSI.md',
-                        'reply_to' => 'centru_plasament@AGSSSI.md',
+                        'admin_email' => 'centru_plasament@agssi.md',
+                        'reply_to' => 'centru_plasament@agssi.md',
                     ],
                     'settings' => [
                         'charset' => 'utf-8',
@@ -263,7 +263,7 @@ class EmailManager {
                     <div class="contact-info">
                         <h3>Informații de contact:</h3>
                         <p><strong>Telefon:</strong> 022 737 027</p>
-                        <p><strong>Email:</strong> centru_plasament@AGSSSI.md</p>
+                        <p><strong>Email:</strong> centru_plasament@agssi.md</p>
                         <p><strong>Adresa:</strong> str. Gh. Asachi 67, Chișinău, Moldova</p>
                         <p><strong>Program:</strong> Luni - Vineri, 08:00 - 17:00</p>
                     </div>
@@ -440,7 +440,7 @@ class EmailManager {
                     <div class="contact-info">
                         <h3>Pentru informații suplimentare:</h3>
                         <p><strong>Telefon:</strong> 022 737 027</p>
-                        <p><strong>Email:</strong> centru_plasament@AGSSSI.md</p>
+                        <p><strong>Email:</strong> centru_plasament@agssi.md</p>
                         <p><strong>Adresa:</strong> str. Gh. Asachi 67, Chișinău, Moldova</p>
                         <p><strong>Program:</strong> Luni - Vineri, 08:00 - 17:00</p>
                     </div>
