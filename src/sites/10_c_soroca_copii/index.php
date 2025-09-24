@@ -48,7 +48,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     </div>
                 </div>
                 <div class="slide-image">
-                    <img src="images/.png" alt="<?php echo t('hero_slide_1_title'); ?>" loading="lazy">
+                    <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Eu respect demnitatea umană!.jpg" alt="<?php echo t('hero_slide_1_title'); ?>" loading="lazy">
                 </div>
             </div>
             <div class="slide">
@@ -60,7 +60,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     </div>
                 </div>
                 <div class="slide-image">
-                    <img src="images/.jpg" alt="<?php echo t('hero_slide_2_title'); ?>" loading="lazy">
+                    <img src="images/POZE CENTRU/EVENIMENTE SPECIALE/sărbători/Ziua Copilăriei.jpg" alt="<?php echo t('hero_slide_2_title'); ?>" loading="lazy">
                 </div>
             </div>
             <div class="slide">
@@ -72,7 +72,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     </div>
                 </div>
                 <div class="slide-image">
-                    <img src="images/.jpeg" alt="<?php echo t('hero_slide_3_title'); ?>" loading="lazy">
+                    <img src="images/POZE CENTRU/DEZVOLTARTE PERSONALĂ ȘI SOCIALĂ/Gestionarea corectă a banilor.jpg" alt="<?php echo t('hero_slide_3_title'); ?>" loading="lazy">
                 </div>
             </div>
         </div>
@@ -202,38 +202,38 @@ require_once __DIR__ . '/includes/analytics.php';
                 </button>
                 
                 <div class="gallery-slide active">
-                    <img src="images/cresa3.jpg" alt="<?php echo t('gallery_playroom_desc'); ?>" loading="lazy">
+                    <img src="images/POZE CENTRU/ACTIVITYATI RECREATIVE SI CULTURALE/Jocuri și activități în aer liber/Fiecare zi de vară e o aventură!.jpg" alt="<?php echo t(''); ?>" loading="lazy">
                     <div class="gallery-slide-content">
-                        <h3><?php echo t('gallery_playroom_title'); ?></h3>
-                        <p><?php echo t('gallery_playroom_desc'); ?></p>
+                        <h3><?php echo t(''); ?></h3>
+                        <p><?php echo t(''); ?></p>
                     </div>
                 </div>
                 <div class="gallery-slide">
-                    <img src="images/zi10.jpg" alt="<?php echo t('gallery_rest_desc'); ?>" loading="lazy">
+                    <img src="images/POZE CENTRU/ACTIVITYATI RECREATIVE SI CULTURALE/Zile tematice, excursii/La steaua care-a răsărit.....jpg" alt="<?php echo t(''); ?>" loading="lazy">
                     <div class="gallery-slide-content">
-                        <h3><?php echo t('gallery_rest_title'); ?></h3>
-                        <p><?php echo t('gallery_rest_desc'); ?></p>
+                        <h3><?php echo t(''); ?></h3>
+                        <p><?php echo t(''); ?></p>
                     </div>
                 </div>
                 <div class="gallery-slide">
-                    <img src="images/6.jpg" alt="<?php echo t('gallery_educational_desc'); ?>" loading="lazy">
+                    <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/lecții nonformale/Cum acționăm in cazul calamităților naturale3.jpg" alt="<?php echo t(''); ?>" loading="lazy">
                     <div class="gallery-slide-content">
-                        <h3><?php echo t('gallery_educational_title'); ?></h3>
-                        <p><?php echo t('gallery_educational_desc'); ?></p>
+                        <h3><?php echo t(''); ?></h3>
+                        <p><?php echo t(''); ?></p>
                     </div>
                 </div>
                 <div class="gallery-slide">
-                    <img src="images/585.jpg" alt="<?php echo t('gallery_events_desc'); ?>" loading="lazy">
+                    <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/vizite educative/Vizită la DSE Soroca2.jpg" alt="<?php echo t(''); ?>" loading="lazy">
                     <div class="gallery-slide-content">
-                        <h3><?php echo t('gallery_events_title'); ?></h3>
-                        <p><?php echo t('gallery_events_desc'); ?></p>
+                        <h3><?php echo t(''); ?></h3>
+                        <p><?php echo t(''); ?></p>
                     </div>
                 </div>
                 <div class="gallery-slide">
-                    <video src="videos/video5363927670348345826.mp4" alt="Eveniment" loading="lazy" muted autoplay>
+                    <img src="images/POZE CENTRU/DEZVOLTARTE PERSONALĂ ȘI SOCIALĂ/ateliere de artterapie,muzica, sport/Activități de sport3.jpg" alt="<?php echo t(''); ?>" loading="lazy">
                     <div class="gallery-slide-content">
-                        <h3><?php echo t('gallery_events_title'); ?></h3>
-                        <p><?php echo t('gallery_events_desc'); ?></p>
+                        <h3><?php echo t(''); ?></h3>
+                        <p><?php echo t(''); ?></p>
                     </div>
                 </div>
                 
@@ -278,7 +278,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     <a href="https://ms.gov.md//" target="_blank" class="partner-slide">
                         <img src="https://ms.gov.md/wp-content/uploads/2023/03/ministerul-s%C4%83n%C4%83t%C4%83%C8%9Bii-monocrom.png" alt="MSGOV" loading="lazy">
                     </a>
-                    <a href="https://mec.gov.md/" target="_blank" class="partner-slide">
+                    <!-- <a href="https://mec.gov.md/" target="_blank" class="partner-slide">
                         <img src="https://dgpdc.md/wp-content/uploads/2023/07/11.png" alt="Ministerul Educatiei și Cercetarii" loading="lazy">
                     </a>
                     <a href="https://www.unicef.org/moldova/" target="_blank" class="partner-slide">
@@ -295,7 +295,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     </a>
                     <a href="files/Memorandum MMPS - OGI .pdf" target="_blank" class="partner-slide">
                         <img src="images/ogi.png" alt="OGI Moldova" loading="lazy">
-                    </a>
+                    </a> -->
                     <!-- Duplicate slides for seamless loop -->
                     <a href="https://social.gov.md/" target="_blank" class="partner-slide">
                         <img src="images/logo-mps.webp" alt="MMPS" loading="lazy">
@@ -309,7 +309,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     <a href="https://mec.gov.md/" target="_blank" class="partner-slide">
                         <img src="https://dgpdc.md/wp-content/uploads/2023/07/11.png" alt="Ministerul Educatiei și Cercetarii" loading="lazy">
                     </a>
-                    <a href="https://www.unicef.org/moldova/" target="_blank" class="partner-slide">
+                    <!-- <a href="https://www.unicef.org/moldova/" target="_blank" class="partner-slide">
                         <img src="https://dgpdc.md/wp-content/uploads/2023/07/DGETS-1.png" alt="UNICEF Moldova" loading="lazy">
                     </a>
                     <a href="https://cpam.md/" target="_blank" class="partner-slide">
@@ -323,134 +323,12 @@ require_once __DIR__ . '/includes/analytics.php';
                     </a>
                     <a href="files/Memorandum MMPS - OGI .pdf" target="_blank" class="partner-slide">
                         <img src="images/ogi.png" alt="OGI Moldova" loading="lazy">
-                    </a>
+                    </a> -->
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="container">
-            <h2 class="section-title fade-in"><?php echo t('testimonials_section_title'); ?></h2>
-            <p class="section-subtitle fade-in"><?php echo t('testimonials_section_subtitle'); ?></p>
-            <div class="testimonials-slideshow">
-                <!-- <div class="testimonial-slide active">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left quote-icon"></i>
-                        <p>"<?php echo t('testimonial_1_text'); ?>"</p>
-                        <div class="testimonial-author">
-                            <strong><?php echo t('testimonial_1_author'); ?></strong>
-                            <span><?php echo t('testimonial_1_role'); ?></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left quote-icon"></i>
-                        <p>"<?php echo t('testimonial_2_text'); ?>"</p>
-                        <div class="testimonial-author">
-                            <strong><?php echo t('testimonial_2_author'); ?></strong>
-                            <span><?php echo t('testimonial_2_role'); ?></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left quote-icon"></i>
-                        <p>"<?php echo t('testimonial_3_text'); ?>"</p>
-                        <div class="testimonial-author">
-                            <strong><?php echo t('testimonial_3_author'); ?></strong>
-                            <span><?php echo t('testimonial_3_role'); ?></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left quote-icon"></i>
-                        <p>"<?php echo t('testimonial_4_text'); ?>"</p>
-                        <div class="testimonial-author">
-                            <strong><?php echo t('testimonial_4_author'); ?></strong>
-                            <span><?php echo t('testimonial_4_role'); ?></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left quote-icon"></i>
-                        <p>"<?php echo t('testimonial_5_text'); ?>"</p>
-                        <div class="testimonial-author">
-                            <strong><?php echo t('testimonial_5_author'); ?></strong>
-                            <span><?php echo t('testimonial_5_role'); ?></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left quote-icon"></i>
-                        <p>"<?php echo t('testimonial_6_text'); ?>"</p>
-                        <div class="testimonial-author">
-                            <strong><?php echo t('testimonial_6_author'); ?></strong>
-                            <span><?php echo t('testimonial_6_role'); ?></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left quote-icon"></i>
-                        <p>"<?php echo t('testimonial_7_text'); ?>"</p>
-                        <div class="testimonial-author">
-                            <strong><?php echo t('testimonial_7_author'); ?></strong>
-                            <span><?php echo t('testimonial_7_role'); ?></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left quote-icon"></i>
-                        <p>"<?php echo t('testimonial_8_text'); ?>"</p>
-                        <div class="testimonial-author">
-                            <strong><?php echo t('testimonial_8_author'); ?></strong>
-                            <span><?php echo t('testimonial_8_role'); ?></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left quote-icon"></i>
-                        <p>"<?php echo t('testimonial_9_text'); ?>"</p>
-                        <div class="testimonial-author">
-                            <strong><?php echo t('testimonial_9_author'); ?></strong>
-                            <span><?php echo t('testimonial_9_role'); ?></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left quote-icon"></i>
-                        <p>"<?php echo t('testimonial_10_text'); ?>"</p>
-                        <div class="testimonial-author">
-                            <strong><?php echo t('testimonial_10_author'); ?></strong>
-                            <span><?php echo t('testimonial_10_role'); ?></span>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-                
-            <div class="testimonials-nav">
-                <!-- <button class="testimonial-btn active" data-testimonial="0"></button>
-                <button class="testimonial-btn" data-testimonial="1"></button>
-                <button class="testimonial-btn" data-testimonial="2"></button>
-                <button class="testimonial-btn" data-testimonial="3"></button>
-                <button class="testimonial-btn" data-testimonial="4"></button>
-                <button class="testimonial-btn" data-testimonial="5"></button>
-                <button class="testimonial-btn" data-testimonial="6"></button>
-                <button class="testimonial-btn" data-testimonial="7"></button>
-                <button class="testimonial-btn" data-testimonial="8"></button>
-                <button class="testimonial-btn" data-testimonial="9"></button> -->
-            </div>
-        </div>
-    </section>
 
     <!-- Contact Section -->
     <section class="contact" id="contact">

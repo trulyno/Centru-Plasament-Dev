@@ -61,7 +61,7 @@
                             <i class="fab fa-facebook-f"></i>
                             <span><?php echo t('social_facebook'); ?></span>
                         </button>
-                        <button class="audio-btn" id="audioBtn" aria-label="<?php echo t('anthem_aria'); ?>" title="<?php echo t('anthem_title'); ?>">
+                        <!--<button class="audio-btn" id="audioBtn" aria-label="<?php echo t('anthem_aria'); ?>" title="<?php echo t('anthem_title'); ?>"> -->
                     </div>
                     
                     <!-- Language Selector -->
@@ -86,14 +86,14 @@
             <nav>
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="index.php"><?php echo t('nav_home'); ?></a></li>
-                    <li class="dropdown">
+                    <!-- <li class="dropdown">
                         <a href="#" class="dropdown-toggle"><?php echo t('nav_services'); ?> <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href=".php"><?php echo t('services_crisis'); ?></a></li>
-                            <li><a href=".php"><?php echo t('services_maternal'); ?></a></li>
-                            <li><a href=".php"><?php echo t('services_day_4m_3y'); ?></a></li>
+                            <li><a href=".php"><?php echo t(''); ?></a></li>
+                            <li><a href=".php"><?php echo t(''); ?></a></li>
+                            <li><a href=".php"><?php echo t(''); ?></a></li>
                         </ul>
-                    </li>
+                    </li> -->
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle"><?php echo t('nav_transparency'); ?> <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">

@@ -48,7 +48,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     </div>
                 </div>
                 <div class="slide-image">
-                    <img src="images/20250409_094126.jpg" alt="<?php echo t('hero_slide_1_title'); ?>" loading="lazy">
+                    <img src="images/20250627_094357.jpg" alt="<?php echo t('hero_slide_1_title'); ?>" loading="lazy">
                 </div>
             </div>
             <div class="slide">

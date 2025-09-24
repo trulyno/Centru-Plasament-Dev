@@ -122,72 +122,6 @@ require_once __DIR__ . '/includes/analytics.php';
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="container" id="main-content">
-            <h2 class="section-title fade-in"><?php echo t('services_section_title'); ?></h2>
-            <!-- <p class="section-subtitle fade-in"><?php echo t('services_section_subtitle'); ?></p> -->
-            <!-- <div class="services-grid">
-                <a href="sectia-criza-reintegrare-familiala.php" class="service-card fade-in">
-                    <div class="service-image">
-                        <img src="images/criza2.jpg" alt="<?php echo t('services_crisis'); ?>" loading="lazy">
-                    </div>
-                    <h3><?php echo t('services_crisis'); ?></h3>
-                    <p><?php echo t('crisis_header_subtitle'); ?></p>
-                </a>
-                <a href="sectia-maternala.php" class="service-card fade-in">
-                    <div class="service-image">
-                        <img src="images/maternala5.jpg" alt="<?php echo t('services_maternal'); ?>" loading="lazy">
-                    </div>
-                    <h3><?php echo t('services_maternal'); ?></h3>
-                    <p><?php echo t('maternal_header_subtitle'); ?></p>
-                </a>
-                <a href="sectia-zi-4luni-3ani.php" class="service-card fade-in">
-                    <div class="service-image">
-                        <img src="images/cresa3.jpg" alt="<?php echo t('services_day_4m_3y'); ?>" loading="lazy">
-                    </div>
-                    <h3><?php echo t('services_day_4m_3y'); ?></h3>
-                    <p><?php echo t('day_4m_3y_header_subtitle'); ?></p>
-                </a>
-                <a href="sectia-de-zi.php" class="service-card fade-in">
-                    <div class="service-image">
-                        <img src="images/zi.jpg" alt="<?php echo t('services_day'); ?>" loading="lazy">
-                    </div>
-                    <h3><?php echo t('services_day'); ?></h3>
-                    <p><?php echo t('day_header_subtitle'); ?></p>
-                </a>
-                <a href="sectia-respiro.php" class="service-card fade-in">
-                    <div class="service-image">
-                        <img src="images/respiro3.jpg" alt="<?php echo t('services_respiro'); ?>" loading="lazy">
-                    </div>
-                    <h3><?php echo t('services_respiro'); ?></h3>
-                    <p><?php echo t('respiro_header_subtitle'); ?></p>
-                </a>
-                <a href="sectia-asistenta-psihopedagogica.php" class="service-card fade-in">
-                    <div class="service-image">
-                        <img src="images/sap4.jpg" alt="<?php echo t('services_psycho_pedagogical'); ?>" loading="lazy">
-                    </div>
-                    <h3><?php echo t('services_psycho_pedagogical'); ?></h3>
-                    <p><?php echo t('psycho_pedagogical_header_subtitle'); ?></p>
-                </a>
-                <a href="sectia-reabilitare.php" class="service-card fade-in">
-                    <div class="service-image">
-                        <img src="images/reabilitare5.jpg" alt="<?php echo t('services_rehabilitation'); ?>" loading="lazy">
-                    </div>
-                    <h3><?php echo t('services_rehabilitation'); ?></h3>
-                    <p><?php echo t('rehabilitation_header_subtitle'); ?></p>
-                </a>
-                <a href="sectia-asistenta-medicala.php" class="service-card fade-in">
-                    <div class="service-image">
-                        <img src="images/med2.jpg" alt="<?php echo t('services_medical'); ?>" loading="lazy">
-                    </div>
-                    <h3><?php echo t('medical_about_title'); ?></h3>
-                    <p><?php echo t('medical_subtitle'); ?></p>
-                </a> -->
-            </div>
-        </div>
-    </section>
-
     <!-- Stats Section -->
     <section class="stats">
         <div class="container">
@@ -218,40 +152,41 @@ require_once __DIR__ . '/includes/analytics.php';
                 </button>
                 
                 <div class="gallery-slide active">
-                    <img src="images/cresa3.jpg" alt="<?php echo t('gallery_playroom_desc'); ?>" loading="lazy">
+                    <img src="images/1.jpg" alt="<?php echo t(''); ?>" loading="lazy">
                     <div class="gallery-slide-content">
-                        <h3><?php echo t('gallery_playroom_title'); ?></h3>
-                        <p><?php echo t('gallery_playroom_desc'); ?></p>
+                        <h3><?php echo t(''); ?></h3>
+                        <p><?php echo t(''); ?></p>
                     </div>
                 </div>
                 <div class="gallery-slide">
-                    <img src="images/zi10.jpg" alt="<?php echo t('gallery_rest_desc'); ?>" loading="lazy">
+                    <img src="images/2.jpg" alt="<?php echo t(''); ?>" loading="lazy">
                     <div class="gallery-slide-content">
-                        <h3><?php echo t('gallery_rest_title'); ?></h3>
-                        <p><?php echo t('gallery_rest_desc'); ?></p>
+                        <h3><?php echo t(''); ?></h3>
+                        <p><?php echo t(''); ?></p>
                     </div>
                 </div>
                 <div class="gallery-slide">
-                    <img src="images/6.jpg" alt="<?php echo t('gallery_educational_desc'); ?>" loading="lazy">
+                    <img src="images/3.jpg" alt="<?php echo t(''); ?>" loading="lazy">
                     <div class="gallery-slide-content">
-                        <h3><?php echo t('gallery_educational_title'); ?></h3>
-                        <p><?php echo t('gallery_educational_desc'); ?></p>
+                        <h3><?php echo t(''); ?></h3>
+                        <p><?php echo t(''); ?></p>
                     </div>
                 </div>
                 <div class="gallery-slide">
-                    <img src="images/585.jpg" alt="<?php echo t('gallery_events_desc'); ?>" loading="lazy">
+                    <img src="images/4.jpg" alt="<?php echo t(''); ?>" loading="lazy">
                     <div class="gallery-slide-content">
-                        <h3><?php echo t('gallery_events_title'); ?></h3>
-                        <p><?php echo t('gallery_events_desc'); ?></p>
+                        <h3><?php echo t(''); ?></h3>
+                        <p><?php echo t(''); ?></p>
                     </div>
                 </div>
                 <div class="gallery-slide">
-                    <video src="videos/video5363927670348345826.mp4" alt="Eveniment" loading="lazy" muted autoplay>
+                    <img src="images/5.jpg" alt="<?php echo t(''); ?>" loading="lazy">
                     <div class="gallery-slide-content">
-                        <h3><?php echo t('gallery_events_title'); ?></h3>
-                        <p><?php echo t('gallery_events_desc'); ?></p>
+                        <h3><?php echo t(''); ?></h3>
+                        <p><?php echo t(''); ?></p>
                     </div>
                 </div>
+
                 
                 <!-- Next Button -->
                 <button class="gallery-nav-btn gallery-next-btn" id="galleryNextBtn">

@@ -82,75 +82,109 @@ function video($src, $category, $title = '', $desc = '') {
                     </div>
                     <div class="gallery-grid">
                         <?php
-                        image('zi10.jpg', 'spaces', 'Camera de Odihnă', 'Spații confortabile pentru relaxare');
-                        image('zi11.jpg', 'spaces', 'Spații de Recreere', 'Zone dedicate jocului și relaxării');
-                        image('maternala3.jpg', 'activities', '', '');
-                        image('respiro3.jpg', 'spaces', 'Spații Respiro', 'Mediu sigur și confortabil pentru copii');
-                        image('respiro6.jpg', 'spaces', 'Mediu Terapeutic', 'Spații special amenajate pentru terapie'); 
-                        image('sap4.jpg', 'activities', 'Descoperirea Faunei', 'La gradina zoologica');
-                        image('sap13.jpg', 'events', 'Eveniment Amuzant', 'Muzica,Dansuri si Baloane');
-                        image('z21.jpg', 'activities', 'Confectionarea lucrarilor plastice', 'O amintire pe toata viata');
-                        image('14.jpg', 'activities', 'Admirarea Gradinii Zoo', 'Plante exotice');
-                        image('21.jpg', 'activities', 'Jocuri Gonflabile', 'Sarituri si fericire');
-                        image('35.jpg', 'events', 'Festival Mascat', 'Copii mascati in eroii lor');
-                        image('555.jpg', 'activities', 'Teatru cu marionete', 'Un spectacol calptivant');
-                        image('585.jpg', 'activities', 'Bucuria copiilor', 'Castigarea unui concurs');
-                        image('zoo1.jpeg', 'activities', 'Excursie  la Zoo', 'Copiii descopera animale noi');
-                        image('zoo2.jpeg', 'activities', 'Animale noi si interesante', 'Copiii sunt multumiti');
-                        image('zoo3.jpeg', 'activities', 'Habitatele animalelor', 'Copiii descopera unde locuiesc animalele');
-                        image('zoo4.jpeg', 'activities', 'Animale la inaltime', 'Maimute si multi papagali');
-                        image('zoo5.jpeg', 'activities', 'Animal de desert', 'Copiii descopera camila');
-                        image('zoo6.jpeg', 'activities', 'Broasca Testoasa mangaiata de copii', 'Multa afectiune si iubire');
-                        image('zoo7.jpeg', 'activities', 'La Izvor', 'O mica pauza de la aceasta aventura');
-                        image('zoo8.jpeg', 'activities', 'Descoperirea Bufnitei', 'Singura data cand va fi treaza ziua');
-                        image('zoo9.jpeg', 'activities', 'Animale prin copaci', 'Cum ele se tin atat de mult acolo?');
-                        image('1.jpg', 'activities', '', '');
-                        image('2.jpg', 'activities', '', '');
-                        image('3.jpg', 'activities', '', '');
-                        image('4.jpg', 'activities', '', '');
-                        image('5.jpg', 'activities', '', '');
-                        image('6.jpg', 'activities', '', '');
-                        image('7.jpg', 'activities', '', '');
-                        image('8.jpg', 'activities', '', '');
-                        image('9.jpg', 'activities', '', '');
-                        image('10.jpg', 'activities', '', '');
-                        image('11.jpg', 'activities', '', '');
-                        image('12.jpg', 'activities', '', '');
-                        image('13.jpg', 'activities', '', '');
-                        image('15.jpg', 'activities', '', '');
-                        image('16.jpg', 'activities', '', '');
-                        image('17.jpg', 'activities', '', '');
-                        image('18.jpg', 'activities', '', '');
-                        image('19.jpg', 'activities', '', '');
-                        image('20.jpg', 'activities', '', '');
-                        image('22.jpg', 'activities', '', '');
-                        image('23.jpg', 'activities', '', '');
-                        image('cresa1.jpg', 'activities', '', '');
-                        image('cresa2.jpg', 'activities', '', '');
-                        image('cresa3.jpg', 'activities', '', '');
-                        image('cresa4.jpg', 'activities', '', '');
-                        image('cresa5.jpg', 'activities', '', '');
-                        image('cresa6.jpg', 'activities', '', '');
-                        image('criza6.jpg', 'activities', '', '');
-                        image('criza1.jpg', 'activities', '', '');
-                        image('criza2.jpg', 'activities', '', '');
-                        image('criza3.jpg', 'activities', '', '');
-                        image('criza4.jpg', 'activities', '', '');
-                        image('criza5.jpg', 'activities', '', '');
-                        image('criza7.jpg', 'activities', '', '');
-                        image('criza8.jpg', 'activities', '', '');
-                        image('criza9.jpg', 'activities', '', '');
-                        image('criza10.jpg', 'activities', '', '');
-                        image('criza11.jpg', 'activities', '', '');
-                        image('criza12.jpg', 'activities', '', '');
-                        image('criza13.jpg', 'activities', '', '');
-                        image('maternala1.jpg', 'activities', '', '');
-                        image('maternala2.jpg', 'activities', '', '');
-                        image('maternala4.jpg', 'activities', '', '');
-                        image('maternala5.jpg', 'activities', '', '');
-                        image('zi.jpg', 'activities', '', '');
-
-                        video('video5363927670348345826.mp4', 'events', 'Eveniment Special', 'Sărbătorirea unor momente importante');
+                        // ACTIVITĂȚI EDUCAȚIONALE - Ateliere tematice
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/9 mai-Ziua Europei.jpg', 'activities', 'Ziua Europei', 'Atelier tematic dedicat Zilei Europei - 9 mai');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/9 mai-Ziua Europei2.jpg', 'activities', 'Ziua Europei', 'Copiii celebrează Ziua Europei prin activități educative');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Adolescența este mai frumoasă în siguranță.jpg', 'activities', 'Educație pentru adolescenți', 'Workshop despre siguranță în adolescență');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Adolescența este mai frumoasă în siguranță!2.jpg', 'activities', 'Educație pentru adolescenți', 'Activități educative pentru adolescenți');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Adolescența este mai frumoasă în siguranță!3.jpg', 'activities', 'Educație pentru adolescenți', 'Sesiune educațională despre adolescență responsabilă');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Eu respect demnitatea umană!.jpg', 'activities', 'Demnitate umană', 'Atelier despre respectul pentru demnitatea umană');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Eu respect demnitatea umană2.jpg', 'activities', 'Demnitate umană', 'Copiii învață despre importanța respectului mutual');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Familia.jpg', 'activities', 'Valori familiale', 'Atelier despre importanța familiei');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Familia2.jpg', 'activities', 'Valori familiale', 'Discuții despre relațiile familiale sănătoase');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Familia3.jpg', 'activities', 'Valori familiale', 'Activități despre legăturile familiale');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Spune Nu drogurilor!.jpg', 'activities', 'Prevenție antidrog', 'Campanie de prevenție împotriva drogurilor');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Spune Nu drogurilor2.jpg', 'activities', 'Prevenție antidrog', 'Educație despre pericolele drogurilor');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Spune Nu drogurilor3.jpg', 'activities', 'Prevenție antidrog', 'Workshop preventiv despre substanțele interzise');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Spune Nu traficului de ființe umane.jpg', 'activities', 'Prevenție trafic uman', 'Educație despre prevenirea traficului de persoane');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Spune Nu traficului de ființe umane2.jpg', 'activities', 'Prevenție trafic uman', 'Sesiune de informare despre traficul de persoane');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Spune Nu traficului de ființe umane3.jpg', 'activities', 'Prevenție trafic uman', 'Atelier de conștientizare despre siguranță personală');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Spunem Stop discriminării.jpg', 'activities', 'Împotriva discriminării', 'Campanie împotriva discriminării');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Spunem Stop discriminării2.jpg', 'activities', 'Împotriva discriminării', 'Activități pentru promovarea egalității');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Spunem Stop discriminării3.jpg', 'activities', 'Împotriva discriminării', 'Workshop despre diversitate și incluziune');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Spunem Stop discriminării4.jpg', 'activities', 'Împotriva discriminării', 'Educație pentru toleranță și respect');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Spunem Stop discriminării5.jpg', 'activities', 'Împotriva discriminării', 'Sesiune educativă despre non-discriminare');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Violența este arma celor slabi.jpg', 'activities', 'Împotriva violenței', 'Campanie împotriva violenței');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Violența este arma celor slabi2.jpg', 'activities', 'Împotriva violenței', 'Workshop despre rezolvarea pașnică a conflictelor');
+                        
+                        // ACTIVITĂȚI EDUCAȚIONALE - Lecții nonformale
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/lecții nonformale/”Importanța cooperării în Echipă”.jpg', 'activities', 'Lucrul în echipă', 'Lecție despre cooperarea și munca în echipă');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/lecții nonformale/Activitate cu tema ”Pubertatea”.jpg', 'activities', 'Educație sexuală', 'Sesiune educativă despre pubertate');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/lecții nonformale/Activitste cu tema ”Importanța cooperării în Echipă”.jpg', 'activities', 'Lucrul în echipă', 'Activități practice de cooperare');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/lecții nonformale/Cum actionam in cazul calamităților naturale.jpg', 'activities', 'Siguranță', 'Educație despre comportamentul în caz de calamități');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/lecții nonformale/Cum acționăm in cazul calamityăților naturale2.jpg', 'activities', 'Siguranță', 'Workshop despre pregătirea pentru dezastre naturale');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/lecții nonformale/Cum acționăm in cazul calamităților naturale3.jpg', 'activities', 'Siguranță', 'Simulare de situații de urgență');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/lecții nonformale/Micii Europeni- excursie virtuală în Germania.jpg', 'activities', 'Educație europeană', 'Excursie virtuală în Germania');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/lecții nonformale/Micii europeni- excursie virtuală în Germania2.jpg', 'activities', 'Educație europeană', 'Copiii explorează cultura germană');
+                        
+                        // ACTIVITĂȚI EDUCAȚIONALE - Vizite educative
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/vizite educative/La memorialul victimelor Holocaustului.jpg', 'activities', 'Vizită memorialul Holocaust', 'Vizită educativă la memorialul victimelor Holocaustului');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/vizite educative/La memorialul victimelor Holocaustului2.jpg', 'activities', 'Vizită memorialul Holocaust', 'Moment de comemorare și educație istorică');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/vizite educative/Muzeul de istorie si etnografie s.Cosăuți.jpg', 'activities', 'Vizită muzeul', 'Vizită la muzeul de istorie și etnografie din Cosăuți');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/vizite educative/Muzeul de istorie si etnografie s.Cosăuți2.jpg', 'activities', 'Vizită muzeul', 'Copiii descoperă istoria locală');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/vizite educative/Muzeul de istorie si etnografie s.Cosăuți3.jpg', 'activities', 'Vizită muzeul', 'Sesiune educativă la muzeu');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/vizite educative/Vizită la DSE Soroca.jpg', 'activities', 'Vizită DSE', 'Vizită educativă la Direcția pentru Situații de Urgență');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/vizite educative/Vizită la DSE Soroca2.jpg', 'activities', 'Vizită DSE', 'Copiii învață despre siguranță publică');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/vizite educative/Vizită la DSE Soroca3.jpg', 'activities', 'Vizită DSE', 'Demonstrații practice de salvare');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/vizite educative/Vizită la muzeul de istorie și etnografie Soroca.jpg', 'activities', 'Vizită muzeul Soroca', 'Vizită la muzeul de istorie din Soroca');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/vizite educative/Vizită la muzeul de istorie și etnografie Soroca2.jpg', 'activities', 'Vizită muzeul Soroca', 'Explorarea tradițiilor locale');
+                        image('POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/vizite educative/Vizită la muzeul de istorie și etnografie Soroca3.jpg', 'activities', 'Vizită muzeul Soroca', 'Activități interactive la muzeu');
+                        
+                        // ACTIVITĂȚI RECREATIVE ȘI CULTURALE - Jocuri și activități în aer liber
+                        image('POZE CENTRU/ACTIVITYATI RECREATIVE SI CULTURALE/Jocuri și activități în aer liber/Copilăria e desopre joacă.jpg', 'activities', 'Jocuri în aer liber', 'Copilăria înseamnă joacă și distracție');
+                        image('POZE CENTRU/ACTIVITYATI RECREATIVE SI CULTURALE/Jocuri și activități în aer liber/Copilăria e despre joacă2.jpg', 'activities', 'Jocuri în aer liber', 'Activități recreative pentru copii');
+                        image('POZE CENTRU/ACTIVITYATI RECREATIVE SI CULTURALE/Jocuri și activități în aer liber/Copilăria e despre joacă3.jpg', 'activities', 'Jocuri în aer liber', 'Timpul liber petrecut prin joacă');
+                        image('POZE CENTRU/ACTIVITYATI RECREATIVE SI CULTURALE/Jocuri și activități în aer liber/Copilăria e despre joacă4.jpg', 'activities', 'Jocuri în aer liber', 'Bucuria jocului în natură');
+                        image('POZE CENTRU/ACTIVITYATI RECREATIVE SI CULTURALE/Jocuri și activități în aer liber/Fiecare zi de vară e o aventură!.jpg', 'activities', 'Activități de vară', 'Aventuri de vară pentru copii');
+                        image('POZE CENTRU/ACTIVITYATI RECREATIVE SI CULTURALE/Jocuri și activități în aer liber/Fiecare zi de vară e o aventură!2.jpg', 'activities', 'Activități de vară', 'Programme de vară pline de aventuri');
+                        image('POZE CENTRU/ACTIVITYATI RECREATIVE SI CULTURALE/Jocuri și activități în aer liber/Fiecare zi de vară e o aventură!3.jpg', 'activities', 'Activități de vară', 'Jocuri și explorări în aer liber');
+                        image('POZE CENTRU/ACTIVITYATI RECREATIVE SI CULTURALE/Jocuri și activități în aer liber/Fiecare zi de vară e o aventură!4.jpg', 'activities', 'Activități de vară', 'Distracție și învățare în natură');
+                        image('POZE CENTRU/ACTIVITYATI RECREATIVE SI CULTURALE/Jocuri și activități în aer liber/Fiecare zi de vară e o aventură!5.jpg', 'activities', 'Activități de vară', 'Experiențe memorabile de vară');
+                        
+                        // ACTIVITĂȚI RECREATIVE ȘI CULTURALE - Participare la spectacole
+                        image('POZE CENTRU/ACTIVITYATI RECREATIVE SI CULTURALE/participare la spectacole/Târgul meșterilor populari 2025.jpg', 'events', 'Târg meșteri populari', 'Participare la târgul meșterilor populari 2025');
+                        image('POZE CENTRU/ACTIVITYATI RECREATIVE SI CULTURALE/participare la spectacole/Târgul meșterilor populari2.jpg', 'events', 'Târg meșteri populari', 'Copiii descoperă meșteșugurile tradiționale');
+                        image('POZE CENTRU/ACTIVITYATI RECREATIVE SI CULTURALE/participare la spectacole/Târgul meșterilor populari3.jpg', 'events', 'Târg meșteri populari', 'Activități culturale și tradiționale');
+                        
+                        // ACTIVITĂȚI RECREATIVE ȘI CULTURALE - Zile tematice, excursii
+                        image('POZE CENTRU/ACTIVITYATI RECREATIVE SI CULTURALE/Zile tematice, excursii/La steaua care-a răsărit.....jpg', 'events', 'Sărbători de iarnă', 'Celebrarea sărbătorilor de iarnă');
+                        
+                        // DEZVOLTARE PERSONALĂ ȘI SOCIALĂ
+                        image('POZE CENTRU/DEZVOLTARTE PERSONALĂ ȘI SOCIALĂ/Gestionarea corectă a banilor.jpg', 'therapy', 'Educație financiară', 'Workshop despre gestionarea responsabilă a banilor');
+                        
+                        // DEZVOLTARE PERSONALĂ ȘI SOCIALĂ - Activități de dezvoltare a abilităților sociale
+                        image('POZE CENTRU/DEZVOLTARTE PERSONALĂ ȘI SOCIALĂ/activități de dezvoltare a abilităților sociale/Activități de salubrizare -Ziua Nistrului.jpg', 'activities', 'Ziua Nistrului', 'Activități de salubrizare pentru Ziua Nistrului');
+                        image('POZE CENTRU/DEZVOLTARTE PERSONALĂ ȘI SOCIALĂ/activități de dezvoltare a abilităților sociale/Activități de salubrizare -Ziua Nistrului2.jpg', 'activities', 'Ziua Nistrului', 'Copiii participă la curățenia mediului');
+                        image('POZE CENTRU/DEZVOLTARTE PERSONALĂ ȘI SOCIALĂ/activități de dezvoltare a abilităților sociale/Activități de salubrizare -Ziua Nistrului3.jpg', 'activities', 'Ziua Nistrului', 'Educație ecologică prin acțiuni practice');
+                        
+                        // DEZVOLTARE PERSONALĂ ȘI SOCIALĂ - Ateliere de artterapie, muzică, sport
+                        image('POZE CENTRU/DEZVOLTARTE PERSONALĂ ȘI SOCIALĂ/ateliere de artterapie,muzica, sport/Activități de ergoterapie.jpg', 'therapy', 'Ergoterapie', 'Sesiuni de ergoterapie pentru dezvoltare motorie');
+                        image('POZE CENTRU/DEZVOLTARTE PERSONALĂ ȘI SOCIALĂ/ateliere de artterapie,muzica, sport/Activități de ergoterapie2.jpg', 'therapy', 'Ergoterapie', 'Exerciții de dezvoltare a abilităților motorii');
+                        image('POZE CENTRU/DEZVOLTARTE PERSONALĂ ȘI SOCIALĂ/ateliere de artterapie,muzica, sport/Activități de ergoterapie3.jpg', 'therapy', 'Ergoterapie', 'Terapie ocupațională adaptată');
+                        image('POZE CENTRU/DEZVOLTARTE PERSONALĂ ȘI SOCIALĂ/ateliere de artterapie,muzica, sport/Activități de ergoterapie4.jpg', 'therapy', 'Ergoterapie', 'Programe personalizate de ergoterapie');
+                        image('POZE CENTRU/DEZVOLTARTE PERSONALĂ ȘI SOCIALĂ/ateliere de artterapie,muzica, sport/Activități de sport.jpg', 'activities', 'Activități sportive', 'Programme de sport și mișcare');
+                        image('POZE CENTRU/DEZVOLTARTE PERSONALĂ ȘI SOCIALĂ/ateliere de artterapie,muzica, sport/Activități de sport!2.jpg', 'activities', 'Activități sportive', 'Sport și jocuri de echipă');
+                        image('POZE CENTRU/DEZVOLTARTE PERSONALĂ ȘI SOCIALĂ/ateliere de artterapie,muzica, sport/Activități de sport3.jpg', 'activities', 'Activități sportive', 'Dezvoltarea fizică prin sport');
+                        
+                        // DEZVOLTARE PERSONALĂ ȘI SOCIALĂ - Sprijin emoțional
+                        image('POZE CENTRU/DEZVOLTARTE PERSONALĂ ȘI SOCIALĂ/sprijin emoțional/Gestionarea emoțiilor- Pro-Viața.jpg', 'therapy', 'Gestionarea emoțiilor', 'Workshop pentru gestionarea emoțiilor');
+                        image('POZE CENTRU/DEZVOLTARTE PERSONALĂ ȘI SOCIALĂ/sprijin emoțional/Gestionarea emoțiilor- Pro-Viața2.jpg', 'therapy', 'Gestionarea emoțiilor', 'Sesiuni de sprijin emoțional');
+                        
+                        // EVENIMENTE SPECIALE - Sărbători
+                        image('POZE CENTRU/EVENIMENTE SPECIALE/sărbători/Zi de naștere în spital.jpg', 'events', 'Aniversare în spital', 'Sărbătorirea unei zile de naștere în spital');
+                        image('POZE CENTRU/EVENIMENTE SPECIALE/sărbători/Zi de naștere în spital2.jpg', 'events', 'Aniversare în spital', 'Bucurie și zâmbete în ziua specială');
+                        image('POZE CENTRU/EVENIMENTE SPECIALE/sărbători/Ziua Copilăriei.jpg', 'events', 'Ziua Copilăriei', 'Celebrarea Zilei Internaționale a Copilului');
+                        image('POZE CENTRU/EVENIMENTE SPECIALE/sărbători/Ziua Copilăriei2.jpg', 'events', 'Ziua Copilăriei', 'Activități speciale de Ziua Copilăriei');
+                        image('POZE CENTRU/EVENIMENTE SPECIALE/sărbători/Ziua Copilăriei 3.jpg', 'events', 'Ziua Copilăriei', 'Sărbătoare dedicată copiilor');
+                        
+                        // EVENIMENTE SPECIALE - Vizite ale partenerilor
+                        image('POZE CENTRU/EVENIMENTE SPECIALE/vizite ale partenerilor/Asociația bisericilor creștine.jpg', 'events', 'Vizită parteneri', 'Vizita Asociației bisericilor creștine');
+                        image('POZE CENTRU/EVENIMENTE SPECIALE/vizite ale partenerilor/Biblioteca Steliana Grama Soroca.jpg', 'events', 'Vizită bibliotecă', 'Colaborare cu Biblioteca Steliana Grama din Soroca');
+                        image('POZE CENTRU/EVENIMENTE SPECIALE/vizite ale partenerilor/Biblioteca Steliana Grama Soroca2.jpg', 'events', 'Vizită bibliotecă', 'Activități culturale cu biblioteca locală');
+                        image('POZE CENTRU/EVENIMENTE SPECIALE/vizite ale partenerilor/Școala de Arte E.Coca din or.Soroca.jpg', 'events', 'Vizită școala de arte', 'Colaborare cu Școala de Arte E.Coca din Soroca');
+                        image('POZE CENTRU/EVENIMENTE SPECIALE/vizite ale partenerilor/Școala de Arte E.Coca din or.Soroca2.jpg', 'events', 'Vizită școala de arte', 'Activități artistice cu școala de arte');
+                        image('POZE CENTRU/EVENIMENTE SPECIALE/vizite ale partenerilor/Școala de Arte E.Coca din or.Soroca3.jpg', 'events', 'Vizită școala de arte', 'Programme culturale și educative');
+                        
                         ?>         
                     </div>
                 </div>

@@ -1,0 +1,100 @@
+{
+    "daily": {
+        "2025-08-13": {
+            "page_views": 23,
+            "unique_visitors": [
+                "efaeb3f1a6eec98d62777e12b88c13fc0a215981bd3d31697fbc8020311b28f0"
+            ],
+            "pages": {
+                "index": 13,
+                "analytics-track": 9,
+                "dashboard": 1
+            },
+            "referrers": {
+                "localhost": 18
+            },
+            "browsers": {
+                "Chrome": 23
+            },
+            "hourly": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                6,
+                5,
+                0,
+                12,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        "2025-08-20": {
+            "page_views": 4,
+            "unique_visitors": [
+                "d52b8c9c259aa0dbcc91429f48b2b006d06663b81fd10944d6e72c46f9cd9ec6"
+            ],
+            "pages": {
+                "index": 1,
+                "serviciul_social": 1,
+                "serviciul_psihopedagogic": 1,
+                "serviciul_reabilitare": 1
+            },
+            "referrers": {
+                "localhost": 4
+            },
+            "browsers": {
+                "Chrome": 4
+            },
+            "hourly": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        }
+    },
+    "events": {
+        "2025-08-13": {
+            "engagement\/time_on_page\/\/index.php": 3,
+            "scroll_depth\/scroll\/50%": 1,
+            "scroll_depth\/scroll\/100%": 1,
+            "scroll_depth\/scroll\/75%": 1,
+            "scroll_depth\/scroll\/25%": 1
+        }
+    }
+}
