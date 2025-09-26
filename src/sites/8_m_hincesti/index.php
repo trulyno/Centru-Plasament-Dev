@@ -301,16 +301,16 @@ require_once __DIR__ . '/includes/analytics.php';
                     </a>
                     <a href="https://cpam.md/" target="_blank" class="partner-slide">
                         <img src="https://cpam.md/wp-content/uploads/2018/06/777-2-1-2-1-1-2.png" alt="CPAM" loading="lazy">
-                    </a>
-                    <a href="https://usm.md/" target="_blank" class="partner-slide">
-                        <img src="https://usm.md/wp-content/uploads/Logo_USM-221x300.png" alt="USM" loading="lazy">
-                    </a>
-                    <a href="files/CCF.pdf" target="_blank" class="partner-slide">
-                        <img src="images/CCF Moldova.png" alt="CCF Moldova" loading="lazy">
-                    </a>
-                    <a href="files/Memorandum MMPS - OGI .pdf" target="_blank" class="partner-slide">
-                        <img src="images/ogi.png" alt="OGI Moldova" loading="lazy">
                     </a> -->
+                    <a href="https://p4ec.md/" target="_blank" class="partner-slide">
+                        <img src="https://p4ec.md/wp-content/themes/p4ec/assets/images/logo.webp" alt="p4ec" loading="lazy">
+                    </a>
+                    <a href="https://www.ccfmoldova.org/" target="_blank" class="partner-slide">
+                        <img src="https://www.ccfmoldova.org/themes/custom/ccf/logo.svg" alt="CCF Moldova" loading="lazy">
+                    </a>
+                    <a href="https://www.keystonemoldova.md" target="_blank" class="partner-slide">
+                        <img src="https://www.keystonemoldova.md/wp-content/uploads/sites/4/2021/12/KHS_Logo021_Moldova_Horizonal_Blue.png" alt="Keystone Moldova" loading="lazy">
+                    </a>
                     <!-- Duplicate slides for seamless loop -->
                     <a href="https://social.gov.md/" target="_blank" class="partner-slide">
                         <img src="images/logo-mps.webp" alt="MMPS" loading="lazy">
@@ -329,16 +329,16 @@ require_once __DIR__ . '/includes/analytics.php';
                     </a>
                     <a href="https://cpam.md/" target="_blank" class="partner-slide">
                         <img src="https://cpam.md/wp-content/uploads/2018/06/777-2-1-2-1-1-2.png" alt="CPAM" loading="lazy">
-                    </a>
-                    <a href="https://usm.md/" target="_blank" class="partner-slide">
-                        <img src="https://usm.md/wp-content/uploads/Logo_USM-221x300.png" alt="USM" loading="lazy">
-                    </a>
-                    <a href="files/CCF.pdf" target="_blank" class="partner-slide">
-                        <img src="images/CCF Moldova.png" alt="CCF Moldova" loading="lazy">
-                    </a>
-                    <a href="files/Memorandum MMPS - OGI .pdf" target="_blank" class="partner-slide">
-                        <img src="images/ogi.png" alt="OGI Moldova" loading="lazy">
                     </a> -->
+                    <a href="https://p4ec.md/" target="_blank" class="partner-slide">
+                        <img src="https://p4ec.md/wp-content/themes/p4ec/assets/images/logo.webp" alt="p4ec" loading="lazy">
+                    </a>
+                    <a href="https://www.ccfmoldova.org/" target="_blank" class="partner-slide">
+                        <img src="https://www.ccfmoldova.org/themes/custom/ccf/logo.svg" alt="CCF Moldova" loading="lazy">
+                    </a>
+                    <a href="https://www.keystonemoldova.md" target="_blank" class="partner-slide">
+                        <img src="https://www.keystonemoldova.md/wp-content/uploads/sites/4/2021/12/KHS_Logo021_Moldova_Horizonal_Blue.png" alt="Keystone Moldova" loading="lazy">
+                    </a>
                 </div>
             </div>
         </div>
@@ -400,56 +400,6 @@ require_once __DIR__ . '/includes/analytics.php';
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left quote-icon"></i>
-                        <p>"<?php echo t('testimonial_6_text'); ?>"</p>
-                        <div class="testimonial-author">
-                            <strong><?php echo t('testimonial_6_author'); ?></strong>
-                            <span><?php echo t('testimonial_6_role'); ?></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left quote-icon"></i>
-                        <p>"<?php echo t('testimonial_7_text'); ?>"</p>
-                        <div class="testimonial-author">
-                            <strong><?php echo t('testimonial_7_author'); ?></strong>
-                            <span><?php echo t('testimonial_7_role'); ?></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left quote-icon"></i>
-                        <p>"<?php echo t('testimonial_8_text'); ?>"</p>
-                        <div class="testimonial-author">
-                            <strong><?php echo t('testimonial_8_author'); ?></strong>
-                            <span><?php echo t('testimonial_8_role'); ?></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left quote-icon"></i>
-                        <p>"<?php echo t('testimonial_9_text'); ?>"</p>
-                        <div class="testimonial-author">
-                            <strong><?php echo t('testimonial_9_author'); ?></strong>
-                            <span><?php echo t('testimonial_9_role'); ?></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left quote-icon"></i>
-                        <p>"<?php echo t('testimonial_10_text'); ?>"</p>
-                        <div class="testimonial-author">
-                            <strong><?php echo t('testimonial_10_author'); ?></strong>
-                            <span><?php echo t('testimonial_10_role'); ?></span>
-                        </div>
-                    </div>
-                </div>
             </div>
                 
             <div class="testimonials-nav">
@@ -458,11 +408,6 @@ require_once __DIR__ . '/includes/analytics.php';
                 <button class="testimonial-btn" data-testimonial="2"></button>
                 <button class="testimonial-btn" data-testimonial="3"></button>
                 <button class="testimonial-btn" data-testimonial="4"></button>
-                <button class="testimonial-btn" data-testimonial="5"></button>
-                <button class="testimonial-btn" data-testimonial="6"></button>
-                <button class="testimonial-btn" data-testimonial="7"></button>
-                <button class="testimonial-btn" data-testimonial="8"></button>
-                <button class="testimonial-btn" data-testimonial="9"></button>
             </div>
         </div>
     </section>
