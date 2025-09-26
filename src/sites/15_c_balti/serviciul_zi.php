@@ -50,11 +50,11 @@ require_once __DIR__ . '/includes/analytics.php';
                             <p><?php echo t('service_day_desc'); ?></p>
                         </div>
                         <div class="service-hero-image">
-                            <img src="images/.jpg" alt="<?php echo t('services_day'); ?>" loading="lazy">
+                            <img src="images/servic de zi/8.jpg" alt="<?php echo t('services_day'); ?>" loading="lazy">
                         </div>
                     </div>
 
-                    <!-- <div class="service-details">
+                    <div class="service-details">
                         <h2><?php echo t('services_title'); ?></h2>
                         <div class="services-list">
                             <div class="service-item">
@@ -62,8 +62,8 @@ require_once __DIR__ . '/includes/analytics.php';
                                     <i class="fas fa-home"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4><?php echo t('crisis_family_service_accommodation_title'); ?></h4>
-                                    <p><?php echo t('crisis_family_service_accommodation_desc'); ?></p>
+                                    <h4><?php echo t(''); ?></h4>
+                                    <p><?php echo t(''); ?></p>
                                 </div>
                             </div>
                             <div class="service-item">
@@ -71,8 +71,8 @@ require_once __DIR__ . '/includes/analytics.php';
                                     <i class="fas fa-ambulance"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4><?php echo t('crisis_family_service_medical_title'); ?></h4>
-                                    <p><?php echo t('crisis_family_service_medical_desc'); ?></p>
+                                    <h4><?php echo t(''); ?></h4>
+                                    <p><?php echo t(''); ?></p>
                                 </div>
                             </div>
                             <div class="service-item">
@@ -80,8 +80,8 @@ require_once __DIR__ . '/includes/analytics.php';
                                     <i class="fas fa-stethoscope"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4><?php echo t('crisis_family_service_treatment_title'); ?></h4>
-                                    <p><?php echo t('crisis_family_service_treatment_desc'); ?></p>
+                                    <h4><?php echo t(''); ?></h4>
+                                    <p><?php echo t(''); ?></p>
                                 </div>
                             </div>
                             <div class="service-item">
@@ -89,8 +89,8 @@ require_once __DIR__ . '/includes/analytics.php';
                                     <i class="fas fa-graduation-cap"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4><?php echo t('crisis_family_service_psychological_title'); ?></h4>
-                                    <p><?php echo t('crisis_family_service_psychological_desc'); ?></p>
+                                    <h4><?php echo t(''); ?></h4>
+                                    <p><?php echo t(''); ?></p>
                                 </div>
                             </div>
                             <div class="service-item">
@@ -98,8 +98,8 @@ require_once __DIR__ . '/includes/analytics.php';
                                     <i class="fas fa-graduation-cap"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4><?php echo t('crisis_family_service_educational_title'); ?></h4>
-                                    <p><?php echo t('crisis_family_service_educational_desc'); ?></p>
+                                    <h4><?php echo t(''); ?></h4>
+                                    <p><?php echo t(''); ?></p>
                                 </div>
                             </div>
                         </div>
@@ -107,15 +107,15 @@ require_once __DIR__ . '/includes/analytics.php';
 
                     <div class="documents-section">
                         <h2><?php echo t('documents_title'); ?></h2>
-                        <p class="documents-intro"><?php echo t('crisis_family_documents_intro'); ?></p>
+                        <p class="documents-intro"><?php echo t('day_documents_intro'); ?></p>
                         <div class="documents-list">
                             <div class="document-item" data-aos="fade-up" data-aos-delay="100">
                                 <div class="document-icon">
                                     <i class="fas fa-file-medical" aria-hidden="true"></i>
                                 </div>
                                 <div class="document-content">
-                                    <h5><?php echo t('crisis_family_document_request_title'); ?></h5>
-                                    <p><?php echo t('crisis_family_document_request_desc'); ?></p>
+                                    <h5><?php echo t(''); ?></h5>
+                                    <p><?php echo t(''); ?></p>
                                 </div>
                             </div>
                             <div class="document-item" data-aos="fade-up" data-aos-delay="100">
@@ -123,8 +123,8 @@ require_once __DIR__ . '/includes/analytics.php';
                                     <i class="fas fa-file-medical" aria-hidden="true"></i>
                                 </div>
                                 <div class="document-content">
-                                    <h5><?php echo t('crisis_family_document_disposition_title'); ?></h5>
-                                    <p><?php echo t('crisis_family_document_disposition_desc'); ?></p>
+                                    <h5><?php echo t(''); ?></h5>
+                                    <p><?php echo t(''); ?></p>
                                 </div>
                             </div>
                             <div class="document-item" data-aos="fade-up" data-aos-delay="100">
@@ -132,8 +132,8 @@ require_once __DIR__ . '/includes/analytics.php';
                                     <i class="fas fa-file-medical" aria-hidden="true"></i>
                                 </div>
                                 <div class="document-content">
-                                    <h5><?php echo t('crisis_family_document_committee_title'); ?></h5>
-                                    <p><?php echo t('crisis_family_document_committee_desc'); ?></p>
+                                    <h5><?php echo t(''); ?></h5>
+                                    <p><?php echo t(''); ?></p>
                                 </div>
                             </div>
                         </div>
@@ -146,42 +146,36 @@ require_once __DIR__ . '/includes/analytics.php';
                                 <div class="info-icon">
                                     <i class="fas fa-users"></i>
                                 </div>
-                                <h4><?php echo t('crisis_family_info_age_title'); ?></h4>
-                                <p><?php echo t('crisis_family_info_age_desc'); ?></p>
+                                <h4><?php echo t(''); ?></h4>
+                                <p><?php echo t(''); ?></p>
                             </div>
                             <div class="info-card">
                                 <div class="info-icon">
                                     <i class="fas fa-clock"></i>
                                 </div>
-                                <h4><?php echo t('crisis_family_info_placement_title'); ?></h4>
-                                <p><?php echo t('crisis_family_info_placement_desc'); ?></p>
+                                <h4><?php echo t(''); ?></h4>
+                                <p><?php echo t(''); ?></p>
                             </div>
                             <div class="info-card">
                                 <div class="info-icon">
                                     <i class="fas fa-gavel"></i>
                                 </div>
-                                <h4><?php echo t('crisis_family_info_admission_title'); ?></h4>
-                                <p><?php echo t('crisis_family_info_admission_desc'); ?></p>
+                                <h4><?php echo t(''); ?></h4>
+                                <p><?php echo t(''); ?></p>
                             </div>
                             <div class="info-card">
                                 <div class="info-icon">
                                     <i class="fas fa-id-card"></i>
                                 </div>
-                                <h4><?php echo t('crisis_family_info_visiting_title'); ?></h4>
-                                <p><?php echo t('crisis_family_info_visiting_desc'); ?></p>
+                                <h4><?php echo t(''); ?></h4>
+                                <p><?php echo t(''); ?></p>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
 
                     <div class="service-gallery">
                         <h2><?php echo t('day_gallery_title'); ?></h2>
                         <div class="gallery-grid">
-                            <div class="gallery-item">
-                                <img src="images/servic de zi/8.jpg" alt="<?php echo t('services_day'); ?>" loading="lazy">
-                                <div class="gallery-overlay">
-                                    <h4><?php echo t('services_day'); ?></h4>
-                                </div>
-                            </div>
                             <div class="gallery-item">
                                 <img src="images/servic de zi/9.jpg" alt="<?php echo t('services_day'); ?>" loading="lazy">
                                 <div class="gallery-overlay">

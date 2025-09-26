@@ -50,11 +50,11 @@ require_once __DIR__ . '/includes/analytics.php';
                             <p><?php echo t('service_placement_desc'); ?></p>
                         </div>
                         <div class="service-hero-image">
-                            <img src="images/.jpg" alt="<?php echo t('services_placement'); ?>" loading="lazy">
+                            <img src="images/cu plasamen planif/20250417_103036.jpg" alt="<?php echo t('services_placement'); ?>" loading="lazy">
                         </div>
                     </div>
 
-                    <!-- <div class="service-details">
+                    <div class="service-details">
                         <h2><?php echo t('services_title'); ?></h2>
                         <div class="services-list">
                             <div class="service-item">
@@ -171,17 +171,11 @@ require_once __DIR__ . '/includes/analytics.php';
                                 <p><?php echo t('crisis_family_info_visiting_desc'); ?></p>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
 
                     <div class="service-gallery">
                         <h2><?php echo t('placement_gallery_title'); ?></h2>
                         <div class="gallery-grid">
-                            <div class="gallery-item">
-                                <img src="images/cu plasamen planif/20250417_103036.jpg" alt="<?php echo t('services_placement'); ?>" loading="lazy">
-                                <div class="gallery-overlay">
-                                    <h4><?php echo t('services_placement'); ?></h4>
-                                </div>
-                            </div>
                             <div class="gallery-item">
                                 <img src="images/cu plasamen planif/22.jpg" alt="<?php echo t('services_placement'); ?>" loading="lazy">
                                 <div class="gallery-overlay">

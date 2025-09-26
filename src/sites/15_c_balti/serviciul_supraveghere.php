@@ -50,11 +50,11 @@ require_once __DIR__ . '/includes/analytics.php';
                             <p><?php echo t('service_watch_desc'); ?></p>
                         </div>
                         <div class="service-hero-image">
-                            <img src="images/.jpg" alt="<?php echo t('services_watch'); ?>" loading="lazy">
+                            <img src="images/int timp/5.jpg" alt="<?php echo t('services_watch'); ?>" loading="lazy">
                         </div>
                     </div>
 
-                    <!-- <div class="service-details">
+                    <div class="service-details">
                         <h2><?php echo t('services_title'); ?></h2>
                         <div class="services-list">
                             <div class="service-item">
@@ -171,17 +171,11 @@ require_once __DIR__ . '/includes/analytics.php';
                                 <p><?php echo t('crisis_family_info_visiting_desc'); ?></p>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
 
                     <div class="service-gallery">
                         <h2><?php echo t('watch_gallery_title'); ?></h2>
                         <div class="gallery-grid">
-                            <div class="gallery-item">
-                                <img src="images/int timp/5.jpg" alt="<?php echo t('services_watch'); ?>" loading="lazy">
-                                <div class="gallery-overlay">
-                                    <h4><?php echo t('services_watch'); ?></h4>
-                                </div>
-                            </div>
                             <div class="gallery-item">
                                 <img src="images/int timp/IMG_4530.JPG" alt="<?php echo t('services_watch'); ?>" loading="lazy">
                                 <div class="gallery-overlay">

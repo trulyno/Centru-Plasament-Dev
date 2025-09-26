@@ -48,7 +48,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     </div>
                 </div>
                 <div class="slide-image">
-                    <img src="images/2.jpg" alt="<?php echo t('hero_slide_1_title'); ?>" loading="lazy">
+                    <img src="images/butonul1/butonul2.jpeg" alt="<?php echo t('hero_slide_1_title'); ?>" loading="lazy">
                 </div>
             </div>
             <div class="slide">
@@ -60,7 +60,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     </div>
                 </div>
                 <div class="slide-image">
-                    <img src="images/3.jpg" alt="<?php echo t('hero_slide_2_title'); ?>" loading="lazy">
+                    <img src="images/int timp/IMG_4530.JPG" alt="<?php echo t('hero_slide_2_title'); ?>" loading="lazy">
                 </div>
             </div>
             <div class="slide">
@@ -72,7 +72,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     </div>
                 </div>
                 <div class="slide-image">
-                    <img src="images/4.jpg" alt="<?php echo t('hero_slide_3_title'); ?>" loading="lazy">
+                    <img src="images/misiunea noastra/IMG_4867.jpeg" alt="<?php echo t('hero_slide_3_title'); ?>" loading="lazy">
                 </div>
             </div>
         </div>
@@ -116,7 +116,7 @@ require_once __DIR__ . '/includes/analytics.php';
                 </div>
                 
                 <div class="about-image fade-in">
-                    <img src="images/1.jpg" alt="" loading="lazy">
+                    <img src="images/misiunea noastra/unnamed.jpg" alt="" loading="lazy">
                 </div>
             </div>
         </div>
@@ -130,42 +130,42 @@ require_once __DIR__ . '/includes/analytics.php';
             <div class="services-grid">
                 <a href="serviciul_zi.php" class="service-card fade-in">
                     <div class="service-image">
-                        <img src="images/.jpg" alt="<?php echo t('services_day'); ?>" loading="lazy">
+                        <img src="images/servic de zi/8.jpg" alt="<?php echo t('services_day'); ?>" loading="lazy">
                     </div>
                     <h3><?php echo t('services_day'); ?></h3>
                     <p><?php echo t('day_header_subtitle'); ?></p>
                 </a>
                 <a href="serviciul_supraveghere.php" class="service-card fade-in">
                     <div class="service-image">
-                        <img src="images/.jpg" alt="<?php echo t('services_watch'); ?>" loading="lazy">
+                        <img src="images/int timp/5.jpg" alt="<?php echo t('services_watch'); ?>" loading="lazy">
                     </div>
                     <h3><?php echo t('services_watch'); ?></h3>
                     <p><?php echo t('watch_header_subtitle'); ?></p>
                 </a>
                 <a href="serviciul_maternal.php" class="service-card fade-in">
                     <div class="service-image">
-                        <img src="images/.jpg" alt="<?php echo t('services_maternal'); ?>" loading="lazy">
+                        <img src="images/centru maternal/20220225_110248.jpg" alt="<?php echo t('services_maternal'); ?>" loading="lazy">
                     </div>
                     <h3><?php echo t('services_maternal'); ?></h3>
                     <p><?php echo t('maternal_header_subtitle'); ?></p>
                 </a>
                 <a href="serviciul_plasament.php" class="service-card fade-in">
                     <div class="service-image">
-                        <img src="images/.jpg" alt="<?php echo t('services_placement'); ?>" loading="lazy">
+                        <img src="images/cu plasamen planif/20250417_103036.jpg" alt="<?php echo t('services_placement'); ?>" loading="lazy">
                     </div>
                     <h3><?php echo t('services_placement'); ?></h3>
                     <p><?php echo t('placement_header_subtitle'); ?></p>
                 </a>
                 <a href="serviciul_zi_4m_3y.php" class="service-card fade-in">
                     <div class="service-image">
-                        <img src="images/.jpg" alt="<?php echo t('services_day_4m_3y'); ?>" loading="lazy">
+                        <img src="images/ingrij cop 4l-3ani/IMG_4564.jpeg" alt="<?php echo t('services_day_4m_3y'); ?>" loading="lazy">
                     </div>
                     <h3><?php echo t('services_day_4m_3y'); ?></h3>
                     <p><?php echo t('day_4m_3y_header_subtitle'); ?></p>
                 </a>
                 <a href="serviciul_interventie.php" class="service-card fade-in">
                     <div class="service-image">
-                        <img src="images/.jpg" alt="<?php echo t('services_intervention'); ?>" loading="lazy">
+                        <img src="images/greutate mica/IMG_4508.JPG" alt="<?php echo t('services_intervention'); ?>" loading="lazy">
                     </div>
                     <h3><?php echo t('services_intervention'); ?></h3>
                     <p><?php echo t('intervention_header_subtitle'); ?></p>

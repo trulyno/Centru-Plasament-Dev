@@ -82,7 +82,44 @@ function video($src, $category, $title = '', $desc = '') {
                     </div>
                     <div class="gallery-grid">
                         <?php
-                        image('', '', '', '');
+                        image('centru maternal/20220225_110248.jpg', '', '', '');
+                        image('centru maternal/20220225_110340.jpg', '', '', '');
+                        image('centru maternal/20241226_110458.jpg', '', '', '');
+                        image('centru maternal/20241226_113036.jpg', '', '', '');
+                        image('butonul1/butonul2.jpeg', '', '', '');
+                        image('centru maternal/3ae3ff0b-beb4-4438-97c8-c82d08bd5dabphoto.jpeg', '', '', '');
+                        image('centru maternal/7dac7c5d-7bbf-4737-beb4-f423cc2b0e68photo.jpeg', '', '', '');
+                        image('centru maternal/9a05f984-3078-48c2-a7bb-000c0814265dphoto.jpeg', '', '', '');
+                        image('centru maternal/9ff35cfc-e4ac-4f2d-93dd-23865df13569photo.jpeg', '', '', '');
+                        image('cu plasamen planif/IMG_4555.jpeg', '', '', '');
+                        image('cu plasamen planif/IMG_4561.jpeg', '', '', '');
+                        image('greutate mica/IMG_4557.jpeg', '', '', '');
+                        image('greutate mica/IMG_4558.jpeg', '', '', '');
+                        image('greutate mica/IMG_4567.jpeg', '', '', '');
+                        image('ingrij cop 4l-3ani/IMG_4564.jpeg', '', '', '');
+                        image('ingrij cop 4l-3ani/IMG_4566.jpeg', '', '', '');
+                        image('misiunea noastra/IMG_4867.jpeg', '', '', '');
+                        image('servic de zi/IMG_4526.jpeg', '', '', '');
+                        image('servic de zi/IMG_4560.jpeg', '', '', '');
+                        image('servic de zi/IMG_4563.jpeg', '', '', '');
+                        image('cu plasamen planif/20250417_103036.jpg', '', '', '');
+                        image('cu plasamen planif/22.jpg', '', '', '');
+                        image('cu plasamen planif/25.jpg', '', '', '');
+                        image('cu plasamen planif/26.jpg', '', '', '');
+                        image('cu plasamen planif/IMG_6283.JPG', '', '', '');
+                        image('cu plasamen planif/IMG_6285.JPG', '', '', '');
+                        image('greutate mica/IMG_4508.JPG', '', '', '');
+                        image('greutate mica/IMG_4517.JPG', '', '', '');
+                        image('ingrij cop 4l-3ani/IMG_6219.jpg', '', '', '');
+                        image('ingrij cop 4l-3ani/IMG_6280.JPG', '', '', '');
+                        image('int timp/5.jpg', '', '', '');
+                        image('int timp/IMG_4530.JPG', '', '', '');
+                        image('misiunea noastra/unnamed.jpg', '', '', '');
+                        image('servic de zi/8.jpg', '', '', '');
+                        image('servic de zi/9.jpg', '', '', '');
+                        image('servic de zi/IMG_3067.JPG', '', '', '');
+                        image('servic de zi/IMG_6258.JPG', '', '', '');
+                        image('servic de zi/IMG_6261.JPG', '', '', '');
                         
                         ?>         
                     </div>
