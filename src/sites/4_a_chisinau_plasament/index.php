@@ -48,7 +48,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     </div>
                 </div>
                 <div class="slide-image">
-                    <img src="images/2.png" alt="<?php echo t('hero_slide_1_title'); ?>" loading="lazy">
+                    <img src="images/2.jpg" alt="<?php echo t('hero_slide_1_title'); ?>" loading="lazy">
                 </div>
             </div>
             <div class="slide">
@@ -72,7 +72,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     </div>
                 </div>
                 <div class="slide-image">
-                    <img src="images/4.jpeg" alt="<?php echo t('hero_slide_3_title'); ?>" loading="lazy">
+                    <img src="images/6.jpg" alt="<?php echo t('hero_slide_3_title'); ?>" loading="lazy">
                 </div>
             </div>
         </div>
@@ -317,20 +317,23 @@ require_once __DIR__ . '/includes/analytics.php';
                     <a href="https://mec.gov.md/" target="_blank" class="partner-slide">
                         <img src="https://dgpdc.md/wp-content/uploads/2023/07/11.png" alt="Ministerul Educatiei și Cercetarii" loading="lazy">
                     </a>
-                    <!-- <a href="https://www.unicef.org/moldova/" target="_blank" class="partner-slide">
-                        <img src="https://dgpdc.md/wp-content/uploads/2023/07/DGETS-1.png" alt="UNICEF Moldova" loading="lazy">
+                    <a href="https://helpage.md/" target="_blank" class="partner-slide">
+                        <img src="https://helpage.md/files/2022-02-01/images/medium/helpage_logo_md-_-1643728055.png" alt="HelpAge Moldova" loading="lazy">
                     </a>
-                    <a href="https://cpam.md/" target="_blank" class="partner-slide">
-                        <img src="https://cpam.md/wp-content/uploads/2018/06/777-2-1-2-1-1-2.png" alt="CPAM" loading="lazy">
+                    <a href="https://www.acted.org/en/countries/moldova/" target="_blank" class="partner-slide">
+                        <img src="https://www.acted.org/wp-content/themes/acted2018/assets/nouveau-logo/logo-acted-couleur.png" alt="ACTED" loading="lazy">
                     </a>
-                    <a href="https://usm.md/" target="_blank" class="partner-slide">
-                        <img src="https://usm.md/wp-content/uploads/Logo_USM-221x300.png" alt="USM" loading="lazy">
+                    <a href="https://cda.md/" target="_blank" class="partner-slide">
+                        <img src="https://cda.md/wp-content/uploads/2023/07/cda-logo-blue.svg" alt="CDA" loading="lazy">
                     </a>
-                    <a href="files/CCF.pdf" target="_blank" class="partner-slide">
-                        <img src="images/CCF Moldova.png" alt="CCF Moldova" loading="lazy">
+                    <a href="https://cdpd.md/" target="_blank" class="partner-slide">
+                        <img src="https://cdpd.md/wp-content/uploads/2019/07/logo-cdpd-fara-fundal-alb-1-1.png" alt="CDPD" loading="lazy">
                     </a>
-                    <a href="files/Memorandum MMPS - OGI .pdf" target="_blank" class="partner-slide">
-                        <img src="images/ogi.png" alt="OGI Moldova" loading="lazy">
+                    <a href="https://www.unhcr.org/md/" target="_blank" class="partner-slide">
+                        <img src="https://www.unhcr.org/md/themes/custom/project/images/logo/unhcr-logo-Moldova-en.png" alt="UNHCR Moldova" loading="lazy">
+                    </a>
+                    <a href="https://www.avecopiii.md/" target="_blank" class="partner-slide">
+                        <img src="https://cloud-1de12d.b-cdn.net/media/iW=107&iH=107&oX=0&oY=7&cW=107&cH=86/ad0cfba085093814d3342c4b81c6e7e6/image.png" alt="AVE Copiii" loading="lazy">
                     </a>
                     <!-- Duplicate slides for seamless loop -->
                     <a href="https://social.gov.md/" target="_blank" class="partner-slide">
@@ -345,21 +348,24 @@ require_once __DIR__ . '/includes/analytics.php';
                     <a href="https://mec.gov.md/" target="_blank" class="partner-slide">
                         <img src="https://dgpdc.md/wp-content/uploads/2023/07/11.png" alt="Ministerul Educatiei și Cercetarii" loading="lazy">
                     </a>
-                    <!-- <a href="https://www.unicef.org/moldova/" target="_blank" class="partner-slide">
-                        <img src="https://dgpdc.md/wp-content/uploads/2023/07/DGETS-1.png" alt="UNICEF Moldova" loading="lazy">
+                    <<a href="https://helpage.md/" target="_blank" class="partner-slide">
+                        <img src="https://helpage.md/files/2022-02-01/images/medium/helpage_logo_md-_-1643728055.png" alt="HelpAge Moldova" loading="lazy">
                     </a>
-                    <a href="https://cpam.md/" target="_blank" class="partner-slide">
-                        <img src="https://cpam.md/wp-content/uploads/2018/06/777-2-1-2-1-1-2.png" alt="CPAM" loading="lazy">
+                    <a href="https://www.acted.org/en/countries/moldova/" target="_blank" class="partner-slide">
+                        <img src="https://www.acted.org/wp-content/themes/acted2018/assets/nouveau-logo/logo-acted-couleur.png" alt="ACTED" loading="lazy">
                     </a>
-                    <a href="https://usm.md/" target="_blank" class="partner-slide">
-                        <img src="https://usm.md/wp-content/uploads/Logo_USM-221x300.png" alt="USM" loading="lazy">
+                    <a href="https://cda.md/" target="_blank" class="partner-slide">
+                        <img src="https://cda.md/wp-content/uploads/2023/07/cda-logo-blue.svg" alt="CDA" loading="lazy">
                     </a>
-                    <a href="files/CCF.pdf" target="_blank" class="partner-slide">
-                        <img src="images/CCF Moldova.png" alt="CCF Moldova" loading="lazy">
+                    <a href="https://cdpd.md/" target="_blank" class="partner-slide">
+                        <img src="https://cdpd.md/wp-content/uploads/2019/07/logo-cdpd-fara-fundal-alb-1-1.png" alt="CDPD" loading="lazy">
                     </a>
-                    <a href="files/Memorandum MMPS - OGI .pdf" target="_blank" class="partner-slide">
-                        <img src="images/ogi.png" alt="OGI Moldova" loading="lazy">
-                    </a> -->
+                    <a href="https://www.unhcr.org/md/" target="_blank" class="partner-slide">
+                        <img src="https://www.unhcr.org/md/themes/custom/project/images/logo/unhcr-logo-Moldova-en.png" alt="UNHCR Moldova" loading="lazy">
+                    </a>
+                    <a href="https://www.avecopiii.md/" target="_blank" class="partner-slide">
+                        <img src="https://cloud-1de12d.b-cdn.net/media/iW=107&iH=107&oX=0&oY=7&cW=107&cH=86/ad0cfba085093814d3342c4b81c6e7e6/image.png" alt="AVE Copiii" loading="lazy">
+                    </a>
                 </div>
             </div>
         </div>

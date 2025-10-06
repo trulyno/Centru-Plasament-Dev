@@ -41,8 +41,6 @@
   "contact_email": "Email",
   
   "btn_donate": "Donează",
-  "btn_anthem": "Imn",
-  "btn_lyrics": "Versuri",
   
   "donate_aria": "Donează pentru a sprijini beneficiarii",
   
@@ -131,15 +129,15 @@
   "meta_og_title": "Centrul de Plasament pentru Persoanele Vârstnice și Persoane cu Diazbilități",
   "meta_og_description": "Oferim medii sigure și îngrijitoare unde beneficiarii mici pot să se vindece și să crească.",
   
-  "hero_slide_1_title": "Demnitate și grijă, zi de zi",
-  "hero_slide_1_text": "Centrul oferă sprijin socio-medical de calitate, asigurând beneficiarilor siguranță, autonomie și respectul pe care îl merită.  ",
+  "hero_slide_1_title": "",
+  "hero_slide_1_text": "",
   "hero_slide_1_cta": "Află mai multe",
-  "hero_slide_2_title": "Un loc sigur, o comunitate caldă",
-  "hero_slide_2_text": "Prin servicii de plasament temporar sau de lungă durată, construim un mediu prietenos și protejat pentru persoanele vârstnice și cu dizabilități.",
-  "hero_slide_2_cta": "Vezi serviciile",
-  "hero_slide_3_title": "Sprijin real pentru o viață mai bună",
-  "hero_slide_3_text": "Ne dedicăm incluziunii sociale și îmbunătățirii calității vieții, printr-o gamă variată de servicii gratuite și contra cost.",
-  "hero_slide_3_cta": "Contactează-ne",
+  "hero_slide_2_title": "",
+  "hero_slide_2_text": "",
+  "hero_slide_2_cta": "Află mai multe",
+  "hero_slide_3_title": "",
+  "hero_slide_3_text": "",
+  "hero_slide_3_cta": "Află mai multe",
   
   "about_section_title": "Centrul de Plasament pentru Persoanele Vârstnice și Persoane cu Diazbilități din municipiul Chișinău",
   "about_tab_about_us": "Despre Noi",
