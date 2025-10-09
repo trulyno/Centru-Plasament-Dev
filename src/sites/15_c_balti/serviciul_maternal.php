@@ -53,7 +53,6 @@ require_once __DIR__ . '/includes/analytics.php';
                             <img src="images/centru maternal/20220225_110248.jpg" alt="<?php echo t('services_maternal'); ?>" loading="lazy">
                         </div>
                     </div>
-
                     <div class="service-details">
                         <h2><?php echo t('services_title'); ?></h2>
                         <div class="services-list">
@@ -62,8 +61,8 @@ require_once __DIR__ . '/includes/analytics.php';
                                     <i class="fas fa-home"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4><?php echo t(''); ?></h4>
-                                    <p><?php echo t(''); ?></p>
+                                    <h4><?php echo t('maternal_service_1_title'); ?></h4>
+                                    <p><?php echo t('maternal_service_1_desc'); ?></p>
                                 </div>
                             </div>
                             <div class="service-item">
@@ -71,8 +70,8 @@ require_once __DIR__ . '/includes/analytics.php';
                                     <i class="fas fa-ambulance"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4><?php echo t(''); ?></h4>
-                                    <p><?php echo t(''); ?></p>
+                                    <h4><?php echo t('maternal_service_2_title'); ?></h4>
+                                    <p><?php echo t('maternal_service_2_desc'); ?></p>
                                 </div>
                             </div>
                             <div class="service-item">
@@ -80,8 +79,8 @@ require_once __DIR__ . '/includes/analytics.php';
                                     <i class="fas fa-stethoscope"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4><?php echo t(''); ?></h4>
-                                    <p><?php echo t(''); ?></p>
+                                    <h4><?php echo t('maternal_service_3_title'); ?></h4>
+                                    <p><?php echo t('maternal_service_3_desc'); ?></p>
                                 </div>
                             </div>
                             <div class="service-item">
@@ -89,8 +88,8 @@ require_once __DIR__ . '/includes/analytics.php';
                                     <i class="fas fa-graduation-cap"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4><?php echo t(''); ?></h4>
-                                    <p><?php echo t(''); ?></p>
+                                    <h4><?php echo t('maternal_service_4_title'); ?></h4>
+                                    <p><?php echo t('maternal_service_4_desc'); ?></p>
                                 </div>
                             </div>
                             <div class="service-item">
@@ -98,8 +97,8 @@ require_once __DIR__ . '/includes/analytics.php';
                                     <i class="fas fa-graduation-cap"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4><?php echo t(''); ?></h4>
-                                    <p><?php echo t(''); ?></p>
+                                    <h4><?php echo t('maternal_service_5_title'); ?></h4>
+                                    <p><?php echo t('maternal_service_5_desc'); ?></p>
                                 </div>
                             </div>
                         </div>
@@ -107,15 +106,15 @@ require_once __DIR__ . '/includes/analytics.php';
 
                     <div class="documents-section">
                         <h2><?php echo t('documents_title'); ?></h2>
-                        <p class="documents-intro"><?php echo t('day_documents_intro'); ?></p>
+                        <p class="documents-intro"><?php echo t('maternal_documents_intro'); ?></p>
                         <div class="documents-list">
                             <div class="document-item" data-aos="fade-up" data-aos-delay="100">
                                 <div class="document-icon">
                                     <i class="fas fa-file-medical" aria-hidden="true"></i>
                                 </div>
                                 <div class="document-content">
-                                    <h5><?php echo t(''); ?></h5>
-                                    <p><?php echo t(''); ?></p>
+                                    <h5><?php echo t('maternal_docs_1_title'); ?></h5>
+                                    <p><?php echo t('maternal_docs_1_desc'); ?></p>
                                 </div>
                             </div>
                             <div class="document-item" data-aos="fade-up" data-aos-delay="100">
@@ -123,8 +122,8 @@ require_once __DIR__ . '/includes/analytics.php';
                                     <i class="fas fa-file-medical" aria-hidden="true"></i>
                                 </div>
                                 <div class="document-content">
-                                    <h5><?php echo t(''); ?></h5>
-                                    <p><?php echo t(''); ?></p>
+                                    <h5><?php echo t('maternal_docs_2_title'); ?></h5>
+                                    <p><?php echo t('maternal_docs_2_desc'); ?></p>
                                 </div>
                             </div>
                             <div class="document-item" data-aos="fade-up" data-aos-delay="100">
@@ -132,8 +131,35 @@ require_once __DIR__ . '/includes/analytics.php';
                                     <i class="fas fa-file-medical" aria-hidden="true"></i>
                                 </div>
                                 <div class="document-content">
-                                    <h5><?php echo t(''); ?></h5>
-                                    <p><?php echo t(''); ?></p>
+                                    <h5><?php echo t('maternal_docs_3_title'); ?></h5>
+                                    <p><?php echo t('maternal_docs_3_desc'); ?></p>
+                                </div>
+                            </div>
+                            <div class="document-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="document-icon">
+                                    <i class="fas fa-file-medical" aria-hidden="true"></i>
+                                </div>
+                                <div class="document-content">
+                                    <h5><?php echo t('maternal_docs_4_title'); ?></h5>
+                                    <p><?php echo t('maternal_docs_4_desc'); ?></p>
+                                </div>
+                            </div>
+                            <div class="document-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="document-icon">
+                                    <i class="fas fa-file-medical" aria-hidden="true"></i>
+                                </div>
+                                <div class="document-content">
+                                    <h5><?php echo t('maternal_docs_5_title'); ?></h5>
+                                    <p><?php echo t('maternal_docs_5_desc'); ?></p>
+                                </div>
+                            </div>
+                            <div class="document-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="document-icon">
+                                    <i class="fas fa-file-medical" aria-hidden="true"></i>
+                                </div>
+                                <div class="document-content">
+                                    <h5><?php echo t('maternal_docs_6_title'); ?></h5>
+                                    <p><?php echo t('maternal_docs_6_desc'); ?></p>
                                 </div>
                             </div>
                         </div>
@@ -146,29 +172,22 @@ require_once __DIR__ . '/includes/analytics.php';
                                 <div class="info-icon">
                                     <i class="fas fa-users"></i>
                                 </div>
-                                <h4><?php echo t(''); ?></h4>
-                                <p><?php echo t(''); ?></p>
+                                <h4><?php echo t('maternal_info_1_title'); ?></h4>
+                                <p><?php echo t('maternal_info_1_desc'); ?></p>
                             </div>
                             <div class="info-card">
                                 <div class="info-icon">
                                     <i class="fas fa-clock"></i>
                                 </div>
-                                <h4><?php echo t(''); ?></h4>
-                                <p><?php echo t(''); ?></p>
+                                <h4><?php echo t('maternal_info_2_title'); ?></h4>
+                                <p><?php echo t('maternal_info_2_desc'); ?></p>
                             </div>
                             <div class="info-card">
                                 <div class="info-icon">
                                     <i class="fas fa-gavel"></i>
                                 </div>
-                                <h4><?php echo t(''); ?></h4>
-                                <p><?php echo t(''); ?></p>
-                            </div>
-                            <div class="info-card">
-                                <div class="info-icon">
-                                    <i class="fas fa-id-card"></i>
-                                </div>
-                                <h4><?php echo t(''); ?></h4>
-                                <p><?php echo t(''); ?></p>
+                                <h4><?php echo t('dmaternal_info_3_title'); ?></h4>
+                                <p><?php echo t('maternal_info_3_desc'); ?></p>
                             </div>
                         </div>
                     </div>

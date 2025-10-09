@@ -472,6 +472,9 @@
   "service_social_desc": "Centrul de reabilitare și protecție socială a copiilor în situaţie de risc” Пламъче” reprezintă o instituţie publică de asistenţă socială care prestează servicii sociale specializate de îngrijire în regim de zi a copiilor în situaţie de risc cât și a copiilor cu dizabilități în vederea (re)integrării sociale şi familiale a acestora, precum şi în scopul prevenirii separării copiilor în situaţie de risc/ copiilor cu dizabilități de mediul familial.",
   "social_gallery_title": "Galeria Serviciului Social",
 
+  "documents_title": "Documente Necesare",
+  "important_info_title": "Informații Importante",
+
   "day_meta_description": "",
   "day_meta_keywords": "",
   "psycho_pedagogical_page_title": "Serviciul de zi pentru copii cu dizabilități",
@@ -480,6 +483,7 @@
   "day_about_title": "Despre Serviciul de zi pentru copii cu dizabilități",
   "service_day_desc": "Serviciul acordă asistenţă de reabilitare psiho-pedagogică, socială și inclusiv medicală copiilor cu dizabilități, cu vîrsta cuprinsă între 0 și 7 ani, pe parcursul unei perioade de 30-45 zile, în dependență de necesitățile individuale ale copilului.Serviciul este destinat copiilor din mun. Bălți și raioanelor din Nordul țării. Serviciul are patru compartimente a cîte 15 locuri și fiecare compartiment este coordonat de către un medic pediatru. Scopul major este recuperarea cât mai timpurie a acestora, acordarea asistenței specializate complexe și suportul psihologic familiei.",
   "day_gallery_title": "Galeria Serviciului de zi pentru copii cu dizabilități",
+  "day_documents_intro": "Pentru a beneficia de serviciile Centrului de Plasament și Reabilitare pentru Copii de Vârstă Fragedă, sunt necesare următoarele documente:",
   "day_service_1_title": "Asistență Medicală",
   "day_service_1_desc": "Evaluare medicală complexa și monitorizare continuă a stării de sănătate.",
   "day_service_2_title": "Terapie de Recuperare",
