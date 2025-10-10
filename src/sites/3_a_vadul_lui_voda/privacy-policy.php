@@ -47,7 +47,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     <div class="privacy-content">
                         
                         <h2>1. Introducere</h2>
-                        <p>Centrul de Plasament pentru Persoane Vârstnice și Persoane cu Dizabilități („noi", „CPPVPD”) respectă confidențialitatea datelor dumneavoastră personale și se angajează să le protejeze în conformitate cu Regulamentul General privind Protecția Datelor (GDPR) și legislația națională aplicabilă.</p>
+                        <p>Centrul de Reabilitare a Persoanelor Vârstnice și Persoanelor cu Dizabilități („noi”, „Speranța”) respectă confidențialitatea datelor dumneavoastră personale și se angajează să le protejeze în conformitate cu Regulamentul General privind Protecția Datelor (GDPR) și legislația națională aplicabilă.</p>
 
                         <h2>2. Date cu caracter personal colectate</h2>
                         <p>Colectăm următoarele categorii de date personale:</p>
@@ -124,9 +124,9 @@ require_once __DIR__ . '/includes/analytics.php';
                         <h2>10. Contact și reclamații</h2>
                         <p>Pentru exercitarea drepturilor sau pentru întrebări legate de protecția datelor, ne puteți contacta:</p>
                         <ul>
-                            <li><strong>Email:</strong> dataprotection@cprcvf.md</li>
-                            <li><strong>Adresa:</strong> [Adresa completă a instituției]</li>
-                            <li><strong>Telefon:</strong> [Numărul de telefon]</li>
+                            <li><strong>Email:</strong> centru_plasament@agssi.md</li>
+                            <li><strong>Adresa:</strong> Alexandru Cozmescu Street 51, Chișinău, Telecentru, MD-2028</li>
+                            <li><strong>Telefon:</strong> 022 737 027</li>
                         </ul>
                         
                         <p>De asemenea, aveți dreptul să depuneți o plângere la Centrul Național pentru Protecția Datelor cu Caracter Personal în cazul în care considerați că drepturile dumneavoastră au fost încălcate.</p>
@@ -134,7 +134,7 @@ require_once __DIR__ . '/includes/analytics.php';
                         <h2>11. Modificări ale politicii</h2>
                         <p>Această politică poate fi actualizată periodic. Modificările importante vor fi comunicate prin intermediul site-ului nostru.</p>
                         
-                        <p><strong>Ultima actualizare:</strong> <?php echo date('d.m.Y'); ?></p>
+                        <p><strong>Ultima actualizare:</strong> 14 August 2025</p>
 
                         <div class="privacy-actions">
                             <button type="button" class="gdpr-btn gdpr-btn-primary" onclick="openGDPRModal()">

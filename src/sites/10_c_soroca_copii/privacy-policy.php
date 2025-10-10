@@ -47,7 +47,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     <div class="privacy-content">
                         
                         <h2>1. Introducere</h2>
-                        <p>Centrul de Plasament și Reabilitare pentru Copii de Vârstă Fragedă („noi", „CPRCVF") respectă confidențialitatea datelor dumneavoastră personale și se angajează să le protejeze în conformitate cu Regulamentul General privind Protecția Datelor (GDPR) și legislația națională aplicabilă.</p>
+                        <p>Centrul de Plasament Temporar pentru Copii Separați de Părinți („noi", „CPTCSP”) respectă confidențialitatea datelor dumneavoastră personale și se angajează să le protejeze în conformitate cu Regulamentul General privind Protecția Datelor (GDPR) și legislația națională aplicabilă.</p>
 
                         <h2>2. Date cu caracter personal colectate</h2>
                         <p>Colectăm următoarele categorii de date personale:</p>
