@@ -50,7 +50,7 @@ require_once __DIR__ . '/includes/analytics.php';
                             <p><?php echo t('personal_development_desc'); ?></p>
                         </div>
                         <div class="service-hero-image">
-                            <img src="images/criza2.jpg" alt="<?php echo t('personal_development'); ?>" loading="lazy">
+                            <img src="images/POZE CENTRU/DEZVOLTARTE PERSONALĂ ȘI SOCIALĂ/ateliere de artterapie,muzica, sport/Activități de ergoterapie3.jpg" alt="<?php echo t('personal_development'); ?>" loading="lazy">
                         </div>
                     </div>
 
@@ -177,37 +177,79 @@ require_once __DIR__ . '/includes/analytics.php';
                         <h2><?php echo t('personal_development_gallery_title'); ?></h2>
                         <div class="gallery-grid">
                             <div class="gallery-item">
-                                <img src="images/.jpg" alt="" loading="lazy">
+                                <img src="images/POZE CENTRU/DEZVOLTARTE PERSONALĂ ȘI SOCIALĂ/activități de dezvoltare a abilităților sociale/Activități de salubrizare -Ziua Nistrului.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/.jpg" alt="" loading="lazy">
+                                <img src="images/POZE CENTRU/DEZVOLTARTE PERSONALĂ ȘI SOCIALĂ/activități de dezvoltare a abilităților sociale/Activități de salubrizare -Ziua Nistrului2.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/.jpg" alt="" loading="lazy">
+                                <img src="images/POZE CENTRU/DEZVOLTARTE PERSONALĂ ȘI SOCIALĂ/activități de dezvoltare a abilităților sociale/Activități de salubrizare -Ziua Nistrului3.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/.jpg" alt="" loading="lazy">
+                                <img src="images/POZE CENTRU/DEZVOLTARTE PERSONALĂ ȘI SOCIALĂ/ateliere de artterapie,muzica, sport/Activități de ergoterapie.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/.jpg" alt="" loading="lazy">
+                                <img src="images/POZE CENTRU/DEZVOLTARTE PERSONALĂ ȘI SOCIALĂ/ateliere de artterapie,muzica, sport/Activități de ergoterapie2.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/.jpg" alt="" loading="lazy">
+                                <img src="images/POZE CENTRU/DEZVOLTARTE PERSONALĂ ȘI SOCIALĂ/ateliere de artterapie,muzica, sport/Activități de ergoterapie3.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/DEZVOLTARTE PERSONALĂ ȘI SOCIALĂ/ateliere de artterapie,muzica, sport/Activități de ergoterapie4.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/DEZVOLTARTE PERSONALĂ ȘI SOCIALĂ/ateliere de artterapie,muzica, sport/Activități de sport!2.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/DEZVOLTARTE PERSONALĂ ȘI SOCIALĂ/ateliere de artterapie,muzica, sport/Activități de sport.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/DEZVOLTARTE PERSONALĂ ȘI SOCIALĂ/ateliere de artterapie,muzica, sport/Activități de sport3.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/DEZVOLTARTE PERSONALĂ ȘI SOCIALĂ/sprijin emoțional/Gestionarea emoțiilor- Pro-Viața.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/DEZVOLTARTE PERSONALĂ ȘI SOCIALĂ/sprijin emoțional/Gestionarea emoțiilor- Pro-Viața2.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/DEZVOLTARTE PERSONALĂ ȘI SOCIALĂ/Gestionarea corectă a banilor.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>

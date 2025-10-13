@@ -62,27 +62,7 @@ function staff($name, $position, $image) {
                     <div class="admin-team-container">
                         <div class="admin-team-grid">
                             <?php
-                                staff('Sergiu Oceretnîi', 'Director', 'director.png');
-                                staff('Bacalu Ana', 'Șef Resurse Umane', 'Bacalu Ana inspector resurse umane.png');
-                                staff('Țvetov Angela', 'Contabil șef', 'Țvetov Angela contabil șef.png');
-                                staff('Mahmadbecov Rodica', 'Contabil', 'Mahmadbecov Rodica contabil.png');
-                                staff('Cojușco Tatiana', 'Contabil', 'Cojușco Tatiana contabil.png');
-                                staff('Bîrta Vladimir', 'Jurist', 'Bîrta Vladimir Jurist.png');
-                                staff('Țurcanu Vasile', 'Inginer Principal', 'Țurcanu Vasile Inginer principal.png');
-                                staff('Cojocaru Tatiana', 'Asistent Social', 'Cojocaru Tatiana Asistent Social.png');
-                                staff('Toțkaia Angela', 'Psiholog', 'Toțkaia Angela Psiholog.png');
-                                staff('Ciorici Cătălina', 'Șef Secție Maternală', 'Ciorici Cătălina Șefă secție Maternală.png');
-                                staff('Blaj Sorina', 'Șef Secție Psihopedagogie', 'Blaj Sorina Sef sectie Psihopedagogie.png');
-                                staff('Burunciuc Aurelia', 'Medic Nutriționist', 'Burunciuc Aurelia -Medic nutriționist.png');
-                                staff('Vozian Corina', 'Șef Secție Zi', 'Corina Vozian sef sectie zi.png');
-                                staff('David Ecaterina', 'Șef Secție Respiro', 'Ecaterina David Sef sectie Respiro.png');
-                                staff('Timigraz Violeta', 'Șef Secție Reabilitare', 'Timirgaz Violeta -Sef sectie reabilitare.png');
-                                staff('Ionița Natalia', 'Secretar', 'Ionita Natalia Secretar.png');
-                                staff('Capros Marina', 'Șef Secție Criză', 'Capros Marina Sef sectie de Criza.png');
-                                staff('Lungu Ina', 'Asisten Principal', 'Lungu Ina Asis. principal.png');
-                                staff('Manoli Galina', 'Contabil', 'Manoli Galina Contabil.png');
-                                staff('Agapi Livia', 'Medic Reabilitolog', 'Agapi Livia Medic Reabilitolog.png');
-                                staff('Golovcenco Carolina', 'Medic Neuropediatru', 'Golovcenco Carolina- Medic Neouropediatru.png');
+                                
 
                             ?>
                         </div>

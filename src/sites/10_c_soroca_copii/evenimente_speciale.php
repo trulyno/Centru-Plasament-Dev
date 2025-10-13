@@ -50,7 +50,7 @@ require_once __DIR__ . '/includes/analytics.php';
                             <p><?php echo t('service_special_events_desc'); ?></p>
                         </div>
                         <div class="service-hero-image">
-                            <img src="images/.jpg" alt="<?php echo t('special_events'); ?>" loading="lazy">
+                            <img src="images/POZE CENTRU/EVENIMENTE SPECIALE/vizite ale partenerilor/Școala de Arte E.Coca din or.Soroca.jpg" alt="<?php echo t('special_events'); ?>" loading="lazy">
                         </div>
                     </div>
 
@@ -177,37 +177,67 @@ require_once __DIR__ . '/includes/analytics.php';
                         <h2><?php echo t('special_events_gallery_title'); ?></h2>
                         <div class="gallery-grid">
                             <div class="gallery-item">
-                                <img src="images/.jpg" alt="" loading="lazy">
+                                <img src="images/POZE CENTRU/EVENIMENTE SPECIALE/sărbători/Zi de naștere în spital.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/.jpg" alt="" loading="lazy">
+                                <img src="images/POZE CENTRU/EVENIMENTE SPECIALE/sărbători/Zi de naștere în spital2.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/.jpg" alt="" loading="lazy">
+                                <img src="images/POZE CENTRU/EVENIMENTE SPECIALE/sărbători/Ziua Copilăriei 3.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/.jpg" alt="" loading="lazy">
+                                <img src="images/POZE CENTRU/EVENIMENTE SPECIALE/sărbători/Ziua Copilăriei.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/.jpg" alt="" loading="lazy">
+                                <img src="images/POZE CENTRU/EVENIMENTE SPECIALE/sărbători/Ziua Copilăriei2.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/.jpg" alt="" loading="lazy">
+                                <img src="images/POZE CENTRU/EVENIMENTE SPECIALE/vizite ale partenerilor/Asociația bisericilor creștine.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/EVENIMENTE SPECIALE/vizite ale partenerilor/Biblioteca Steliana Grama Soroca.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/EVENIMENTE SPECIALE/vizite ale partenerilor/Biblioteca Steliana Grama Soroca2.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/EVENIMENTE SPECIALE/vizite ale partenerilor/Școala de Arte E.Coca din or.Soroca.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/EVENIMENTE SPECIALE/vizite ale partenerilor/Școala de Arte E.Coca din or.Soroca2.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/EVENIMENTE SPECIALE/vizite ale partenerilor/Școala de Arte E.Coca din or.Soroca3.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>

@@ -48,7 +48,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     </div>
                 </div>
                 <div class="slide-image">
-                    <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Eu respect demnitatea umană!.jpg" alt="<?php echo t('hero_slide_1_title'); ?>" loading="lazy">
+                    <img src="images//1.jpg" alt="<?php echo t('hero_slide_1_title'); ?>" loading="lazy">
                 </div>
             </div>
             <div class="slide">
@@ -60,7 +60,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     </div>
                 </div>
                 <div class="slide-image">
-                    <img src="images/POZE CENTRU/EVENIMENTE SPECIALE/sărbători/Ziua Copilăriei.jpg" alt="<?php echo t('hero_slide_2_title'); ?>" loading="lazy">
+                    <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Spunem Stop discriminării2.jpg" alt="<?php echo t('hero_slide_2_title'); ?>" loading="lazy">
                 </div>
             </div>
             <div class="slide">
@@ -72,7 +72,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     </div>
                 </div>
                 <div class="slide-image">
-                    <img src="images/POZE CENTRU/DEZVOLTARTE PERSONALĂ ȘI SOCIALĂ/Gestionarea corectă a banilor.jpg" alt="<?php echo t('hero_slide_3_title'); ?>" loading="lazy">
+                    <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Eu respect demnitatea umană!.jpg" alt="<?php echo t('hero_slide_3_title'); ?>" loading="lazy">
                 </div>
             </div>
         </div>
@@ -116,7 +116,7 @@ require_once __DIR__ . '/includes/analytics.php';
                 </div>
                 
                 <div class="about-image fade-in">
-                    <img src="images/.jpg" alt="" loading="lazy">
+                    <img src="images/sigla 2.png" alt="" loading="lazy">
                 </div>
             </div>
         </div>
@@ -275,7 +275,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     <a href="https://AGSSSI.md/" target="_blank" class="partner-slide">
                         <img src="images/logo-mps.webp" alt="AGSSSI" loading="lazy">
                     </a>
-                    <a href="https://ms.gov.md//" target="_blank" class="partner-slide">
+                    <a href="https://ms.gov.md/" target="_blank" class="partner-slide">
                         <img src="https://ms.gov.md/wp-content/uploads/2023/03/ministerul-s%C4%83n%C4%83t%C4%83%C8%9Bii-monocrom.png" alt="MSGOV" loading="lazy">
                     </a>
                     <!-- <a href="https://mec.gov.md/" target="_blank" class="partner-slide">
@@ -303,7 +303,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     <a href="https://AGSSSI.md/" target="_blank" class="partner-slide">
                         <img src="images/logo-mps.webp" alt="AGSSSI" loading="lazy">
                     </a>
-                    <a href="https://ms.gov.md//" target="_blank" class="partner-slide">
+                    <a href="https://ms.gov.md/" target="_blank" class="partner-slide">
                         <img src="https://ms.gov.md/wp-content/uploads/2023/03/ministerul-s%C4%83n%C4%83t%C4%83%C8%9Bii-monocrom.png" alt="MSGOV" loading="lazy">
                     </a>
                     <a href="https://mec.gov.md/" target="_blank" class="partner-slide">
@@ -374,30 +374,13 @@ require_once __DIR__ . '/includes/analytics.php';
                                 <?php echo t('contact_address_full'); ?>
                             </div>
                         </div>
-                        <div class="contact-item">
-                            <i class="fas fa-route"></i>
-                            <div>
-                                <strong><?php echo t('contact_how_to_find'); ?></strong><br>
-                                <div style="margin-top: 0.5rem;">
-                                    <div style="margin-bottom: 0.3rem; display: flex; align-items: center;">
-                                        <span><?php echo t('contact_transport_1'); ?></span>
-                                    </div>
-                                    <div style="margin-bottom: 0.3rem; display: flex; align-items: center;">
-                                        <span><?php echo t('contact_transport_2'); ?></span>
-                                    </div>
-                                    <div style="display: flex; align-items: center;">
-                                        <span><?php echo t('contact_transport_3'); ?></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="contact-map fade-in">
                     <h3 style="margin-bottom: 1.5rem; color: #2c3e50;"><?php echo t('contact_location_title'); ?></h3>
                     <div class="map-container">
                         <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d166.29545953991186!2d28.100158076396!3d48.1733358133639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ccc7a746591e6f%3A0x9516c2e78496b39c!2sStr.%20Alexandru%20cel%20Bun%2054%2C%20Moldova!5e0!3m2!1sro!2s!4v1755674251803!5m2!1sro!2s"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1150.114248389956!2d28.299159107958555!3d48.15028433370676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ccea7131808ec1%3A0xbed34e32b763e56!2sStr.%20Alexandru%20cel%20Bun%2054%2C%20Soroca%2C%20Moldova!5e0!3m2!1sen!2s!4v1760375147779!5m2!1sen!2s"
                             width="100%" 
                             height="400" 
                             style="border:0; border-radius: 10px;" 

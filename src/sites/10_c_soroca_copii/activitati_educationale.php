@@ -50,7 +50,7 @@ require_once __DIR__ . '/includes/analytics.php';
                             <p><?php echo t('activities_educational_desc'); ?></p>
                         </div>
                         <div class="service-hero-image">
-                            <img src="images/.jpg" alt="<?php echo t('activities_educational'); ?>" loading="lazy">
+                            <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Eu respect demnitatea umană!.jpg" alt="<?php echo t('activities_educational'); ?>" loading="lazy">
                         </div>
                     </div>
 
@@ -177,37 +177,247 @@ require_once __DIR__ . '/includes/analytics.php';
                         <h2><?php echo t('activities_educational_gallery_title'); ?></h2>
                         <div class="gallery-grid">
                             <div class="gallery-item">
-                                <img src="images/.jpg" alt="" loading="lazy">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/9 mai-Ziua Europei2.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/.jpg" alt="" loading="lazy">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/9 mai-Ziua Europei2.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/.jpg" alt="" loading="lazy">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Adolescența este mai frumoasă în siguranță!2.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/.jpg" alt="" loading="lazy">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Adolescența este mai frumoasă în siguranță!3.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/.jpg" alt="" loading="lazy">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Adolescența este mai frumoasă în siguranță.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/.jpg" alt="" loading="lazy">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Eu respect demnitatea umană!.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Eu respect demnitatea umană2.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Familia.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Familia2.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Familia3.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Spune Nu drogurilor!.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Spune Nu drogurilor2.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Spune Nu traficului de ființe umane.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Spune Nu traficului de ființe umane2.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Spune Nu traficului de ființe umane3.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Spunem Stop discriminării.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Spunem Stop discriminării2.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Spunem Stop discriminării3.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Spunem Stop discriminării4.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Spunem Stop discriminării5.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Violența este arma celor slabi.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/ateliere tematice/Violența este arma celor slabi2.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/lecții nonformale/Activitate cu tema ”Pubertatea”.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/lecții nonformale/Activitste cu tema ”Importanța cooperării în Echipă”.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/lecții nonformale/Cum actionam in cazul calamităților naturale.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/lecții nonformale/Cum acționăm in cazul calamityăților naturale2.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/lecții nonformale/Cum acționăm in cazul calamităților naturale3.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/lecții nonformale/Micii Europeni- excursie virtuală în Germania.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/lecții nonformale/Micii europeni- excursie virtuală în Germania2.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/lecții nonformale/”Importanța cooperării în Echipă”.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/vizite educative/La memorialul victimelor Holocaustului.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/vizite educative/La memorialul victimelor Holocaustului2.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/vizite educative/Muzeul de istorie si etnografie s.Cosăuți.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/vizite educative/Muzeul de istorie si etnografie s.Cosăuți2.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/vizite educative/Muzeul de istorie si etnografie s.Cosăuți3.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/vizite educative/Vizită la DSE Soroca.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/vizite educative/Vizită la DSE Soroca2.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/vizite educative/Vizită la DSE Soroca3.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/vizite educative/Vizită la muzeul de istorie și etnografie Soroca.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/vizite educative/Vizită la muzeul de istorie și etnografie Soroca2.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITĂȚI EDUCAȚIONALE/vizite educative/Vizită la muzeul de istorie și etnografie Soroca3.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>

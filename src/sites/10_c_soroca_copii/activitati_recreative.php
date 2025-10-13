@@ -50,7 +50,7 @@ require_once __DIR__ . '/includes/analytics.php';
                             <p><?php echo t('activities_recreational_desc'); ?></p>
                         </div>
                         <div class="service-hero-image">
-                            <img src="images/.jpg" alt="<?php echo t('activities_recreational'); ?>" loading="lazy">
+                            <img src="images/POZE CENTRU/ACTIVITYATI RECREATIVE SI CULTURALE/Jocuri și activități în aer liber/Copilăria e despre joacă2.jpg" alt="<?php echo t('activities_recreational'); ?>" loading="lazy">
                         </div>
                     </div>
 
@@ -178,37 +178,79 @@ require_once __DIR__ . '/includes/analytics.php';
                         <h2><?php echo t('activities_recreational_gallery_title'); ?></h2>
                         <div class="gallery-grid">
                             <div class="gallery-item">
-                                <img src="images/.jpg" alt="" loading="lazy">
+                                <img src="images/POZE CENTRU/ACTIVITYATI RECREATIVE SI CULTURALE/Jocuri și activități în aer liber/Copilăria e desopre joacă.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/.jpg" alt="" loading="lazy">
+                                <img src="images/POZE CENTRU/ACTIVITYATI RECREATIVE SI CULTURALE/Jocuri și activități în aer liber/Copilăria e despre joacă2.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/.jpg" alt="" loading="lazy">
+                                <img src="images/POZE CENTRU/ACTIVITYATI RECREATIVE SI CULTURALE/Jocuri și activități în aer liber/Copilăria e despre joacă3.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/.jpg" alt="" loading="lazy">
+                                <img src="images/POZE CENTRU/ACTIVITYATI RECREATIVE SI CULTURALE/Jocuri și activități în aer liber/Copilăria e despre joacă4.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/.jpg" alt="" loading="lazy">
+                                <img src="images/POZE CENTRU/ACTIVITYATI RECREATIVE SI CULTURALE/Jocuri și activități în aer liber/Fiecare zi de vară e o aventură!.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/.jpg" alt="" loading="lazy">
+                                <img src="images/POZE CENTRU/ACTIVITYATI RECREATIVE SI CULTURALE/Jocuri și activități în aer liber/Fiecare zi de vară e o aventură!2.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITYATI RECREATIVE SI CULTURALE/Jocuri și activități în aer liber/Fiecare zi de vară e o aventură!3.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITYATI RECREATIVE SI CULTURALE/Jocuri și activități în aer liber/Fiecare zi de vară e o aventură!4.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITYATI RECREATIVE SI CULTURALE/Jocuri și activități în aer liber/Fiecare zi de vară e o aventură!5.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITYATI RECREATIVE SI CULTURALE/participare la spectacole/Târgul meșterilor populari 2025.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITYATI RECREATIVE SI CULTURALE/participare la spectacole/Târgul meșterilor populari2.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITYATI RECREATIVE SI CULTURALE/participare la spectacole/Târgul meșterilor populari3.jpg" alt="" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <h4><?php echo t(''); ?></h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/POZE CENTRU/ACTIVITYATI RECREATIVE SI CULTURALE//Zile tematice, excursii/La steaua care-a răsărit.....jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
