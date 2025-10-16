@@ -185,6 +185,29 @@ function video($src, $category, $title = '', $desc = '') {
                         image('POZE CENTRU/EVENIMENTE SPECIALE/vizite ale partenerilor/Școala de Arte E.Coca din or.Soroca2.jpg', 'events', 'Vizită școala de arte', 'Activități artistice cu școala de arte');
                         image('POZE CENTRU/EVENIMENTE SPECIALE/vizite ale partenerilor/Școala de Arte E.Coca din or.Soroca3.jpg', 'events', 'Vizită școala de arte', 'Programme culturale și educative');
                         
+                        image('1.jpg', 'spaces', '', '');
+                        image('2.jpg', 'spaces', '', '');
+                        image('3.jpg', 'spaces', '', '');
+                        image('4.jpg', 'spaces', '', '');
+                        image('5.jpg', 'spaces', '', '');
+                        image('6.jpg', 'spaces', '', '');
+                        image('7.jpg', 'spaces', '', '');
+                        image('8.jpg', 'spaces', '', '');
+                        image('9.jpg', 'spaces', '', '');
+                        image('10.jpg', 'spaces', '', '');
+                        image('11.jpg', 'spaces', '', '');
+                        image('12.jpg', 'spaces', '', '');
+                        image('13.jpg', 'spaces', '', '');
+                        image('14.jpg', 'spaces', '', '');
+                        image('15.jpg', 'spaces', '', '');
+                        image('16.jpg', 'spaces', '', '');
+                        image('17.jpg', 'spaces', '', '');
+                        image('18.jpg', 'spaces', '', '');
+                        image('19.jpg', 'spaces', '', '');
+                        image('20.jpg', 'spaces', '', '');
+                        image('21.jpg', 'spaces', '', '');
+                        image('22.jpg', 'spaces', '', '');
+                        image('23.jpg', 'spaces', '', '');
                         ?>         
                     </div>
                 </div>

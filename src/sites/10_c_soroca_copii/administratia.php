@@ -62,7 +62,7 @@ function staff($name, $position, $image) {
                     <div class="admin-team-container">
                         <div class="admin-team-grid">
                             <?php
-                                
+                                staff('Ina Osadciuc', 'Director', 'Ina OSADCIUC, Directoarea cENTRULUI.jpg');
 
                             ?>
                         </div>

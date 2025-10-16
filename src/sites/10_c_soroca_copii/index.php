@@ -146,8 +146,6 @@ require_once __DIR__ . '/includes/analytics.php';
                 </ol>
                 
                 <p class="info-note"><?php echo t('info_services_note'); ?></p>
-                <br>
-                <p class="info-placement"><?php echo t('info_services_placement'); ?></p>
             </div>
         </div>
     </section>

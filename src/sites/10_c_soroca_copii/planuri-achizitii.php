@@ -60,7 +60,8 @@ function document($src, $title = '') {
                 <div class="content-wrapper">
                     <h2><?php echo t('procurement_plans_title'); ?></h2>
                     <?php
-
+                        document('files/Plan achizitii 2025.pdf', 'Plan achiziții 2025');
+                        document('files/Plan achizitii modificat 2025.pdf', 'Plan achiziții 2025 (Modificat)');
                     ?>
                 </div>
             </div>
