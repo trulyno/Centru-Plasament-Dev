@@ -48,7 +48,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     </div>
                 </div>
                 <div class="slide-image">
-                    <img src="images/20250627_094357.jpg" alt="<?php echo t('hero_slide_1_title'); ?>" loading="lazy">
+                    <img src="images/echipa.jpg" alt="<?php echo t('hero_slide_1_title'); ?>" loading="lazy">
                 </div>
             </div>
             <div class="slide">
@@ -60,7 +60,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     </div>
                 </div>
                 <div class="slide-image">
-                    <img src="images/259640924_1287898065006950_1799962175050298974_n.jpg" alt="<?php echo t('hero_slide_2_title'); ?>" loading="lazy">
+                    <img src="images/psiho_ergonoterapie.jpg" alt="<?php echo t('hero_slide_2_title'); ?>" loading="lazy">
                 </div>
             </div>
             <div class="slide">
@@ -72,7 +72,7 @@ require_once __DIR__ . '/includes/analytics.php';
                     </div>
                 </div>
                 <div class="slide-image">
-                    <img src="images/a0d64175-841e-4af3-890b-d71b3edc83ca.jpg" alt="<?php echo t('hero_slide_3_title'); ?>" loading="lazy">
+                    <img src="images/psiho5.jpg" alt="<?php echo t('hero_slide_3_title'); ?>" loading="lazy">
                 </div>
             </div>
         </div>
@@ -130,17 +130,24 @@ require_once __DIR__ . '/includes/analytics.php';
             <div class="services-grid">
                 <a href="sectia_profil_somatic.php" class="service-card fade-in">
                     <div class="service-image">
-                        <img src="images/20250409_094126.jpg" alt="<?php echo t('services_somatic'); ?>" loading="lazy">
+                        <img src="images/somatic.jpg" alt="<?php echo t('services_somatic'); ?>" loading="lazy">
                     </div>
                     <h3><?php echo t('services_somatic'); ?></h3>
                     <p><?php echo t('somatic_header_subtitle'); ?></p>
                 </a>
                 <a href="sectia_profil_psihoneurologic.php" class="service-card fade-in">
                     <div class="service-image">
-                        <img src="images/photo_5373042441810210718_y.jpg" alt="<?php echo t('services_phsyco_neurological'); ?>" loading="lazy">
+                        <img src="images/psiho1.jpg" alt="<?php echo t('services_phsyco_neurological'); ?>" loading="lazy">
                     </div>
                     <h3><?php echo t('services_phsyco_neurological'); ?></h3>
                     <p><?php echo t('phsyco_neurological_header_subtitle'); ?></p>
+                </a>
+                <a href="sectia_locuinta_protejata.php" class="service-card fade-in">
+                    <div class="service-image">
+                        <img src="images/lp.jpg" alt="<?php echo t('services_protected_home'); ?>" loading="lazy">
+                    </div>
+                    <h3><?php echo t('services_protected_home'); ?></h3>
+                    <p><?php echo t('protected_home_header_subtitle'); ?></p>
                 </a>
             </div>
         </div>
@@ -184,21 +191,21 @@ require_once __DIR__ . '/includes/analytics.php';
                 </button>
                 
                 <div class="gallery-slide active">
-                    <img src="images/20250409_103615.jpg" alt="<?php echo t('gallery_plyroom_desc'); ?>" loading="lazy">
+                    <img src="images/lp1.jpg" alt="<?php echo t('gallery_plyroom_desc'); ?>" loading="lazy">
                     <div class="gallery-slide-content">
                         <h3><?php echo t(''); ?></h3>
                         <p><?php echo t(''); ?></p>
                     </div>
                 </div>
                 <div class="gallery-slide">
-                    <img src="images/259640924_1287898065006950_1799962175050298974_n.jpg" alt="<?php echo t(''); ?>" loading="lazy">
+                    <img src="images/psiho2.jpg" alt="<?php echo t(''); ?>" loading="lazy">
                     <div class="gallery-slide-content">
                         <h3><?php echo t(''); ?></h3>
                         <p><?php echo t(''); ?></p>
                     </div>
                 </div>
                 <div class="gallery-slide">
-                    <img src="images/IMG_20190721_181625.jpg" alt="<?php echo t(''); ?>" loading="lazy">
+                    <img src="images/somatic6.jpg" alt="<?php echo t(''); ?>" loading="lazy">
                     <div class="gallery-slide-content">
                         <h3><?php echo t(''); ?></h3>
                         <p><?php echo t(''); ?></p>

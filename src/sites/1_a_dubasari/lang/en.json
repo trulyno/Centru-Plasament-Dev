@@ -124,7 +124,7 @@
   "meta_og_description": "We provide safe and caring environments where children can heal and grow.",
   
   "hero_slide_1_title": "About us",
-  "hero_slide_1_text": "Over 200 experienced employees in the social field",
+  "hero_slide_1_text": "Currently, the Center operates with two distinct profiles: somatic and psycho-neurological. The services offered are based on high-quality standards and current regulations, aiming to ensure comprehensive and specialized care for beneficiaries.",
   "hero_slide_1_cta": "Learn more",
   "hero_slide_2_title": "Mission",
   "hero_slide_2_text": "The institution's mission is to provide assistance and specialized social services, 24/7, to people with intellectual and psychosocial disabilities, as well as elderly people with increased dependency. The purpose is to maintain and improve the quality of life of these beneficiaries.",
@@ -475,5 +475,18 @@
   "phsyco_neurological_help_desc": "Interventions are specifically adapted to each individual case",
   "phsyco_neurological_quality_and_dignity_title": "Quality and dignity",
   "phsyco_neurological_quality_and_dignity_desc": "The objective is to maintain the most dignified and balanced life possible for beneficiaries",
-  "phsyco_neurological_gallery_title": "Psycho-neurological Profile Gallery"
+  "phsyco_neurological_gallery_title": "Psycho-neurological Profile Gallery",
+
+  "protected_home_meta_description": "",
+  "protected_home_meta_keywords": "",
+  "protected_home_page_title": "Protected Housing Social Service",
+  "services_protected_home": "Protected Housing Services",
+  "protected_home_header_subtitle": "The service's mission is to deinstitutionalize and socially and professionally integrate people with mental disabilities, offering them support for an independent and dignified life in the community.",
+  "protected_home_about_title": "About Protected Housing",
+  "service_protected_home_desc": "Our mission is to facilitate the social and professional integration of people with mental disabilities, by creating an environment conducive to developing independent living skills. We are committed to preventing institutionalization and promoting deinstitutionalization, while ensuring living conditions that guarantee the physical and psychological integrity of beneficiaries.;br:Through care and support services in the community, we aim to develop self-service skills and facilitate access to guidance and professional training services, thus contributing to an autonomous life and active participation of these people in society.",
+  "protected_home_personalized_title": "Personalized support",
+  "protected_home_personalized_desc": "Interventions are specifically adapted to each individual case",
+  "protected_home_dignity_title": "Quality and dignity",
+  "protected_home_dignity_desc": "The objective is to maintain the most dignified and balanced life possible for beneficiaries",
+  "protected_home_gallery_title": "Protected Housing Service Gallery"
 }

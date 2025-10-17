@@ -50,7 +50,7 @@ require_once __DIR__ . '/includes/analytics.php';
                             <p><?php echo t('service_phsyco_neurological_desc'); ?></p>
                         </div>
                         <div class="service-hero-image">
-                            <img src="images/photo_5373042441810210718_y.jpg" alt="<?php echo t(''); ?>" loading="lazy">
+                            <img src="images/psiho1.jpg" alt="<?php echo t(''); ?>" loading="lazy">
                         </div>
                     </div>
 
@@ -88,47 +88,35 @@ require_once __DIR__ . '/includes/analytics.php';
                         </div>
                     </div>
 
-                    <!-- <div class="service-gallery">
+                    <div class="service-gallery">
                         <h2><?php echo t('phsyco_neurological_gallery_title'); ?></h2>
                         <div class="gallery-grid">
                             <div class="gallery-item">
-                                <img src="" alt="" loading="lazy">
+                                <img src="images/psiho2.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="" alt="" loading="lazy">
+                                <img src="images/psiho3.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="" alt="" loading="lazy">
+                                <img src="images/psiho4.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="" alt="" loading="lazy">
-                                <div class="gallery-overlay">
-                                    <h4><?php echo t(''); ?></h4>
-                                </div>
-                            </div>
-                            <div class="gallery-item">
-                                <img src="" alt="" loading="lazy">
-                                <div class="gallery-overlay">
-                                    <h4><?php echo t(''); ?></h4>
-                                </div>
-                            </div>
-                            <div class="gallery-item">
-                                <img src="" alt="" loading="lazy">
+                                <img src="images/psiho5.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </section>

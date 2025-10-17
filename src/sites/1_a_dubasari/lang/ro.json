@@ -124,7 +124,7 @@
   "meta_og_description": "Oferim medii sigure și îngrijitoare unde beneficiarii mici pot să se vindece și să crească.",
   
   "hero_slide_1_title": "Despre noi",
-  "hero_slide_1_text": "Peste 200 de angajați cu experiență în domeniu social",
+  "hero_slide_1_text": "În prezent, Centrul funcționează cu două profile distincte: somatic și psihoneurologic. Serviciile oferite se bazează pe standarde înalte de calitate și pe reglementările în vigoare, având ca scop asigurarea unei îngrijiri complete și specializate pentru beneficiari.",
   "hero_slide_1_cta": "Află mai multe",
   "hero_slide_2_title": "Misiunea",
   "hero_slide_2_text": "Misiunea instituției este de a oferi asistență și servicii sociale specializate, 24/7, persoanelor cu dizabilități intelectuale și psihosociale, precum și persoanelor vârstnice cu dependență sporită. Scopul este menținerea și îmbunătățirea calității vieții acestor beneficiari.",
@@ -475,5 +475,19 @@
   "phsyco_neurological_help_desc": "Intervențiile sunt adaptate specific fiecărui caz în parte",
   "phsyco_neurological_quality_and_dignity_title": "Calitate și demnitate",
   "phsyco_neurological_quality_and_dignity_desc": "Obiectivul este menținerea unei vieți cât mai demne și echilibrate pentru beneficiari",
-  "phsyco_neurological_gallery_title": "Galeria Profilului Psihoneurologic"
+  "phsyco_neurological_gallery_title": "Galeria Profilului Psihoneurologic",
+
+  "protected_home_meta_description": "",
+  "protected_home_meta_keywords": "",
+  "protected_home_page_title": "Serviciul Social „Locuință Protejată”",
+  "services_protected_home": "Servicii „Locuință Protejată”",
+  "protected_home_header_subtitle": "Misiunea serviciului este de a dezinstiționa și a integra social și profesional persoanele cu dizabilități mintale, oferindu-le sprijin pentru o viață independentă și demnă în comunitate.",
+  "protected_home_about_title": "Despre „Locuința Protejată”",
+  "service_protected_home_desc": "Misiunea noastră este de a facilita integrarea socială și profesională a persoanelor cu dizabilități mintale, prin crearea unui mediu propice dezvoltării deprinderilor de viață independentă. Ne angajăm să prevenim instituționalizarea și să promovăm dezinstituționalizarea, asigurând în același timp condiții de trai care să garanteze integritatea fizică și psihică a beneficiarilor.;br:Prin servicii de îngrijire și suport în comunitate, urmărim să dezvoltăm deprinderile de autoservire și să facilităm accesul la servicii de orientare și formare profesională, contribuind astfel la o viață autonomă și la o participare activă a acestor persoane în societate.",
+  "protected_home_personalized_title": "Sprijin personalizat",
+  "protected_home_personalized_desc": "Intervențiile sunt adaptate specific fiecărui caz în parte",
+  "protected_home_dignity_title": "Calitate și demnitate",
+  "protected_home_dignity_desc": "Obiectivul este menținerea unei vieți cât mai demne și echilibrate pentru beneficiari",
+  "protected_home_gallery_title": "Galeria serviciului „Locuinței Protejate”"
+
 }

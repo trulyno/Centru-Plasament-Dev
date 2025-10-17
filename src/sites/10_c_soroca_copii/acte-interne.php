@@ -76,7 +76,7 @@ function document($src, $title = '') {
                                     </div>
                                     <div class="detail-item">
                                         <i class="fas fa-user-check"></i>
-                                        <span>Aprobat prin Ordinul AGSSSI</span>
+                                        <span>Aprobat prin Ordinul MMPS</span>
                                     </div>
                                 </div>
                                 <a href="files/Regulament de organizare și funcționare.pdf" class="document-link" target="_blank">

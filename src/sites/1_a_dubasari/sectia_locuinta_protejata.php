@@ -9,11 +9,11 @@ require_once __DIR__ . '/includes/analytics.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="<?php echo t('somatic_meta_description'); ?>">
-    <meta name="keywords" content="<?php echo t('somatic_meta_keywords'); ?>">
+    <meta name="description" content="<?php echo t('protected_home_meta_description'); ?>">
+    <meta name="keywords" content="<?php echo t('protected_home_meta_keywords'); ?>">
     <meta name="author" content="<?php echo t('site_title'); ?>">
     
-    <title><?php echo t('somatic_page_title'); ?></title>
+    <title><?php echo t('protected_home_page_title'); ?></title>
     <link rel="icon" href="images/logo.ico" type="image/x-icon" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
@@ -36,8 +36,8 @@ require_once __DIR__ . '/includes/analytics.php';
     <main class="main-content" id="main-content">
         <section class="page-header">
             <div class="container">
-                <h1><?php echo t('services_somatic'); ?></h1>
-                <p><?php echo t('somatic_header_subtitle'); ?></p>
+                <h1><?php echo t('services_protected_home'); ?></h1>
+                <p><?php echo t('protected_home_header_subtitle'); ?></p>
             </div>
         </section>
 
@@ -46,11 +46,11 @@ require_once __DIR__ . '/includes/analytics.php';
                 <div class="content-wrapper">
                     <div class="service-hero">
                         <div class="service-hero-content">
-                            <h2><?php echo t('somatic_about_title'); ?></h2>
-                            <p><?php echo t('service_somatic_desc'); ?></p>
+                            <h2><?php echo t('protected_home_about_title'); ?></h2>
+                            <p><?php echo t('service_protected_home_desc'); ?></p>
                         </div>
                         <div class="service-hero-image">
-                            <img src="images/somatic.jpg" alt="<?php echo t(''); ?>" loading="lazy">
+                            <img src="images/lp.jpg" alt="<?php echo t(''); ?>" loading="lazy">
                         </div>
                     </div>
 
@@ -59,64 +59,50 @@ require_once __DIR__ . '/includes/analytics.php';
                         <div class="info-grid">
                             <div class="info-card">
                                 <div class="info-icon">
-                                    <i class="fas fa-users"></i>
-                                </div>
-                                <h4><?php echo t('somatic_autonomy_title'); ?></h4>
-                                <p><?php echo t('somatic_autonomy_desc'); ?></p>
-                            </div>
-                            <div class="info-card">
-                                <div class="info-icon">
-                                    <i class="fas fa-clock"></i>
-                                </div>
-                                <h4><?php echo t('somatic_security_title'); ?></h4>
-                                <p><?php echo t('somatic_security_desc'); ?></p>
-                            </div>
-                            <div class="info-card">
-                                <div class="info-icon">
                                     <i class="fas fa-gavel"></i>
                                 </div>
-                                <h4><?php echo t('somatic_inclusion_title'); ?></h4>
-                                <p><?php echo t('somatic_inclusion_desc'); ?></p>
+                                <h4><?php echo t('protected_home_personalized_title'); ?></h4>
+                                <p><?php echo t('protected_home_personalized_desc'); ?></p>
                             </div>
                             <div class="info-card">
                                 <div class="info-icon">
                                     <i class="fas fa-id-card"></i>
                                 </div>
-                                <h4><?php echo t('somatic_quality_of_life_title'); ?></h4>
-                                <p><?php echo t('somatic_quality_of_life_desc'); ?></p>
+                                <h4><?php echo t('protected_home_dignity_title'); ?></h4>
+                                <p><?php echo t('protected_home_dignity_desc'); ?></p>
                             </div>
                         </div>
                     </div>
 
                     <div class="service-gallery">
-                        <h2><?php echo t('somatic_gallery_title'); ?></h2>
+                        <h2><?php echo t('protected_home_gallery_title'); ?></h2>
                         <div class="gallery-grid">
                             <div class="gallery-item">
-                                <img src="images/somatic1.jpg" alt="" loading="lazy">
+                                <img src="images/lp1.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/somatic3.jpg" alt="" loading="lazy">
+                                <img src="images/lp2.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/somatic4.jpg" alt="" loading="lazy">
+                                <img src="images/lp3.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/somatic5.jpg" alt="" loading="lazy">
+                                <img src="images/lp4.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/somatic6.jpg" alt="" loading="lazy">
+                                <img src="images/lp5.jpg" alt="" loading="lazy">
                                 <div class="gallery-overlay">
                                     <h4><?php echo t(''); ?></h4>
                                 </div>

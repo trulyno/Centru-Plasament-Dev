@@ -90,6 +90,7 @@
                         <ul class="dropdown-menu">
                             <li><a href="sectia_profil_somatic.php"><?php echo t('services_somatic'); ?></a></li>
                             <li><a href="sectia_profil_psihoneurologic.php"><?php echo t('services_phsyco_neurological'); ?></a></li>
+                            <li><a href="sectia_locuinta_protejata.php"><?php echo t('services_protected_home'); ?></a></li>
                         </ul>
                     </li>
                     <li class="dropdown">

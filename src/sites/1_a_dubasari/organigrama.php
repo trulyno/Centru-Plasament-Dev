@@ -46,7 +46,7 @@ require_once __DIR__ . '/includes/analytics.php';
                 <div class="content-wrapper">
                     <h2><?php echo t('administration_institution_title'); ?></h2>
                     <div class="organigrama-container">
-                        <!-- <img src="images/organigrama.png" alt="<?php echo t('about_organigram'); ?> - <?php echo t('site_title'); ?>" class="organigrama-image"> -->
+                        <img src="images/Organigrama 2_01.jpg" alt="<?php echo t('about_organigram'); ?> - <?php echo t('site_title'); ?>" class="organigrama-image">
                     </div>
                 </div>
             </div>
