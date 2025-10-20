@@ -1,0 +1,29 @@
+[
+    {
+        "ip": "192.168.65.1",
+        "username": "admin",
+        "timestamp": 1754287472,
+        "success": true,
+        "user_agent": "Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36",
+        "attempted_password": null,
+        "password_hash": ""
+    },
+    {
+        "ip": "192.168.65.1",
+        "username": "admin",
+        "timestamp": 1755071817,
+        "success": true,
+        "user_agent": "Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36",
+        "attempted_password": null,
+        "password_hash": ""
+    },
+    {
+        "ip": "192.168.65.1",
+        "username": "admin",
+        "timestamp": 1755084662,
+        "success": true,
+        "user_agent": "Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36",
+        "attempted_password": null,
+        "password_hash": ""
+    }
+]

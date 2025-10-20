@@ -1,0 +1,81 @@
+<?php
+// Include language configuration
+require_once __DIR__ . '/includes/lang.php';
+require_once __DIR__ . '/includes/gdpr.php';
+require_once __DIR__ . '/includes/analytics.php';
+
+function staff($name, $position, $image) {
+    echo '<div class="admin-staff-card">
+                <div class="admin-staff-image">
+                    <img src="images/' . $image . '" alt="' . $position . '" loading="lazy" decoding="async">
+                </div>
+                    <div class="admin-staff-info">
+                        <h3>' . $name . '</h3>
+                        <p class="admin-staff-position">' . $position . '</p>
+                    </div>
+                </div>';
+}
+?>
+<!DOCTYPE html>
+<html lang="<?php echo getCurrentLanguage(); ?>">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="<?php echo t('administration_meta_description'); ?>">
+    <meta name="keywords" content="<?php echo t('administration_meta_keywords'); ?>">
+    <meta name="author" content="<?php echo t('meta_author'); ?>">
+    
+    <title><?php echo t('administration_page_title'); ?></title>
+    <link rel="icon" href="images/logo.ico" type="image/x-icon" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="gdpr-styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Accessibility improvements -->
+    <div class="skip-links">
+        <a href="#main-content" class="skip-link"><?php echo t('skip_to_content'); ?></a>
+    </div>
+
+    <?php include 'includes/header.php'; ?>
+
+    <!-- Main Content -->
+    <main class="main-content" id="main-content">
+        <section class="page-header">
+            <div class="container">
+                <h1><?php echo t('about_administration'); ?></h1>
+                <p><?php echo t('administration_subtitle'); ?></p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-wrapper">
+                    <h2><?php echo t('administration_team_title'); ?></h2>
+                    <p><?php echo t('administration_team_description'); ?></p>
+                    
+                    <div class="admin-team-container">
+                        <div class="admin-team-grid">
+                            <?php
+                                // staff('Ina Osadciuc', 'Director', 'Ina OSADCIUC, Directoarea cENTRULUI.jpg');
+
+                            ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <?php include 'includes/footer.php'; ?>
+
+
+    <script src="script.js"></script>
+    <script src="gdpr-script.js"></script>
+</body>
+</html>
