@@ -1,7 +1,7 @@
 {
   "site_title": "Day Rehabilitation Center for Children with Disabilities",
-  "site_title_full": "Day Rehabilitation Center for Children with Disabilities „Speranța\" from Criuleni City",
-  "site_title_short": "„Speranța\"",
+  "site_title_full": "Day Rehabilitation Center for Children with Disabilities from Criuleni City",
+  "site_title_short": "DRCCD",
   "ministry_title": "Ministry of Labor and Social Protection · AGSSSI",
   
   "nav_home": "Home",
@@ -155,14 +155,14 @@
   "gallery_view_all": "View Full Gallery",
   
   "contact_section_title": "Contact Us",
-  "contact_section_subtitle": "We're here to help 24/7. Contact us anytime.",
+  "contact_section_subtitle": "We're here to help. Contact us anytime.",
   "contact_get_in_touch": "Get in Touch",
   "contact_main_office": "Main Office:",
   "contact_emergency": "24/7 Emergency:",
   "contact_address": "Address:",
   "contact_address_full": "Republic of Moldova, Criuleni city, 31 Stefan cel Mare Street",
   "contact_hours": "Hours:",
-  "contact_hours_detail": "Monday - Friday: 08:00 - 18:00<br>Saturday: 09:00 - 15:00<br>Sunday: Closed (24/7 Emergency)",
+  "contact_hours_detail": "Monday - Friday: 08:30 - 17:00<br>Saturday, Sunday - Closed",
   "contact_send_message": "Send Us a Message",
   "contact_form_name": "Full Name",
   "contact_form_email": "Email Address",
@@ -416,7 +416,7 @@
   
   "petition_footer_info": "Petitions and complaints will be examined according to the deadlines provided by current legislation.",
 
-  "footer_copyright": "© 2025 Day Rehabilitation Center for Children with Disabilities „Speranța\". All rights reserved.",
+  "footer_copyright": "© 2025 Day Rehabilitation Center for Children with Disabilities DRCCD. All rights reserved.",
   
   "footer_privacy_policy": "Privacy Policy",
   "footer_cookie_settings": "Cookie Settings"
