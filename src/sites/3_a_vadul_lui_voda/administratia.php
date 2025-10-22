@@ -59,14 +59,24 @@ function staff($name, $position, $image) {
                     <h2><?php echo t('administration_team_title'); ?></h2>
                     <p><?php echo t('administration_team_description'); ?></p>
                     
-                    <div class="admin-team-container">
+                    <!-- <div class="admin-team-container">
                         <div class="admin-team-grid">
                             <?php
                                 
 
                             ?>
                         </div>
-                    </div>
+                    </div> -->
+                    <section class="content-section">
+                        <div class="container">
+                            <div class="content-wrapper">
+                                <h2><?php echo t('administration_institution_title'); ?></h2>
+                                <div class="organigrama-container">
+                                    <img src="images/administratia.jpg" alt="<?php echo t('about_organigram'); ?> - <?php echo t('site_title'); ?>" class="organigrama-image">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </section>

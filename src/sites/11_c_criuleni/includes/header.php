@@ -57,7 +57,7 @@
                             <i class="fas fa-heart"></i>
                             <span><?php echo t('btn_donate'); ?></span>
                         </button>
-                        <button class="audio-btn" id="socialBtn" aria-label="<?php echo t('social_facebook'); ?>" >
+                        <button class="audio-btn" id="socialBtn" aria-label="<?php echo t('social_facebook'); ?>"  onclick="window.open('https://www.facebook.com/SperantaCriuleni', '_blank');">
                             <i class="fab fa-facebook-f"></i>
                             <span><?php echo t('social_facebook'); ?></span>
                         </button>
@@ -147,7 +147,7 @@
                         <button class="donate-btn" aria-label="<?php echo t('donate_aria'); ?>" title="<?php echo t('btn_donate'); ?>">
                             <i class="fas fa-heart"></i>
                         </button>
-                        <button class="audio-btn" id="socialBtn" aria-label="<?php echo t('social_facebook'); ?>">
+                        <button class="audio-btn" id="socialBtn" aria-label="<?php echo t('social_facebook'); ?>"  onclick="window.open('https://www.facebook.com/SperantaCriuleni', '_blank');">
                             <i class="fab fa-facebook-f"></i>
                         </button>
                     </li>
