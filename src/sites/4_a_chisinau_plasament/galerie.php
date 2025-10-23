@@ -31,6 +31,29 @@ function video($src, $category, $title = '', $desc = '') {
         </div>';
 }
 
+function youtube($videoId, $category, $title = '', $desc = '') {
+    // Extract video ID from URL if full URL is provided
+    if (strpos($videoId, 'youtube.com') !== false || strpos($videoId, 'youtu.be') !== false) {
+        if (preg_match('/(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]+)/', $videoId, $matches)) {
+            $videoId = $matches[1];
+        }
+    }
+    
+    $thumbnailUrl = "https://img.youtube.com/vi/" . htmlspecialchars($videoId) . "/maxresdefault.jpg";
+    
+    echo '
+        <div class="gallery-item" data-category="' . htmlspecialchars($category) . '" data-type="youtube" data-video-id="' . htmlspecialchars($videoId) . '">
+            <img src="' . $thumbnailUrl . '" alt="' . htmlspecialchars($title) . '" loading="lazy">
+            <div class="gallery-overlay">
+                <h3>' . htmlspecialchars($title) . '</h3>
+                <p>' . htmlspecialchars($desc) . '</p>
+                <div class="overlay-icon">
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>';
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo getCurrentLanguage(); ?>">
@@ -192,6 +215,14 @@ function video($src, $category, $title = '', $desc = '') {
                     <source src="" type="video/mp4">
                     Browser-ul tău nu suportă elementul video.
                 </video>
+                <iframe id="modalYoutube" 
+                        style="display: none;" 
+                        width="100%" 
+                        height="100%" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
             </div>
             <div class="modal-info">
                 <h3 id="modalTitle"></h3>

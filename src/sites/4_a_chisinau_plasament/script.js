@@ -239,9 +239,6 @@ async function loadAndAnimateStats() {
             if (document.getElementById('stat4')) {
                 animateCounter(document.getElementById('stat4'), stats.stat4.value);
             }
-            if (document.getElementById('stat5')) {
-                animateCounter(document.getElementById('stat5'), stats.stat5.value);
-            }
         } else {
             // Fallback to default values if API fails
             console.warn('Failed to load stats from API, using defaults');
@@ -249,7 +246,6 @@ async function loadAndAnimateStats() {
             animateCounter(document.getElementById('stat2'), 11050);
             animateCounter(document.getElementById('stat3'), 1956);
             animateCounter(document.getElementById('stat4'), 79);
-            animateCounter(document.getElementById('stat5'), 15);
         }
     } catch (error) {
         console.error('Error loading stats:', error);
@@ -258,7 +254,6 @@ async function loadAndAnimateStats() {
         animateCounter(document.getElementById('stat2'), 11050);
         animateCounter(document.getElementById('stat3'), 1956);
         animateCounter(document.getElementById('stat4'), 79);
-        animateCounter(document.getElementById('stat5'), 15);
     }
 }
 
@@ -806,6 +801,7 @@ class Gallery {
         this.modal = document.getElementById('galleryModal');
         this.modalImage = document.getElementById('modalImage');
         this.modalVideo = document.getElementById('modalVideo');
+        this.modalYoutube = document.getElementById('modalYoutube');
         this.modalTitle = document.getElementById('modalTitle');
         this.modalDescription = document.getElementById('modalDescription');
         this.modalClose = document.getElementById('modalClose');
@@ -883,7 +879,7 @@ class Gallery {
             if (filter === 'all') {
                 shouldShow = true;
             } else if (filter === 'videos') {
-                shouldShow = type === 'video';
+                shouldShow = type === 'video' || type === 'youtube';
             } else {
                 shouldShow = category === filter;
             }
@@ -934,6 +930,11 @@ class Gallery {
         if (this.modalVideo && !this.modalVideo.paused) {
             this.modalVideo.pause();
         }
+        
+        // Clear YouTube iframe
+        if (this.modalYoutube) {
+            this.modalYoutube.src = '';
+        }
     }
     
     prevImage() {
@@ -952,15 +953,30 @@ class Gallery {
         const video = currentItem.querySelector('video');
         const title = currentItem.querySelector('h3').textContent;
         const description = currentItem.querySelector('p').textContent;
+        const itemType = currentItem.dataset.type;
+        const youtubeId = currentItem.dataset.videoId;
         
         // Update title and description
         this.modalTitle.textContent = title;
         this.modalDescription.textContent = description;
         
-        if (video) {
-            // Show video, hide image
+        // Hide all media elements first
+        this.modalImage.style.display = 'none';
+        this.modalVideo.style.display = 'none';
+        this.modalYoutube.style.display = 'none';
+        
+        if (itemType === 'youtube' && youtubeId) {
+            // Show YouTube video
+            this.modalYoutube.style.display = 'block';
+            this.modalYoutube.src = `https://www.youtube.com/embed/${youtubeId}?rel=0&modestbranding=1&showinfo=0&autoplay=1`;
+            
+            // Pause local video if it was playing
+            if (this.modalVideo && !this.modalVideo.paused) {
+                this.modalVideo.pause();
+            }
+        } else if (video && itemType === 'video') {
+            // Show local video
             this.modalVideo.style.display = 'block';
-            this.modalImage.style.display = 'none';
             
             // Set video source
             const source = this.modalVideo.querySelector('source');
@@ -972,13 +988,20 @@ class Gallery {
             this.modalVideo.addEventListener('loadedmetadata', () => {
                 this.modalVideo.style.opacity = '1';
             }, { once: true });
+            
+            // Clear YouTube iframe
+            this.modalYoutube.src = '';
         } else if (img) {
-            // Show image, hide video
+            // Show image
             this.modalImage.style.display = 'block';
-            this.modalVideo.style.display = 'none';
             
             // Pause video if it was playing
-            this.modalVideo.pause();
+            if (this.modalVideo && !this.modalVideo.paused) {
+                this.modalVideo.pause();
+            }
+            
+            // Clear YouTube iframe
+            this.modalYoutube.src = '';
             
             this.modalImage.src = img.src;
             this.modalImage.alt = img.alt;
@@ -1006,7 +1029,7 @@ class Gallery {
                 break;
             case ' ':
             case 'k':
-                // Spacebar or 'k' to play/pause video
+                // Spacebar or 'k' to play/pause video (local videos only)
                 if (this.modalVideo.style.display !== 'none') {
                     e.preventDefault();
                     if (this.modalVideo.paused) {
@@ -1017,12 +1040,21 @@ class Gallery {
                 }
                 break;
             case 'f':
-                // 'f' to toggle fullscreen for video
+                // 'f' to toggle fullscreen for video (local videos only)
                 if (this.modalVideo.style.display !== 'none') {
                     if (document.fullscreenElement) {
                         document.exitFullscreen();
                     } else {
                         this.modalVideo.requestFullscreen().catch(() => {
+                            // Handle fullscreen request failure silently
+                        });
+                    }
+                } else if (this.modalYoutube.style.display !== 'none') {
+                    // For YouTube videos, try to fullscreen the iframe
+                    if (document.fullscreenElement) {
+                        document.exitFullscreen();
+                    } else {
+                        this.modalYoutube.requestFullscreen().catch(() => {
                             // Handle fullscreen request failure silently
                         });
                     }

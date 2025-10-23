@@ -57,10 +57,10 @@
                             <i class="fas fa-heart"></i>
                             <span><?php echo t('btn_donate'); ?></span>
                         </button>
-                        <button class="audio-btn" id="socialBtn" aria-label="<?php echo t('social_facebook'); ?>" >
+                        <!-- <button class="audio-btn" id="socialBtn" aria-label="<?php echo t('social_facebook'); ?>" >
                             <i class="fab fa-facebook-f"></i>
                             <span><?php echo t('social_facebook'); ?></span>
-                        </button>
+                        </button> -->
                         <!--<button class="audio-btn" id="audioBtn" aria-label="<?php echo t('anthem_aria'); ?>" title="<?php echo t('anthem_title'); ?>"> -->
                     </div>
                     
@@ -143,9 +143,9 @@
                         <button class="donate-btn" aria-label="<?php echo t('donate_aria'); ?>" title="<?php echo t('btn_donate'); ?>">
                             <i class="fas fa-heart"></i>
                         </button>
-                        <button class="audio-btn" id="socialBtn" aria-label="<?php echo t('social_facebook'); ?>">
+                        <!-- <button class="audio-btn" id="socialBtn" aria-label="<?php echo t('social_facebook'); ?>">
                             <i class="fab fa-facebook-f"></i>
-                        </button>
+                        </button> -->
                     </li>
                 </ul>
                 <button class="mobile-menu-btn" id="mobileMenuBtn">
