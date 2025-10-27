@@ -185,18 +185,14 @@ require_once __DIR__ . '/includes/analytics.php';
             <div class="stats-grid">
                 <div class="stat-item fade-in">
                     <h3 id="stat1">0</h3>
-                    <p><?php echo t('stats_deaths'); ?></p>
-                </div>
-                <div class="stat-item fade-in">
-                    <h3 id="stat2">0</h3>
                     <p><?php echo t('stats_placements'); ?></p>
                 </div>
                 <div class="stat-item fade-in">
-                    <h3 id="stat3">0</h3>
+                    <h3 id="stat2">0</h3>
                     <p><?php echo t('stats_discharges'); ?></p>
                 </div>
                 <div class="stat-item fade-in">
-                    <h3 id="stat4">0</h3>
+                    <h3 id="stat3">0</h3>
                     <p><?php echo t('stats_years'); ?></p>
                 </div>
             </div>
