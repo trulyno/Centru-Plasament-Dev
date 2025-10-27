@@ -69,7 +69,7 @@ function document($src, $title = '') {
                             <div class="document-content">
                                 <h3>Regulamentul de Organizare și Funcționare</h3>
                                 <p>Documentul principal care stabilește structura organizatorică, atribuțiile, responsabilitățile și procedurile de funcționare ale centrului</p>
-                                <div class="document-details">
+                                <!-- <div class="document-details">
                                     <div class="detail-item">
                                         <i class="fas fa-calendar"></i>
                                         <span>Ultima actualizare: Martie 2024</span>
@@ -81,7 +81,7 @@ function document($src, $title = '') {
                                 </div>
                                 <a href="files/Ordin-Regulament-6 martie 2024.pdf" class="document-link" target="_blank">
                                     <i class="fas fa-external-link-alt"></i> Vezi document
-                                </a>
+                                </a> -->
                             </div>
                         </div>
                         <?php

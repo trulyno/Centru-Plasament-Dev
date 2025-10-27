@@ -50,7 +50,7 @@ require_once __DIR__ . '/includes/analytics.php';
                             <p><?php echo t('service_rehabilitation_desc'); ?></p>
                         </div>
                         <div class="service-hero-image">
-                            <img src="images/.jpg" alt="<?php echo t('services_rehabilitation'); ?>" loading="lazy">
+                            <img src="images/4.jpg" alt="<?php echo t('services_rehabilitation'); ?>" loading="lazy">
                         </div>
                     </div>
 
@@ -173,7 +173,7 @@ require_once __DIR__ . '/includes/analytics.php';
                         </div>
                     </div> -->
 
-                    <div class="service-gallery">
+                    <!-- <div class="service-gallery">
                         <h2><?php echo t('rehabilitation_gallery_title'); ?></h2>
                         <div class="gallery-grid">
                             <div class="gallery-item">
@@ -213,7 +213,7 @@ require_once __DIR__ . '/includes/analytics.php';
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
