@@ -153,6 +153,26 @@ require_once __DIR__ . '/includes/analytics.php';
         </div>
     </section>
 
+    <section class="info-section services-info" id="services-info">
+        <div class="container">
+            <h2 class="section-title fade-in"><?php echo t('info_services_title'); ?></h2>
+            <div class="info-content fade-in">
+                
+                <h3 class="info-subtitle"><?php echo t('info_services_subtitle'); ?></h3>
+                <ol class="info-list">
+                    <li><?php echo t('info_service_1'); ?></li>
+                    <li><?php echo t('info_service_2'); ?></li>
+                    <li><?php echo t('info_service_3'); ?></li>
+                    <li><?php echo t('info_service_4'); ?></li>
+                    <li><?php echo t('info_service_5'); ?></li>
+                    <li><?php echo t('info_service_6'); ?></li>
+                    <li><?php echo t('info_service_7'); ?></li>
+                </ol>
+                
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">

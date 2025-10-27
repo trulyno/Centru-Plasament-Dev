@@ -493,5 +493,21 @@
   "rehabilitation_about_title": "Despre Serviciul de Reabilitare",
   "service_rehabilitation_desc": "îmbolnăvire, pînă la momentul preluării copilului de reprezentantul legal;\n triaj epidemiologic zilnic;\n asigurarera alimentației copiilor cu respectarea normelor legale în vigoare;        realizarea sesiunilor instruire privind noțiuni de bază și cunoștințe generale din domeniul sănătății, prevenirea bolilor transmisibile, adoptarea unui stil de viață sănătos, combaterea unor obiceiuri nocive, educație sexuală, în funcțe de vîrstă și gradul de maturitate al beneficiarului.",
   "services_rehabilitation": "Serviciul de Reabilitare",
-  "rehabilitation_gallery_title": "Galeria Serviciului de Reabilitare"
+  "rehabilitation_gallery_title": "Galeria Serviciului de Reabilitare",
+
+  "info_services_title": "Informații despre Servicii",
+  "info_services_subtitle": "Prestarea serviciului este ghidată de următoarele principii:",
+  "info_service_1": "principiul respectării drepturilor şi promovării interesului superior al copilului",
+  "info_service_2": "principiul nondiscriminării",
+  "info_service_3": "principiul abordării individualizate a copilului",
+  "info_service_4": "principiul promovării incluziunii educaţionale a copilului",
+  "info_service_5": "principiul protecţiei copilului împotriva violenței, neglijării şi exploatării",
+  "info_service_6": "principiul acordării asistenţei într-un mod prietenos copilului",
+  "info_service_7": "principiul abordării multidisciplinare",
+  "info_service_8": "principiul participării copilului şi respectarea opiniei acestuia în procesul de planificare şi prestare a Centrului",
+  "info_service_9": "principiul confidenţialității informaţiei",
+  "info_service_10": "principiul parteneriatului public privat în dezvoltarea și prestarea serviciilor Centrului",
+  "info_service_11": "principiul durabilităţii şi continuităţii Centrului",
+  "info_service_12": "principiul incluziunii comunitare şi (re)integrării familiale a copilului"
+
 }
