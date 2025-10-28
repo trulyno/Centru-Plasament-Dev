@@ -374,6 +374,13 @@ require_once __DIR__ . '/includes/analytics.php';
                             </div>
                         </div>
                         <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong><?php echo t('visit_hours'); ?></strong><br>
+                                <?php echo t('visit_hours_detail'); ?>
+                            </div>
+                        </div>
+                        <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
                                 <strong><?php echo t('contact_address'); ?></strong><br>
