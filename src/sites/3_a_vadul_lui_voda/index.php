@@ -188,6 +188,75 @@ require_once __DIR__ . '/includes/analytics.php';
         </div>
     </section> -->
 
+
+    <!-- News Section -->
+    <section class="news" id="news">
+        <div class="container">
+            <h2 class="section-title fade-in"><?php echo t('news_section_title'); ?></h2>
+            <p class="section-subtitle fade-in"><?php echo t('news_section_subtitle'); ?></p>
+            
+            <div class="news-grid">
+                <?php
+                // Load news from JSON file
+                $newsFile = __DIR__ . '/data/news.json';
+                $news = [];
+                if (file_exists($newsFile)) {
+                    $newsContent = file_get_contents($newsFile);
+                    $news = json_decode($newsContent, true);
+                    if (!is_array($news)) {
+                        $news = [];
+                    }
+                    // Sort by date (newest first) and get only latest 3
+                    usort($news, function($a, $b) {
+                        return strtotime($b['date']) - strtotime($a['date']);
+                    });
+                    $news = array_slice($news, 0, 3);
+                }
+                
+                if (count($news) > 0):
+                    foreach ($news as $article):
+                        $newsId = htmlspecialchars($article['id']);
+                        $newsTitle = htmlspecialchars($article['title']);
+                        $newsSubtitle = htmlspecialchars($article['subtitle']);
+                        $newsImage = htmlspecialchars($article['image']);
+                        $newsDate = date('d.m.Y', strtotime($article['date']));
+                ?>
+                    <a href="articol.php?id=<?php echo $newsId; ?>" class="news-card fade-in">
+                        <div class="news-image">
+                            <img src="<?php echo $newsImage; ?>" alt="<?php echo $newsTitle; ?>" loading="lazy">
+                            <div class="news-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                <?php echo $newsDate; ?>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <h3><?php echo $newsTitle; ?></h3>
+                            <p><?php echo $newsSubtitle; ?></p>
+                            <span class="news-read-more">
+                                <?php echo t('news_read_more'); ?>
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </a>
+                <?php
+                    endforeach;
+                else:
+                ?>
+                    <p class="no-news"><?php echo t('news_no_news'); ?></p>
+                <?php endif; ?>
+            </div>
+            
+            <?php if (count($news) > 0): ?>
+            <div class="news-cta fade-in">
+                <a href="noutati.php" class="news-view-all-btn">
+                    <?php echo t('news_view_all'); ?>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <?php endif; ?>
+        </div>
+    </section>
+
     <!-- Gallery Preview Section -->
     <section class="gallery-preview" id="gallery">
         <div class="container">

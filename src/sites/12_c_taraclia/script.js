@@ -1500,7 +1500,7 @@ function createOrganigramaModal() {
                 <img id="organigramaModalImage" src="" alt="" loading="lazy">
             </div>
             <div class="organigrama-modal-footer">
-                <p>Structura organizațională completă a Centrului de Plasament și Reabilitare pentru Copii de Vârstă Fragedă din municipiul Chișinău.</p>
+                <p>Structura organizațională completă a centrului.</p>
             </div>
         </div>
     `;

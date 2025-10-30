@@ -45,17 +45,17 @@ require_once __DIR__ . '/includes/analytics.php';
             <div class="container">
                 <div class="content-wrapper">
                     <h2><?php echo t('methodologies_content_title'); ?></h2>
-                    <!-- <div class="document-card">
+                    <div class="document-card">
                         <div class="document-icon">
                             <i class="fas fa-file-pdf"></i>
                         </div>
                         <div class="document-content">
-                            <h3></h3>
-                            <a href="" class="document-link" target="_blank">
+                            <h3>Standarde minime de calitate ale serviciilor prestate de centru</h3>
+                            <a href="files/Standarde minime de calitate.pdf" class="document-link" target="_blank">
                                 <i class="fas fa-external-link-alt"></i> Vezi document
                             </a>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </section>

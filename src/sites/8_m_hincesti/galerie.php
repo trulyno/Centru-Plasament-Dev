@@ -105,39 +105,45 @@ function youtube($videoId, $category, $title = '', $desc = '') {
                     </div>
                     <div class="gallery-grid">
                         <?php
-                        image('1.jpg', '', '', '');
-                        image('2.jpg', '', '', '');
-                        image('3.jpg', '', '', '');
-                        image('4.jpg', '', '', '');
-                        image('5.jpg', '', '', '');
-                        image('6.jpg', '', '', '');
-                        image('7.jpg', '', '', '');
-                        image('8.jpg', '', '', '');
-                        image('9.jpg', '', '', '');
-                        image('10.jpg', '', '', '');
-                        image('11.jpg', '', '', '');
-                        image('12.jpg', '', '', '');
-                        image('13.jpg', '', '', '');
-                        image('14.jpg', '', '', '');
-                        image('15.jpg', '', '', '');
-                        image('16.jpg', '', '', '');
-                        image('17.jpg', '', '', '');
-                        image('20.jpg', '', '', '');
-                        image('21.jpg', '', '', '');
-                        image('22.jpg', '', '', '');
-                        image('23.jpg', '', '', '');
-                        image('24.jpg', '', '', '');
-                        image('25.jpg', '', '', '');
-                        image('26.jpg', '', '', '');
-                        image('27.jpg', '', '', '');
-                        image('28.jpg', '', '', '');
-                        image('29.jpg', '', '', '');
-                        image('30.jpg', '', '', '');
-                        image('31.jpg', '', '', '');
-                        image('32.jpg', '', '', '');
-                        image('33.jpg', '', '', '');
-                        image('34.jpg', '', '', '');
-                        
+                        image('1.jpg', 'events', '', '');
+                        image('2.jpg', 'activities', '', '');
+                        image('3.jpg', 'activities', '', '');
+                        image('4.jpg', 'activities', '', '');
+                        image('5.jpg', 'activities', '', '');
+                        image('6.jpg', 'activities', '', '');
+                        image('7.jpg', 'activities', '', '');
+                        image('8.jpg', 'activities', '', '');
+                        image('9.jpg', 'activities', '', '');
+                        image('10.jpg', 'events', '', '');
+                        image('11.jpg', 'activities', '', '');
+                        image('12.jpg', 'activities', '', '');
+                        image('13.jpg', 'activities', '', '');
+                        image('14.jpg', 'activities', '', '');
+                        image('15.jpg', 'events', '', '');
+                        image('16.jpg', 'activities', '', '');
+                        image('17.jpg', 'activities', '', '');
+                        image('20.jpg', 'activities', '', '');
+                        image('21.jpg', 'activities', '', '');
+                        image('22.jpg', 'activities', '', '');
+                        image('23.jpg', 'events', '', '');
+                        image('24.jpg', 'events', '', '');
+                        image('25.jpg', 'activities', '', '');
+                        image('26.jpg', 'activities', '', '');
+                        image('27.jpg', 'events', '', '');
+                        image('28.jpg', 'activities', '', '');
+                        image('29.jpg', 'events', '', '');
+                        image('30.jpg', 'events', '', '');
+                        image('31.jpg', 'events', '', '');
+                        image('32.jpg', 'events', '', '');
+                        image('33.jpg', 'events', '', '');
+                        image('34.jpg', 'activities', '', '');
+                        image('35.jpg', 'events', '', '');
+                        image('36.jpg', 'events', '', '');
+                        image('37.jpg', 'events', '', '');
+                        image('38.jpg', 'events', '', '');
+                        image('39.jpg', 'events', '', '');
+                        image('40.jpg', 'events', '', '');
+
 
                         
                         ?>         

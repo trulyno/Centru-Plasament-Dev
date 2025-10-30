@@ -72,14 +72,14 @@ function document($src, $title = '') {
                                 <div class="document-details">
                                     <div class="detail-item">
                                         <i class="fas fa-calendar"></i>
-                                        <span>Ultima actualizare: Martie 2024</span>
+                                        <span>Ultima actualizare: Iulie 2022</span>
                                     </div>
                                     <div class="detail-item">
                                         <i class="fas fa-user-check"></i>
-                                        <span>Aprobat prin Ordinul AGSSSI</span>
+                                        <span>Aprobat prin Ordinul MMPS</span>
                                     </div>
                                 </div>
-                                <a href="files/Ordin-Regulament-6 martie 2024.pdf" class="document-link" target="_blank">
+                                <a href="files/Regulamentul de organizare si functionare CPTPD(adulte) s. Brinzeni.pdf" class="document-link" target="_blank">
                                     <i class="fas fa-external-link-alt"></i> Vezi document
                                 </a>
                             </div>
