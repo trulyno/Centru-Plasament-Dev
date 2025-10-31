@@ -122,7 +122,7 @@ $activeVacancies = count(array_filter($vacancies, fn($v) => $v['status'] === 'ac
         <div class="dashboard-nav">
             <div class="dashboard-logo">
                 <i class="fas fa-shield-alt"></i>
-                <span>Panou Admin CPRCVF</span>
+                <span>Panou Admin</span>
             </div>
             <div class="dashboard-user">
                 <a href="../index.php" class="back-to-site-btn">
