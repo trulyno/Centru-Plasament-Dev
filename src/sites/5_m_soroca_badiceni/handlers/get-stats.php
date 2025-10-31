@@ -15,10 +15,8 @@ if (!file_exists($statsFile)) {
     }
     
     $defaultStats = [
-        'stat1' => ['value' => 11078, 'label' => 'Copii beneficiari'],
-        'stat2' => ['value' => 11050, 'label' => 'Familii asistate'],
-        'stat3' => ['value' => 1956, 'label' => 'Cazuri rezolvate'],
-        'stat4' => ['value' => 79, 'label' => 'Angajați profesioniști']
+        'stat1' => ['value' => 0, 'label' => 'Total beneficiari'],
+        'stat2' => ['value' => 0, 'label' => 'Ani de serviciu']
     ];
     
     file_put_contents($statsFile, json_encode($defaultStats, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));

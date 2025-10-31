@@ -117,12 +117,12 @@
   "language_switch": "Switch language",
   "current_language": "English",
   
-  "meta_description": "Center for Placement of Elderly and Disabled Persons provides comprehensive care for children in need. Safe placement, therapy, educational support and family reunification services.",
-  "meta_keywords": "child placement, rehabilitation, family placement, adoption, child therapy, family services",
+  "meta_description": "Center for Placement of Elderly and Disabled Persons provides comprehensive care for elderly in need. Safe placement, therapy, educational support.",
+  "meta_keywords": "elderly placement, rehabilitation, family placement, adoption, elderly therapy, family services",
   "meta_author": "Center for Placement of Elderly and Disabled Persons",
   "meta_og_title": "Center for Placement of Elderly and Disabled Persons",
-  "meta_og_description": "We provide safe and caring environments where children can heal and grow.",
-  
+  "meta_og_description": "We provide safe and caring environments where elderly can heal and grow.",
+
   "hero_slide_1_title": "About us",
   "hero_slide_1_text": "Currently, the Center operates with two distinct profiles: somatic and psycho-neurological. The services offered are based on high-quality standards and current regulations, aiming to ensure comprehensive and specialized care for beneficiaries.",
   "hero_slide_1_cta": "Learn more",
@@ -151,16 +151,6 @@
   
   "gallery_section_title": "Our Gallery",
   "gallery_section_subtitle": "A look at our activities and spaces dedicated to beneficiaries",
-  "gallery_playroom_title": "Playroom",
-  "gallery_playroom_desc": "Children have fun in our safe and colorful space",
-  "gallery_rest_title": "Rest Room",
-  "gallery_rest_desc": "Quiet and comfortable spaces for relaxation",
-  "gallery_educational_title": "Educational Activities",
-  "gallery_educational_desc": "Educational programs adapted to each child's age",
-  "gallery_garden_title": "Playground",
-  "gallery_garden_desc": "Safe outdoor space for outdoor activities",
-  "gallery_events_title": "Special Events",
-  "gallery_events_desc": "We celebrate important moments together",
   "gallery_view_all": "View Complete Gallery",
   
   "contact_section_title": "Contact Us",

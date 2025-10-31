@@ -28,7 +28,7 @@ if (!file_exists($usersFile)) {
     $defaultUsers = [
         'admin' => [
             'username' => 'admin',
-            'password_hash' => password_hash('cprcvf2025!', PASSWORD_DEFAULT),
+            'password_hash' => password_hash('admin', PASSWORD_DEFAULT),
             'created_at' => date('c'),
             'last_login' => null,
             'status' => 'active'

@@ -30,7 +30,6 @@ if (file_exists($usersFile)) {
 
 // Data directory paths
 $dataDir = __DIR__ . '/../data/';
-$statsFile = $dataDir . 'stats.json';
 $vacanciesFile = $dataDir . 'vacancies.json';
 
 // Create data directory if it doesn't exist
@@ -42,18 +41,8 @@ if (!is_dir($dataDir)) {
 if (!file_exists($vacanciesFile)) {
     file_put_contents($vacanciesFile, json_encode([], JSON_PRETTY_PRINT));
 }
-if (!file_exists($statsFile)) {
-    $defaultStats = [
-        'stat1' => ['value' => 11078, 'label' => 'Copii beneficiari'],
-        'stat2' => ['value' => 11050, 'label' => 'Copii externați'],
-        'stat3' => ['value' => 1956, 'label' => 'Cazuri rezolvate'],
-        'stat4' => ['value' => 79, 'label' => 'Angajați profesioniști']
-    ];
-    file_put_contents($statsFile, json_encode($defaultStats, JSON_PRETTY_PRINT));
-}
 
 // Load data
-$stats = json_decode(file_get_contents($statsFile), true) ?: [];
 $vacancies = json_decode(file_get_contents($vacanciesFile), true) ?: [];
 
 // Include analytics
@@ -70,24 +59,6 @@ $messageType = '';
 
 if ($_POST['action'] ?? false) {
     switch ($_POST['action']) {
-        case 'update_stats':
-            $newStats = [
-                'stat1' => ['value' => (int)$_POST['stat1']],
-                'stat2' => ['value' => (int)$_POST['stat2']],
-                'stat3' => ['value' => (int)$_POST['stat3']],
-                'stat4' => ['value' => (int)$_POST['stat4']]
-            ];
-            
-            if (file_put_contents($statsFile, json_encode($newStats, JSON_PRETTY_PRINT))) {
-                $stats = $newStats;
-                $message = 'Statisticile au fost actualizate cu succes!';
-                $messageType = 'success';
-            } else {
-                $message = 'Eroare la actualizarea statisticilor!';
-                $messageType = 'error';
-            }
-            break;
-            
         case 'add_vacancy':
             $newVacancy = [
                 'id' => uniqid(),
@@ -175,53 +146,6 @@ $activeVacancies = count(array_filter($vacancies, fn($v) => $v['status'] === 'ac
             </div>
         <?php endif; ?>
 
-        <!-- Dashboard Overview -->
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-card-header">
-                    <span class="stat-card-title">Posturi Vacante</span>
-                    <i class="fas fa-briefcase stat-card-icon"></i>
-                </div>
-                <div class="stat-card-value"><?php echo $totalVacancies; ?></div>
-                <div class="stat-card-description">
-                    <?php echo $activeVacancies; ?> posturi active
-                </div>
-            </div>
-            
-            <div class="stat-card">
-                <div class="stat-card-header">
-                    <span class="stat-card-title">Total Beneficiari</span>
-                    <i class="fas fa-users stat-card-icon"></i>
-                </div>
-                <div class="stat-card-value"><?php echo number_format($stats['stat1']['value']); ?></div>
-                <div class="stat-card-description">
-                    Copii beneficiari
-                </div>
-            </div>
-            
-            <div class="stat-card">
-                <div class="stat-card-header">
-                    <span class="stat-card-title">Total externați</span>
-                    <i class="fas fa-home stat-card-icon"></i>
-                </div>
-                <div class="stat-card-value"><?php echo number_format($stats['stat2']['value']); ?></div>
-                <div class="stat-card-description">
-                    Copii extenrnați
-                </div>
-            </div>
-            
-            <div class="stat-card">
-                <div class="stat-card-header">
-                    <span class="stat-card-title">Trafic Site</span>
-                    <i class="fas fa-chart-line stat-card-icon"></i>
-                </div>
-                <div class="stat-card-value"><?php echo number_format($analytics['total_page_views']); ?></div>
-                <div class="stat-card-description">
-                    <?php echo number_format($analytics['unique_visitors']); ?> vizitatori unici (30 zile)
-                </div>
-            </div>
-        </div>
-
         <!-- Navigation Tabs -->
         <div class="dashboard-tabs">
             <button class="tab-btn" data-tab="vacancies">
@@ -231,10 +155,6 @@ $activeVacancies = count(array_filter($vacancies, fn($v) => $v['status'] === 'ac
             <button class="tab-btn" data-tab="analytics">
                 <i class="fas fa-chart-bar"></i>
                 Analiză Trafic
-            </button>
-            <button class="tab-btn" data-tab="statistics">
-                <i class="fas fa-cog"></i>
-                Editare Statistici
             </button>
         </div>
 
@@ -428,59 +348,6 @@ $activeVacancies = count(array_filter($vacancies, fn($v) => $v['status'] === 'ac
             </div>
         </div>
 
-        <!-- Statistics Tab -->
-        <div id="statistics-tab" class="tab-content">
-            <div class="admin-form">
-                <h2 style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
-                    <i class="fas fa-chart-bar"></i>
-                    Editare Statistici pentru Pagina Principală
-                </h2>
-                
-                <form method="POST">
-                    <input type="hidden" name="action" value="update_stats">
-                    
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
-                        <div class="form-group">
-                            <label for="stat1">Copii Beneficiari - Valoare:</label>
-                            <input type="number" id="stat1" name="stat1" value="<?php echo $stats['stat1']['value']; ?>" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="stat2">Reunificări de Succes - Valoare:</label>
-                            <input type="number" id="stat2" name="stat2" value="<?php echo $stats['stat2']['value']; ?>" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="stat3">Plasamente pentru Adopție - Valoare:</label>
-                            <input type="number" id="stat3" name="stat3" value="<?php echo $stats['stat3']['value']; ?>" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="stat4">Ani de Serviciu - Valoare:</label>
-                            <input type="number" id="stat4" name="stat4" value="<?php echo $stats['stat4']['value']; ?>" required>
-                        </div>
-                    </div>
-                    
-                    <div class="form-actions">
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-save"></i>
-                            Salvează Modificările
-                        </button>
-                    </div>
-                </form>
-                
-                <div style="margin-top: 2rem; padding: 1rem; background: #f8f9fa; border-radius: 0.5rem; border-left: 4px solid var(--info-color);">
-                    <h4 style="margin-bottom: 0.5rem; color: var(--info-color);">
-                        <i class="fas fa-info-circle"></i> Informații
-                    </h4>
-                    <p style="margin: 0; color: #6c757d;">
-                        Aceste statistici se vor afișa automat pe pagina principală a site-ului în secțiunea de statistici.
-                        Modificările vor fi vizibile imediat după salvare.
-                    </p>
-                </div>
-            </div>
-        </div>
-
     </main>
 
     <script>
@@ -531,9 +398,10 @@ $activeVacancies = count(array_filter($vacancies, fn($v) => $v['status'] === 'ac
             
             // Priority: URL hash > saved tab > default
             let tabToShow = defaultTab;
-            if (urlHash && document.getElementById(urlHash + '-tab')) {
+            const validTabs = ['vacancies', 'analytics'];
+            if (urlHash && validTabs.includes(urlHash) && document.getElementById(urlHash + '-tab')) {
                 tabToShow = urlHash;
-            } else if (savedTab && document.getElementById(savedTab + '-tab')) {
+            } else if (savedTab && validTabs.includes(savedTab) && document.getElementById(savedTab + '-tab')) {
                 tabToShow = savedTab;
             }
             

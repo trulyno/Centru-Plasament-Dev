@@ -44,10 +44,8 @@ if (!file_exists($vacanciesFile)) {
 }
 if (!file_exists($statsFile)) {
     $defaultStats = [
-        'stat1' => ['value' => 11078, 'label' => 'Copii beneficiari'],
-        'stat2' => ['value' => 11050, 'label' => 'Copii externați'],
-        'stat3' => ['value' => 1956, 'label' => 'Cazuri rezolvate'],
-        'stat4' => ['value' => 79, 'label' => 'Angajați profesioniști']
+        'stat1' => ['value' => 11078, 'label' => 'Total beneficiari'],
+        'stat2' => ['value' => 11050, 'label' => 'Ani de serviciu'],
     ];
     file_put_contents($statsFile, json_encode($defaultStats, JSON_PRETTY_PRINT));
 }
@@ -72,10 +70,8 @@ if ($_POST['action'] ?? false) {
     switch ($_POST['action']) {
         case 'update_stats':
             $newStats = [
-                'stat1' => ['value' => (int)$_POST['stat1']],
-                'stat2' => ['value' => (int)$_POST['stat2']],
-                'stat3' => ['value' => (int)$_POST['stat3']],
-                'stat4' => ['value' => (int)$_POST['stat4']]
+                'stat1' => ['value' => (int)$_POST['stat1'], 'label' => 'Total beneficiari'],
+                'stat2' => ['value' => (int)$_POST['stat2'], 'label' => 'Ani de serviciu']
             ];
             
             if (file_put_contents($statsFile, json_encode($newStats, JSON_PRETTY_PRINT))) {
@@ -195,18 +191,18 @@ $activeVacancies = count(array_filter($vacancies, fn($v) => $v['status'] === 'ac
                 </div>
                 <div class="stat-card-value"><?php echo number_format($stats['stat1']['value']); ?></div>
                 <div class="stat-card-description">
-                    Copii beneficiari
+                    Beneficiari
                 </div>
             </div>
             
             <div class="stat-card">
                 <div class="stat-card-header">
-                    <span class="stat-card-title">Total externați</span>
+                    <span class="stat-card-title">Ani de Serviciu</span>
                     <i class="fas fa-home stat-card-icon"></i>
                 </div>
                 <div class="stat-card-value"><?php echo number_format($stats['stat2']['value']); ?></div>
                 <div class="stat-card-description">
-                    Copii extenrnați
+                    Ani
                 </div>
             </div>
             
@@ -441,23 +437,13 @@ $activeVacancies = count(array_filter($vacancies, fn($v) => $v['status'] === 'ac
                     
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
                         <div class="form-group">
-                            <label for="stat1">Copii Beneficiari - Valoare:</label>
+                            <label for="stat1">Total Beneficiari - Valoare:</label>
                             <input type="number" id="stat1" name="stat1" value="<?php echo $stats['stat1']['value']; ?>" required>
                         </div>
                         
                         <div class="form-group">
-                            <label for="stat2">Reunificări de Succes - Valoare:</label>
+                            <label for="stat2">Ani de Serviciu - Valoare:</label>
                             <input type="number" id="stat2" name="stat2" value="<?php echo $stats['stat2']['value']; ?>" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="stat3">Plasamente pentru Adopție - Valoare:</label>
-                            <input type="number" id="stat3" name="stat3" value="<?php echo $stats['stat3']['value']; ?>" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="stat4">Ani de Serviciu - Valoare:</label>
-                            <input type="number" id="stat4" name="stat4" value="<?php echo $stats['stat4']['value']; ?>" required>
                         </div>
                     </div>
                     

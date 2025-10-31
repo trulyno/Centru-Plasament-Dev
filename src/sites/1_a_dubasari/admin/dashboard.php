@@ -44,10 +44,10 @@ if (!file_exists($vacanciesFile)) {
 }
 if (!file_exists($statsFile)) {
     $defaultStats = [
-        'stat1' => ['value' => 11078, 'label' => 'Copii beneficiari'],
-        'stat2' => ['value' => 11050, 'label' => 'Copii externați'],
-        'stat3' => ['value' => 1956, 'label' => 'Cazuri rezolvate'],
-        'stat4' => ['value' => 79, 'label' => 'Angajați profesioniști']
+        'stat1' => ['value' => 0, 'label' => 'Beneficiari în instituție'],
+        'stat2' => ['value' => 0, 'label' => 'Beneficiari Profil Somatic'],
+        'stat3' => ['value' => 0, 'label' => 'Beneficiari Profil Psihoneurologic'],
+        'stat4' => ['value' => 0, 'label' => 'Ani de Serviciu']
     ];
     file_put_contents($statsFile, json_encode($defaultStats, JSON_PRETTY_PRINT));
 }
@@ -190,23 +190,23 @@ $activeVacancies = count(array_filter($vacancies, fn($v) => $v['status'] === 'ac
             
             <div class="stat-card">
                 <div class="stat-card-header">
-                    <span class="stat-card-title">Total Beneficiari</span>
+                    <span class="stat-card-title">Beneficiari Profil Somatic</span>
                     <i class="fas fa-users stat-card-icon"></i>
                 </div>
-                <div class="stat-card-value"><?php echo number_format($stats['stat1']['value']); ?></div>
+                <div class="stat-card-value"><?php echo number_format($stats['stat2']['value']); ?></div>
                 <div class="stat-card-description">
-                    Copii beneficiari
+                    Beneficiari
                 </div>
             </div>
             
             <div class="stat-card">
                 <div class="stat-card-header">
-                    <span class="stat-card-title">Total externați</span>
+                    <span class="stat-card-title">Beneficiari Profil Psihoneurologic</span>
                     <i class="fas fa-home stat-card-icon"></i>
                 </div>
-                <div class="stat-card-value"><?php echo number_format($stats['stat2']['value']); ?></div>
+                <div class="stat-card-value"><?php echo number_format($stats['stat3']['value']); ?></div>
                 <div class="stat-card-description">
-                    Copii extenrnați
+                    Beneficiari
                 </div>
             </div>
             
@@ -441,17 +441,17 @@ $activeVacancies = count(array_filter($vacancies, fn($v) => $v['status'] === 'ac
                     
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
                         <div class="form-group">
-                            <label for="stat1">Copii Beneficiari - Valoare:</label>
+                            <label for="stat1">Beneficiari în instituție - Valoare:</label>
                             <input type="number" id="stat1" name="stat1" value="<?php echo $stats['stat1']['value']; ?>" required>
                         </div>
                         
                         <div class="form-group">
-                            <label for="stat2">Reunificări de Succes - Valoare:</label>
+                            <label for="stat2">Beneficiari Profil Somatic - Valoare:</label>
                             <input type="number" id="stat2" name="stat2" value="<?php echo $stats['stat2']['value']; ?>" required>
                         </div>
                         
                         <div class="form-group">
-                            <label for="stat3">Plasamente pentru Adopție - Valoare:</label>
+                            <label for="stat3">Beneficiari Profil Psihoneurologic - Valoare:</label>
                             <input type="number" id="stat3" name="stat3" value="<?php echo $stats['stat3']['value']; ?>" required>
                         </div>
                         

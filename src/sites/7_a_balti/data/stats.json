@@ -1,14 +1,18 @@
 {
     "stat1": {
-        "value": 11655
+        "value": 11078,
+        "label": "Copii beneficiari"
     },
     "stat2": {
-        "value": 11627
+        "value": 11050,
+        "label": "Copii externa\u021bi"
     },
     "stat3": {
-        "value": 1956
+        "value": 1956,
+        "label": "Cazuri rezolvate"
     },
     "stat4": {
-        "value": 79
+        "value": 79,
+        "label": "Angaja\u021bi profesioni\u0219ti"
     }
 }

@@ -44,12 +44,13 @@ if (!file_exists($vacanciesFile)) {
 }
 if (!file_exists($statsFile)) {
     $defaultStats = [
-        'stat1' => ['value' => 11078, 'label' => 'Copii beneficiari'],
-        'stat2' => ['value' => 11050, 'label' => 'Copii externați'],
-        'stat3' => ['value' => 1956, 'label' => 'Cazuri rezolvate'],
-        'stat4' => ['value' => 79, 'label' => 'Angajați profesioniști']
+        'stat1' => ['value' => 0, 'label' => 'Beneficiari plasați la întreținere de stat'],
+        'stat2' => ['value' => 0, 'label' => 'Beneficiari plasați în serviciul contra plată'],
+        'stat3' => ['value' => 0, 'label' => 'Beneficiari plasați în Serviciul Plasament de Urgență'],
+        'stat4' => ['value' => 0, 'label' => 'Beneficiari plasați în Serviciului de asistență și protecție a victimelor și prezumatelor victime ale traficului de ființe umane (bărbați)'],
+        'stat5' => ['value' => 0, 'label' => 'Beneficiari plasați în Centrul de Plasament Temporar pentru Persoane Strămutate de pe Teritoriul altor State']
     ];
-    file_put_contents($statsFile, json_encode($defaultStats, JSON_PRETTY_PRINT));
+    file_put_contents($statsFile, json_encode($defaultStats, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
 }
 
 // Load data
@@ -72,13 +73,14 @@ if ($_POST['action'] ?? false) {
     switch ($_POST['action']) {
         case 'update_stats':
             $newStats = [
-                'stat1' => ['value' => (int)$_POST['stat1']],
-                'stat2' => ['value' => (int)$_POST['stat2']],
-                'stat3' => ['value' => (int)$_POST['stat3']],
-                'stat4' => ['value' => (int)$_POST['stat4']]
+                'stat1' => ['value' => (int)$_POST['stat1'], 'label' => 'Beneficiari plasați la întreținere de stat'],
+                'stat2' => ['value' => (int)$_POST['stat2'], 'label' => 'Beneficiari plasați în serviciul contra plată'],
+                'stat3' => ['value' => (int)$_POST['stat3'], 'label' => 'Beneficiari plasați în Serviciul Plasament de Urgență'],
+                'stat4' => ['value' => (int)$_POST['stat4'], 'label' => 'Beneficiari plasați în Serviciului de asistență și protecție a victimelor și prezumatelor victime ale traficului de ființe umane (bărbați)'],
+                'stat5' => ['value' => (int)$_POST['stat5'], 'label' => 'Beneficiari plasați în Centrul de Plasament Temporar pentru Persoane Strămutate de pe Teritoriul altor State']
             ];
             
-            if (file_put_contents($statsFile, json_encode($newStats, JSON_PRETTY_PRINT))) {
+            if (file_put_contents($statsFile, json_encode($newStats, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE))) {
                 $stats = $newStats;
                 $message = 'Statisticile au fost actualizate cu succes!';
                 $messageType = 'success';
@@ -190,23 +192,23 @@ $activeVacancies = count(array_filter($vacancies, fn($v) => $v['status'] === 'ac
             
             <div class="stat-card">
                 <div class="stat-card-header">
-                    <span class="stat-card-title">Total Beneficiari</span>
+                    <span class="stat-card-title">Întreținere de stat</span>
                     <i class="fas fa-users stat-card-icon"></i>
                 </div>
                 <div class="stat-card-value"><?php echo number_format($stats['stat1']['value']); ?></div>
                 <div class="stat-card-description">
-                    Copii beneficiari
+                    <?php echo htmlspecialchars($stats['stat1']['label']); ?>
                 </div>
             </div>
             
             <div class="stat-card">
                 <div class="stat-card-header">
-                    <span class="stat-card-title">Total externați</span>
-                    <i class="fas fa-home stat-card-icon"></i>
+                    <span class="stat-card-title">Contra plată</span>
+                    <i class="fas fa-hand-holding-usd stat-card-icon"></i>
                 </div>
                 <div class="stat-card-value"><?php echo number_format($stats['stat2']['value']); ?></div>
                 <div class="stat-card-description">
-                    Copii extenrnați
+                    <?php echo htmlspecialchars($stats['stat2']['label']); ?>
                 </div>
             </div>
             
@@ -441,23 +443,28 @@ $activeVacancies = count(array_filter($vacancies, fn($v) => $v['status'] === 'ac
                     
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
                         <div class="form-group">
-                            <label for="stat1">Copii Beneficiari - Valoare:</label>
+                            <label for="stat1">Beneficiari plasați la întreținere de stat:</label>
                             <input type="number" id="stat1" name="stat1" value="<?php echo $stats['stat1']['value']; ?>" required>
                         </div>
                         
                         <div class="form-group">
-                            <label for="stat2">Reunificări de Succes - Valoare:</label>
+                            <label for="stat2">Beneficiari plasați în serviciul contra plată:</label>
                             <input type="number" id="stat2" name="stat2" value="<?php echo $stats['stat2']['value']; ?>" required>
                         </div>
                         
                         <div class="form-group">
-                            <label for="stat3">Plasamente pentru Adopție - Valoare:</label>
+                            <label for="stat3">Beneficiari plasați în Serviciul Plasament de Urgență:</label>
                             <input type="number" id="stat3" name="stat3" value="<?php echo $stats['stat3']['value']; ?>" required>
                         </div>
                         
                         <div class="form-group">
-                            <label for="stat4">Ani de Serviciu - Valoare:</label>
+                            <label for="stat4">Beneficiari plasați în Serviciului de asistență și protecție a victimelor și prezumatelor victime ale traficului de ființe umane (bărbați):</label>
                             <input type="number" id="stat4" name="stat4" value="<?php echo $stats['stat4']['value']; ?>" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="stat5">Beneficiari plasați în Centrul de Plasament Temporar pentru Persoane Strămutate de pe Teritoriul altor State:</label>
+                            <input type="number" id="stat5" name="stat5" value="<?php echo $stats['stat5']['value']; ?>" required>
                         </div>
                     </div>
                     
