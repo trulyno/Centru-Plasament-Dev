@@ -187,21 +187,14 @@ require_once __DIR__ . '/includes/analytics.php';
                             <i class="fas fa-phone"></i>
                             <div>
                                 <strong><?php echo t('contact_main_office'); ?></strong><br>
-                                029 424 594
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <strong><?php echo t('contact_emergency'); ?></strong><br>
-                                029 493 478
+                                023 171 003
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <strong>Email:</strong><br>
-                                cr.taraclia@agssi.md
+                                cptr.balti@agssi.md
                             </div>
                         </div>
                         <div class="contact-item">

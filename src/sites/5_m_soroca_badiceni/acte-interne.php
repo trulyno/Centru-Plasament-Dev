@@ -79,7 +79,7 @@ function document($src, $title = '') {
                                         <span>Aprobat prin Ordinul AGSSSI</span>
                                     </div>
                                 </div>
-                                <a href="files/Ordin-Regulament-6 martie 2024.pdf" class="document-link" target="_blank">
+                                <a href="files/Regulament to de organizare și funcționare.pdf" class="document-link" target="_blank">
                                     <i class="fas fa-external-link-alt"></i> Vezi document
                                 </a>
                             </div>
