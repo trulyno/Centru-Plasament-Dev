@@ -60,7 +60,7 @@ function document($src, $title = '') {
                 <div class="content-wrapper">
                     <h2><?php echo t('procurement_plans_title'); ?></h2>
                     <?php
-
+                        document('files/Planul provizoriu al achizițiilor publice pentru semestrul I (Centrul Speranța).pdf', 'Planul provizoriu al achizițiilor publice pentru semestrul I');
                     ?>
                 </div>
             </div>

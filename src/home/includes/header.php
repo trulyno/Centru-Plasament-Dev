@@ -149,6 +149,7 @@
                         </ul>
                     </li>
                     <li><a href="galerie.php"><?php echo t('nav_gallery'); ?></a></li>
+                    <li><a href="noutati.php"><?php echo t('nav_news'); ?></a></li>
                     <li><a href="petitii-reclamatii.php"><?php echo t('transparency_petitions'); ?></a></li>
                     <li><a href="index.php#contact"><?php echo t('nav_contact'); ?></a></li>
                     <li class="mobile-action-row">

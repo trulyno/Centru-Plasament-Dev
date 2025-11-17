@@ -15,6 +15,30 @@ class AnalyticsManager {
             return;
         }
         
+        // Start session if not already started
+        if (session_status() === PHP_SESSION_NONE) {
+            session_start();
+        }
+        
+        // Check if this page has already been viewed in this session
+        if (!isset($_SESSION['viewed_pages'])) {
+            $_SESSION['viewed_pages'] = [];
+        }
+        
+        $sessionKey = $page . '_' . date('Y-m-d');
+        if (in_array($sessionKey, $_SESSION['viewed_pages'])) {
+            // Already counted this page view for today in this session
+            return;
+        }
+        
+        // Mark this page as viewed in this session
+        $_SESSION['viewed_pages'][] = $sessionKey;
+        
+        // Clean old session data (keep only today's views)
+        $_SESSION['viewed_pages'] = array_filter($_SESSION['viewed_pages'], function($key) {
+            return strpos($key, '_' . date('Y-m-d')) !== false;
+        });
+        
         $data = self::loadAnalyticsData();
         $today = date('Y-m-d');
         $hour = (int) date('H'); // Convert to integer to match array_fill indices
@@ -165,6 +189,26 @@ class AnalyticsManager {
         arsort($summary['browsers']);
         
         return $summary;
+    }
+    
+    public static function getBasicStats() {
+        $data = self::loadAnalyticsData();
+        $today = date('Y-m-d');
+        
+        $totalViews = 0;
+        $todayViews = 0;
+        
+        foreach ($data['daily'] as $date => $dayData) {
+            $totalViews += $dayData['page_views'];
+            if ($date === $today) {
+                $todayViews = $dayData['page_views'];
+            }
+        }
+        
+        return [
+            'total_views' => $totalViews,
+            'today_views' => $todayViews
+        ];
     }
     
     private static function loadAnalyticsData() {

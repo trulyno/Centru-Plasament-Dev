@@ -71,6 +71,16 @@
                     <p><?php echo t('footer_copyright'); ?></p>
                 </div>
                 <div class="footer-links">
+                    <?php if (GDPRManager::hasConsentForCategory('analytics')): ?>
+                    <?php $stats = AnalyticsManager::getBasicStats(); ?>
+                    <strong class="stats-title"><?php echo t('footer_views_section'); ?>:</strong>
+                    <span class="stats-item">
+                        <?php echo t('footer_total_views'); ?>: <strong><?php echo number_format($stats['total_views']); ?></strong>
+                    </span>
+                    <span class="stats-item">
+                        <?php echo t('footer_today_views'); ?>: <strong><?php echo number_format($stats['today_views']); ?></strong>
+                    </span>
+                    <?php endif; ?>
                     <a href="privacy-policy.php"><?php echo t('footer_privacy_policy'); ?></a>
                     <a href="#" class="footer-link-btn" onclick="openGDPRModal(); return false;">
                         <i class="fas fa-cog"></i>

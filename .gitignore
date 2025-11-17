@@ -1,1 +1,6 @@
 docs
+**/data/analytics.json
+**/data/gdpr_log.json
+**/data/login_attempts.json
+**/uploads/*
+**/data/news.json

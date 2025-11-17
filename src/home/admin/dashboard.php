@@ -56,6 +56,42 @@ if (!file_exists($statsFile)) {
 $stats = json_decode(file_get_contents($statsFile), true) ?: [];
 $vacancies = json_decode(file_get_contents($vacanciesFile), true) ?: [];
 
+// Load news data
+$newsFile = $dataDir . 'news.json';
+$news = [];
+if (!file_exists($newsFile)) {
+    file_put_contents($newsFile, json_encode([], JSON_PRETTY_PRINT));
+}
+if (file_exists($newsFile)) {
+    $newsContent = file_get_contents($newsFile);
+    $news = json_decode($newsContent, true);
+    if (!is_array($news)) {
+        $news = [];
+    }
+    // Sort by date (newest first)
+    usort($news, function($a, $b) {
+        return strtotime($b['date']) - strtotime($a['date']);
+    });
+}
+
+// Handle news edit mode
+$newsEditMode = false;
+$editNewsArticle = null;
+if (isset($_GET['edit_news']) && !empty($_GET['edit_news'])) {
+    $newsEditMode = true;
+    $editNewsId = $_GET['edit_news'];
+    foreach ($news as $article) {
+        if ($article['id'] === $editNewsId) {
+            $editNewsArticle = $article;
+            break;
+        }
+    }
+    if (!$editNewsArticle) {
+        header('Location: dashboard.php#news');
+        exit;
+    }
+}
+
 // Include analytics
 require_once __DIR__ . '/../includes/lang.php';
 require_once __DIR__ . '/../includes/gdpr.php';
@@ -136,6 +172,10 @@ if ($_POST['action'] ?? false) {
 // Count statistics
 $totalVacancies = count($vacancies);
 $activeVacancies = count(array_filter($vacancies, fn($v) => $v['status'] === 'active'));
+$totalNews = count($news);
+$recentNews = count(array_filter($news, function($article) {
+    return strtotime($article['date']) > strtotime('-30 days');
+}));
 ?>
 <!DOCTYPE html>
 <html lang="ro">
@@ -151,7 +191,7 @@ $activeVacancies = count(array_filter($vacancies, fn($v) => $v['status'] === 'ac
         <div class="dashboard-nav">
             <div class="dashboard-logo">
                 <i class="fas fa-shield-alt"></i>
-                <span>Panou Admin CPRCVF</span>
+                <span>Panou Admin</span>
             </div>
             <div class="dashboard-user">
                 <a href="../index.php" class="back-to-site-btn">
@@ -212,6 +252,17 @@ $activeVacancies = count(array_filter($vacancies, fn($v) => $v['status'] === 'ac
             
             <div class="stat-card">
                 <div class="stat-card-header">
+                    <span class="stat-card-title">Știri & Articole</span>
+                    <i class="fas fa-newspaper stat-card-icon"></i>
+                </div>
+                <div class="stat-card-value"><?php echo $totalNews; ?></div>
+                <div class="stat-card-description">
+                    <?php echo $recentNews; ?> publicate în ultimele 30 de zile
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-card-header">
                     <span class="stat-card-title">Trafic Site</span>
                     <i class="fas fa-chart-line stat-card-icon"></i>
                 </div>
@@ -224,6 +275,10 @@ $activeVacancies = count(array_filter($vacancies, fn($v) => $v['status'] === 'ac
 
         <!-- Navigation Tabs -->
         <div class="dashboard-tabs">
+            <button class="tab-btn" data-tab="news">
+                <i class="fas fa-newspaper"></i>
+                Știri & Articole (<?php echo $totalNews; ?>)
+            </button>
             <button class="tab-btn" data-tab="vacancies">
                 <i class="fas fa-briefcase"></i>
                 Posturi Vacante (<?php echo $totalVacancies; ?>)
@@ -236,6 +291,112 @@ $activeVacancies = count(array_filter($vacancies, fn($v) => $v['status'] === 'ac
                 <i class="fas fa-cog"></i>
                 Editare Statistici
             </button>
+        </div>
+
+        <!-- News Tab -->
+        <div id="news-tab" class="tab-content">
+            <div class="data-table-container">
+                <div class="data-table-header">
+                    <h2 class="data-table-title">
+                        <i class="fas fa-newspaper"></i>
+                        Gestionare Știri & Articole
+                    </h2>
+                    <button onclick="showAddNewsModal()" class="btn btn-primary">
+                        <i class="fas fa-plus"></i>
+                        Adaugă Articol Nou
+                    </button>
+                </div>
+                
+                <?php if (empty($news)): ?>
+                    <div style="padding: 2rem; text-align: center; color: #6c757d;">
+                        <i class="fas fa-newspaper" style="font-size: 3rem; margin-bottom: 1rem; opacity: 0.5;"></i>
+                        <p>Nu există articole de știri în acest moment.</p>
+                        <button onclick="showAddNewsModal()" class="btn btn-primary" style="margin-top: 1rem;">
+                            <i class="fas fa-plus"></i>
+                            Adaugă primul articol
+                        </button>
+                    </div>
+                <?php else: ?>
+                    <div class="data-table-wrapper">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Imagine</th>
+                                    <th>Titlu & Subtitlu</th>
+                                    <th>Data Publicării</th>
+                                    <th>Atașamente</th>
+                                    <th>Acțiuni</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php foreach ($news as $article): ?>
+                                    <tr>
+                                        <td>
+                                            <?php if (!empty($article['image'])): ?>
+                                                <img src="../<?php echo htmlspecialchars($article['image']); ?>" 
+                                                     alt="<?php echo htmlspecialchars($article['title']); ?>"
+                                                     class="news-thumbnail"
+                                                     style="width: 60px; height: 40px; object-fit: cover; border-radius: 4px;"
+                                                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                                <div style="display:none; width: 60px; height: 40px; background: #f8f9fa; border: 1px dashed #dee2e6; border-radius: 4px; align-items: center; justify-content: center;">
+                                                    <i class="fas fa-image" style="color: #6c757d;"></i>
+                                                </div>
+                                            <?php else: ?>
+                                                <div style="width: 60px; height: 40px; background: #f8f9fa; border: 1px dashed #dee2e6; border-radius: 4px; display: flex; align-items: center; justify-content: center;">
+                                                    <i class="fas fa-image" style="color: #6c757d;"></i>
+                                                </div>
+                                            <?php endif; ?>
+                                        </td>
+                                        <td>
+                                            <div>
+                                                <strong class="text-truncate" style="max-width: 200px; display: block;"><?php echo htmlspecialchars($article['title']); ?></strong>
+                                                <small class="text-truncate" style="max-width: 200px; display: block; color: #6c757d;"><?php echo htmlspecialchars($article['subtitle']); ?></small>
+                                            </div>
+                                        </td>
+                                        <td><?php echo date('d.m.Y', strtotime($article['date'])); ?></td>
+                                        <td>
+                                            <?php 
+                                            $attachmentCount = 0;
+                                            if (!empty($article['attachments']['images'])) {
+                                                $attachmentCount += count($article['attachments']['images']);
+                                            }
+                                            if (!empty($article['attachments']['videos'])) {
+                                                $attachmentCount += count($article['attachments']['videos']);
+                                            }
+                                            ?>
+                                            <?php if ($attachmentCount > 0): ?>
+                                                <span class="file-indicator">
+                                                    <i class="fas fa-paperclip"></i>
+                                                    <?php echo $attachmentCount; ?> fișiere
+                                                </span>
+                                            <?php else: ?>
+                                                <span style="color: #6c757d;">Fără atașamente</span>
+                                            <?php endif; ?>
+                                        </td>
+                                        <td class="actions">
+                                            <button onclick="viewNews('<?php echo htmlspecialchars($article['id']); ?>')" 
+                                                    class="btn-sm btn-primary" 
+                                                    title="Vezi detalii">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button onclick="editNews('<?php echo htmlspecialchars($article['id']); ?>')" 
+                                                    class="btn-sm btn-secondary" 
+                                                    title="Editează">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                            <button onclick="deleteNews('<?php echo htmlspecialchars($article['id']); ?>')" 
+                                                    class="btn-sm btn-danger" 
+                                                    title="Șterge">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                <?php endforeach; ?>
+                            </tbody>
+                        </table>
+                    </div>
+                <?php endif; ?>
+            </div>
         </div>
 
         <!-- Vacancies Tab -->
@@ -527,7 +688,7 @@ $activeVacancies = count(array_filter($vacancies, fn($v) => $v['status'] === 'ac
             // Check for URL hash first
             const urlHash = window.location.hash.replace('#', '');
             const savedTab = localStorage.getItem('admin_current_tab');
-            const defaultTab = 'analytics'; // Default to analytics tab
+            const defaultTab = 'news'; // Default to news tab
             
             // Priority: URL hash > saved tab > default
             let tabToShow = defaultTab;
@@ -582,6 +743,179 @@ $activeVacancies = count(array_filter($vacancies, fn($v) => $v['status'] === 'ac
             }
         });
     </script>
+
+    <!-- News Modals -->
+    <div id="addNewsModal" class="modal">
+        <div class="modal-content" style="max-width: 800px;">
+            <div class="modal-header">
+                <h3><i class="fas fa-plus"></i> Adaugă Articol Nou</h3>
+                <button class="modal-close" onclick="closeModal('addNewsModal')">&times;</button>
+            </div>
+            <form id="addNewsForm" class="admin-form" enctype="multipart/form-data">
+                <input type="hidden" name="action" value="add">
+                <div class="modal-body" style="max-height: 70vh; overflow-y: auto;">
+                    <div class="form-group">
+                        <label for="add_news_title">
+                            Titlu <span class="required">*</span>
+                        </label>
+                        <input type="text" id="add_news_title" name="title" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="add_news_subtitle">
+                            Subtitlu <span class="required">*</span>
+                        </label>
+                        <input type="text" id="add_news_subtitle" name="subtitle" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="add_news_date">
+                            Data Publicării <span class="required">*</span>
+                        </label>
+                        <input type="date" id="add_news_date" name="date" required value="<?php echo date('Y-m-d'); ?>">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="add_news_content">
+                            Conținut <span class="required">*</span>
+                        </label>
+                        <textarea id="add_news_content" name="content" rows="6" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="add_news_image">
+                            Imagine Principală <span class="required">*</span>
+                        </label>
+                        <input type="file" id="add_news_image" name="image" accept="image/*" required>
+                        <small class="form-help">Format acceptat: JPG, PNG, GIF (max 5MB)</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Atașamente</label>
+                        <div class="attachments-manager">
+                            <div class="attachment-type">
+                                <h4><i class="fas fa-images"></i> Imagini Adiționale</h4>
+                                <input type="file" id="add_attachment_images" name="attachment_images[]" accept="image/*" multiple>
+                                <div id="addImagePreview" class="preview-container"></div>
+                            </div>
+
+                            <div class="attachment-type">
+                                <h4><i class="fas fa-video"></i> Video-uri</h4>
+                                <input type="file" id="add_attachment_videos" name="attachment_videos[]" accept="video/*" multiple>
+                                <div id="addVideoPreview" class="preview-container"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-save"></i>
+                        Salvează
+                    </button>
+                    <button type="button" class="btn btn-secondary" onclick="closeModal('addNewsModal')">
+                        Anulează
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="editNewsModal" class="modal">
+        <div class="modal-content" style="max-width: 800px;">
+            <div class="modal-header">
+                <h3><i class="fas fa-edit"></i> Editează Articol</h3>
+                <button class="modal-close" onclick="closeModal('editNewsModal')">&times;</button>
+            </div>
+            <form id="editNewsForm" class="admin-form" enctype="multipart/form-data">
+                <input type="hidden" name="action" value="edit">
+                <input type="hidden" id="edit_news_id" name="id">
+                <div class="modal-body" style="max-height: 70vh; overflow-y: auto;">
+                    <div class="form-group">
+                        <label for="edit_news_title">
+                            Titlu <span class="required">*</span>
+                        </label>
+                        <input type="text" id="edit_news_title" name="title" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="edit_news_subtitle">
+                            Subtitlu <span class="required">*</span>
+                        </label>
+                        <input type="text" id="edit_news_subtitle" name="subtitle" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="edit_news_date">
+                            Data Publicării <span class="required">*</span>
+                        </label>
+                        <input type="date" id="edit_news_date" name="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="edit_news_content">
+                            Conținut <span class="required">*</span>
+                        </label>
+                        <textarea id="edit_news_content" name="content" rows="6" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="edit_news_image">
+                            Imagine Principală
+                        </label>
+                        <div id="edit_current_image" class="current-image" style="display: none;">
+                            <img id="edit_current_image_img" src="" alt="Current image" style="max-width: 300px; margin-bottom: 10px; border-radius: 8px;">
+                            <input type="hidden" id="edit_existing_image" name="existing_image">
+                        </div>
+                        <input type="file" id="edit_news_image" name="image" accept="image/*">
+                        <small class="form-help">Format acceptat: JPG, PNG, GIF (max 5MB). Lasă gol pentru a păstra imaginea actuală.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Atașamente</label>
+                        <div class="attachments-manager">
+                            <div class="attachment-type">
+                                <h4><i class="fas fa-images"></i> Imagini Adiționale</h4>
+                                <div id="editExistingImages" class="preview-container"></div>
+                                <input type="file" id="edit_attachment_images" name="attachment_images[]" accept="image/*" multiple>
+                                <div id="editImagePreview" class="preview-container"></div>
+                            </div>
+
+                            <div class="attachment-type">
+                                <h4><i class="fas fa-video"></i> Video-uri</h4>
+                                <div id="editExistingVideos" class="preview-container"></div>
+                                <input type="file" id="edit_attachment_videos" name="attachment_videos[]" accept="video/*" multiple>
+                                <div id="editVideoPreview" class="preview-container"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-save"></i>
+                        Salvează Modificările
+                    </button>
+                    <button type="button" class="btn btn-secondary" onclick="closeModal('editNewsModal')">
+                        Anulează
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="viewNewsModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-eye"></i> Detalii Articol</h3>
+                <button class="modal-close" onclick="closeModal('viewNewsModal')">&times;</button>
+            </div>
+            <div class="modal-body" id="viewNewsContent">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" onclick="closeModal('viewNewsModal')">Închide</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Vacancy Modals -->
     <div id="addVacancyModal" class="modal">
@@ -694,6 +1028,266 @@ $activeVacancies = count(array_filter($vacancies, fn($v) => $v['status'] === 'ac
     </div>
 
     <script>
+        // News-related JavaScript functions
+        const newsData = <?php echo json_encode($news); ?>;
+
+        function showAddNewsModal() {
+            // Reset form
+            document.getElementById('addNewsForm').reset();
+            document.getElementById('addImagePreview').innerHTML = '';
+            document.getElementById('addVideoPreview').innerHTML = '';
+            document.getElementById('addNewsModal').style.display = 'block';
+        }
+
+        function editNews(newsId) {
+            const article = newsData.find(n => n.id === newsId);
+            if (!article) return;
+
+            // Fill form with article data
+            document.getElementById('edit_news_id').value = article.id;
+            document.getElementById('edit_news_title').value = article.title;
+            document.getElementById('edit_news_subtitle').value = article.subtitle;
+            document.getElementById('edit_news_date').value = article.date;
+            document.getElementById('edit_news_content').value = article.content;
+
+            // Handle current image
+            if (article.image) {
+                document.getElementById('edit_current_image').style.display = 'block';
+                document.getElementById('edit_current_image_img').src = '../' + article.image;
+                document.getElementById('edit_existing_image').value = article.image;
+            } else {
+                document.getElementById('edit_current_image').style.display = 'none';
+            }
+
+            // Handle existing attachments
+            const existingImagesContainer = document.getElementById('editExistingImages');
+            const existingVideosContainer = document.getElementById('editExistingVideos');
+            existingImagesContainer.innerHTML = '';
+            existingVideosContainer.innerHTML = '';
+
+            if (article.attachments) {
+                // Existing images
+                if (article.attachments.images && article.attachments.images.length > 0) {
+                    article.attachments.images.forEach((img, index) => {
+                        const div = document.createElement('div');
+                        div.className = 'preview-item';
+                        div.innerHTML = `
+                            <img src="../${img}" alt="Attachment">
+                            <button type="button" class="remove-attachment" onclick="removeExistingAttachment(this, 'image', ${index})">
+                                <i class="fas fa-times"></i>
+                            </button>
+                            <input type="hidden" name="existing_images[]" value="${img}">
+                        `;
+                        existingImagesContainer.appendChild(div);
+                    });
+                }
+
+                // Existing videos
+                if (article.attachments.videos && article.attachments.videos.length > 0) {
+                    article.attachments.videos.forEach((vid, index) => {
+                        const div = document.createElement('div');
+                        div.className = 'preview-item';
+                        div.innerHTML = `
+                            <video src="../${vid}" style="max-width: 200px;" controls></video>
+                            <button type="button" class="remove-attachment" onclick="removeExistingAttachment(this, 'video', ${index})">
+                                <i class="fas fa-times"></i>
+                            </button>
+                            <input type="hidden" name="existing_videos[]" value="${vid}">
+                        `;
+                        existingVideosContainer.appendChild(div);
+                    });
+                }
+            }
+
+            // Clear new attachment previews
+            document.getElementById('editImagePreview').innerHTML = '';
+            document.getElementById('editVideoPreview').innerHTML = '';
+
+            document.getElementById('editNewsModal').style.display = 'block';
+        }
+
+        function viewNews(newsId) {
+            const article = newsData.find(n => n.id === newsId);
+            if (!article) return;
+
+            let attachmentsHtml = '';
+            if (article.attachments) {
+                if (article.attachments.images && article.attachments.images.length > 0) {
+                    attachmentsHtml += '<div class="attachment-group"><h6><i class="fas fa-images"></i> Imagini (' + article.attachments.images.length + ')</h6>';
+                    article.attachments.images.forEach(img => {
+                        attachmentsHtml += '<img src="../' + img + '" style="max-width: 100px; margin: 5px; border-radius: 4px;">';
+                    });
+                    attachmentsHtml += '</div>';
+                }
+                if (article.attachments.videos && article.attachments.videos.length > 0) {
+                    attachmentsHtml += '<div class="attachment-group"><h6><i class="fas fa-video"></i> Video-uri (' + article.attachments.videos.length + ')</h6>';
+                    article.attachments.videos.forEach(vid => {
+                        attachmentsHtml += '<video src="../' + vid + '" style="max-width: 200px; margin: 5px;" controls></video>';
+                    });
+                    attachmentsHtml += '</div>';
+                }
+            }
+
+            const content = `
+                <div class="news-details">
+                    <div class="detail-group">
+                        <h5><i class="fas fa-heading"></i> Titlu</h5>
+                        <p>${article.title}</p>
+                    </div>
+                    <div class="detail-group">
+                        <h5><i class="fas fa-text-height"></i> Subtitlu</h5>
+                        <p>${article.subtitle}</p>
+                    </div>
+                    <div class="detail-group">
+                        <h5><i class="fas fa-calendar"></i> Data Publicării</h5>
+                        <p>${new Date(article.date).toLocaleDateString('ro-RO')}</p>
+                    </div>
+                    <div class="detail-group">
+                        <h5><i class="fas fa-image"></i> Imagine Principală</h5>
+                        <img src="../${article.image}" style="max-width: 300px; border-radius: 8px;">
+                    </div>
+                    <div class="detail-group">
+                        <h5><i class="fas fa-align-left"></i> Conținut</h5>
+                        <div style="max-height: 200px; overflow-y: auto; padding: 10px; background: #f8f9fa; border-radius: 4px;">
+                            ${article.content.replace(/\n/g, '<br>')}
+                        </div>
+                    </div>
+                    ${attachmentsHtml ? '<div class="detail-group"><h5><i class="fas fa-paperclip"></i> Atașamente</h5>' + attachmentsHtml + '</div>' : ''}
+                </div>
+            `;
+
+            document.getElementById('viewNewsContent').innerHTML = content;
+            document.getElementById('viewNewsModal').style.display = 'block';
+        }
+
+        function deleteNews(newsId) {
+            if (confirm('Sunteți sigur că doriți să ștergeți acest articol? Această acțiune nu poate fi anulată.')) {
+                // Send delete request via AJAX
+                const formData = new FormData();
+                formData.append('action', 'delete');
+                formData.append('id', newsId);
+
+                fetch('../handlers/news-handler.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert('Articolul a fost șters cu succes!');
+                        location.reload();
+                    } else {
+                        alert('Eroare la ștergerea articolului: ' + (data.message || 'Eroare necunoscută'));
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Eroare la ștergerea articolului!');
+                });
+            }
+        }
+
+        function removeExistingAttachment(button, type, index) {
+            if (confirm('Sunteți sigur că doriți să eliminați acest atașament?')) {
+                button.closest('.preview-item').remove();
+            }
+        }
+
+        // Handle file previews for add form
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add form image preview
+            document.getElementById('add_attachment_images')?.addEventListener('change', function(e) {
+                handleFilePreview(e, 'addImagePreview', 'image');
+            });
+
+            // Add form video preview
+            document.getElementById('add_attachment_videos')?.addEventListener('change', function(e) {
+                handleFilePreview(e, 'addVideoPreview', 'video');
+            });
+
+            // Edit form image preview
+            document.getElementById('edit_attachment_images')?.addEventListener('change', function(e) {
+                handleFilePreview(e, 'editImagePreview', 'image');
+            });
+
+            // Edit form video preview
+            document.getElementById('edit_attachment_videos')?.addEventListener('change', function(e) {
+                handleFilePreview(e, 'editVideoPreview', 'video');
+            });
+        });
+
+        function handleFilePreview(event, previewContainerId, type) {
+            const preview = document.getElementById(previewContainerId);
+            for (let file of event.target.files) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const div = document.createElement('div');
+                    div.className = 'preview-item';
+                    if (type === 'image') {
+                        div.innerHTML = `
+                            <img src="${e.target.result}" alt="Preview">
+                            <button type="button" class="remove-attachment" onclick="this.parentElement.remove()">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        `;
+                    } else {
+                        div.innerHTML = `
+                            <video src="${e.target.result}" style="max-width: 200px;" controls></video>
+                            <button type="button" class="remove-attachment" onclick="this.parentElement.remove()">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        `;
+                    }
+                    preview.appendChild(div);
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+
+        // Handle form submissions
+        document.getElementById('addNewsForm')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            submitNewsForm(this, 'Articolul a fost adăugat cu succes!');
+        });
+
+        document.getElementById('editNewsForm')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            submitNewsForm(this, 'Articolul a fost actualizat cu succes!');
+        });
+
+        function submitNewsForm(form, successMessage) {
+            const formData = new FormData(form);
+            
+            // Show loading state
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Se procesează...';
+            submitBtn.disabled = true;
+
+            fetch('../handlers/news-handler.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert(successMessage);
+                    location.reload();
+                } else {
+                    alert('Eroare: ' + (data.message || 'Eroare necunoscută'));
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Eroare la procesarea formularului!');
+            })
+            .finally(() => {
+                // Restore button state
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            });
+        }
+
         // Vacancy-related JavaScript functions
         const vacanciesData = <?php echo json_encode($vacancies); ?>;
 
@@ -771,7 +1365,7 @@ $activeVacancies = count(array_filter($vacancies, fn($v) => $v['status'] === 'ac
 
         // Close modal when clicking outside of it
         window.onclick = function(event) {
-            const modals = ['addVacancyModal', 'editVacancyModal', 'viewVacancyModal'];
+            const modals = ['addNewsModal', 'editNewsModal', 'viewNewsModal', 'addVacancyModal', 'editVacancyModal', 'viewVacancyModal'];
             modals.forEach(modalId => {
                 const modal = document.getElementById(modalId);
                 if (event.target === modal) {
