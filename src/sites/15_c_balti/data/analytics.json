@@ -1,48 +1,5 @@
 {
     "daily": {
-        "2025-08-13": {
-            "page_views": 23,
-            "unique_visitors": [
-                "efaeb3f1a6eec98d62777e12b88c13fc0a215981bd3d31697fbc8020311b28f0"
-            ],
-            "pages": {
-                "index": 13,
-                "analytics-track": 9,
-                "dashboard": 1
-            },
-            "referrers": {
-                "localhost": 18
-            },
-            "browsers": {
-                "Chrome": 23
-            },
-            "hourly": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                6,
-                5,
-                0,
-                12,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ]
-        },
         "2025-08-20": {
             "page_views": 4,
             "unique_visitors": [
@@ -77,6 +34,50 @@
                 0,
                 0,
                 0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        "2025-11-17": {
+            "page_views": 12,
+            "unique_visitors": [
+                "8460b2d285f2c62dd804e619b3bf20e2a57e7593c46fdf268cd5d7a0bd9b89a4"
+            ],
+            "pages": {
+                "index": 2,
+                "serviciul_maternal": 8,
+                "serviciul_zi": 1,
+                "intrebari-frecvente": 1
+            },
+            "referrers": {
+                "localhost": 12
+            },
+            "browsers": {
+                "Chrome": 12
+            },
+            "hourly": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                12,
                 0,
                 0,
                 0,

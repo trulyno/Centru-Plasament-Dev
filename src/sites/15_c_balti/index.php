@@ -211,23 +211,6 @@ require_once __DIR__ . '/includes/analytics.php';
                                 <?php echo t('contact_address_full'); ?>
                             </div>
                         </div>
-                        <div class="contact-item">
-                            <i class="fas fa-route"></i>
-                            <div>
-                                <strong><?php echo t('contact_how_to_find'); ?></strong><br>
-                                <div style="margin-top: 0.5rem;">
-                                    <div style="margin-bottom: 0.3rem; display: flex; align-items: center;">
-                                        <span><?php echo t('contact_transport_1'); ?></span>
-                                    </div>
-                                    <div style="margin-bottom: 0.3rem; display: flex; align-items: center;">
-                                        <span><?php echo t('contact_transport_2'); ?></span>
-                                    </div>
-                                    <div style="display: flex; align-items: center;">
-                                        <span><?php echo t('contact_transport_3'); ?></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="contact-map fade-in">

@@ -106,7 +106,6 @@ require_once __DIR__ . '/includes/analytics.php';
 
                     <div class="documents-section">
                         <h2><?php echo t('documents_title'); ?></h2>
-                        <p class="documents-intro"><?php echo t('maternal_documents_intro'); ?></p>
                         <div class="documents-list">
                             <div class="document-item" data-aos="fade-up" data-aos-delay="100">
                                 <div class="document-icon">
@@ -186,7 +185,7 @@ require_once __DIR__ . '/includes/analytics.php';
                                 <div class="info-icon">
                                     <i class="fas fa-gavel"></i>
                                 </div>
-                                <h4><?php echo t('dmaternal_info_3_title'); ?></h4>
+                                <h4><?php echo t('maternal_info_3_title'); ?></h4>
                                 <p><?php echo t('maternal_info_3_desc'); ?></p>
                             </div>
                         </div>

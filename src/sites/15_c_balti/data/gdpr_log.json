@@ -804,5 +804,161 @@
             "user_agent"
         ],
         "retention_period": "26 months"
+    },
+    {
+        "timestamp": "2025-11-17 15:10:01",
+        "type": "analytics",
+        "data_subject": "192.168.65.0",
+        "purpose": "Website analytics and improvement",
+        "legal_basis": "Legitimate interest",
+        "data_categories": [
+            "ip",
+            "page",
+            "user_agent"
+        ],
+        "retention_period": "26 months"
+    },
+    {
+        "timestamp": "2025-11-17 15:10:11",
+        "type": "analytics",
+        "data_subject": "192.168.65.0",
+        "purpose": "Website analytics and improvement",
+        "legal_basis": "Legitimate interest",
+        "data_categories": [
+            "ip",
+            "page",
+            "user_agent"
+        ],
+        "retention_period": "26 months"
+    },
+    {
+        "timestamp": "2025-11-17 15:10:39",
+        "type": "analytics",
+        "data_subject": "192.168.65.0",
+        "purpose": "Website analytics and improvement",
+        "legal_basis": "Legitimate interest",
+        "data_categories": [
+            "ip",
+            "page",
+            "user_agent"
+        ],
+        "retention_period": "26 months"
+    },
+    {
+        "timestamp": "2025-11-17 15:10:42",
+        "type": "analytics",
+        "data_subject": "192.168.65.0",
+        "purpose": "Website analytics and improvement",
+        "legal_basis": "Legitimate interest",
+        "data_categories": [
+            "ip",
+            "page",
+            "user_agent"
+        ],
+        "retention_period": "26 months"
+    },
+    {
+        "timestamp": "2025-11-17 15:11:05",
+        "type": "analytics",
+        "data_subject": "192.168.65.0",
+        "purpose": "Website analytics and improvement",
+        "legal_basis": "Legitimate interest",
+        "data_categories": [
+            "ip",
+            "page",
+            "user_agent"
+        ],
+        "retention_period": "26 months"
+    },
+    {
+        "timestamp": "2025-11-17 15:11:13",
+        "type": "analytics",
+        "data_subject": "192.168.65.0",
+        "purpose": "Website analytics and improvement",
+        "legal_basis": "Legitimate interest",
+        "data_categories": [
+            "ip",
+            "page",
+            "user_agent"
+        ],
+        "retention_period": "26 months"
+    },
+    {
+        "timestamp": "2025-11-17 15:11:26",
+        "type": "analytics",
+        "data_subject": "192.168.65.0",
+        "purpose": "Website analytics and improvement",
+        "legal_basis": "Legitimate interest",
+        "data_categories": [
+            "ip",
+            "page",
+            "user_agent"
+        ],
+        "retention_period": "26 months"
+    },
+    {
+        "timestamp": "2025-11-17 15:11:31",
+        "type": "analytics",
+        "data_subject": "192.168.65.0",
+        "purpose": "Website analytics and improvement",
+        "legal_basis": "Legitimate interest",
+        "data_categories": [
+            "ip",
+            "page",
+            "user_agent"
+        ],
+        "retention_period": "26 months"
+    },
+    {
+        "timestamp": "2025-11-17 15:11:38",
+        "type": "analytics",
+        "data_subject": "192.168.65.0",
+        "purpose": "Website analytics and improvement",
+        "legal_basis": "Legitimate interest",
+        "data_categories": [
+            "ip",
+            "page",
+            "user_agent"
+        ],
+        "retention_period": "26 months"
+    },
+    {
+        "timestamp": "2025-11-17 15:11:39",
+        "type": "analytics",
+        "data_subject": "192.168.65.0",
+        "purpose": "Website analytics and improvement",
+        "legal_basis": "Legitimate interest",
+        "data_categories": [
+            "ip",
+            "page",
+            "user_agent"
+        ],
+        "retention_period": "26 months"
+    },
+    {
+        "timestamp": "2025-11-17 15:11:42",
+        "type": "analytics",
+        "data_subject": "192.168.65.0",
+        "purpose": "Website analytics and improvement",
+        "legal_basis": "Legitimate interest",
+        "data_categories": [
+            "ip",
+            "page",
+            "user_agent"
+        ],
+        "retention_period": "26 months"
+    },
+    {
+        "timestamp": "2025-11-17 15:11:50",
+        "type": "analytics",
+        "data_subject": "192.168.65.0",
+        "purpose": "Website analytics and improvement",
+        "legal_basis": "Legitimate interest",
+        "data_categories": [
+            "ip",
+            "page",
+            "user_agent"
+        ],
+        "retention_period": "26 months"
     }
 ]

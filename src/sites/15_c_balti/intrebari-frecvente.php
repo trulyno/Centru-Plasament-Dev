@@ -18,7 +18,7 @@ $sampleFaqs = [
     [
         'id' => 'sample1',
         'question' => ['ro' => 'Ce servicii oferiti?', 'en' => 'What services do you offer?'],
-        'answer' => ['ro' => 'Oferim diverse servicii sociale incluzând sprijin pentru familii, copii și îngrijirea vârstnicilor.', 'en' => 'We offer various social services including support for families, children, and elderly care.'],
+        'answer' => ['ro' => 'Oferim diverse servicii sociale incluzând sprijin pentru familii și copii.', 'en' => 'We offer various social services including support for families and children.'],
         'category' => 'services',
         'status' => 'active'
     ],
