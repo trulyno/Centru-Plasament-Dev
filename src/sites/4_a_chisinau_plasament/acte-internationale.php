@@ -63,7 +63,6 @@ function document($src, $title = '') {
                     
                     <div class="documents-grid">
                         <?php
-                        document('https://www.unicef.org/moldova/media/1401/file/Conventia-cu-privire-la-drepturile-copilului.pdf', 'Convenția ONU cu privire la Drepturile Copilului');
                         document('https://www.legis.md/cautare/getResults?doc_id=117839&lang=ro', 'Convenția privind drepturile persoanelor cu dizabilități');
                         
                         ?>

@@ -1431,46 +1431,103 @@ document.addEventListener('DOMContentLoaded', function() {
 // `;
 // document.head.appendChild(style);
 
-// Organigrama functionality - Make image clickable for better viewing
+// Image modal functionality - Make organigrama and administration images clickable for better viewing
 document.addEventListener('DOMContentLoaded', function() {
+    // Handle organigrama images
     const organigramaImage = document.querySelector('.organigrama-image');
-    
     if (organigramaImage) {
-        // Add click handler to open image in modal
-        organigramaImage.addEventListener('click', function() {
-            openOrganigramaModal(this);
-        });
-        
-        // Add keyboard support
-        organigramaImage.setAttribute('tabindex', '0');
-        organigramaImage.setAttribute('role', 'button');
-        organigramaImage.setAttribute('aria-label', 'Deschide organigrama într-o fereastră mai mare');
-        
-        organigramaImage.addEventListener('keydown', function(e) {
-            if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault();
-                openOrganigramaModal(this);
-            }
-        });
+        // Set data attribute if not already set
+        if (!organigramaImage.dataset.modalType) {
+            organigramaImage.dataset.modalType = 'organigrama';
+        }
+        setupImageModal(organigramaImage, 'Deschide organigrama într-o fereastră mai mare');
     }
+    
+    // Handle all images with modal-image class or specific data attributes
+    const modalImages = document.querySelectorAll('.modal-image, [data-modal-type]');
+    modalImages.forEach(img => {
+        const modalType = img.dataset.modalType || 'image';
+        let ariaLabel;
+        
+        switch(modalType) {
+            case 'organigrama':
+                ariaLabel = 'Deschide organigrama într-o fereastră mai mare';
+                break;
+            case 'administration':
+            case 'administratia':
+                ariaLabel = 'Deschide imaginea administrației într-o fereastră mai mare';
+                break;
+            default:
+                ariaLabel = 'Deschide imaginea într-o fereastră mai mare';
+        }
+        
+        setupImageModal(img, ariaLabel);
+    });
+    
+    // Handle administration images (legacy support - look for images in administration page sections)
+    const administrationImages = document.querySelectorAll('section.content-section img[src*="administratia"]:not([data-modal-type]):not(.modal-image)');
+    administrationImages.forEach(img => {
+        img.dataset.modalType = 'administration';
+        setupImageModal(img, 'Deschide imaginea administrației într-o fereastră mai mare');
+    });
 });
 
-// Function to open organigrama modal
-function openOrganigramaModal(imageElement) {
+// Function to set up modal functionality for any image
+function setupImageModal(imageElement, ariaLabel) {
+    // Add click handler to open image in modal
+    imageElement.addEventListener('click', function() {
+        openImageModal(this);
+    });
+    
+    // Add keyboard support
+    imageElement.setAttribute('tabindex', '0');
+    imageElement.setAttribute('role', 'button');
+    imageElement.setAttribute('aria-label', ariaLabel);
+    
+    imageElement.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            openImageModal(this);
+        }
+    });
+}
+
+// Function to open image modal (works for both organigrama and administration images)
+function openImageModal(imageElement) {
     // Create modal if it doesn't exist
     let modal = document.getElementById('organigramaModal');
     if (!modal) {
-        modal = createOrganigramaModal();
+        modal = createImageModal();
     }
     
     // Get image source and alt text
     const imageSrc = imageElement.src;
     const imageAlt = imageElement.alt;
     
-    // Set modal image
+    // Determine modal title and description based on data attribute, then fallback to class/filename
+    let modalTitle, modalDescription;
+    const modalType = imageElement.dataset.modalType;
+    
+    if (modalType === 'organigrama' || imageElement.classList.contains('organigrama-image') || imageSrc.includes('organigrama')) {
+        modalTitle = 'Organigrama Instituției';
+        modalDescription = 'Structura organizațională completă a centrului.';
+    } else if (modalType === 'administration' || modalType === 'administratia' || imageSrc.includes('administratia')) {
+        modalTitle = 'Echipa de Administrație';
+        modalDescription = 'Echipa administrativă a centrului.';
+    } else {
+        modalTitle = 'Imagine';
+        modalDescription = 'Vizualizare mărită a imaginii.';
+    }
+    
+    // Set modal content
     const modalImage = modal.querySelector('#organigramaModalImage');
+    const modalTitleElement = modal.querySelector('.organigrama-modal-header h3');
+    const modalDescriptionElement = modal.querySelector('.organigrama-modal-footer p');
+    
     modalImage.src = imageSrc;
     modalImage.alt = imageAlt;
+    modalTitleElement.textContent = modalTitle;
+    modalDescriptionElement.textContent = modalDescription;
     
     // Show modal
     modal.classList.add('active');
@@ -1482,25 +1539,30 @@ function openOrganigramaModal(imageElement) {
     }, 100);
 }
 
-// Function to create organigrama modal
-function createOrganigramaModal() {
+// Keep the old function name for backward compatibility
+function openOrganigramaModal(imageElement) {
+    openImageModal(imageElement);
+}
+
+// Function to create image modal (works for both organigrama and administration images)
+function createImageModal() {
     const modal = document.createElement('div');
     modal.id = 'organigramaModal';
     modal.className = 'organigrama-modal';
     modal.innerHTML = `
         <div class="modal-backdrop"></div>
         <div class="organigrama-modal-content">
-            <button class="modal-close" id="organigramaModalClose" aria-label="Închide organigrama">
+            <button class="modal-close" id="organigramaModalClose" aria-label="Închide imaginea">
                 <i class="fas fa-times"></i>
             </button>
             <div class="organigrama-modal-header">
-                <h3>Organigrama Instituției</h3>
+                <h3>Imagine</h3>
             </div>
             <div class="organigrama-modal-image-container">
                 <img id="organigramaModalImage" src="" alt="" loading="lazy">
             </div>
             <div class="organigrama-modal-footer">
-                <p>Structura organizațională completă a centrului.</p>
+                <p>Vizualizare mărită a imaginii.</p>
             </div>
         </div>
     `;
@@ -1511,32 +1573,46 @@ function createOrganigramaModal() {
     const closeBtn = modal.querySelector('#organigramaModalClose');
     const backdrop = modal.querySelector('.modal-backdrop');
     
-    closeBtn.addEventListener('click', closeOrganigramaModal);
-    backdrop.addEventListener('click', closeOrganigramaModal);
+    closeBtn.addEventListener('click', closeImageModal);
+    backdrop.addEventListener('click', closeImageModal);
     
     // Keyboard support
     document.addEventListener('keydown', function(e) {
         if (modal.classList.contains('active') && e.key === 'Escape') {
-            closeOrganigramaModal();
+            closeImageModal();
         }
     });
     
     return modal;
 }
 
-// Function to close organigrama modal
-function closeOrganigramaModal() {
+// Keep the old function name for backward compatibility
+function createOrganigramaModal() {
+    return createImageModal();
+}
+
+// Function to close image modal
+function closeImageModal() {
     const modal = document.getElementById('organigramaModal');
     if (modal) {
         modal.classList.remove('active');
         document.body.style.overflow = '';
         
-        // Return focus to the original image
+        // Return focus to the original image (try both organigrama and administration images)
         const organigramaImage = document.querySelector('.organigrama-image');
+        const administrationImages = document.querySelectorAll('section.content-section img[src*="administratia"]');
+        
         if (organigramaImage) {
             organigramaImage.focus();
+        } else if (administrationImages.length > 0) {
+            administrationImages[0].focus();
         }
     }
+}
+
+// Keep the old function name for backward compatibility
+function closeOrganigramaModal() {
+    closeImageModal();
 }
 
 // Petition Form Functionality

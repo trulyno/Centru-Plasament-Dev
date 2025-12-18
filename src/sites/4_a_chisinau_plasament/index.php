@@ -208,10 +208,6 @@ require_once __DIR__ . '/includes/analytics.php';
                     <h3 id="stat4">0</h3>
                     <p><?php echo t('stats_traffic'); ?></p>
                 </div>
-                <div class="stat-item fade-in">
-                    <h3 id="stat5">0</h3>
-                    <p><?php echo t('stats_external'); ?></p>
-                </div>
             </div>
         </div>
     </section>

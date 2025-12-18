@@ -32,7 +32,7 @@
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <span><?php echo t('contact_email'); ?></span>
-                                <a href="mailto:cp.orhei@agssi.md">cp.orhei@agssi.md</a>
+                                <a href="mailto:secretariat.1989@yahoo.com">secretariat.1989@yahoo.com</a>
                             </div>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                 <a href="index.php" style="display: flex; align-items: center; color: inherit; text-decoration: none;">
                     <img src="images/01_symbol_guvernul.png  " alt="Logo CPRCVF" class="logo-mobile-image">
                     <i class="fas fa-heart"></i>
-                    <span>MMPS · AGSSSI · CPTPD</span>
+                    <span>MMPS · AGSSSI · CRPVPD</span>
                 </a>
             </div>
             <div class="mobile-action-buttons">

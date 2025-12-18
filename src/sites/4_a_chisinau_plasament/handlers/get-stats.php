@@ -18,8 +18,7 @@ if (!file_exists($statsFile)) {
         'stat1' => ['value' => 0, 'label' => 'Beneficiari plasați la întreținere de stat'],
         'stat2' => ['value' => 0, 'label' => 'Beneficiari plasați în serviciul contra plată'],
         'stat3' => ['value' => 0, 'label' => 'Beneficiari plasați în Serviciul Plasament de Urgență'],
-        'stat4' => ['value' => 0, 'label' => 'Beneficiari plasați în Serviciului de asistență și protecție a victimelor și prezumatelor victime ale traficului de ființe umane (bărbați)'],
-        'stat5' => ['value' => 0, 'label' => 'Beneficiari plasați în Centrul de Plasament Temporar pentru Persoane Strămutate de pe Teritoriul altor State']
+        'stat4' => ['value' => 0, 'label' => 'Beneficiari plasați în Serviciului de asistență și protecție a victimelor și prezumatelor victime ale traficului de ființe umane (bărbați)']
     ];
     
     file_put_contents($statsFile, json_encode($defaultStats, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));

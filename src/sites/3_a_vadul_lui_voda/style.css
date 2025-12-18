@@ -5705,7 +5705,9 @@ html {
     box-shadow: 0 10px 30px var(--shadow-light);
 }
 
-.organigrama-image {
+/* Shared styles for clickable modal images */
+.organigrama-image,
+.modal-image {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
@@ -5714,7 +5716,8 @@ html {
     cursor: pointer;
 }
 
-.organigrama-image:hover {
+.organigrama-image:hover,
+.modal-image:hover {
     transform: scale(1.02);
     box-shadow: 0 15px 40px var(--shadow-medium);
 }

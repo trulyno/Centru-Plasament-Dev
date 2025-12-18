@@ -62,7 +62,7 @@ function document($src, $title = '') {
                     <p><?php echo t('internal_acts_content_description'); ?></p>
                     
                     <div class="documents-grid">
-                        <!-- <div class="document-card featured">
+                        <div class="document-card featured">
                             <div class="document-icon">
                                 <i class="fas fa-file-contract"></i>
                             </div>
@@ -72,21 +72,22 @@ function document($src, $title = '') {
                                 <div class="document-details">
                                     <div class="detail-item">
                                         <i class="fas fa-calendar"></i>
-                                        <span>Ultima actualizare: Martie 2024</span>
+                                        <span>Ultima actualizare: Decembrie 2020</span>
                                     </div>
                                     <div class="detail-item">
                                         <i class="fas fa-user-check"></i>
-                                        <span>Aprobat prin Ordinul AGSSSI</span>
+                                        <span>Aprobat prin Ordinul MSMPS</span>
                                     </div>
                                 </div>
-                                <a href="files/Ordin-Regulament-6 martie 2024.pdf" class="document-link" target="_blank">
+                                <a href="files/Regulament Organizare CPPVPD.pdf" class="document-link" target="_blank">
                                     <i class="fas fa-external-link-alt"></i> Vezi document
                                 </a>
                             </div>
                         </div>
                         <?php
-
-                        ?> -->
+                            document('files/Regulament Serv. asist victimelor TFU barbati.pdf', 'Regulamentul de organizare și funcționare a Serviciului de asistenţă şi protecţie a victimelor și prezumatelor victime ale traficului de ființe umane (bărbați)');
+                            document('files/Ordinul de constituire 1976.pdf', 'Ordinul cu privire la deschiderea pansionatului pensionari personali');
+                        ?>
                 </div>
             </div>
         </section>

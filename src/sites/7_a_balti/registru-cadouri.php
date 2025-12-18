@@ -60,7 +60,7 @@ function document($src, $title = '') {
                 <div class="content-wrapper">
                     <h2><?php echo t('gifts_register_title'); ?></h2>
                     <?php
-
+                        document('files/registrul cadourilor.pdf', 'Registru de evidență a cadourilor admisibile')
                     ?>
                 </div>
             </div>

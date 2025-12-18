@@ -461,11 +461,6 @@ $activeVacancies = count(array_filter($vacancies, fn($v) => $v['status'] === 'ac
                             <label for="stat4">Beneficiari plasați în Serviciului de asistență și protecție a victimelor și prezumatelor victime ale traficului de ființe umane (bărbați):</label>
                             <input type="number" id="stat4" name="stat4" value="<?php echo $stats['stat4']['value']; ?>" required>
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="stat5">Beneficiari plasați în Centrul de Plasament Temporar pentru Persoane Strămutate de pe Teritoriul altor State:</label>
-                            <input type="number" id="stat5" name="stat5" value="<?php echo $stats['stat5']['value']; ?>" required>
-                        </div>
                     </div>
                     
                     <div class="form-actions">

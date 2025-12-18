@@ -60,7 +60,7 @@ function document($src, $title = '') {
                 <div class="content-wrapper">
                     <h2><?php echo t('ethics_code_content_title'); ?></h2>
                     <?php
-
+                        document('files/Codul Etic.pdf', 'Codul etic al angajaților Centrului de Plasament pentru Persoane Vârstnice și Persoane cu Dizabilități, mun. Chișinău');
                     ?>
                 </div>
             </div>
