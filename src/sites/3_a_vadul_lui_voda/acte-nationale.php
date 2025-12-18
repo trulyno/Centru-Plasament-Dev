@@ -72,20 +72,8 @@ function document($src, $title = '') {
                            document("https://www.legis.md/cautare/getResults?doc_id=132934&lang=ro", "Legea nr. 547 din 25.12.2003 Asistența Socială");
                         ?>
 
-                         <?php
-                           document("https://www.legis.md/cautare/getResults?doc_id=146836&lang=ro#", "Legea nr. 140 din 14.06.2011 Privind protecția specială a copiilor aflați în situație de risc și a copiilor separați de părinți");
-                        ?>
-
                         <?php
                            document("https://www.legis.md/cautare/getResults?doc_id=141516&lang=ro#", "Legea nr. 123 din 18.06.2010 Cu privire la serviciile sociale");
-                        ?>
-
-                        <?php
-                           document("https://www.legis.md/cautare/getResults?doc_id=138813&lang=ro#", "Legea nr. 99 din 28.05.2010 Privind regimul juridic al adopției");
-                        ?>
-
-                         <?php
-                           document("https://www.legis.md/cautare/getResults?doc_id=140852&lang=ro#", "Legea nr. 338 din 15.12.1994 Privind drepturile copilului");
                         ?>
 
                          <?php
@@ -100,16 +88,8 @@ function document($src, $title = '') {
                            document("https://www.legis.md/cautare/getResults?doc_id=101381&lang=ro", "Hotărârea Guvernului nr. 591 din 24 iulie 2017: Aprobă Regulamentul-cadru privind organizarea și funcționarea Serviciilor sociale de tip centru de plasament și standardele minime de calitate.");
                         ?>
 
-                         <?php
-                           document("https://social.gov.md/wp-content/uploads/2024/05/Ordin-nr.-114_24.05.2024_Politica-interna-de-protectie.pdf", "Ordinul nr. 114 din 24 mai 2024: Aprobă Ghidul privind Politica internă de protecție a copilului.");
-                        ?>
-
                         <?php
                            document("https://www.legis.md/cautare/getResults?doc_id=113032&lang=ro", "Codul Muncii al Republicii Moldova: Aplicabil tuturor angajatorilor, inclusiv instituțiilor sociale de stat.");
-                        ?>
-
-                        <?php
-                           document("https://old.msmps.gov.md/sites/default/files/legislatie/ordin_nr._964_din_020919.pdf", "Ordinul N964 din 02.09.19, cu privire la standardul de supraveghere si dezvoltarii copilului in conditii de ambulator si a Carnetului de dezvoltare a copilului");
                         ?>
 
                         <?php
