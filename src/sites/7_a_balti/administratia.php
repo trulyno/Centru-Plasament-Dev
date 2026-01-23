@@ -59,12 +59,13 @@ function staff($name, $position, $image) {
                     <h2><?php echo t('administration_team_title'); ?></h2>
                     <p><?php echo t('administration_team_description'); ?></p>
                     
-                    <div class="admin-team-container">
-                        <div class="admin-team-grid">
-                            <?php
-                                
-
-                            ?>
+                    <div class="container">
+                        <div class="content-wrapper">
+                            <img src="images/administratia.jpg" 
+                                 alt="<?php echo t('administration_team_title'); ?> - <?php echo t('administration_subtitle'); ?>" 
+                                 class="modal-image" 
+                                 data-modal-type="administration"
+                                 style="width:80%;">
                         </div>
                     </div>
                 </div>
